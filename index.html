@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Орда</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<!--<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>!-->
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
+ 		<script type="text/javascript" src="./js/site.js"></script>
+ 		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+		<link rel="stylesheet" type="text/css" href="./css/component.css" />
+		<script src="./js/modernizr.custom.js"></script>
+		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
+		<script type="text/javascript" src="./js/jquery.the-modal.js"></script>
+ 		<link rel="stylesheet" type="text/css" href="the-modal.css" media="all" />	
+ 		<script type="text/javascript">
+			jQuery(function($){
+				// bind event handlers to modal triggers
+				$('body').on('click', '.trigger', function(e){
+					e.preventDefault();
+					$('#terms-of-service').modal().open();
+				});
+				$('.modal .tr').on('click', function(e){
+					e.preventDefault();
+					$.modal().close();
+					$('#terms-of-service2').modal().open();
+				});	
+				// attach modal close handler
+				$('.modal .close').on('click', function(e){
+					e.preventDefault();
+					$.modal().close();
+				});
+
+				// below isn't important (demo-specific things)
+				$('.modal .more-toggle').on('click', function(e){
+					e.stopPropagation();
+					$('.modal .more').toggle();
+				});
+			});
+		</script>
+    </head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div class="shadow"></div>
+				<div class="centered">
+					<div class="address fl-l">
+						<p>г. Улан-Удэ, Пушкина ул.4а, </p>
+						<a href="">На карте</a>
+					</div>
+					<div class="logo fl-l"><a href="/"><img src="/img/logo.png" alt=""></a></div>
+					<div class="contact fl-r">
+						<p>Заказ столов</p>
+						<p class="phone"><span>+7 3012</span> 44-38-38</p>
+					</div>
+					<div class="soc-icon fl-r">
+						<a class="vk fl-l" href=""></a>
+						<a class="insta fl-r" href=""></a>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				<div class="promo mb40">
+					<div class="white-shadow"></div>
+					<div class="gradient"></div>
+					<div class="wrapper centered">
+						<div class="navigation cols cols3">
+							<dl class="oh">
+								<dt><a href="kitchen.html">КУХНЯ</a></dt>
+								<dt><a href="peoples.html">ПОСЕТИТЕЛИ</a></dt>
+								<dt><a href="place.html">МЕСТО</a></dt>
+							</dl>
+						</div>
+						<div class="carousel-image pos-rel mb50">
+							<div class="c1"></div>
+							<div class="c2"></div>
+							<div class="carousel">
+								<dl id="carousel">
+									<dt>
+										<div class="date fl-l">25 <span>СЕНТЯБРЯ</span></div>
+										<div class="img fl-l"><img src="/img/carousel.jpg" alt=""></div>
+										<div class="text fl-l">
+											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ</p>
+											<p>Последний день Весны. Проводим ее достойно. Тем более, солнце светит и суббота-отличное сочетание для незабываемого отдыха.</p>
+										</div>
+									</dt>
+								</dl>
+							</div>
+						</div>
+						<h2 class="text-center mb0">ОРДА — ресторан монгольской и бурятской кухни</h2>
+						<p class="sub-h text-center"> ORDA Restaurant&Club - пространство, где чтят Традиции и чувствуют Современность, стремятся сохранить Аутентичность и двигаться в Прогресс</p>
+						<div class="cols cols3 advantages">
+							<dl class="oh">
+								<dt>
+									<img src="/img/i1.png" alt="">
+									<p>Пространство, где чтят традиции и чувствуют современность, </p>
+								</dt>								
+								<dt>
+									<img src="/img/i2.png" alt="">
+									<p>Стильная живая площадка, клуб по интересам вечером</p>
+								</dt>								
+								<dt>
+									<img src="/img/i3.png" alt="">
+									<p>Кухня fusion c национальным монгольским колоритом</p>
+								</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="centered">
+					<div class="p1"></div>
+					<div class="p2"></div>
+					<div class="p3"></div>
+					<div class="layout w300i info mb30">
+						<h2 class="text-center black mb0">Наше меню</h2>
+						<p class="sub-h text-center black">Лучшие традиционные блюда в современном исполнении</p>
+						<div class="l-col">
+							<h3 class="black">СОВЕТУЕМ ПОПРОБОВАТЬ</h3>
+							<div class="carousel2 mb30">
+								<div id="bx-pager">
+									<div class="wrapper">
+										<table>
+											<tbody>
+												<tr>
+													<td><a data-slide-index="0" href=""><img src="/img/carousel2-mini.jpg" alt=""><span class="border"></span><span class="zoom"></span></a>
+													</td>
+													<td><a data-slide-index="1" href=""><img src="/img/carousel2-mini2.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
+													<td><a data-slide-index="2" href=""><img src="/img/carousel2-mini3.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
+													<td><a data-slide-index="3" href=""><img src="/img/carousel2-mini.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
+													<td><a data-slide-index="4" href=""><img src="/img/carousel2-mini3.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<dl id="carousel2">
+									<dt>
+										<img src="/img/carousel2.jpg" alt="">
+										<div class="text">
+											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 1</p>
+											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
+											<p class="in">1/350</p>
+											<p class="cost">400</p>
+										</div>
+									</dt>									
+									<dt>
+										<img src="/img/food1.jpg" alt="">
+										<div class="text">
+											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 2 </p>
+											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
+											<p class="in">1/350</p>
+											<p class="cost">400</p>
+										</div>
+									</dt>									
+									<dt>
+										<img src="/img/food2.jpg" alt="">
+										<div class="text">
+											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 3</p>
+											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
+											<p class="in">1/350</p>
+											<p class="cost">400</p>
+										</div>
+									</dt>									
+									<dt>
+										<img src="/img/food3.jpg" alt="">
+										<div class="text">
+											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 4</p>
+											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
+											<p class="in">1/350</p>
+											<p class="cost">400</p>
+										</div>
+									</dt>										
+									<dt>
+										<img src="/img/food4.jpg" alt="">
+										<div class="text">
+											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 5</p>
+											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
+											<p class="in">1/350</p>
+											<p class="cost">400</p>
+										</div>
+									</dt>									
+								</dl>
+							</div>
+							<div class="button text-center"><a href="">все меню</a></div>
+						</div>
+						<div class="r-col insta">
+							<h3 class="black">INSTAGRAM МЕНЮ</h3>
+							<p class="black">Участвуй в конкурсе на лучшее фото еды в нашем ресторане. Поставьте хештег <b>#ORDA_UU</b> и ждите результата.</p>
+							<p class="black"><b class="font-big">Победители</b></p>
+							<dl>
+								<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>								
+								<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>								
+								<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
+								<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>
+							</dl>
+							<div class="button text-center"><a href="">ПОДРОБНЕЕ</a></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="patern_1">
+					<div class="pa5"></div>
+					<div class="centered">
+						<div class="p4"></div>
+						<div class="social">
+							<h2 class="text-center mb0">наши гости</h2>
+							<p class="sub-h text-center">Ресторан "Орда" стал любимым для многих жителей и гостей города!</p>
+							<div class="layout text-white w600">
+								<div class="l-col instagram">
+									<div class="oh">
+										<img src="/img/insta.png" class="fl-l mr30" alt="">
+										<p>Выложи селфи с <b class="big-text">#ORDALOOK</b>, набери лайки и выиграй в этом месяце приз от ресторана</p>
+									</div>
+									<div class="b-dotted mb30"></div>
+									<dl>
+										<dt class="w260 best-look">
+											<h3>ЛУЧШИЙ ЛУК НЕДЕЛИ</h3>
+											<img src="/img/look.jpg" alt="">
+											<p class="date">25 июня</p>
+											<p class="name">Inna C.</p>
+											<p class="like">25</p>
+										</dt>
+										<dt class="w300 insta">
+											<h3>Наши ПОСЕТИТЕЛИ</h3>
+											<dl>
+												<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>								
+												<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
+												<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
+											</dl>
+										</dt>
+									</dl>
+								</div>
+								<div class="r-col foursquare">
+									<img src="/img/four.png" alt="">
+									<p>Зачекинтесь в нашем ресторане с фотографией, стань мэром и получай кофе в подарок.</p>
+									<div class="b-dotted mb30"></div>
+									<h3 class="mayor">МЭР НАШЕГО ЗАВЕДЕНИЯ</h3>
+									<div class="item-list mb20 oh">
+										<div class="img"><img src="/img/user.jpg" alt=""></div>
+										<div class="text">
+											<p class="title">Inna C. </p>
+											<p>3 чекинов за последние 60 дней</p>
+										</div>
+									</div>
+									<p class="font-big"><b>Подсказки посетителей</b></p>
+									<p>Наконец то на элеваторе появилось приличное заведение! Декораторы молодцы! Кресла зачет!!!</p>
+									<p class="name">Seseg Radnaeva </p>
+									<p class="like">25</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="button-inner text-center"><a href="">ПОДРОБНЕЕ</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="patern_2">
+					<div class="centered">
+						<div class="pa6"></div>
+						<div class="pa7"></div>
+						<div class="pa8"></div>
+						<h2 class="text-center black">НАШ ИНТЕРЬЕР</h2>
+						<ul class="grid effect-2" id="grid">
+							<li><a href=""><img src="/img/g1.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g2.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g3.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g4.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g5.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g6.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g7.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g8.jpg" alt=""></a></li>
+							<li><a href=""><img src="/img/g9.jpg" alt=""></a></li>
+						</ul>
+						<div class="button text-center"><a href="">подробнее</a></div>
+					</div>
+				</div>
+				<div id="map" style="width:100%; height:450px"><div class="shadow"></div></div>
+				<div class="group-buttons centered pt50 pb30">
+					<div class="cols cols3">
+						<dl>
+							<dt>&nbsp;</dt>
+							<dt><a href="" class="trigger">Заказать столик</a></dt>
+							<dt><p></p><p class="black">Закажите столик, мы свяжемся с вами в блюижайшее время для уточнения деталей!</p></dt>
+						</dl>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="centered">
+					<div class="logo"><a href=""><img src="/img/f-logo.png" alt=""></a></div>
+					<div class="navi">
+						<dl>
+							<dt><a href="">КУХНЯ</a></dt>
+							<dt><a href="">ПОСЕТИТЕЛИ</a></dt>
+							<dt><a href="">МЕСТО</a></dt>
+						</dl>
+					</div>
+					<div class="soc-icon">
+						<a class="vk fl-l" href=""></a>
+						<a class="insta fl-r" href=""></a>
+					</div>
+					<div class="gp"><a href="http://garantpark.com/">Разработка сайта <img src="/img/gp.png" alt=""> «Гарантпарк»</a></div>
+					<div class="address">
+						<p>г. Улан-Удэ, Пушкина ул.4а, </p>
+						<a href="">На карте</a>
+					</div>
+					<div class="contact">
+						<p class="phone"><i>Заказ столов</i><span>+7 3012</span> 44-38-38</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/masonry.pkgd.min.js"></script>
+		<script src="./js/imagesloaded.js"></script>
+		<script src="./js/classie.js"></script>
+		<script src="./js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
+		<script type="text/javascript">
+		    var map;
+
+		    DG.then(function () {
+		        map = DG.map('map', {
+		            "center": [51.8398,107.5964],
+		            "zoom": 15,
+		            "scrollWheelZoom" : ''
+		        });
+		       DG.marker([51.8398,107.5964]).addTo(map);
+		    });
+		</script>
+		<div class="modal" id="terms-of-service" style="display: none">
+			<div class="pos-rel p20">
+		        <a href="#" class="close"></a>
+				<h3 class="black text-center">ЗАКАЗ СТОЛА</h3>
+				<p class="title text-center">Заполните короткую форму, и наш администратор свяжется с вами в течении часа для уточнения деталей.</p>
+				<div class="text-center mb30"><input type="text" placeholder="Имя"></div>
+				<div class="text-center mb30"><input type="text" placeholder="Телефон"></div>
+				<div class="button text-center"><input class="tr" type="submit" value="Отправить"></div>
+			</div>
+		</div>		
+		<div class="modal inner" id="terms-of-service2" style="display: none">
+			<div class="pos-rel p20">
+		        <a href="#" class="close"></a>
+		        <div class="text-center mt20"><img src="/img/horse.png" alt=""></div>
+				<h3 class="black text-center">ВАША ЗАКАЗ ОТПРАВЛЕН</h3>
+				<p class="title text-center">Мы перезвоним вам в течении часа.</p>
+				<div class="button text-center"><a href="/">На сайт</a></div>
+			</div>
+		</div>
+	</body>
+</html>
