@@ -82,32 +82,10 @@ function hidden (){
 }
 
 function owl (){
-	$('.loop').owlCarousel({
-		center: true,
-	    items:3,
-	    loop:true,
-	    nav:true,
-	    dots: true,
-	    // margin: 80,
-	    autoWidth:false,
-	    responsive:{
-        0:{
-            items:3
-        },
-        940:{
-            items:3
-        },
-        1024:{
-            items:3
-        },        
-        1280:{
-            items:3
-        },        
-        1600:{
-            items:3
-        }
-    }
-	});
+		$('.carousel-fruit').owlCarousel({
+	    loop: true,
+	    margin: 100
+	})
 }
 
 function dish ()

@@ -537,7 +537,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .programm-diamed .info span {font-weight: 500;}
 
 .carousel-fruit {height: 500px; overflow: hidden; position: relative; margin-top: 50px; margin-bottom: 50px;}
-.carousel-fruit .owl-item {width: 500px !important; margin-bottom: 50px; margin-left: 40px !important; margin-right: 40px !important;}
+.carousel-fruit .owl-item {width: 500px !important; margin-bottom: 50px;}
 .carousel-fruit .owl-item {float: none !important; display: inline-block; zoom: 1; *display: inline; vertical-align: top;}
 .carousel-fruit .owl-stage {text-align: center;}
 .carousel-fruit .item {position: relative;}
@@ -555,9 +555,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 
 .diet .courses-info p {font: 300 18px/1.4 'Roboto'; color: #454545; }
 
-.courses {background-image: url(/imgin/table.jpg); background-position: top center; padding: 55px 0;}
-.courses table {width: 620px; margin-bottom: 50px;}
-.courses table tr td {border-bottom: 1px solid #B6AEA9; font: 300 18px Roboto; padding: 25px 0;}
+.courses {background-image: url(/imgin/table.jpg); background-position: top center; padding: 35px 0;}
+.courses table {width: 620px; margin-bottom: 30px;}
+.courses table tr td {border-bottom: 1px solid #B6AEA9; font: 300 18px Roboto; padding: 15px 0;}
 .courses table tr td p {font: 300 18px Roboto; color: #454545;}
 .courses table tr td.col1 {width: 145px;}
 .courses table p {margin-bottom: 5px;}
