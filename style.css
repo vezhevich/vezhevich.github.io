@@ -5,10 +5,6 @@
     font-style: normal;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500italic,500,400italic,300italic,300,100,100italic&subset=latin,cyrillic);
-
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic);
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -477,9 +473,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 
 /**/
 
-.diet h2 {font: normal 36px 'Roboto Slab'; text-transform: none; color: #454545; margin-bottom: 20px;}
-.diet h3 {font: normal 30px 'Roboto Slab'; color: #454545; text-transform: none;}
-.diet h4 {font: normal 21px 'Roboto Slab'; color: #454545; text-transform: none;}
+.diet h2 {font: normal 36px Roboto Slab; text-transform: none; color: #454545; margin-bottom: 20px;}
+.diet h3 {font: normal 30px Roboto Slab; color: #454545; text-transform: none;}
+.diet h4 {font: normal 21px Roboto Slab; color: #454545; text-transform: none;}
 .diet p {color: #454545;}
 
 .diet .navigation-shadow {margin-bottom: 95px!important;}
@@ -487,7 +483,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .navigation.sm dt {padding: 40px 0 0 0; width: auto; margin-left: 85px;}
 .navigation.sm dt a {font-size: 24px;}
 
-.diet .head .sub-h {font: 300 18px/1.4 'Roboto'; color: #454545; text-transform: none; width: 620px; margin: 0 auto 20px auto;}
+.diet .head .sub-h {font: 300 18px/1.4 Roboto; color: #454545; text-transform: none; width: 620px; margin: 0 auto 20px auto;}
 
 .bg-diet {background-color: #fff;}
 
@@ -511,29 +507,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 
 
 .h-bord:after {content: ' '; display: block; width: 60px; height: 1px; background-color: #49B15F; margin-top: 20px;}
-.diet-programm .sub-head {font: 300 21px/1.2 'Roboto'; color: #666666; margin-bottom: 30px;}
-.diet-programm .helper p:first-child {font: 300 italic 16px/1.2 'Roboto'; color: #666666; margin-bottom: 5px;}
-.diet-programm .helper p {font: italic 14px/1.2 'Roboto'; color: #666666;}
+.diet-programm .sub-head {font: 300 21px/1.2 Roboto; color: #666666; margin-bottom: 30px;}
+.diet-programm .helper p:first-child {font: 300 italic 16px/1.2 Roboto; color: #666666; margin-bottom: 5px;}
+.diet-programm .helper p {font: italic 14px/1.2 Roboto; color: #666666;}
 
 .diet-programm {background-image: url(/imgin/diet.jpg); background-repeat: no-repeat; background-position: right bottom; min-height: 440px;}
 
 
 .programm-whom {min-height: 607px; background-image: url(/imgin/run.jpg); background-repeat: no-repeat; background-position: center center; margin-bottom: 50px;}
-.programm-whom h3 {font: normal 30px 'Roboto Slab'; color: #454545; text-transform: none;}
-.programm-whom .sub-h {font: 300 18px/1.4 'Roboto'; color: #454545; text-transform: none; margin-bottom: 20px;}
+.programm-whom h3 {font: normal 30px Roboto Slab; color: #454545; text-transform: none;}
+.programm-whom .sub-h {font: 300 18px/1.4 Roboto; color: #454545; text-transform: none; margin-bottom: 20px;}
 .programm-whom .doctor {margin-bottom: 40px;}
 .programm-whom .doctor .img {width: 52px; height: 52px; border-radius: 50%; overflow: hidden;}
-.programm-whom .doctor .name {font: normal 16px 'Roboto Slab'; color: #454545; margin-bottom: 5px;}
-.programm-whom .doctor p {font: italic 14px 'Roboto'; color: #666666; margin-bottom: 0;}
-.programm-whom h4 {font: normal 21px 'Roboto Slab'; color: #454545; text-transform: none;}
+.programm-whom .doctor .name {font: normal 16px Roboto Slab; color: #454545; margin-bottom: 5px;}
+.programm-whom .doctor p {font: italic 14px Roboto; color: #666666; margin-bottom: 0;}
+.programm-whom h4 {font: normal 21px Roboto Slab; color: #454545; text-transform: none;}
 .programm-whom ul {padding: 0; margin: 0;}
-.programm-whom ul li {font: 300 18px 'Roboto'; color: #666666; margin-bottom: 15px; list-style: none;}
+.programm-whom ul li {font: 300 18px Roboto; color: #666666; margin-bottom: 15px; list-style: none;}
 .programm-whom ul li:before {content: '+'; color: #49AF59; margin-right: 10px; font-size: 25px; display: inline-block; zoom: 1; *display: inline; vertical-align: baseline;}
 
 
 .h-bord.center:after {margin-left: auto; margin-right: auto;}
-.programm-diamed .sub-h {font: 300 18px/1.3 'Roboto'; color: #454545; width: 700px; margin: 0 auto;}
-.programm-diamed .info {font: 300 24px/1.3 'Roboto'; color: #46AC59;}
+.programm-diamed .sub-h {font: 300 18px/1.3 Roboto; color: #454545; width: 700px; margin: 0 auto;}
+.programm-diamed .info {font: 300 24px/1.3 Roboto; color: #46AC59;}
 .programm-diamed .info span {font-weight: 500;}
 
 .carousel-fruit {height: 500px; overflow: hidden; position: relative; margin-top: 50px; margin-bottom: 50px;}
@@ -542,8 +538,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .carousel-fruit .owl-stage {text-align: center;}
 .carousel-fruit .item {position: relative;}
 .carousel-fruit .item .round {position: absolute; width: 280px; height: 245px; top: 50%; left: 50%; margin-top: -160px; margin-left: -160px; background-color: rgba(255,255,255,0.75); border-radius: 50%; padding: 75px 20px 0 20px;}
-.carousel-fruit .item .title {font: normal 42px 'Roboto'; color: #454545;}
-.carousel-fruit .item .desc {font: 300 16px/1.2 'Roboto'; color: #454545; margin-bottom: 20px; height: 95px; overflow: hidden;}
+.carousel-fruit .item .title {font: normal 42px Roboto; color: #454545;}
+.carousel-fruit .item .desc {font: 300 16px/1.2 Roboto; color: #454545; margin-bottom: 20px; height: 95px; overflow: hidden;}
 .carousel-fruit .item .btn-green a {width: 150px; height: 32px; font: bold 16px/32px PT Sans;}
 .carousel-fruit .owl-dots {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;}
 .carousel-fruit .owl-dot {background: #49B365; width: 16px; height: 16px; border-radius: 50%; display: inline-block; zoom: 1; *display: inline; margin: 0 5px;}
@@ -551,9 +547,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 
 .diet .consult .img {width: 100px; height: 100px; border-radius: 50%; overflow: hidden;}
 .diet .consult a {color: #47AD59; text-decoration: none; border-bottom: 1px dotted #47AD59; line-height: 1.3;}
-.diet .consult p {font: 300 18px 'Roboto';}
+.diet .consult p {font: 300 18px Roboto;}
 
-.diet .courses-info p {font: 300 18px/1.4 'Roboto'; color: #454545; }
+.diet .courses-info p {font: 300 18px/1.4 Roboto; color: #454545; }
 
 .courses {background-image: url(/imgin/table.jpg); background-position: top center; padding: 35px 0;}
 .courses table {width: 620px; margin-bottom: 30px;}
@@ -561,17 +557,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .courses table tr td p {font: 300 18px Roboto; color: #454545;}
 .courses table tr td.col1 {width: 145px;}
 .courses table p {margin-bottom: 5px;}
-.courses table .cal {font: italic 14px 'Roboto';}
+.courses table .cal {font: italic 14px Roboto;}
 .courses .info {background-color: #EDF1F0; width: 100%; border-radius: 4px; background-image: url(/imgin/woomen.png); background-repeat: no-repeat; background-position: left top; height: 100px;}
 .courses .info .text {margin-left: 140px; width: 350px; float: left; padding-top: 15px;}
-.courses .info .btn-green a {float: right; width: 130px; height: 100px; border-radius: 0 4px 4px 0; font: bold 14px/135px 'Roboto Slab'; background-image: url(/imgin/tic.png); background-repeat: no-repeat; background-position: center 20px;}
-.courses .info .title {font: normal 18px 'Roboto Slab'; color: #454545; margin-bottom: 5px;}
+.courses .info .btn-green a {float: right; width: 130px; height: 100px; border-radius: 0 4px 4px 0; font: bold 14px/135px Roboto Slab; background-image: url(/imgin/tic.png); background-repeat: no-repeat; background-position: center 20px;}
+.courses .info .title {font: normal 18px Roboto Slab; color: #454545; margin-bottom: 5px;}
 .courses .info p {font: normal 16px PT Sans; color: #454545;}
 
 
 .programm-teaser dl dt {text-align: center; margin-bottom: 30px;}
-.programm-teaser .title {font: normal 18px 'Roboto Slab'; color: #454545;}
-.programm-teaser p {font: 300 16px/1.3 'Roboto'; color: #454545;}
+.programm-teaser .title {font: normal 18px Roboto Slab; color: #454545;}
+.programm-teaser p {font: 300 16px/1.3 Roboto; color: #454545;}
 .programm-teaser .img {width: 100px; height: 100px; margin: 0 auto 20px auto; background: url(/imgin/teaser-sprite.png) no-repeat;}
 .programm-teaser .pr1 {background-position: 0 0;}
 .programm-teaser .pr2 {background-position: 0 -120px;}
@@ -583,8 +579,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .service-scheme {background-color: #eee; padding: 50px 0;}
 .service-scheme dl dt {text-align: center;}
 .service-scheme dl dt .img {width: 120px; height: 120px; margin: 0 auto 10px auto; background-image: url(/imgin/scheme-sprite.png); background-repeat: no-repeat; background-position: 0 0;}
-.service-scheme dl dt .title {font: normal 18px 'Roboto Slab'; color: #454545; }
-.service-scheme dl dt p {font: 300 16px 'Roboto'; color: #454545; }
+.service-scheme dl dt .title {font: normal 18px Roboto Slab; color: #454545; }
+.service-scheme dl dt p {font: 300 16px Roboto; color: #454545; }
 .service-scheme dl dt a {color: #47AB4A;}
 .service-scheme dl dt .s1 {background-position: 0 0;}
 .service-scheme dl dt .s2 {background-position: 0 -140px;}
@@ -594,13 +590,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .bg-form {background: url(/imgin/form-bg.jpg) no-repeat center center; height: 508px;}
 .bg-form .centered {position: relative; height: 508px;}
 .bg-form .form-callback {width: 700px; height: 377px; position: absolute; top: 50%; left: 50%; margin-left: -350px; margin-top: -188px; background-color: #fff;}
-.form-callback .phone {font: normal 60px/1.2 'Roboto Slab';}
-.form-callback .helper {font: 300 18px 'Roboto'; margin-bottom: 30px;}
+.form-callback .phone {font: normal 60px/1.2 Roboto Slab;}
+.form-callback .helper {font: 300 18px Roboto; margin-bottom: 30px;}
 .form-callback .bottom {background-color: #EDF1F0; border-radius: 5px; height: 120px; background-image: url(/imgin/form.png); background-repeat: no-repeat; background-position: right top;}
 .form-callback p {color: #454545;}
-.form-callback h3 {font: normal 30px 'Roboto Slab'; color: #454545; text-transform: none;}
-.form-callback .bottom p {font: 500 18px 'Roboto'; color: #454545;}
-.form-callback .bottom input[type=tel] {width: 238px; height: 38px; border-radius: 5px; border: 1px solid #ddd; background: #fff; font: 300 16px/38px 'Roboto'; padding: 0 10px; margin-right: 10px;}
+.form-callback h3 {font: normal 30px Roboto Slab; color: #454545; text-transform: none;}
+.form-callback .bottom p {font: 500 18px Roboto; color: #454545;}
+.form-callback .bottom input[type=tel] {width: 238px; height: 38px; border-radius: 5px; border: 1px solid #ddd; background: #fff; font: 300 16px/38px Roboto; padding: 0 10px; margin-right: 10px;}
 .form-callback .bottom input[type=tel]:focus {border-color: #49AF59;}
 .form-callback .bottom input[type=tel].error {border-color: #ff0000;}
 .form-callback .bottom input[type=submit] {width: 180px; height: 40px; font: bold 16px/40px PT Sans; color: #fff; background-color: #49B365; box-shadow:0px 1px 3px 1px rgba(0,0,0,0.16); border: none; cursor: pointer; border-radius: 5px; vertical-align: top;}
@@ -616,11 +612,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .modal.lp.nopadding .modal-body {padding: 0;}
 .modal.lp .separator {border-bottom: 1px solid #ddd;}
 .modal.lp p {color: #454545;}
-.modal.lp .title {font: normal 42px/1 'Roboto Slab';}
-.modal.lp .head .sub-h {font: italic 300 18px 'Roboto'; margin-bottom: 20px;}
+.modal.lp .title {font: normal 42px/1 Roboto Slab;}
+.modal.lp .head .sub-h {font: italic 300 18px Roboto; margin-bottom: 20px;}
 .modal.lp .btn-green a {height: 40px; line-height: 40px;}
-.modal.lp h4 {font: normal 21px 'Roboto Slab'; color: #454545; text-transform: none;}
-.modal.lp .text p {font: 300 18px 'Roboto'; color: #454545;}
+.modal.lp h4 {font: normal 21px Roboto Slab; color: #454545; text-transform: none;}
+.modal.lp .text p {font: 300 18px Roboto; color: #454545;}
 
 .carousel-dish {position: relative;}
 .carousel-dish .bx-controls .bx-controls-direction a {display: block; width: 50px; height: 100px; background: url(/imgin/carousel-navi.png) no-repeat; position: absolute; top: 50%; margin-top: -50px;}
@@ -630,10 +626,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', e
 .carousel-dish .bx-controls .bx-controls-direction a.bx-next:hover { background-position: -70px -120px;}
 
 .modal.lp p.font-normal {font-size: 14px;}
-.modal.lp input[type=text] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px 'Roboto'; margin-right: 10px; background: #fff;}
+.modal.lp input[type=text] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px Roboto; margin-right: 10px; background: #fff;}
 .modal.lp input[type=text]:focus {border-color: #49AF59;}
 .modal.lp input[type=text].error {border-color: #ff0000;}
-.modal.lp input[type=tel] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px 'Roboto'; margin-right: 10px; background: #fff;}
+.modal.lp input[type=tel] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px Roboto; margin-right: 10px; background: #fff;}
 .modal.lp input[type=tel]:focus {border-color: #49AF59;}
 .modal.lp input[type=tel].error {border-color: #ff0000;}
 .modal.lp input[type=submit].error {border-color: #ff0000;}
@@ -719,10 +715,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .modal.appl .modal-dialog {width: 480px;}
 .modal.appl .modal-body {padding: 20px;}
 .modal.appl h3 {font-family: RexBold, sans-serif; font-weight:bold; font-style: normal; line-height:1.4; text-transform: uppercase; font-size: 30px; margin-bottom: 0px !important;}
-.modal.appl input[type=text] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px 'Roboto'; margin-right: 10px; background: #fff;}
+.modal.appl input[type=text] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px Roboto; margin-right: 10px; background: #fff;}
 .modal.appl input[type=text]:focus {border-color: #49AF59;}
 .modal.appl input[type=text].error {border-color: #ff0000;}
-.modal.appl input[type=tel] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px 'Roboto'; margin-right: 10px; background: #fff;}
+.modal.appl input[type=tel] {width: 188px; height: 38px; border: 1px solid #ddd; border-radius: 5px; padding: 0 10px; font: 300 16px Roboto; margin-right: 10px; background: #fff;}
 .modal.appl input[type=tel]:focus {border-color: #49AF59;}
 .modal.appl input[type=tel].error {border-color: #ff0000;}
 .modal.appl input[type=submit].error {border-color: #ff0000;}
