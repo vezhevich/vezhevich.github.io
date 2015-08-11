@@ -170,6 +170,9 @@
 .popup .contact dt {width: 200px; float: left; margin-left: 30px;}
 .popup .contact .phone {font-family: Open Sans;}
 
-
-
+.modal.fade .modal-dialog {
+    -webkit-transform: translate3d(0, 1%, 0);
+    transform: translate3d(0, 1%, 0);
+    transition: transform 0.5s ease-out 0s;
+}
 
