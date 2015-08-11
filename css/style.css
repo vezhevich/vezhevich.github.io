@@ -28,7 +28,7 @@
 .promo .sub-head a {color: #fff; border-bottom: 1px dashed #fff; line-height: 1; display: inline-block; zoom: 1; *display: inline;}
 .promo .sub-head a:hover {text-decoration: none; border-color: #008BA3; color: #008BA3;}
 .promo .text {padding-top: 175px; margin-bottom: 85px;}
-.promo .programm .number {font: bold 70px/1.4 Open Sans;}
+.promo .programm .number {font: bold 70px/1.4 'Open Sans';}
 .promo .programm dl {margin-left: -80px; display: inline-block; zoom: 1; *display: inline;}
 .promo .programm dt {margin-left: 80px; margin-bottom: 0;}
 .promo .programm p {font: normal 20px/1.2 RalewayRegular; color: #fff; margin-bottom: 0;}
@@ -118,7 +118,7 @@
 
 
 #footer {height: 120px;}
-#footer p {font-family: Open Sans;}
+#footer p {font-family: 'Open Sans';}
 #footer .soc a {margin-right: 5px;}
 #footer .gp {text-align: center;}
 #footer .gp a {font-size: 15px; margin-bottom: 5px; display: block; text-decoration: underline;}
@@ -146,7 +146,7 @@
 .prog-about .head .bottom-line .result {width: 265px;}
 .prog-about .head .bottom-line .result span {color: #fff; vertical-align: top;}
 .prog-about .head .bottom-line {height: 70px; overflow: hidden;}
-.prog-about .head .bottom-line .number {font: bold 60px/1 Open Sans;}
+.prog-about .head .bottom-line .number {font: bold 60px/1 'Open Sans';}
 .prog-about .head .bottom-line .text {font-size: 20px; line-height: 1.2;}
 .prog-about .head .bottom-line .soc a {margin-left: 10px; display: inline-block; zoom: 1; *display: inline;}
 .prog-about p {font-size: 18px;}
@@ -162,13 +162,13 @@
 
 .popup .form dl {margin-left: -25px;}
 .popup .form dt {float: left; width: 280px; margin-left: 25px;}
-.popup .form input {width: 258px; height: 34px; border: 1px solid #1A5725; border-radius: 18px; padding: 0 10px; font: normal 18px Open Sans;}
+.popup .form input {width: 258px; height: 34px; border: 1px solid #1A5725; border-radius: 18px; padding: 0 10px; font: normal 18px 'Open Sans';}
 .popup .form input:focus {outline:none; /*or outline-color:#FFFFFF; if the first doesn't work*/ border:1px solid #48A521; -webkit-box-shadow: 0px 0px 4px 0px #48A521; box-shadow: 0px 0px 4px 0px #48A521;}
 .popup .form .helper {font-size: 18px;}
 
 .popup .contact {margin-left: -30px;}
 .popup .contact dt {width: 200px; float: left; margin-left: 30px;}
-.popup .contact .phone {font-family: Open Sans;}
+.popup .contact .phone {font-family: 'Open Sans';}
 
 .popup .map {width: 958px; overflow: hidden;}
 
