@@ -171,8 +171,23 @@
 .popup .contact .phone {font-family: Open Sans;}
 
 .modal.fade .modal-dialog {
-    -webkit-transform: translate3d(0, 1%, 0);
-    transform: translate3d(0, 1%, 0);
-    transition: transform 0.5s ease-out 0s;
+  -webkit-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
 }
+
+.modal.fade.center .modal-dialog {
+  -webkit-transform: translate(0, 40%);
+  -ms-transform: translate(0, 40%);
+  transform: translate(0, 40%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
 
