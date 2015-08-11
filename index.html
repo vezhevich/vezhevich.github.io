@@ -1,374 +1,634 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Орда</title>
+        <title>Диамед Байкал</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<!--<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>!-->
-		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
- 		<script type="text/javascript" src="./js/site.js"></script>
+        <link href="/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="/css/custom.css" rel="stylesheet" type="text/css">
+		<link href="/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
  		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-		<link rel="stylesheet" type="text/css" href="./css/component.css" />
-		<script src="./js/modernizr.custom.js"></script>
-		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
-		<script type="text/javascript" src="./js/jquery.the-modal.js"></script>
- 		<link rel="stylesheet" type="text/css" href="the-modal.css" media="all" />	
- 		<script type="text/javascript">
-			jQuery(function($){
-				// bind event handlers to modal triggers
-				$('body').on('click', '.trigger', function(e){
-					e.preventDefault();
-					$('#terms-of-service').modal().open();
-				});
-				$('.modal .tr').on('click', function(e){
-					e.preventDefault();
-					$.modal().close();
-					$('#terms-of-service2').modal().open();
-				});	
-				// attach modal close handler
-				$('.modal .close').on('click', function(e){
-					e.preventDefault();
-					$.modal().close();
-				});
-
-				// below isn't important (demo-specific things)
-				$('.modal .more-toggle').on('click', function(e){
-					e.stopPropagation();
-					$('.modal .more').toggle();
-				});
-			});
-		</script>
+ 		<!--[if IE 8]><link href="/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
     </head>
 	<body>
 		<div id="container">
 			<div id="header">
-				<div class="shadow"></div>
-				<div class="centered">
-					<div class="address fl-l">
-						<p>г. Улан-Удэ, Пушкина ул.4а, </p>
-						<a href="">На карте</a>
-					</div>
-					<div class="logo fl-l"><a href="/"><img src="/img/logo.png" alt=""></a></div>
-					<div class="contact fl-r">
-						<p>Заказ столов</p>
-						<p class="phone"><span>+7 3012</span> 44-38-38</p>
-					</div>
-					<div class="soc-icon fl-r">
-						<a class="vk fl-l" href=""></a>
-						<a class="insta fl-r" href=""></a>
+				<div class="centered clearfix">
+					<div class="fl-l logo"><a href="/"><img src="/img/logo.png" alt=""></a></div>
+					<div class="fl-r navi">
+						<dl class="clearfix">
+							<dt><a class="anchor link-js" href="#program">Программы</a></dt>
+							<dt><a class="anchor link-js" href="#location">Место</a></dt>
+							<dt><a class="anchor link-js" href="#feedback">Отзывы</a></dt>
+							<dt><a data-toggle="modal" data-target="#myModal7" class="link-js" href="#">Контакты</a></dt>
+						</dl>
 					</div>
 				</div>
 			</div>
 			<div id="content">
-				<div class="promo mb40">
-					<div class="white-shadow"></div>
-					<div class="gradient"></div>
-					<div class="wrapper centered">
-						<div class="navigation cols cols3">
-							<dl class="oh">
-								<dt><a href="kitchen.html">КУХНЯ</a></dt>
-								<dt><a href="peoples.html">ПОСЕТИТЕЛИ</a></dt>
-								<dt><a href="place.html">МЕСТО</a></dt>
+				<div class="promo">
+					<div class="centered">
+						<div class="text-center text">
+							<p class="head">Очищение организма </p>
+							<p class="sub-head">на берегу <a href="#">Байкала</a>, самого чистого озера в мире</p>
+						</div>
+						<div class="cols cols4 programm text-center">
+							<dl class="clearfix">
+								<dt>
+									<p class="number">13</p>
+									<p>киллограм можно сбросить за 6 дней </p>
+								</dt>								
+								<dt>
+									<p class="number">7–14</p>
+									<p>дней длится программа голодания</p>
+								</dt>								
+								<dt>
+									<p class="number">37</p>
+									<p>киллограм можно сбросить за 6 дней </p>
+								</dt>								
+								<dt>
+									<p class="number">246</p>
+									<p>киллограм можно сбросить за 6 дней </p>
+								</dt>
 							</dl>
 						</div>
-						<div class="carousel-image pos-rel mb50">
-							<div class="c1"></div>
-							<div class="c2"></div>
-							<div class="carousel">
-								<dl id="carousel">
-									<dt>
-										<div class="date fl-l">25 <span>СЕНТЯБРЯ</span></div>
-										<div class="img fl-l"><img src="/img/carousel.jpg" alt=""></div>
-										<div class="text fl-l">
-											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ</p>
-											<p>Последний день Весны. Проводим ее достойно. Тем более, солнце светит и суббота-отличное сочетание для незабываемого отдыха.</p>
-										</div>
-									</dt>
-								</dl>
-							</div>
+						<div class="text-center btn white">
+							<a href="#">Оставить заявку</a>
 						</div>
-						<h2 class="text-center mb0">ОРДА — ресторан монгольской и бурятской кухни</h2>
-						<p class="sub-h text-center"> ORDA Restaurant&Club - пространство, где чтят Традиции и чувствуют Современность, стремятся сохранить Аутентичность и двигаться в Прогресс</p>
-						<div class="cols cols3 advantages">
-							<dl class="oh">
+					</div>
+				</div>
+				<div class="problem centered">
+					<h2 class="text-center"><span class="green">Эффективный способ</span> избавиться от всего лишнего </h2>
+					<dl class="clearfix">
+						<dt>
+							<div class="icon i1"></div>
+							<p class="font-big">Стресс и усталость</p>
+							<p class="font-normal">Перезагрузка от ежедневных источников стресса и позволяет отключиться от проблем.</p>
+						</dt>						
+						<dt>
+							<div class="icon i2"></div>
+							<p class="font-big">Лишний вес</p>
+							<p class="font-normal">Очищение организма от шлаков и токсинов приводит к нормализации веса и обмена веществ.</p>
+						</dt>						
+						<dt>
+							<div class="icon i3"></div>
+							<p class="font-big">Курение</p>
+							<p class="font-normal">Уже после нескольких дней голодания тяга к курения ослабевает, а к 7-10 дню полностью исчезает.</p>
+						</dt>						
+						<dt>
+							<div class="icon i4"></div>
+							<p class="font-big">Бесплодие</p>
+							<p class="font-normal">Процедуры в комплексе перестраивают работу организма и нормализуют гормональный фон.</p>
+						</dt>						
+						<dt>
+							<div class="icon i5"></div>
+							<p class="font-big">Хронические заболевания</p>
+							<p class="font-normal">Отсутствие пищи дает организму заняться самовосстановлением.</p>
+						</dt>
+					</dl>
+				</div>
+				<div class="text-center mt30 mb30">
+					<div class="wave"></div>
+				</div>
+				<div class="layout w770 clearfix centered mb100">
+					<div class="l-col">
+						<h2><span class="green">Разгрузочно-диетическая терапия</span> — естественное оздоровление организма </h2>
+						<p class="font-medium">
+							В результате вы получите свежий заряд жизненных сил и хорошее настроение. У вас  не только улучшится самочувствие, но также уйдет лишний вес, появится ощущение легкости и бодрости. Вы забудете о стрессе и хронических заболеваниях. Все это на фоне уникальной природы Байкала.
+						</p>
+					</div>
+					<div class="r-col"><img src="/img/cedar.jpg" alt=""></div>
+				</div>
+				<div id="program" class="programm-list pt60 pb60 mb50">
+					<div class="centered">
+						<h2 class="text-center mb30">Программы нашего центра</h2>
+						<div class="carousel">
+							<dl id="carousel" class="clearfix">
 								<dt>
-									<img src="/img/i1.png" alt="">
-									<p>Пространство, где чтят традиции и чувствуют современность, </p>
+									<div class="img" style="background:url(/img/prog1.jpg) no-repeat center 35px">
+										<img src="/img/mask.png" alt="">
+									</div>
+									<p><a href="" data-toggle="modal" data-target="#myModal" class="link-js">Избавление от лишнего веса</a></p>
 								</dt>								
 								<dt>
-									<img src="/img/i2.png" alt="">
-									<p>Стильная живая площадка, клуб по интересам вечером</p>
+									<div class="img" style="background:url(/img/prog2.jpg) no-repeat center 35px">
+										<img src="/img/mask.png" alt="">
+									</div>
+									<p><a href="" class="link-js">Очищение и омоложение организма</a></p>
 								</dt>								
 								<dt>
-									<img src="/img/i3.png" alt="">
-									<p>Кухня fusion c национальным монгольским колоритом</p>
+									<div class="img" style="background:url(/img/prog3.jpg) no-repeat center 35px">
+										<img src="/img/mask.png" alt="">
+									</div>
+									<p><a href="" class="link-js">Лечение бесплодия</a></p>
 								</dt>
 							</dl>
 						</div>
 					</div>
 				</div>
-				<div class="centered">
-					<div class="p1"></div>
-					<div class="p2"></div>
-					<div class="p3"></div>
-					<div class="layout w300i info mb30">
-						<h2 class="text-center black mb0">Наше меню</h2>
-						<p class="sub-h text-center black">Лучшие традиционные блюда в современном исполнении</p>
-						<div class="l-col">
-							<h3 class="black">СОВЕТУЕМ ПОПРОБОВАТЬ</h3>
-							<div class="carousel2 mb30">
-								<div id="bx-pager">
-									<div class="wrapper">
-										<table>
-											<tbody>
-												<tr>
-													<td><a data-slide-index="0" href=""><img src="/img/carousel2-mini.jpg" alt=""><span class="border"></span><span class="zoom"></span></a>
-													</td>
-													<td><a data-slide-index="1" href=""><img src="/img/carousel2-mini2.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
-													<td><a data-slide-index="2" href=""><img src="/img/carousel2-mini3.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
-													<td><a data-slide-index="3" href=""><img src="/img/carousel2-mini.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
-													<td><a data-slide-index="4" href=""><img src="/img/carousel2-mini3.jpg" alt=""><span class="border"></span><span class="zoom"></span></a></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<dl id="carousel2">
-									<dt>
-										<img src="/img/carousel2.jpg" alt="">
-										<div class="text">
-											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 1</p>
-											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
-											<p class="in">1/350</p>
-											<p class="cost">400</p>
-										</div>
-									</dt>									
-									<dt>
-										<img src="/img/food1.jpg" alt="">
-										<div class="text">
-											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 2 </p>
-											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
-											<p class="in">1/350</p>
-											<p class="cost">400</p>
-										</div>
-									</dt>									
-									<dt>
-										<img src="/img/food2.jpg" alt="">
-										<div class="text">
-											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 3</p>
-											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
-											<p class="in">1/350</p>
-											<p class="cost">400</p>
-										</div>
-									</dt>									
-									<dt>
-										<img src="/img/food3.jpg" alt="">
-										<div class="text">
-											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 4</p>
-											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
-											<p class="in">1/350</p>
-											<p class="cost">400</p>
-										</div>
-									</dt>										
-									<dt>
-										<img src="/img/food4.jpg" alt="">
-										<div class="text">
-											<p class="title">ЖАРЕНАЯ КАРТОШКА С МЯСОМ 5</p>
-											<p class="teaser">Картошка, жаренная на сковороде с мясом по-домашнему</p>
-											<p class="in">1/350</p>
-											<p class="cost">400</p>
-										</div>
-									</dt>									
-								</dl>
-							</div>
-							<div class="button text-center"><a href="">все меню</a></div>
+				<div class="cons">
+					<div class="centered">
+						<div class="text-center pt35">
+							<h2 class="mb0">Персональная консультация</h2>
+							<div class="wave mt30 mb30"></div>
+							<p class="font-medium mb30">Врач-диетолог нашего центра проконсультирует вас и подберет подходящую программу. Узнайте, на что вы способны.</p>
+							<div class="btn green"><a href="">Записаться</a></div>
 						</div>
-						<div class="r-col insta">
-							<h3 class="black">INSTAGRAM МЕНЮ</h3>
-							<p class="black">Участвуй в конкурсе на лучшее фото еды в нашем ресторане. Поставьте хештег <b>#ORDA_UU</b> и ждите результата.</p>
-							<p class="black"><b class="font-big">Победители</b></p>
-							<dl>
-								<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>								
-								<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>								
-								<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
-								<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>
+					</div>
+				</div>
+				<div id="location" class="house">
+					<div class="centered pt30 pb35">
+						<div class="text-center">
+							<img class="mb30" src="/img/baikal-logo.png" alt="">
+							<p class="head">Уединенный уголок на</br> берегу Байкала</p>
+						</div>
+						<div class="cols cols5">
+							<dl class="clearfix">
+								<dt>
+									<div class="wrap">
+										<a data-toggle="modal" data-target="#myModal3" href="" class="link-js">Наблюдение специалистами центра «Диамед»</a>
+									</div>
+								</dt>								
+								<dt>
+									<div class="wrap">
+										Гарантированные результаты лечения
+									</div>
+								</dt>								
+								<dt>
+									<div class="wrap">
+										Благоустроенные уютные номера
+									</div>
+								</dt>								
+								<dt>
+									<div class="wrap">
+										Здоровое питание от нашего диет-повара
+									</div>
+								</dt>								
+								<dt>
+									<div class="wrap">
+										Уникальная природа Байкала,  10 минут до берега
+									</div>
+								</dt>
 							</dl>
-							<div class="button text-center"><a href="">ПОДРОБНЕЕ</a></div>
 						</div>
-						<div class="clear"></div>
 					</div>
 				</div>
-				<div class="patern_1">
-					<div class="pa5"></div>
+				<div class="pattern1 service pt70 pb70 mb50">
 					<div class="centered">
-						<div class="p4"></div>
-						<div class="social">
-							<h2 class="text-center mb0">наши гости</h2>
-							<p class="sub-h text-center">Ресторан "Орда" стал любимым для многих жителей и гостей города!</p>
-							<div class="layout text-white w600">
-								<div class="l-col instagram">
-									<div class="oh">
-										<img src="/img/insta.png" class="fl-l mr30" alt="">
-										<p>Выложи селфи с <b class="big-text">#ORDALOOK</b>, набери лайки и выиграй в этом месяце приз от ресторана</p>
+						<div class="text-center">
+							<h2 class="mb0">Вам не станет скучно</h2>
+							<div class="wave mt30 mb30"></div>
+						</div>
+						<dl class="clearfix list mb50">
+							<dt>
+								<i></i>
+								<a data-toggle="modal" data-target="#myModal4" href="">
+									<div class="img"><img src="/img/service1.jpg" alt=""></div>
+									<div class="text">
+										<p>Спа-процедуры</p>
 									</div>
-									<div class="b-dotted mb30"></div>
-									<dl>
-										<dt class="w260 best-look">
-											<h3>ЛУЧШИЙ ЛУК НЕДЕЛИ</h3>
-											<img src="/img/look.jpg" alt="">
-											<p class="date">25 июня</p>
-											<p class="name">Inna C.</p>
-											<p class="like">25</p>
-										</dt>
-										<dt class="w300 insta">
-											<h3>Наши ПОСЕТИТЕЛИ</h3>
-											<dl>
-												<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in4.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in5.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in6.jpg" alt=""></a></dt>								
-												<dt><a href=""><img src="/img/in1.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in2.jpg" alt=""></a></dt>
-												<dt><a href=""><img src="/img/in3.jpg" alt=""></a></dt>
-											</dl>
-										</dt>
-									</dl>
-								</div>
-								<div class="r-col foursquare">
-									<img src="/img/four.png" alt="">
-									<p>Зачекинтесь в нашем ресторане с фотографией, стань мэром и получай кофе в подарок.</p>
-									<div class="b-dotted mb30"></div>
-									<h3 class="mayor">МЭР НАШЕГО ЗАВЕДЕНИЯ</h3>
-									<div class="item-list mb20 oh">
-										<div class="img"><img src="/img/user.jpg" alt=""></div>
-										<div class="text">
-											<p class="title">Inna C. </p>
-											<p>3 чекинов за последние 60 дней</p>
-										</div>
+								</a>
+							</dt>							
+							<dt>
+								<i></i>
+								<a href="">
+									<div class="img"><img src="/img/service2.jpg" alt=""></div>
+									<div class="text">
+										<p>Творческие мастер-классы</p>
 									</div>
-									<p class="font-big"><b>Подсказки посетителей</b></p>
-									<p>Наконец то на элеваторе появилось приличное заведение! Декораторы молодцы! Кресла зачет!!!</p>
-									<p class="name">Seseg Radnaeva </p>
-									<p class="like">25</p>
-								</div>
-								<div class="clear"></div>
+								</a>
+							</dt>							
+							<dt>
+								<i></i>
+								<a href="">
+									<div class="img"><img src="/img/service3.jpg" alt=""></div>
+									<div class="text">
+										<p>Экскурсии и прогулки</p>
+									</div>
+								</a>
+							</dt>
+						</dl>
+						<div class="text-center">
+							<h2 class="mb0"><a data-toggle="modal" data-target="#myModal2" class="link-js" href="">10 уютных номеров</a> со всеми удобствами</h2>
+							<div class="wave mt30 mb30"></div>
+						</div>
+					</div>
+					<div class="rooms mb50">
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+						<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					</div>
+					<div class="text-center btn green"><a href="">Подробнее</a></div>
+				</div>
+				<div id="feedback" class="centered feedback mb70">
+					<div class="text-center">
+						<h2 class="mb0">Результаты наших посетителей</h2>
+						<div class="wave mt30 mb30"></div>
+					</div> 
+					<div class="feedback-list">
+						<div class="clearfix item">
+							<div class="img fl-l mr50"><img src="/img/user.jpg" alt=""></div>
+							<div class="text oh">
+								<p class="name">Петрова Ирина</p>
+								<p class="result"><span class="green">Результат:</span> сбросила 13 килограмм за 6 дней, бросила курить </p>
+								<p>Результат превзошел все мои ожидания... После рождения ребенка я сильно прибавила в весе. Постоянно в моей голове был вопрос «Как похудеть???» да еще, что бы это занимало немного времени, но при этом было эффективно. Поэтому, когда я услышала от знакомой о РДЦ «Диамед», сразу записалась. Приветливый администратор и заботливые инструкторы всё показали, рассказали, научили...</p>
 							</div>
-							<div class="button-inner text-center"><a href="">ПОДРОБНЕЕ</a></div>
+						</div>						
+						<div class="clearfix item">
+							<div class="img fl-l mr50"><img src="/img/user.jpg" alt=""></div>
+							<div class="text oh">
+								<p class="name">Петрова Ирина</p>
+								<p class="result"><span class="green">Результат:</span> сбросила 13 килограмм за 6 дней, бросила курить </p>
+								<p>Результат превзошел все мои ожидания... После рождения ребенка я сильно прибавила в весе. Постоянно в моей голове был вопрос «Как похудеть???» да еще, что бы это занимало немного времени, но при этом было эффективно. Поэтому, когда я услышала от знакомой о РДЦ «Диамед», сразу записалась. Приветливый администратор и заботливые инструкторы всё показали, рассказали, научили...</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="patern_2">
+				<div class="question pt60 pb60 mb50">
 					<div class="centered">
-						<div class="pa6"></div>
-						<div class="pa7"></div>
-						<div class="pa8"></div>
-						<h2 class="text-center black">НАШ ИНТЕРЬЕР</h2>
-						<ul class="grid effect-2" id="grid">
-							<li><a href=""><img src="/img/g1.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g2.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g3.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g4.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g5.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g6.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g7.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g8.jpg" alt=""></a></li>
-							<li><a href=""><img src="/img/g9.jpg" alt=""></a></li>
-						</ul>
-						<div class="button text-center"><a href="">подробнее</a></div>
+						<div class="text-center">
+							<h3 class="mb0">Остались вопросы?</h3>
+							<div class="wave mt30 mb30"></div>
+							<p class="font-medium mb30">Получите бесплатную консультацию. Наш специалист ответит на все ваши вопросы.</p>
+							<div class="btn green"><a data-toggle="modal" data-target="#myModal5" href="">Записаться</a></div>
+						</div>
 					</div>
 				</div>
-				<div id="map" style="width:100%; height:450px"><div class="shadow"></div></div>
-				<div class="group-buttons centered pt50 pb30">
-					<div class="cols cols3">
-						<dl>
-							<dt>&nbsp;</dt>
-							<dt><a href="" class="trigger">Заказать столик</a></dt>
-							<dt><p></p><p class="black">Закажите столик, мы свяжемся с вами в блюижайшее время для уточнения деталей!</p></dt>
-						</dl>
-						<div class="clear"></div>
+				<div class="layout w810 clearfix centered seo mb50">
+					<div class="l-col"><img class="ml40" src="/img/water.jpg" alt=""></div>
+					<div class="r-col">
+						<h1><span class="green">Озеро Байкал</span> — жемчужина Сибири</h1>
+						<p>Уникальная природа озера , реликтовый лес,  песчаный пляж и чистейший воздух — на сотни километров здесь нет никаких промышленных объектов, отравляющих атмосферу. </p>
+						<p>175 километров или 2,5 часа езды на машине от г.Улан-Удэ, и вы уже наедине с природой. </p>
+						<div class="btn green"><a href="">Хочу к вам</a></div>
 					</div>
 				</div>
+				<div class="gallery">
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+					<div class="owl-item"><a href=""><img src="/img/room1.jpg" alt=""></a></div>
+				</div>
+				<div id="map" style="width:100%; height:540px"></div>
 			</div>
-			<div id="footer">
-				<div class="centered">
-					<div class="logo"><a href=""><img src="/img/f-logo.png" alt=""></a></div>
-					<div class="navi">
-						<dl>
-							<dt><a href="">КУХНЯ</a></dt>
-							<dt><a href="">ПОСЕТИТЕЛИ</a></dt>
-							<dt><a href="">МЕСТО</a></dt>
-						</dl>
-					</div>
-					<div class="soc-icon">
-						<a class="vk fl-l" href=""></a>
-						<a class="insta fl-r" href=""></a>
-					</div>
-					<div class="gp"><a href="http://garantpark.com/">Разработка сайта <img src="/img/gp.png" alt=""> «Гарантпарк»</a></div>
-					<div class="address">
-						<p>г. Улан-Удэ, Пушкина ул.4а, </p>
-						<a href="">На карте</a>
-					</div>
-					<div class="contact">
-						<p class="phone"><i>Заказ столов</i><span>+7 3012</span> 44-38-38</p>
-					</div>
-				</div>
-			</div>
+			<div class="footer-push"></div>
 		</div>
-		<script src="./js/masonry.pkgd.min.js"></script>
-		<script src="./js/imagesloaded.js"></script>
-		<script src="./js/classie.js"></script>
-		<script src="./js/AnimOnScroll.js"></script>
-		<script>
-			new AnimOnScroll( document.getElementById( 'grid' ), {
-				minDuration : 0.4,
-				maxDuration : 0.7,
-				viewportFactor : 0.2
-			} );
-		</script>
-		<script type="text/javascript">
-		    var map;
-
-		    DG.then(function () {
-		        map = DG.map('map', {
-		            "center": [51.8398,107.5964],
-		            "zoom": 15,
-		            "scrollWheelZoom" : ''
-		        });
-		       DG.marker([51.8398,107.5964]).addTo(map);
-		    });
-		</script>
-		<div class="modal" id="terms-of-service" style="display: none">
-			<div class="pos-rel p20">
-		        <a href="#" class="close"></a>
-				<h3 class="black text-center">ЗАКАЗ СТОЛА</h3>
-				<p class="title text-center">Заполните короткую форму, и наш администратор свяжется с вами в течении часа для уточнения деталей.</p>
-				<div class="text-center mb30"><input type="text" placeholder="Имя"></div>
-				<div class="text-center mb30"><input type="text" placeholder="Телефон"></div>
-				<div class="button text-center"><input class="tr" type="submit" value="Отправить"></div>
+		<div id="footer">
+			<div class="centered clearfix pt35">
+				<div class="logo fl-l mr60">
+					<a href="#"><img src="/img/logof.png" alt=""></a>
+				</div>
+				<div class="phone fl-l mr60">
+					<p class="font-medium mb5">+7 (3012) 44-55-66</p>
+					<p class="font-medium"><a href="" class="link-js">Заказать обратный звонок</a></p>
+				</div>
+				<div class="fl-l mail mr60">
+					<a class="font-medium" href="mailto:info@diamed-rdt.ru">info@diamed-rdt.ru</a>
+				</div>
+				<div class="fl-l soc">
+					<a href=""><img src="/img/vk.png" alt=""></a>
+					<a href=""><img src="/img/ok.png" alt=""></a>
+				</div>
+				<div class="fl-r gp">
+					<a href="http://garantpark.com/">Разработка сайта</a>
+					<img src="/img/gp.png" alt="">
+				</div>
 			</div>
+		</div>	
+		<div class="popup prog-about modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+				<div class="head">
+					<div class="p30">
+						<div class="top-line">
+							<p class="title">Избавление </br>от лишнего веса</p>
+						</div>
+						<div class="bottom-line clearfix">
+							<div class="fl-l result clearfix mr30">
+								<span class="number fl-l mr10">13</span>
+								<span class="text oh">киллограм можно сбросить за 6 дней </span>
+							</div>
+							<div class="fl-l btn white inner">
+								<a href="">Хочу такой результат</a>
+							</div>
+							<div class="fl-r soc">
+								<a href=""><img src="/img/vki.png" alt=""></a>
+								<a href=""><img src="/img/oki.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pl30 pr30 pt40 pb40">
+					<h2 class="mb0">Сбросьте весь лишний груз</h2>
+					<div class="wave mt30 mb30"></div>
+					<p>Высокий темп жизни, большой поток информации, простаивание в пробках на дорогах, отсутствие времени на себя – все это признаки современного общества не добавляют здоровья и счастья людям. Как результат – все большее количество заболеваний, как хронических, так и регулярных инфекционных, хроническая усталость, постоянная раздраженность, депрессия, лишний вес.</p>
+					<h4>Показания</h4>
+					<ul>
+						<li>Стресс</li>
+						<li>Депрессивные состояния</li>
+						<li>Хроническая усталость</li>
+					</ul>
+				</div>
+				<div class="cons">
+					<div class="centered">
+						<div class="text-center pt35">
+							<h2 class="mb0">Персональная консультация</h2>
+							<div class="wave mt30 mb30"></div>
+							<p class="font-medium mb30">Врач-диетолог нашего центра проконсультирует вас и подберет подходящюю программу. Узнайте, на что вы способны.</p>
+							<div class="btn green"><a href="">Записаться</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="pl30 pr30 pt40 pb40">
+					<h2 class="mb0">Карта лечебных процедур</h2>
+					<div class="wave mb30 mt30"></div>
+					<p>Мы предлагаем вам устроить себе настоящую перезагрузку! Кристальный воздух озера Байкал, удивительная природа, квалифицированные специалисты, специальная разгрузочно-диетическая терапия, приятные спа-процедуры (фито-бочка, лечебные ванны и грязи, массаж, и др), интересные творческие мастер-классы, экскурсии и прогулки помогут вам вернуться к себе. Вернуть себе силы, здоровье, энергию и блеск в глазах.</p>
+					<table>
+						<tbody>
+							<tr>
+								<th>Процедура</th>
+								<th>7 дней</th>
+								<th>10 дней</th>
+								<th>14 дней</th>
+							</tr>
+							<tr>
+								<td>Медицинское сопровождение </td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr>
+								<td>Врачебный прием</td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr>
+								<td>Период лечебного голодания</td>
+								<td>3-5</td>
+								<td>5-7</td>
+								<td>7-10</td>
+							</tr>							
+							<tr>
+								<td>Медицинское сопровождение </td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr>
+								<td>Врачебный прием</td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr>
+								<td>Врачебный прием</td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr>
+								<td>Период лечебного голодания</td>
+								<td>3-5</td>
+								<td>5-7</td>
+								<td>7-10</td>
+							</tr>							
+							<tr>
+								<td>Медицинское сопровождение </td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr>
+								<td>Врачебный прием</td>
+								<td>7</td>
+								<td>10</td>
+								<td>14</td>
+							</tr>							
+							<tr class="last">
+								<td>Период лечебного голодания</td>
+								<td>3-5</td>
+								<td>5-7</td>
+								<td>7-10</td>
+							</tr>							
+							<tr class="sum">
+								<td>Стоимость</td>
+								<td>35 000 руб. <p class="font-normal">7 дней</p></td>
+								<td>55 000 руб. <p class="font-normal">10 дней</p></td>
+								<td>75 000 руб. <p class="font-normal">14 дней</p></td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="helper"><sup>*</sup>Имеются противопоказания, необходима консультация специалиста. Рекомедация по возрасту от 14 лет.</p>
+				</div>
+				<div class="gallery-popup m30">
+					<dl class="clearfix">
+						<dt><a href=""><img src="/img/g1.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g2.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g3.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g4.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g5.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+					</dl>
+				</div>
+				<div class="question pt30 pb50">
+					<div class="text-center">
+						<h3 class="mb0">Остались вопросы?</h3>
+						<div class="wave mt30 mb30"></div>
+						<p class="font-medium mb30">Получите бесплатную консультацию. Наш специалист ответит на все ваши вопросы.</p>
+						<div class="btn green"><a href="">Записаться</a></div>
+					</div>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>			
+		<div class="popup modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+				<div class="pl30 pr30 pt40 pb40">
+					<h2 class="mb0">10 уютных номеров со всеми удобствами </h2>
+					<div class="wave mt30 mb30"></div>
+					<p>Благоустроенные 1-2-3-местные номера с туалетом и раковиной.</p> 
+					<p>Горячая, холодная вода и отопление.  5 номеров дополнительно оснащены душевыми кабинами.</p>
+				</div>
+				<div class="gallery-popup m30">
+					<dl class="clearfix">
+						<dt><a href=""><img src="/img/g1.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g2.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g3.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g4.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g5.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+					</dl>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>			
+		<div class="popup modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+				<div class="pl30 pr30 pt40 pb40">
+					<h2 class="mb0">Специалисты центра «Диамед»</h2>
+					<div class="wave mt30 mb30"></div>
+					<div class="clearfix">
+						<div class="img fl-l mr30"><img src="/img/spec.jpg" alt=""></div>
+						<div class="text oh">
+							<p>На протяжении всего курса вам будет оказывать поддержку врач РДТ, психотерапевт <span class="green">Модонова Лилия Алексеевна</span>.</p>
+							<p>Стаж работы: 10 лет.</p>
+						</div>
+					</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		</div>
+		<div class="popup modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+				<div class="pl30 pr30 pt40 pb40">
+					<h2 class="mb0">Спа-процедуры</h2>
+					<div class="wave mt30 mb30"></div>
+					<p>В программу включены приятные SPA-процедуры - фито-ванна «Табан-аршан», фитобочка, русская баня, лечебные грязевые ванны, массаж, гидромассаж и др. Вы почувствуете прилив жизненных сил, баланс энергии и умиротворение.</p> 
+				</div>
+				<div class="gallery-popup m30">
+					<dl class="clearfix">
+						<dt><a href=""><img src="/img/g1.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g2.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g3.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g4.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g5.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+						<dt><a href=""><img src="/img/g6.jpg" alt=""></a></dt>
+					</dl>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="popup modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+				<div class="pl30 pr30 pt40 pb40">
+					<div class="text-center">
+						<h2 class="mb0">Записаться на консультацию к диетологу</h2>
+						<div class="wave mt30 mb30"></div>
+						<p class="mb30">Врач-диетолог нашего центра проконсультирует вас и подберет подходящую программу.</br>Узнайте, на что вы способны.</p>
+					</div>
+					<div class="form mb40">
+						<dl class="clearfix">
+							<dt>
+								<p class="helper">Ваше имя</p>
+								<input type="text">
+							</dt>							
+							<dt>
+								<p class="helper">Номер телефона</p>
+								<input type="tel">
+							</dt>							
+							<dt>
+								<p class="helper">E-mail</p>
+								<input type="email">
+							</dt>
+						</dl>
+					</div>
+					<div class="text-center btn"><input data-toggle="modal" data-target="#myModal6" type="submit" value="Отправить"></div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		</div>						
+		<div class="popup modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body text-center">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+		        <div class="p30 text-center">
+		        	<img src="/img/cedar.jpg" alt="">
+					<h2 class="mb0">Ваша заявка отправленна</h2>
+					<div class="wave mt30 mb30"></div>
+					<p>Мы свяжемся с вами в кратчайшее время.</p>
+					<p><a data-dismiss="modal" href="" class="link-js">Закрыть</a></p>
+		        </div>
+			  </div>
+		    </div>
+		  </div>
 		</div>		
-		<div class="modal inner" id="terms-of-service2" style="display: none">
-			<div class="pos-rel p20">
-		        <a href="#" class="close"></a>
-		        <div class="text-center mt20"><img src="/img/horse.png" alt=""></div>
-				<h3 class="black text-center">ВАША ЗАКАЗ ОТПРАВЛЕН</h3>
-				<p class="title text-center">Мы перезвоним вам в течении часа.</p>
-				<div class="button text-center"><a href="/">На сайт</a></div>
-			</div>
-		</div>
+		<div class="popup modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+		        <div class="pl30 pr30 pt30 text-center">
+					<h2 class="mb0">Контактная информация</h2>
+					<div class="wave mt30 mb30"></div>
+		        </div>
+				<div class="contact pl30 pr30 pb30">
+					<dl class="clearfix">
+						<dt>
+							<p class="font-medium mb0">г.Улан-Удэ,</br> ул. Хахалова, 12а</p>
+						</dt>
+						<dt>
+							<p class="font-medium mb5 phone">+7 (3012) 55‒21‒41</p>
+							<p class="font-medium mb0"><a href="" class="link-js">Обратный звонок</a></p>
+						</dt>
+						<dt>
+							<p class="font-medium mb0"><a href="mailto:info@diamed-rdt.ru">info@diamed-rdt.ru</a></p>
+						</dt>
+						<dt class="text-right">
+							<div class="btn green"><a href="">Записаться</a></div>
+						</dt>
+					</dl>
+				</div>
+				<img src="/img/map.jpg" alt="">
+			  </div>
+		    </div>
+		  </div>
+		</div>												
+		<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>				
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="/js/jquery.bxslider.js"></script>	
+		<script type="text/javascript" src="/js/owl.carousel.js"></script>	
+ 		<script type="text/javascript" src="/js/site.js"></script>
+ 		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+ 		<script type="text/javascript">
+ 		    var map;
+
+ 		    DG.then(function () {
+ 		        map = DG.map('map', {
+ 		            center: [54.98, 82.89],
+ 		            scrollWheelZoom: '',
+ 		            zoom: 13
+ 		        });
+
+ 		        DG.marker([54.98, 82.89]).addTo(map);
+ 		    });
+ 		</script>
 	</body>
 </html>
