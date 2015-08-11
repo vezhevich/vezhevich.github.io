@@ -16,9 +16,6 @@
     font-weight: normal;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic);
-
-
 html {height: 100%; -webkit-font-smoothing: antialiased;}
 
 body {font-family: RalewayRegular, sans-serif; height: 100%;}
