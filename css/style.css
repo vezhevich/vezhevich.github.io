@@ -34,10 +34,10 @@
 .video {background-color: #133454; padding: 50px 0;}
 .video .center {width: 600px; margin: 0 auto;}
 
-.spec {background: #D6E1E6; padding: 50px 0; margin-bottom: 60px;}
+.spec {padding: 50px 0; margin-bottom: 60px;}
 .spec .col {margin-left: -2.5%;}
 .spec .col > dt {width: 30.83%; margin-left: 2.5%; margin-bottom: 50px; float: left; padding: 0 20px; box-sizing: border-box;}
-.spec .col > dt .wrapper {border: 1px solid #CCC; background: #fff;}
+.spec .col > dt .wrapper {border: 1px solid #CCC; background: #fff; position: relative;}
 .spec dl dt .img img {max-width: 100%;}
 .spec dl dt .in {font: bold 16px/1.4 PT Sans; color: #454545; margin-bottom: 0;}
 .spec dl dt .cost {font: bold 21px/1 PT Sans; color: #0066B7; margin-bottom: 0;}
@@ -55,6 +55,7 @@
 .spec dl dt .btn a:hover {background: #0067B7; color: #fff;}
 .spec dl dt .finished {color: #666; margin-bottom: 0;}
 .spec dl dt sup {font-size: 65%;}
+.spec .favorite {position: absolute; top: 0; left: 0; background: url(/img/favorite-icon.png) no-repeat; width: 70px; height: 70px;}
 
 .spec .head span {background-image: url(/img/house-icon.png); background-repeat: no-repeat; display: block; width: 100%; background-position: center 0; margin-bottom: 10px;}
 .spec .head .econom {height: 30px;}
@@ -82,14 +83,14 @@
     counter-reset:li; /* Инициализируем счетчик */
     list-style:none; /* Отменяем нумерацию установленную по умолчанию */
   }
-  .timeline li {
+  .timeline > li {
       position:relative; /* Создаем контекст для позиционирования элементов */
       margin:0 0 6px 2em; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
       padding:4px 8px;
       border-top:2px solid #666;
       background:#f6f6f6;
       }
-  .timeline li:before {
+  .timeline > li:before {
       content:counter(li); /* В качестве данных используем счетчик */
       counter-increment:li; /* Увеличиваем значение счетчика на 1 */
       /* Позиционируем и оформляем цифры */
@@ -109,8 +110,9 @@
 .timeline p {font: normal 16px PT Sans; color: #1F1F1F; margin-bottom: 0;}
 .timeline .conusl {position: absolute; width: 20px; height: 30px; background: url(/img/conus.png) no-repeat; top: 20px; right: -20px;}
 .timeline .conusr {position: absolute; width: 20px; height: 30px; background: url(/img/conusr.png) no-repeat; top: 60px; left: -20px;}
+.timeline:after {content: ''; display: block; width: 40px; height: 1px; background: #4CA6DB; position: absolute; bottom: 0; left: 50%; margin-left: -20px;}
 
-
+h1.inner {color: #454545; font: bold 30px PT Sans;}
 
 
 
