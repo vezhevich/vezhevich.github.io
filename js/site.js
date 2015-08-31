@@ -1,133 +1,25 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.btn-top-menu').length) topmenu();
-	if ($('.btn-catalog-menu').length) menu();
-	if ($('#footer .title').length) slidedown();
-	if ($('.owl-carousel').length) owlCarousel();
-	if ($('#lv2').length) menu2();
-	if ($('.preview-tovar').length) prev();
-	if ($('.catalog-mason').length) catalog();
-	if ($('.b-filter').length) filter();
-	if ($('.b-sorter').length) sorter();
+	if ($('#carousel').length) carousel();
 	if ($('input[type=tel]').length) tel();
-	if ($('.search-box').length) src();
-
-	if ($(window).width() >= '991')
-	    {
-	    	$('body').removeClass('mobile').addClass('full');
-	    }
-	    else
-	    {
-	    	$('body').removeClass('full').addClass('mobile');
-	    }	
-
-	$(window).resize(function() {
-	    if ($(window).width() >= '991')
-	    {
-	    	$('body').removeClass('mobile').addClass('full');
-	    }
-	    else
-	    {
-	    	$('body').removeClass('full').addClass('mobile');
-	    }
-	});	
+	if ($('.anchor').length) anchor();
+	if ($('.rooms').length) owlCarousel();
+	if ($('.feedback-list').length) owlCarousel2();
+	if ($('.gallery').length) owlCarousel3();
 });
 
-function topmenu()
+
+function carousel()
 {
-	$(".btn-top-menu").click(function() {
-		$(".navigation").slideToggle();
-		return false;
-	});
-}
-
-function menu()
-{
-	$(".btn-catalog-menu > a").click(function() {
-		$(this).toggleClass('active')
-		$(".catalog-menu .wrapper").slideToggle();
-		return false;
-	});
-}
-
-function owlCarousel()
-{
-	$('.owl-carousel').owlCarousel({
-    margin:10,
-    loop:true,
-    responsiveClass:true,
-    items:1
-	})
-}
-
-function slidedown()
-{
-	$("#footer .cl .title").on('click', function(){
-		   $(this).toggleClass('active');
-	       $('dl.list', $(this).parents('.cl')).slideToggle();
-	       return false;
-	   });
-}
-
-function menu2()
-{
-	var $container = $('#lv2');
-	// initialize
-	$container.masonry({
-	  itemSelector: '.item'
-	});
-	$("#lv3").click(function() {
-		
-		$(".lv2").slideToggle();
-		if ($('body').hasClass('mobile'))
-		{
-			$container.masonry('destroy');
-		} else
-		{
-			$container.masonry({
-			  itemSelector: '.item'
-			});
-		}
-
-		return false;
-	});
-	
-}
-
-function prev()
-{
-	$('.preview-tovar').owlCarousel({
-    margin:10,
-    loop:true,
-    responsiveClass:true,
-    items:1
-	})
-}
-
-
-function catalog()
-{
-	var $container = $('.catalog-mason');
-	// initialize
-	$container.masonry({
-	  itemSelector: '.item'
-	});
-}
-
-function filter()
-{
-	$(".b-filter .title").click(function() {
-		$(this).toggleClass('active');
-		$(".content-filter").slideToggle();
-		return false;
-	});
-}
-
-function sorter()
-{
-	$(".b-sorter .title").click(function() {
-		$(this).toggleClass('active');
-		$(".content-sorter").slideToggle();
-		return false;
+	$('#carousel').bxSlider({
+		auto: false,
+		pager: false,
+		controls: true,
+		slideWidth: '1020',
+		minSlides: 3,
+		maxSlides: 3,
+		slideMargin: 30,
+		prevText: '',
+		nextText: ''
 	});
 }
 
@@ -136,15 +28,64 @@ function tel(){
 	return false; 
 }
 
-function src()
-{
-	$(".search-box .btn-search a").click(function() {
-		$(this).toggleClass('del');
-		return false;
-	});
-	$(".search-box .btn-search a").click(function() {
-		$(".search-box .wrapper").slideToggle();
-		$(".wrapper").removeClass('position');
-		$(".wrapper").addClass("position");
+
+function anchor (){
+   $('a.anchor[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top-100}, 1600);
+        return false; 
+   }); 
+}
+
+function owlCarousel (){
+	$('.rooms').owlCarousel({
+	    center: true,
+	    items:2,
+	    nav: true,
+	    navText: ' ',
+	    loop:true,
+	    responsive:{
+	        600:{
+	            items:4
+	        },	        
+	        1600:{
+	            items:5
+	        },	        
+	        1920:{
+	            items:5
+	        }
+	    }
 	});
 }
+
+function owlCarousel2 (){
+	$('.feedback-list').owlCarousel({
+	    nav: true,
+	    loop:true,
+	    items: 1,
+	    navText: ' '
+	});
+}
+
+function owlCarousel3 (){
+	$('.gallery').owlCarousel({
+	    center: true,
+	    items:2,
+	    nav: true,
+	    navText: ' ',
+	    loop:true,
+	    responsive:{
+	        600:{
+	            items:4
+	        },
+	        1600:{
+	            items:5
+	        },	        
+	        1920:{
+	            items:5
+	        }
+	    }
+	});
+}
+
+
