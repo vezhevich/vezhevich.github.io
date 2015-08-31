@@ -1,4 +1,4 @@
-.btn a {display: inline-block; zoom: 1; *display: inline; font: bold 21px/60px PT Sans; color: #fff; background: #0067B7; width: 310px; height: 60px;}
+.btn a {display: inline-block; zoom: 1; *display: inline; font: bold 18px/50px PT Sans; color: #fff; background: #0067B7; width: 290px; height: 50px; text-align: center;}
 .btn a:hover {background: #133454; text-decoration: none;}
 .btn a:active {background: #4BA7DD;}
 
@@ -19,6 +19,7 @@
 .promo .list .l3 {background-position: 0 -116px;}
 .promo .list .l4 {background-position: 0 -181px;}
 .promo .list a {font: normal 24px/1.3 PT Sans; color: #fff; text-decoration: none; border-bottom: 1px dotted #fff;}
+.promo .btn a {font: bold 21px/60px PT Sans; width: 310px; height: 60px;}
 
 .stat dl {margin-left: -2.5%;}
 .stat dl dt {width: 30.83%; margin-left: 2.5%; margin-bottom: 70px; float: left; text-align: center;}
@@ -35,7 +36,7 @@
 
 .spec {background: #D6E1E6; padding: 50px 0;}
 .spec .col {margin-left: -2.5%;}
-.spec .col > dt {width: 30.83%; margin-left: 2.5%; float: left; padding: 0 20px; box-sizing: border-box;}
+.spec .col > dt {width: 30.83%; margin-left: 2.5%; margin-bottom: 50px; float: left; padding: 0 20px; box-sizing: border-box;}
 .spec .col > dt .wrapper {border: 1px solid #CCC; background: #fff;}
 .spec dl dt .img img {max-width: 100%;}
 .spec dl dt .in {font: bold 16px/1.4 PT Sans; color: #454545; margin-bottom: 0;}
@@ -50,6 +51,17 @@
 .spec dl dt .size dt:last-child:after {display: none;}
 .spec dl dt .size .numbers {font: normal 18px PT Sans; color: #454545;}
 .spec dl dt .size .text {font: bold 16px PT Sans; color: #454545;}
+.spec dl dt .btn a {width: 100%; font-size: 18px; background: #fff; border: 1px solid #006ABA; height: 48px; line-height: 48px; color: #0067B7;}
+.spec dl dt .btn a:hover {background: #0067B7; color: #fff;}
+.spec dl dt .finished {color: #666; margin-bottom: 0;}
+.spec dl dt sup {font-size: 65%;}
+
+.spec .head span {background-image: url(/img/house-icon.png); background-repeat: no-repeat; display: block; width: 100%; background-position: center 0; margin-bottom: 10px;}
+.spec .head .econom {height: 30px;}
+.spec .head .standart {height: 30px; background-position: center -44px;}
+.spec .head .premium {height: 30px; background-position: center -94px;}
+.spec .head .title {font: normal 30px 'Forum'; text-transform: uppercase; color: #0064B3; margin-bottom: 5px;}
+.spec .head .teaser {font: normal 21px PT Sans; margin-bottom: 0; color: #666;}
 
 
 
