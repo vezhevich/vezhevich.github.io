@@ -320,8 +320,8 @@ ul li:before {content: ' '; width: 16px; height: 1px; background: #0089D1; displ
 
 /* прибитый footer */
 
-#container {position: relative;  min-height: 100%; height: auto !important; height: 100%; margin: 0 0 -120px 0; padding: 0;}
+#container {position: relative;  min-height: 100%; height: auto !important; height: 100%; margin: 0 0 -90px 0; padding: 0;}
 #content {position: relative;} 
-.footer-push {height: 120px; margin: 0; padding: 0;}
+.footer-push {height: 90px; margin: 0; padding: 0;}
 
 /**/

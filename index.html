@@ -567,7 +567,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="capital inner">
+				<div class="capital inner mb50">
 					<div class="centered clearfix">
 						<div class="text fl-r">
 							<div class="p20">
@@ -589,11 +589,80 @@
 						</div>
 					</div>
 				</div>
+				<div class="partners mb30">
+					<div class="centered">
+						<h2 class="hb inner text-center mb40">Наши партнеры</h2>
+						<dl class="clearfix">
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Водобурение</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>ДарханИнвестСтрой</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Проектное бюдо </br>Антарктида</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Ермак</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Вегос-М</p>
+							</dt>
+							<div class="clear"></div>
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Отопительные котлы</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>БурятВодСервис</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Смит</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>МеталлПрофиль</p>
+							</dt>							
+							<dt>
+								<img src="/img/partner.png" alt="">
+								<p>Металлочерепица</p>
+							</dt>
+						</dl>
+					</div>
+				</div>
+				<div class="mb30" id="map" style="width:100%; height:400px"></div>
+				<div class="centered mb30">
+					<h2 class="text-center">Остались вопросы?</h2>
+					<div class="btn text-center"><a href="#">Задать вопрос</a></div>
+				</div>
 			</div>
 			<div class="footer-push"></div>
 		</div>
 		<div id="footer">
-
+			<div class="centered clearfix pt20">
+				<div class="logo fl-l">
+					<a href="/"><img src="/img/f-logo.png" alt=""></a>
+					<p>Строительство деревянных </br>и каркасных домов в Улан-Удэ и РБ</p>
+				</div>
+				<div class="contact-phone fl-r">
+					<p>+7 (3012) 40-40-75</p>
+					<a href="#" class="link-js">Перезвонить мне</a>
+				</div>
+				<div class="soc fl-r">
+					<a class="fb" href=""></a>
+					<a class="youtube" href=""></a>
+					<a class="insta" href=""></a>
+					<a class="ok" href=""></a>
+					<a class="vk" href=""></a>
+				</div>
+			</div>
 		</div>	
 		<div class="popup prog-about modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
@@ -751,6 +820,20 @@
 		<script type="text/javascript" src="/js/jquery.bxslider.js"></script>	
 		<script type="text/javascript" src="/js/owl.carousel.js"></script>	
  		<script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+ 		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
  		<script type="text/javascript" src="/js/site.js"></script>
+		<script type="text/javascript">
+		    var map;
+
+		    DG.then(function () {
+		        map = DG.map('map', {
+		            center: [54.98, 82.89],
+		            scrollWheelZoom: '',
+		            zoom: 13
+		        });
+
+		        DG.marker([54.98, 82.89]).addTo(map);
+		    });
+		</script>
 	</body>
 </html>

@@ -4,10 +4,10 @@
 
 
 #header {height: 50px; padding: 15px 0; background-color: #fff;}
-#header .logo p {font: normal 21px/1 PT Sans; margin-bottom: 0; color: #454545; display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-left: 10px;}
-#header .logo a {display: inline-block; zoom: 1; *display: inline;}
-#header .contact-phone p {font: normal 24px PT Sans; color: #454545; padding-left: 30px; background-image: url(/img/logo-phone.png); background-repeat: no-repeat; background-position: left center; margin-bottom: 3px;}
-#header .contact-phone a {font: normal 18px/1 PT Sans; margin-left: 30px;}
+.logo p {font: normal 21px/1 PT Sans; margin-bottom: 0; color: #454545; display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-left: 10px;}
+.logo a {display: inline-block; zoom: 1; *display: inline;}
+.contact-phone p {font: normal 24px PT Sans; color: #454545; padding-left: 30px; background-image: url(/img/logo-phone.png); background-repeat: no-repeat; background-position: left center; margin-bottom: 3px;}
+.contact-phone a {font: normal 18px/1 PT Sans; margin-left: 30px;}
 
 .promo {background-image: url(/img/promo.jpg); background-repeat: no-repeat; background-position: center center; height: 575px; overflow: hidden; padding-top: 150px; margin-bottom: 60px;}
 .promo dl {margin-left: -2.5%;}
@@ -233,8 +233,20 @@ h1.inner {color: #454545; font: bold 30px PT Sans;}
 .capital.inner .text .c5 {background-position: 0 -480px;}
 .capital.inner .text .c6 {background-position: 0 -600px;}
 
+.partners dl dt {width: 20%; float: left; text-align: center; margin-bottom: 30px;}
+.partners dl dt p {font: normal 16px PT Sans; margin-bottom: 0; margin-top: 20px;}
 
-
+#footer {height: 90px; background: #123555;}
+#footer .logo  p {color: #fff; font-size: 16px; vertical-align: bottom;}
+#footer .contact-phone p {font-size: 21px; color: #fff; background: url(/img/logo-phone-white.png) no-repeat;}
+#footer .contact-phone a {font-size: 14px; color: #fff; border-color: #fff;}
+#footer .soc a {display: inline-block; zoom: 1; *display: inline; vertical-align: top; width: 34px; height: 32px; margin-left: 5px; background: url(/img/soc-icon.png) no-repeat 0 0;}
+#footer .soc .fb {background-position: 0 0;}
+#footer .soc .youtube {background-position: 0 -52px;}
+#footer .soc .insta {background-position: 0 -104px;}
+#footer .soc .ok {background-position: 0 -156px;}
+#footer .soc .vk {background-position: 0 -208px;}
+#footer .soc {margin-right: 100px;}
 
 
 
