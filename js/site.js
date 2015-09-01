@@ -1,5 +1,6 @@
 if (window.jQuery) $(document).ready(function() {
 	if ($('.grid').length) mason();
+	if ($('#navi').length) navi ();
 
 
 	if ($('#carousel').length) carousel();
@@ -17,6 +18,22 @@ function mason()
     columnWidth: '.grid-sizer',
     percentPosition: true
   });
+}
+
+function navi()
+{
+
+
+
+		$(window).scroll(function(){
+			var distanceTop = $('#show').offset().top - $(window).height();
+			if  ($(window).scrollTop() > distanceTop)
+				$('#navi').animate({'top':'0px'},300);
+			else
+				$('#navi').stop(true).animate({'top':'-60px'},200);
+		});
+
+
 }
 
 
