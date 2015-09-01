@@ -4,10 +4,10 @@ body {font-family: PT Sans, sans-serif; height: 100%; width: 100%;}
 
 strong {font-weight: bold;} 
 
-*::-webkit-input-placeholder {color: #000;opacity: 1;}
-*:-moz-placeholder {color: #000; opacity: 1;}
-*::-moz-placeholder {color: #000; opacity: 1;}
-*:-ms-input-placeholder {color: #000; opacity: 1;}
+*::-webkit-input-placeholder {color: #999;opacity: 1;}
+*:-moz-placeholder {color: #999; opacity: 1;}
+*::-moz-placeholder {color: #999; opacity: 1;}
+*:-ms-input-placeholder {color: #999; opacity: 1;}
 
 .close {opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100);}
 
@@ -43,8 +43,8 @@ p {font:normal 16px/1.2 'Forum'; margin:0 0 14px 0; color: #123454;}
 ul {list-style: none; margin:0 0 20px 0; padding-top: 10px;}
 ol {padding: 0 5px 10px 30px; margin:0 0 5px 0; list-style:decimal;}
 ol li {font: normal 18px/1.4 'Forum'; margin:0 0 5px 0; color: 123454;}
-ul li {font: normal 16px/1.4 PT Sans; margin:0 0 5px 0; color: 123454;}
-ul li:before {content: ' '; width: 16px; height: 1px; background: #0089D1; display: inline-block; zoom: 1; *display: inline; margin-right: 10px; vertical-align: top; margin-top: 10px;}
+ul li {font: normal 16px/1.4 PT Sans; margin:0 0 5px 0; color: 123454; padding-left: 30px; position: relative;}
+ul li:before {content: ' '; width: 16px; height: 1px; background: #0089D1; display: block; position: absolute; top: 10px; left: 0;}
 
 /* text */
 .text-left {text-align:left;}
@@ -216,6 +216,11 @@ ul li:before {content: ' '; width: 16px; height: 1px; background: #0089D1; displ
 .p30 {padding:30px;}
 .p40 {padding:40px;}
 .p50 {padding:50px;}
+.p60 {padding:60px;}
+.p70 {padding:70px;}
+.p80 {padding:80px;}
+.p90 {padding:90px;}
+.p100 {padding:100px;}
 
 /* layout & columns*/
 
