@@ -207,16 +207,31 @@ h1.inner {color: #454545; font: bold 30px PT Sans;}
 .tech .btn a {width: auto; height: 60px; padding: 0 30px; line-height: 60px;}
 
 .capital {height: 575px; background: url(/img/capital.jpg) no-repeat center center;}
-.capital .text {width: 68.37%; height: 575pc;}
+.capital .text {width: 68.37%; height: 575px;}
 .capital p {font-family: PT Sans; color: #454545;}
 .capital .sub {width: 670px; font-size: 18px; margin-bottom: 30px;}
-.capital .text dt {width: 166px; display: inline-block; zoom: 1; *display: inline; text-align: center; vertical-align: top; font: normal 18px PT Sans; color: #454545;}
+.capital .text dl {margin-left: -20px;}
+.capital .text dt {width: 166px; display: inline-block; zoom: 1; *display: inline; text-align: center; vertical-align: top; font: normal 18px PT Sans; color: #454545; margin-left: 20px;}
 .capital .text .img {width: 100px; height: 100px; margin: 0 auto 20px auto; background: url(/img/capital-icon.png) no-repeat 0 0;}
 .capital .text .c1 {background-position: 0 0;}
 .capital .text .c2 {background-position: 0 -120px;}
 .capital .text .c3 {background-position: 0 -240px;}
+.capital .text .bottom {width: 670px;}
+.capital .text .bottom .doc {width: 225px; font: bold 16px PT Sans; display: block; padding-left: 40px; background: url(/img/pdf-icon.png) no-repeat left center;}
+.capital .text .bottom .doc:hover {text-decoration: none;}
+.capital .text .bottom .doc span {border-bottom: 1px dotted #0066B6; display: inline;}
+.capital .text .bottom .doc:hover span {border-color: #133454;}
 
-
+.capital.inner {background: url(/img/credit.jpg) no-repeat center center; height: 642px;}
+.capital.inner .text {height: 642px;}
+.capital.inner dt {margin-bottom: 20px;}
+.capital.inner .text .img {background: url(/img/credit-icon.png) no-repeat 0 0; margin-bottom: 10px;}
+.capital.inner .text .c1 {background-position: 0 0;}
+.capital.inner .text .c2 {background-position: 0 -120px;}
+.capital.inner .text .c3 {background-position: 0 -240px;}
+.capital.inner .text .c4 {background-position: 0 -360px;}
+.capital.inner .text .c5 {background-position: 0 -480px;}
+.capital.inner .text .c6 {background-position: 0 -600px;}
 
 
 
