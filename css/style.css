@@ -206,8 +206,8 @@ h1.inner {color: #454545; font: bold 30px PT Sans;}
 .tech dl dt .title {font: bold 18px PT Sans;}
 .tech .btn a {width: auto; height: 60px; padding: 0 30px; line-height: 60px;}
 
-.capital {height: 575px; background: url(/img/capital.jpg) no-repeat 135% top;}
-.capital .text {width: 68.37%;}
+.capital {height: 575px; background: url(/img/capital.jpg) no-repeat center center;}
+.capital .text {width: 68.37%; height: 575pc;}
 .capital p {font-family: PT Sans; color: #454545;}
 .capital .sub {width: 670px; font-size: 18px; margin-bottom: 30px;}
 .capital .text dt {width: 166px; display: inline-block; zoom: 1; *display: inline; text-align: center; vertical-align: top; font: normal 18px PT Sans; color: #454545;}
