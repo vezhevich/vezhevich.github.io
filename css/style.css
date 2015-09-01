@@ -113,10 +113,24 @@
 
 h1.inner {color: #454545; font: bold 30px PT Sans;}
 
+.grid {margin-left: -0.85%;}
+.grid-sizer,
+.grid-item {
+  width: 25%;
+  overflow: hidden;
+}
 
+.grid-item {
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 0.85%;
+}
 
+.grid-item--width2 { width:  49.15%; }
+.grid-item--width3 { width:  24.15%; }
 
-
+.grid-item--height2 { height: 386px; }
+.grid-item--height3 { height: 188px; }
 
 
 

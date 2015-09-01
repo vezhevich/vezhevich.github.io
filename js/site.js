@@ -1,11 +1,25 @@
 if (window.jQuery) $(document).ready(function() {
+	if ($('.grid').length) mason();
+
+
 	if ($('#carousel').length) carousel();
 	if ($('input[type=tel]').length) tel();
 	if ($('.anchor').length) anchor();
 	if ($('.rooms').length) owlCarousel();
 	if ($('.feedback-list').length) owlCarousel2();
-	if ($('.gallery').length) owlCarousel3();
 });
+
+
+function mason()
+{
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+}
+
+
 
 
 function carousel()
@@ -66,26 +80,4 @@ function owlCarousel2 (){
 	    navText: ' '
 	});
 }
-
-function owlCarousel3 (){
-	$('.gallery').owlCarousel({
-	    center: true,
-	    items:2,
-	    nav: true,
-	    navText: ' ',
-	    loop:true,
-	    responsive:{
-	        600:{
-	            items:4
-	        },
-	        1600:{
-	            items:5
-	        },	        
-	        1920:{
-	            items:5
-	        }
-	    }
-	});
-}
-
 
