@@ -40,7 +40,7 @@ body {background: #30343F;}
 .item-card dl dt {width: 47%; margin-left: 3%; margin-bottom: 3%; float: left; position: relative;}
 .item-card dl dt .favorite {position: absolute; top: 10px; left: 10px; color: #CC3A49; z-index: 10;}
 .item-card dl dt .img {border-radius: 4px; overflow: hidden; margin-bottom: 5px;}
-.item-card dl dt .img img {display: block;}
+.item-card dl dt .img img {display: block; width: 100%;}
 .item-card dl dt .text .title {color: #fff; font-size: 75%; margin-bottom: 5px; font-family: 'Fira Sans'; font-weight: normal;}
 .item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300; font-family: 'Fira Sans';}
 .item-card dl dt .text .cost {color: #fff; font-size: 75%; font-weight: normal;}
@@ -55,6 +55,18 @@ body {background: #30343F;}
 .item-card dl dt .qnty .minus {text-align: center; position: absolute; bottom: 0; left: 0;}
 .item-card dl dt .qnty .minus i {font-weight: 300; font-size: 75%; color: #0D2324; line-height: 180%;}
 .item-card dl dt .qnty .wrapper {position: relative; width: 24px; height: 100%;}
+
+.item-card.list dl {margin-left: 0;}
+.item-card.list dl dt {width: 100%; margin-left: 0; margin-bottom: 5%;}
+.item-card.list .qnty {width: 30px;}
+.item-card.list .qnty a {width: 30px; height: 30px;}
+.item-card.list .qnty .plus i {line-height: 220%;}
+.item-card.list .qnty .minus i {line-height: 220%;}
+.item-card.list .qnty span {width: 30px; height: 30px; line-height: 220%; font-size: 75%;}
+.item-card.list .text .title {font-size: 100%;}
+.item-card.list .text .cost {font-size: 100%;}
+.item-card.list .text .teaser {font-size: 75%;}
+.item-card.list .text .in {font-size: 75%;}
 
 
 
