@@ -33,8 +33,19 @@ body {background: #30343F;}
 .filter dl dt:last-child {border-right: none;} 
 .filter dl dt a {font-size: 75%; color: #fff; text-decoration: none; display: block; padding: 12px 0;} 
 .filter .view a {display: inline-block; zoom: 1; *display: inline; vertical-align: top; padding-left: 15px; padding-right: 15px;} 
+.filter .view a.active {color: #ED3250;} 
 
-
+.item-card {padding: 3%;} 
+.item-card dl {margin-left: -3%;} 
+.item-card dl dt {width: 47%; margin-left: 3%; float: left; position: relative;}
+.item-card dl dt .favorite {position: absolute; top: 10px; left: 10px; color: #CC3A49; z-index: 10;}
+.item-card dl dt .img {border-radius: 4px; overflow: hidden; margin-bottom: 5px;}
+.item-card dl dt .img img {display: block;}
+.item-card dl dt .text .title {color: #fff; font-size: 75%; margin-bottom: 5px;}
+.item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300;}
+.item-card dl dt .text .cost {color: #fff; font-size: 75%;}
+.item-card dl dt .text .cost i {color: #fff; font-size: 85%;}
+.item-card dl dt .text .in {color: #fff; font-size: 85%; font-size: 55%; font-weight: 300;}
 
 
 
