@@ -22,5 +22,5 @@ body {background: #30343F;}
 .catalog-plit dt a span {width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: Fira Sans; font-weight: 300; font-size: 150%;}
 
 
-.bottom-navi a {display: block; font-size: 75%; color: #fff; font-family: Fira Sans; text-align: center; padding: 10px 15px; text-decoration: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
+.bottom-navi a {display: block; font-size: 75%; color: #fff; font-family: Fira Sans; text-align: center; padding: 12px 15px; text-decoration: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
 .bottom-navi a:last-child {border-bottom: none;}
