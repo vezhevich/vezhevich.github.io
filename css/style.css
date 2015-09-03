@@ -21,6 +21,49 @@ body {background: #30343F;}
 .catalog-plit dt img {display: block;}
 .catalog-plit dt a span {width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: Fira Sans; font-weight: 300; font-size: 150%;}
 
-
 .bottom-navi a {display: block; font-size: 75%; color: #fff; font-family: Fira Sans; text-align: center; padding: 12px 15px; text-decoration: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
 .bottom-navi a:last-child {border-bottom: none;}
+
+.category-photo {position: relative;}
+.category-photo img {display: block;}
+.category-photo span {width: 80%; text-align: center; margin: auto; position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: Fira Sans; font-weight: 300; font-size: 150%;}
+ 
+.filter {border-bottom: 1px solid rgba(255,255,255,0.2);}
+.filter dl dt {box-sizing: border-box; width: 33.33%; float: left; text-align: center; border-right: 1px solid rgba(255,255,255,0.2); height: 38px; overflow: hidden;} 
+.filter dl dt:last-child {border-right: none;} 
+.filter dl dt a {font-size: 75%; color: #fff; text-decoration: none; display: block; padding: 12px 0;} 
+.filter .view a {display: inline-block; zoom: 1; *display: inline; vertical-align: top; padding-left: 20px; padding-right: 20px;} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
