@@ -2,7 +2,7 @@ img {max-width: 100%;}
 
 body {background: #30343F;}
 #header {height: 85px; text-align: center; background: rgba(32,35,48,0.9); overflow: hidden;}
-#header .logo {display: inline-block; zoom: 1; *display: inline; width: 116px; padding-top: 30px;}
+#header .logo {display: inline-block; zoom: 1; *display: inline; width: 156px; padding-top: 30px;}
 #header .menu a {padding: 33px 20px 33px 20px; display: block;}
 #header .menu i {color: #fff;}
 #header .basket a {padding: 33px 20px 33px 20px; display: block;}
