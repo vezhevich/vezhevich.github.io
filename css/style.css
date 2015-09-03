@@ -42,7 +42,7 @@ body {background: #30343F;}
 .item-card dl dt .img {border-radius: 4px; overflow: hidden; margin-bottom: 5px;}
 .item-card dl dt .img img {display: block;}
 .item-card dl dt .text .title {color: #fff; font-size: 75%; margin-bottom: 5px; font-family: 'Fira Sans';}
-.item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300;}
+.item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300; font-family: 'Fira Sans';}
 .item-card dl dt .text .cost {color: #fff; font-size: 75%;}
 .item-card dl dt .text .cost i {color: #fff; font-size: 85%;}
 .item-card dl dt .text .in {color: #fff; font-size: 85%; font-size: 55%; font-weight: 300;}
