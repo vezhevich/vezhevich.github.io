@@ -37,7 +37,7 @@ body {background: #30343F;}
 
 .item-card {padding: 3%;} 
 .item-card dl {margin-left: -3%;} 
-.item-card dl dt {width: 47%; margin-left: 3%; float: left; position: relative;}
+.item-card dl dt {width: 47%; margin-left: 3%; margin-bottom: 3%; float: left; position: relative;}
 .item-card dl dt .favorite {position: absolute; top: 10px; left: 10px; color: #CC3A49; z-index: 10;}
 .item-card dl dt .img {border-radius: 4px; overflow: hidden; margin-bottom: 5px;}
 .item-card dl dt .img img {display: block;}
