@@ -1,4 +1,4 @@
-img {max-width: 100%;}
+img {max-width: 100%; border: none;}
 
 body {background: #30343F;}
 #header.no-bg {background: none;}
@@ -8,3 +8,8 @@ body {background: #30343F;}
 #header .menu i {color: #fff;}
 #header .basket a {padding: 12px 15px 12px 15px; display: block;}
 #header .basket i {color: #fff;}
+
+.owl-carousel .owl-controls {position: absolute; bottom: 0; left: 0; width: 100%;}
+.owl-carousel .owl-controls .owl-dots {text-align: center; height: 12px;}
+.owl-carousel .owl-controls .owl-dots .owl-dot {display: inline-block; zoom: 1; *display: inline; width: 6px; height: 6px; background-color: rgba(255,255,255,0.4); margin: 0 2px; vertical-align: top; border-radius: 50%;}
+.owl-carousel .owl-controls .owl-dots .owl-dot.active {background-color: rgba(255,255,255,1);}
