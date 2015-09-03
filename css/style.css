@@ -58,7 +58,7 @@ body {background: #30343F;}
 
 .item-card.list dl {margin-left: 0;}
 .item-card.list dl dt {width: 100%; margin-left: 0; margin-bottom: 5%;}
-.item-card.list .qnty {width: 30px;}
+.item-card.list .qnty {width: 30px; top: 10px;}
 .item-card.list .qnty a {width: 30px; height: 30px;}
 .item-card.list .qnty .plus i {line-height: 220%;}
 .item-card.list .qnty .minus i {line-height: 220%;}
