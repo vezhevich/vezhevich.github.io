@@ -1,6 +1,6 @@
 html {height: 100%; -webkit-font-smoothing: antialiased; font-size: 13.5pt;}
 
-body {font-family: Fira Sans, sans-serif; height: 100%; font-size: 100%; background: #fff;}
+body {font-family: 'Fira Sans', sans-serif; height: 100%; font-size: 100%; background: #fff;}
 
 strong {font-weight: bold;} 
 
@@ -21,7 +21,7 @@ a.js:hover {transition: color 0.2s ease-in-out 0s;}
 a.js-bg {transition: background 0.2s ease-in-out 0s;}
 a.js-bg:hover {transition: background 0.2s ease-in-out 0s;}
 
-h1, h2, h3, h4, h5, h6 {font-family: Fira Sans, sans-serif; font-weight: bold; font-style: normal; line-height:1.2; color:#202020;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Fira Sans', sans-serif; font-weight: bold; font-style: normal; line-height:1.2; color:#202020;}
 
 h1{font-size:255%; margin:0 0 20px 0;}
 h2{font-size:255%; margin:0 0 20px 0;}
@@ -34,7 +34,7 @@ p {font-size: 100%; font-family: Open Sans; font-weight: 300; line-height: 1.4; 
 
 ul {padding: 5px 20px; list-style: disc; margin:0 0 5px 0;}
 ol {padding: 0 5px 10px 30px; margin:0 0 5px 0; list-style:decimal;}
-ul li, ol li {font: normal 14px/1.4 Fira Sans; margin:0 0 5px 0; color: #000;}
+ul li, ol li {font: normal 14px/1.4 'Fira Sans'; margin:0 0 5px 0; color: #000;}
 
 /* text */
 .text-left {text-align:left;}

@@ -19,14 +19,14 @@ body {background: #30343F;}
 .catalog-plit dt {width: 50%; float: left; overflow: hidden;}
 .catalog-plit dt a {position: relative; display: block;}
 .catalog-plit dt img {display: block;}
-.catalog-plit dt a span {width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: Fira Sans; font-weight: 300; font-size: 150%;}
+.catalog-plit dt a span {width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: 'Fira Sans'; font-weight: 300; font-size: 150%;}
 
-.bottom-navi a {display: block; font-size: 75%; color: #fff; font-family: Fira Sans; text-align: center; padding: 12px 15px; text-decoration: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
+.bottom-navi a {display: block; font-size: 75%; color: #fff; font-family: 'Fira Sans'; text-align: center; padding: 12px 15px; text-decoration: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
 .bottom-navi a:last-child {border-bottom: none;}
 
 .category-photo {position: relative;}
 .category-photo img {display: block;}
-.category-photo span {width: 80%; text-align: center; margin: auto; position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: Fira Sans; font-weight: 300; font-size: 150%;}
+.category-photo span {width: 80%; text-align: center; margin: auto; position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: 'Fira Sans'; font-weight: 300; font-size: 150%;}
  
 .filter {border-bottom: 1px solid rgba(255,255,255,0.2);}
 .filter dl dt {box-sizing: border-box; width: 33.33%; float: left; text-align: center; border-right: 1px solid rgba(255,255,255,0.2); height: 38px; overflow: hidden;} 
@@ -41,7 +41,7 @@ body {background: #30343F;}
 .item-card dl dt .favorite {position: absolute; top: 10px; left: 10px; color: #CC3A49; z-index: 10;}
 .item-card dl dt .img {border-radius: 4px; overflow: hidden; margin-bottom: 5px;}
 .item-card dl dt .img img {display: block;}
-.item-card dl dt .text .title {color: #fff; font-size: 75%; margin-bottom: 5px;}
+.item-card dl dt .text .title {color: #fff; font-size: 75%; margin-bottom: 5px; font-family: 'Fira Sans';}
 .item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300;}
 .item-card dl dt .text .cost {color: #fff; font-size: 75%;}
 .item-card dl dt .text .cost i {color: #fff; font-size: 85%;}
