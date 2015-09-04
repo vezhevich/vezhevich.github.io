@@ -1,6 +1,6 @@
 html {height: 100%; -webkit-font-smoothing: antialiased; font-size: 18px;}
 
-body {font-family: 'Fira Sans', sans-serif; height: 100%; font-size: 100%; background: #fff;}
+body {font-family: 'Fira Sans', sans-serif; height: 100%; font-size: 100%; background: #fff; margin: 0;}
 
 strong {font-weight: bold;} 
 
@@ -214,8 +214,8 @@ ul li, ol li {font: normal 87.5 'Fira Sans'; margin:0 0 5px 0; color: #000;}
 
 /* прибитый footer */
 
-/*#container {position: relative;  min-height: 100%; height: auto !important; height: 100%; margin: 0 0 -70px 0; padding: 0;}
+#container {position: relative;  min-height: 100%; height: auto !important; height: 100%; margin: 0 0 -70px 0; padding: 0;}
 #content {position: relative;} 
-.footer-push {height: 70px; margin: 0; padding: 0;}*/
+.footer-push {height: 70px; margin: 0; padding: 0;}
 
 /**/
