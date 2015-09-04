@@ -121,11 +121,17 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 .item-action dt p {font: 300 75%/140% 'Fira Sans'; color: #E0E1E2; margin-bottom: 0;}
 
 
+.category-photo.about span > img {margin: 0 auto;}
 
+.text-page {padding: 3%;}
+.text-page p {font: 300 75% 'Fira Sans';}
+.text-page .title {font: 300 100%/120% 'Fira Sans'; text-align: center;}
+.text-page .plit-icon dl {margin-left: -3%;}
+.text-page .plit-icon dl dt {margin-left: 3%; float: left; width: 47%; margin-bottom: 7%; text-align: center; font: 300 75% 'Fira Sans'; color: #fff;}
+.separator-page {width: 100%; height: 1px; background: rgba(255,255,255,0.15);}
 
-
-
-
+.working dl dt p {font: 300 55%/120% 'Fira Sans';}
+.working .numbers {font: normal 130%/120% 'Fira Sans'; margin-bottom: 0;}
 
 
 
