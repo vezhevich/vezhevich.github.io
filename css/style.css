@@ -114,7 +114,11 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 .item-resto .btn a {display: block; height: 40px; background: #CC3749; border-radius: 4px; color: #fff; text-align: center; text-decoration: none; font: normal 95%/245% 'Fira Sans';}
 .item-resto .btn i {margin: 0 5px;}
 
-
+.item-action dt {border-bottom: 1px solid rgba(255,255,255,0.15); padding: 3%;}
+.item-action dt .img {margin-bottom: 10px; border-radius: 4px; overflow: hidden;}
+.item-action dt img {display: block; width: 100%;}
+.item-action dt .title {font: 300 100% 'Fira Sans'; color: #fff; margin-bottom: 10px;}
+.item-action dt p {font: 300 75%/140% 'Fira Sans'; color: #E0E1E2; margin-bottom: 0;}
 
 
 
