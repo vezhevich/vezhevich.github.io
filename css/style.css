@@ -69,7 +69,7 @@ body {background: #30343F;}
 .item-card.list .text .in {font-size: 75%;}
 
 .item-basket table {margin: 0; border-bottom: none;}
-.item-basket table tr td {margin: 0; padding: 0; vertical-align: top; border-bottom: 1px solid rgba(255,255,255,0.15);}
+.item-basket table tr td {margin: 0; padding: 2% 0; vertical-align: top; border-bottom: 1px solid rgba(255,255,255,0.15);}
 .item-basket table img {width: 100%; display: block;}
 .item-basket .col1 {width: 28%; padding-left: 2%; padding-bottom: 2%;}
 .item-basket .col2 {width: 59%; padding-bottom: 2%;}
@@ -81,10 +81,13 @@ body {background: #30343F;}
 .item-basket .col3 span {position: absolute; height: 100%; width: 1px; background: rgba(255,255,255,0.15); top: 0; left: 0;}
 .item-basket .col3 a {display: block; position: absolute; width: 100%; height: 50%;}
 .item-basket .col3 i {width: 12px; height: 12px; font-size: 75%; position: absolute; top: 50%; left: 50%; margin: -6px 0 0 -6px;}
-.item-basket .col3 b {display: block; position: relative; width: 100%; height: 100%;}
+.item-basket .col3 > b {display: block; position: relative; width: 100%; height: 100%;}
 .item-basket .col3 .plus {top: 0;}
 .item-basket .col3 .minus {bottom: 0;}
-.item-basket .col3 .round {width: 20px; height: 20px; border-radius: 50%; background: #CC3449; color: #fff; font: normal 55%/200% 'Fira Sans'; position: absolute; top: 50%; margin-top: -10px; left: -10px; z-index: 10;}
+/*.item-basket .col3 .round {width: 20px; height: 20px; border-radius: 50%; background: #CC3449; color: #fff; font: normal 55%/200% 'Fira Sans'; position: absolute; top: 50%; margin-top: -10px; left: -10px; z-index: 10;}*/
+.item-basket .col3 .round {background: #CC3449; border-radius: 50%; color: #fff; font-family: "Fira Sans"; font-size: 65%;; height: 36%; left: 0; margin: auto; position: absolute; text-align: center;top: 50%; transform: translate(-50%, -50%); width: 60%; z-index: 10; line-height: 200%;}
+.item-basket .col3 .round .wrap {position: relative; width: 100%; height: 100%;}
+.item-basket .col3 .round .wrap .center {position: absolute; width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: 'Fira Sans'; font-weight: 300; font-size: 120%;}
 
 
 
