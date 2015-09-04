@@ -189,7 +189,7 @@ div.menu {
 
 div.menu.ind {display: block;}
 
-div.menu ul {padding: 0;}
+div.menu ul {padding: 0; }
 
 .menu-splitL, .menu-splitR{
 	overflow:hidden;
@@ -197,6 +197,7 @@ div.menu ul {padding: 0;}
 	top: 90px;	
 	left: 0px;
 	width:160px;
+	z-index: 900;
 }
 .menu-splitR{left:160px;}
 
@@ -217,8 +218,7 @@ div.menu ul li a {
 	color:#fff;
 	text-transform:uppercase;
 	text-decoration:none;	
-	letter-spacing:3px;
-	display: block;	
+	letter-spacing:3px;	
 }
 
 section > div {
