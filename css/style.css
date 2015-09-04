@@ -93,7 +93,7 @@ input[type="checkbox"] {display:none;}
 input[type="checkbox"] + label {font: normal 75% 'Fira Sans'; color: #fff; cursor: pointer; display: block;}
 input[type="checkbox"] + label::before {content: ""; display: inline-block; height: 30px; width: 30px; margin: 0 10px 0 0; background-image: url(/img/checkbox.png); background-repeat: no-repeat; vertical-align: middle; }
 input[type="checkbox"] + label::before {background-position: 0 0;}
-input[type="checkbox"]:checked + label::before {background-position: 0 -30px;}
+input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 
 .item-basket .check {padding-left: 2%;}
 .item-basket .sum {padding-left: 2%; padding-right: 2%; font-size: 55%; color: #fff; font-weight: normal; border-bottom: none; font-size: 75%;}
