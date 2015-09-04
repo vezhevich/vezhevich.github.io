@@ -44,7 +44,7 @@ body {background: #30343F;}
 .item-card dl dt .img {border-radius: 4px; overflow: hidden; margin-bottom: 5px;}
 .item-card dl dt .img img {display: block; width: 100%;}
 .item-card dl dt .text .title {color: #fff; font-size: 75%; margin-bottom: 5px; font-family: 'Fira Sans'; font-weight: normal;}
-.item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300; font-family: 'Fira Sans';}
+.item-card dl dt .text .teaser {color: #fff; font-size: 55%; font-weight: 300; font-family: 'Fira Sans'; line-height: 150%;}
 .item-card dl dt .text .cost {color: #fff; font-size: 75%; font-weight: normal;}
 .item-card dl dt .text .cost i {color: #fff; font-size: 85%;}
 .item-card dl dt .text .in {color: #fff; font-size: 85%; font-size: 55%; font-weight: 300; margin-top: 2px;}
@@ -107,7 +107,12 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 .form-order input[type=tel] {box-sizing: border-box; width: 100%; padding: 0 10px; background: #fff; border-radius: 4px; font: normal 75% 'Fira Sans'; color: #666; border: none; height: 40px;}
 .form-order input[type=submit] {padding: 0; margin: 0; border: none; background: #CC3749; width: 100%; height: 40px; font: normal 75% 'Fira Sans'; color: #fff; border-radius: 4px; -webkit-appearance:none; -webkit-border-radius:4px; cursor: pointer;}
 
-
+.item-resto {padding: 3%; margin-bottom: 3%;}
+.item-resto dt {border-radius: 4px; margin-bottom: 3%; overflow: hidden;}
+.item-resto dt img {display: block; width: 100%;}
+.item-resto .title {font: 300 100% 'Fira Sans'; margin-bottom: 5px;}
+.item-resto .btn a {display: block; height: 40px; background: #CC3749; border-radius: 4px; color: #fff; text-align: center; text-decoration: none; font: normal 95%/245% 'Fira Sans';}
+.item-resto .btn i {margin: 0 5px;}
 
 
 
