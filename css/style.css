@@ -3,6 +3,7 @@ img {max-width: 100%; border: none;}
 .clearfix:after {content: " "; clear: both; display: table;}
 
 body {background: #30343F;}
+
 #header.no-bg {background: none;}
 #header {height: 42px; text-align: center; background: rgba(32,35,48,0.9); overflow: hidden; z-index: 2000; position: relative; position: fixed; top: 0; left: 0; width: 100%;}
 #header .logo {display: inline-block; zoom: 1; *display: inline; width: 116px; padding-top: 12px;}
@@ -93,17 +94,17 @@ body {background: #30343F;}
 .item-basket .col3 .round .wrap .center {width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: 'Fira Sans'; font-weight: 300; font-size: 55%;}
 
 input[type="checkbox"] {display:none;}
-input[type="checkbox"] + label {font: normal 75% 'Fira Sans'; color: #fff; cursor: pointer; display: block;}
+input[type="checkbox"] + label {font-size: 75%; font-weight: normal; font-family: 'Fira Sans'; color: #fff; cursor: pointer; display: block;}
 input[type="checkbox"] + label::before {content: ""; display: inline-block; height: 30px; width: 30px; margin: 0 10px 0 0; background-image: url(/img/checkbox.png); background-repeat: no-repeat; vertical-align: middle; }
 input[type="checkbox"] + label::before {background-position: 0 0;}
 input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 
 .item-basket .check {padding-left: 2%;}
-.item-basket .sum {padding-left: 2%; padding-right: 2%; font-size: 55%; color: #fff; font-weight: normal; border-bottom: none; font-size: 75%;}
+.item-basket .sum {padding-left: 2%; padding-right: 2%; color: #fff; font-weight: normal; border-bottom: none; font-size: 75%;}
 
 .form-order {padding: 2%;}
 .form-order .row {margin-bottom: 3%;}
-.form-order p {text-align: center; font: 300 75%/1.2 'Fira Sans'; color: #fff;}
+.form-order p {text-align: center; font-weight: 300; font-family: 'Fira Sans'; font-size: 75%; line-height: 140%; color: #fff;}
 .form-order input[type=tel] {box-sizing: border-box; width: 100%; padding: 0 10px; background: #fff; border-radius: 4px; font: normal 75% 'Fira Sans'; color: #666; border: none; height: 40px;}
 .form-order input[type=submit] {padding: 0; margin: 0; border: none; background: #CC3749; width: 100%; height: 40px; font: normal 75% 'Fira Sans'; color: #fff; border-radius: 4px; -webkit-appearance:none; -webkit-border-radius:4px; cursor: pointer;}
 
@@ -111,27 +112,27 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 .item-resto dt {border-radius: 4px; margin-bottom: 3%; overflow: hidden;}
 .item-resto dt img {display: block; width: 100%;}
 .item-resto .title {font: 300 100% 'Fira Sans'; margin-bottom: 5px;}
-.item-resto .btn a {display: block; height: 40px; background: #CC3749; border-radius: 4px; color: #fff; text-align: center; text-decoration: none; font: normal 95%/245% 'Fira Sans';}
+.item-resto .btn a {display: block; height: 40px; background: #CC3749; border-radius: 4px; color: #fff; text-align: center; text-decoration: none; font-size: 95%; font-weight: normal; font-family: 'Fira Sans'; line-height: 245%;}
 .item-resto .btn i {margin: 0 5px;}
 
 .item-action dt {border-bottom: 1px solid rgba(255,255,255,0.15); padding: 3%;}
 .item-action dt .img {margin-bottom: 10px; border-radius: 4px; overflow: hidden;}
 .item-action dt img {display: block; width: 100%;}
-.item-action dt .title {font: 300 100% 'Fira Sans'; color: #fff; margin-bottom: 10px;}
-.item-action dt p {font: 300 75%/140% 'Fira Sans'; color: #E0E1E2; margin-bottom: 0;}
+.item-action dt .title {font-weight: 300; font-family: 'Fira Sans'; font-size: 100%; color: #fff; margin-bottom: 10px;}
+.item-action dt p {font-weight: 300; font-family: 'Fira Sans'; font-size: 75%; line-height: 140%; color: #E0E1E2; margin-bottom: 0;}
 
 
 .category-photo.about span > img {margin: 0 auto;}
 
 .text-page {padding: 3%;}
-.text-page p {font: 300 75% 'Fira Sans';}
-.text-page .title {font: 300 100%/120% 'Fira Sans'; text-align: center;}
+.text-page p {font-family: 'Fira Sans'; font-weight: 300; font-size: 75%;}
+.text-page .title  {text-align: center; font-weight: 300; font-size: 100%; font-family: 'Fira Sans'; line-height: 120%;}
 .text-page .plit-icon dl {margin-left: -3%;}
-.text-page .plit-icon dl dt {margin-left: 3%; float: left; width: 47%; margin-bottom: 7%; text-align: center; font: 300 75% 'Fira Sans'; color: #fff;}
+.text-page .plit-icon dl dt {margin-left: 3%; float: left; width: 47%; margin-bottom: 7%; text-align: center; font-weight: 300; font-size: 75%; font-family: 'Fira Sans'; color: #fff;}
 .separator-page {width: 100%; height: 1px; background: rgba(255,255,255,0.15);}
 
-.working dl dt p {font: 300 55%/120% 'Fira Sans';}
-.working .numbers {font: normal 130%/120% 'Fira Sans'; margin-bottom: 0;}
+.working dl dt p {font-weight: 300; font-size: 55%; font-family: 'Fira Sans'; line-height: 120%;}
+.working .numbers {margin-bottom: 0; font-weight: normal; font-size: 130%; line-height: 120%; font-family: 'Fira Sans';}
 
 /*  */
 
