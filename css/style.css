@@ -99,7 +99,7 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -30px;}
 .item-basket .sum {padding-left: 2%; padding-right: 2%; font-size: 55%; color: #fff; font-weight: normal; border-bottom: none; font-size: 75%;}
 
 .form-order {padding: 2%;}
-.form-order p {text-align: center; font: normal 75% 'Fira Sans'; color: #fff;}
+.form-order p {text-align: center; font: normal 75%/1 'Fira Sans'; color: #fff;}
 .form-order input[type=tel] {box-sizing: border-box; width: 100%; padding: 0 10px; background: #fff; border-radius: 4px; font: normal 75% 'Fira Sans'; color: #666; border: none; height: 40px;}
 .form-order input[type=submit] {padding: 0; margin: 0; border: none; background: #CC3749; width: 100%; height: 40px; font: normal 75% 'Fira Sans'; color: #fff; border-radius: 4px; -webkit-appearance:none; -webkit-border-radius:4px;}
 
