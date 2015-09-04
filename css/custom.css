@@ -30,7 +30,7 @@ h4{font-size:130%; margin:0 0 10px 0;}
 h5{font-size:112.5%; margin:0 0 10px 0; font-weight: normal;}
 h6{font-size:100%; margin:0 0 10px 0;}
 
-p {font-size: 100%; font-family: 'Fira Sans'; font-weight: 300; line-height: 1.4; margin:0 0 14px 0; color: #000;}
+p {font-family: 'Fira Sans'; font-weight: normal; margin:0 0 14px 0; color: #fff;}
 
 ul {padding: 5px 20px; list-style: disc; margin:0 0 5px 0;}
 ol {padding: 0 5px 10px 30px; margin:0 0 5px 0; list-style:decimal;}
