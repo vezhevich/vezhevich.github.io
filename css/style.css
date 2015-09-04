@@ -73,7 +73,7 @@ body {background: #30343F;}
 .item-basket table img {width: 100%; display: block;}
 .item-basket .col1 {width: 28%; padding-left: 2%; padding-bottom: 2%;}
 .item-basket .col2 {width: 59%; padding-bottom: 2%;}
-.item-basket .col2 .title {font: normal 75%/1 'Fira Sans'; color: #fff; margin-bottom: 5px;}
+.item-basket .col2 .title {font: normal 75% 'Fira Sans'; color: #fff; margin-bottom: 5px;}
 .item-basket .col2 .cost {font: normal 62.5% 'Fira Sans'; color: #fff; margin-bottom: 0;}
 .item-basket .col2 .cost i {font-size: 85%;}
 .item-basket .col3 {width: 13%; text-align: center; position: relative; }
