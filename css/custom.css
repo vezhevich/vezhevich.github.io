@@ -21,13 +21,13 @@ a.js:hover {transition: color 0.2s ease-in-out 0s;}
 a.js-bg {transition: background 0.2s ease-in-out 0s;}
 a.js-bg:hover {transition: background 0.2s ease-in-out 0s;}
 
-h1, h2, h3, h4, h5, h6 {font-family: 'Fira Sans', sans-serif; font-weight: bold; font-style: normal; line-height:1.2; color:#202020;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Fira Sans', sans-serif; font-weight: bold; font-style: normal; line-height:1.2; color:#fff;}
 
 h1{font-size:255%; margin:0 0 20px 0;}
 h2{font-size:255%; margin:0 0 20px 0;}
 h3{font-size:225%; margin:0 0 20px 0;}
 h4{font-size:130%; margin:0 0 10px 0;}
-h5{font-size:112.5%; margin:0 0 10px 0;}
+h5{font-size:112.5%; margin:0 0 10px 0; font-weight: normal;}
 h6{font-size:100%; margin:0 0 10px 0;}
 
 p {font-size: 100%; font-family: 'Fira Sans'; font-weight: 300; line-height: 1.4; margin:0 0 14px 0; color: #000;}

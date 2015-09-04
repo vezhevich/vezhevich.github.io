@@ -68,7 +68,7 @@ body {background: #30343F;}
 .item-card.list .text .teaser {font-size: 75%;}
 .item-card.list .text .in {font-size: 75%;}
 
-.item-basket table {margin: 0; border-bottom: none;}
+.item-basket table {margin: 0 0 20px 0; border-bottom: none;}
 .item-basket table tr td {margin: 0; padding: 2% 0; vertical-align: top; border-bottom: 1px solid rgba(255,255,255,0.15);}
 .item-basket table img {width: 100%; display: block;}
 .item-basket .col1 {width: 28%; padding-left: 2%; padding-bottom: 2%;}
@@ -96,6 +96,7 @@ input[type="checkbox"] + label::before {background-position: 0 0;}
 input[type="checkbox"]:checked + label::before {background-position: 0 -30px;}
 
 .item-basket .check {padding-left: 2%;}
+.item-basket .sum {padding-left: 2%; padding-right: 2%; font-size: 55%; color: #fff; font-weight: normal; border-bottom: none;}
 
 
 
