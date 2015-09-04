@@ -32,14 +32,14 @@ body {background: #30343F;}
 .catalog-plit dl {margin: 0;}
 .catalog-plit dt {width: 50%; float: left; overflow: hidden;}
 .catalog-plit dt a {position: relative; display: block;}
-.catalog-plit dt img {display: block;}
+.catalog-plit dt img {display: block; width: 100%;}
 .catalog-plit dt a span {width: 80%; text-align: center; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: 'Fira Sans'; font-weight: 300; font-size: 150%; line-height: 1;}
 
 .bottom-navi a {display: block; font-size: 75%; color: #fff; font-family: 'Fira Sans'; text-align: center; padding: 12px 15px; text-decoration: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
 .bottom-navi a:last-child {border-bottom: none;}
 
 .category-photo {position: relative;}
-.category-photo img {display: block;}
+.category-photo img {display: block; width: 100%;}
 .category-photo span {width: 80%; text-align: center; margin: auto; position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); color: #fff; font-family: 'Fira Sans'; font-weight: 300; font-size: 150%;}
  
 .filter {border-bottom: 1px solid rgba(255,255,255,0.2);}
@@ -134,7 +134,9 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 .item-action dt p {font-weight: 300; font-family: 'Fira Sans'; font-size: 75%; line-height: 140%; color: #E0E1E2; margin-bottom: 0;}
 
 
-.category-photo.about span > img {margin: 0 auto;}
+.category-photo.about span > img {margin: 0 auto; width: auto;}
+.part img {width: 100%;}
+
 
 .text-page {padding: 3%;}
 .text-page p {font-family: 'Fira Sans'; font-weight: 300; font-size: 75%;}
