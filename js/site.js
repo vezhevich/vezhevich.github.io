@@ -1,5 +1,8 @@
 if (window.jQuery) $(document).ready(function() {
      if ($('.owl-carousel').length) owlCarousel();
+     if ($('input[type=tel]').length) tel();
+
+
      if ($('.owl-carousel2').length) owlCarousel2();
      if ($('.owl-carousel3').length) owlCarousel3();
      if ($('.menu').length) menu();
@@ -19,6 +22,17 @@ function owlCarousel()
 	 
 	});
 }
+
+function tel(){ 
+	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
+	return false; 
+}
+
+
+
+
+
+
 
 function owlCarousel2()
 {
