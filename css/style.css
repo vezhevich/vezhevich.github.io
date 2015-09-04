@@ -68,7 +68,22 @@ body {background: #30343F;}
 .item-card.list .text .teaser {font-size: 75%;}
 .item-card.list .text .in {font-size: 75%;}
 
-
+.item-basket table {margin: 0; border-bottom: none;}
+.item-basket table tr td {margin: 0; padding: 0; vertical-align: top; border-bottom: 1px solid rgba(255,255,255,0.15);}
+.item-basket table img {width: 100%; display: block;}
+.item-basket .col1 {width: 22%; padding-left: 3%; padding-bottom: 2%;}
+.item-basket .col2 {width: 65%; padding-bottom: 2%;}
+.item-basket .col2 .title {font: normal 75%/1 'Fira Sans'; color: #fff; margin-bottom: 5px;}
+.item-basket .col2 .cost {font: normal 62.5% 'Fira Sans'; color: #fff; margin-bottom: 0;}
+.item-basket .col2 .cost i {font-size: 85%;}
+.item-basket .col3 {width: 13%; text-align: center; position: relative; }
+.item-basket .col3 .separator {position: absolute; height: 1px; width: 100%; background: rgba(255,255,255,0.15); top: 50%; left: 0;}
+.item-basket .col3 span {position: absolute; height: 100%; width: 1px; background: rgba(255,255,255,0.15); top: 0; left: 0;}
+.item-basket .col3 a {display: block; position: absolute; width: 100%; height: 50%;}
+.item-basket .col3 i {width: 12px; height: 12px; font-size: 75%; position: absolute; top: 50%; left: 50%; margin: -6px 0 0 -6px;}
+.item-basket .col3 b {display: block; position: relative; width: 100%; height: 100%;}
+.item-basket .col3 .plus {top: 0;}
+.item-basket .col3 .minus {bottom: 0;}
 
 
 
