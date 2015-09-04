@@ -74,7 +74,7 @@ body {background: #30343F;}
 .item-basket .col1 {width: 28%; padding-left: 2%; padding-bottom: 2%;}
 .item-basket .col2 {width: 59%; padding-bottom: 2%;}
 .item-basket .col2 .title {font: normal 75% 'Fira Sans'; color: #fff; margin-bottom: 5px;}
-.item-basket .col2 .cost {font: normal 62.5% 'Fira Sans'; color: #fff; margin-bottom: 0;}
+.item-basket .col2 .cost {font: normal 62.5% 'Fira Sans'; color: #E0E1E2; margin-bottom: 0;}
 .item-basket .col2 .cost i {font-size: 85%;}
 .item-basket .col3 {width: 13%; text-align: center; position: relative; }
 .item-basket .col3 .separator {position: absolute; height: 1px; width: 100%; background: rgba(255,255,255,0.15); top: 50%; left: 0;}
@@ -84,6 +84,7 @@ body {background: #30343F;}
 .item-basket .col3 > b {display: block; position: relative; width: 100%; height: 100%;}
 .item-basket .col3 .plus {top: 0;}
 .item-basket .col3 .minus {bottom: 0;}
+.item-basket .col3 i {color: #fff;}
 /*.item-basket .col3 .round {width: 20px; height: 20px; border-radius: 50%; background: #CC3449; color: #fff; font: normal 55%/200% 'Fira Sans'; position: absolute; top: 50%; margin-top: -10px; left: -10px; z-index: 10;}*/
 .item-basket .col3 .round {background: #CC3449; border-radius: 50%; color: #fff; width: 50%; height: 30%; z-index: 10; margin: auto; position: absolute; top: 50%; left: 0; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
 .item-basket .col3 .round .wrap {position: relative; width: 100%; height: 100%;}
@@ -99,9 +100,9 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 .item-basket .sum {padding-left: 2%; padding-right: 2%; font-size: 55%; color: #fff; font-weight: normal; border-bottom: none; font-size: 75%;}
 
 .form-order {padding: 2%;}
-.form-order p {text-align: center; font: normal 75%/1 'Fira Sans'; color: #fff;}
+.form-order p {text-align: center; font: 300 75%/1 'Fira Sans'; color: #fff;}
 .form-order input[type=tel] {box-sizing: border-box; width: 100%; padding: 0 10px; background: #fff; border-radius: 4px; font: normal 75% 'Fira Sans'; color: #666; border: none; height: 40px;}
-.form-order input[type=submit] {padding: 0; margin: 0; border: none; background: #CC3749; width: 100%; height: 40px; font: normal 75% 'Fira Sans'; color: #fff; border-radius: 4px; -webkit-appearance:none; -webkit-border-radius:4px;}
+.form-order input[type=submit] {padding: 0; margin: 0; border: none; background: #CC3749; width: 100%; height: 40px; font: normal 75% 'Fira Sans'; color: #fff; border-radius: 4px; -webkit-appearance:none; -webkit-border-radius:4px; cursor: pointer;}
 
 
 
