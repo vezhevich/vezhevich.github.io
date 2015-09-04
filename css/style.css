@@ -4,8 +4,8 @@ img {max-width: 100%; border: none;}
 
 body {background: #30343F;}
 
-#header.no-bg {background: none;}
-#header {height: 42px; text-align: center; background: rgba(32,35,48,0.9); overflow: hidden; z-index: 2000; position: relative; position: fixed; top: 0; left: 0; width: 100%;}
+#header.bg {background: rgba(32,35,48,0.9);}
+#header {height: 42px; text-align: center; overflow: hidden; z-index: 2000; position: relative; position: fixed; top: 0; left: 0; width: 100%;}
 #header .logo {display: inline-block; zoom: 1; *display: inline; width: 116px; padding-top: 12px;}
 #header .burger a {padding: 12px 15px 12px 15px; display: block;}
 #header .burger i {color: #fff;}
