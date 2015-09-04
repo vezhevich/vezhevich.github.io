@@ -204,7 +204,7 @@ div.menu ul {padding: 0; }
 div.menu ul li {
 	list-style: none;
 	width:320px;
-	margin-top:30px;
+	margin: 0;
 	text-align:center;
 	font-size: 100%;
 	font-weight: 300;
@@ -218,7 +218,10 @@ div.menu ul li a {
 	color:#fff;
 	text-transform:uppercase;
 	text-decoration:none;	
-	letter-spacing:3px;	
+	letter-spacing:3px;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 10px;	
 }
 
 section > div {
