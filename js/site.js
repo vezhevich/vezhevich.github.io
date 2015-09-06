@@ -45,10 +45,10 @@ function menu(){
 	 		});	
 	 		
 
-	 		// $('div.menu ul li a').on(click, function(e){
-	 		// 	e.preventDefault();
-	 		// 	closeMenu();
-	 		// });
+	 		$('div.menu ul li a').on(click, function(e){
+	 			e.preventDefault();
+	 			closeMenu();
+	 		});
 
 
 	 		function openMenu(){
