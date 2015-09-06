@@ -3,6 +3,7 @@ if (window.jQuery) $(document).ready(function() {
      if ($('input[type=tel]').length) tel();
      if ($('#header').length) hbg();
      if ($('.menu').length) menu();
+     if ($('.basket').length) card();
 });
 
 
@@ -93,4 +94,13 @@ function menu(){
 	 			
 	 		}
 }
+
+
+
+	function card(){
+	$('.plus').click(function(){
+		$('.basket').toggleClass("animate"); return false;
+	});
+}
+
 
