@@ -319,7 +319,7 @@ div.menu li.animate{
 	width: 15px;
 	cursor: pointer;
 	margin-top: 15px;
-	margin-left: 21px;
+	margin-left: 15px;
 	position: relative;	
 }
 	div.x,
@@ -335,7 +335,7 @@ div.menu li.animate{
 		     -o-transition: all 200ms ease-out;
 		        transition: all 200ms ease-out;
 	}		
-	div.x, div.y, div.z {height: 1px; width: 15px; }
+	div.x, div.y, div.z {height: 2px; width: 15px; }
 	div.y{top: 5px;}
 	div.z{top: 10px;}
 	div.collapse{
