@@ -78,7 +78,7 @@ body {background: #30343F;}
 .item-card.list .qnty a {width: 30px; height: 30px;}
 .item-card.list .qnty .plus i {line-height: 220%;}
 .item-card.list .qnty .minus i {line-height: 220%;}
-.item-card.list .qnty span {width: 30px; height: 30px; line-height: 220%; font-size: 75%;}
+.item-card.list .qnty span {width: 30px; height: 30px; line-height: 220%; font-size: 75%; display: none;}
 .item-card.list .text .title {font-size: 100%;}
 .item-card.list .text .cost {font-size: 100%;}
 .item-card.list .text .teaser {font-size: 75%;}

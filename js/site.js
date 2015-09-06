@@ -99,7 +99,8 @@ function menu(){
 
 	function card(){
 	$('.plus').click(function(){
-		$('.basket').toggleClass("animate"); return false;
+		$('.basket').toggleClass("animate");
+		$('.qnty').toggleClass("added"); return false;
 	});
 }
 
