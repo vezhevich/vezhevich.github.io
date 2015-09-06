@@ -313,6 +313,7 @@ div.menu li.animate{
 .menu-splitR li:nth-of-type(12) {margin-left:-217px;	transition-delay: 0.0s;	}
 .menu-splitR li.animate:nth-of-type(12) {margin-left:-160px;	transition-delay: 0.2s;	}
 
+.burger:focus {background: none;}
 
 .burger {
 	height: 42px; 
