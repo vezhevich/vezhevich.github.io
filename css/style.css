@@ -315,18 +315,16 @@ div.menu li.animate{
 
 
 .burger {
-	height: 15px; 
-	width: 15px;
+	height: 42px; 
+	width: 42px;
 	cursor: pointer;
-	margin-top: 15px;
-	margin-left: 15px;
 	position: relative;	
 }
 	div.x,
 	div.y,
 	div.z {
-		position: absolute;
-		top: 0px; bottom: 0px;		
+		position: absolute; left: 50%; margin-left: -8px;
+		top: 15px; bottom: 0px;		
 		background: #fff;
 		border-radius:2px;
 		-webkit-transition: all 200ms ease-out;
@@ -336,10 +334,10 @@ div.menu li.animate{
 		        transition: all 200ms ease-out;
 	}		
 	div.x, div.y, div.z {height: 2px; width: 15px; }
-	div.y{top: 5px;}
-	div.z{top: 10px;}
+	div.y{top: 20px;}
+	div.z{top: 25px;}
 	div.collapse{
-		top: 5px;
+		top: 20px;
 		-webkit-transition: all 70ms ease-out;
 		   -moz-transition: all 70ms ease-out;
 		    -ms-transition: all 70ms ease-out;
