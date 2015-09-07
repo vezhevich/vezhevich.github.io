@@ -220,7 +220,7 @@ div.menu ul li a {
 	text-decoration:none;	
 	letter-spacing:3px;
 	display: block;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 10px;	
 }
 
@@ -230,7 +230,6 @@ div.menu ul li a {
 }*/
 
 div.menu li.animate{
-	font-size:19px;
 	opacity:1;
 	-webkit-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
 	   -moz-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
@@ -275,6 +274,15 @@ div.menu li.animate{
 .menu-splitL li:nth-of-type(12) {margin-left:59px;	transition-delay: 0.0s;	}
 .menu-splitL li.animate:nth-of-type(12) {margin-left:0;	transition-delay: 0.2s;	}
 
+.menu-splitL li:nth-of-type(13) {margin-left:59px;	transition-delay: 0.0s;	}
+.menu-splitL li.animate:nth-of-type(13) {margin-left:0;	transition-delay: 0.2s;	}
+
+.menu-splitL li:nth-of-type(14) {margin-left:59px;	transition-delay: 0.0s;	}
+.menu-splitL li.animate:nth-of-type(14) {margin-left:0;	transition-delay: 0.2s;	}
+
+.menu-splitL li:nth-of-type(15) {margin-left:59px;	transition-delay: 0.0s;	}
+.menu-splitL li.animate:nth-of-type(15) {margin-left:0;	transition-delay: 0.2s;	}
+
 
 
 .menu-splitR li:nth-of-type(1){	margin-left:-201px;transition-delay: 0.12s;}
@@ -313,6 +321,16 @@ div.menu li.animate{
 .menu-splitR li:nth-of-type(12) {margin-left:-217px;	transition-delay: 0.0s;	}
 .menu-splitR li.animate:nth-of-type(12) {margin-left:-160px;	transition-delay: 0.2s;	}
 
+.menu-splitR li:nth-of-type(13) {margin-left:-217px;	transition-delay: 0.0s;	}
+.menu-splitR li.animate:nth-of-type(13) {margin-left:-160px;	transition-delay: 0.2s;	}
+
+.menu-splitR li:nth-of-type(14) {margin-left:-217px;	transition-delay: 0.0s;	}
+.menu-splitR li.animate:nth-of-type(14) {margin-left:-160px;	transition-delay: 0.2s;	}
+
+.menu-splitR li:nth-of-type(15) {margin-left:-217px;	transition-delay: 0.0s;	}
+.menu-splitR li.animate:nth-of-type(15) {margin-left:-160px;	transition-delay: 0.2s;	}
+
+.menu ul li.last {font-size: 75%; font-family: 'Fira Sans';}
 
 .burger {
 	height: 42px; 
