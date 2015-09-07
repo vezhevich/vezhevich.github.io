@@ -113,6 +113,7 @@ input[type="checkbox"]:checked + label::before {background-position: 0 -50px;}
 
 .item-basket .check {padding: 3% 2%;}
 .item-basket .sum {padding: 3% 2%; color: #fff; font-weight: normal; border-bottom: none; font-size: 75%;}
+.item-basket .sum i {font-size: 90%;}
 
 .form-order {padding: 2%;}
 .form-order .row {margin-bottom: 3%;}
