@@ -492,7 +492,7 @@ div.menu li.animate{
 .popup {z-index: 2000;}
 .popup .modal-content {background: url(/img/menu-bg.jpg) no-repeat center center;}
 .popup .close {background: none; border: none; font-size: 150%; color: #fff; position: absolute; top: 0px; right: 0px; cursor: pointer; width: 20px; height: 20px; padding: 0; margin: 0; line-height: 1%; top: 10px; right: 10px;}
-.popup .modal-header {border-bottom: none;}
+.popup .modal-header {border-bottom: none; position: relative;}
 .popup .modal-body {border-bottom: none;}
 .popup .bright {position: relative; overflow: hidden; font-family: 'Fira Sans', sans-serif; font-size: 75%; font-weight: normal;}
 .bright:after {content: ''; position: absolute; width: 100%; border-top: 1px solid #fff;    margin-top: .5em; margin-left: .4em;}
@@ -501,7 +501,8 @@ div.menu li.animate{
 .popup .btn a {display: block; text-align: center; border: 1px solid #fff; border-radius: 4px; padding: 10px 0; color: #fff; text-decoration: none; font-size: 75%; font-weight: 300; font-family: 'Fira Sans';}
 
 
-
+#call {background: #CC3A49; border-radius: 50%; width: 60px; height: 60px; position: fixed; bottom: 10px; right: 10px; z-index: 1000;}
+#call i {color: #fff; padding: 12px 15px;}
 
 
 
