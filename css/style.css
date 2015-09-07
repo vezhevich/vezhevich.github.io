@@ -183,9 +183,10 @@ div.menu {
 	width: 320px;
 	margin-left: -160px;
 	left: 50%;
-	position: absolute;
+	position: fixed;
 	z-index: 900;
 	display: none;
+	overflow: auto;
 }
 
 div.menu.ind {display: block;}
