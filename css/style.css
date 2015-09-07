@@ -157,7 +157,7 @@ div.menu-bg{
 	z-index: 500;
 	width: 100%;
 	height: 100%; 
-	position:absolute;	
+	position:fixed;	
   top:0;
   left:0;
 	background: url(/img/menu-bg.jpg) no-repeat top center #292031;
