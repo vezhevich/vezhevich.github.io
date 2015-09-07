@@ -4,6 +4,8 @@ if (window.jQuery) $(document).ready(function() {
      if ($('#header').length) hbg();
      if ($('.menu').length) menu();
      if ($('.basket').length) card();
+     if ($('#call').length) phone();
+     if ($('#call').length) phonedown();
 });
 
 
@@ -97,11 +99,20 @@ function menu(){
 
 
 
-	function card(){
+function card(){
 	$('.plus').click(function(){
 		$('.basket').toggleClass("animate");
 		$('.qnty').toggleClass("added"); return false;
 	});
 }
+
+function phone(){
+	$('#call').click(function(){
+		$('#call .c1').toggleClass('up1'); 
+	 	$('#call .c2').toggleClass('up2'); 
+	 	$('#call .c3').toggleClass('up3'); 
+	});	
+}
+
 
 
