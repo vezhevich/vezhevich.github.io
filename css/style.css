@@ -72,11 +72,12 @@ body {background: #30343F;}
 
 .item-card.list dl {margin-left: 0;}
 .item-card.list dl dt {width: 100%; margin-left: 0; margin-bottom: 5%;}
-.item-card.list .qnty {width: 30px; top: 10px;}
+.item-card.list .qnty {width: 30px; top: auto; bottom: 10px; height: 60%;}
 .item-card.list .qnty a {width: 30px; height: 30px;}
 .item-card.list .qnty .plus i {line-height: 220%;}
 .item-card.list .qnty .minus i {line-height: 220%;}
-.item-card.list .qnty span {width: 30px; height: 30px; line-height: 220%; font-size: 75%; display: none;}
+.item-card.list .qnty span {width: 30px; height: 30px; line-height: 220%; font-size: 75%; display: none; margin-top: -15px;}
+.item-card.list .wrapper {width: 30px;}
 .item-card.list .text .title {font-size: 100%;}
 .item-card.list .text .cost {font-size: 100%;}
 .item-card.list .text .teaser {font-size: 75%;}
