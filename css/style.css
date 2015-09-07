@@ -19,9 +19,7 @@ body {background: #30343F;}
 	        transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);	
 }
 #header .logo {display: inline-block; zoom: 1; *display: inline; width: 116px; padding-top: 12px;}
-/*#header .burger a {padding: 12px 15px 12px 15px; display: block;}
-#header .burger i {color: #fff;}
-*/#header .basket a {padding: 12px 15px 12px 15px; display: block;}
+#header .basket a {padding: 12px 15px 12px 15px; display: block;}
 #header .basket i {color: #fff;}
 #header .basket {position: relative;}
 
@@ -225,10 +223,10 @@ div.menu ul li a {
 	padding-bottom: 10px;	
 }
 
-section > div {
+/*section > div {
     transition: transform 1s;
     transform: translateX(0px);
-}
+}*/
 
 div.menu li.animate{
 	font-size:19px;
@@ -501,12 +499,12 @@ div.menu li.animate{
 .popup .btn a {display: block; text-align: center; border: 1px solid #fff; border-radius: 4px; padding: 10px 0; color: #fff; text-decoration: none; font-size: 75%; font-weight: 300; font-family: 'Fira Sans';}
 
 
-#call {background: #CC3A49; border-radius: 50%; width: 60px; height: 60px; position: fixed; bottom: 10px; right: 10px; z-index: 1000; cursor: pointer;}
+#call {background: #CC3A49; border-radius: 50%; width: 60px; height: 60px; position: fixed; bottom: 10px; right: 10px; z-index: 100; cursor: pointer;}
 #call i {color: #fff; padding: 12px 15px;}
 #call .wrapper {width: 60px; height: 60px;}
 #call .call-phone {position: absolute; right: 0; bottom: -70px; opacity: 0;}
 #call .call-phone > i {color: #CC3A49; padding: 15px 10px 15px 15px;}
-#call a {font-size: 62.5%; font-weight: normal; font-family: 'Fira Sans'; color: #454545; background: #fff; white-space: nowrap; width: 120px; height: 40px; border-radius: 20px; text-decoration: none; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -ms-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out; z-index: 999;}
+#call a {font-size: 62.5%; font-weight: normal; font-family: 'Fira Sans'; color: #454545; background: #fff; white-space: nowrap; width: 120px; height: 40px; border-radius: 20px; text-decoration: none; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -ms-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out; z-index: 100;}
 
 #call .up1 {opacity: 1; transform: translate(0,-144px);
     -webkit-transform: translate(0,-144px);
@@ -520,7 +518,6 @@ div.menu li.animate{
     -webkit-transform: translate(0,-244px);
     -o-transform: translate(0,-244px);
     -moz-transform: translate(0,-244px);}
-
 
 
 
