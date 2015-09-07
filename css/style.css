@@ -491,7 +491,7 @@ div.menu li.animate{
 
 .popup {z-index: 2000;}
 .popup .modal-content {background: url(/img/menu-bg.jpg) no-repeat center center;}
-.popup .close {background: none; border: none; font-size: 150%; color: #fff; position: absolute; top: 0px; right: 0px; cursor: pointer;}
+.popup .close {background: none; border: none; font-size: 150%; color: #fff; position: absolute; top: 0px; right: 0px; cursor: pointer; width: 20px; height: 20px; padding: 0; margin: 0; line-height: 1%; top: 10px; right: 10px;}
 .popup .modal-header {border-bottom: none;}
 .popup .modal-body {border-bottom: none;}
 .popup .bright {position: relative; overflow: hidden; font-family: 'Fira Sans', sans-serif; font-size: 75%; font-weight: normal;}
