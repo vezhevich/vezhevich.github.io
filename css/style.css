@@ -503,6 +503,7 @@ div.menu li.animate{
 
 #call {background: #CC3A49; border-radius: 50%; width: 60px; height: 60px; position: fixed; bottom: 10px; right: 10px; z-index: 1000; cursor: pointer;}
 #call i {color: #fff; padding: 12px 15px;}
+#call .wrapper {width: 60px; height: 60px;}
 #call .call-phone {position: absolute; right: 0; bottom: -70px; opacity: 0;}
 #call .call-phone > i {color: #CC3A49; padding: 15px 10px 15px 15px;}
 #call a {font-size: 62.5%; font-weight: normal; font-family: 'Fira Sans'; color: #454545; background: #fff; white-space: nowrap; width: 120px; height: 40px; border-radius: 20px; text-decoration: none; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -ms-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out;}
