@@ -541,7 +541,8 @@ div.menu li.animate{
 
 
 
-
+.icon-location:before {
+   content: "\e604";}
 
 
 
