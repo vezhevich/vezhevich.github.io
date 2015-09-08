@@ -540,10 +540,13 @@ div.menu li.animate{
     -moz-transform: translate(0,-244px);}
 
 
+.iconv {display: inline-block; zoom: 1; *display: inline;}
 
 .icon-location:before {
    content: "\e604";}
 
+.icon-minus:before {
+   content: "\e600";}
 
 
 
