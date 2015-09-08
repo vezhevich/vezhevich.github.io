@@ -195,6 +195,7 @@ div.menu {
 div.menu.ind {display: block;}
 
 div.menu ul {padding: 0; }
+div.menu .separator {border-top: 1px solid rgba(255,255,255,0.15); margin-top: 10px;}
 
 .menu-splitL, .menu-splitR {
 	z-index: 900;
@@ -336,6 +337,7 @@ div.menu li.animate{
 .menu-splitR li.animate:nth-of-type(15) {margin-left:-160px;	transition-delay: 0.2s;	}
 
 .menu ul li.last {font-size: 75%; font-family: 'Fira Sans';}
+.menu ul li.last a {text-transform: none; letter-spacing: normal;}
 
 .burger {
 	height: 42px; 
