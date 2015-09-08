@@ -195,7 +195,7 @@ div.menu {
 div.menu.ind {display: block;}
 
 div.menu ul {padding: 0; }
-div.menu .separator {border-top: 1px solid rgba(255,255,255,0.15); margin-top: 10px;}
+div.menu .separator {border-top: 1px solid rgba(255,255,255,0.15); margin-top: 15px;}
 
 .menu-splitL, .menu-splitR {
 	z-index: 900;
