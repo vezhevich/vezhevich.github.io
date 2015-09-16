@@ -1,4 +1,4 @@
-.btn a {display: inline-block; zoom: 1; *display: inline; font: bold 18px Ubuntu; color: #fff; text-shadow:0px 1px 0px rgba(0,0,0,0.55); padding: 12px 40px; border-radius: 5px;
+.btn a {display: inline-block; zoom: 1; *display: inline; font: 500 18px Ubuntu; color: #fff; text-shadow:0px 1px 0px rgba(0,0,0,0.55); padding: 12px 40px; border-radius: 5px;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f45c43+0,eb3349+100 */
 background: rgb(244,92,67); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(244,92,67,1) 0%, rgba(235,51,73,1) 100%); /* FF3.6+ */
@@ -20,7 +20,7 @@ background: linear-gradient(to bottom, rgba(235,51,73,1) 0%,rgba(244,92,67,1) 10
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb3349', endColorstr='#f45c43',GradientType=0 ); /* IE6-9 */
 }
 
-.btn input[type=submit] {display: inline-block; zoom: 1; *display: inline; font: bold 18px Ubuntu; color: #fff; text-shadow:0px 1px 0px rgba(0,0,0,0.55); border-radius: 5px; border: none; width: 300px; height: 46px;
+.btn input[type=submit] {display: inline-block; zoom: 1; *display: inline; font: 500 18px Ubuntu; color: #fff; text-shadow:0px 1px 0px rgba(0,0,0,0.55); border-radius: 5px; border: none; width: 300px; height: 46px;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f45c43+0,eb3349+100 */
 background: rgb(244,92,67); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(244,92,67,1) 0%, rgba(235,51,73,1) 100%); /* FF3.6+ */
