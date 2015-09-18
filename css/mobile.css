@@ -78,6 +78,7 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 	
 	h4 {font-size: 18px;}
 	p {font-size: 14px;}
+	ul {margin: 0; padding-bottom: 0;}
 	ul li {font-size: 14px;}
 	ul li::before {top: 8px;}
 	
