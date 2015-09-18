@@ -5,7 +5,7 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 .m-navi {border-bottom: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 200;}
 .m-navi dl.lv1 > dt {float: left; width: 156px; position: relative;}
 .m-navi dl.lv1 > dt > a {font: normal 16px/1.2 Open Sans; color: #fff; text-decoration: none; display: block; padding: 15px 20px; height: 40px;}
-.m-navi dl.lv1 > dt:hover > a {color: #000;background: #FFBD00;}
+.m-navi dl.lv1 > dt:hover > a {color: #000; background: #FFBD00;}
 .m-navi dl.lv1 > dt > a.active {color: #FFBD00; font-weight: bold;}
 .m-navi dl.lv1 dt:hover .lv2 {display: block;}
 .m-navi .lv2 {position: absolute; top: 70px; left: 0; background: #FFBD00; width: 100%; display: none; z-index: 200;}
@@ -71,9 +71,17 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 
 	.layout.w220 {margin-bottom: 0;}
 	.layout.w220 .l-col {float: none; width: 100%; margin-bottom: 10px;}
-	.layout.w220 .r-col {float: none; width: 100%;}
-
-	.m-stat-list h4 {margin-left: 0; font-size: 18px;}
+	.layout.w220 .r-col {float: none; width: 100%;}	
+	.layout.w220i {margin-bottom: 0;}
+	.layout.w220i .l-col {float: none; width: 100%; margin-bottom: 10px;}
+	.layout.w220i .r-col {float: none; width: 100%;}
+	
+	h4 {font-size: 18px;}
+	p {font-size: 14px;}
+	ul li {font-size: 14px;}
+	ul li::before {top: 8px;}
+	
+	.m-stat-list h4 {margin-left: 0;}
 	.m-stat-list .date {float: none; width: 100%; text-align: left; margin-bottom: 5px; font-size: 14px;}
 	.m-stat-list .text a {font-size: 14px; line-height: 1.3; display: inline-block; zoom: 1; *display: inline;}
 	.m-stat-list dl dt {margin-bottom: 0px;}
@@ -90,6 +98,11 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 
 	.gamb {background: url(/img/pattern1.jpg); text-align: center; display: block;}
 	.gamb a {display: block; background: url(/img/gamb.png) no-repeat center center; padding: 20px 0; border-bottom: 1px solid rgba(0,0,0,0.2);}
+
+	.m-back a {font-size: 14px;}
+
+	.pattern1.inner .heading {padding: 10px; background: url(/img/pattern1.jpg);}
+	.pattern1.inner h2 {font-size: 21px; margin-bottom: 0;}
 }
 
 /* Custom, iPhone Retina */
