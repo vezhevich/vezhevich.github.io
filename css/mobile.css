@@ -93,6 +93,7 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 	#footer .logo img {max-width: 240px;}
 	#footer .centered {height: auto;}
 	#footer .cols dl {margin-left: 0;}
+	#footer .cols dl dt {margin: 0;}
 	#footer .tel {padding-top: 0; margin-bottom: 0; text-align: left; float: right; width: auto;}
 	#footer .tel .phone {font-size: 21px; margin-bottom: 5px;}
 	#footer .tel p {font-size: 12px; margin-bottom: 0;}
@@ -105,12 +106,15 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 
 	.pattern1.inner .heading {padding: 10px; background: url(/img/pattern1.jpg);}
 	.pattern1.inner h2 {font-size: 21px; margin-bottom: 0;}
+
+	#container {margin: 0 0 -80px 0;}
+	.footer-push {height: 80px;}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	#footer {height: 140px;}
-	#footer .logo {margin-top: 0px;}
+	#footer .logo {margin-top: 0px; margin-bottom: 20px;}
 	#footer .logo img {max-width: 240px;}
 	#footer .centered {height: auto;}
 	#footer .cols dl {margin-left: 0;}
