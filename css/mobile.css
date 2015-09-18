@@ -61,6 +61,7 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 	.m-navi dl.lv1 > dt {float: none; text-align: center; width: auto; border-bottom: 1px solid rgba(0,0,0,0.2);}
 	.m-navi dl.lv1 > dt > a {height: auto; padding-top: 10px; padding-bottom: 10px;}
 	.m-navi dl.lv1 > dt:hover .lv2 {display: none;}
+	.m-navi dl.lv1 > dt:hover > a {background: none;}
 	.m-navi .lv2 {display: none; position: relative; top: 0;}
 	.m-navi .lv2 dt {border-bottom: 1px solid rgba(0,0,0,0.2);}
 	.m-navi .lv2 dl dt a {padding: 10px 20px;}
