@@ -88,14 +88,15 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 	.m-stat-list dl dt {margin-bottom: 0px;}
 
 	#footer {height: 140px;}
+	#footer .lg {margin-top: 0px; float: left; width: auto;}
 	#footer .logo {margin-top: 0px;}
 	#footer .logo img {max-width: 240px;}
 	#footer .centered {height: auto;}
 	#footer .cols dl {margin-left: 0;}
-	#footer .cols dt {width: 100%; margin-left: 0;}
-	#footer .tel {padding-top: 0; margin-bottom: 0; text-align: left;}
+	#footer .tel {padding-top: 0; margin-bottom: 0; text-align: left; float: right; width: auto;}
 	#footer .tel .phone {font-size: 21px; margin-bottom: 5px;}
 	#footer .tel p {font-size: 12px; margin-bottom: 0;}
+
 
 	.gamb {background: url(/img/pattern1.jpg); text-align: center; display: block;}
 	.gamb a {display: block; background: url(/img/gamb.png) no-repeat center center; padding: 20px 0; border-bottom: 1px solid rgba(0,0,0,0.2);}
@@ -108,7 +109,15 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	#footer {height: 140px;}
+	#footer .logo {margin-top: 0px;}
+	#footer .logo img {max-width: 240px;}
+	#footer .centered {height: auto;}
+	#footer .cols dl {margin-left: 0;}
+	#footer .cols dt {width: 100%; margin-left: 0;}
+	#footer .tel {padding-top: 0; margin-bottom: 0; text-align: left;}
+	#footer .tel .phone {font-size: 21px; margin-bottom: 5px;}
+	#footer .tel p {font-size: 12px; margin-bottom: 0;}
 }
 
 
