@@ -10,9 +10,10 @@ function select(){
 
 function slidedown()
 {
-	$(".m-navi .lv1 > dt > a").on('click', function(){
-		   $(this).toggleClass('active');
-		   $(".lv2").slideToggle();
+	$(".m-navi-mobile .lv1 > dt > a").on('click', function(){
+		   $('.m-navi-mobile .lv1 > dt > a').removeClass('active');
+		   $(this).addClass('active');
+		   $(this).next().slideToggle();
 			return false;
 	   });
 }
@@ -20,7 +21,8 @@ function slidedown()
 function slidedown2()
 {
 	$(".gamb a").on('click', function(){
-		   $(".m-navi").slideToggle();
+		   $(".m-navi-mobile").slideToggle();
 		return false;
 	   });
 }
+

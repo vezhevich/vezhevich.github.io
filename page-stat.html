@@ -191,5 +191,18 @@
 		        });
 		    });
 		</script>
+		<script>
+			function divClass(a) {
+				   divClass.elem.classList[a ? 'add' : 'remove']('m-navi-mobile');
+				}
+
+				divClass.elem = document.getElementById('m-navi');
+
+				window.onresize = function() {
+				   divClass(this.innerWidth < 481);
+				}
+
+				window.onresize();
+		</script>
 	</body>
 </html>
