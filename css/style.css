@@ -204,7 +204,7 @@ div.menu {
 	position: absolute;
 	z-index: 900;
 	display: none;
-	top: 0;
+	top: 44px;
 	overflow-x: hidden;
 }
 
