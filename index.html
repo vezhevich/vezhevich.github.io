@@ -1,142 +1,414 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Sushi House</title>
+        <title>Бухгалтерия</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-		<link href="css/reset.css" rel="stylesheet" type="text/css">
-		<link href="css/custom.css" rel="stylesheet" type="text/css">
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-		<link href="css/stylefont.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="/css/jquery.formstyler.css" rel="stylesheet" type="text/css">
+		<link href="/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="/css/custom.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<!--[if IE 7]><link href="/css/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+		<!--[if IE 8]><link href="/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+		<!--[if IE 9]><link href="/css/ie9.css" rel="stylesheet" type="text/css" /><![endif]-->
  		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
- 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
- 		<meta name="apple-mobile-web-app-capable" content="yes" />
- 		<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700,300,300italic,400italic,500italic,500,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
 	<body>
 		<div id="container">
-			<div id="header" class="clearfix">
-				<div class="fl-l burger">
-					<div class="x"></div>
-					<div class="y"></div>
-	                <div class="z"></div>
-				</div>
-				<div class="fl-r basket">
-					<a href="basket.html"><i class="fa fa-shopping-cart"></i><span class="cart__count">1</span></a>
-				</div>
-				<div class="logo"><a href="/"><img src="/img/logo.svg" alt=""></a></div>
-				<div class="pos-rel">
-			        <div class="menu-bg"></div>
-					<div class="menu">				
-			            <ul class="menu-splitL">
-							<li><a href="category.html">Роллы</a></li>
-							<li><a href="category.html">Суши</a></li>
-							<li><a href="category.html">Наборы</a></li>
-			                <li><a href="category.html">Супы</a></li>
-			                <li><a href="category.html">Салаты</a></li>
-			                <li><a href="category.html">Горячие блюда</a></li>
-			                <li><a href="category.html">Десерты</a></li>
-			                <li><a href="category.html">Напитки</a></li>
-			                <li><a href="category.html">Бизнес-ланчи</a></li>
-			                <li><a href="category.html">Детские наборы</a></li>
-			                <li><a href="category.html">Лапша WOK</a></li>
-			                <li><a href="category.html">Дополнительно</a></li>
-			                <li class="last separator"><a href="about.html">О компании</a></li>
-			                <li class="last"><a href="action.html">Акции</a></li>
-			                <li class="last"><a href="resto.html">Рестораны</a></li>
-						</ul>
-			            <ul class="menu-splitR">
-							<li><a href="category.html">Роллы</a></li>
-							<li><a href="category.html">Суши</a></li>
-							<li><a href="category.html">Наборы</a></li>
-			                <li><a href="category.html">Супы</a></li>
-			                <li><a href="category.html">Салаты</a></li>
-			                <li><a href="category.html">Горячие блюда</a></li>
-			                <li><a href="category.html">Десерты</a></li>
-			                <li><a href="category.html">Напитки</a></li>
-			                <li><a href="category.html">Бизнес-ланчи</a></li>
-			                <li><a href="category.html">Детские наборы</a></li>
-			                <li><a href="category.html">Лапша WOK</a></li>
-			                <li><a href="category.html">Дополнительно</a></li>
-			                <li class="last separator"><a href="about.html">О компании</a></li>
-			                <li class="last"><a href="action.html">Акции</a></li>
-			                <li class="last"><a href="resto.html">Рестораны</a></li>
-						</ul>
+			<div id="header">
+				<div class="centered">
+					<div class="cols cols3">
+						<dl>
+							<dt>
+								<div class="logo mt25"><a href=""><img src="/img/logo.png" alt=""></a></div>					
+							</dt>
+							<dt>
+								<div class="feedback text-right">
+									<p class="pt25 mb10">Связаться</br> с главным бухгалтером</p>
+									<p><a class="link-js" data-toggle="modal" data-target="#myModal" href="">Перезвоните мне</a></p>
+								</div>		
+							</dt>
+							<dt class="text-right tel pt25">
+								<p class="phone mb10"><span>(495)</span> 222-22-22</p>
+								<p>с 9 по 18 будние дни</p>
+							</dt>
+						</dl>
 					</div>
 				</div>
 			</div>
 			<div id="content">
-				<div class="owl-carousel">
-					<div class="item"><a href="#"><img src="/img/carousel.jpg" alt=""></a></div>
-					<div class="item"><a href="#"><img src="/img/carousel.jpg" alt=""></a></div>
-					<div class="item"><a href="#"><img src="/img/carousel.jpg" alt=""></a></div>
+				<div class="pattern1">
+					<div class="centered text-center promo">
+						<h1 class="pt40">Бухгалтерия Москва – учет каждого рубля и готовность к любой проверке</h1>
+						<p class="font-big mb30">Идеальная бухгалтерия без найма, </br>лишних рисков и расходов</p>
+						<div class="button pos-rel"><a href="">Попробуй бесплатно*</a> <span class="helper">* Работай с профессионалами</br>1 месяц бесплатно</span></div>
+					</div>
 				</div>
-				<div class="catalog-plit">
-					<dl class="clearfix">
+				<div class="centered mb50">
+					<div class="border services h-center pb10">
+						<div class="wrapper"><h4 class="title">Бухгалтерия Москва возьмет на себя все ваши задачи</h4></div>
+						<div class="cols cols5 mb20 pb20 pos-rel">
+							<div class="shadow"></div>
+							<dl class="oh">
+								<dt class="s1">Общение с гос. органами</dt>
+								<dt class="s2">Сдача отчетности</dt>
+								<dt class="s3">Оптимизация</br> налогов</dt>
+								<dt class="s4">Ведение</br> налогового учета</dt>
+								<dt class="s5">Ведение</br> бухгалтерии</dt>
+							</dl>
+						</div>
+						<h4 class="text-center text-normal">Вам останется только заниматься делом</h4>
+						<p class="text-center grey">не заботясь о бухгалтерии</p>
+					</div>
+				</div>
+				<div class="pattern2 whom mb50">
+					<div class="centered">
+						<div class="cols cols2">
+							<dl class="oh">
+								<dt></dt>
+								<dt class="pt40">
+									<h4 class="mb20">Услуги бухгалтерия Москва подойдут:</h4>
+									<ul>
+										<li>Риэлторским конторам</li>
+										<li>Консалтинг агенствам</li>
+										<li>Юридическим услугам</li>
+										<li>ИП всех видов</li>
+										<li>Автомойкам</li>
+									</ul>
+									<div class="button"><a href="">Заявка на услуги</a></div>
+								</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="text-center">
+					<img class="mb20" src="/img/conus.png" alt="">
+					<h2 class="mb30">Гарантии бухгалтерии Москва</h2>
+				</div>
+				<div class="pattern3 warranty">
+					<div class="centered">
+						<div class="cols cols3">
+							<dl class="oh">
+								<dt class="col1">
+									<h4 class="text-normal">Выгода</h4>
+									<ul>
+										<li>не нужно нанимать постоянного бухгалтера</li>
+										<li>тарифы меньше заработной платы сотрудника</li>
+										<li>без дополнительныхх рабочих мест</li>
+									</ul>
+								</dt>								
+								<dt class="col2">
+									<div class="pl40">
+										<h4 class="text-normal">Профессионализм</h4>
+										<ul>
+											<li>сотрудники из big4</li>
+											<li>двойная проверка</li>
+											<li>использование наработанных кейсов</li>
+										</ul>
+									</div>
+								</dt>								
+								<dt class="col3">
+									<div class="pl45">
+										<h4 class="text-normal">Удобство</h4>
+										<ul>
+											<li>доставка документов курьером</li>
+											<li>двойная проверка</li>
+											<li>использование наработанных кейсов</li>
+										</ul>
+									</div>
+								</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="pattern4 working">
+					<div class="centered">
+						<h4 class="title">Как мы работаем</h4>
+						<div class="cols cols3">
+							<dl class="oh">
+								<dt>Мы вместе формируем понимание о хозяйственной деятельности компании клиента (Калькулятор нам помогает);</dt>
+								<dt>Клиент оставляет заявку на сайте или обращается по телефону</dt>
+								<dt>Вместе с Клиентом определяем наши цели и задачи;</dt>
+								<dd class="clear"></dd>
+								<dt>Клиент получает качественные бухгалтерские и налоговый учет.</dt>
+								<dt>Запускаем и настраиваем рабочий процесс;</dt>
+								<dt>Заключаем договор;</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="pattern5 advantages">
+					<div class="centered">
+						<div class="cols cols2">
+							<dl class="oh">
+								<dt>
+									<div class="pr20 pl20 pt30">
+										<h4>Если пользоваться</br> услугами удаленного</h4>
+										<ul class="plus">
+											<li>Снижение финансовых расходов фирмы на зарплату сотруднику</li>
+											<li>Нет надобности в дополнительном рабочем месте и выплате сотруднику больничных</li>
+											<li>Наем как на продолжительной основе, так и на краткосрочные периоды</li>
+											<li>Вы можете выбрать бухгалтера любой квалификации независимо от страны или города</li>
+										</ul>
+										<div class="button ml35"><a href="">Заявка на услуги</a></div>
+									</div>
+								</dt>
+								<dt>
+									<div class="pl20 pt30 pr20">
+										<h4>Если нанимать</br> бухгалтера</h4>
+										<ul class="minus">
+											<li>Снижение финансовых расходов фирмы на зарплату сотруднику</li>
+											<li>Нет надобности в дополнительном рабочем месте и выплате сотруднику больничных</li>
+											<li>Наем как на продолжительной основе, так и на краткосрочные периоды</li>
+											<li>Вы можете выбрать бухгалтера любой квалификации независимо от страны или города</li>
+										</ul>
+									</div>
+								</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="pattern6 calc pt30 mb30">
+					<div class="centered">
+						<h3 class="text-center white mb20">Калькулятор расчета бухгалтерских услуг</h3>
+						<div class="wrapper">
+							<div class="layout w300i">
+								<div class="l-col">
+									<div class="p40">
+										<div class="mb20">
+											<p class="title">Название организации:</p>
+											<input class="w490" type="text"> <!-- класс .er для input если ошибка -->
+										</div>
+										<div class="mb10 group-radio">
+											<p class="title">Организационно-правовая форма</p>
+											<dl>
+												<dt>
+													<input id="rfirst" type="radio" name="radio" checked hidden />
+													<label for="rfirst">ИП</label>
+												</dt>												
+												<dt>
+													<input id="rsecond" type="radio" name="radio" hidden />
+        											<label for="rsecond">OOO</label>
+												</dt>												
+												<dt>
+													<input id="rthird" type="radio" name="radio" hidden />
+        											<label for="rthird">АО</label>
+												</dt>
+											</dl>
+										</div>
+										<div class="mb10 group-radio">
+											<p class="title">Режим налогообложения</p>
+											<dl>
+												<dt>
+													<input id="rfour" type="radio" name="radio" checked hidden />
+													<label for="rfour">УСН</label>
+												</dt>												
+												<dt>
+													<input id="rfive" type="radio" name="radio" hidden />
+        											<label for="rfive">ЕНВД</label>
+												</dt>
+											</dl>
+										</div>
+										<table>
+											<tbody>
+												<tr>
+													<td class="col1">
+														<p class="title">Пункты расчета наличностью*</p>
+													</td>
+													<td><input class="w180" type="text"></td> <!-- класс .er для input если ошибка -->
+												</tr>												
+												<tr>
+													<td class="col1">
+														<p class="title">Количество операций в месяц**</p>
+														<p>Любые виды операций на которые вы получаете либо выпускаете документы (акт/товарная накладная, счет, счет-фактура)</p>
+													</td>
+													<td>
+														<select name="" id="" class="custom">
+															<option value="">1</option>
+															<option value="">2</option>
+															<option value="">3</option>
+															<option value="">4</option>
+															<option value="">5</option>
+														</select>
+													</td>
+												</tr>												
+												<tr>
+													<td class="col1">
+														<p class="title">Подготовка платежных поручений</p>
+														<p>Мы подготовим все платежные поручения по счетам, а Вам останется лишь передать их в банк</p>
+													</td>
+													<td>
+														<input id="cfirst" type="checkbox" name="first" checked hidden />
+        												<label for="cfirst"></label>
+													</td>
+												</tr>												
+												<tr>
+													<td class="col1">
+														<p class="title">Количество сотрудников</p>
+													</td>
+													<td>
+														<input class="w180" type="text"> <!-- класс .er для input если ошибка -->
+													</td>
+												</tr>												
+												<tr>
+													<td class="col1">
+														<p class="title">Количество обособленных подразделений</p>
+														<p>(для общей системы налогообложения)</p>
+													</td>
+													<td>
+														<select name="" id="" class="custom">
+															<option value="">1</option>
+															<option value="">2</option>
+															<option value="">3</option>
+															<option value="">4</option>
+															<option value="">5</option>
+														</select>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="r-col">
+									<div class="wr">
+										<div class="wrap">
+											<h4>Стоимость бухгалерских услуг</h4>	
+											<table>
+												<tbody>
+													<tr>
+														<td>Пункты расчета наличностью</td>
+														<td class="col2"><strong>1 000 р</strong></td>
+													</tr>													
+													<tr>
+														<td>50 операций в месяц</td>
+														<td class="col2"><strong>15 000 р</strong></td>
+													</tr>													
+													<tr>
+														<td>7 сотрудников</td>
+														<td class="col2"><strong>4 100 р</strong></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="button mt20 text-center"><a href="">Заявка на услуги</a></div>
+										</div>		
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="centered">
+					<div class="border clients h-center pb10 mb50">
+						<div class="wrapper"><h4 class="title">Клиенты бухгалтерии Москва</h4></div>
+						<div class="cols cols3 mb30 pb20 pos-rel">
+							<div class="shadow"></div>
+							<dl class="oh">
+								<dt class="text-center"><img src="/img/c1.jpg" alt=""></dt>
+								<dt class="text-center"><img src="/img/c2.jpg" alt=""></dt>
+								<dt class="text-center"><img src="/img/c3.jpg" alt=""></dt>
+								<dd class="clear"></dd>
+								<dt class="text-center"><img src="/img/c4.jpg" alt=""></dt>
+								<dt class="text-center"><img src="/img/c5.jpg" alt=""></dt>
+								<dt class="text-center"><img src="/img/c6.jpg" alt=""></dt>
+							</dl>
+						</div>
+						<p class="text-center"><a class="link-js" href="">Показать всех клиентов</a></p>
+					</div>
+					<div class="text-center">
+						<img src="/img/conus.png" alt="" class="mb20">
+						<h4 class="mb20">Контактная информация</h4>
+					</div>
+				</div>
+				<div id="map" style="width:100%; height:300px" class="pos-rel mb30">
+					<span>г. Москва, ул. Терешковой, 2 б, оф. 505 </span>
+				</div>
+				<div class="centered">
+					<div class="text-center consultation mb30">
+						<h4>Бесплатная консультация</h4>
+						<h2>+7 495 222-22-22</h2>
+						<p class="font-medium">Позвоните нам или <a class="link-js" href="">отправьте заявку</a> на звонок, и мы </br>проконсультируем вас по интересующим вопросам бесплатно</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-push"></div>
+		</div>
+		<div id="footer">
+			<div class="centered">
+				<div class="cols cols3">
+					<dl class="oh">
 						<dt>
-							<a href="category.html"><img src="/img/m1.jpg" alt=""><span>Роллы</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m2.jpg" alt=""><span>Суши</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m3.jpg" alt=""><span>Наборы</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m4.jpg" alt=""><span>Супы</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m5.jpg" alt=""><span>Салаты</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m6.jpg" alt=""><span>Горячие блюда</span></a>
+							<div class="logo mt25"><a href=""><img src="/img/logo.png" alt=""></a></div>
 						</dt>
-						<dt>
-							<a href="category.html"><img src="/img/m7.jpg" alt=""><span>Десерты</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m8.jpg" alt=""><span>Напитки</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m9.jpg" alt=""><span>Бизнес ланчи</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m10.jpg" alt=""><span>Детские наборы</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m11.jpg" alt=""><span>Васаби, имбирь, соусы</span></a>
-						</dt>						
-						<dt>
-							<a href="category.html"><img src="/img/m12.jpg" alt=""><span>Лапша WOK</span></a>
+						<dt class="text-right tel pt25">
+							<p class="phone mb10"><span>(495)</span> 222-22-22</p>
+							<p>с 9 по 18 будние дни</p>
+						</dt>
+						<dt class="text-right pt25">
+							<div>
+								<div class="gp text-center"><a href="http://garantpark.com/">Разработка сайта </br><img class="mt5" src="/img/gp.png" alt=""></a></div>
+							</div>
 						</dt>
 					</dl>
 				</div>
-				<div class="bottom-navi">
-					<a href="about.html">О компании</a>
-					<a href="action.html">Акции</a>
-					<a href="resto.html">Рестораны</a>
-				</div>
 			</div>
-			<div id="call">
-				<i class="fa fa-phone fa-2x"></i>
-				<span class="wrapper">
-					<a class="call-phone c1" href=""><i class="fa fa-phone fa-lg"></i>Сенчихина 1а</a>
-					<a class="call-phone c2" href=""><i class="fa fa-phone fa-lg"></i>Калинина 13</a>
-					<a class="call-phone c3" href=""><i class="fa fa-phone fa-lg"></i>Толстого 23</a>
-				</span>
-			</div>
+		</div>
+		<div class="popup modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+					<div class="form">
+						<div class="p20">
+							<p class="font-big mb20 pl10">Заявка на услуги Бухгалтерия.Москва</p>
+							<div class="mb10 text-center h60">
+								<input type="text" placeholder="Электронная почта">
+								<p class="er text-left pl10">Поле не заполнено!</p>
+							</div>								
+							<div class="mb10 text-center h60">
+								<input type="text" placeholder="E-mail">
+								<p class="er text-left pl10">Поле не заполнено!</p>
+							</div>
+							<div class="mb10 text-center">
+								<div class="button"><input data-toggle="modal" data-target="#myModal2" type="submit" value="Попробуй бесплатно*"></div>
+							</div>
+							<h5 class="text-center text-normal font-normal mb0">Наш менеджер перезвонит вам в ближайшее время</h5>
+						</div>
+					</div>
+		      </div>
+		    </div>
+		  </div>
 		</div>			
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>				
- 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
- 		<script type="text/javascript" src="js/owl.carousel.js"></script>
- 		<script type="text/javascript" src="js/site.js"></script>
- 		<script>
- 			$(".menu").css({"height": $(window).height() - 30 + "px"});
-			$(window).resize(function() {
-			$(".menu").css({"height": $(window).height() - 30 + "px"});
-			});
- 		</script>
+		<div class="popup modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+				<div class="text-center p30">
+					<h3>Ваша заявка отправлена!</h3>
+					<p class="font-big"><i>Наш менеджер свяжется с вами в ближайшее время!</i></p>
+					<div class="button text-center"><a data-dismiss="modal" href="">Закрыть</a></div>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>						
+		<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>				
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="./js/jquery.formstyler.js"></script>
+ 		<script type="text/javascript" src="./js/site.js"></script>
+ 		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
+ 		<script type="text/javascript">
+		    var map;
+
+		    DG.then(function () {
+		        map = DG.map('map', {
+		            "center": [54.98, 82.89],
+		            "zoom": 13,
+		            scrollWheelZoom: ''
+		        });
+		    });
+		</script>
 	</body>
-</html>	
+</html>

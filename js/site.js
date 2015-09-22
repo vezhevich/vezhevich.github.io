@@ -1,120 +1,28 @@
 if (window.jQuery) $(document).ready(function() {
-     if ($('.owl-carousel').length) owlCarousel();
-     if ($('input[type=tel]').length) tel();
-     if ($('#header').length) hbg();
-     if ($('.menu').length) menu();
-     if ($('.basket').length) card();
-     if ($('#call').length) phone();
-     if ($('#call').length) phonedown();
+	if ($('select.custom').length) select();
+	if ($('.m-navi').length) slidedown();
+	if ($('.gamb').length) slidedown2();
 });
 
+function select(){ 
+	$('select.custom').styler();  
+}
 
-function owlCarousel()
+function slidedown()
 {
-	$(".owl-carousel").owlCarousel({
-	 
-	loop:true,
-	items : 1,
-	nav:true,
-	navText: '',
-	 
-	});
+	$(".m-navi-mobile .lv1 > dt > a").on('click', function(){
+		   $('.m-navi-mobile .lv1 > dt > a').removeClass('active');
+		   $(this).addClass('active');
+		   $(this).next().slideToggle();
+			return false;
+	   });
 }
 
-function tel(){ 
-	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
-	return false; 
+function slidedown2()
+{
+	$(".gamb a").on('click', function(){
+		   $(".m-navi-mobile").slideToggle();
+		return false;
+	   });
 }
-
-function hbg(){ 
-	$(window).scroll(function(){
-	    if($(this).scrollTop()>10){
-	        $('#header').addClass('bg');
-	    }
-	    else if ($(this).scrollTop()<10){
-	        $('#header').removeClass('bg');
-	    }
-	});
-}
-
-function menu(){ 
-	 		if( 'ontouchstart' in window ){ var click = 'touchstart'; }
-	 		else { var click = 'click'; }
-
-
-	 		$('div.burger').on(click, function(){
-	 				if( !$(this).hasClass('open') ){ openMenu(); } 
-	 				else { closeMenu(); }
-	 		});	
-	 		
-
-	 		// $('div.menu ul li a').on(click, function(e){
-	 		// 	e.preventDefault();
-	 		// 	closeMenu();
-	 		// });
-
-
-	 		function openMenu(){
-	 			
-	 			$('body').addClass('oh');					
-	 			$('div.menu-bg').addClass('animate');					
-
-	 			$('div.burger').addClass('open');	
-	 			$('div.x, div.z').addClass('collapse');
-	 			$('.menu').addClass('ind');
-	 			$('.menu li').addClass('animate');
-	 			
-	 			setTimeout(function(){ 
-	 				$('div.y').hide(); 
-	 				$('div.x').addClass('rotate30'); 
-	 				$('div.z').addClass('rotate150'); 
-	 			}, 70);
-	 			setTimeout(function(){
-	 				$('div.x').addClass('rotate45'); 
-	 				$('div.z').addClass('rotate135');  
-	 			}, 120);		
-	 		}
- 		
-	 		function closeMenu(){
-
-	 			$('body').removeClass('oh');
-	 			$('.menu li').removeClass('animate');
-	 			setTimeout(function(){ 			
-	 				$('div.burger').removeClass('open');	
-	 				$('div.x').removeClass('rotate45').addClass('rotate30'); 
-	 				$('div.z').removeClass('rotate135').addClass('rotate150');				
-	 				$('div.menu').removeClass('ind');			
-	 				$('div.menu-bg').removeClass('animate');			
-	 				
-	 				setTimeout(function(){ 			
-	 					$('div.x').removeClass('rotate30'); 
-	 					$('div.z').removeClass('rotate150'); 			
-	 				}, 50);
-	 				setTimeout(function(){
-	 					$('div.y').show(); 
-	 					$('div.x, div.z').removeClass('collapse');
-	 				}, 70);
-	 			}, 100);													
-	 			
-	 		}
-}
-
-
-
-function card(){
-	$('.plus').click(function(){
-		$('.basket').toggleClass("animate");
-		$('.qnty').toggleClass("added"); return false;
-	});
-}
-
-function phone(){
-	$('#call').click(function(){
-		$('#call .c1').toggleClass('up1'); 
-	 	$('#call .c2').toggleClass('up2'); 
-	 	$('#call .c3').toggleClass('up3'); 
-	});	
-}
-
-
 
