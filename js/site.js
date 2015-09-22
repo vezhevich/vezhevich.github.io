@@ -56,6 +56,7 @@ function menu(){
 
 	 		function openMenu(){
 	 			
+	 			$('body').addClass('oh');					
 	 			$('div.menu-bg').addClass('animate');					
 
 	 			$('div.burger').addClass('open');	
@@ -76,6 +77,7 @@ function menu(){
  		
 	 		function closeMenu(){
 
+	 			$('body').removeClass('oh');
 	 			$('.menu li').removeClass('animate');
 	 			setTimeout(function(){ 			
 	 				$('div.burger').removeClass('open');	
