@@ -201,7 +201,7 @@ div.menu {
 	margin-left: -160px;
 	left: 50%;
 	position: absolute;
-	z-index: 900;
+	z-index: 2000;
 	display: none;
 	top: 0;
 	overflow-x: hidden;
