@@ -181,6 +181,12 @@ td, th {
 	  background: #eee; 
 	}
 
+
+	.popup .modal-content {background: #fff; width: auto;}
+	.popup .modal-dialog {width: auto;}
+	.popup .modal-dialog .p20 {padding: 0;}
+	.popup .close {top: -1px;}
+
 }
 
 /* Custom, iPhone Retina */
