@@ -3,13 +3,15 @@ ul li {font-size: 16px; line-height: 1.4; list-style: none; padding-left: 15px; 
 ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px solid #000; border-radius: 50%; float: left; position: absolute; top: 10px; left: 0;}
 
 .m-navi {border-bottom: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 200;}
-.m-navi dl.lv1 > dt {float: left; width: 156px; position: relative;}
+.m-navi dl.lv1 > dt {float: left; width: 156px; position: relative; }
 .m-navi dl.lv1 > dt > a {font: normal 16px/1.2 Open Sans; color: #fff; text-decoration: none; display: block; padding: 15px 20px; height: 40px;}
 .m-navi dl.lv1 > dt:hover > a {color: #000; background: #FFBD00;}
 .m-navi dl.lv1 > dt > a.active {color: #FFBD00; font-weight: bold;}
 .m-navi dl.lv1 dt:hover .lv2 {display: block;}
 .m-navi .lv2 {position: absolute; top: 70px; left: 0; background: #FFBD00; width: 100%; display: none; z-index: 200;}
 .m-navi .lv2 dl {padding: 10px 0;}
+.m-navi .lv2 dl dt {border-bottom: 1px solid rgba(0,0,0,0.2);}
+.m-navi .lv2 dl dt:last-child {border-bottom: none;}
 .m-navi .lv2 dl dt a {color: #000; display: block; padding: 5px 20px; text-decoration: none;}
 .m-navi .lv2 dl dt a:hover {color: #B20000;}
 
