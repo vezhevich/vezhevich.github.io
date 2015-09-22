@@ -204,7 +204,7 @@ div.menu {
 	position: fixed;
 	z-index: 900;
 	display: none;
-	overflow: auto;
+	overflow-y: scroll;
 }
 
 div.menu.ind {display: block;}
