@@ -2,6 +2,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('select.custom').length) select();
 	if ($('.m-navi').length) slidedown();
 	if ($('.gamb').length) slidedown2();
+	if ($('input[type=tel]').length) tel();
 });
 
 function select(){ 
@@ -26,3 +27,7 @@ function slidedown2()
 	   });
 }
 
+function tel(){ 
+	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
+	return false; 
+}
