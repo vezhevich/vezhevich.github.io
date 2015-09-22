@@ -23,8 +23,6 @@ body {background: #30343F;}
 #header .basket i {color: #fff;}
 #header .basket {position: relative;}
 
-#header .pos-rel {height: 44px; width: 100%;}
-
 .owl-carousel .owl-controls {position: absolute; bottom: 0; left: 0; width: 100%;}
 .owl-carousel .owl-controls .owl-dots {text-align: center; height: 12px;}
 .owl-carousel .owl-controls .owl-dots .owl-dot {display: inline-block; zoom: 1; *display: inline; width: 6px; height: 6px; background-color: rgba(255,255,255,0.4); margin: 0 2px; vertical-align: top; border-radius: 50%;}
