@@ -197,14 +197,13 @@ div.menu-bg.animate{
 	
 }
 div.menu {
-	height: 100%; 
 	width: 320px;
 	margin-left: -160px;
 	left: 50%;
 	position: absolute;
 	z-index: 900;
 	display: none;
-	top: 44px;
+	top: 0;
 	overflow-x: hidden;
 }
 
