@@ -1,33 +1,31 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('select.custom').length) select();
-	if ($('.m-navi').length) slidedown();
-	if ($('.gamb').length) slidedown2();
 	if ($('input[type=tel]').length) tel();
+	if ($('.anchor').length) anchor();
+	if ($('.g-carousel').length) owlCarousel2();
 });
 
-function select(){ 
-	$('select.custom').styler();  
-}
 
-function slidedown()
-{
-	$(".m-navi-mobile .lv1 > dt > a").on('click', function(){
-		   $('.m-navi-mobile .lv1 > dt > a').removeClass('active');
-		   $(this).addClass('active');
-		   $(this).next().slideToggle();
-			return false;
-	   });
-}
-
-function slidedown2()
-{
-	$(".gamb a").on('click', function(){
-		   $(".m-navi-mobile").slideToggle();
-		return false;
-	   });
-}
 
 function tel(){ 
 	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
 	return false; 
 }
+
+function anchor (){
+   $('a.anchor[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top-100}, 1600);
+        return false; 
+   }); 
+}
+
+function owlCarousel2 (){
+	$('.g-carousel').owlCarousel({
+	    nav: true,
+	    loop:true,
+	    items: 3,
+	    margin: 3,
+	    navText: ' '
+	});
+}
+
