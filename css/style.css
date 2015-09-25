@@ -21,6 +21,7 @@ body {background: url(/img/body-bg.png) repeat-x #7f3c69;}
 
 #header .enter {padding-top: 5px;}
 #header .enter a {font: bold 16px PT Sans;}
+#header .enter a:hover {text-decoration: none;}
 #header .enter i {vertical-align: middle; margin-left: 8px;}
 
 .bg-content {background-color: rgba(255,255,255,0.03); border-radius: 20px;}
