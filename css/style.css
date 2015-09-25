@@ -13,10 +13,7 @@ body {background: url(/img/body-bg.png) repeat-x #7f3c69;}
 #header .navi {margin: 0 200px; text-align: center;}
 #header .navi a {display: inline-block; zoom: 1; *display: inline; vertical-align: top; padding: 0 10px;  font: normal 14px/32px PT Sans; border: 1px solid rgba(255,255,255,0); margin: 0 5px; position: relative; height: 32px; overflow: hidden; -moz-border-radius: 15px; /* Firefox */ -webkit-border-radius: 15px; /* Safari, Chrome */ -khtml-border-radius: 15px; /* KHTML */ border-radius: 15px; /* CSS3 */}
 #header .navi a:hover {text-decoration: none;}
-#header .navi a.active {border: 1px solid rgba(255,255,255,0.2); border-color: /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-    /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; text-decoration: none; color: #DEDEEB; }
+#header .navi a.active {border: 1px solid rgba(255,255,255,0.2); text-decoration: none; color: #DEDEEB; }
 #header .navi .clinet {padding-right: 40px;}
 #header .navi .clinet i {position: absolute; right: 0; top: 0; width: 32px; height: 32px; background-position: 9px 9px;}
 #header .navi .clinet:hover i {background-color: rgba(255,255,255,0.2);}
