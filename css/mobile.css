@@ -12,6 +12,8 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 .m-navi .lv2 dl {padding: 10px 0;}
 .m-navi .lv2 dl dt a {color: #000; display: block; padding: 5px 20px; text-decoration: none;}
 .m-navi .lv2 dl dt a:hover {color: #B20000;}
+.m-navi .lv2 dl dt {border-bottom: 1px solid rgba(0,0,0,0.2);}
+.m-navi .lv2 dl dt:last-child {border-bottom: none;}
 
 .pattern1.inner {height: auto; margin-bottom: 40px;}
 .pattern1.inner h2 {font: bold 42px Open Sans; color: #FFBD00;}
@@ -41,6 +43,28 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 #header .mphone {display: none;}
 
 .gamb {display: none;}
+
+.page img {margin-bottom: 10px; margin-right: 20px;}
+.page h1 {font-size: 24px;}
+.page h5 {font-size: 18px; margin-bottom: 20px;}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  border-bottom: 1px solid #ccc; 
+}
+
+th { 
+  background: #fff; 
+  color: #000; 
+  font-weight: bold; 
+  border-bottom: 1px solid #ccc; 
+}
+td, th { 
+  padding: 15px 6px !important; 
+  text-align: left; 
+  font-size: 16px;
+}
 
 
 /* Extra Small Devices, Phones */
@@ -109,6 +133,62 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 
 	#container {margin: 0 0 -80px 0;}
 	.footer-push {height: 80px;}
+
+	.page h1 {font-size: 18px;}
+	.page h5 {font-size: 15px;}
+	.page img {display: block; float: none;}
+
+
+		/* Force table to not be like tables anymore */
+	table {border-bottom: none; margin-bottom: 20px;}	
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: none; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 50% !important; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 16px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Сдача"; }
+	td:nth-of-type(2):before { content: "Дата"; }
+	td:nth-of-type(3):before { content: "Отчетность"; }
+	td:nth-of-type(4):before { content: "Сумма"; }
+	tr:nth-of-type(odd) { 
+	  background: #eee; 
+	}
+
+	.popup .modal-content {background: #fff; width: auto;}
+	.popup .modal-dialog {width: auto;}
+	.popup .modal-dialog .p20 {padding: 0;}
+	.popup .close {top: -1px;}
+
+
 }
 
 /* Custom, iPhone Retina */
@@ -123,29 +203,3 @@ ul li:before {content: ''; display: block; width: 4px; height: 4px; border: 1px 
 	#footer .tel .phone {font-size: 21px; margin-bottom: 5px;}
 	#footer .tel p {font-size: 12px; margin-bottom: 0;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
