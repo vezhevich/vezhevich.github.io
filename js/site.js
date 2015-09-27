@@ -24,5 +24,7 @@ function sel(){
 }
 
 function jScrollPane(){
+	$('#myModal4').on('shown.bs.modal', function () {
 	$('#wrap').jScrollPane();
+	});
 }

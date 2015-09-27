@@ -228,10 +228,21 @@ body {background: url(/img/body-bg.png) repeat-x #7f3c69;}
 .modal.admin .checkbox-list dl dt:nth-of-type(even) {background-color: rgba(255,255,255,0.04);}
 .modal.admin .b-checkbox input[type="checkbox"]:checked + label {color: #fff; opacity: 1;}
 
-#wrap {width: 305px; height: 150px; margin: 0 auto;}
+#wrap {width: 305px; height: 150px; margin: 0 auto; overflow: hidden;}
 #wrap .jspVerticalBar {width: 4px; border-color: rgba(255, 255, 255, 0.1);}
 #wrap .jspVerticalBar .jspDrag {height: 20px;}
 
 
-#myModal4 {display: block !important; opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
   
