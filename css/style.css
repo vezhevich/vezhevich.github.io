@@ -232,4 +232,6 @@ body {background: url(/img/body-bg.png) repeat-x #7f3c69;}
 #wrap .jspVerticalBar {width: 4px; border-color: rgba(255, 255, 255, 0.1);}
 #wrap .jspVerticalBar .jspDrag {height: 20px;}
 
+
+#myModal4 {display: block !important; opacity: 1;}
   
