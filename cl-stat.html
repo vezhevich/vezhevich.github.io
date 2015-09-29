@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
 		<link href="css/custom.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -27,47 +28,62 @@
 			</div>
 			<div id="content">
 				<div class="centered layout w210 clearfix">
-					<div class="l-col bg-content oh">
-						<div class="b-search clearfix inner">
-							<input class="fl-l" type="submit" value=" ">
-							<input type="text" placeholder="Поиск">
+					<div id="fixblock">
+						<div class="l-col bg-content oh pb20">
+							<div class="b-search clearfix inner">
+								<input class="fl-l" type="submit" value=" ">
+								<input type="text" placeholder="Поиск">
+							</div>
+							<div id="scroll" class="checkbox-list inner b-checkbox">
+								<dl>
+									<dt>
+										<input id="cthree" type="checkbox" name="three" hidden />
+										<label for="cthree">Выделить все</label>
+									</dt>											
+									<dt>
+										<input id="cfour" type="checkbox" name="four" hidden />
+										<label for="cfour">#1 -1 этаж</label>
+									</dt>											
+									<dt>
+										<input id="cfive" type="checkbox" name="five" hidden />
+										<label for="cfive">#2 -2 этаж</label>
+									</dt>											
+									<dt>
+										<input id="csix" type="checkbox" name="six" hidden />
+										<label for="csix">#3 -3 этаж</label>
+									</dt>											
+									<dt>
+										<input id="cseven" type="checkbox" name="seven" hidden />
+										<label for="cseven">#4 -4 этаж</label>
+									</dt>										
+									<dt>
+										<input id="cfive" type="checkbox" name="five" hidden />
+										<label for="cfive">#2 -2 этаж</label>
+									</dt>											
+									<dt>
+										<input id="csix" type="checkbox" name="six" hidden />
+										<label for="csix">#3 -3 этаж</label>
+									</dt>											
+									<dt>
+										<input id="cseven" type="checkbox" name="seven" hidden />
+										<label for="cseven">#4 -4 этаж</label>
+									</dt>											
+									<dt>
+										<input id="ceight" type="checkbox" name="eight" hidden />
+										<label for="ceight">#5 -5 этаж</label>
+									</dt>											
+									<dt>
+										<input id="cnine" type="checkbox" name="nine" hidden />
+										<label for="cnine">#6 - 6 этаж ресторан</label>
+									</dt>
+									<dt>
+										<input id="cten" type="checkbox" name="ten" hidden />
+										<label for="cten">Выделить все</label>
+									</dt>
+								</dl>
+							</div>
 						</div>
-						<div class="checkbox-list inner b-checkbox">
-							<dl>
-								<dt>
-									<input id="cthree" type="checkbox" name="three" hidden />
-									<label for="cthree">Выделить все</label>
-								</dt>											
-								<dt>
-									<input id="cfour" type="checkbox" name="four" hidden />
-									<label for="cfour">#1 -1 этаж</label>
-								</dt>											
-								<dt>
-									<input id="cfive" type="checkbox" name="five" hidden />
-									<label for="cfive">#2 -2 этаж</label>
-								</dt>											
-								<dt>
-									<input id="csix" type="checkbox" name="six" hidden />
-									<label for="csix">#3 -3 этаж</label>
-								</dt>											
-								<dt>
-									<input id="cseven" type="checkbox" name="seven" hidden />
-									<label for="cseven">#4 -4 этаж</label>
-								</dt>											
-								<dt>
-									<input id="ceight" type="checkbox" name="eight" hidden />
-									<label for="ceight">#5 -5 этаж</label>
-								</dt>											
-								<dt>
-									<input id="cnine" type="checkbox" name="nine" hidden />
-									<label for="cnine">#6 - 6 этаж ресторан</label>
-								</dt>
-								<dt>
-									<input id="cten" type="checkbox" name="ten" hidden />
-									<label for="cten">Выделить все</label>
-								</dt>
-							</dl>
-						</div>
+						
 					</div>
 					<div class="r-col bg-content">
 						<div class="navi-panel">
@@ -133,6 +149,24 @@
 		</div>																	
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>				
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
  		<script type="text/javascript" src="js/site.js"></script>
+ 		<script type="text/javascript">
+	 		function getTopOffset(e) { 
+	 			var y = 0;
+	 			do { y += e.offsetTop; } while (e = e.offsetParent);
+	 			return y;
+	 		}
+	 		var block = document.getElementById('fixblock'); /* fixblock - значение атрибута id блока */
+	 		if ( null != block ) {
+	 			var topPos = getTopOffset( block );
+	 			window.onscroll = function() {
+	 				var newcss = (topPos < window.pageYOffset) ? 
+	 					'top:20px; position: fixed;' : 'position:static;';
+	 				block.setAttribute( 'style', newcss );
+	 			}
+	 		}
+ 		</script>
 	</body>
 </html>

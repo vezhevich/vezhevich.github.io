@@ -6,6 +6,7 @@
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="css/custom.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
@@ -27,44 +28,62 @@
 			</div>
 			<div id="content">
 				<div class="centered layout w210 clearfix">
-					<div class="l-col bg-content">
-						<div class="b-search clearfix inner">
-							<input class="fl-l" type="submit" value=" ">
-							<input type="text" placeholder="Поиск">
+					<div id="fixblock">
+						<div class="l-col bg-content pb20">
+							<div class="b-search clearfix inner">
+								<input class="fl-l" type="submit" value=" ">
+								<input type="text" placeholder="Поиск">
+							</div>
+							<div id="scroll" class="client-list inner">
+								<table>
+									<tbody>
+										<tr>
+											<th class="col1"><a href="#"><span>имя клиента</span></a></th>
+										</tr>
+										<tr>
+											<td class="col1">Модный квартал</td>
+										</tr>									
+										<tr>
+											<td class="col1">Карамель</td>
+										</tr>									
+										<tr>
+											<td class="col1 active">Travelers coffee</td>
+										</tr>										
+										<tr>
+											<td class="col1">Starbucks</td>
+										</tr>									
+										<tr>
+											<td class="col1">Мвидео</td>
+										</tr>									
+										<tr>
+											<td class="col1">Travelers coffee</td>
+										</tr>										
+										<tr>
+											<td class="col1">Starbucks</td>
+										</tr>									
+										<tr>
+											<td class="col1">Мвидео</td>
+										</tr>											
+										<tr>
+											<td class="col1">Starbucks</td>
+										</tr>									
+										<tr>
+											<td class="col1">Мвидео</td>
+										</tr>									
+										<tr>
+											<td class="col1">Travelers coffee</td>
+										</tr>										
+										<tr>
+											<td class="col1">Starbucks</td>
+										</tr>									
+										<tr>
+											<td class="col1">Мвидео</td>
+										</tr>									
+									</tbody>
+								</table>
+							</div>
 						</div>
-						<div class="client-list inner">
-							<table>
-								<tbody>
-									<tr>
-										<th class="col1"><a href="#"><span>имя клиента</span></a></th>
-									</tr>
-									<tr>
-										<td class="col1">Модный квартал</td>
-									</tr>									
-									<tr>
-										<td class="col1">Карамель</td>
-									</tr>									
-									<tr>
-										<td class="col1 active">Travelers coffee</td>
-									</tr>										
-									<tr>
-										<td class="col1">Starbucks</td>
-									</tr>									
-									<tr>
-										<td class="col1">Мвидео</td>
-									</tr>									
-									<tr>
-										<td class="col1">Travelers coffee</td>
-									</tr>										
-									<tr>
-										<td class="col1">Starbucks</td>
-									</tr>									
-									<tr>
-										<td class="col1">Мвидео</td>
-									</tr>									
-								</tbody>
-							</table>
-						</div>
+						
 					</div>
 					<div class="r-col bg-content oh">
 						<div class="navi-panel">
@@ -156,6 +175,24 @@
 		</div>																	
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>				
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
  		<script type="text/javascript" src="js/site.js"></script>
+ 		<script type="text/javascript">
+	 		function getTopOffset(e) { 
+	 			var y = 0;
+	 			do { y += e.offsetTop; } while (e = e.offsetParent);
+	 			return y;
+	 		}
+	 		var block = document.getElementById('fixblock'); /* fixblock - значение атрибута id блока */
+	 		if ( null != block ) {
+	 			var topPos = getTopOffset( block );
+	 			window.onscroll = function() {
+	 				var newcss = (topPos < window.pageYOffset) ? 
+	 					'top:20px; position: fixed;' : 'position:static;';
+	 				block.setAttribute( 'style', newcss );
+	 			}
+	 		}
+ 		</script>
 	</body>
 </html>
