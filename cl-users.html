@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Деловая сеть</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="css/switch.css" rel="stylesheet" type="text/css">
+		<link href="css/custom.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    </head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div class="centered clearfix">
+					<div class="wrapper fl-l">
+						<div class="navi">
+							<!-- к ссылкам добавляем класс active для border вокруг -->
+							<a class="clinet active" href="#">Клиенты <i class="icon icon-plus"></i></a><a href="#">Администраторы</a><a href="#">Настройки</a>
+						</div>
+					</div>
+					<div class="enter fl-l text-right">
+						<a href="#">Administrator_DSI <i class="icon icon-enter"></i></a>
+					</div>
+					<div class="logo fl-l"><a href="/"><img src="img/logo.png" alt="">Деловая Сеть</a></div>
+				</div>
+			</div>
+			<div id="content">
+				<div class="centered clearfix">
+					<div class="bg-content oh">
+						<div class="client-list users pt15 pb25">
+							<table>
+								<tbody>
+									<tr>
+										<th class="col1"><a href="#"><span>логин</span></a></th>
+										<th class="col2"><a href="#"><span>добавлен</span></a></th>
+										<th colspan="2" class="col3">редактирование рекламы</th>
+									</tr>
+									<tr>
+										<td class="col1">admin_choko</td>
+										<td class="col2">23.12.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+											  <label for="cmn-toggle-1">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">povar3000</td>
+										<td class="col2">19.11.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+											  <label for="cmn-toggle-2">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">racamafox_сocacox</td>
+										<td class="col2">16.10.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+											  <label for="cmn-toggle-3">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">admin_choko</td>
+										<td class="col2">23.12.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round" type="checkbox">
+											  <label for="cmn-toggle-4">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">povar3000</td>
+										<td class="col2">19.11.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+											  <label for="cmn-toggle-5">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">racamafox_сocacox</td>
+										<td class="col2">16.10.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+											  <label for="cmn-toggle-6">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">admin_choko</td>
+										<td class="col2">23.12.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-round" type="checkbox">
+											  <label for="cmn-toggle-7">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">povar3000</td>
+										<td class="col2">19.11.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-8" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+											  <label for="cmn-toggle-8">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>									
+									<tr>
+										<td class="col1">racamafox_сocacox</td>
+										<td class="col2">16.10.2015</td>
+										<td class="col3">
+											<div class="switch">
+											  <input id="cmn-toggle-9" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+											  <label for="cmn-toggle-9">
+											  	<span class="no">нет</span>
+												<span class="yes">да</span>
+											  </label>
+											</div>
+										</td>
+										<td class="col4">
+											<div class="btn"><a data-toggle="modal" data-target="#myModal4" href="#">Редактировать</a></div>
+										</td>
+									</tr>																	
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-push"></div>
+		</div>
+		<div id="footer">
+			<div class="centered pt40 clearfix">
+				<div class="fl-l">
+					<p>АО «Деловая Сеть — Иркутск»</p>
+				</div>
+				<div class="fl-r s38 text-right">
+					<img src="img/s38.png" alt=""><a href="http://studio38.ru/">сделано </br> в Студии 38</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal admin fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+			  <h4 class="modal-title text-center" id="myModalLabel">Добавление клиента</h4>
+		      <div class="modal-body">
+				<div class="pl30 pr30 settings-user">
+					<table>
+						<tbody>
+							<tr>
+								<td class="col1">Номер договора</td>
+								<td class="col2"><input type="text" placeholder="Название клиента"></td>
+							</tr>									
+							<tr>
+								<td class="col1">Название клиента</td>
+								<td class="col2"><input type="email" placeholder="modniy@mail.ru"></td>
+							</tr>									
+							<tr>
+								<td class="col1">Логин</td>
+								<td class="col2"><input type="text" placeholder="petr_zubox"></td>
+							</tr>									
+							<tr>
+								<td class="col1">Пароль</td>
+								<td class="col2">
+									<div class="reload">
+										<input type="password" placeholder="ada1231das">
+										<a href=""></a>
+									</div>
+								</td>
+							</tr>									
+							<tr>
+								<td class="col1">Email клиента</td>
+								<td class="col2"><input type="email" placeholder="modniy@mail.ru"></td>
+							</tr>	
+							<tr>
+								<td class="col1">Имя хоста</td>
+								<td class="col2">
+									<select class="custom" name="" id="">
+										<option value="">modniy_kvvartal_1</option>
+										<option value="">modniy_kvvartal_2</option>
+										<option value="">modniy_kvvartal_3</option>
+										<option value="">modniy_kvvartal_4</option>
+										<option value="">modniy_kvvartal_lowest_letter_spacing</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="btn inner"><a href="#">Добавить клиента</a></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>			
+		<div class="modal admin fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+			  <h4 class="modal-title text-center" id="myModalLabel">Редактирование пользователя</h4>
+		      <div class="modal-body">
+				<div class="pl30 pr30 settings-user">
+					<table>
+						<tbody>								
+							<tr>
+								<td class="col1">Логин</td>
+								<td class="col2"><input type="text" placeholder="petr_zubox"></td>
+							</tr>									
+							<tr>
+								<td class="col1">Email клиента</td>
+								<td class="col2"><input type="email" placeholder="modniy@mail.ru"></td>
+							</tr>	
+							<tr>
+								<td class="col1">Пароль</td>
+								<td class="col2">
+									<div class="reload">
+										<input type="password" placeholder="ada1231das">
+										<a href=""></a>
+									</div>
+								</td>
+							</tr>								
+							<tr class="v-top">
+								<td class="col1">Редактирование рекламы</td>
+								<td class="col2">
+									<div class="switch">
+									  <input id="cmn-toggle-10" class="cmn-toggle cmn-toggle-round" type="checkbox">
+									  <label for="cmn-toggle-10">
+									  	<span class="no">нет</span>
+										<span class="yes">да</span>
+									  </label>
+									</div>
+								</td>
+							</tr>								
+							<tr class="v-top">
+								<td class="col1">Точки доступа</td>
+								<td class="col2">
+									<div id="wrap">
+										<div class="checkbox-list b-checkbox">
+											<dl>
+												<dt>
+													<input id="cthree" type="checkbox" name="three" hidden />
+													<label for="cthree">Выделить все</label>
+												</dt>											
+												<dt>
+													<input id="cfour" type="checkbox" name="four" hidden />
+													<label for="cfour">#1 -1 этаж</label>
+												</dt>											
+												<dt>
+													<input id="cfive" type="checkbox" name="five" hidden />
+													<label for="cfive">#2 -2 этаж</label>
+												</dt>											
+												<dt>
+													<input id="csix" type="checkbox" name="six" hidden />
+													<label for="csix">#3 -3 этаж</label>
+												</dt>											
+												<dt>
+													<input id="cseven" type="checkbox" name="seven" hidden />
+													<label for="cseven">#4 -4 этаж</label>
+												</dt>											
+												<dt>
+													<input id="ceight" type="checkbox" name="eight" hidden />
+													<label for="ceight">#5 -5 этаж</label>
+												</dt>											
+												<dt>
+													<input id="cnine" type="checkbox" name="nine" hidden />
+													<label for="cnine">#6 - 6 этаж ресторан</label>
+												</dt>
+											</dl>
+										</div>
+										
+									</div>
+								</td>
+							</tr>									
+							<tr>
+								<td colspan="2">
+									<div class="btn inner"><a href="#">Сохранить изменения</a></div>
+									<p class="mb0 mt5"><a data-toggle="modal" data-target="#myModal" href="#" class="link-js">удалить пользователя</a></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal deleted fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+		      <div class="modal-body">
+			    <h4 class="modal-title text-center" id="myModalLabel">Подтвердить удаление</h4>
+			    <div class="text-center btn border">
+					<a href="#">Удалить</a>
+					<a data-dismiss="modal" aria-label="Close" href="#">Отменить</a>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>																		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>				
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+ 		<script type="text/javascript" src="js/site.js"></script>
+	</body>
+</html>
