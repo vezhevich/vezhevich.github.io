@@ -1,10 +1,11 @@
 if (window.jQuery) $(document).ready(function() {
+	$('#scroll').height(window.innerHeight-270);
+	
 	if ($('.bxslider').length) carousel();
 	if ($('.anchor').length) link();
 	if ($('#scroll').length) jScrollPane();
 	if ($('.location').length) loc();
 
-	$('#scroll').height(window.innerHeight-270);
 });
 
 function carousel()
