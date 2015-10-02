@@ -3,6 +3,8 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.anchor').length) link();
 	if ($('#scroll').length) jScrollPane();
 	if ($('.location').length) loc();
+
+	$('#scroll .jspContainer').height(window.innerHeight-250);
 });
 
 function carousel()
