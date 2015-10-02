@@ -4,7 +4,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('#scroll').length) jScrollPane();
 	if ($('.location').length) loc();
 
-	$('#scroll .jspContainer').height(window.innerHeight-250);
+	$('#scroll').height(window.innerHeight-270);
 });
 
 function carousel()
