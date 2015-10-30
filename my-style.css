@@ -2495,6 +2495,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e53426', end
 
 
 .bg-reg {background: url(/im/bg-reg.jpg) no-repeat top center; background-attachment: fixed;}
+.bg-aut {background: url(/im/bg-aut.jpg) no-repeat top center; background-attachment: fixed;}
 
 #gp-container {position: relative;  min-height: 100%; height: auto !important; height: 100%; margin: 0 0 -105px 0; padding: 0;}
 html {height: 100%;}
