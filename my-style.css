@@ -2512,7 +2512,7 @@ body {height: 100%; width: 100%;}
 .gp-layout-center .form {width: 440px; margin-top: 60px; background: #fff; border-radius: 6px;}
 .gp-layout-center .form .wrapper {padding: 50px;}
 .gp-layout-center .form .title {font-size: 26px; margin-bottom: 10px;}
-.gp-layout-center .form .sub-title {font-size: 13px; margin-bottom: 10px; color: #505050; line-height: 1.2;}
+.gp-layout-center .form .sub-title {font-size: 13px; margin-bottom: 25px; color: #505050; line-height: 1.2;}
 .gp-layout-center .form .head {margin-bottom: 15px;}
 .gp-layout-center .form .head .name {font-size: 16px;}
 .gp-layout-center .form .head .link-js {border-bottom: 1px dotted #E43026; font-size: 13px;}
@@ -2572,7 +2572,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2121', end
 .gp-layout-center .form .btn.red a span {margin-top: 10px; display: inline-block; zoom: 1; *display: inline;}
 
 .gp-three-cols dl {margin-left: -20px;}
-.gp-three-cols dl dt {width: 225px; float: left; margin-left: 20px; color: #fff; padding-left: 90px; background: url(/im/sprite-info.png) no-repeat 0 0; padding-top: 15px; padding-bottom: 20px;}
+.gp-three-cols dl dt {width: 225px; float: left; margin-left: 20px; color: #fff; padding-left: 90px; background: url(/im/sprite-info.png) no-repeat 0 0; padding-top: 10px; padding-bottom: 10px; font-size: 20px;}
 .gp-three-cols dl .first {background-position: -164px 0;}
 .gp-three-cols dl .two {background-position: -84px -80px;}
 .gp-three-cols dl .three {background-position: 0 -164px;}
