@@ -2882,6 +2882,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2121', end
 .gp-btn-input5 input[type=submit]:hover {background-position: 0 -80px;}
 .gp-btn-input6 input[type=submit] {background: url(/im/btn-input6.png) no-repeat; width: 340px; height: 60px; cursor: pointer; border: none;}
 .gp-btn-input6 input[type=submit]:hover {background-position: 0 -80px;}
+.gp-btn-input7 input[type=submit] {background: url(/im/btn-input7.png) no-repeat; width: 340px; height: 60px; cursor: pointer; border: none;}
+.gp-btn-input7 input[type=submit]:hover {background-position: 0 -80px;}
 
 /* reset style */
 
