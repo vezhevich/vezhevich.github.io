@@ -8,6 +8,8 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.new-address').length) addnew();
 	if ($('.cp').length) cp();
 	if ($('.message').length) message();
+
+	if ($('.modal.sms').length>0) $('.modal.sms').modal('show');
 });
 
 function carousel()

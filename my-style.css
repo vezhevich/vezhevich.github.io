@@ -2842,7 +2842,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2121', end
 
 /**/
 
-.modal.author {
+.modal {
 background: -moz-linear-gradient(top, rgba(219,33,33,1) 0%, rgba(167,25,75,0.5) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,33,33,1)), color-stop(100%,rgba(167,25,75,0.5))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(219,33,33,1) 0%,rgba(167,25,75,0.5) 100%); /* Chrome10+,Safari5.1+ */
@@ -2892,7 +2892,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2121', end
 
 /**/
 
-.modal.sms .modal-dialog {width: 440px;}
+.modal.sms .modal-dialog {width: 440px;  transform:translate3d(0px, 0%, 0px);}
 .modal.sms .gp-form {width: auto;}
 
 
