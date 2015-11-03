@@ -52,7 +52,7 @@
 								<p class="text">Прочитайте наше руководство</p>
 							</dt>
 							<dt class="delivery">
-								<p class="title"><a href="">Доставка и оплата</a></p>
+								<p class="title"><a data-toggle="modal" data-target="#myModal2" href="">Доставка и оплата</a></p>
 								<p class="text">Подробные условия оплаты и доставки</p>
 							</dt>
 							<dt class="enter">
@@ -538,6 +538,42 @@
 				  		</div>
 				  	</div>
 				  </div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal sms fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+				<div class="p50">
+					<h2 class="mb10 text-normal">Скоро мы запускаем для вас удобную процедуру входа на сайт </h2>
+					<p class="sub-title mb20">Привяжите, пожалуйста, к своему профилю номер вашего мобильного телефона.Ваш номер телефона будет логином для входа на сайт. Мы вышлем на него бесплатное SMS сообщение с кодом активации.</p>
+					<div class="gp-form">
+						<div class="mb20">
+							<div class="clearfix head">
+								<p class="fl-l name">Номер телефона</p>
+								<a href="#" class="link-js fl-r">Зачем мне указывать номер?</a>
+							</div>
+							<input type="tel" placeholder="+7 (___) ___-__-__">
+							<p class="error">Вы не указали номер телефона</p>
+						</div>
+						<div class="mb30 btn grey"><a href="#">Выслать код активации</a></div>
+						<div class="mb20 code clearfix">
+							<div class="fl-l"><span>Введите код из SMS</span></div>
+							<div class="fl-r">
+								<input type="text">
+								<p class="error">Неверный код</p>
+							</div>
+						</div>
+						<div class="mb30">
+							<input id="cfirst" type="checkbox" name="first" hidden />
+							<label class="new" for="cfirst">Хотите получать новости о скидках и акциях с помощью SMS?</label>
+						</div>
+						<div class="gp-btn-input5">
+							<input type="submit" value="">				  			
+						</div>
+					</div>
 				</div>
 		    </div>
 		  </div>
