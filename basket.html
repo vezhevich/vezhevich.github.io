@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Барис-Онлайн</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="jquery.formstyler.css" rel="stylesheet" type="text/css">
+		<link href="bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="my-style.css" rel="stylesheet" type="text/css">
+		<link href="custom.css" rel="stylesheet" type="text/css">
+ 		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /> 
+    </head>
+	<body class="bg-white">
+		<div id="centered-container" class="bg-white">
+			<div id="header">
+				<div class="gp-top oh">
+					<div class="gp-logo">
+						<a href=""><img src="/img/logo.png" alt=""></a>
+					</div>
+					<h1 class="gp-title">Крупнейший интернет-магазин бытовой химии и товаров для дома в Улан-Удэ</h1>
+					<div class="gp-basket added oh">
+						<div class="empty">
+							<p>Коризна пуста</p>
+							<a href="">Выбрать товар в каталоге</a>
+						</div>
+						<div class="order">
+							<p><b>512 975 руб.</b></p>
+							<p>454 товара</p>
+						</div>
+						<div class="one-click">
+							<a href="">Заказать в 1 клик</a>
+							<div class="button"><a href="order.html">Оформить заказ</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="gp-bottom oh">
+					<div class="fl-l">
+						<dl>
+							<dt class="gp-maneger">
+								<p class="title">Менеджер магазина</p>
+								<p class="text"><span>(3012)</span> 433-887</p>
+							</dt>
+							<dt class="gp-delivery">
+								<p class="title">Бесплатная доставка</p>
+								<p class="text">При заказе от <b>500 р.</b> </br>доставка — бесплатно</p>
+							</dt>
+						</dl>
+					</div>
+					<div class="fl-r">
+						<dl>
+							<dt class="inst">
+								<p class="title"><a href="">Первый раз на сайте?</a></p>
+								<p class="text">Прочитайте наше руководство</p>
+							</dt>
+							<dt class="delivery">
+								<p class="title"><a href="">Доставка и оплата</a></p>
+								<p class="text">Подробные условия оплаты и доставки</p>
+							</dt>
+							<dt class="enter">
+								<p class="title"><a data-toggle="modal" data-target="#myModal" href="#">Вход / регистрация</a></p>
+							</dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div id="content-wrapper">
+				<div id="content" class="inner gp-basket">
+					<div class="breadcrumbs">
+						<a href="/">Главная </a>
+					</div>
+					<h1>Моя корзина</h1>
+					<div class="gp-tovar-item mb30">
+						<table>
+							<tbody>
+								<tr>
+									<td class="col1"><img src="/im/ariel.jpg" alt=""></td>
+									<td class="col2"><a href="#">Стиральный порошок Ariel Белая Роза, 4,5 кг</a></td>
+									<td class="col3">
+										<strong class="font-medium">290, 50 р.</strong>
+										<span class="old-cost">320,70 р.</span>
+									</td>
+									<td class="col4">
+										<div class="qnty">
+											<a class="minus" href="#">&#8722;</a>
+											<input type="text" value="1">
+											<a class="plus" href="#">+</a>
+										</div>
+									</td>
+									<td class="col5">
+										<strong class="font-medium">2 950,00 р.</strong>
+									</td>
+									<td class="col6"><a href="" class="del"></a></td>
+								</tr>								
+								<tr>
+									<td class="col1"><img src="/im/tide.jpg" alt=""></td>
+									<td class="col2"><a href="#">Стиральный порошок Ariel Белая Роза, 4,5 кг</a></td>
+									<td class="col3">
+										<strong class="font-medium">290, 50 р.</strong>
+										<span class="old-cost">320,70 р.</span>
+									</td>
+									<td class="col4">
+										<div class="qnty">
+											<a class="minus" href="#">&#8722;</a>
+											<input type="text" value="1">
+											<a class="plus" href="#">+</a>
+										</div>
+									</td>
+									<td class="col5">
+										<strong class="font-medium">1 000 850,70 р.</strong>
+									</td>
+									<td class="col6"><a href="" class="del"></a></td>
+								</tr>									
+								<tr>
+									<td class="col1"><img src="/im/vornel.jpg" alt=""></td>
+									<td class="col2"><a href="#">Стиральный порошок Ariel Белая Роза, 4,5 кг</a></td>
+									<td class="col3">
+										<strong class="font-medium">290, 50 р.</strong>
+										<span class="old-cost">320,70 р.</span>
+									</td>
+									<td class="col4">
+										<div class="qnty">
+											<a class="minus" href="#">&#8722;</a>
+											<input type="text" value="1">
+											<a class="plus" href="#">+</a>
+										</div>
+									</td>
+									<td class="col5">
+										<strong class="font-medium">2 950,00 р.</strong>
+									</td>
+									<td class="col6"><a href="" class="del"></a></td>
+								</tr>															
+							</tbody>
+						</table>
+					</div>
+					<div class="cost-info mb30">
+						<dl class="clearfix">
+							<dt class="text">
+								<h3 class="text-normal">Ваша скидка — 2% или 650,00 р.</h3>
+								<p class="font-normal grey">Для увеличения скидки до 4% сделайте заказ на сумму не менее 18 184.55 р.</p>
+							</dt>
+							<dt class="cost">
+								<p class="normal">1 000 850,70 р.</p>
+								<p class="old">1 000 850,70 р.</p>
+								<p class="font-small mt10">Общая стоимость заказа</p>
+							</dt>
+							<dt class="btn red"><a href="order.html">Оформить заказ »</a></dt>
+						</dl>
+					</div>
+					<div class="mb50"><a href="#"><img src="/im/action.jpg" alt=""></a></div>
+					<div class="gp-three-cols inner mb70">
+						<dl class="clearfix">
+							<dt class="first">Бесплатная доставка</br> при заказе от 500 руб.</dt>
+							<dt class="two">Оформление заказа</br> за 5 минут</dt>
+							<dt class="three">Доставка в удобное</br> для вас время</dt>
+						</dl>
+					</div>
+					<h2>Рекомендуем к покупке</h2>
+					<div class="products gp-products">
+						<ul class="cp">
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>							
+							<li class="item">
+								<div class="labels">
+									<span title="Лидер продаж" class="lider"></span>
+								</div>
+								<div class="instock yes">в наличии</div>
+								<div class="img">
+									<a href="#"><img src="/im/product.png"></a>
+								</div>
+								<div class="title">
+									<a href="#">Ушастый нянь с ромашкой и алоэ гель для посуды 500 мл</a>
+								</div>
+								<div class="brand">
+									<a href="#">Ушастый Нянь</a>
+								</div>
+								<div class="shop">
+									<span class="price">71.50</span>
+									<span class="qnty">
+										<input type="text" value="1" size="2">
+										<a href="" class="p q"></a>
+										<a href="" class="m q"></a>
+									</span>
+									<span class="add">
+										<a href="#"></a>
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cl"></div>
+			<div id="footer" class="gp-footer">
+				<h1 class="title">Интернет-магазин «Барис Online» </br>в Улан-Удэ</h1>
+				<div class="navi">
+					<dl>
+						<dt><a href="">О компании</a></dt>
+						<dt><a href="">Отзывы</a></dt>
+						<dt><a href="">Оплата и доставка</a></dt>
+					</dl>
+				</div>
+				<div class="gp"><a href="http://garantpark.com/"><img src="/img/gp.png" alt=""></a></div>
+				<div class="banks">
+					<a class="sber" href=""></a>
+					<a class="visa" href=""></a>
+					<a class="maestro" href=""></a>
+					<a class="master" href=""></a>
+					<a class="corona" href=""></a>
+					<a class="baikal" href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="modal author fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+				  <li role="presentation" class="active"><a href="#authors" aria-controls="authors" role="tab" data-toggle="tab"><span>Вход в магазин</span> </a></li>
+				  <li role="presentation"><a href="#regin" aria-controls="regin" role="tab" data-toggle="tab"><span>Регистрация нового покупателя</span></a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+				  <div role="tabpanel" class="tab-pane active" id="authors">
+				  	<div class="p40">
+				  		<div class="clearfix">
+				  			<div class="left fl-l">
+				  				<h2 class="text-normal">Мы рады вас видеть снова!</h2>
+				  				<div class="layout gp-group-input">
+				  					<dl class="clearfix">
+				  						<dt class="col1 mb30">
+				  							<div class="clearfix head">
+				  								<p class="fl-l name">Номер телефона</p>
+				  								<a href="#" class="link-js fl-r">Зачем мне указывать номер?</a>
+				  							</div>
+				  							<input type="tel" placeholder="+7 (___) ___-__-__">
+				  							<p class="error">Вы не указали номер телефона</p>
+				  						</dt>
+				  						<dt class="col1 mb30">
+				  							<div class="clearfix head">
+				  								<p class="fl-l name">Электронная почта</p>
+				  							</div>
+				  							<input type="email" placeholder="sale@mail.com">
+				  						</dt>
+				  						<dt class="col1 mb30">
+				  							<div class="clearfix head">
+				  								<p class="fl-l name">Пароль</p>
+				  								<a href="#" class="fl-r">Забыли пароль?</a>
+				  							</div>
+				  							<input type="password">
+				  						</dt>
+				  						<dt class="col1 btn red"><input type="submit" value="Оформить заказ"></dt>
+				  					</dl>
+				  				</div>
+				  			</div>
+				  			<div class="right soc fl-r">
+				  				<h3 class="text-normal">Вход через социальные сети</h3>
+				  				<p class="font-normal sub-title mb15">Вы так же войти в наш магазин с помощью </br>вашего логина в социальной сети</p>
+				  				<div class="mb50"><img src="/im/soc-author.jpg" alt=""></div>
+				  				<h3 class="text-normal">Впервые на нашем сайте?</h3>
+				  				<p class="sub-title"><a href="#">Зарегистрируйтесь</a> прямо сейчас и получите преимущества постоянного клиента.</p>
+				  				<div class="img-author"></div>
+				  			</div>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div role="tabpanel" class="tab-pane" id="regin">
+				  	<div class="p40">
+				  		<div class="clearfix">
+				  			<div class="left fl-l">
+				  				<h2 class="mb10 text-normal">Регистрация нового покупателя</h2>
+				  				<p class="sub-title mb20">Ваш номер телефона будет логином для входа на сайт. Мы вышлем на него бесплатное SMS сообщение с кодом активации.</p>
+				  				<div class="gp-form">
+				  						<div class="mb20">
+				  							<div class="clearfix head">
+				  								<p class="fl-l name">Номер телефона</p>
+				  								<a href="#" class="link-js fl-r">Зачем мне указывать номер?</a>
+				  							</div>
+				  							<input type="tel" placeholder="+7 (___) ___-__-__">
+				  							<p class="error">Вы не указали номер телефона</p>
+				  						</div>
+				  						<div class="mb30 btn grey"><a href="#">Выслать код активации</a></div>
+				  						<div class="mb20 code clearfix">
+				  							<div class="fl-l"><span>Введите код из SMS</span></div>
+				  							<div class="fl-r">
+				  								<input type="text">
+				  								<p class="error">Неверный код</p>
+				  							</div>
+				  						</div>
+				  						<div class="mb30">
+				  							<input id="cfirst" type="checkbox" name="first" hidden />
+				  							<label class="new" for="cfirst">Хотите получать новости о скидках и акциях с помощью SMS?</label>
+				  						</div>
+				  						<div class="mb40 gp-btn-input5">
+				  							<input type="submit" value="">				  			
+				  						</div>
+				  				</div>
+				  			</div>
+				  			<div class="right soc fl-r">
+				  				<h3 class="text-normal">Вход через социальные сети</h3>
+				  				<p class="font-normal sub-title">Вы так же войти в наш магазин с помощью </br>вашего логина в социальной сети</p>
+				  				<div class="mb50"><img src="/im/soc-author.jpg" alt=""></div>
+				  				<h3 class="text-normal">Уже зарегистрированы?</h3>
+				  				<p class="sub-title"><a href="#">Войдите</a> прямо сейчас и приступайте к покупкам.</p>
+				  				<div class="img-author"></div>
+				  			</div>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+ 		<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.bxSlider.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="/js/jquery.formstyler.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/site.js"></script>
+	</body>
+</html>
