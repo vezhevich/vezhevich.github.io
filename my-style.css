@@ -2745,7 +2745,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', end
 .gp-tovar-item table tr td:last-child {border-right: 1px solid #ccc; border-radius: 0 6px 6px 0;}
 .gp-tovar-item table tr td {vertical-align: middle; padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;}
 .gp-tovar-item table img {display: inline-block; zoom: 1; *display: inline;}
-.gp-tovar-item table .col1 {width: 80px; padding-left: 20px; text-align: center;}
+.gp-tovar-item table .col1 {width: 80px; padding-left: 20px; text-align: center; position: relative;}
 .gp-tovar-item table .col2 {width: 370px; padding-left: 20px;}
 .gp-tovar-item table .col2 a {font-size: 16px; color: #262626;}
 .gp-tovar-item table .col2 a:hover {color: #D30000;}
@@ -2781,6 +2781,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', end
 .gp-tovar-item .qnty .minus {border-radius: 6px 0 0 6px;}
 .gp-tovar-item .qnty .plus {border-radius: 0 6px 6px 0;}
 .gp-tovar-item .qnty input {float: left; width: 44px; padding: 0; text-align: center; border-left: none; border-right: none; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; height: 26px; background: none; font-size: 16px;}
+.gp-tovar-item .sale {position: absolute; top: 20px; left: 20px; width: 29px; height: 29px; border-radius: 50%; z-index: 50; font: bold 10px/29px Arial; text-shadow:0px 1px 0px rgba(255,255,255,0.66); text-align: center; background: rgb(208,234,43); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(208,234,43,1) 0%, rgba(145,198,74,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(208,234,43,1)), color-stop(100%,rgba(145,198,74,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(208,234,43,1) 0%,rgba(145,198,74,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(208,234,43,1) 0%,rgba(145,198,74,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(208,234,43,1) 0%,rgba(145,198,74,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(208,234,43,1) 0%,rgba(145,198,74,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0ea2b', endColorstr='#91c64a',GradientType=0 ); /* IE6-9 */}
 
 
 .gp-basket .cost-info dl {margin-left: -20px;}
