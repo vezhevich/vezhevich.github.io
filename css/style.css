@@ -414,18 +414,12 @@ background: -webkit-linear-gradient(top, rgba(255,206,33,1) 0%,rgba(254,177,0,1)
 background: linear-gradient(to bottom, rgba(255,206,33,1) 0%,rgba(254,177,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce21', endColorstr='#feb100',GradientType=0 ); /* IE6-9 */}
 
-#gp-animation {background-color: #53206C;}
-#gp-animation dl dt {display: inline-block; zoom: 1; *display: inline; vertical-align: top; margin-left: 70px;}
-#gp-animation dl dt a {display: block; padding: 12px 0; color: #fff; text-decoration: none;}
-#gp-animation dl dt a:hover {color: #FFBF00;}
-#gp-animation dl dt a.active {color: #FFBF00;}
-
 .b-select {height: 390px; position: static; margin: 0; overflow: hidden;}
 .b-select .wrapper {height: 388px;}
 .b-select img {margin-bottom: 20px;}
 .b-select h1 {font-size: 30px; text-shadow:0px 2px 3px rgba(0,0,0,0.65); width: 680px; margin: 0 auto 20px auto;}
 
-.bg-ametist {background: url(/img/bg-main.jpg) no-repeat center center; height: 610px; padding-top: 190px;}
+.gp-bg-ametist {background: url(/img/bg-main.jpg) no-repeat center center; height: 610px; padding-top: 190px;}
 
 .bg-noise {background: url(/gp-img/noise.jpg);}
 .pt80 {padding-top: 80px;}
@@ -443,6 +437,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce21', end
 #footer .fl-l {font-size: 18px; margin-top: 24px;}
 #footer .fl-r {font-size: 14px; margin-top: 20px;}
 #footer .fl-r img {vertical-align: middle; margin-left: 20px;}
+#footer a:hover {text-decoration: underline;}
 
 
 .popup1.inner {width: 400px; height: 450px; margin-left: -200px; margin-top: -225px;}
@@ -451,13 +446,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce21', end
 .popup1.inner .mb10 {margin-bottom: 30px;}
 .popup1.inner .p20 {padding-top: 40px; padding-left: 30px;}
 
-.gp-map {height: 584px; background: url(/gp-img/map.jpg) no-repeat center center;}
+.gp-map {height: 550px; background: url(/gp-img/map.jpg) no-repeat center center;}
 .gp-map .tooltip {position: absolute; width: 300px; height: 118px; background: #fff; border-radius: 5px;}
 .gp-map .tooltip p {color: #505050; font-size: 14px;}
 .gp-map .tooltip .title {font-size: 19px; margin-bottom: 5px; padding-left: 25px; background: url(/gp-img/location-icon.png) no-repeat left center;}
 .gp-map .tooltip .wrapper {padding: 10px 20px;}
-.gp-map .tooltip.left {top: 330px; left: 120px;}
-.gp-map .tooltip.right {top: 250px; right: 150px;}
+.gp-map .tooltip.left {top: 285px; left: 120px;}
+.gp-map .tooltip.right {top: 205px; right: 150px;}
 .gp-map .tooltip.left .conus {position: absolute; top: 20px; right: 0px;}
 .gp-map .tooltip.right .conus {position: absolute; top: 20px; left: 0px;}
 .gp-map .tooltip .conus .triangle {background: #fff; position: relative; position: relative;}
