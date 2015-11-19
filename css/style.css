@@ -406,13 +406,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe306', end
 #header .logo span {margin-top: 10px; display: inline-block; zoom: 1; *display: inline; font-family: arial;}
 #header .centered {position: relative;}
 #header .gp-btn {position: absolute; bottom: 20px; right: 30px;}
-.gp-btn {display: inline-block; zoom: 1; *display: inline;}
-.gp-btn a {display: block; width: 200px; height: 44px; border-radius: 5px; box-shadow: 0 2px #8C4600; font: bold 18px/44px Arial; text-decoration: none; text-align: center; color: #000;
-background: rgb(255,206,33); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(255,206,33,1) 0%, rgba(254,177,0,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,206,33,1) 0%,rgba(254,177,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,206,33,1) 0%,rgba(254,177,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce21', endColorstr='#feb100',GradientType=0 ); /* IE6-9 */}
+
 
 .b-select {height: 390px; position: static; margin: 0; overflow: hidden;}
 .b-select .wrapper {height: 388px;}
