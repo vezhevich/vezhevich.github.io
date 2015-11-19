@@ -1,35 +1,56 @@
 if (window.jQuery) $(document).ready(function() {
+	if ($('.popup').length) popup();
 	if ($('#carousel').length) carousel();
-	if ($('#carousel2').length) carousel2();
 	if ($('input[type=tel]').length) tel();
-	if ($('select.custom').length) sel();
-	if ($('.comment').length) comment();
-	if ($('.address-edit').length) edit();
-	if ($('.new-address').length) addnew();
-	if ($('.cp').length) cp();
-	if ($('.message').length) message();
-
-	if ($('.modal.sms').length>0) $('.modal.sms').modal('show');
+	if ($('.info-room .navi').length) tabs();
+				var params = {
+		changedEl: "select.custom",
+		visRows: 5,
+		scrollArrows: true
+	}
+	
+	cuSel(params);
+	$(".cusel").each(
+	function(){
+	    var w = parseInt($(this).width()),
+	        scrollPanel = $(this).find(".cusel-scroll-pane");
+	    if(w>=scrollPanel.width())
+	    {
+	        $(this).find(".jScrollPaneContainer").width(w);
+	        scrollPanel.width(w);
+		}
+	});
 });
+
+function popup()
+{
+
+	$('.send-popup').bind('click', function(){
+		var rel = $(this).attr('rel');
+		$('.popup.'+rel).show();
+		$('.bg-popup').show();
+
+		$('.popup.'+rel+' .close').bind('click', function(){
+			$('.popup.'+rel).hide();
+			$('.bg-popup').hide();
+			return false;
+		});
+		$('.bg-popup').bind('click', function(){
+			$('.popup').hide();
+			$('.bg-popup').hide();
+			return false;
+		});
+		return false;
+	});
+}
 
 function carousel()
 {
 	$('#carousel').bxSlider({
 		auto: false,
-		pager: false,
-		controls:true,
-		slideWidth: '520',
-		prevText: '',
-		nextText: ''
-	});
-}
-function carousel2()
-{
-	$('#carousel2').bxSlider({
-		auto: false,
-		pager: false,
-		controls:true,
-		slideWidth: '750',
+		pager: true,
+		controls: false,
+		slideWidth: '1000',
 		prevText: '',
 		nextText: ''
 	});
@@ -40,60 +61,14 @@ function tel(){
 	return false; 
 }
 
-function sel(){ 
-	$('select.custom').styler();  
-}
-
-function comment()
+function tabs()
 {
-	$(".comment .link").click(function() {
-		$(this).toggleClass('active');
-		$(".comm").toggleClass('show');
-		return false;
-	});	
-	$(".comment .close").click(function() {
-		$(".comm").removeClass('show');
-		$(".link").removeClass('active');
+	$('.info-room .navi a').bind('click', function(){
+		var rel = this.rel;
+		$('.info-room .tab').hide();
+		$('.info-room .tab.'+rel).show();
+		$('.info-room .navi a').removeClass('active');
+		$(this).addClass('active');
 		return false;
 	});
-}
-
-function edit()
-{
-	$(".address-edit .edit-link").click(function() {
-		$(this).toggleClass('active');
-		$(".b-hide").slideToggle();
-		return false;
-	});	
-}
-
-function addnew()
-{
-	$(".new-address").click(function() {
-		$(this).toggleClass('active');
-		$(".add-new.b-hide").slideToggle();
-		return false;
-	});	
-}
-
-function cp()
-{
-	$('.cp').bxSlider({
-		auto: false,
-		pager: false,
-		controls:true,
-		slideWidth: '',
-		maxSlides: 5,
-		minSlides: 5,
-		prevText: '',
-		nextText: ''
-	});
-}
-
-function message()
-{
-	$(".message .close").click(function() {
-		$(".message").hide();
-		return false;
-	});	
 }

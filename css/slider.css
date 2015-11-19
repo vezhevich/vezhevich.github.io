@@ -1,0 +1,5 @@
+#sliderContent {padding: 0 0 50px 0; overflow: hidden;}
+.viewer {height:300px; overflow: hidden;}
+.content-conveyor {height:330px; position:relative; }
+.item {float:left; max-height: 300px; overflow: hidden;}
+.item img {display: block;}
