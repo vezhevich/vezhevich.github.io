@@ -1,12 +1,36 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.item-card .link').length) slidedown();
+	if ($('.scroll').length) jScrollPane();
+	if ($('.search a').length) show_search();
+	if ($('input[type=tel]').length) tel();
+	if ($('select.custom').length) sel();
 });
 
-function slidedown()
+function jScrollPane(){
+	$('.scroll').jScrollPane();
+}
+
+function show_search()
 {
-	$(".item-card .link").click(function() {
+	$(".search a").click(function() {
 		$(this).toggleClass('active')
-		$('.list', $(this).parents('dt')).slideToggle();
+		$(".search-wrapper").slideDown();
+		return false;
+	});	
+	$(".search-wrapper .close").click(function() {
+		$(".search-wrapper").slideUp();
 		return false;
 	});
 }
+
+function tel(){ 
+	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
+	return false; 
+}
+
+
+function sel(){ 
+	$('select.custom').styler();  
+}
+
+
+

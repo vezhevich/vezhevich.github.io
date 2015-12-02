@@ -1,0 +1,47 @@
+@media (max-width: 320px) {
+  .container {width: 320px;}
+}
+
+@media (min-width: 768px) {
+  .container {width: 750px;}
+  .colp10 {padding-left: 10px; padding-right: 10px;}
+  .conp10 {padding-left: 10px; padding-right: 10px;}
+  .rowm10 {margin-left: -10px; margin-right: -10px;}
+
+  .promo .inner-item .item .text {left: 10px; bottom: 10px; width: 210px;}
+  .promo .inner-item {margin-bottom: 35px;}
+  .promo .b-sidebar .head {margin-bottom: 20px;}
+  .promo {padding-bottom: 30px;}
+  .b-message .text .pl20 {padding-left: 0;}
+  .b-channel .preview .img img {width: 100%;}
+  .b-channel .preview .img .text {width: 325px;}
+  .b-channel .btn-border {margin-top: 40px;}
+  footer .separator {margin: 0; position: absolute; left: 0; top: 80px;}
+  footer .col-sm-12 {margin-bottom: 20px;}
+  .latest-news {margin-bottom: 20px;}
+  img {max-width: 100%;}
+}
+
+
+@media (min-width: 1020px) {
+  .container {width: 1020px;}
+  header .search-wrapper {width: 860px;}
+  .promo .inner-item .item .text {left: 10px; bottom: 10px; width: 215px;}
+  .all-news .b-experts .text {left: 10px; bottom: 10px; width: 210px;}
+  .b-channel .preview .img .text {width: 210px;}
+  footer nav a {font-size: 80%;}
+  footer nav.left a {padding-right: 20px;}
+  footer nav.right a {padding-left: 20px;}
+  .b-channel .head {margin-bottom: 15px;}
+  .b-channel .head span {display: block;}
+  .b-channel .list {margin-top: 33px;}
+  .colp10 {padding-left: 10px; padding-right: 10px;}
+  .rowm10 {margin-left: -10px; margin-right: -10px;}
+  img {max-width: 100%;}
+}
+
+@media (min-width: 1260px) {
+	.container {width: 1200px;}
+	.colp10 {padding-left: 20px; padding-right: 20px;}
+	.rowm10 {margin-left: -20px; margin-right: -20px;}
+}
