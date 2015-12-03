@@ -53,14 +53,8 @@ header .search {position: absolute; right: 20px; top: 70px;}
 header .search i {color: #125ed7;}
 header .search i:hover {color: #e40008;}
 
-header .search-wrapper {display: block; position: absolute; right: 0; background: #fff; width: 100%; bottom: 10px; height: 60px; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s; -moz-transition: all 0.3s ease-in-out;
- -o-transition: all 0.3s ease-in-out;
- -webkit-transition: all 0.3s ease-in-out; -webkit-transform: translate(100%,0);
- -moz-transform: translate(100%,0);
- -o-transform: translate(100%,0);}
-header .search-wrapper.active {opacity: 1; visibility: visible; transition-delay: 0s; right: 0; -webkit-transform: translate(0,0);
- -moz-transform: translate(0,0);
- -o-transform: translate(0,0);}
+header .search-wrapper {display: block; position: absolute; right: 0; background: #fff; width: 100%; bottom: 10px; height: 60px; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s; }
+header .search-wrapper.active {opacity: 1; visibility: visible; transition-delay: 0s; right: 0; }
 
 /*header .search-wrapper {display: none; position: absolute; right: 0px; background: #fff; width: 100%; bottom: 10px; height: 60px;}*/
 
