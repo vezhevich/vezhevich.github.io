@@ -27,7 +27,7 @@ button[type=submit]:hover {text-decoration: none; border-color: #0f43b4; backgro
 button[type=submit]:active {padding: 0;}
 
 
-header {height: 120px; box-shadow: 0px 1px 5px 0px rgba(23, 46, 97, 0.15); background: #fff; z-index: 100; position: relative;}
+header {height: 120px; box-shadow: 0px 1px 5px 0px rgba(23, 46, 97, 0.15); background: #fff; z-index: 100; position: relative; overflow: hidden;}
 header .container {position: relative; height: 120px;}
 header nav.top {position: absolute; top: 8px; left: 20px;}
 header nav.top a {font-size: 80%; line-height: 24px; color: #666; margin-right: 25px;}
@@ -52,12 +52,26 @@ header .phone {position: absolute; right: 220px; top: 8px; font: normal 80%/24px
 header .search {position: absolute; right: 20px; top: 70px;}
 header .search i {color: #125ed7;}
 header .search i:hover {color: #e40008;}
-header .search-wrapper {display: none; position: absolute; right: 0px; background: #fff; width: 100%; bottom: 10px; height: 60px;}
+
+header .search-wrapper {display: block; position: absolute; right: 0; background: #fff; width: 100%; bottom: 10px; height: 60px; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s; -moz-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out; -webkit-transform: translate(100%,0);
+ -moz-transform: translate(100%,0);
+ -o-transform: translate(100%,0);}
+header .search-wrapper.active {opacity: 1; visibility: visible; transition-delay: 0s; right: 0; -webkit-transform: translate(0,0);
+ -moz-transform: translate(0,0);
+ -o-transform: translate(0,0);}
+
+/*header .search-wrapper {display: none; position: absolute; right: 0px; background: #fff; width: 100%; bottom: 10px; height: 60px;}*/
+
 header .search-wrapper input[type=text]{border: none; width: 100%; height: 60px; padding-left: 60px; padding-right: 70px; font: normal 100% Arial;}
-header .search-wrapper button {background: none; border: none; position: absolute; top: 0; left: 0; height: 60px; width: 60px; padding: 0;}
+header .search-wrapper button.search {background: none; border: none; position: absolute; top: 0; left: 0; height: 60px; width: 60px; padding: 0;}
+header .search-wrapper button.search i {line-height: 60px;}
 header .search-wrapper .close {position: absolute; top: 0; right: 20px; padding: 0; opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100);}
 header .search-wrapper .close i {padding: 18px 0 18px 18px;}
 header .search-wrapper .close:hover {color: #e40008;}
+
+
 header .separator {width: 100%; height: 1px; background-color: #000; opacity: 0.102; position: absolute; top: 40px; left: 0;}
 header .hamburger .link {width: 60px; height: 60px; display: block; position: absolute; left: 0px; top: 0; text-align: center; color: #104abd;}
 header .hamburger .link:hover {color: #e40008;}
@@ -244,6 +258,12 @@ footer .realist a:hover {color: #125ed7;}
 .send-news .slidedown-content {display: none;}
 .send-news .slidedown-content input[type=text] {margin-bottom: 10px;}
 
+.send-news.modal.fade .modal-dialog {transform: translate3d(-100%, 0, 0px); -webkit-transform: translate3d(-100%, 0, 0px); -moz-transform: translate3d(-100%, 0, 0px); -o-transform: translate3d(-100%, 0, 0px);}
+.send-news.modal.in .modal-dialog {transform: translate3d(0, 0, 0px); -webkit-transform: translate3d(0, 0, 0px); -moz-transform: translate3d(0, 0, 0px); -o-transform: translate3d(0, 0, 0px);}
+
+.mobile-menu.modal.fade .modal-dialog {transform: translate3d(-100%, 0, 0px); -webkit-transform: translate3d(-100%, 0, 0px); -moz-transform: translate3d(-100%, 0, 0px); -o-transform: translate3d(-100%, 0, 0px);}
+.mobile-menu.modal.in .modal-dialog {transform: translate3d(0, 0, 0px); -webkit-transform: translate3d(0, 0, 0px); -moz-transform: translate3d(0, 0, 0px); -o-transform: translate3d(0, 0, 0px);}
+
 
 	.container {max-width: 1200px;}
 
@@ -377,6 +397,3 @@ footer .realist a:hover {color: #125ed7;}
   .send-news .link-yotube a i {font-size: 100%;}
   button[type=submit] {height: 50px; width: 100%; line-height: 50px;}
 }
-
-
-
