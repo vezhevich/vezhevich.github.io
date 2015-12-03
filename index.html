@@ -47,7 +47,7 @@
 				<div class="phone hidden-sm hidden-xs">
 					Горячая линия <span>8 (3012) 635-000</span>
 				</div>
-				<div class="btn-blue hidden-sm hidden-xs"><a href="#">Сообщить новость <i class="material-icons">send</i></a></div>
+				<div class="btn-blue hidden-sm hidden-xs"><a  data-toggle="modal" data-target="#myModal2" href="#">Сообщить новость <i class="material-icons">send</i></a></div>
 				<div class="logo"><a href="/"><img src="/img/logo.jpg" alt=""></a></div>
 				<div class="search">
 					<a href="" class="btn"><i class="material-icons">search</i></a>
@@ -808,7 +808,37 @@
 		         <div class="phone">
 		         	Горячая линия <span>8 (3012) 635-000</span>
 		         </div>
-		         <div class="btn-blue"><a href="#">Сообщить новость <i class="material-icons">send</i></a></div>
+		         <div class="btn-blue"><a data-toggle="modal" data-target="#myModal2" href="#">Сообщить новость <i class="material-icons">send</i></a></div>
+		      </div>
+		    </div>
+		  </div>
+		</div>			
+		<div class="send-news modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="material-icons">close</i></span></button>
+		      </div>
+		      <div class="modal-body">
+				<div class="head">Сообщить новость</div>
+				<p class="helper">Если у вас есть интересующий вас вопрос, интегрирование по частям отображает косвенный ротор векторного поля, откуда следует доказываемое равенство. Интегрирование по частям недоказуемо.</p>
+				<form action="">
+					<div class="mb20">
+						<input type="text" placeholder="Ф.И.О.">
+						<input type="tel" placeholder="Телефон">
+					</div>
+					<div class="mb20">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Описание новости"></textarea>
+					</div>
+					<div class="link-yotube">
+						<a class="slidedown-link" href="#">Прикрепить ссылку на ролик на Youtube <i class="material-icons">expand_more</i></a>
+						<div class="slidedown-content">
+							<input type="text"></br>
+							<a href="#" class="del">Удалить <i class="material-icons">expand_less</i></a>
+						</div>
+					</div>
+					<button type="submit">Отправить</button>
+				</form>
 		      </div>
 		    </div>
 		  </div>
@@ -817,6 +847,7 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
  		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
  		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+ 		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
  		<script type="text/javascript" src="js/site.js"></script>
 	</body>
 </html>

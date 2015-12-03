@@ -22,6 +22,10 @@ img {width: 100%;}
 .btn-up a {display: inline-block; zoom: 1; *display: inline; border-radius: 3px; width: 280px; height: 62px; font: normal 95%/60px Arial; color: #104abd; text-align: center; background-color: #0f43b4; color: #fff;}
 .btn-up a:hover {text-decoration: none; border-color: #0f43b4; background-color: #125ed7; color: #fff;}
 
+button[type=submit] {display: inline-block; zoom: 1; *display: inline; border-radius: 3px; width: 220px; height: 62px; font: normal 95%/60px Arial; color: #104abd; text-align: center; background-color: #0f43b4; color: #fff; border: none;}
+button[type=submit]:hover {text-decoration: none; border-color: #0f43b4; background-color: #125ed7; color: #fff;}
+button[type=submit]:active {padding: 0;}
+
 
 header {height: 120px; box-shadow: 0px 1px 5px 0px rgba(23, 46, 97, 0.15); background: #fff; z-index: 100; position: relative;}
 header .container {position: relative; height: 120px;}
@@ -219,6 +223,28 @@ footer .realist a:hover {color: #125ed7;}
 .mobile-menu .btn-blue a i {font-size: 87.5%; position: absolute; right: 15px; top: 20px;}
 
 
+.send-news .modal-dialog {width: 640px;}
+.send-news .modal-content {border-radius: 0; border: none; background: #f5f5f5;}
+.send-news .modal-header {border-bottom: none; padding-bottom: 0;}
+.send-news .modal-body {padding-top: 0; padding-left: 40px; padding-right: 40px; padding-bottom: 40px;}
+.send-news .head {font: 500 200%/50px Russia; margin-bottom: 18px;}
+.send-news .helper {font: normal 95%/20px Arial; margin-bottom: 20px;}
+.send-news input[type=text], .send-news input[type=tel] {width: 270px; height: 60px; border: 1px solid #e5e5e5; border-radius: 4px; background-color: #fff; padding: 0 20px; font: normal 100%/60px Arial; color: #666;}
+.send-news input[type=text]:hover, .send-news input[type=tel]:hover {border-color: #aaa;}
+.send-news input[type=text]:focus, .send-news input[type=tel]:focus {border-color: #125ed7;}
+.send-news input[type=text] {margin-right: 15px;}
+.send-news textarea {width: 100%; height: 165px; border: 1px solid #e5e5e5; border-radius: 4px; background-color: #fff; padding: 20px; resize: none;}
+.send-news textarea:hover {border-color: #aaa;}
+.send-news textarea:focus {border-color: #125ed7;}
+.send-news .link-yotube {margin-bottom: 30px;}
+.send-news .link-yotube a:hover {color: #125ed7;}
+.send-news .link-yotube a.active {display: none;}
+.send-news .link-yotube a {font-size: 95%;}
+.send-news .link-yotube i {vertical-align: middle; font-size: 112.5%;}
+.send-news .slidedown-content {display: none;}
+.send-news .slidedown-content input[type=text] {margin-bottom: 10px;}
+
+
 	.container {max-width: 1200px;}
 
 /*@media (max-width: 1200px) {
@@ -340,8 +366,17 @@ footer .realist a:hover {color: #125ed7;}
 
   .b-message .border .triangle-bottom::after {bottom: -10px; right: -10px;}
   .b-message .border .triangle-top::after {bottom: 4px;}
-}
 
+  .send-news .modal-dialog {width: 320px; margin: 0;}
+  .send-news .modal-body {padding-top: 0; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;}
+  .send-news .head {font: 500 150%/50px Russia; margin-bottom: 5px;}
+  .send-news .helper {font: normal 80%/18px Arial; margin-bottom: 20px;}
+  .send-news input[type=text], .send-news input[type=tel] {width: 280px;}
+  .send-news input[type=text] {margin-right: 0; margin-bottom: 20px;}
+  .send-news .link-yotube a {font-size: 87.5%;}
+  .send-news .link-yotube a i {font-size: 100%;}
+  button[type=submit] {height: 50px; width: 100%; line-height: 50px;}
+}
 
 
 

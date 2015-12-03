@@ -16,7 +16,7 @@ table tr td, table tr th {padding:10px 0; text-align:left;}
 table tr td {font: normal 16px PT Sans; color: #9D9CC4;}
 table tr th {color: #9D9CC4;}
 
-a {text-decoration:none; color: #9D9CC4; outline: none !important;}
+a {text-decoration:none; color: #073eb7; outline: none !important;}
 a:hover {color: #DEDEEB; text-decoration: none;}
 a:focus {text-decoration: none;}
 
