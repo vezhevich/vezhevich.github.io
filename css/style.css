@@ -217,6 +217,7 @@ footer .soc .yt {background: url(/img/yt.png) no-repeat;}
 footer .realist a {color: #666;}
 footer .realist a:hover {color: #125ed7;}
 
+/* madal */
 
 .mobile-menu .modal-dialog {margin: 0; max-width: 320px;}
 .mobile-menu .modal-content {border-radius: 0; border: none;}
@@ -264,6 +265,17 @@ footer .realist a:hover {color: #125ed7;}
 .mobile-menu.modal.fade .modal-dialog {transform: translate3d(-100%, 0, 0px); -webkit-transform: translate3d(-100%, 0, 0px); -moz-transform: translate3d(-100%, 0, 0px); -o-transform: translate3d(-100%, 0, 0px);}
 .mobile-menu.modal.in .modal-dialog {transform: translate3d(0, 0, 0px); -webkit-transform: translate3d(0, 0, 0px); -moz-transform: translate3d(0, 0, 0px); -o-transform: translate3d(0, 0, 0px);}
 
+
+.tab-panel {margin-bottom: 20px; position: relative;}
+.tab-panel:after {content: ' '; position: absolute; height: 1px; width: 100%; background: #e5e5e5; bottom: 0; left: 0; display: block;}
+.tab-panel dl {margin-left: -30px;}
+.tab-panel dl dt {float: left; margin-left: 30px; position: relative;}
+.tab-panel dl dt.active:after {content: ' '; position: absolute; height: 1px; width: 100%; background: #e40008; bottom: 0; left: 0; display: block; z-index: 10;}
+.tab-panel dl dt.active a {color: #e40008;}
+.tab-panel .head-article {margin-bottom: 0;}
+
+
+/* media */
 
 	.container {max-width: 1200px;}
 
@@ -361,6 +373,11 @@ footer .realist a:hover {color: #125ed7;}
 
   .b-weather {margin-bottom: 25px;}
 
+  .b-channel {padding-top: 20px; padding-bottom: 20px;}
+  .b-channel .channel-mobile .drop-up {font-size: 100%; margin-top: 10px;}
+  .b-channel .channel-mobile .head {border-bottom: 1px solid #e5e5e5; padding-bottom: 15px; margin-bottom: 0;}
+  .b-channel .channel-mobile .head span {font-size: 70%;}
+  .b-channel .tab-panel {margin-top: 20px;}
   .b-channel .preview {margin-bottom: 20px;}
   .b-channel .btn-border a {height: 50px; width: 100%; line-height: 50px;}
 
@@ -401,5 +418,7 @@ footer .realist a:hover {color: #125ed7;}
   .send-news .link-yotube a i {font-size: 100%;}
   button[type=submit] {height: 50px; width: 100%; line-height: 50px;}
 
+  .tabs-content {display: none;}
+  .tabs-content.active {display: block;}
 
 }

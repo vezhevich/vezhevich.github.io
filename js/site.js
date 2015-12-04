@@ -4,6 +4,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.slidedown-link').length) slideToggle();
 	if ($('input[type=tel]').length) tel();
 	if ($('.anchor').length) anchor();
+	if ($('.tabs').length) tabs();
 });
 
 function jScrollPane(){
@@ -64,6 +65,14 @@ function anchor (){
    }); 
 }
 
-
-
+function tabs() {
+	$('.tabs-caption').each(function() {
+    $(this).find('dt').each(function(i) {
+      $(this).click(function(){
+        $(this).addClass('active').siblings().removeClass('active')
+          .closest('.b-channel').find('div.tabs-content').removeClass('active').eq(i).addClass('active');
+      });
+    });
+  });
+}
 
