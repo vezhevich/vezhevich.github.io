@@ -3,7 +3,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.search a').length) show_search();
 	if ($('.slidedown-link').length) slideToggle();
 	if ($('input[type=tel]').length) tel();
-	if ($('select.custom').length) sel();
+	if ($('.anchor').length) anchor();
 });
 
 function jScrollPane(){
@@ -56,10 +56,14 @@ function tel(){
 	return false; 
 }
 
-
-function sel(){ 
-	$('select.custom').styler();  
+function anchor (){
+   $('a.anchor[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top-100}, 1600);
+        return false; 
+   }); 
 }
+
 
 
 
