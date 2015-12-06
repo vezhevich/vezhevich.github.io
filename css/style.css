@@ -469,6 +469,7 @@ footer .realist a:hover {color: #125ed7;}
 
   /* page tv */
 
-  h2 {font-size: 150%;}
+  .head-inner {font-size: 150%;}
+  .head-inner a {margin-left: 20px;}
   .video-list {margin-bottom: 20px;}
 }
