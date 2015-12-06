@@ -7,6 +7,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.tabs').length) tabs();
 	if ($('.tab-carousel').length) tabslide();
 	if ($('.slick-carousel').length) carousel();
+	if ($('#datepicker').length) calendar();
 });
 
 function jScrollPane(){
@@ -81,6 +82,28 @@ function carousel(){
 	$('.slick-carousel').slick({
   		variableWidth: true,
   		infinite: false
+	});
+}
+
+function calendar(){
+	$(function(){
+	  $.datepicker.regional['ru'] = {
+	  closeText: 'Закрыть',
+	  prevText: '&#x3c;Пред',
+	  nextText: 'След&#x3e;',
+	  currentText: 'Сегодня',
+	  monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+	  'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	  monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+	  'Июл','Авг','Сен','Окт','Ноя','Дек'],
+	  dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	  dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	  dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	  dateFormat: 'dd.mm.yy',
+	  firstDay: 1,
+	  isRTL: false
+	  };
+	  $.datepicker.setDefaults($.datepicker.regional['ru']); $("#datepicker").datepicker();
 	});
 }
 

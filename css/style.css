@@ -92,12 +92,12 @@ header .hamburger .link i {font-size: 150%; line-height: 60px;}
 .promo .inner-item .item:hover .opc {background: rgba(0,0,0,0.6);}
 .promo .heading {font: bold 112.5% Russia; color: #e40008; text-transform: uppercase; margin-bottom: 15px;}
 
-.promo .b-sidebar .head {font: bold 100% Russia; color: #e40008; text-transform: uppercase; margin-bottom: 20px;}
-.promo .b-sidebar dl dt {border-bottom: 1px solid #dcdcdc; padding-bottom: 8px; margin-bottom: 10px;font: normal 95%/20px Arial;}
-.promo .b-sidebar dl dt a {color: #000;}
-.promo .b-sidebar dl dt a:hover {color: #0f43b4; text-decoration: none;}
-.promo .b-sidebar dl dt:last-child {border-bottom: none;}
-.promo .b-sidebar .date {margin-right: 7px;}
+.b-sidebar .head {font: bold 100% Russia; color: #e40008; text-transform: uppercase; margin-bottom: 20px;}
+.b-sidebar dl dt {border-bottom: 1px solid #dcdcdc; padding-bottom: 8px; margin-bottom: 10px;font: normal 95%/20px Arial;}
+.b-sidebar dl dt a {color: #000;}
+.b-sidebar dl dt a:hover {color: #0f43b4; text-decoration: none;}
+.b-sidebar dl dt:last-child {border-bottom: none;}
+.b-sidebar .date {margin-right: 7px;}
 
 .item-news .date {font: normal 70% Arial; color: #e40008;}
 .item-news .date.old {color: #888888;}
@@ -165,7 +165,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .b-channel .preview .time-line dl dt:last-child {border-bottom: none;}
 .b-channel .preview .time-line dl dt a {display: table; color: #000; font: normal 87.5% Arial; padding: 14px 20px; }
 .b-channel .preview .time-line dl dt a:hover {color: #e40008; text-decoration: none;}
-.b-channel .preview .time-line dl dt i {font-size: 150%; vertical-align: middle; margin-right: 10px;}
+.b-channel .preview .time-line dl dt i {font-size: 150%; vertical-align: middle; margin-right: 10px; color: #0f43b4;}
+.b-channel .preview .time-line dl dt a:hover i {color: #e40008;}
 .b-channel .preview .time-line dl dt span {vertical-align: middle; display: table-cell; width: 100%;}
 
 .b-channel .jspVerticalBar {width: 5px; background-color: rgba(0,0,0,0.05)}
@@ -280,15 +281,53 @@ footer .realist a:hover {color: #125ed7;}
 .tab-panel.inner dl dt {margin-bottom: 0; border-bottom: none; margin-left: 0; margin-right: 30px; font: bold 112.5% Russia; text-transform: uppercase; padding-bottom: 20px;}
 .tab-panel.inner .slick-arrow {display: none !important;}
 
+/* page tv */
+
+.layout-grey {height: 300px; background: #f5f5f5; padding-top: 25px;}
+.contant-inner {margin-top: -240px;}
+.contant-inner .container.inner {padding-top: 20px; padding-bottom: 20px;}
+
+.v-menu a {color: #999; font: normal 95%/20px Arial; margin-right: 25px; position: relative; height: 35px; display: inline-block; zoom: 1; *display: inline; vertical-align: top;}
+.v-menu a:hover {color: #e40008; }
+.v-menu a.active {color: #e40008;}
+.v-menu a.active:after {content: ''; width: 100%; height: 1px; background-color: #e40008; position: absolute; bottom: 0; left: 0;}
+
+
+.head-inner {border-bottom: 1px solid #e5e5e5; padding-bottom: 25px; margin-bottom: 25px;}
+.head-inner a {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; font: normal 45% Arial; text-transform: none; color: #555; margin-left: 60px;}
+
+.video-list.item-news .title h4 {margin-bottom: 0;}
+.video-list article {margin-bottom: 40px;}
+.video-list article:last-child {margin-bottom: 0px;}
+.video-list {margin-bottom: 30px;}
+.video-list .separator {width: 100%; height: 1px; background-color: #e5e5e5;}
+
+#datepicker {margin-bottom: 30px;}
+#datepicker .ui-datepicker {padding: 0; border: 0; width: 100%;}
+#datepicker .ui-datepicker .ui-state-default {background: none; border: none; color: #0f43b4; text-align: center; border-radius: 4px;}
+#datepicker .ui-datepicker .ui-datepicker-week-end .ui-state-default {color: #999;}
+#datepicker .ui-datepicker .ui-state-active {color: #fff!important; background: #e40008;}
+#datepicker a.ui-corner-all {background: #999; border: none; top: 3px;}
+#datepicker a.ui-corner-all:hover {top: 3px; background: #666;}
+#datepicker a.ui-corner-all.ui-datepicker-prev:hover {left: 2px;}
+#datepicker a.ui-corner-all.ui-datepicker-next:hover {right: 2px;}
+
+.b-message.inner {background: #f5f5f5; overflow: hidden;}
+.b-message.inner .border {border-color: #f5f5f5;}
+.b-message.inner a {display: block;}
+
+
+
 /* media */
 
 	.container {max-width: 1200px;}
 
-/*@media (max-width: 1200px) {
-	.colp10 {padding-left: 20px; padding-right: 20px;}
+@media (min-width: 1200px) {
+/*	.contant-inner .container.inner {padding-left: 40px; padding-right: 40px;}*/
+	/*.colp10 {padding-left: 20px; padding-right: 20px;}
 	.rowm10 {margin-left: -20px; margin-right: -20px;}
-	.conp10 {padding-left: 30px; padding-right: 30px;}
-}*/
+	.conp10 {padding-left: 30px; padding-right: 30px;}*/
+}
 
 
 @media (max-width: 1199px) {
@@ -336,6 +375,8 @@ footer .realist a:hover {color: #125ed7;}
   header nav.bottom {top: 20px; left: 200px;}
   header .search {top: 20px; right: 20px;}
   header .search-wrapper {bottom: 60px;}
+
+  .video-list {margin-bottom: 30px;}
 
 }
 
@@ -399,7 +440,7 @@ footer .realist a:hover {color: #125ed7;}
   .latest-news.item-news .date {overflow: hidden; font: normal 70% Arial; margin-bottom: 5px;}
   .latest-news .title {overflow: hidden;}
   .latest-news .title h4 {font: normal 87.5%/20px Arial;}
-  .latest-news .col-sm-12 {margin-bottom: 20px;}
+  .latest-news article {margin-bottom: 20px;}
 
   .inner-news.latest-news .title h4 {font: bold 87.5%/20px Arial; margin-bottom: 0;}
   .latest-news.inner-news .head-article {margin-bottom: 15px;}
@@ -426,4 +467,8 @@ footer .realist a:hover {color: #125ed7;}
   .tabs-content {display: none;}
   .tabs-content.active {display: block;}
 
+  /* page tv */
+
+  h2 {font-size: 150%;}
+  .video-list {margin-bottom: 20px;}
 }

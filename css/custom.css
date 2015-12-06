@@ -17,7 +17,7 @@ table tr td {font: normal 16px PT Sans; color: #9D9CC4;}
 table tr th {color: #9D9CC4;}
 
 a {text-decoration:none; color: #073eb7; outline: none !important;}
-a:hover {color: #DEDEEB; text-decoration: none;}
+a:hover {color: #e40008; text-decoration: none;}
 a:focus {text-decoration: none;}
 
 a.link-js {text-decoration: none; border-bottom: 1px dotted #9D9CC4; display: inline-block; line-height: 1;}
@@ -32,7 +32,7 @@ a.js-bg:hover {transition: background 0.2s ease-in-out 0s;}
 h1, h2, h3, h4, h5, h6 {font-weight: 500; line-height:1.2; color:#000; font-family: Russia; line-height: 36px;}
 
 h1{font-size:200%; margin:0 0 10px 0;}
-h2{font-size:200%; margin:0 0 10px 0;}
+h2{font-size:200%; margin:0 0 10px 0; text-transform: uppercase;}
 h3{font-size:150%; margin:0 0 10px 0;}
 h4{font-size:125%; margin:0 0 10px 0;}
 h5{font-size:112.5%; margin:0 0 10px 0;}
@@ -48,9 +48,9 @@ p {font:normal 100% Arial; margin:0 0 14px 0; color: #000;}
 .text-light {font-weight:300;}
 .text-medium {font-weight:600;}
 .text-bold {font-weight:bold;}
-.font-big {font-size: 20px;}
-.font-medium {font-size: 18px;}
-.font-normal {font-size: 14px;}
+.font-big {font-size: 125%;}
+.font-medium {font-size: 112.5%;}
+.font-normal {font-size: 87.5%;}
 .font-small {font-size: 12px;}
 .no-transform {text-transform: none;}
 .no-decor {text-decoration: none;}
@@ -237,3 +237,5 @@ p {font:normal 100% Arial; margin:0 0 14px 0; color: #000;}
 #content {position: relative;} 
 
 /**/
+
+.b-border {border-bottom: 1px solid #e5e5e5;}
