@@ -269,11 +269,16 @@ footer .realist a:hover {color: #125ed7;}
 .tab-panel {margin-bottom: 20px; position: relative;}
 .tab-panel:after {content: ' '; position: absolute; height: 1px; width: 100%; background: #e5e5e5; bottom: 0; left: 0; display: block;}
 .tab-panel dl {margin-left: -30px;}
-.tab-panel dl dt {float: left; margin-left: 30px; position: relative;}
+.tab-panel dl dt {float: left; margin-left: 30px; position: relative; cursor: pointer;}
 .tab-panel dl dt.active:after {content: ' '; position: absolute; height: 1px; width: 100%; background: #e40008; bottom: 0; left: 0; display: block; z-index: 10;}
-.tab-panel dl dt.active a {color: #e40008;}
+.tab-panel dl dt.active span {color: #e40008;}
 .tab-panel .head-article {margin-bottom: 0;}
 
+.tab-panel.inner {margin-top: 5px;}
+.tab-panel.inner:after {z-index: -1;}
+.tab-panel.inner dl {margin-left: 0;}
+.tab-panel.inner dl dt {margin-bottom: 0; border-bottom: none; margin-left: 0; margin-right: 30px; font: bold 112.5% Russia; text-transform: uppercase; padding-bottom: 20px;}
+.tab-panel.inner .slick-arrow {display: none !important;}
 
 /* media */
 
