@@ -113,6 +113,7 @@ function menumobile()
 	$(".v-menu.mobile .category").click(function() {
 		$(this).toggleClass('active');
 		$(".lv2").toggleClass('show');
+		$(".back").toggleClass('hide');
 		return false;
 	});	
 }
