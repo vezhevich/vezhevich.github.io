@@ -322,8 +322,9 @@ footer .realist a:hover {color: #125ed7;}
 .datepicker .ui-datepicker {padding: 0; border: 0; width: 100%; background-color: #f8f8f8; padding-bottom: 10px;}
 .datepicker .ui-datepicker .ui-datepicker-title {font-weight: normal; font-size: 87.5%;}
 .datepicker .ui-datepicker .ui-datepicker-header {background: none; border: none; height: 60px; border-bottom: 1px solid #e5e5e5; padding: 17px 0;}
-.datepicker .ui-datepicker .ui-state-default {background: none; border: none; color: #0f43b4; text-align: center; border-radius: 4px; height: 30px; width: 30px; line-height: 26px;}
+.datepicker .ui-datepicker .ui-state-default {background: none; border: none; color: #0f43b4; text-align: center; border-radius: 4px; height: 30px; width: 30px; line-height: 26px; display: inline-block; zoom: 1; *display: inline;}
 .datepicker .ui-datepicker .ui-state-default:hover {color: #e40008;}
+.datepicker .ui-datepicker .ui-datepicker-week-end .ui-state-default {color: #999;}
 .datepicker .ui-datepicker .ui-datepicker-week-end .ui-state-default:hover {color: #e40008;}
 .datepicker .ui-datepicker .ui-state-active {color: #fff!important; background: #e40008;}
 .datepicker a.ui-corner-all {background: none; border: none; top: 15px; text-align: center; color: #999;}
@@ -333,6 +334,7 @@ footer .realist a:hover {color: #125ed7;}
 .datepicker .ui-datepicker-prev:after {content: '‹'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal; position: absolute; left: 50%; top: 50% margin-top: -2px; margin-left: -4px;}
 .datepicker .ui-datepicker-next:after {content: '›'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal; position: absolute; left: 50%; top: 50% margin-top: -2px; margin-left: -4px;}
 .datepicker .ui-datepicker-calendar tr th {font-weight: normal;}
+.datepicker .ui-datepicker td {text-align: center;}
 .datepicker .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {margin-left: 0; margin-right: 0; margin-top: 0; top: 0; left: 0; display: none; position: static;}
 
 
@@ -537,6 +539,7 @@ footer .realist a:hover {color: #125ed7;}
 
 .radio-player .jp-gui {background: #0f43b4; position: relative; overflow: hidden; height: 80px; margin-bottom: 30px;}
 .radio-player .jp-play, .radio-player .jp-pause {width: 80px; height: 80px; border-right: 1px solid #0d3ca2; display: block; color: #fff; text-align: center; position: absolute; left: 0; top: 0;}
+.radio-player .jp-play:hover {background: #125ed7;}
 .radio-player .jp-play i {font-size: 225%; line-height: 80px;}
 .radio-player .jp-pause i {font-size: 225%; line-height: 80px;}
 .radio-player .jp-pause {background: red;}
@@ -645,6 +648,8 @@ footer .realist a:hover {color: #125ed7;}
   /* page tv-telecast */
 
   .b-telecast .preview .img {margin-right: 20px;}
+
+  .btn-archive a i {top: 19px;}
 
 }
 
@@ -880,7 +885,7 @@ footer .realist a:hover {color: #125ed7;}
   
   .news-detail .author p {font: normal 87.5% Arial; color: #666; margin-top: 0;}
 
-  .v-menu.slick-carousel .last {float: none;}
+  .v-menu.slick-carousel .last {float: left;}
 
   .btn-up {padding: 0 20px;}
   .btn-up a {width: 100%;}
