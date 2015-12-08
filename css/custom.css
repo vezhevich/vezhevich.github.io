@@ -20,15 +20,6 @@ a {text-decoration:none; color: #073eb7; outline: none !important;}
 a:hover {color: #e40008; text-decoration: none;}
 a:focus {text-decoration: none;}
 
-a.link-js {text-decoration: none; border-bottom: 1px dotted #9D9CC4; display: inline-block; line-height: 1;}
-a.link-js:hover {border-color: #DEDEEB;}
-
-a.js {transition: color 0.2s ease-in-out 0s;}
-a.js:hover {transition: color 0.2s ease-in-out 0s;}
-
-a.js-bg {transition: background 0.2s ease-in-out 0s;}
-a.js-bg:hover {transition: background 0.2s ease-in-out 0s;}
-
 ul {margin-bottom: 20px;}
 ul li {font: normal 95%/20px Arial; color: #000; margin-bottom: 5px; position: relative; padding-left: 25px;}
 ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 15px; height: 1px; background: #000; vertical-align: middle; margin-right: 10px; position: absolute; left: 0; top: 10px;}
