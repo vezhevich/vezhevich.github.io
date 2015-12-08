@@ -1,5 +1,5 @@
 if (window.jQuery) $(document).ready(function() {
-
+	if ($('.scroll').length) scroll();
 	if ($('.search a').length) show_search();
 	if ($('.slidedown-link').length) slideToggle();
 	if ($('input[type=tel]').length) tel();
@@ -12,7 +12,9 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.channel-mobile').length) slideDown();
 });
 
-
+function scroll() {
+	$('.scroll').jScrollPane();
+}
 
 function show_search()
 {
