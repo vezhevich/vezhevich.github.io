@@ -33,7 +33,7 @@ ul {margin-bottom: 20px;}
 ul li {font: normal 95%/20px Arial; color: #000; margin-bottom: 5px; position: relative; padding-left: 25px;}
 ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 15px; height: 1px; background: #000; vertical-align: middle; margin-right: 10px; position: absolute; left: 0; top: 10px;}
 
-h1, h2, h3, h4, h5, h6 {font-weight: 500; line-height:1.2; color:#000; font-family: Russia; line-height: 36px;}
+h1, h2, h3, h4, h5, h6 {font-weight: 500; color:#000; font-family: Russia; line-height: 36px;}
 
 h1{font-size:200%; margin:0 0 10px 0;}
 h2{font-size:200%; margin:0 0 10px 0; text-transform: uppercase;}
