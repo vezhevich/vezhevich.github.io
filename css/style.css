@@ -330,8 +330,8 @@ footer .realist a:hover {color: #125ed7;}
 .datepicker a.ui-corner-all:hover {top: 15px; background: #0f43b4;}
 .datepicker a.ui-corner-all.ui-datepicker-prev:hover {left: 2px; color: #fff;}
 .datepicker a.ui-corner-all.ui-datepicker-next:hover {right: 2px; color: #fff;}
-.datepicker .ui-datepicker-prev:after {content: '‹'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal;}
-.datepicker .ui-datepicker-next:after {content: '›'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal;}
+.datepicker .ui-datepicker-prev:after {content: '‹'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal; position: absolute; left: 50%; top: 50% margin-top: -2px; margin-left: -4px;}
+.datepicker .ui-datepicker-next:after {content: '›'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal; position: absolute; left: 50%; top: 50% margin-top: -2px; margin-left: -4px;}
 .datepicker .ui-datepicker-calendar tr th {font-weight: normal;}
 .datepicker .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {margin-left: 0; margin-right: 0; margin-top: 0; top: 0; left: 0; display: none; position: static;}
 
