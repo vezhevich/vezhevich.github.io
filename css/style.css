@@ -336,6 +336,9 @@ footer .realist a:hover {color: #125ed7;}
 .datepicker .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {margin-left: 0; margin-right: 0; margin-top: 0; top: 0; left: 0; display: none; position: static;}
 
 
+.mobile-calendar .modal-header {border-bottom: none; padding-bottom: 0;}
+.mobile-calendar .modal-header .close {float: left;}
+
 .b-message.inner {background: #f5f5f5; overflow: hidden;}
 .b-message.inner .border {border-color: #f5f5f5;}
 .b-message.inner a {display: block;}
