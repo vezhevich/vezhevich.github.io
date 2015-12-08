@@ -333,6 +333,7 @@ footer .realist a:hover {color: #125ed7;}
 .datepicker .ui-datepicker-prev:after {content: '‹'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal;}
 .datepicker .ui-datepicker-next:after {content: '›'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal;}
 .datepicker .ui-datepicker-calendar tr th {font-weight: normal;}
+.datepicker .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {margin-left: 0; margin-right: 0; margin-top: 0; top: 0; left: 0; display: none; position: static;}
 
 
 .b-message.inner {background: #f5f5f5; overflow: hidden;}
