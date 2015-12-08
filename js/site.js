@@ -1,5 +1,5 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.scroll').length) jScrollPane();
+
 	if ($('.search a').length) show_search();
 	if ($('.slidedown-link').length) slideToggle();
 	if ($('input[type=tel]').length) tel();
@@ -8,11 +8,12 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.tab-carousel').length) tabslide();
 	if ($('.slick-carousel').length) carousel();
 	if ($('#datepicker').length) calendar();
+	if ($('.v-menu.mobile').length) menumobile();
+	if ($('.channel-mobile').length) slideDown();
+	// if ($('.v-menu.inner').length) addslick();
 });
 
-function jScrollPane(){
-	$('.scroll').jScrollPane();
-}
+
 
 
 function show_search()
@@ -107,3 +108,34 @@ function calendar(){
 	});
 }
 
+function menumobile()
+{
+	$(".v-menu.mobile .category").click(function() {
+		$(this).toggleClass('active')
+		$(".lv2").toggleClass('show');
+		return false;
+	});	
+}
+
+function slideDown()
+{
+	$(".channel-mobile .link").click(function() {
+		$(this).toggleClass('active')
+		$(".channel-mobile .head").slideToggle();
+		$(".channel-mobile-hidden").slideToggle();
+		$(".btn-border").toggleClass('show');
+		return false;
+	});	
+}
+
+
+// function addslick() {
+// 	var width = $(window).width();
+// 	if (width < 768) {
+// 		$('.v-menu.inner').addClass('slick-carousel');
+// 	} 
+// 	else {
+// 		$('.v-menu.inner').removeClass('slick-carousel');
+
+// 	}
+// }
