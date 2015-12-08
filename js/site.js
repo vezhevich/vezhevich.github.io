@@ -7,7 +7,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.tabs').length) tabs();
 	if ($('.tab-carousel').length) tabslide();
 	if ($('.slick-carousel').length) carousel();
-	if ($('#datepicker').length) calendar();
+	if ($('.datepicker').length) calendar();
 	if ($('.v-menu.mobile').length) menumobile();
 	if ($('.channel-mobile').length) slideDown();
 });
@@ -104,7 +104,7 @@ function calendar(){
 	  firstDay: 1,
 	  isRTL: false
 	  };
-	  $.datepicker.setDefaults($.datepicker.regional['ru']); $("#datepicker").datepicker();
+	  $.datepicker.setDefaults($.datepicker.regional['ru']); $(".datepicker").datepicker();
 	});
 }
 

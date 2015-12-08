@@ -207,7 +207,7 @@
 						</div>
 						<div class="btn-border hidden-lg hidden-md hidden-sm"><a href="#">Показать еще</a></div>
 						<div class="btn-border mt25 btn-archive hidden-lg hidden-md hidden-sm">
-							<a href="#"><i class="material-icons">list</i>Архив новостей</a>
+							<a data-toggle="modal" data-target="#myModal3" href="#"><i class="material-icons">list</i>Архив новостей</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs colp10">
@@ -241,7 +241,7 @@
 						</div>
 						<div class="calendar">
 							<h6 class="head-article">Архив новостей</h6>
-							<div id="datepicker"></div>
+							<div class="datepicker"></div>
 						</div>
 						<div class="mb30">
 							<a href="#"><img src="/img/partner.jpg" alt=""></a>
@@ -380,6 +380,18 @@
 					</div>
 					<button type="submit">Отправить</button>
 				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>		
+		<div class="mobile-calendar modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="material-icons">close</i></span></button>
+		      </div>
+		      <div class="modal-body">
+					<div class="datepicker"></div>
 		      </div>
 		    </div>
 		  </div>

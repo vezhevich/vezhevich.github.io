@@ -97,6 +97,7 @@ header .hamburger .link i {font-size: 150%; line-height: 60px;}
 .promo .inner-item .item .opc {position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
 .promo .inner-item .item:hover .opc {background: rgba(0,0,0,0.6);}
 .promo .heading {font: bold 112.5% Russia; color: #e40008; text-transform: uppercase; margin-bottom: 15px;}
+.promo article:hover .text a {color: #0f43b4;}
 
 .b-sidebar .head {font: bold 100% Russia; color: #e40008; text-transform: uppercase; margin-bottom: 20px;}
 .b-sidebar dl dt {border-bottom: 1px solid #dcdcdc; padding-bottom: 8px; margin-bottom: 10px;font: normal 95%/20px Arial;}
@@ -110,6 +111,7 @@ header .hamburger .link i {font-size: 150%; line-height: 60px;}
 .item-news .title h4 {font-size: 112.5%; line-height: 22px; margin-bottom: 8px; font-weight: bold; font-family: PT Sans;}
 .item-news .title h4 a {color: #000;}
 .item-news .title h4 a:hover {color: #0f43b4; text-decoration: none;}
+.item-news article:hover .title a {color: #0f43b4; text-decoration: none;}
 .item-news .teaser  {color: #777777; font: normal 87.5%/20px Arial;}
 
 .b-message {margin-bottom: 35px;}
@@ -198,9 +200,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .all-news .item-news p {font: normal 95%/20px Arial; margin-bottom: 0;}
 .all-news .item-news article {margin-bottom: 30px; overflow: hidden;}
 .all-news .item-news article:last-child {margin-bottom: 40px;}
+.all-news .item-news article:hover .text h4 a {color: #0f43b4; text-decoration: none;}
 
 .inner-news dl dt {border-bottom: 1px solid #e5e5e5; padding-bottom: 15px; margin-bottom: 17px;}
 .inner-news dl dt:last-child {border-bottom: none;}
+.inner-news dl dt:hover .title a {color: #0f43b4; text-decoration: none;}
 .inner-news .teaser {font: normal 95% Arial; color: #000;}
 .inner-news .teaser a {font: normal 95%/20px Arial; color: #000;}
 .inner-news .teaser a:hover {color: #0f43b4; text-decoration: none;}
@@ -305,6 +309,7 @@ footer .realist a:hover {color: #125ed7;}
 
 .head-inner {border-bottom: 1px solid #e5e5e5; padding-bottom: 25px; margin-bottom: 40px;}
 .head-inner a {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; font: normal 45% Arial; text-transform: none; color: #555; margin-left: 60px;}
+.head-inner a:hover {color: #0f43b4;}
 .head-inner span {font: normal 50% Arial; color: #555; text-transform: none;}
 
 .video-list.item-news .title h4 {margin-bottom: 0;}
@@ -313,17 +318,22 @@ footer .realist a:hover {color: #125ed7;}
 .video-list {margin-bottom: 30px;}
 .video-list .separator {width: 100%; height: 1px; background-color: #e5e5e5;}
 
-#datepicker {margin-bottom: 30px;}
-#datepicker .ui-datepicker {padding: 0; border: 0; width: 100%;}
-#datepicker .ui-datepicker .ui-state-default {background: none; border: none; color: #0f43b4; text-align: center; border-radius: 4px; height: 30px; width: 30px; line-height: 26px;}
-#datepicker .ui-datepicker .ui-state-default:hover {color: #e40008;}
-#datepicker .ui-datepicker .ui-datepicker-week-end .ui-state-default {color: #999;}
-#datepicker .ui-datepicker .ui-datepicker-week-end .ui-state-default:hover {color: #e40008;}
-#datepicker .ui-datepicker .ui-state-active {color: #fff!important; background: #e40008;}
-#datepicker a.ui-corner-all {background: #999; border: none; top: 3px;}
-#datepicker a.ui-corner-all:hover {top: 3px; background: #666;}
-#datepicker a.ui-corner-all.ui-datepicker-prev:hover {left: 2px;}
-#datepicker a.ui-corner-all.ui-datepicker-next:hover {right: 2px;}
+.datepicker {margin-bottom: 30px;}
+.datepicker .ui-datepicker {padding: 0; border: 0; width: 100%; background-color: #f8f8f8; padding-bottom: 10px;}
+.datepicker .ui-datepicker .ui-datepicker-title {font-weight: normal; font-size: 87.5%;}
+.datepicker .ui-datepicker .ui-datepicker-header {background: none; border: none; height: 60px; border-bottom: 1px solid #e5e5e5; padding: 17px 0;}
+.datepicker .ui-datepicker .ui-state-default {background: none; border: none; color: #0f43b4; text-align: center; border-radius: 4px; height: 30px; width: 30px; line-height: 26px;}
+.datepicker .ui-datepicker .ui-state-default:hover {color: #e40008;}
+.datepicker .ui-datepicker .ui-datepicker-week-end .ui-state-default:hover {color: #e40008;}
+.datepicker .ui-datepicker .ui-state-active {color: #fff!important; background: #e40008;}
+.datepicker a.ui-corner-all {background: none; border: none; top: 15px; text-align: center; color: #999;}
+.datepicker a.ui-corner-all:hover {top: 15px; background: #0f43b4;}
+.datepicker a.ui-corner-all.ui-datepicker-prev:hover {left: 2px; color: #fff;}
+.datepicker a.ui-corner-all.ui-datepicker-next:hover {right: 2px; color: #fff;}
+.datepicker .ui-datepicker-prev:after {content: '‹'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal;}
+.datepicker .ui-datepicker-next:after {content: '›'; display: inline-block; zoom: 1; *display: inline; width: 10px; height: 10px; text-align: center; font-size: 24px; line-height: 26px; font-weight: normal;}
+.datepicker .ui-datepicker-calendar tr th {font-weight: normal;}
+
 
 .b-message.inner {background: #f5f5f5; overflow: hidden;}
 .b-message.inner .border {border-color: #f5f5f5;}
@@ -398,7 +408,7 @@ footer .realist a:hover {color: #125ed7;}
 
 /* page b-feedback */
 
-.b-feedback .send-news {margin-bottom: 30px;}
+.b-feedback .send-news {margin-bottom: 60px;}
 .b-feedback .send-news input[type=text] {width: 340px;}
 .b-feedback .send-news input[type=text]:last-child { margin-right: 0; margin-bottom: 0;}
 .b-feedback .send-news button[type=submit] {font: bold 112.5%/50px Russia; text-transform: uppercase;}
@@ -489,7 +499,7 @@ footer .realist a:hover {color: #125ed7;}
 .telecast-detail .video-detail a:hover .opc {background: rgba(0,0,0,0.6);}
 .telecast-detail .video-detail i {font-size: 600%; position: absolute; top: 50%; left: 50%; margin: -40px 0 0 -40px; color: #000; z-index: 10; color: #fff;}
 .telecast-detail .text-detail {margin-bottom: 30px;}
-.telecast-detail .text-detail p {font: normal 112.5%/30px Arial;}
+.telecast-detail .text-detail p {font: normal 112.5%/30px PT Serif;}
 .telecast-detail .comment {margin-bottom: 30px;}
 
 .b-radio .list a {font: bold 112.5%/22px PT Sans; color: #000;}
@@ -508,6 +518,7 @@ footer .realist a:hover {color: #125ed7;}
 .panel-group .panel-heading + .panel-collapse > .panel-body {border: none;}
 .panel-group .panel-heading {padding: 0; border-radius: 0; border: none; background: none;}
 .panel-group .panel-heading a {position: relative; display: block; padding-right: 30px; font: bold 112.5% PT Sans; color: #e40008;}
+.panel-group .panel-heading a.collapsed:hover {color: #e40008;}
 .panel-group .panel-heading a.collapsed {color: #000; }
 .panel-group .panel-heading a.collapsed i {-webkit-transform: rotate(180deg); /* Chrome y Safari */-moz-transform: rotate(180deg); /* Firefox */ -o-transform: rotate(180deg); /* Opera */}
 .panel-group .panel-heading a i {position: absolute; right: 0; top: 5px; }
@@ -691,7 +702,7 @@ footer .realist a:hover {color: #125ed7;}
 
   .btn-border a {width: 100%; height: 50px; line-height: 50px;}
 
-  .latest-news {margin-bottom: 0;}
+  .latest-news {margin-bottom: 10px;}
   .latest-news .head-article {margin-bottom: 0;}
   .latest-news .img {float: left; width: 80px; margin-bottom: 0; margin-right: 10px;}
   .latest-news.item-news .date {overflow: hidden; font: normal 70% Arial; margin-bottom: 5px;}
@@ -863,5 +874,8 @@ footer .realist a:hover {color: #125ed7;}
   .news-detail .author p {font: normal 87.5% Arial; color: #666; margin-top: 0;}
 
   .v-menu.slick-carousel .last {float: none;}
+
+  .btn-up {padding: 0 20px;}
+  .btn-up a {width: 100%;}
     
 }
