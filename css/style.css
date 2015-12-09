@@ -554,7 +554,6 @@ footer .realist a:hover {color: #125ed7;}
 .radio-player .jp-mute {left: 110px;}
 .radio-player .jp-unmute {right: 20px;}
 
-
 /* media */
 
 	.container {max-width: 1240px;}
@@ -656,7 +655,7 @@ footer .realist a:hover {color: #125ed7;}
 
 @media (max-width: 767px) {
   .container {max-width: 767px;}
-  header {/*position: fixed; */width: 100%; height: 60px;}
+  header {position: fixed; width: 100%; height: 60px;}
   header .hamburger .link {left: 0;}
   header .container {height: 60px;}
   header .logo {left: 50%; margin-left: -60px; bottom: 0;}
@@ -677,7 +676,7 @@ footer .realist a:hover {color: #125ed7;}
   .promo .inner-item .item a {border-bottom: 1px solid #e5e5e5; padding-bottom: 15px; overflow: hidden;}
   .promo .inner-item .item .text .date {font-size: 70%; margin-bottom: 5px;}
   .promo .inner-item .item:last-child {margin-bottom: 0;}
-  .promo {padding-bottom: 0; padding-top: 30px; margin-bottom: 30px;}
+  .promo {padding-bottom: 0; padding-top: 80px; margin-bottom: 30px;}
   .promo .btn-show-all {text-align: center; float: none; height: 50px;}
   .promo .btn-show-all a {font: normal 95%/30px Arial; color: #104abd; padding: 10px 0; display: block; position: relative;}
   .promo .btn-show-all a i {position: absolute; font-size: 100%; color: #666; right: 20px; top: 17px;}
