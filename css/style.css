@@ -681,6 +681,8 @@ footer .realist a:hover {color: #125ed7;}
   .promo .btn-show-all a {font: normal 95%/30px Arial; color: #104abd; padding: 10px 0; display: block; position: relative;}
   .promo .btn-show-all a i {position: absolute; font-size: 100%; color: #666; right: 20px; top: 17px;}
 
+  .promo .first-item .text h2 {margin-bottom: 20px; border-bottom: 1px solid #e5e5e5; padding-bottom: 10px;}
+
   .b-message {background: #f5f5f5; overflow: hidden;}
   .b-message .row {margin-left: 0; margin-right: 0;}
   .b-message .colp {padding-left: 0; padding-right: 0;}
@@ -702,6 +704,7 @@ footer .realist a:hover {color: #125ed7;}
   .b-channel .tab-panel {margin-top: 20px;}
   .b-channel .preview {margin-bottom: 20px;}
   .b-channel .btn-border a {height: 50px; width: 100%; line-height: 50px;}
+  .b-channel .channel-mobile .head .fl-l {color: #0f43b4;}
 
   .all-news {margin-bottom: 20px; padding-bottom: 30px; border-bottom: none;}
   .all-news .item-news .img {width: 80px; margin-right: 10px;}
@@ -731,6 +734,7 @@ footer .realist a:hover {color: #125ed7;}
   .b-message .border .triangle-bottom::after {bottom: -10px; right: -10px;}
   .b-message .border .triangle-top::after {bottom: 4px;}
 
+  .send-news .close {float: left;}
   .send-news .modal-dialog {width: 320px; margin: 0;}
   .send-news .modal-body {padding-top: 0; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;}
   .send-news .head {font: 500 150%/50px Russia; margin-bottom: 5px;}
@@ -889,5 +893,7 @@ footer .realist a:hover {color: #125ed7;}
 
   .btn-up {padding: 0 20px;}
   .btn-up a {width: 100%;}
+
+  .program-list dl {margin-bottom: 30px;}
     
 }

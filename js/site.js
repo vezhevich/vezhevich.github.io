@@ -52,7 +52,7 @@ function tel(){
 function anchor (){
    $('a.anchor[href^="#"]').click(function(){
         var target = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(target).offset().top-100}, 1600);
+        $('html, body').animate({scrollTop: $(target).offset().top-100}, 800);
         return false; 
    }); 
 }
