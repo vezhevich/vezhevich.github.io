@@ -881,6 +881,29 @@
  		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
  		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  		<script type="text/javascript" src="/js/slick.min.js"></script>
- 		<script type="text/javascript" src="js/site.js"></script>
+ 		<script type="text/javascript" src="js/site.js"></script> 
+ 		<script>
+ 			var lastScrollTop = 0;
+ 			$(window).scroll(function(event){
+ 			  var st = $(this).scrollTop();
+ 			  if (st > lastScrollTop){
+ 			      // downscroll code
+ 				  if($('header').css('position') != 'relative')
+ 			      	$('header').css('position','relative');
+ 			  } else {
+ 			     // upscroll code
+ 				 if($(window).scrollTop() == 0)
+ 				 {
+ 				 	$('header').css('position','relative');
+ 				 }
+ 				 else
+ 				 {
+ 				 	if($('header').css('position') != 'fixed')
+ 			     		$('header').css('position','fixed');
+ 			  	 }
+ 			  }
+ 			  lastScrollTop = st;
+ 			});
+ 		</script>		
 	</body>
 </html>
