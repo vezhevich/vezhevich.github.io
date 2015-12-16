@@ -1,13 +1,13 @@
-html {height: 100%; -webkit-font-smoothing: antialiased;}
+html {-webkit-font-smoothing: antialiased;}
 
-body {font-family: Arial, sans-serif; height: 100%; width: 100%; font-size: 12pt;}
+body {font-family: Open Sans, sans-serif; height: 100%; width: 100%; font-size: 12pt;}
 
 strong {font-weight: bold;} 
 
-*::-webkit-input-placeholder {color: #666666;opacity: 1;}
-*:-moz-placeholder {color: #666666; opacity: 1;}
-*::-moz-placeholder {color: #666666; opacity: 1;}
-*:-ms-input-placeholder {color: #666666; opacity: 1;}
+*::-webkit-input-placeholder {color: #D7624D;opacity: 1;}
+*:-moz-placeholder {color: #D7624D; opacity: 1;}
+*::-moz-placeholder {color: #D7624D; opacity: 1;}
+*:-ms-input-placeholder {color: #D7624D; opacity: 1;}
 
 .close {opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100);}
 
@@ -16,24 +16,24 @@ table tr td, table tr th {padding:10px 0; text-align:left;}
 table tr td {font: normal 95% Arial; color: #000;}
 table tr th {color: #000;}
 
-a {text-decoration:none; color: #073eb7; outline: none !important;}
+a {text-decoration:none; color: #fff; outline: none !important;}
 a:hover {color: #e40008; text-decoration: none;}
 a:focus {text-decoration: none;}
 
 ul {margin-bottom: 20px;}
-ul li {font: normal 95%/20px Arial; color: #000; margin-bottom: 5px; position: relative; padding-left: 25px;}
+ul li {font: normal 95%/20px Open Sans; color: #000; margin-bottom: 5px; position: relative; padding-left: 25px;}
 ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 15px; height: 1px; background: #000; vertical-align: middle; margin-right: 10px; position: absolute; left: 0; top: 10px;}
 
-h1, h2, h3, h4, h5, h6 {font-weight: 500; color:#000; font-family: Russia; line-height: 36px;}
+h1, h2, h3, h4, h5, h6 {font-weight: 500; color:#000; font-family: Open-Sans; line-height: 36px;}
 
 h1{font-size:200%; margin:0 0 10px 0;}
-h2{font-size:200%; margin:0 0 10px 0; text-transform: uppercase;}
+h2{font-size:200%; margin:0 0 10px 0;}
 h3{font-size:150%; margin:0 0 10px 0;}
 h4{font-size:125%; margin:0 0 10px 0;}
 h5{font-size:112.5%; margin:0 0 10px 0;}
 h6{font-size:100%; margin:0 0 10px 0;}
 
-p {font:normal 95%/20px Arial; margin:0 0 14px 0; color: #000;}
+p {font:normal 95%/20px Open Sans; margin:0 0 14px 0; color: #22282C;}
 
 /* text */
 .text-left {text-align:left;}
@@ -235,4 +235,4 @@ p {font:normal 95%/20px Arial; margin:0 0 14px 0; color: #000;}
 
 /**/
 
-.b-border {border-bottom: 1px solid #e5e5e5;}
+.b-border {border-bottom: 1px solid rgba(218, 216, 209, 1);}
