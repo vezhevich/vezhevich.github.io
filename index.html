@@ -1,239 +1,886 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Citizer</title>
+        <title>БГТРК</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="css/custom.css" rel="stylesheet" type="text/css">
-		<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-		<link href="/fonts/style.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link href="css/grid.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     </head>
-	<body>
-		<header class="main">
-			<div class="category"><span class="icon-nav-icon1"></span> афиша</div>
-			<div class="time-tabs clearfix">
-				<a href="afisha-now.html"><span>сейчас</span></a>
-				<a class="active" href="#"><span>сегодня</span></a>
-				<a href="#"><span class="icon-dots"></span></a>
+	<body id="anchor">
+		<header>
+			<div class="separator hidden-sm hidden-xs"></div>
+			<div class="container conp10">
+				<div class="hamburger hidden-lg hidden-md"><a data-toggle="modal" data-target="#myModal" class="link" href="#"><i class="material-icons">menu</i></a></div>
+				<nav class="bottom hidden-xs">
+					<dl class="clearfix">
+						<dt>
+							<a href="#">Новости</a>
+							<dl class="lv2">
+								<dt><a href="#">Образование</a></dt>
+								<dt><a href="#">Медицина</a></dt>
+								<dt><a href="#">Общество</a></dt>
+								<dt><a class="active" href="#">Происшествия</a></dt>
+								<dt><a href="#">Спорт</a></dt>
+								<dt><a href="#">Сельское хозяйство</a></dt>
+								<dt><a href="#">Экономика</a></dt>
+							</dl>
+						</dt>
+						<dt><a href="tv.html">Телевидение</a></dt>
+						<dt><a href="#">Радио</a></dt>
+						<dt><a href="#">Национальное вещание</a></dt>
+						<dt class="hidden-sm hidden-xs"><a href="#"><i class="material-icons">play_circle_outline</i>Прямой эфир</a></dt>
+					</dl>
+				</nav>
+				<nav class="top hidden-sm hidden-xs">
+					<a href="#">О компании</a>
+					<a href="#">Реклама</a>
+					<a href="#">Обратная связь</a>
+					<a href="#">Программа передач</a>
+				</nav>
+				<div class="phone hidden-sm hidden-xs">
+					Горячая линия <span>8 (3012) 635-000</span>
+				</div>
+				<div class="btn-blue hidden-sm hidden-xs"><a  data-toggle="modal" data-target="#myModal2" href="#">Сообщить новость <i class="material-icons">send</i></a></div>
+				<div class="logo"><a href="/"><img src="/img/logo.jpg" alt=""></a></div>
+				<div class="search">
+					<a href="" class="btn"><i class="material-icons">search</i></a>
+				</div>
+				<div class="search-wrapper">
+					<div class="pos-rel">
+						<input type="text" placeholder="Что Искать">
+						<button class="search" type="submit"><i class="material-icons">search</i></button>
+						<a href="#" class="close"><i class="material-icons">close</i></a>
+					</div>
+				</div>
 			</div>
-			<a data-toggle="modal" data-target="#myModal" href="#" class="menu">
-				<span class="pos-rel">
-					<span class="icon-menu"></span>
-					<span class="icon-menu-logo"><span class="path1"></span><span class="path2"></span></span>
-				</span>
-			</a>
 		</header>
-		<section class="afisha">
-			<article>
-				<div class="head wr-lr-20">
-					<div class="title">Монстры</br> на каникулах 2</div>
-					<div class="sub-title">Hotel Transylvania 2</div>
-				</div>
-				<div class="preview wr-lr-20">
-					<div class="img">
-						<a href="#">
-							<img src="/img/monster.jpg" alt="">
-							<div class="opc">
-								<div class="wrapper">
-									<div class="rate fl-l">7.9</div>
-									<div class="com fl-r">21<span class="icon-messages"></span></div>
-								</div>
+		<section class="promo">
+			<div class="container conp10">
+				<div class="row rowm10">
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 colp10">
+						<article class="first-item item-news clearfix">
+							<div class="heading hidden-lg hidden-md hidden-sm">Главное сегодня</div>
+							<div class="img fl-l mr20">
+								<a href="#"><img src="/img/first-item.jpg" alt=""></a>
 							</div>
-						</a>
-					</div>
-				</div>
-				<div class="teaser wr-lr-20">
-					Продолжение нового дракулы для детей
-				</div>
-				<div class="showtimes wr-l-20">
-					<div class="head">Ближайшие сеансы</div>
-					<div class="location clearfix">
-						<span class="name">People's Cinema<span class="icon-shape"></span></span>
-						<span class="time owlCarousel">
-							<span>10:50</span>
-							<span>12:40</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-						</span>
-					</div>						
-					<div class="location clearfix">
-						<span class="name"><span class="icon-location"></span>RGB Cinema</span>
-						<span class="time owlCarousel">
-							<span>10:50</span>
-							<span>12:40</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-						</span>
-					</div>						
-					<div class="location clearfix">
-						<span class="name">Eurozone</span>
-						<span class="time owlCarousel">
-							<span class="active">10:50</span>
-							<span>12:40</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-						</span>
-					</div>
-					<a href="#" class="more"><span class="icon-dots"></span> <span class="text">Еще в 2 кинотеатрах</span></a>
-				</div>
-			</article>				
-			<article>
-				<div class="head wr-lr-20">
-					<div class="title">Марсианин</div>
-					<div class="sub-title">The Martian</div>
-				</div>
-				<div class="preview wr-lr-20">
-					<div class="img">
-						<a href="#">
-							<img src="/img/martian.jpg" alt="">
-							<div class="opc">
-								<div class="wrapper">
-									<div class="rate fl-l">7.9</div>
-									<div class="com fl-r"><span class="icon-messages"></span></div>
-								</div>
+							<div class="text oh">
+								<div class="date">17:47</div>
+								<h2><a href="#">Народный Хурал Бурятии планирует работу на 2016 год</a></h2>
+								<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
 							</div>
-						</a>
-					</div>
-				</div>
-				<div class="teaser wr-lr-20">
-					Продолжение нового дракулы для детей
-				</div>
-				<div class="showtimes wr-l-20">
-					<div class="head">Ближайшие сеансы</div>
-					<div class="location clearfix">
-						<span class="name">People's Cinema<span class="icon-shape"></span></span>
-						<span class="time owlCarousel">
-							<span>10:50</span>
-							<span>12:40</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-						</span>
-					</div>						
-					<div class="location clearfix">
-						<span class="name"><span class="icon-location"></span>RGB Cinema</span>
-						<span class="time owlCarousel">
-							<span>10:50</span>
-							<span>12:40</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-						</span>
-					</div>							
-					<div class="location clearfix">
-						<span class="name">Eurozone</span>
-						<span class="time owlCarousel">
-							<span class="active">10:50</span>
-							<span>12:40</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-							<span>13:50</span>
-						</span>
-					</div>
-					<a href="#" class="more"><span class="icon-dots"></span> <span class="text">Еще в 2 кинотеатрах</span></a>
-				</div>
-			</article>
-		</section>
-		<section class="afisha event">
-			<article>
-				<div class="wr-lr-20 pt15">
-					<div class="head">
-						<div class="sub-title inner"><span class="icon-star"></span>Событие недели</div>
-						<div class="title">Baikal Fashion</br> Week 2015</div>
-						<div class="sub-title">Главное событие мира моды в этом году</div>
-					</div>
-					<div class="preview">
-						<div class="img">
-							<a href="#">
-								<img src="/img/fashion.jpg" alt="">
-								<div class="opc">
-									<div class="wrapper">
-										<div class="com fl-r">159<span class="icon-messages"></span></div>
+						</article>
+						<div class="row rowm10 inner-item">
+							<article class="item col-lg-4 col-md-4 col-sm-4 col-xs-12 colp10">
+								<a href="#">
+									<div class="opc"></div>
+									<img src="/img/news2.jpg" alt="">
+									<div class="text">
+										<div class="wrapper">
+											<div class="date">17:47</div>
+											<p class="title">Горит земля. В центре внимания – торфяные пожары</p>
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
+							</article>
+							<article class="item col-lg-4 col-md-4 col-sm-4 col-xs-12 colp10">
+								<a href="#">
+									<div class="opc"></div>
+									<img src="/img/news3.jpg" alt="">
+									<div class="text">
+										<div class="wrapper">
+											<div class="date">17:47</div>
+											<p class="title">В Улан-Удэ стартовала научно-практическая конференция врачей</p>
+										</div>
+									</div>
+								</a>
+							</article>
+							<article class="item col-lg-4 col-md-4 col-sm-4 col-xs-12 colp10">
+								<a href="#">
+									<div class="opc"></div>
+									<img src="/img/news4.jpg" alt="">
+									<div class="text">
+										<div class="wrapper">
+											<div class="date">17:47</div>
+											<p class="title">Перевозчик оштрафован за самовольное повышение цены за проезд</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="clear btn-show-all">
+							<a href="#" class="hidden-lg hidden-md hidden-sm">Все главные новости<i class="material-icons">arrow_drop_down</i></a>
 						</div>
 					</div>
-					<div class="teaser">Международный фестиваль моды</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 hidden-xs colp10 b-sidebar item-news">
+						<div class="head">Главное сегодня</div>
+						<dl>
+							<dt>
+								<span class="date">17:47</span>
+								<a href="#">Перевозчик республики оштрафован за самовольное повышение цены за проезд</a>
+							</dt>
+							<dt>
+								<span class="date">17:47</span>
+								<a href="#">Популярность "Школы грамотного потребителя" в Бурятии растёт</a>
+							</dt>
+							<dt>
+								<span class="date">17:47</span>
+								<a href="#">Профсоюзы Бурятии призывают соблюдать права работающих граждан</a>
+							</dt>
+							<dt>
+								<span class="date">17:47</span>
+								<a href="#">Из-за низкой водности уровень Байкала в декабре опустится до минимального значения</a>
+							</dt>
+							<dt>
+								<span class="date">17:47</span>
+								<a href="#">В России официально принято решение о введении норм ГТО</a>
+							</dt>
+						</dl>
+					</div>
 				</div>
-				<div class="showtimes wr-l-20">
-					<div class="head">Где и когда?</div>
-					<div class="location clearfix">
-						<span class="time">
-							<span>6 ноября 2015 года, 19:00</span>
-						</span>
-						<span class="name"><span class="icon-location"></span> ресторан, Мэрген</span>
-					</div>						
-				</div>
-			</article>
+			</div>
 		</section>
-		<section class="load">
-			<span class="icon-load"></span> Подождите, загружаем.
+		<section class="b-message">
+			<div class="container conp10">
+				<div class="border">
+					<div class="triangle-top"></div>
+					<div class="triangle-bottom"></div>
+					<div class="row rowm10">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 colp10 date">
+							<div class="pl20 pt20 pb20">
+								<p>25 октября, 11:05</p>
+								<span>в эфире телеканала «Россия»</span>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 colp10 text">
+							<div class="pl20 pt20 pb20 pr20">
+								<a href="">Интервью с полномочным представителем Президента РФ в Сибирском федеральном округе Виктором Толоконским. Трансляция в прямом эфире на сайте</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="latest-news item-news ">
+			<div class="container conp10">
+				<div class="row rowm10">
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 colp10">
+						<div class="row rowm10">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 colp10">
+								<h3 class="head-article">Свежие новости</h3>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 colp10">
+								<div class="b-weather">Погода</div>
+							</div>
+						</div>
+						<div class="row rowm10">
+							<article class="col-lg-4 col-md-4 col-sm-4 col-sm-12 colp10">
+								<div class="img">
+									<a href="#"><img src="/img/news5.jpg" alt=""></a>
+								</div>
+								<div class="date">17:47</div>
+								<div class="title">
+									<h4><a href="#">В Улан-Удэ жители улицы Кабанской замерзают в своих квартирах</a></h4>
+									<div class="teaser hidden-xs">На сегодня холодно в домах по улице Кабанской на Бурводе. Там вскрыта теплотрасса.</div>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-4 col-sm-12 colp10">
+								<div class="img">
+									<a href="#"><img src="/img/news6.jpg" alt=""></a>
+								</div>
+								<div class="date">17:47</div>
+								<div class="title">
+									<h4><a href="#">Сенатор Арнольд Тулохонов выступил за промышленную добычу нерпы</a></h4>
+									<div class="teaser hidden-xs">Он уверен, что байкальский эндемик необходимо добывать во избежание эпизоотических заболеваний.</div>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-4 col-sm-12 colp10">
+								<div class="img">
+									<a href="#"><img src="/img/news7.jpg" alt=""></a>
+								</div>
+								<div class="date">17:47</div>
+								<div class="title">
+									<h4><a href="#">В Бурятской филармонии Улан-Удэ пройдут виртуальные концерты</a></h4>
+									<div class="teaser hidden-xs">В афишу Виртуального концертного зала  добавлены концерты, выбранные зрителями в ходе опроса.</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs colp10"><a href="#">
+						<img src="/img/partner.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="b-channel tabs">
+			<div class="container conp10">
+				<div class="channel-mobile hidden-lg hidden-md hidden-sm">
+					<div class="head">
+						<a class="clearfix link" href="#">
+							<i class="material-icons fl-l mr20">play_circle_outline</i> 
+							<div class="fl-l">
+								Вести-Бурятия. <span>Ежедневный выпуск</span>
+							</div>
+							<i class="material-icons fl-r drop-up">arrow_drop_up</i>
+						</a>
+					</div>
+				</div>
+				<div class="row rowm10 channel-mobile-hidden">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 colp10">
+						<div class="tab-panel hidden-lg hidden-md hidden-sm">
+							<dl class="clearfix tabs-caption">
+								<dt class="active">
+									<h3 class="head-article"><span>Россия 1</span></h3>
+								</dt>								
+								<dt>
+									<h3 class="head-article"><span>Россия 24</span></h3>
+								</dt>
+							</dl>
+						</div>
+						<h3 class="head-article b-border hidden-xs mb15"><a href="#0">Россия 1</a></h3>
+						<div class="row rowm10">
+							<div class="col-lg-6 col-md-6 col-sm-12 tabs-content active colp10 preview">
+								<div class="head hidden-xs">
+									<a href="#">Вести-Бурятия. <span>Ежедневный выпуск</span></a>
+								</div>
+								<div class="bg-white">
+									<div class="img">
+										<a href="#">
+											<i class="material-icons">play_circle_outline</i>
+											<div class="opc"></div>
+											<img src="/img/news9.jpg" alt="">
+											<div class="text">
+												<div class="wrapper">Эфир от 9 сентября, на бурятском</div>
+											</div>
+										</a>
+									</div>
+									<div class="time-line">
+										<dl>
+											<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:34</span>
+												</a>
+											</dt>													<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>													<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>													<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 hidden-sm hidden-xs colp10">
+								<div class="head"><a href="#">Телепередачи</a></div>
+								<div class="list scroll">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="/img/video-list.jpg" alt="">
+												<span>Авто. Вести</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list2.jpg" alt="">
+												<span>Вести.Интервью</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list3.jpg" alt="">
+												<span>Вести 24. Ежедневный выпуск </span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list4.jpg" alt="">
+												<span>Вестник горсвета</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list5.jpg" alt="">
+												<span>Вести. Мнение</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list5.jpg" alt="">
+												<span>Вести. Мнение</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list.jpg" alt="">
+												<span>Авто. Вести</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list2.jpg" alt="">
+												<span>Вести.Интервью</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list3.jpg" alt="">
+												<span>Вести 24. Ежедневный выпуск </span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list4.jpg" alt="">
+												<span>Вестник горсвета</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list5.jpg" alt="">
+												<span>Вести. Мнение</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list5.jpg" alt="">
+												<span>Вести. Мнение</span>
+											</a>
+										</dt>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 colp10">
+						<h3 class="head-article b-border mb15 hidden-xs"><a href="#0">Россия 24</a></h3>
+						<div class="row rowm10">
+							<div class="col-lg-6 col-md-6 col-sm-12 tabs-content colp10 preview">
+								<div class="head hidden-xs">
+									<a href="#">Вести-Бурятия. <span>Ежедневный выпуск</span></a>
+								</div>
+								<div class="bg-white">
+									<div class="img">
+										<a href="#">
+											<i class="material-icons">play_circle_outline</i>
+											<div class="opc"></div>
+											<img src="/img/news9.jpg" alt="">
+											<div class="text">
+												<div class="wrapper">Эфир от 9 сентября, на бурятском</div>
+											</div>
+										</a>
+									</div>
+									<div class="time-line">
+										<dl>
+											<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>													<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>													<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>													<dt>
+												<a href="#">
+													<i class="material-icons">play_circle_outline</i>
+													<span>8 сентября, 20:35</span>
+												</a>
+											</dt>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 hidden-sm hidden-xs colp10">
+								<div class="head"><a href="#">Телепередачи</a></div>
+								<div class="list scroll">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="/img/video-list.jpg" alt="">
+												<span>Авто. Вести</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list2.jpg" alt="">
+												<span>Вести.Интервью</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list3.jpg" alt="">
+												<span>Вести 24. Ежедневный выпуск </span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list4.jpg" alt="">
+												<span>Вестник горсвета</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list5.jpg" alt="">
+												<span>Вести. Мнение</span>
+											</a>
+										</dt>												
+										<dt>
+											<a href="#">
+												<img src="/img/video-list5.jpg" alt="">
+												<span>Вести. Мнение</span>
+											</a>
+										</dt>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="btn-border col-xs-12 colp10 text-center hidden-md hidden-lg"><a href="#">Все передачи</a></div>
+				</div>
+			</div>
+		</section>
+		<section class="all-news">
+			<div class="container conp10">
+				<h3 class="head-article hidden-xs">Все новости</h3>
+				<div class="row rowm10">
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 colp10 item-news">
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list1.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date">17:47</div>
+									<h4><a href="#">Полное искоренение кори и краснухи – такая задача стоит сегодня перед Россией</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>								
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list2.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date">17:47</div>
+									<h4><a href="#">В память о народном артисте Бурят-Монгольской АССР Петре Гофмане в Улан-Удэ открыли мемориальную доску</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list3.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date old">17:47</div>
+									<h4><a href="#">20 октября завершается навигационный период на водоёмах республики</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list4.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date old">Вчера, 9 октября <span class="ml10">17:47</span></div>
+									<h4><a href="#">В память о народном артисте Бурят-Монгольской АССР Петре Гофмане в Улан-Удэ открыли мемориальную доску</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list5.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date old">Вчера, 9 октября <span class="ml10">17:47</span></div>
+									<h4><a href="#">Полное искоренение кори и краснухи – такая задача стоит сегодня перед Россией</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list1.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date">17:47</div>
+									<h4><a href="#">Полное искоренение кори и краснухи – такая задача стоит сегодня перед Россией</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list2.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date">17:47</div>
+									<h4><a href="#">В память о народном артисте Бурят-Монгольской АССР Петре Гофмане в Улан-Удэ открыли мемориальную доску</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list3.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date old">17:47</div>
+									<h4><a href="#">20 октября завершается навигационный период на водоёмах республики</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list4.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date old">Вчера, 9 октября <span class="ml10">17:47</span></div>
+									<h4><a href="#">В память о народном артисте Бурят-Монгольской АССР Петре Гофмане в Улан-Удэ открыли мемориальную доску</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>									
+							<article>
+								<div class="img fl-l mr20">
+									<a href="#"><img src="/img/news-list5.jpg" alt=""></a>
+								</div>
+								<div class="text oh">
+									<div class="date old">Вчера, 9 октября <span class="ml10">17:47</span></div>
+									<h4><a href="#">Полное искоренение кори и краснухи – такая задача стоит сегодня перед Россией</a></h4>
+									<p class="hidden-xs">Реализацию Глобального стратегического плана борьбы с этими инфекциями на 2016-20 годы обсуждали в эти дни участники регионального совещания в Улан-Удэ.</p>
+								</div>
+							</article>
+						<div class="text-center btn-border"><a href="#">Показать еще</a></div>
+					</div>
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs colp10">
+						<div class="mb30"><a href="#"><img src="/img/partner.jpg" alt=""></a></div>
+						<div class="mb30 b-experts">
+							<h3 class="head-article">Эксперты</h3>
+							<div class="img">
+								<a href="#">
+									<div class="opc"></div>
+									<img src="/img/expert.jpg" alt="">
+									<div class="text">
+										<div class="wrapper">
+											<p class="title">Варфоломеев Александр Георгиевич</p>
+											<p>Член Совета Федерации Федерального Собрания Российской Федерации</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="mb30"><a href="#"><img src="/img/partner.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="inner-news latest-news item-news tab-carousel">
+			<div class="container conp10">
+				<div class="row rowm10">
+					<div class="col-xs-12 colp10">
+						<div class="tab-panel inner hidden-lg hidden-md hidden-sm">
+							<dl class="tabs-caption slick-carousel">
+								<dt class="active"><span>Политика</span></dt>
+								<dt><span>Общество</span></dt>
+								<dt><span>Спорт</span></dt>
+								<dt><span>Происшествия</span></dt>
+							</dl>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 colp10 col-xs-12 tabs-content active">
+						<h3 class="head-article hidden-xs"><a href="#">Политика</a></h3>
+						<dl>
+							<dt>
+								<div class="img">
+									<a href="#"><img src="/img/news5.jpg" alt=""></a>
+								</div>
+								<div class="date old">17:47</div>
+								<div class="title">
+									<h4><a href="#">В Улан-Удэ жители улицы Кабанской замерзают в своих квартирах</a></h4>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Перевозчик республики оштрафован за самовольное повышение цены за проезд</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Популярность "Школы грамотного потребителя" в Бурятии растёт</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Профсоюзы Бурятии призывают соблюдать права работающих граждан</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Из-за низкой водности уровень </a></div>
+								</div>
+							</dt>
+						</dl>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 colp10 tabs-content">
+						<h3 class="head-article hidden-xs"><a href="#">Общество</a></h3>
+						<dl>
+							<dt>
+								<div class="img">
+									<a href="#"><img src="/img/news4.jpg" alt=""></a>
+								</div>
+								<div class="date old">17:47</div>
+								<div class="title">
+									<h4><a href="#">В Бурятии стали меньше продавать и покупать недвижимость</a></h4>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Перевозчик республики оштрафован за самовольное повышение цены за проезд</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Популярность "Школы грамотного потребителя" в Бурятии растёт</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Профсоюзы Бурятии призывают соблюдать права работающих граждан</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Из-за низкой водности уровень </a></div>
+								</div>
+							</dt>
+						</dl>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 colp10 tabs-content">
+						<h3 class="head-article hidden-xs"><a href="#">Спорт</a></h3>
+						<dl>
+							<dt>
+								<div class="img">
+									<a href="#"><img src="/img/news3.jpg" alt=""></a>
+								</div>
+								<div class="date old">17:47</div>
+								<div class="title">
+									<h4><a href="#">Бурятские лучники завоевали три медали Кубка России</a></h4>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Перевозчик республики оштрафован за самовольное повышение цены за проезд</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Популярность "Школы грамотного потребителя" в Бурятии растёт</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Профсоюзы Бурятии призывают соблюдать права работающих граждан</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Из-за низкой водности уровень Байкала в декабре опустится до минимального значения</a></div>
+								</div>
+							</dt>
+						</dl>
+					</div>
+					<div class="col-lg-3 col-md-3 hidden-sm col-xs-12 colp10 tabs-content">
+						<h3 class="head-article hidden-xs"><a href="#">Происшествия</a></h3>
+						<dl>
+							<dt>
+								<div class="img">
+									<a href="#"><img src="/img/news2.jpg" alt=""></a>
+								</div>
+								<div class="date old">17:47</div>
+								<div class="title">
+									<h4><a href="#">Участники ОПГ, похитившие более 1,5 миллионов рублей, предстанут перед судом</a></h4>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Перевозчик республики оштрафован за самовольное повышение цены за проезд</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Популярность "Школы грамотного потребителя" в Бурятии растёт</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Профсоюзы Бурятии призывают соблюдать права работающих граждан</a></div>
+								</div>
+							</dt>									
+							<dt>
+								<div class="date old">8 октября <span class="ml10">17:47</span></div>
+								<div class="title">
+									<div class="teaser"><a href="#">Из-за низкой водности уровень </a></div>
+								</div>
+							</dt>
+						</dl>
+					</div>
+				</div>
+			</div>
 		</section>
 		<footer>
-
+			<div class="btn-up hidden-lg hidden-md hidden-sm text-center"><a class="anchor" href="#anchor">Наверх</a></div>
+			<div class="container clearfix hidden-sm hidden-xs">
+				<nav class="left fl-l">
+					<a href="#">Новости</a>
+					<a href="tv.html">Телевидение</a>
+					<a href="#">Радио</a>
+					<a href="#">Национальное вещание</a>
+					<a href="#">Программа передач</a>
+					<a href="#">Прямой эфир</a>
+				</nav>
+				<nav class="right fl-l">
+					<a href="#">О компании</a>
+					<a href="#">Реклама</a>
+					<a href="#">Обратная связь</a>
+				</nav>
+			</div>
+			<div class="separator hidden-xs"></div>
+			<div class="container">
+				<div class="row rowm10 mb20">
+					<div class="col-lg-3 col-md-3 col-sm-12 colp10">
+						<p>2015 © Государственная телерадиокомпания «Бурятия»</p>
+						<p><a href="mailto:info@bgtrk.ru">info@bgtrk.ru</a></p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 colp10 hidden-xs">
+						<address>
+							<p>670031, г.Улан-Удэ, ул. Бабушкина, 23б (Телецентр) </p>
+							<p>Тел.: (3012) 23-10-23</p>
+						</address>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 colp10 hidden-xs">
+						<address>
+							<p>670000, г. Улан-Удэ, ул. Ербанова, 7а (Дом Радио)</p>
+							<p>Тел.: (3012) 21-23-10</p>
+						</address>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 colp10 hidden-xs">
+						<p>Рекламная служба:</p>
+						<p>Тел.: (3012) <strong class="black">21-41-84, 21-34-21</strong></p>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="fl-l soc">
+						<a class="vk" href="#"></a>
+						<a class="yt" href="#"></a>
+					</div>
+					<div class="fl-r realist">
+						<p><a href="http://realistdigital.ru/">Разработка сайта</a></p>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<div class="mobile-menu modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="material-icons">close</i></span></button>
+		      </div>
 		      <div class="modal-body">
-				<header>
-					<a href="#" class="message-icon"><span class="icon-messages"></span></a>
-					<a href="/" class="logo"><img src="/img/logo.svg" alt=""></a>
-					<a data-dismiss="modal" href="#" class="menu">
-						<span class="pos-rel">
-							<span class="icon-menu"></span>
-							<span class="icon-menu-logo"><span class="path1"></span><span class="path2"></span></span>
-						</span>
-					</a>
-				</header>
-				<section class="search wr-lr-20">
-					<input type="text" placeholder="Найдите в городе">
-					<button class="btn-search" type="submit"><span class="icon-search"></span></button>
-					<button class="mic"><span class="icon-mic"></span></button>
-				</section>
-				<nav class="main-nav wr-lr-20">
-					<dl class="clearfix">
-						<dt><a class="active" href="#"><span class="icon-nav-icon1"></span></br>афиша</a></dt>
-						<dt><a href="#"><span class="icon-nav-icon2"></span></br>чтиво </a></dt>
-						<dt><a href="#"><span class="icon-nav-icon-3"></span></br>услуги</a></dt>
-						<dt><a href="#"><span class="icon-nav-icon4"></span></br>биржа</a></dt>
-						<dt><a href="#"><span class="icon-nav-icon5"></span></br>товары</a></dt>
-						<dt><a href="#"><span class="icon-nav-icon6"></span></br>скидки</a></dt>
-						<dt><a href="#"><span class="icon-nav-icon7"></span></br>фирмы</a></dt>
-						<dt><a href="#"><span class="icon-nav-icon8"></span></br>отзывы</a></dt>
-					</dl>
-				</nav>
-				<section class="user-panel wr-lr-20 clearfix">
-					<a href="#" class="name fl-l">Константин Константинов</a>
-					<a href="#" class="settings fl-r"><span class="icon-settings"></span></a>
-				</section>
+		         <nav class="bottom">
+		         	<dl class="clearfix">
+		         		<dt class="hidden-sm">
+		         			<a href="#">Новости</a>
+		         		</dt>
+		         		<dt class="hidden-sm"><a href="#">Телевидение</a></dt>
+		         		<dt class="hidden-sm"><a href="#">Радио</a></dt>
+		         		<dt class="hidden-sm"><a href="#">Национальное вещание</a></dt>
+		         		<dt><a href="#"><i class="material-icons">play_circle_outline</i>Прямой эфир</a></dt>
+		         	</dl>
+		         </nav>
+		         <nav class="top">
+		         	<a href="#">О компании</a>
+		         	<a href="#">Реклама</a>
+		         	<a href="#">Обратная связь</a>
+		         	<a href="#">Программа передач</a>
+		         </nav>
+		         <div class="phone">
+		         	Горячая линия <span>8 (3012) 635-000</span>
+		         </div>
+		         <div class="btn-blue"><a data-dismiss="modal" data-toggle="modal" data-target="#myModal2" href="#">Сообщить новость <i class="material-icons">send</i></a></div>
 		      </div>
 		    </div>
 		  </div>
-		</div>																			
+		</div>			
+		<div class="send-news modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="material-icons">close</i></span></button>
+		      </div>
+		      <div class="modal-body">
+				<div class="head">Сообщить новость</div>
+				<p class="helper">Если у вас есть интересующий вас вопрос, интегрирование по частям отображает косвенный ротор векторного поля, откуда следует доказываемое равенство. Интегрирование по частям недоказуемо.</p>
+				<form action="">
+					<div class="mb20">
+						<input type="text" placeholder="Ф.И.О.">
+						<input type="tel" placeholder="Телефон">
+					</div>
+					<div class="mb20">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Описание новости"></textarea>
+					</div>
+					<div class="link-yotube">
+						<a class="slidedown-link" href="#">Прикрепить ссылку на ролик на Youtube <i class="material-icons">expand_more</i></a>
+						<div class="slidedown-content">
+							<input type="text"></br>
+							<a href="#" class="del">Удалить <i class="material-icons">expand_less</i></a>
+						</div>
+					</div>
+					<button type="submit">Отправить</button>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>																	
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>				
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/owl.carousel.js"></script>
+ 		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+ 		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+ 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ 		<script type="text/javascript" src="/js/slick.min.js"></script>
  		<script type="text/javascript" src="js/site.js"></script> 
 	</body>
 </html>
