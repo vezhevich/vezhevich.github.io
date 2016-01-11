@@ -1,89 +1,70 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.scroll').length) scroll();
-	if ($('.search a').length) show_search();
-	if ($('.slidedown-link').length) slideToggle();
+	if ($('.owlCarousel').length) carousel();
+	if ($('.owlCarousel2').length) carousel2();
+	if ($('.grid').length) masonry();
+	if ($('.grid2').length) masonry2();
+	if ($('.grid3').length) masonry3();
 	if ($('input[type=tel]').length) tel();
-	if ($('.anchor').length) anchor();
-	if ($('.tabs').length) tabs();
-	if ($('.tab-carousel').length) tabslide();
-	if ($('.slick-carousel').length) carousel();
 	if ($('.datepicker').length) calendar();
-	if ($('.v-menu.mobile').length) menumobile();
-	if ($('.channel-mobile').length) slideDown();
+	if ($('.form-reserve-fixed').length) show();
+	if ($('.navi-room').length) modal();
 });
 
-function scroll() {
-	$('.scroll').jScrollPane();
+function carousel()
+{
+	$('.owlCarousel').owlCarousel({
+    margin:30,
+    loop:false,
+    nav:true,
+    navText: '',
+    items: 3,
+	})
 }
 
-function show_search()
+function carousel2()
 {
-	$(".search a").click(function() {
-		$(this).toggleClass('active');
-		$(".search-wrapper").addClass('active');
-		return false;
-	});	
-	$(".search-wrapper .close").click(function() {
-		$(".search-wrapper").removeClass('active');
-		return false;
+	$('.owlCarousel2').owlCarousel({
+    margin:30,
+    loop:false,
+    nav:true,
+    navText: '',
+    items: 1,
+	})
+}
+
+function masonry()
+{
+	$('.grid').masonry({
+	  // options
+	  itemSelector: '.grid-item'
 	});
 }
 
-function slideToggle()
+function masonry2()
 {
-	$(".slidedown-link").click(function() {
-		$(this).addClass('active');
-		$(".slidedown-content").slideDown();
-		return false;
-	});	
-	$(".slidedown-content .del").click(function() {
-		$(".slidedown-link").removeClass('active');
-		$(".slidedown-content").slideUp();
-		return false;
+	$('#myModal2').on('shown.bs.modal', function () {
+		$('.grid2').masonry({
+		  itemSelector: '.item',
+		  columnWidth: 1,
+		});
+
 	});
 }
 
+function masonry3()
+{
+	$('#myModal9').on('shown.bs.modal', function () {
+		$('.grid3').masonry({
+		  itemSelector: '.item',
+		  columnWidth: 1,
+		});
+
+	});
+}
 
 function tel(){ 
 	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
 	return false; 
-}
-
-function anchor (){
-   $('a.anchor[href^="#"]').click(function(){
-        var target = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(target).offset().top-100}, 800);
-        return false; 
-   }); 
-}
-
-function tabs(){
-	$('.b-channel .tabs-caption').each(function() {
-    $(this).find('dt').each(function(i) {
-      $(this).click(function(){
-        $(this).addClass('active').siblings().removeClass('active')
-          .closest('.b-channel').find('div.tabs-content').removeClass('active').eq(i).addClass('active');
-      });
-    });
-  });
-}
-
-function tabslide(){
-	$('.inner-news .tabs-caption').each(function() {
-    $(this).find('dt').each(function(i) {
-      $(this).click(function(){
-        $(this).addClass('active').siblings().removeClass('active')
-          .closest('.inner-news').find('.tabs-content').removeClass('active').eq(i).addClass('active');
-      });
-    });
-  });
-}
-
-function carousel(){
-	$('.slick-carousel').slick({
-  		variableWidth: true,
-  		infinite: false
-	});
 }
 
 function calendar(){
@@ -108,23 +89,26 @@ function calendar(){
 	});
 }
 
-function menumobile()
+function show()
 {
-	$(".v-menu.mobile .category").click(function() {
-		$(this).toggleClass('active');
-		$(".lv2").toggleClass('show');
-		$(".back").toggleClass('hide');
+	$(".btn-reserve").click(function() {
+		$(".form-reserve-fixed").addClass('active');
 		return false;
 	});	
+	$(".form-reserve-fixed .close").click(function() {
+		$(".form-reserve-fixed").removeClass('active');
+		return false;
+	});
 }
 
-function slideDown()
+function modal()
 {
-	$(".channel-mobile .link").click(function() {
-		$(this).toggleClass('active');
-		$(".channel-mobile .head").toggleClass('active');
-		$(".channel-mobile-hidden").slideToggle();
-		$(".btn-border").toggleClass('show');
+		$('#myModal').on('shown.bs.modal', function () {
+			$(".navi-room").addClass('active');
+			return false;
+		});
+		$("#myModal").click(function() {
+		$(".navi-room").removeClass('active');
 		return false;
 	});	
 }
