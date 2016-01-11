@@ -225,9 +225,9 @@ header.inner .close:hover {
 .rooms-detail {position: relative;}
 a.navi-room {position: fixed; top: 50%; margin-top: -18px; width: 36px; height: 36px; background: url(/img/navi.png) no-repeat; z-index: 1100; display: none;}
 a.navi-room.active {display: block;}
-a.prev-room {background-position:  0 0; left: 110px;}
+a.prev-room {background-position:  0 0; left: 50px;}
 a.prev-room:hover {background-position: 0 -56px;}
-a.next-room {background-position: -56px 0; right: 110px;}
+a.next-room {background-position: -56px 0; right: 50px;}
 a.next-room:hover {background-position: -56px -56px;}
 .modal .head {margin-bottom: 50px;}
 .modal .head .title {margin-right: 40px; font: bold 40px LetoSans; text-transform: uppercase;}
