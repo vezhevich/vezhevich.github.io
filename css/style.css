@@ -202,7 +202,9 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .room-detail .desc .cost-one dt strong {font: bold 20px LetoSans;}
 .room-detail .desc .cost-one .rub {font-size: 18px; line-height: 18px;}
 
-.form-feedback input[type=text], .form-feedback input[type=tel] {width: 100%; max-width: 290px; height: 36px; border: 1px solid #A0A0A0; padding: 11px 10px 9px 10px; font: normal 14px LetoSans; margin-bottom: 10px;}
+.form-feedback input[type=text], .form-feedback input[type=tel] {width: 100%; max-width: 290px; height: 36px; border: 1px solid #A0A0A0; padding: 11px 10px 9px 10px; font: normal 14px LetoSans; margin-bottom: 10px; outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none; border-radius: 0;}
 .form-feedback input[type=text]:focus, .form-feedback input[type=tel]:focus {border-color: #262626;}
 .form-feedback input[type=text]::-webkit-input-placeholder { color: #505050; font: normal 14px LetoSans;}
 .form-feedback input[type=tel]::-webkit-input-placeholder { color: #505050; font: normal 14px LetoSans;}
