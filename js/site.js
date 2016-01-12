@@ -54,7 +54,7 @@ function carousel3()
 {
 	$('.modal').on('shown.bs.modal', function () {
 		$('.owlCarousel3').owlCarousel({
-	    loop:false,
+	    loop:true,
 	    nav:true,
 	    navText: '',
 	    items: 1,

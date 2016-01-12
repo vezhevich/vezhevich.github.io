@@ -105,6 +105,7 @@ header .closed.active {display: block;}
 .rooms .info .in span {float: left;}
 .rooms .info .in .sum {font: bold 20px/22px LetoSans;}
 .rooms .info .in .icon-icon-man {width: 9px; height: 16px; font: normal 50px/16px LetoSans; letter-spacing: 1px; text-indent: -10px; color: #C7D2B1;}
+.rooms .rub {font-size: 16px;}
 
 
 .cafe {padding-bottom: 20px; background-color: #F2F2F2; padding-top: 15px; margin-bottom: 20px;}
@@ -182,6 +183,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .room-detail .b-cost .cost {font: 300 14px LetoSans;}
 .room-detail .b-cost .cost strong {font: bold 30px LetoSans; color: #262626;}
 .room-detail .b-cost a {border-bottom: 1px solid #D2AC67;}
+.room-detail .b-cost .rub {font-size: 26px; line-height: 26px;}
 .room-detail .gallery {padding-top: 10px; padding-bottom: 20px;}
 .room-detail .desc .quantity {margin-bottom: 10px;}
 .room-detail .desc .quantity dl dt {display: inline-block; zoom: 1; *display: inline; font: 300 13px LetoSans;}
@@ -198,6 +200,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .room-detail .desc .cost-one dl {margin-left: -30px;}
 .room-detail .desc .cost-one dt {font: 300 14px LetoSans; margin-left: 30px; margin-bottom: 15px; display: inline-block; zoom: 1; *display: inline; vertical-align: top; width: 125px;}
 .room-detail .desc .cost-one dt strong {font: bold 20px LetoSans;}
+.room-detail .desc .cost-one .rub {font-size: 18px; line-height: 18px;}
 
 .form-feedback input[type=text], .form-feedback input[type=tel] {width: 100%; max-width: 290px; height: 36px; border: 1px solid #A0A0A0; padding: 11px 10px 9px 10px; font: normal 14px LetoSans; margin-bottom: 10px;}
 .form-feedback input[type=text]:focus, .form-feedback input[type=tel]:focus {border-color: #262626;}
@@ -212,6 +215,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .gold {color: #D2AC66;}
 
 .menu-food .list-menu {margin-bottom: 40px;}
+.menu-food .list-menu .rub {font-size: 14px; line-height: 14px;}
 .menu-food .list-menu dl dt {overflow: hidden; position: relative; margin-bottom: 30px;}
 .menu-food .list-menu dl dt .name {max-width: 350px; display: block; font: bold 18px LetoSans; float: left; background: rgba(255, 255, 255, 0.97); position: relative; z-index: 50; padding-right: 10px; color: #262626; margin-bottom: 15px;}
 .menu-food .list-menu dl dt strong {float: right; padding-left: 10px; background: rgba(255, 255, 255, 0.97); position: relative; z-index: 50; font: bold 15px LetoSans;}
@@ -246,6 +250,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .children p {margin-bottom: 30px;}
 .children .cost {margin-bottom: 30px;}
 .children .cost strong {font: bold 30px LetoSans;}
+.children .cost .rub {font-size: 26px; line-height: 26px;}
 .children .cost p {margin-bottom: 0px;}
 
 
