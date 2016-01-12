@@ -104,7 +104,7 @@ header .closed.active {display: block;}
 .rooms .info .in {padding-top: 10px;}
 .rooms .info .in span {float: left;}
 .rooms .info .in .sum {font: bold 20px/22px LetoSans;}
-.rooms .info .in .icon-icon-man {width: 9px; height: 16px; font: normal 50px/16px LetoSans; letter-spacing: 1px; text-indent: -10px; color: #C7D2B1;}
+.rooms .info .in .icon-icon-man {width: 9px; height: 16px; font: normal 50px/16px LetoSans; letter-spacing: 1px; text-indent: -15px; color: #C7D2B1;}
 .rooms .rub {font-size: 16px;}
 
 
