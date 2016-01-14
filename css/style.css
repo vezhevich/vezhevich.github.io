@@ -1,0 +1,183 @@
+ * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+ *:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+
+body {background-color: #F2F0E6;}
+
+.wr-lr-20 {padding-left: 20px; padding-right: 20px;}
+.wr-l-20 {padding-left: 20px;}
+
+.btn-border {border: 1px solid rgba(137,139,136,1); border-radius: 15px; padding: 2px 10px; color: rgba(137,139,136,1); font-size: 75%; display: inline-block; zoom: 1; *display: inline;}
+.btn-border:hover {color: rgba(137,139,136,1);}
+.btn-border:focus {color: rgba(137,139,136,1);}
+.btn-border .icon-dots {margin-right: 5px; vertical-align: middle;}
+
+.icon-dots {font-size: 150%;}
+
+header.main {padding-right: 60px; height: auto; margin-bottom: 10px;}
+header.main .icon-menu {color: #D7624D;}
+header.main .menu:hover .icon-menu {color: #D7624D;}
+header.main .menu:focus .icon-menu {color: #D7624D;}
+header .category {font: normal 112.5% Open Sans; color: rgba(137,139,136,1); margin-bottom: 15px; padding-left: 20px; padding-top: 15px;}
+header .category span {margin-right: 5px;}
+header .time-tabs {padding-left: 20px;}
+header .time-tabs a {font: normal 75%/27px Open Sans; color: rgba(137,139,136,1); border: 1px solid rgba(137,139,136,1); border-radius: 15px; float: left; padding: 0 13px; margin-right: 10px; margin-bottom: 10px; height: 30px;}
+header .time-tabs a.active {color: #fff; background-color: rgba(137,139,136,1);}
+header .time-tabs .icon-dots {line-height: 30px; font-weight: bold; font-size: 150%;}
+
+.afisha article .title {font: normal 150% Open Sans; margin-bottom: 5px; color: #22282C;}
+.afisha article .sub-title {font: normal 75% Open Sans; color: rgba(137,139,136,1); margin-bottom: 15px;}
+.afisha article .preview .img {margin-bottom: 10px; position: relative;}
+.afisha article .preview .img img {width: 100%;}
+.afisha article .preview .opc {position: absolute; bottom: 0; left: 0; width: 100%; padding-top: 10px; padding-bottom: 10px;
+background: -moz-linear-gradient(top, rgba(215,98,77,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(215,98,77,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(215,98,77,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d7624d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */}
+.afisha article .preview .opc .wrapper {padding-left: 10px; padding-right: 10px;}
+.afisha article .preview .rate {border: 2px solid #D7624D; border-radius: 50%; width: 40px; height: 40px; text-align: center; font: normal 112.5%/36px Open Sans; color: #fff;}
+.afisha article .preview .com {font: normal 75% Open Sans; color: #fff; margin-top: 20px;}
+.afisha article .preview .com span {margin-left: 5px; font-size: 160%; vertical-align: middle;}
+.afisha article .teaser {font: normal 87.5% Open Sans; margin-bottom: 15px; color: #22282C;}
+.afisha article .showtimes .head {position: relative; overflow: hidden; font: normal 75% Open Sans; color: rgba(137,139,136,1); margin-bottom: 10px;}
+.afisha article .showtimes .head:after {content: ''; position: absolute; width: 100%; border-top: 1px solid rgba(218,216,209,1); margin-top: .7em; margin-left: .4em;}
+.afisha article .showtimes .location {position: relative; margin-bottom: 10px;}
+.afisha article .showtimes .location .icon-location {color: #D7624D; margin-right: 5px;}
+.afisha article .showtimes .location .name {font: normal 87.5% Open Sans; color: #22282C; margin-right: 20px; float: left; margin-top: 3px;}
+.afisha article .showtimes .location .opc {position: absolute; width: 50px; right: 0; top: 0; height: 100%;
+background-image: linear-gradient(-90deg, #F2F0E6 0%, rgba(242,240,230,0.00) 100%); z-index: 100;}
+.afisha article .showtimes .time .owl-item:first-child span {color: #22282C; border-color: #22282C;}
+.afisha article .showtimes .time span {font: normal 87.5% Open Sans; color: rgba(137,139,136,1); border: 1px solid rgba(137,139,136,1);; border-radius: 15px; padding: 2px 6px; margin-left: 3px; display: block;}
+.afisha article .showtimes .time span.active {color: #D7624D!important; border-color: #D7624D!important;}
+.afisha article .showtimes .owl-controls {display: none;}
+.afisha article .showtimes .more {font: normal 75% Open Sans; color: rgba(137,139,136,1); display: block; padding-bottom: 15px; border-bottom: 1px solid rgba(218,216,209,1); margin-bottom: 20px;}
+.afisha article .showtimes .more span {display: inline-block; zoom: 1; *display: inline;}
+.afisha article .showtimes .more .icon-dots {vertical-align: text-bottom; margin-right: 3px;}
+.afisha article:last-child .more {border: none; padding-bottom: 0;}
+.afisha article .showtimes .location .name .icon-shape {color: rgba(213,168,151,1); margin-left: 5px; font-size: 80%; vertical-align: top;}
+
+
+.afisha.event {background-color: #fff; padding-bottom: 20px;}
+.afisha.event article .showtimes .time span {display: inline-block; zoom: 1; *display: inline;}
+.afisha.event article .showtimes .name {float: none; display: block; margin-top: 10px;}
+.afisha.event article .showtimes .location {margin-bottom: 0;}
+.afisha.event article .showtimes .location .name img {vertical-align: sub; margin-right: 5px; }
+.afisha.event article .head .sub-title.inner {color: #D7624D; margin-bottom: 5px;}
+.afisha.event article .head .sub-title.inner .icon-star {margin-right: 5px; font-size: 120%; vertical-align: text-top;}
+.afisha.event article .showtimes .location .name .icon-location {color: rgba(137, 139, 136, 1); margin-right: 0px;}
+
+
+
+.load {padding-top: 50px; padding-bottom: 50px; text-align: center; font: normal 87.5% Open Sans; color: rgba(137,139,136,1)}
+.load img {vertical-align: sub; margin-right: 5px;}
+
+.afisha.now article .showtimes .time span {display: inline-block; zoom: 1; *display: inline;}
+.afisha.now article .showtimes .time span:first-child {color: #22282C; border-color: #22282C;}
+.afisha.now article:last-child .more {padding-bottom: 15px; border-bottom: 1px solid rgba(218,216,209,1); margin-bottom: 0;}
+
+.afisha-view .modal-dialog {margin: 60px 0 0 0;}
+.afisha-view .modal-content {background-color: #F2F0E6; border: none; border-radius: 0;}
+.afisha-view .modal-body {padding: 0;}
+.afisha-view .afisha .preview .play img {width: 40px;}
+.afisha-view .afisha .preview .play span {float: left; font-size: 87.5%; margin-right: 10px; font-family: Open Sans;}
+.afisha-view .afisha .preview a:hover span {color: #fff;}
+.afisha-view .afisha .preview .img {margin-bottom: 1px;}
+.afisha-view .afisha .preview .inner {margin-bottom: 10px;}
+.afisha-view .afisha .preview .inner a {float: left; margin-right: 1px;}
+.afisha-view .afisha .preview .inner .next {height: 48px; font: normal 87.5%/48px Open Sans; color: rgba(148,149,146,1); padding-left: 10px;}
+.afisha-view .afisha .description .helper {font: normal 75% Open Sans; color: rgba(148,149,146,1); margin-bottom: 2px;}
+.afisha-view .afisha .description dl dt {margin-bottom: 10px;}
+.afisha-view .afisha .description p {font: normal 87.5% Open Sans; margin-bottom: 0;}
+.afisha-view .afisha .description .more {position: relative; margin-bottom: 5px;}
+.afisha-view .afisha .description .more .opc {position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background-image: linear-gradient(180deg, #F2F0E6 0%, rgba(242,240,230,0.00) 100%); transform: rotate(-180deg);}
+.afisha-view .afisha .description .btn-border {margin-bottom: 20px;}
+.afisha-view .afisha .b-rate {margin-bottom: 15px;}
+.afisha-view .afisha .b-rate .round {border: 4px solid #F2F0E6; width: 71px; height: 71px; box-shadow: inset 0 0 0 2px rgba(191,98,75,1); border-radius: 50%; display: inline-block; zoom: 1; *display: inline; text-align: center; font: normal 180%/65px Open Sans; vertical-align: middle; background-color: #F2F0E6;}
+.afisha-view .afisha .b-rate .name {font: normal 87.5% Open Sans; color: #D7624D;}
+.afisha-view .afisha .b-rate dl dt.first {z-index: 10; margin-top: 0px;}
+.afisha-view .afisha .b-rate dl dt {z-index: 1; margin-top: -15px; position: relative;}
+.afisha-view .afisha .b-rate .two .round {box-shadow: inset 0 0 0 2px #F5A623;}
+.afisha-view .afisha .b-rate .two .name {color: #F5A623;}
+
+.afisha-view .b-comments {overflow: hidden;}
+.afisha-view .b-comments .helper span {vertical-align: middle; color: #3C474D; margin-right: 10px; font-size: 120%; color: rgba(140,142,141,1);}
+.afisha-view .b-comments .helper {font-size: 87.5%;}
+.afisha-view .b-comments dl dt {margin-bottom: 20px;}
+.afisha-view .b-comments dl dt:last-child {margin-bottom: 0px;}
+.afisha-view .b-comments .text {background-color: #fff; padding: 20px; border-radius: 15px; position: relative; z-index: 100;}
+.afisha-view .b-comments .text .wrapper {position: relative; margin-bottom: 5px;}
+.afisha-view .b-comments .text p {font: normal 87.5%/20px Open Sans; margin-bottom: 0;}
+.afisha-view .b-comments .text .opc {position: absolute; bottom: 0px; left: 0; width: 100%; height: 90px; background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 95%);}
+.afisha-view .b-comments .author {font: normal 75% Open Sans; color: #22282C; margin-top: -20px;}
+.afisha-view .b-comments .author .mask {width: 60px; height: 60px; overflow: hidden; border-radius: 50%; display: inline-block; zoom: 1; *display: inline; vertical-align: top; margin-left: 10px; position: relative; z-index: 10;}
+.afisha-view .b-comments .author .name {margin-right: -30px;}
+.afisha-view .b-comments .author .name-author {margin-top: 30px; display: inline-block; zoom: 1; *display: inline;}
+.afisha-view .b-comments .author .time {margin-top: 30px; color: rgba(148,149,146,1);}
+
+
+
+.mobile-menu .modal-dialog {margin: 0; background-color: #D7624D;}
+.mobile-menu .modal-content {border: none; border-radius: 0; background-image: url(/img/bg.png); background-repeat: no-repeat; background-position: bottom center; background-color: #D7624D;}
+.mobile-menu .modal-body {padding: 0; background-image: linear-gradient(-180deg, #D7624D 0%, rgba(215,97,76,0.00) 100%); min-height: 100%;}
+
+header {position: relative; height: 80px; width: 100%; overflow: hidden;}
+header .message-icon {display: block; padding: 20px; position: absolute; left: 0; top: 0; z-index: 50;}
+header .message-icon span {font-size: 150%; width: 24px; height: 24px;}
+header .message-icon:hover span {color: #fff;}
+header .message-icon:focus span {color: #fff;}
+header .menu {width: 50px; height: 50px; display: block; position: absolute; top: 18px; right: 0; z-index: 50;}
+header .menu .pos-rel {display: block; width: 50px; height: 50px;}
+header .menu .icon-menu {position: absolute; top: 0; left: 0; font-size: 60%; width: 10px; height: 10px;}
+header .menu:hover .icon-menu {color: #fff;}
+header .menu:focus .icon-menu {color: #fff;}
+header .menu .icon-menu-logo {position: absolute; right: -5px; bottom: 0; font-size: 300%;}
+header .logo {position: absolute; width: 100%; left: 0; z-index: 1; text-align: center; top: 20px;}
+
+.mobile-menu .search {position: relative; margin-bottom: 20px;}
+.mobile-menu .search input[type=text] {background: #FFFFFF; border-radius: 15px; font: normal 87.5% Open Sans; color: #D7624D; line-height: 20px; border: none; height: 40px; width: 100%; padding: 0 35px;}
+.mobile-menu .search button {background: none; border: none; position: absolute; padding: 0;}
+.mobile-menu .search button span {display: block; color: #D7624D;}
+.mobile-menu .search button:active {padding: 0 6px;}
+.mobile-menu .search .btn-search {left: 30px; top: 13px;}
+.mobile-menu .search .mic {right: 30px; top: 13px;}
+
+
+.mobile-menu .main-nav a {width: 130px; height: 130px; font-size: 150%; font-family: Open Sans; line-height: 24px; border: 2px solid rgba(255,255,255,0.25); color: #E08A7B; border-radius: 15px; display: table-cell; text-align: center; vertical-align: middle;}
+.mobile-menu .main-nav a span {font-size: 150%; margin-bottom: 15px; display: inline-block;}
+.mobile-menu .main-nav a.active {background-color: #fff; color: rgba(137,139,136,1);}
+.mobile-menu .main-nav dl {margin-left: -20px;}
+.mobile-menu .main-nav dl dt {margin-left: 20px; margin-bottom: 20px; float: left;}
+
+.mobile-menu .user-panel {padding-bottom: 30px; padding-top: 10px;}
+.mobile-menu .user-panel .name {border: 1px solid #fff; border-radius: 15px; display: block; padding: 7px 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; font-size: 75%;}
+.mobile-menu .user-panel .name:hover {color: #fff;}
+.mobile-menu .user-panel .settings {width: 24px; height: 24px; font-size: 150%;}
+.mobile-menu .user-panel .settings:hover {color: #fff;}
+.mobile-menu .user-panel .settings:focus {color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
