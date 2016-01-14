@@ -98,7 +98,11 @@ background-image: linear-gradient(-90deg, #F2F0E6 0%, rgba(242,240,230,0.00) 100
 .afisha-view .afisha .description dl dt {margin-bottom: 10px;}
 .afisha-view .afisha .description p {font: normal 87.5% Open Sans; margin-bottom: 0;}
 .afisha-view .afisha .description .more {position: relative; margin-bottom: 5px;}
-.afisha-view .afisha .description .more .opc {position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background-image: linear-gradient(180deg, #F2F0E6 0%, rgba(242,240,230,0.00) 100%); transform: rotate(-180deg);}
+.afisha-view .afisha .description .more .opc {position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background-image: linear-gradient(180deg, #F2F0E6 0%, rgba(242,240,230,0.00) 100%);  -moz-transform: rotate(-180deg); /* Для Firefox */
+    -ms-transform: rotate(-180deg); /* Для IE */
+    -webkit-transform: rotate(-180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-180deg); /* Для Opera */
+    transform: rotate(-180deg);}
 .afisha-view .afisha .description .btn-border {margin-bottom: 20px;}
 .afisha-view .afisha .b-rate {margin-bottom: 15px;}
 .afisha-view .afisha .b-rate .round {border: 4px solid #F2F0E6; width: 71px; height: 71px; box-shadow: inset 0 0 0 2px rgba(191,98,75,1); border-radius: 50%; display: inline-block; zoom: 1; *display: inline; text-align: center; font: normal 180%/65px Open Sans; vertical-align: middle; background-color: #F2F0E6;}
