@@ -20,7 +20,7 @@ a {text-decoration:none; color: #262626; outline: none !important;}
 a:hover {color: #D2AC67; text-decoration: underline;}
 
 ul {margin-bottom: 20px;}
-ul li {font: 300 13px/1.4 Open Sans; color: #262626; margin-bottom: 5px; position: relative; padding-left: 15px;}
+ul li {font: 300 15px/1.4 LetoSans; color: #262626; margin-bottom: 5px; position: relative; padding-left: 15px;}
 ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 4px; height: 4px; background: #CFAB6D; vertical-align: middle; position: absolute; left: 0; top: 7px;}
 
 h1, h2, h3, h4, h5, h6 {font-weight: bold; color:#262626; font-family: LetoSans; text-transform: uppercase;}
@@ -32,7 +32,7 @@ h4{font-size: 20px; margin:0 0 20px 0;}
 h5{font-size: 18px; margin:0 0 20px 0;}
 h6{font-size: 16px; margin:0 0 20px 0;}
 
-p {font:300 13px/1.4 Open Sans; margin:0 0 14px 0; color: #505050;}
+p {font:300 15px/1.4 LetoSans; margin:0 0 14px 0; color: #262626;}
 
 /* text */
 .text-left {text-align:left;}
@@ -70,7 +70,7 @@ p {font:300 13px/1.4 Open Sans; margin:0 0 14px 0; color: #505050;}
 .pos-rel {position: relative;}
 
 .clear {clear: both; width: 100%; height:0; margin:0; padding:0; float:none; *zoom: 1;}
-.centered {padding:0 15px; margin: 0 auto; position: relative;} 
+.centered {width:1200px; padding:0 15px; margin: 0 auto; position: relative;} 
 .oh {overflow:hidden;}
 .fl-l {float:left;}
 .fl-r {float:right;}

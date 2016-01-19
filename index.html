@@ -7,668 +7,2051 @@
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="css/custom.css" rel="stylesheet" type="text/css">
 		<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="fonts/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
 		rel="stylesheet" type="text/css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     </head>
-	<body>
-		<header class="clearfix">
-			<nav class="navigation">
-				<a href="#"><span>номера и цены</span></a>
-				<a href="#"><span>кафе</span></a>
-				<a href="#"><span>развлечения и услуги</span></a>
-				<a href="#"><span>расположение</span></a>
-				<a href="#"><span>контакты</span></a>
-				<a href="#"><span>подобрать номер</span></a>
-				<a href="#"><span>заказать звонок</span></a>
-			</nav>
-			<div class="wrap">
-				<div class="fl-l hamb btn"><a href="#"><span class="icon-icon-menu"></span></a></div>
-				<div class="logo"><a href="/"><span class="icon-icon-logo"></span></a></div>
-				<div class="fl-r closed btn"><a href="#"><span class="icon-icon-close"></span></a></div>
-			</div>
+	<body class="bg-main">
+		<header class="main">
+			<a href="/"><img src="/img/logo.png" alt=""></a>
 		</header>
-		<div class="bracing"></div>
+		<nav class="main">
+			<div class="centered text-center">
+				<dl>
+					<dt><a href="#">номера и цены</a></dt>
+					<dt><a href="#">кафе</a></dt>
+					<dt><a href="#">развлечения и услуги</a></dt>
+					<dt><a href="#">расположение</a></dt>
+					<dt><a href="#">контакты</a></dt>
+				</dl>
+			</div>
+		</nav>
 		<section class="promo">
-			<img src="/img/promo.jpg" alt="">
-			<div class="wrapper">
-				<div class="center">
-					<h5>ОТДОХНИТЕ НА БАЙКАЛЕ</h5>
-					<p>в уютном доме европейского уровня</p>
+			<div class="centered">
+				<div class="form-date">
+					<form action="">
+						<input class="datepicker" type="text" placeholder="дата заезда">
+						<input class="datepicker" type="text" placeholder="дата заезда">
+						<button type="submit">Подобрать номер</button>
+					</form>
+				</div>
+				<div class="text">
+					<div class="head">ОТДОХНИТЕ НА БАЙКАЛЕ</div>
+					<div class="sub-head">в уютном доме европейского уровня</div>
+					<div class="helper"><i class="icon-mouse"></i></br>Узнать подробней</div>
 				</div>
 			</div>
 		</section>
 		<section class="rooms">
-			<h5 class="text-center text-transform mb0">номера и цены</h5>
-			<div class="sub-title text-center border-center">18 номеров на любой вкус</div>
 			<div class="centered">
-				<article>
-					<div class="head clearfix">
-						<div class="fl-l name"><a data-toggle="modal" data-target="#myModal" href="#">Семейный+</a></div>
-						<div class="fl-r cost">
-							<strong>от 2 400 <span class="rub">г</span></strong>
-							<p>с человека</p>
+				<h2 class="text-center mb0">НОМЕРА И ЦЕНЫ</h2>
+				<div class="text-center sub-title border">18 номеров на любой вкус</div>
+				<div class="wrapper grid clearfix">
+					<article class="grid-item">
+						<div class="text">
+							<h3 class="title"><a data-toggle="modal" data-target="#myModal" href="#">Семейный+</a></h3>
+							<p class="cost">от 2 400 <span class="rub">г</span> </br> <span class="helper">с человека</span></p>
+							<div class="in">
+								<span class="sum">4</span>
+								<span class="icon-people"></span>
+								<span class="icon-people"></span>
+								<span class="icon-people"></span>
+								<span class="icon-people"></span>
+							</br>
+								<span class="helper">спальных места</span>
+							</div>
+							<a href="#"><button class="btn-reserve">Забронировать</button></a>
 						</div>
-					</div>
-					<div class="img"><a href="#"><img src="/img/room1.jpg" alt=""></a></div>
-					<div class="info clearfix">
-						<div class="fl-l in clearfix">
-							<span class="sum">4</span>
-							<span class="icon-icon-man"></span>
-							<span class="icon-icon-man"></span>
-							<span class="icon-icon-man"></span>
-							<span class="icon-icon-man"></span>
+						<div class="img"><a data-toggle="modal" data-target="#myModal" href="#"><img src="/img/room1.jpg" alt=""></a></div>
+					</article>					
+					<article class="grid-item mt30">
+						<div class="text">
+							<h3 class="title"><a data-toggle="modal" data-target="#myModal" href="#">Романтик</a></h3>
+							<p class="cost">от 2 400 <span class="rub">г</span> </br> <span class="helper">с человека</span></p>
+							<div class="in">
+								<span class="sum">2</span>
+								<span class="icon-people"></span>
+								<span class="icon-people"></span>
+							</br>
+								<span class="helper">спальных места</span>
+							</div>
+							<a href="#"><button class="btn-reserve">Забронировать</button></a>
 						</div>
-						<div class="fl-r">
-							<a class="btn-def" href="#">Забронировать</a>
+						<div class="img"><a data-toggle="modal" data-target="#myModal" href="#"><img src="/img/room2.jpg" alt=""></a></div>
+					</article>					
+					<article class="grid-item">
+						<div class="text">
+							<h3 class="title"><a data-toggle="modal" data-target="#myModal" href="#">Базовый</a></h3>
+							<p class="cost">от 2 400 <span class="rub">г</span> </br> <span class="helper">с человека</span></p>
+							<div class="in">
+								<span class="sum">2</span>
+								<span class="icon-people"></span>
+								<span class="icon-people"></span>
+							</br>
+								<span class="helper">спальных места</span>
+							</div>
+							<a href="#"><button class="btn-reserve">Забронировать</button></a>
 						</div>
-					</div>
-				</article>				
-				<article>
-					<div class="head clearfix">
-						<div class="fl-l name"><a href="#">Семейный+</a></div>
-						<div class="fl-r cost">
-							<strong>от 2 400 <span class="rub">г</span></strong>
-							<p>с человека</p>
+						<div class="img"><a data-toggle="modal" data-target="#myModal" href="#"><img src="/img/room3.jpg" alt=""></a></div>
+					</article>					
+					<article class="grid-item">
+						<div class="text">
+							<h3 class="title"><a data-toggle="modal" data-target="#myModal" href="#">Бизнес</a></h3>
+							<p class="cost">от 2 400 <span class="rub">г</span> </br> <span class="helper">с человека</span></p>
+							<div class="in">
+								<span class="sum">1</span>
+								<span class="icon-people"></span>
+							</br>
+								<span class="helper">спальное место</span>
+							</div>
+							<a href="#"><button class="btn-reserve">Забронировать</button></a>
 						</div>
-					</div>
-					<div class="img"><a href="#"><img src="/img/room1.jpg" alt=""></a></div>
-					<div class="info clearfix">
-						<div class="fl-l in clearfix">
-							<span class="sum">2</span>
-							<span class="icon-icon-man"></span>
-							<span class="icon-icon-man"></span>
-						</div>
-						<div class="fl-r">
-							<a class="btn-def" href="#">Забронировать</a>
-						</div>
-					</div>
-				</article>				
-				<article>
-					<div class="head clearfix">
-						<div class="fl-l name"><a href="#">Семейный+</a></div>
-						<div class="fl-r cost">
-							<strong>от 2 400 <span class="rub">г</span></strong>
-							<p>с человека</p>
-						</div>
-					</div>
-					<div class="img"><a href="#"><img src="/img/room1.jpg" alt=""></a></div>
-					<div class="info clearfix">
-						<div class="fl-l in clearfix">
-							<span class="sum">3</span>
-							<span class="icon-icon-man"></span>
-							<span class="icon-icon-man"></span>
-							<span class="icon-icon-man"></span>
-						</div>
-						<div class="fl-r">
-							<a class="btn-def" href="#">Забронировать</a>
-						</div>
-					</div>
-				</article>
-				<div class="text-center load-more"><a href="#"><span class="icon-icon-refresh"></span><span class="border">Показать все номера</span></a></div>
+						<div class="img"><a data-toggle="modal" data-target="#myModal" href="#"><img src="/img/room4.jpg" alt=""></a></div>
+					</article>
+				</div>
+				<div class="text-center load">
+					<a href="#">
+						<span class="icon-load"></span></br>
+						<span class="border">Показать еще номера</span>
+					</a>
+				</div>
 			</div>
 		</section>
 		<section class="cafe">
-			<div class="centered">
-				<span class="icon-icon-food"></span>
-				<h5 class="border-left mb5">КАФЕ «ГОРЯЧИЙ КЛЮЧ»</h5>
-				<p class="sub-title">Забудьте о ежедневных обязанностях на время отдыха! </p>
-				<div class="mb30">
-					<a data-toggle="modal" data-target="#myModal2" href="#" class="btn-def-inner">Посмотреть меню</a>
-				</div>
-				<article>
-					<h6 class="no-transform mb5">Домашний уют</h6>
-					<div class="mb10">
-						<img src="/img/cafe.jpg" alt="">
+			<div class="centered clearfix">
+				<div class="left">
+					<h2 class="title-border"><i class="icon-cafe"></i>КАФЕ</br> «ГОРЯЧИЙ</br> КЛЮЧ»</h2>
+					<div class="helper">Забудьте о ежедневных обязанностях на время отдыха! </div>
+					<a data-toggle="modal" data-target="#myModal10" href="#"><button class="btn-def">Посмотреть меню</button></a>
+					<div class="info">
+						<dl>
+							<dt>
+								<i class="icon-chef"></i>
+								<p class="title"><strong>Шеф-повар</strong></p>
+								<p>Мы можем составить для вас индивидуальное меню с учетом особенностей вашего питания.</p>
+							</dt>							
+							<dt>
+								<i class="icon-of"></i>
+								<p class="title"><strong>Официант</strong></p>
+								<p>Приветливо встретит в домашнем кафе. Накроет стол и обеспечит вас всем необходимым.</p>
+							</dt>
+						</dl>
 					</div>
-					<p>Домашняя атмосфера и аромат свежеприготовленных блюд станут приятным дополнением вашему отдыху. Здесь вас ждут разнообразные и сытные блюда, а также вкусные сезонные предложения. Для маленьких посетителей предусмотрено детское меню. </p>
-					<dl class="item-list clearfix">
-						<dt>
-							<img src="/img/cafe1.jpg" alt="">
-							<p>Завтрак входит в стоимость</p>
-						</dt>						
-						<dt>
-							<img src="/img/cafe2.jpg" alt="">
-							<p>Комплексные обеды и ужины</p>
+				</div>
+				<div class="right about">
+					<dl class="clearfix">
+						<dt class="w100">
+							<div class="img"><img src="/img/about1.jpg" alt=""></div>
+							<div class="text">
+								<p class="title"><strong>Домашний уют</strong></p>
+								<p class="helper">Домашняя атмосфера и аромат свежеприготовленных блюд станут приятным дополнением вашему отдыху. Здесь вас ждут разнообразные и сытные блюда, а также вкусные сезонные предложения. Для маленьких посетителей предусмотрено детское меню. </p>
+							</div>
 						</dt>
-						<div class="div clear"></div>						
 						<dt>
-							<img src="/img/cafe3.jpg" alt="">
-							<p><a href="#">Детское меню</a></p>
+							<div class="img"><img src="/img/about2.jpg" alt=""></div>
+							<p class="title"><strong>Завтрак входит в стоимость</strong></p>
+						</dt>
+						<dt>
+							<div class="img"><img src="/img/about3.jpg" alt=""></div>
+							<p class="title">Комплексные обеды и ужины</p>
+						</dt>
+						<dt>
+							<div class="img"><img src="/img/about4.jpg" alt=""></div>
+							<p class="title"><strong>Детское меню</strong></p>
 						</dt>
 					</dl>
-					<p class="helper">* В стоимость номера по вашему желанию может быть включено полноценное трехразовое питание на каждую персону старше 18 лет. </p>
-					<p class="helper">Детское меню оплачивается дополнительно.</p>
-				</article>
+					<p>* В стоимость номера по вашему желанию может быть включено полноценное трехразовое питание на каждую персону старше 18 лет. </p>
+					<p>Детское меню оплачивается дополнительно.</p>
+				</div>
 			</div>
 		</section>
 		<section class="services">
 			<div class="centered">
-				<span class="icon-icon-entertament"></span>
-				<h5 class="border-left mb5">РАЗВЛЕЧЕНИЯ И УСЛУГИ</h5>
-				<p class="sub-title">В «Горячем ключе» предусмотрен отдых не только для родителей, но и для детей</p>
-				<dl class="item-list clearfix">
-					<dt>
-						<a href="#"><img src="/img/service1.jpg" alt=""></a>
-						<p><a href="#">Пикники и барбекю</a></p>
-					</dt>						
-					<dt>
-						<a href="#"><img src="/img/service2.jpg" alt=""></a>
-						<p><a href="#">Активный отдых</a></p>
+				<dl class="clearfix">
+					<dt class="w570">
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal5" href="#">
+								<img src="/img/service1.jpg" alt="">
+								<span class="wrapper">
+									<h3>СПА</h3>
+								</span>
+							</a>
+						</div>
 					</dt>
-					<div class="clear"></div>						
 					<dt>
-						<a href="#"><img src="/img/service3.jpg" alt=""></a>
-						<p><a href="#">СПА</a></p>
-					</dt>					
-					<dt>
-						<a data-toggle="modal" data-target="#myModal5" href="#"><img src="/img/service4.jpg" alt=""></a>
-						<p><a data-toggle="modal" data-target="#myModal5" href="#">Для детей</a></p>
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal6" href="#">
+								<img src="/img/service2.jpg" alt="">
+								<span class="wrapper">
+									<h3>Пикник </br> и барбекю </h3>
+								</span>
+							</a>
+						</div>
 					</dt>
-					<div class="clear"></div>					
 					<dt>
-						<a href="#"><img src="/img/service5.jpg" alt=""></a>
-						<p><a href="#">Оздоровление в Горячинске</a></p>
-					</dt>					
-					<dt>
-						<a href="#"><img src="/img/service6.jpg" alt=""></a>
-						<p><a href="#">Игры</a></p>
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal3" href="#">
+								<img src="/img/service3.jpg" alt="">
+								<span class="wrapper">
+									<h3>Активный </br> отдых</h3>
+								</span>
+							</a>
+						</div>
 					</dt>
-					<div class="clear"></div>					
 					<dt>
-						<a href="#"><img src="/img/service7.jpg" alt=""></a>
-						<p><a href="#">Рыбалка </a></p>
-					</dt>					
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal4" href="#">
+								<img src="/img/service4.jpg" alt="">
+								<span class="wrapper">
+									<h3>Игры</h3>
+									<p class="mb60 mt20">Партия в бильярд или в Xboxприятно разнообразят вечера, проведенные вместе. </p>
+									<button class="btn-white">Подробнее</button>
+								</span>
+							</a>
+						</div>
+					</dt>
 					<dt>
-						<a href="#"><img src="/img/service8.jpg" alt=""></a>
-						<p><a href="#">Экскурсии </a></p>
+						<h2 class="title-border"><i class="icon-services"></i>РАЗВЛЕЧЕНИЯ </br> И УСЛУГИ</h2>
+						<div class="helper">В «Горячем ключе» предусмотрен отдых не только для родителей, но и для детей</div>
+					</dt>
+					<dt class="w570">
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal2" href="#">
+								<img src="/img/service5.jpg" alt="">
+								<span class="wrapper">
+									<h3>Для детей </h3>
+								</span>
+							</a>
+						</div>
+					</dt>
+					<dt>
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal9" href="#">
+								<img src="/img/service6.jpg" alt="">
+								<span class="wrapper">
+									<h3>Рыбалка</h3>
+								</span>
+							</a>
+						</div>
+					</dt>
+					<dt class="w570">
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal8" href="#">
+								<img src="/img/service7.jpg" alt="">
+								<span class="wrapper">
+									<h3>Оздоровление в Горячинске</h3>
+								</span>
+							</a>
+						</div>
+					</dt>
+					<dt>
+						<div class="img">
+							<a data-toggle="modal" data-target="#myModal7" href="#">
+								<img src="/img/service8.jpg" alt="">
+								<span class="wrapper">
+									<h3>Экскурсии</h3>
+								</span>
+							</a>
+						</div>
+					</dt>
+					<dt class="w570 info">
+						<i class="icon-admin"></i>
+						<div class="text oh">
+							<h6 class="mb0 no-transform">Администратор</h6>
+							<p class="helper">Ответит на любые ваши вопросы. Примет <a href="#"><strong>заявку на отдых</strong></a>. </br>И по окончании отдыха подарит вам бонусную карту</p>
+						</div>
+					</dt>
+					<dt class="w570 info right">
+						<i class="icon-super"></i>
+						<div class="text oh">
+							<h6 class="mb0 no-transform">Супермэн</h6>
+							<p class="helper">Подстрижет газон, принесет воду, покормит кур и спасет мир</p>
+						</div>
 					</dt>
 				</dl>
 			</div>
 		</section>
 		<section class="action">
-			<div class="centered">
-				<span class="icon-icon-gift"></span>
-				<h5 class="border-left mb5">НАШИ АКЦИИ И БОНУСЫ</h5>
-				<p class="sub-title">Забудьте о ежедневных обязанностях на время отдыха! </p>
-				<dl class="item-list owlCarousel clearfix">
-					<dt>
-						<img src="/img/service1.jpg" alt="">
-						<p><a href="#">Пикники и барбекю</a></p>
-					</dt>						
-					<dt>
-						<img src="/img/service2.jpg" alt="">
-						<p><a href="#">Активный отдых</a></p>
-					</dt>					
-					<dt>
-						<img src="/img/service3.jpg" alt="">
-						<p><a href="#">СПА</a></p>
-					</dt>					
-					<dt>
-						<img src="/img/service4.jpg" alt="">
-						<p><a href="#">Для детей</a></p>
-					</dt>					
-					<dt>
-						<img src="/img/service5.jpg" alt="">
-						<p><a href="#">Оздоровление в Горячинске</a></p>
-					</dt>					
-					<dt>
-						<img src="/img/service6.jpg" alt="">
-						<p><a href="#">Игры</a></p>
-					</dt>					
-					<dt>
-						<img src="/img/service7.jpg" alt="">
-						<p><a href="#">Рыбалка </a></p>
-					</dt>					
-					<dt>
-						<img src="/img/service8.jpg" alt="">
-						<p><a href="#">Экскурсии </a></p>
-					</dt>
-				</dl>
+			<div class="centered layout clearfix">
+				<div class="l-col">
+					<h2 class="title-border"><i class="icon-action"></i>НАШИ АКЦИИ </br>И БОНУСЫ</h2>
+				</div>
+				<div class="r-col">
+					<dl class="clearfix owlCarousel">
+						<dt>
+							<div class="img"><img src="/img/action1.jpg" alt=""></div>
+							<div class="text">
+								<a href="#"><span>Байкальские каникулы</span></a>
+							</div>
+						</dt>
+						<dt>
+							<div class="img"><img src="/img/action2.jpg" alt=""></div>
+							<div class="text">
+								<a href="#"><span>5% cкидки при бронировании через сайт</span> </a>
+							</div>
+						</dt>						
+						<dt>
+							<div class="img"><img src="/img/action3.jpg" alt=""></div>
+							<div class="text">
+								<a href="#"><span>Бонусная карта </br>«Горячий Ключ»</span> </a>
+							</div>
+						</dt>						
+						<dt>
+							<div class="img"><img src="/img/action1.jpg" alt=""></div>
+							<div class="text">
+								<a href="#"><span>Байкальские каникулы</span></a>
+							</div>
+						</dt>
+						<dt>
+							<div class="img"><img src="/img/action2.jpg" alt=""></div>
+							<div class="text">
+								<a href="#"><span>5% cкидки при бронировании через сайт</span> </a>
+							</div>
+						</dt>						
+						<dt>
+							<div class="img"><img src="/img/action3.jpg" alt=""></div>
+							<div class="text">
+								<a href="#"><span>Бонусная карта </br>«Горячий Ключ»</span> </a>
+							</div>
+						</dt>
+					</dl>
+				</div>
 			</div>
 		</section>
 		<section class="feedback">
-			<div class="centered">
-				<h5 class="border-left mb5">ОТЗЫВЫ НАШИХ ПОСЕТИТЕЛЕЙ</h5>
-				<dl class="owlCarousel2">
-					<dt>
-						<p>С большим уважением из города Кемерово, две семьи отдыхающих с 10.03.13 по 21.03.13, были приятно удивлены. В Горячинске наконец-то появился прекрасный семейный отель, где нас встретила тёплая, уютная атмосфера с внимательным, отзывчивым персоналом, хорошей домашней кухней, доброй позитивной обстановкой. В Горячинске мы уже отдыхаем в четвёртый раз! Время проведённое в вашем отеле пролетело незаметно. Позитивный заряд,полученный здесь увезём в г. Кемерово. Большое спасибо за комфорт, за доброту и внимание!Надеемся, что вы нашли свою «изюминку» и сохраните её. Особо хотим отметить смену под руководством администратора Натальи Викторовны: повара Ивана, горничной Светланы. Так держать!</p>
-						<p class="name">Семья Родиных, семья Федосеевых </p>
-						<p class="date">21.03.2013</p>
-					</dt>					
-					<dt>
-						<p>С большим уважением из города Кемерово, две семьи отдыхающих с 10.03.13 по 21.03.13, были приятно удивлены. В Горячинске наконец-то появился прекрасный семейный отель, где нас встретила тёплая, уютная атмосфера с внимательным, отзывчивым персоналом, хорошей домашней кухней, доброй позитивной обстановкой.</p>
-						<p class="name">Семья Родиных, семья Федосеевых </p>
-						<p class="date">21.03.2013</p>
-					</dt>
-				</dl>
+			<div class="centered layout clearfix">
+				<div class="l-col">
+					<h2 class="title-border"><i class="icon-action"></i>ОТЗЫВЫ НАШИХ ПОСЕТИТЕЛЕЙ</h2>
+				</div>
+				<div class="r-col">
+					<dl class="clearfix owlCarousel2">
+						<dt>
+							<div class="img fl-l mr20"><img src="/img/feedback.jpg" alt=""></div>
+							<div class="text oh">
+								<p>С большим уважением из города Кемерово, две семьи отдыхающих с 10.03.13 по 21.03.13, были приятно удивлены. В Горячинске наконец-то появился прекрасный семейный отель, где нас встретила тёплая, уютная атмосфера с внимательным, отзывчивым персоналом, хорошей домашней кухней, доброй позитивной обстановкой. В Горячинске мы уже отдыхаем в четвёртый раз! Время проведённое в вашем отеле пролетело незаметно. Позитивный заряд,полученный здесь увезём в г. Кемерово. Большое спасибо за комфорт, за доброту и внимание!Надеемся, что вы нашли свою «изюминку» и сохраните её. Особо хотим отметить смену под руководством администратора Натальи Викторовны: повара Ивана, горничной Светланы. Так держать!</p>
+								<p><strong>Семья Родиных, семья Федосеевых</strong>  21.03.2013</p>
+							</div>
+						</dt>						
+						<dt>
+							<div class="img fl-l mr20"><img src="/img/feedback.jpg" alt=""></div>
+							<div class="text oh">
+								<p>С большим уважением из города Кемерово, две семьи отдыхающих с 10.03.13 по 21.03.13, были приятно удивлены. В Горячинске наконец-то появился прекрасный семейный отель, где нас встретила тёплая, уютная атмосфера с внимательным, отзывчивым персоналом, хорошей домашней кухней, доброй позитивной обстановкой. В Горячинске мы уже отдыхаем в четвёртый раз! Время проведённое в вашем отеле пролетело незаметно. Позитивный заряд,полученный здесь увезём в г. Кемерово. Большое спасибо за комфорт, за доброту и внимание!Надеемся, что вы нашли свою «изюминку» и сохраните её. Особо хотим отметить смену под руководством администратора Натальи Викторовны: повара Ивана, горничной Светланы. Так держать!</p>
+								<p><strong>Семья Родиных, семья Федосеевых</strong>  21.03.2013</p>
+							</div>
+						</dt>
+					</dl>
+				</div>
 			</div>
 		</section>
-		<section class="location">
-			<div class="centered pb20">
-				<h5 class="border-left mb5">Расположение</h5>
-				<address class="sub-title mb15">Бурятия, Прибайкальский район, село Горячинск, улица Комсомольская, 5</address>
-				<p>+7 (9021) 68-68-57, 8 (9244) 56-01-97</p>
-				<dl>
-					<dt><a data-toggle="modal" data-target="#myModal4" href="#"><span class="icon-icon-map icon"></span> <span class="border">Схема проезда</span></a></dt>
-					<dt><a data-toggle="modal" data-target="#myModal4" href="#"><span class="icon-icon-bus icon"></span> <span class="border">На чем доехать</span></a></dt>
-				</dl>
+		<section class="map">
+			<div class="centered">
+				<address>
+					<h2 class="title-border"><i class="icon-action"></i>РАСПОЛОЖЕНИЕ</h2>
+					<p>Бурятия, Прибайкальский район, село Горячинск, улица Комсомольская, 5</p>
+					<p>+7 (9021) 68-68-57, 8 (9244) 56-01-97</p>
+					<dl>
+						<dt><a data-toggle="modal" data-target="#myModal13" href="#"><i class="icon-location"></i><span>Схема проезда</span></a></dt>
+						<dt><a data-toggle="modal" data-target="#myModal12" href="#"><i class="icon-transport"></i><span>На чем доехать</span></a></dt>
+					</dl>
+				</address>
 			</div>
-			<img src="/img/map.jpg" alt="">
 		</section>
 		<section class="b-info">
-			<div class="centered">
-				<dl class="item-list clearfix">
-					<dt>
-						<img src="/img/cel.jpg" alt="">
-					</dt>
-					<dt>
-						<p>Температура уникального источника минеральных вод в селе Горячинск</p>
-					</dt>
-				</dl>
-			</div>
-		</section>
-		<section class="call-back">
-			<div class="centered">
-				<h4 class="no-transform mb0">Остались еще вопросы?</h4>
-				<p>Мы можем перезвонить вам и все уточнить</p>
-				<p><a data-toggle="modal" data-target="#myModal3" href="#">Заказать звонок</a></p>
+			<div class="centered clearfix">
+				<div class="temp fl-l clearfix">
+					<img class="fl-l mr20" src="/img/temp.jpg" alt="">
+					<p class="oh">Это температура уникального источника минеральных вод в селе Горячинск</p>
+				</div>
+				<div class="question fl-l">
+					<h2 class="no-transform mb0">Остались еще вопросы?</h2>
+					<p>Мы можем перезвонить вам и все уточнить</p>
+					<a data-toggle="modal" data-target="#myModal11" href="#" class="link-feedback">Заказать звонок</a>
+				</div>
+				<div class="soc fl-r">
+					<h5 class="no-transform">Новости </br>в социальных сетях</h5>
+					<a class="vk" href=""></a>
+					<a class="fb" href=""></a>
+					<a class="tw" href=""></a>
+				</div>
 			</div>
 		</section>
 		<footer>
-			<section class="social">
-				<div class="centered">
-					<h5 class="no-transform">Новости в социальных сетях</h5>
-					<div class="group-icon">
-						<a href="#" class="vk"></a>
-						<a href="#" class="fb"></a>
-						<a href="#" class="tw"></a>
-					</div>
-					<p>© 2012–2015 </br>Семейный клуб <strong>«Горячий ключ»</strong> </p>
-					<p class="gp">Разработка сайта <a href="http://garantpark.com/">«Гарантпарк»</a></p>
+			<div class="centered clearfix">
+				<div class="fl-l f-logo">
+					<img src="/img/logo-small.png" alt="">
+					© 2012–2015 Семейный клуб <strong>«Горячий ключ» </strong>
 				</div>
-			</section>
+				<div class="fl-r gp">
+					<a href="http://garantpark.com/">Разработка сайта</a> <img src="/img/gp.png" alt=""> <strong>«Гарантпарк»</strong>
+				</div>
+			</div>
 		</footer>
-		<a href="#" class="link-desktop centered">
-			<span>Переключить на полную версию сайта</span>
-		</a>
+		<a href="#" class="navi-room prev-room"></a>
+		<a href="#" class="navi-room next-room"></a>
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		    	<div class="room-detail pt20">
-					<div class="centered">
-						<h2 class="title">СЕМЕЙНЫЙ +</h2>
-						<div class="navi-modal">
-							<a class="prev" href="#"></a>
-							<a class="next" href="#"></a>
-						</div>
+				<header class="inner">
+					<div class="centered pt15 clearfix">
+						<img class="fl-l" src="/img/logo-small.png" alt="">
+						<nav>
+							<dl>
+								<dt><a class="active" href="#">номера и цены</a></dt>
+								<dt><a href="#">кафе</a></dt>
+								<dt><a href="#">развлечения и услуги</a></dt>
+								<dt><a href="#">расположение</a></dt>
+								<dt><a href="#">контакты</a></dt>
+							</dl>
+						</nav>
+						<a href="#" data-dismiss="modal" class="close"></a>
 					</div>
-		    		<div class="b-cost">
-		    			<div class="centered">
-		    				<p class="cost">от <strong>2 600 <span class="rub">г</span></strong> с человека </p>
-		    				<p><a href="#">Цена в другие сезоны</a></p>
-		    			</div>
-		    		</div>
-		    		<div class="centered pb20">
-			    		<div class="mb40">
-			    			<a href="#" class="btn-def">Забронировать</a>
-			    		</div>
-			    		<p>Большой и светлый номер с балконом, достаточно свободный для того, чтобы принять даже  небольшую семейную делегацию. Его 28 квадратных метров содержат в себе просторную двуспальную  кровать и диван «Семейный плюс» это вариант для четы с двумя детьми или взрослой компании из трех человек.</p>
-			    		<div class="gallery">
-			    			<div class="owlCarousel3">
-			    				<div class="item"><img src="/img/room-carousel.jpg" alt=""></div>
-			    				<div class="item"><img src="/img/room-carousel.jpg" alt=""></div>
-			    				<div class="item"><img src="/img/room-carousel.jpg" alt=""></div>
-			    				<div class="item"><img src="/img/room-carousel.jpg" alt=""></div>
-			    			</div>
-			    		</div>
-			    		<div class="desc">
-			    			<div class="quantity">
-								<dl class="clearfix">
-									<dt class="clearfix first">
-										<div class="num fl-l mr5">3</div>
-										<div class="oh">спальных места</div>
-									</dt>										
-									<dt class="clearfix two">
-										<div class="num fl-l mr5">28 м<sup>2</sup></div>
-										<div class="oh">площадь</br> номера</div>
-									</dt>
-								</dl>
+				</header>
+				<div class="centered wrapper">
+					<section class="rooms-detail mb100">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title">СЕМЕЙНЫЙ +</div>
+								<p class="helper mt10"><a href="#">Цена в другие сезоны</a></p>
 							</div>
-							<div class="informer">
-								<p>Дети до 18 ти лет размещаются бесплатно. Возможно разместить до 2 детей. <a href="#">Питание для ребенка</a> оплачивается отдельно</p>
+							<div class="fl-l text">
+								<p>Большой и светлый номер с балконом, достаточно свободный для того, чтобы принять даже  небольшую семейную делегацию. Его 28 квадратных метров содержат в себе просторную двуспальную  кровать и диван «Семейный плюс» это вариант для четы с двумя детьми или взрослой компании из трех человек.</p>
 							</div>
-							<h6 class="no-transform mb10">В стоимость включено</h6>
-							<ul class="clearfix">
-								<li class="fl-l w50">Завтрак на двоих</li>
-								<li class="fl-l w50">DVD-плеер</li>
-								<li class="clear"></li>
-								<li class="fl-l w50">Бесплатный WI-FI</li>
-								<li class="fl-l w50">Настольные игры</li>
-								<li class="clear"></li>
-								<li class="fl-l w50">Занятия в фитнес-зале </li>
-								<li class="fl-l w50">Теплая парковка</li>
-							</ul>
-							<h6 class="no-transform mb10">Стоимость номера за сутки</h6>
-							<div class="cost-one">
-								<dl>
-									<dt class="clearfix">
-										<div class="icon clearfix">
-											<span class="icon-icon-man-big"></span>
-										</div>
-										<div class="num"><strong>3 000 <span class="rub">г</span></strong> <br> за номер</div>
-									</dt>										
-									<dt class="clearfix">
-										<div class="icon clearfix">
-											<span class="icon-icon-man-big"></span>
-											<span class="icon-icon-man-big"></span>
-										</div>
-										<div class="num"><strong>3 420 <span class="rub">г</span></strong> <br> за номер</div>
-									</dt>										
-									<dt class="clearfix">
-										<div class="icon clearfix">
-											<span class="icon-icon-man-big"></span>
-											<span class="icon-icon-man-big"></span>
-											<span class="icon-icon-man-big"></span>
-										</div>
-										<div class="num"><strong>3 800 <span class="rub">г</span></strong> <br> за номер</div>
-									</dt>
-								</dl>
+							<div class="fl-r cost">
+								от <strong>2 600</strong> <span class="rub">г</span></br>с человека
+								<div class="mt20">
+									<button class="btn-def btn-reserve">Забронировать</button>
+								</div>
 							</div>
-							<h6 class="no-transform mb10">Услуги и удобства</h6>
-							<ul>
-								<li>Ковровое покрытие, мини-холодильник, чайник и чайные пары</li>
-								<li>Полотенца, тапочки, туалетные принадлежности</li>
-								<li>Туалет, душевая кабина</li>
-								<li>LCD телевизор 32”, спутниковые каналы, телефон</li>
-							</ul>							
-							<h6 class="no-transform mb10">Мебель в номере</h6>
-							<ul>
-								<li>Ковровое покрытие, мини-холодильник, чайник и чайные пары</li>
-								<li>Полотенца, тапочки, туалетные принадлежности</li>
-								<li>Туалет, душевая кабина</li>
-								<li>LCD телевизор 32”, спутниковые каналы, телефон</li>
-							</ul>
-							<div class="mb50">
-								<a class="btn-def" href="#">Забронировать</a>
+						</div>
+						<div class="wrapper65 clearfix">
+							<div class="images fl-l mr30">
+								<div class="img"><img src="/img/room-big.jpg" alt=""></div>
+								<div class="preview">
+									<a href="#"><img src="/img/room-small.jpg" alt=""></a>
+									<a href="#"><img src="/img/room-small2.jpg" alt=""></a>
+									<a href="#"><img src="/img/room-small2.jpg" alt=""></a>
+									<a href="#"><img src="/img/room-small2.jpg" alt=""></a>
+									<a href="#"><img src="/img/room-small2.jpg" alt=""></a>
+									<a href="#"><img src="/img/room-small2.jpg" alt=""></a>
+								</div>
 							</div>
-							<div class="form-feedback">
-								<h4 class="no-transform mb0">Остались еще вопросы?</h4>
-								<p>Мы можем перезвонить вам и все уточнить</p>
-								<form action="">
+							<div class="desc oh">
+								<div class="quantity">
 									<dl class="clearfix">
-										<dt>
-											<input type="text" placeholder="Ваше имя">
-											<p class="error-text">Вы не указали свое имя!</p>
+										<dt class="clearfix first">
+											<div class="num fl-l mr10">3</div>
+											<div class="oh">спальных места</div>
+										</dt>										
+										<dt class="clearfix two">
+											<div class="num fl-l mr10">28 м<sup>2</sup></div>
+											<div class="oh">площадь номера</div>
 										</dt>
-										<dt><input type="tel" placeholder="Номер телефона"></dt>
-										<dt><button type="input" class="btn-def">Отправить</button></dt>
 									</dl>
-								</form>
+								</div>
+								<div class="informer">
+									<p>Дети до 18 ти лет размещаются бесплатно. Возможно разместить до 2 детей. <a href="#">Питание для ребенка</a> оплачивается отдельно</p>
+								</div>
+								<h5 class="no-transform mb15">В стоимость включено</h5>
+								<ul class="clearfix mb30">
+									<li class="w50 fl-l">Завтрак на двоих</li>
+									<li class="w50 fl-l">DVD- плеер</li>
+									<li class="clear"></li>
+									<li class="w50 fl-l">Бесплатный WI-FI </li>
+									<li class="w50 fl-l">Настольные игры</li>
+									<li class="clear"></li>
+									<li class="w50 fl-l">Занятия в фитнес-зале </li>
+									<li class="w50 fl-l">Теплая парковка </li>
+								</ul>
+								<h5 class="no-transform mb15">Стоимость номера за сутки</h5>
+								<div class="cost-one">
+									<dl>
+										<dt class="clearfix">
+											<div class="icon fl-l"><i class="icon-person"></i></div>
+											<div class="fl-l">
+												<div class="num"><strong>3 000 <span class="rub">г</span></strong> </br> за номер</div>
+											</div>
+										</dt>										
+										<dt class="clearfix">
+											<div class="icon fl-l">
+												<i class="icon-person"></i>
+												<i class="icon-person"></i>
+											</div>
+											<div class="fl-l">
+												<div class="num"><strong>3 420 <span class="rub">г</span></strong> </br> за номер</div>
+											</div>
+										</dt>										
+										<dt class="clearfix">
+											<div class="icon fl-l">
+												<i class="icon-person"></i>
+												<i class="icon-person"></i>
+												<i class="icon-person"></i>
+											</div>
+											<div class="fl-l">
+												<div class="num"><strong>3 800 <span class="rub">г</span></strong> </br> за номер</div>
+											</div>
+										</dt>
+									</dl>
+								</div>
 							</div>
-			    		</div>
-		    		</div>
-					<a href="#" class="link-desktop centered">
-						<span>Переключить на полную версию сайта</span>
-					</a>
-		    	</div>
+							<div class="clear"></div>
+							<div class="desc-more">
+								<dl class="clearfix">
+									<dt>
+										<h5 class="no-transform mb15">Услуги и удобства</h5>
+										<ul>
+											<li>Ковровое покрытие, мини-холодильник, чайник и чайные пары</li>
+											<li>Полотенца, тапочки, туалетные принадлежности </li>
+											<li>Туалет, душевая кабина</li>
+											<li>LCD телевизор 32”, спутниковые каналы, телефон</li>
+										</ul>
+									</dt>
+									<dt>
+										<h5 class="no-transform mb15">Мебель в номере</h5>
+										<ul>
+											<li>Двухспальная кровать с ортопедическим матрасом 140х220 см</li>
+											<li>Прикроватные тумбочки </li>
+											<li>Шкаф для одежды, багажница, зеркало</li>
+											<li>Стол, журнальный столик</li>
+											<li>Возможность установки детской кроватки</li>
+										</ul>
+									</dt>
+								</dl>
+							</div>
+							<div class="text-center mt30">
+								<button class="btn-def">Забронировать</button>
+							</div>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
 		    </div>
 		  </div>
 		</div>
 		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		    	<div class="menu-food pt20">
-					<div class="centered">
-						<span class="icon-icon-food"></span>
-						<h2 class="title">МЕНЮ</h2>
-						<h5 class="gold mb10">КОМПЛЕКСНОЕ МЕНЮ</h5>
-						<h5 class="border-left">ПОНЕДЕЛЬНИК</h5>
-						<h5 class="no-transform mb10">Завтрак на выбор</h5>
-						<div class="list-menu inner">
-							<dl>
-								<dt>
-									<ul>
-										<li>Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон <b>бесплатно</b></li>
-										<li>Суп гороховый с копченостями <b>170 <span class="rub">г</span></b></li>
-										<li>Поджарка из свинины <b>170 <span class="rub">г</span></b></li>
-										<li>Сложный гарнир (капуста тушеная, картофельное пюре) <b>170 <span class="rub">г</span></b></li>
-										<li>Компот <b>170 <span class="rub">г</span></b></li>
-										<li>Печенье, конфеты <b>170 <span class="rub">г</span></b></li>
-										<li>Чай «Greenfield», молоко, хлеб <b>170 <span class="rub">г</span></b></li>
-									</ul>
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="children">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-children"></i> ДЛЯ ДЕТЕЙ</div>
+							</div>
+							<div class="fl-l text">
+								<p>У нас легко гостить с детьми. </br>Мы полностью позаботились о досуге ваших малышей.</p>
+							</div>
+						</div>
+						<div class="info">
+							<dl class="clearfix grid2">
+								<dt class="item">
+									<div class="img fl-l mr30"><img src="/img/children1.jpg" alt=""></div>
+									<div class="text oh">
+										<h5>Для самых маленьких</h5>
+										<p>Нашими гостями часто бывают малыши от 1 месяца, и мы можем обеспечить им полный комфорт — от подгузников и горшков до детского стульчика и кроватки.</p>
+									</div>
+								</dt>
+								<dt class="item">
+									<div class="img mb15"><img src="/img/children2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Игровая комната с игрушками</h5>
+										<p>Отдельное помещение для веселых игр и развивающих занятий с детьми. Бесплатно. </p>
+									</div>
+								</dt>
+								<dt class="item">
+									<div class="img fl-r ml30"><img src="/img/children3.jpg" alt=""></div>
+									<div class="text text-right oh">
+										<h5>Контактный зоопарк</h5>
+										<p>Погладить кролика, покормить курочек, подружиться с котами и милым псом, услышать утреннее пение петуха — все это можно в нашем мини-зоопарке</p>
+									</div>
+								</dt>
+								<dt class="w270 item">
+									<div class="img mb15"><img src="/img/children4.jpg" alt=""></div>
+									<div class="text">
+										<h5>Детская зона в фитнес-зале</h5>
+										<p>Пока родители занимаются спортом, малыши могут попрыгать на большом батуте, покататься с горки, а также воспользоваться инвентарем для спортивных игр.</p>
+									</div>
+								</dt>
+								<dt class="w270 item">
+									<div class="img mb15"><img src="/img/children5.jpg" alt=""></div>
+									<div class="text">
+										<h5>Детские санки</h5>
+										<p>Санки просто незаменимы для отдыха с ребенком зимой - покатайте счастливого малыша по свежему снегу или дайте ему вволю покататься с горки. Для детей до 5 лет. </p>
+									</div>
+								</dt>
+								<dt class="item">
+									<div class="img mb15"><img src="/img/children6.jpg" alt=""></div>
+									<div class="text text-right">
+										<h5>Детская площадка c песочницей и качелями</h5>
+										<p>Территория гостевого дома оборудована детской площадкой для активных игр на свежем воздухе.</p>
+									</div>
 								</dt>
 							</dl>
 						</div>
-						<div class="list-menu">
-							<dl>
-								<dt>
-									<span class="name">Обед</span>
-									<strong>200 <span class="rub">г</span></strong>
-									<div class="clear"></div>
-									<ul>
-										<li>Салат «Морковный с сухариками» </li>
-										<li>Суп гороховый с копченостями </li>
-										<li>Поджарка из свинины</li>
-										<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
-										<li>Компот</li>
-										<li>Печенье, конфеты</li>
-										<li>Чай «Greenfield», молоко, хлеб</li>
-									</ul>
-								</dt>								
-								<dt>
-									<span class="name">Ужин</span>
-									<strong>200 <span class="rub">г</span></strong>
-									<div class="clear"></div>
-									<ul>
-										<li>Салат «Морковный с сухариками» </li>
-										<li>Суп гороховый с копченостями </li>
-										<li>Поджарка из свинины</li>
-										<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
-										<li>Компот</li>
-										<li>Печенье, конфеты</li>
-										<li>Чай «Greenfield», молоко, хлеб</li>
-									</ul>
-								</dt>								
-								<dt>
-									<span class="name">Детский ужин</span>
-									<strong>200 <span class="rub">г</span></strong>
-									<div class="clear"></div>
-									<ul>
-										<li>Салат «Морковный с сухариками» </li>
-										<li>Суп гороховый с копченостями </li>
-										<li>Поджарка из свинины</li>
-										<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
-										<li>Компот</li>
-										<li>Печенье, конфеты</li>
-										<li>Чай «Greenfield», молоко, хлеб</li>
-									</ul>
-								</dt>								
-								<dt>
-									<span class="name">Детский обед</span>
-									<strong>200 <span class="rub">г</span></strong>
-									<div class="clear"></div>
-									<ul>
-										<li>Салат «Морковный с сухариками» </li>
-										<li>Суп гороховый с копченостями </li>
-										<li>Поджарка из свинины</li>
-										<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
-										<li>Компот</li>
-										<li>Печенье, конфеты</li>
-										<li>Чай «Greenfield», молоко, хлеб</li>
-									</ul>
-								</dt>
-							</dl>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
 						</div>
-						<div class="load-more mb30">
-							<a href="#"><span class="icon-icon-refresh"></span><span class="border">Показать все меню</span></a>
-						</div>
-						<div class="list-inner-menu">
-							<dl>
-								<dt><a href="#">Детское меню</a></dt>
-								<dt><a href="#">Диетическое меню</a></dt>
-								<dt><a href="#">Банкетное меню</a></dt>
-							</dl>
-						</div>
-						<div class="form-feedback">
-							<h4 class="no-transform mb0">Остались еще вопросы?</h4>
-							<p>Мы можем перезвонить вам и все уточнить</p>
+						<div class="r-col">
 							<form action="">
 								<dl class="clearfix">
 									<dt>
 										<input type="text" placeholder="Ваше имя">
-										<p class="error-text">Вы не указали свое имя!</p>
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
 									</dt>
 									<dt><input type="tel" placeholder="Номер телефона"></dt>
-									<dt><button type="input" class="btn-def">Отправить</button></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
 								</dl>
 							</form>
 						</div>
-					</div>
-					<a href="#" class="link-desktop centered">
-						<span>Переключить на полную версию сайта</span>
-					</a>
-		    	</div>
+					</section>
+				</div>
 		    </div>
 		  </div>
 		</div>
 		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		    	<div class="pt20">
-					<div class="centered">
-						<span class="icon-icon-phone"></span>
-						<h2 class="title mb0">ЗАКАЗ ЗВОНКА</h2>
-						<div class="form-feedback bg">
-							<p class="mb30">Остались вопросы? Заполните форму и наш администратор свяжется с вами, чтобы ответить на все ваши вопросы.</p>
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="leisure">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-leisure"></i> АКТИВНЫЙ ОТДЫХ</div>
+							</div>
+							<div class="fl-l text">
+								<p>Прокатитесь всей семьей на велосипедах или снегокатах, поиграйте в волейбол или погоняйте мяч по траве, займитесь фитнесом и настольным теннисом. Каждый найдет себе занятие по душе.</p>
+							</div>
+						</div>
+						<div class="list-desc clearfix">
+							<dl class="clearfix">
+								<dt>
+									<div class="img"><img src="/img/leisure1.jpg" alt=""></div>
+									<div class="text">
+										<h5>Фитнес-зал</h5>
+										<p>Тренажеры, теннисный стол, детская зона. </br>Бесплатно для наших посетителей.</p>
+									</div>
+								</dt>
+								<dt class="w270">
+									<div class="img"><img src="/img/leisure2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Снегокаты, тюбинг</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>в день</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/leisure3.jpg" alt=""></div>
+									<div class="text">
+										<h5>Час на лыжах</h5>
+										<dl class="for-cost">
+											<dt>
+												<p class="cost"><strong>150 <span class="rub">г</span></strong></br> для взрослых</p>
+											</dt>
+											<dt>
+												<p class="cost"><strong>150 <span class="rub">г</span></strong></br> для детей</p>
+											</dt>
+										</dl>
+									</div>
+								</dt>								
+								<div class="clear"></div>
+								<dt class="w270">
+									<div class="img"><img src="/img/leisure4.jpg" alt=""></div>
+									<div class="text">
+										<h5>Мячи для футбола и волейбола, бадминтон</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br> в день</p>
+									</div>
+								</dt>								
+								<dt>
+									<div class="img"><img src="/img/leisure5.jpg" alt=""></div>
+									<div class="text">
+										<h5>Велосипеды</h5>
+										<span class="two-cols">
+											<p>Взрослый</p>
+											<dl class="for-cost">
+												<dt>
+													<p class="cost"><strong>150 <span class="rub">г</span></strong></br> в день</p>
+												</dt>												
+												<dt>
+													<p class="cost"><strong>650 <span class="rub">г</span></strong></br> в день</p>
+												</dt>
+											</dl>
+										</span>										
+										<span class="two-cols">
+											<p>Детский</p>
+											<dl class="for-cost">
+												<dt>
+													<p class="cost"><strong>150 <span class="rub">г</span></strong></br> в день</p>
+												</dt>												
+												<dt>
+													<p class="cost"><strong>650 <span class="rub">г</span></strong></br> в день</p>
+												</dt>
+											</dl>
+										</span>
+										<p class="helper mt20">Корзинка-багажник бесплатно. </br>Детское кресло для велосипеда 50 руб/час, 100 руб/день.   </p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/leisure6.jpg" alt=""></div>
+									<div class="text">
+										<h5>Прогулки на снегоходе</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br> в день</p>
+									</div>
+								</dt>
+							</dl>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
 							<form action="">
 								<dl class="clearfix">
 									<dt>
 										<input type="text" placeholder="Ваше имя">
-										<p class="error-text">Вы не указали свое имя!</p>
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
 									</dt>
 									<dt><input type="tel" placeholder="Номер телефона"></dt>
-									<dt><button type="input" class="btn-def">Отправить</button></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
 								</dl>
 							</form>
 						</div>
-					</div>
-					<a href="#" class="link-desktop centered">
-						<span>Переключить на полную версию сайта</span>
-					</a>
-		    	</div>
+					</section>
+				</div>
 		    </div>
 		  </div>
 		</div>
 		<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		    	<div class="location-info pt20">
-					<div class="centered">
-						<span class="icon-icon-map inner"></span>
-						<h2 class="title mb0">СХЕМА</br> ПРОЕЗДА</h2>
-						<div class="mb30 mt10">
-							<dl>
-								<dt>От Улан-Удэ до Горячинска — 171 километр</dt>
-								<dt>От Иркутска до Горячинска — 546 километров</dt>
-								<dt>От Читы до Горячинска — 842 километра</dt>
-							</dl>
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="games">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-games"></i> ИГРЫ</div>
+							</div>
+							<div class="fl-l text">
+								<p>Партии в бильярд или в монополию приятно разнообразят вечера, проведенные вместе. Для любителей виртуальной реальности в нашем гостевом доме есть Xbox и целая коллекация игр к нему.</p>
+							</div>
 						</div>
-						<h5 class="border-left mb0">НАШ АДРЕС</h5>
-						<address>
-							<p>Бурятия, Прибайкальский район, село Горячинск, улица Комсомольская, 5</p>
-						</address>
-					</div>
-					<div class="scheme">
-						<img src="/img/scheme.jpg" alt="">
-					</div>
-					<div class="centered bg mb30">
-						<h5 class="no-transform">Позаботимся о вашем автомобиле</h5>
-						<p>На территории гостевого дома располагается охраняемая парковка/теплая автостоянка</p>
-						<p class="cost"><strong>200 <span class="rub">г</span></strong></br> в сутки</p>
-					</div>
-					<div class="form-feedback centered">
-						<h4 class="no-transform mb0">Остались еще вопросы?</h4>
-						<p class="mb30">Мы можем перезвонить вам и все уточнить</p>
-						<form action="">
+						<div class="list-desc clearfix">
 							<dl class="clearfix">
 								<dt>
-									<input type="text" placeholder="Ваше имя">
-									<p class="error-text">Вы не указали свое имя!</p>
+									<div class="img"><img src="/img/games1.jpg" alt=""></div>
+									<div class="text">
+										<h5>Бильярдный зал</h5>
+										<p class="teaser">Русский бильярд, американский пул</p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>час</p>
+									</div>
 								</dt>
-								<dt><input type="tel" placeholder="Номер телефона"></dt>
-								<dt><button type="input" class="btn-def">Отправить</button></dt>
+								<dt class="w270">
+									<div class="img"><img src="/img/games2.jpg" alt=""></div>
+									<div class="text">
+										<h5>X-box 360</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за 30 минут</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/games3.jpg" alt=""></div>
+									<div class="text">
+										<h5>Настольные игры</h5>
+										<p>Scrabble, Activity, Монополия, Jenga. Бесплатно для наших посетителей</p>
+									</div>
+								</dt>								
 							</dl>
-						</form>
-					</div>
-					<a href="#" class="link-desktop centered">
-						<span>Переключить на полную версию сайта</span>
-					</a>
-		    	</div>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
 		    </div>
 		  </div>
-		</div>
+		</div>			
 		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		    	<div class="children pt20">
-					<div class="centered">
-						<span class="icon-icon-kid"></span>
-						<h2 class="title">ДЛЯ ДЕТЕЙ</h2>
-						<h5 class="no-transform">Для самых маленьких</h5>
-						<img src="/img/children1.jpg" alt="">
-						<p>Нашими гостями часто бывают малыши от 1 месяца, и мы можем обеспечить им полный комфорт — от подгузников и горшков до детского стульчика и кроватки.</p>
-						<h5 class="no-transform mb10">Контактный зоопарк</h5>
-						<img src="/img/children2.jpg" alt="">
-						<p>Погладить кролика, покормить курочек, подружиться с котами и милым псом, услышать утреннее пение петуха — все это можно в нашем мини-зоопарке.</p>
-						<h5 class="no-transform mb10">Детские санки</h5>
-						<img src="/img/children3.jpg" alt="">
-						<p>Санки просто незаменимы для отдыха с ребенком зимой - покатайте счастливого малыша по свежему снегу или дайте ему вволю покататься с горки. Для детей до 5 лет. </p>
-						<h5 class="no-transform mb10">Игровая комната с игрушками</h5>
-						<img src="/img/children4.jpg" alt="">
-						<p>Отдельное помещение для веселых игр и развивающих занятий с детьми. Бесплатно. </p>
-						<h5 class="no-transform mb10">Детская зона в фитнес-зале</h5>
-						<img src="/img/children5.jpg" alt="">
-						<p>Пока родители занимаются спортом, малыши могут попрыгать на большом батуте, покататься с горки, а также воспользоваться инвентарем для спортивных игр.</p>
-						<div class="cost">
-							<strong>2 000 <span class="rub">г</span></strong>
-							<p>за час до 6 человек </p>
-							<p>+1 человек 250 руб/час</p>
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="spa">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-spa"></i> СПА</div>
+							</div>
+							<div class="fl-l text">
+								<p>Попарьтесь в баньке, расслабьтесь с удовольствием в нашем SPA-комплексе и насладитесь ароматными и полезными фито-чаями.</p>
+							</div>
 						</div>
-						<h5 class="no-transform mb10">Детская площадка c песочницей и качелями</h5>
-						<img src="/img/children6.jpg" alt="">
-						<p>Территория гостевого дома оборудована детской площадкой для активных игр на свежем воздухе.</p>
+						<div class="list-desc clearfix">
+							<dl class="clearfix">
+								<dt>
+									<div class="img"><img src="/img/spa1.jpg" alt=""></div>
+									<div class="text">
+										<h5>Большая баня с купелью</h5>
+										<p class="teaser">Максимальная вместимость — 10 человек. В комплекте банный набор: простынь, полотенце, тапочки и 3 вида травяного чая. </p>
+										<p class="cost"><strong>2000 <span class="rub">г</span></strong></br>за час до 6 человек + 1 человек 250 руб/час</p>
+									</div>
+								</dt>
+								<dt class="w270">
+									<div class="img"><img src="/img/spa2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Маленькая баня</h5>
+										<p class="teaser">Максимальная вместимость — 10 человек. В комплекте банный набор: простынь, полотенце, тапочки и 3 вида травяного чая. </p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за час до 6 человек + 1 человек 250 руб/час</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/spa3.jpg" alt=""></div>
+									<div class="text">
+										<h5>Дополнительные удобства</h5>
+										<p class="teaser">Веник березовый / дубовый 150 руб. Мочалка антицеллюлитная 100 руб. Ужин в баню 500 руб./чел</p>
+									</div>
+								</dt>	
+								<div class="clear"></div>
+								<dt class="w270">
+									<div class="img"><img src="/img/cap.jpg" alt=""></div>
+									<div class="text">
+										<h5>Хамам</h5>
+										<p class="teaser">Максимальная вместимость — 10 человек. В комплекте банный набор: простынь, полотенце, тапочки и 3 вида травяного чая. </p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за час до 6 человек + 1 человек 250 руб/час</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/cap.jpg" alt=""></div>
+									<div class="text">
+										<h5>Хамам</h5>
+										<p class="teaser">Максимальная вместимость — 10 человек. В комплекте банный набор: простынь, полотенце, тапочки и 3 вида травяного чая. </p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за час до 6 человек + 1 человек 250 руб/час</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/cap.jpg" alt=""></div>
+									<div class="text">
+										<h5>Спелеокамера</h5>
+										<p class="teaser">Максимальная вместимость — 10 человек. В комплекте банный набор: простынь, полотенце, тапочки и 3 вида травяного чая. </p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за час до 6 человек + 1 человек 250 руб/час</p>
+									</div>
+								</dt>								
+							</dl>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>			
+		<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="picnic">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-picnic"></i> ПИКНИКИ И БАРБЕКЮ</div>
+							</div>
+							<div class="fl-l text">
+								<p>Пожарьте барбекю и посидите в уютной беседке или устройте семейный пикник на берегу Байкала - для этого у нас есть все необходимое.</p>
+							</div>
+						</div>
+						<div class="list-desc clearfix">
+							<dl class="clearfix">
+								<dt>
+									<div class="img"><img src="/img/picnic1.jpg" alt=""></div>
+									<div class="text">
+										<h5>Аренда мангальной зоны</h5>
+										<p class="teaser">Мангал, шампура, дрова, стол, стулья</p>
+										<p class="cost"><strong>2000 <span class="rub">г</span></strong></br>за час </p>
+									</div>
+								</dt>
+								<dt>
+									<div class="img"><img src="/img/picnic2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Аренда беседки-барбекю</h5>
+										<p class="teaser">Сервировка посудой, дрова, шампура, решетка-барбекю</p>
+										<dl class="for-cost">
+											<dt>
+												<p class="cost"><strong>150 <span class="rub">г</span></strong></br>первый час </p>
+											</dt>											
+											<dt>
+												<p class="cost"><strong>150 <span class="rub">г</span></strong></br>каждый последующий час </p>
+											</dt>
+										</dl>
+									</div>
+								</dt>	
+								<div class="clear"></div>							
+								<dt class="w270">
+									<div class="img"><img src="/img/picnic3.jpg" alt=""></div>
+									<div class="text">
+										<h5>Комплект «Пикник»</h5>
+										<p class="teaser">Дрова, мангал, туристический стол, стулья, посуда, термос, скатерть, салфетки – на 4 челеловек</p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за день</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/picnic4.jpg" alt=""></div>
+									<div class="text">
+										<h5>Прокат туристического инвентаря</h5>
+										<p class="teaser">Стол, стулья, посуда</p>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>за день</p>
+									</div>
+								</dt>								
+							</dl>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>			
+		<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="excursions">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-excursions"></i> ЭКСКУРСИИ И ТУРЫ</div>
+							</div>
+							<div class="fl-l text">
+								<p>Тем, кто хочет побольше узнать о Байкальской природе, мы даем рекомендации по возможным экскурсиям и турам. Среди популярных поездки в Чивыркуйский залив, туры к лику Богини Янжимы, а также в Сувинский замок камней.</p>
+							</div>
+						</div>
+						<div class="list-desc clearfix">
+							<dl class="clearfix">
+								<dt class="w270">
+									<div class="img"><img src="/img/exc1.jpg" alt=""></div>
+									<div class="text">
+										<h5>Водная прогулка по Чивыркуйскому заливу с посещением бухты Змеиной</h5>
+										<p class="cost"><strong>2000 <span class="rub">г</span></strong></br>продолжительность 10 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>							
+								<dt class="w270">
+									<div class="img"><img src="/img/exc2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Пешее восхождение на плато полуострова Святой Нос</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>продолжительность 9 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/exc3.jpg" alt=""></div>
+									<div class="text">
+										<h5>Водная прогулка с посещением Ушканьих островов</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>продолжительность 15 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/exc4.jpg" alt=""></div>
+									<div class="text">
+										<h5>Водная прогулка на Нижнее изголовье п/о Святой Нос</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>продолжительность 8 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>								
+								<div class="clear"></div>								
+								<dt class="w270">
+									<div class="img"><img src="/img/exc5.jpg" alt=""></div>
+									<div class="text">
+										<h5>Водная прогулка по Баргузинскому заливу</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>продолжительность 8 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/exc6.jpg" alt=""></div>
+									<div class="text">
+										<h5>Богиня плодородия Янжима</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>продолжительность 8 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/exc7.jpg" alt=""></div>
+									<div class="text">
+										<h5>Сувинский замок камней</h5>
+										<p class="cost"><strong>150 <span class="rub">г</span></strong></br>продолжительность 8 часов</p>
+										<p class="teaser"><a href="#">Скачать PDF</a></p>
+									</div>
+								</dt>
+							</dl>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="recovery">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-recovery fl-l mr20"></i> Оздоровление</br> в Горячинске</div>
+							</div>
+							<div class="fl-l text">
+								<p>К нам часто приезжают гости, которые хотят получить санаторно-курортное лечение в Горячинске, и при этом жить в комфортных условиях. Всего в 5 минутах (300 м) от нас знаменитый курорт Горячинск и Центр восточной медицины, где вы сможете полноценно получать все процедуры и проходить лечение.</p>
+							</div>
+						</div>
+						<div class="list-desc clearfix">
+							<dl class="clearfix">
+								<dt>
+									<div class="img"><img src="/img/rec1.jpg" alt=""></div>
+									<div class="text">
+										<h5>О курорте</h5>
+										<p class="teaser">Курорт Горячинск славится термальным минеральным источником, который используется для лечения заболеваний опорно-двигательного аппарата, нервной системы, органов дыхания, нарушений обмена веществ и многих других заболеваний.  </p>
+									</div>
+								</dt>							
+								<dt class="w270">
+									<div class="img"><img src="/img/rec2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Сидка на проживание</h5>
+										<p class="cost"><strong>15%</strong></p>
+										<p class="teaser">Для гостей, проходящих лечение в курорте «Горячинск».Скидка распространяется на курс лечения не меньше 6 дней и в период до 15.06.16 г.</p>
+									</div>
+								</dt>								
+								<dt class="w270">
+									<div class="img"><img src="/img/rec3.jpg" alt=""></div>
+									<div class="text">
+
+									</div>
+								</dt>								
+							</dl>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="fishing">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-fishing"></i> РЫБАЛКА</div>
+							</div>
+							<div class="fl-l text">
+								<p>Байкал со всем разнообразием его богатств подарит вам незабываемые впечатления от рыбалки. Насладитесь клевом наедине с природой или устройте семейное соревнование на лучший улов. Вопросы организации мы возьмем на себя.</p>
+							</div>
+						</div>
+						<div class="list-desc clearfix">
+							<dl class="clearfix grid3">
+								<dt class="item">
+									<div class="img"><img src="/img/fish1.jpg" alt=""></div>
+									<div class="text">
+										<h5>Зимняя рыбалка</h5>
+										<p class="teaser">Несмотря на холод, рыбачить зимой особенно приятно, потому что это позволяет рыбаку передвигаться по льду и свободно выбирать места для лучшего клева. В это время начинается клев практически всех видов рыбы.</p>
+										<div class="about">
+											<i class="icon-fish"></i>
+											<span>Окунь, сорога, подьязки, белый хариус, щука, язь, сиг, омуль, черный хариус. </span>
+										</div>
+									</div>
+								</dt>									
+								<dt class="item mt50">
+									<div class="img"><img src="/img/fish2.jpg" alt=""></div>
+									<div class="text">
+										<h5>Весенняя рыбалка</h5>
+										<p class="teaser">Особенности: В марте и апреле Байкал также радует подледной рыбалкой, но при этом температура воздуха гораздо комфортнее по сравнению с зимой. </p>
+										<div class="about">
+											<i class="icon-fish"></i>
+											<span>Карась, сазан, сом. </span>
+										</div>
+									</div>
+								</dt>
+								<dt class="item">
+									<div class="img"><img src="/img/fish3.jpg" alt=""></div>
+									<div class="text">
+										<h5>Летняя рыбалка</h5>
+										<p class="teaser">Летняя рыбалка на Байкале хороша тем, что добыча находится часто у берега, и можно поймать довольно крупную рыбу даже на обычный спиннинг.</p>
+										<div class="about">
+											<i class="icon-fish"></i>
+											<span>Щука, окунь, язь, черный хариус.</span>
+										</div>
+									</div>
+								</dt>									
+								<dt class="item">
+									<div class="img"><img src="/img/fish4.jpg" alt=""></div>
+									<div class="text">
+										<h5>Осенняя рыбалка</h5>
+										<p class="teaser">Особенности: В марте и апреле Байкал также радует подледной рыбалкой, но при этом температура воздуха гораздо комфортнее по сравнению с зимой. </p>
+										<div class="about">
+											<i class="icon-fish"></i>
+											<span>Карась, сазан, сом. </span>
+										</div>
+									</div>
+								</dt>
+								<div class="clear"></div>
+								<dt class="w270 item">
+									<div class="img"><img src="/img/fish5.jpg" alt=""></div>
+									<div class="text">
+										<h5>Снаряжение рыболова</h5>
+										<p class="teaser">болотники, водонепроницаемый костюм</p>
+										<p class="cost"><strong>2000 <span class="rub">г</span></strong></br>в день</p>
+									</div>
+								</dt>									
+								<dt class="w270 item">
+									<div class="img"><img src="/img/fish6.jpg" alt=""></div>
+									<div class="text">
+										<h5>Удочка</h5>
+										<p class="cost"><strong>2000 <span class="rub">г</span></strong></br>в день</p>
+									</div>
+								</dt>												
+							</dl>
+						</div>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content no-opc">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="menu-food">
+						<div class="head clearfix">
+							<div class="fl-l">
+								<div class="title"><i class="icon-menu-food"></i> МЕНЮ</div>
+							</div>
+							<div class="fl-l text">
+								<p>Домашняя атмосфера и аромат свежеприготовленных блюд станут приятным дополнением вашему отдыху. Вас ждут разнообразные и сытные блюда, а также вкусные сезонные предложения. Для маленьких посетителей предусмотрено детское меню</p>
+							</div>
+						</div>
+						<section class="menu-food">
+							<div class="layout clearfix">
+								<div class="left-col">
+									<nav>
+										<dl>
+											<dt><a class="anchor" href="#set-menu">КОМПЛЕКСНОЕ МЕНЮ</a></dt>
+											<dt><a class="anchor" href="#children-menu">ДЕТСКОЕ МЕНЮ</a></dt>
+											<dt><a class="anchor" href="#diet-menu">ДИЕТИЧЕСКОЕ МЕНЮ</a></dt>
+											<dt><a class="anchor" href="#holiday-menu">БАНКЕТНОЕ МЕНЮ</a></dt>
+										</dl>
+									</nav>
+									<div class="cafe">
+										<div class="info">
+											<dl>
+												<dt>
+													<i class="icon-chef"></i>
+													<p class="title"><strong>Шеф-повар</strong></p>
+													<p>Мы можем составить для вас индивидуальное меню с учетом особенностей вашего питания.</p>
+												</dt>							
+												<dt>
+													<i class="icon-of"></i>
+													<p class="title"><strong>Официант</strong></p>
+													<p>Приветливо встретит в домашнем кафе. Накроет стол и обеспечит вас всем необходимым.</p>
+												</dt>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="right-col">
+									<section id="set-menu" class="set-menu">
+										<h2>КОМПЛЕКСНОЕ МЕНЮ </h2>
+										<div class="clearfix layout-menu">
+											<div class="left-col">
+												<h5 class="sub-title inner">ПОНЕДЕЛЬНИК</h5>
+												<h5 class="no-transform">Завтрак на выбор</h5>
+												<div class="list-menu">
+													<dl>
+														<dt>
+															<span class="name">Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон</span>
+															<strong>бесплатно</strong>
+														</dt>											
+														<dt>
+															<span class="name"> Каша пшенная + блинчики с джемом</span>
+															<strong>170 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name"> Омлет + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>														
+														<dt>
+															<span class="name">Глазунья + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Творог с джемом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Яичница с беконом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>
+													</dl>
+												</div>
+												<div class="two-cols clearfix">
+													<dl>
+														<dt>
+															<div class="list-menu inner">
+																<dl>
+																	<dt>
+																		<span class="name">Обед</span>
+																		<strong>200 <span class="rub">г</span></strong>
+																		<div class="clear"></div>
+																		<ul>
+																			<li>Салат «Морковный с сухариками» </li>
+																			<li>Суп гороховый с копченостями </li>
+																			<li>Поджарка из свинины</li>
+																			<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
+																			<li>Компот</li>
+																			<li>Печенье, конфеты</li>
+																			<li>Чай «Greenfield», молоко, хлеб</li>
+																		</ul>
+																	</dt>
+																</dl>
+															</div>
+														</dt>											
+														<dt>
+															<div class="list-menu inner">
+																<dl>
+																	<dt>
+																		<span class="name">Детский обед</span>
+																		<strong>200 <span class="rub">г</span></strong>
+																		<div class="clear"></div>
+																		<ul>
+																			<li>Салат «Морковный с сухариками» </li>
+																			<li>Суп гороховый с копченостями </li>
+																			<li>Поджарка из свинины</li>
+																			<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
+																			<li>Компот</li>
+																			<li>Печенье, конфеты</li>
+																			<li>Чай «Greenfield», молоко, хлеб</li>
+																		</ul>
+																	</dt>
+																</dl>
+															</div>
+														</dt>
+														<div class="clear"></div>
+														<dt>
+															<div class="list-menu inner">
+																<dl>
+																	<dt>
+																		<span class="name">Ужин</span>
+																		<strong>200 <span class="rub">г</span></strong>
+																		<div class="clear"></div>
+																		<ul>
+																			<li>Салат «Морковный с сухариками» </li>
+																			<li>Суп гороховый с копченостями </li>
+																			<li>Поджарка из свинины</li>
+																			<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
+																			<li>Компот</li>
+																			<li>Печенье, конфеты</li>
+																			<li>Чай «Greenfield», молоко, хлеб</li>
+																		</ul>
+																	</dt>
+																</dl>
+															</div>
+														</dt>										
+														<dt>
+															<div class="list-menu inner">
+																<dl>
+																	<dt>
+																		<span class="name">Детский ужин</span>
+																		<strong>200 <span class="rub">г</span></strong>
+																		<div class="clear"></div>
+																		<ul>
+																			<li>Салат «Морковный с сухариками» </li>
+																			<li>Суп гороховый с копченостями </li>
+																			<li>Поджарка из свинины</li>
+																			<li>Сложный гарнир (капуста тушеная, картофельное пюре) </li>
+																			<li>Компот</li>
+																			<li>Печенье, конфеты</li>
+																			<li>Чай «Greenfield», молоко, хлеб</li>
+																		</ul>
+																	</dt>
+																</dl>
+															</div>
+														</dt>
+													</dl>
+												</div>
+												<div class="text-center load">
+													<a href="#">
+														<span class="icon-load"></span></br>
+														<span class="border">Показать всю неделю</span>
+													</a>
+												</div>
+											</div>
+											<div class="right-col">
+												<h5 class="sub-title inner pl50">БЛЮДА НА ЗАКАЗ</h5>
+												<div class="special">
+													<dl>
+														<dt>
+															<div class="img">
+																<img src="/img/special1.jpg" alt="">
+															</div>
+															<div class="text">
+																<strong class="name fl-l">Позы домашние</strong>
+																<strong class="fl-r cost">
+																	150
+																	<span class="rub">г</span>
+																</strong>
+																<div class="clear"></div>
+																<p>6 штук</p>
+															</div>
+														</dt>											
+														<dt>
+															<div class="img">
+																<img src="/img/special2.jpg" alt="">
+															</div>
+															<div class="text">
+																<strong class="name fl-l">Пелемени</strong>
+																<strong class="fl-r cost">
+																	150
+																	<span class="rub">г</span>
+																</strong>
+																<div class="clear"></div>
+																<p>в бульоне или со сметаной</p>
+															</div>
+														</dt>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+									<section id="diet-menu" class="diet-menu">
+										<div class="clearfix layout-menu">
+											<div class="left-col">
+												<h2>ДИЕТИЧЕСКОЕ МЕНЮ </h2>
+												<div class="list-menu">
+													<dl>
+														<dt>
+															<span class="name">Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон</span>
+															<strong>бесплатно</strong>
+														</dt>											
+														<dt>
+															<span class="name"> Каша пшенная + блинчики с джемом</span>
+															<strong>170 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name"> Омлет + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>														
+														<dt>
+															<span class="name">Глазунья + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Творог с джемом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Яичница с беконом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>
+													</dl>
+												</div>
+											</div>
+											<div class="right-col">
+												<h5 class="sub-title inner pl50">СОВЕТУЕМ ПОПРОБОВАТЬ</h5>
+												<div class="special">
+													<dl>
+														<dt>
+															<div class="img">
+																<img src="/img/special3.jpg" alt="">
+															</div>
+															<div class="text">
+																<strong class="name fl-l">Позы домашние</strong>
+																<strong class="fl-r cost">
+																	150
+																	<span class="rub">г</span>
+																</strong>
+																<div class="clear"></div>
+																<p>6 штук</p>
+															</div>
+														</dt>											
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+									<section id="children-menu" class="children-menu">
+										<div class="clearfix layout-menu">
+											<div class="left-col">
+												<h2>ДЕТСКОЕ МЕНЮ </h2>
+												<div class="list-menu">
+													<dl>
+														<dt>
+															<span class="name">Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон</span>
+															<strong>бесплатно</strong>
+														</dt>											
+														<dt>
+															<span class="name"> Каша пшенная + блинчики с джемом</span>
+															<strong>170 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name"> Омлет + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>														
+														<dt>
+															<span class="name">Глазунья + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Творог с джемом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Яичница с беконом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>
+													</dl>
+												</div>
+											</div>
+											<div class="right-col">
+												<h5 class="sub-title inner pl50">ДЛЯ САМЫХ МАЛЕНЬКИХ</h5>
+												<div class="special">
+													<dl>
+														<dt>
+															<div class="img">
+																<img src="/img/special4.jpg" alt="">
+															</div>
+															<div class="text">
+																<p class="font-medium mb5"><strong>Удобные детские кресла</strong></p>
+																<p>Ваш малыш будет чувствовать себя комфортно</p>
+															</div>
+														</dt>											
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+									<section id="holiday-menu" class="holiday-menu">
+										<div class="clearfix layout-menu">
+											<div class="left-col">
+												<h2>БАНКЕНОЕ МЕНЮ </h2>
+												<h5 class="no-transform">Горячие блюда</h5>
+												<div class="list-menu">
+													<dl>
+														<dt>
+															<span class="name">Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон</span>
+															<strong>бесплатно</strong>
+														</dt>											
+														<dt>
+															<span class="name"> Каша пшенная + блинчики с джемом</span>
+															<strong>170 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name"> Омлет + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>														
+														<dt>
+															<span class="name">Глазунья + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Творог с джемом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Яичница с беконом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>
+													</dl>
+												</div>
+												<h5 class="no-transform">Салаты</h5>
+												<div class="list-menu">
+													<dl>
+														<dt>
+															<span class="name">Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон</span>
+															<strong>бесплатно</strong>
+														</dt>											
+														<dt>
+															<span class="name"> Каша пшенная + блинчики с джемом</span>
+															<strong>170 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name"> Омлет + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>														
+														<dt>
+															<span class="name">Глазунья + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Творог с джемом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Яичница с беконом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>
+													</dl>
+												</div>
+												<h5 class="no-transform">Холодные закуски</h5>
+												<div class="list-menu">
+													<dl>
+														<dt>
+															<span class="name">Колбасно-сырная нарезка (50 гр.), масло (15 гр.), кофе, чай, молоко, батон</span>
+															<strong>бесплатно</strong>
+														</dt>											
+														<dt>
+															<span class="name"> Каша пшенная + блинчики с джемом</span>
+															<strong>170 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name"> Омлет + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>														
+														<dt>
+															<span class="name">Глазунья + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Творог с джемом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>											
+														<dt>
+															<span class="name">Яичница с беконом + блинчики с джемом</span>
+															<strong>200 <span class="rub">г</span></strong>
+														</dt>
+													</dl>
+												</div>
+											</div>
+											<div class="right-col">
+												<div class="special">
+													<dl>
+														<dt>
+															<div class="img">
+																<img src="/img/special5.jpg" alt="">
+															</div>
+															<div class="text">
+																<p class="font-medium mb5"><strong>Торт для именинника в подарок</strong></p>
+															</div>
+														</dt>											
+														<dt>
+															<div class="img">
+																<img src="/img/special6.jpg" alt="">
+															</div>
+															<div class="text">
+																<p class="font-medium mb5"><strong>Все блюда приготавливаются из натуральных продуктов</strong></p>
+															</div>
+														</dt>											
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section class="form-feedback clearfix">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>																							
+		<div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content no-opc">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="b-feedback-call">
+						<div class="head clearfix"> <!-- + класс active по нажатию на отправить -->
+							<div class="fl-l">
+								<div class="title"><i class="icon-feedback"></i> ЗАКАЗ ЗВОНКА</div>
+							</div>
+							<div class="fl-l text">
+								<p>Остались вопросы? Заполните форму и наш администратор свяжется с вами, чтобы ответить на все ваши вопросы.</p>
+							</div>
+						</div>
+						<section class="form-feedback clearfix"> <!-- + класс active по нажатию на отправить -->
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</section>
+						<section class="message-feedback">
+							<h2 class="mb10">ВАШЕ СООБЩЕНИЕ ОТПРАВЛЕНО</h2>
+							<p><span class="icon-admin"></span>Наш администратор свяжется с вами, чтобы ответить на все ваши</br> вопросы.</p>
+						</section>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="on-drive">
+						<div class="head clearfix"> 
+							<div class="fl-l">
+								<div class="title"><i class="icon-drive"></i> НА ЧЕМ ДОЕХАТЬ</div>
+							</div>
+							<div class="fl-l text">
+								<p>Если вы планируете добраться до нас самостоятельно, то от автовокзала Улан-Удэ (около ТЦ «Пионер») регулярно ходят маршрутные такси и рейсовые автобусы</p>
+							</div>
+						</div>
+						<div class="price">
+							<dl class="clearfix">
+								<dt>
+									<h5>Улан-Удэ — Горячинск</h5>
+									<p>Отправление в 8:00, 9:30, 11:00, 13:00, 15:00, 16:30, 18:00.</p>
+									<p class="cost"><strong>365 <span class="rub">г</span></strong></br> стоимость проезда</p>
+									<p>Справочная автовокзала в Улан-Удэ: +7 951 626-88-88</p>
+								</dt>								
+								<dt>
+									<h5>Горячинск — Улан-Удэ</h5>
+									<p>Отправление в 8:00, 9:30, 11:00, 13:00, 15:00, 16:30, 18:00.</p>
+									<p class="cost"><strong>365 <span class="rub">г</span></strong></br> стоимость проезда</p>
+									<p>Справочная автовокзала в Улан-Удэ: +7 951 626-88-88</p>
+								</dt>
+							</dl>
+						</div>
+					</section>
+				</div>
+				<section class="map drive">
+					<div class="centered">
+						<address>
+							<h2 class="title-border"><i class="icon-action"></i>РАСПОЛОЖЕНИЕ</h2>
+							<p>Улан-Удэ, ул. Корабельная, 32, корп.15</br> +7 951 626-88-88</p>
+						</address>
 					</div>
-		    	</div>
-		    	<div class="centered">
-					<div class="form-feedback">
-						<h4 class="no-transform mb0">Остались еще вопросы?</h4>
-						<p>Мы можем перезвонить вам и все уточнить</p>
+				</section>
+				<section class="form-feedback clearfix centered pb50">
+					<div class="l-col">
+						<div class="title">Остались еще вопросы?</div>
+						<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+					</div>
+					<div class="r-col">
 						<form action="">
 							<dl class="clearfix">
 								<dt>
 									<input type="text" placeholder="Ваше имя">
-									<p class="error-text">Вы не указали свое имя!</p>
+									<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
 								</dt>
 								<dt><input type="tel" placeholder="Номер телефона"></dt>
-								<dt><button type="input" class="btn-def">Отправить</button></dt>
+								<dt><button class="btn-def" type="input">Отправить</button></dt>
 							</dl>
 						</form>
 					</div>
-		    	</div>
-				<a href="#" class="link-desktop centered">
-					<span>Переключить на полную версию сайта</span>
-				</a>
+				</section>
 		    </div>
 		  </div>
+		</div>
+		<div class="modal fade" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<header class="inner">
+		    		<div class="centered pt15 clearfix">
+		    			<img class="fl-l" src="/img/logo-small.png" alt="">
+		    			<nav>
+		    				<dl>
+		    					<dt><a href="#">номера и цены</a></dt>
+		    					<dt><a href="#">кафе</a></dt>
+		    					<dt><a href="#">развлечения и услуги</a></dt>
+		    					<dt><a href="#">расположение</a></dt>
+		    					<dt><a href="#">контакты</a></dt>
+		    				</dl>
+		    			</nav>
+		    			<a href="#" data-dismiss="modal" class="close"></a>
+		    		</div>
+		    	</header>
+				<div class="centered wrapper">
+					<section class="on-drive">
+						<div class="head clearfix"> 
+							<div class="fl-l">
+								<div class="title"><i class="icon-scheme"></i> СХЕМА ПРОЕЗДА</div>
+							</div>
+							<div class="fl-l text">
+								<p>Расстояние от Улан-Удэ до Горячинска — 171 километр.</p>
+								<p>Расстояние от Иркутска до Горячинска — 546 километров.</p>
+								<p>Расстояние от Читы до Горячинска — 842 километра. </p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<h5 class="centered mb20 no-transform">Схема проезда с трассы до нашего гостевого дома </h5>
+				<section class="map drive">
+					<div class="centered">
+						<address>
+							<h2 class="title-border"><i class="icon-action"></i>НАШ АДРЕС</h2>
+							<p>Бурятия, Прибайкальский район, село Горячинск, улица Комсомольская, 5</p>
+						</address>
+					</div>
+				</section>
+				<div class="location-bg centered">
+					<div class="on-drive mb80">
+						<div class="price">
+							<dl class="clearfix">
+								<dt>
+									<h5 class="no-transform mb15">Позаботимся о вашем автомобиле</h5>
+									<p>На территории гостевого дома располагается </br>охраняемая парковка/теплая автостоянка (200 руб/сутки) </p>
+									<p class="cost"><strong>200 <span class="rub">г</span></strong></br> сутки</p>
+								</dt>								
+							</dl>
+						</div>
+					</div>
+					<section class="form-feedback clearfix pb50">
+						<div class="l-col">
+							<div class="title">Остались еще вопросы?</div>
+							<p>Заполните форму и наш администратор свяжется </br>с вами, чтобы ответить на все ваши вопросы</p>
+						</div>
+						<div class="r-col">
+							<form action="">
+								<dl class="clearfix">
+									<dt>
+										<input type="text" placeholder="Ваше имя">
+										<p class="error-text"><i class="error"></i>Вы не указали свое имя.</p>
+									</dt>
+									<dt><input type="tel" placeholder="Номер телефона"></dt>
+									<dt><button class="btn-def" type="input">Отправить</button></dt>
+								</dl>
+							</form>
+						</div>
+					</section>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="form-reserve-fixed">
+			<div class="centered clearfix">
+				<div class="logo fl-l"><a href="#"><img src="/img/logo-color.png" alt=""></a></div>
+				<div class="form-date fl-l">
+					<form action="">
+						<input class="datepicker" type="text" placeholder="дата заезда">
+						<input class="datepicker" type="text" placeholder="дата заезда">
+						<button type="submit">Подобрать номер</button>
+					</form>
+				</div>
+				<a class="close" href="#"></a>
+			</div>
 		</div>		
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>				
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
+ 		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script> 
  		<script type="text/javascript" src="js/jquery.maskedinput.js"></script> 
+ 		<script type="text/javascript" src="js/jquery-ui.js"></script> 
  		<script type="text/javascript" src="js/site.js"></script> 
+ 		<div class="fixed-menu">
+ 			<header class="inner" style="top: 0px;">
+				<div class="centered pt15 clearfix">
+					<img alt="" src="/img/logo-small.png" class="fl-l">
+					<nav>
+						<dl>
+							<dt><a href="#" class="active">номера и цены</a></dt>
+							<dt><a href="#">кафе</a></dt>
+							<dt><a href="#">развлечения и услуги</a></dt>
+							<dt><a href="#">расположение</a></dt>
+							<dt><a href="#">контакты</a></dt>
+						</dl>
+					</nav>
+					<a href="#"><button class="btn-reserve">Забронировать</button></a>
+				</div>
+			</header>
+ 		</div>
 	</body>
 </html>
