@@ -1,67 +1,33 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.owlCarousel').length) carousel();
-	if ($('.owlCarousel2').length) carousel2();
-	if ($('.grid').length) masonry();
-	if ($('.grid2').length) masonry2();
-	if ($('.grid3').length) masonry3();
+	if ($('.carousel').length) carousel();
+	if ($('.carousel-feedback').length) carousel2();
 	if ($('input[type=tel]').length) tel();
-	if ($('.datepicker').length) calendar();
-	if ($('.form-reserve-fixed').length) show();
-	if ($('.navi-room').length) modal();
-	if ($('.modal header').length) fixhead();
-	if ($('.fixed-menu').length) fix();
+	if ($('#wrap').length) jScrollPane();
+	if ($('#wrap').length) jScrollPane2();
+	if ($('.promo').length) Scroll();
+	if ($('.form-order textarea').length) autoHeight();
+	if ($('.carousel-item').length) carousel3();
 });
 
 function carousel()
 {
-	$('.owlCarousel').owlCarousel({
-    margin:30,
-    loop:false,
-    nav:true,
-    navText: '',
-    items: 3,
-	})
+	$('.carousel').slick({
+	  vertical: true,
+	  verticalSwiping: true,
+	  dots: true
+	});
 }
 
 function carousel2()
 {
-	$('.owlCarousel2').owlCarousel({
+	$('.carousel-feedback').owlCarousel({
     margin:30,
     loop:false,
     nav:true,
     navText: '',
     items: 1,
+    autoHeight:true
 	})
-}
-
-function masonry()
-{
-	$('.grid').masonry({
-	  // options
-	  itemSelector: '.grid-item'
-	});
-}
-
-function masonry2()
-{
-	$('#myModal2').on('shown.bs.modal', function () {
-		$('.grid2').masonry({
-		  itemSelector: '.item',
-		  columnWidth: 1,
-		});
-
-	});
-}
-
-function masonry3()
-{
-	$('#myModal9').on('shown.bs.modal', function () {
-		$('.grid3').masonry({
-		  itemSelector: '.item',
-		  columnWidth: 1,
-		});
-
-	});
 }
 
 function tel(){ 
@@ -69,67 +35,53 @@ function tel(){
 	return false; 
 }
 
-function calendar(){
-	$(function(){
-	  $.datepicker.regional['ru'] = {
-	  closeText: 'Закрыть',
-	  prevText: '&#x3c;Пред',
-	  nextText: 'След&#x3e;',
-	  currentText: 'Сегодня',
-	  monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
-	  'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-	  monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
-	  'Июл','Авг','Сен','Окт','Ноя','Дек'],
-	  dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-	  dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-	  dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-	  dateFormat: 'dd.mm.yy',
-	  firstDay: 1,
-	  isRTL: false
-	  };
-	  $.datepicker.setDefaults($.datepicker.regional['ru']); $(".datepicker").datepicker();
+function jScrollPane(){
+	$('#wrap').jScrollPane();
+}
+
+function jScrollPane2(){
+	$('.modal').on('shown.bs.modal', function () {
+	$('#wrap').jScrollPane();
 	});
 }
 
-function show()
-{
-	$(".btn-reserve").click(function() {
-		$(".form-reserve-fixed").addClass('active');
-		return false;
-	});	
-	$(".form-reserve-fixed .close").click(function() {
-		$(".form-reserve-fixed").removeClass('active');
-		return false;
+function Scroll(){
+	$(function() {
+	  function get_random(min, max) {
+	    return Math.floor(Math.random() * (max - min)) + min;
+	  }
+
+	  var
+	    $content = $('html'),
+	    $squares = $('.form-order .black');
+
+	  $('.promo').on('click', 'button', function(e) {
+	    var 
+	      $link = $(this),
+	      mode = $link.data('mode'),
+	      $target = $squares.eq(get_random(0, $squares.length));
+
+	    e.preventDefault();
+	    $.scrollport($target, {
+	      mode: mode,
+	      delta: {
+	        top: 50
+	      }
+	    });
+	  });
 	});
 }
 
-function modal()
-{
-		$('#myModal').on('shown.bs.modal', function () {
-			$(".navi-room").addClass('active');
-			return false;
-		});
-		$("#myModal").click(function() {
-		$(".navi-room").removeClass('active');
-		return false;
-	});	
+function autoHeight(){
+	autosize(document.querySelectorAll('textarea'));
 }
 
-function fixhead()
+function carousel3()
 {
-	$('.modal').on('scroll', function() {
-	var threshold = 60;
-	$('.modal header').css({"top":$(this).scrollTop() + 0});
-	});
-}
-
-function fix()
-{
-	$(window).scroll(function () {
-	    if ($(this).scrollTop() > 800) {
-	        $('.fixed-menu').addClass('active');
-	    } else {
-	        $('.fixed-menu').removeClass('active');
-	    }
-	});
+	$('.carousel-item').owlCarousel({
+    loop:false,
+    nav:true,
+    navText: '',
+    items: 1
+	})
 }
