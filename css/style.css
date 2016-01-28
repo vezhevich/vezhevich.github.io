@@ -61,6 +61,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .rest .item-card .green-left {position: absolute; bottom: 70px; left: 0; width: 311px; height: 278px;}
 .rest .triangle {width: 100%; height: 100px; background: url(/img/triangle1.svg) no-repeat left center; position: absolute; left: 0; bottom: -100px; z-index: 100;}
 
+
 .decor {position: relative; background: url(/img/decor.jpg) no-repeat; background-size: cover; background-attachment: fixed;}
 .decor .triangle {width: 100%; height: 101px; background: url(/img/triangle2.svg) no-repeat left center; position: absolute; left: 0; bottom: -1px; z-index: 100;}
 .decor .bg {width: 100%;}
