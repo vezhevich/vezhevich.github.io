@@ -292,7 +292,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         transform: translate(50%,-50%);}
 .modal.send .text-center .title {font: normal 24px/30px Roboto; color: #d31a53; margin-top: 40px;}
 
-
+.fancybox-skin {padding: 0 !important;}
+.fancybox-nav span {background: url(/img/carousel-navi-inner.png) no-repeat center 0; width: 30px; height: 30px;}
+.fancybox-nav.fancybox-prev span {background-position: center 8px;}
+.fancybox-nav.fancybox-next span {background-position: center -29px;}
+.fancybox-close {background: none; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); text-align: center; top: -12px; right: -50px;}
+.fancybox-close:hover {text-decoration: none;}
+.fancybox-close:before {content: '+'; font-size: 40px; color: #fff; font-weight: 300;}
 
 
 
