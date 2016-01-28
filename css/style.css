@@ -124,8 +124,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .important-stuff dl dt:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
 .important-stuff dl dt:hover .text {background-color: rgba(0,0,0,0.8);}
 .important-stuff dl dt:hover .text h3 {color: #fff;}
-.important-stuff dl dt .teaser {display: none;}
-.important-stuff dl dt:hover .teaser {display: block;}
+.important-stuff dl dt .teaser {opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s;}
+.important-stuff dl dt:hover .teaser {opacity: 1; visibility: visible; transition-delay: 0s;}
 
 .bottom {background-color: #1c2029; position: relative; padding-bottom: 80px; padding-top: 60px;}
 .bottom .triangle {position: absolute; top: -126px; left: 0; width: 100%; height: 126px; background: url(/img/triangles.svg) no-repeat center center;}
