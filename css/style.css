@@ -1,3 +1,8 @@
+button {letter-spacing: 2px;}
+
+.hvr-sweep-to-right::before {background-color: #89002b; border-radius: 3px;}
+.add.hvr-sweep-to-right::before {border-radius: 2px;}
+
 .def {border-radius: 3px; background-color: rgb(199, 12, 70); width: 220px; height: 60px; border: none; color: #fff; font: bold 12px Roboto; text-transform: uppercase; text-align: center;}
 .def:active {padding: 0;}
 
@@ -14,7 +19,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 
 .promo {position: relative;}
 .promo .link {position: absolute; width: 100%; text-align: center; bottom: 160px; left: 0; z-index: 100;}
-.promo .link a {font: bold 12px/30px Roboto; color: #d31a53; text-transform: uppercase;}
+.promo .link a {font: bold 12px/30px Roboto; color: #d31a53; text-transform: uppercase; letter-spacing: 2px;}
 .promo .link a:hover {text-decoration: none;}
 .promo .link a i {vertical-align: middle;}
 .promo .bg {width: 100%;}
@@ -33,10 +38,18 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .rest .normal {margin-top: 65px;}
 .rest .normal .text {width: 450px;}
 .rest article p {font: italic 16px/24px PT Serif; color: #707579;}
-.rest article h3 {font: normal 24px/30px Roboto; position: relative; display: inline-block; zoom: 1; *display: inline;}
-.rest article h3 .plus {display: inline-block; zoom: 1; *display: inline; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; text-align: center; background-color: #D31953; vertical-align: middle; margin-left: 30px; position: absolute; right: -60px; top: -5px; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s;}
-.rest article h3 .plus i {color: #fff; line-height: 40px;}
-.rest article:hover h3 .plus {opacity: 1; visibility: visible; transition-delay: 0s;}
+.h-link {font: normal 24px/30px Roboto; position: relative; display: inline-block; zoom: 1; *display: inline;}
+.h-link a {color: #9b6d25;}
+.h-link a:hover {text-decoration: none;}
+.h-link a:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
+.h-link.inner a {color: #e2c18e;}
+.h-link.white a {color: #fff;}
+
+.rest .hover-link:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
+
+.link-plus {display: block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; text-align: center; background-color: #D31953; vertical-align: middle; margin-left: 30px; position: absolute; right: -60px; top: -5px; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s;}
+.link-plus i {color: #fff; line-height: 40px;}
+
 .rest .inner .wrapper {padding-top: 60px; padding-left: 40px;}
 .rest .inner .col {background-color: rgb(247, 242, 236); height: 280px; position: relative;}
 .rest .inner .col:last-child {background-color: rgb(237, 230, 221);}
@@ -46,18 +59,19 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .rest .item-card {position: relative;}
 .rest .item-card .green-right {position: absolute; top: -100px; right: 0; width: 213px; height: 393px;}
 .rest .item-card .green-left {position: absolute; bottom: 70px; left: 0; width: 311px; height: 278px;}
-.rest .triangle {width: 100%; height: 100px; background: url(/img/triangle1.png) no-repeat left center; position: absolute; left: 0; bottom: -100px; z-index: 100;}
+.rest .triangle {width: 100%; height: 100px; background: url(/img/triangle1.svg) no-repeat left center; position: absolute; left: 0; bottom: -100px; z-index: 100;}
 
-.decor {position: relative;}
-.decor .triangle {width: 100%; height: 100px; background: url(/img/triangle2.png) no-repeat left center; position: absolute; left: 0; bottom: 0px; z-index: 100;}
+.decor {position: relative; background: url(/img/decor.jpg) no-repeat center center; background-size: cover;}
+.decor .triangle {width: 100%; height: 101px; background: url(/img/triangle2.svg) no-repeat left center; position: absolute; left: 0; bottom: -1px; z-index: 100;}
 .decor .bg {width: 100%;}
-.decor .content {position: absolute; top: 100px; width: 100%; }
-.decor .content .bg-text {background: url(/img/experience.png) no-repeat 110px 33px; padding-top: 100px;}
+.decor .content {top: 100px; width: 100%; }
+.decor .content .bg-text {background: url(/img/experience.png) no-repeat 110px 132px; padding-top: 200px; padding-bottom: 200px;}
 .decor .teaser {width: 300px;}
 .decor .teaser p {color: #fff;}
 .decor h2 {margin-bottom: 60px;}
 .decor .carousel {width: 380px; margin: 0 auto;}
 .decor .carousel .item {text-align: center; position: relative; margin-bottom: 30px;}
+.decor .carousel .item:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
 .decor .carousel .item .text {position: absolute; width: 380px; bottom: 40px; text-align: left; padding: 40px; background-color: rgba(103, 72, 105, 0.8);} 
 .decor .carousel .item .text p {font: italic 16px/24px PT Serif; color: #fff;}
 .decor .carousel .item img {display: inline-block;}
@@ -70,12 +84,13 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 
 
 .on-table {position: relative; padding-bottom: 30px;}
-.on-table .triangle {width: 100%; height: 100px; background: url(/img/triangle1.png) no-repeat left center; position: absolute; left: 0; bottom: -100px; z-index: 100;}
+.on-table .triangle {width: 100%; height: 100px; background: url(/img/triangle1.svg) no-repeat left center; position: absolute; left: 0; bottom: -100px; z-index: 100;}
 .on-table h2 {margin-bottom: 200px;}
 .on-table .plate {background: url(/img/plate.png) no-repeat; width: 713px; height: 560px; position: absolute; bottom: -120px; left: 50%; margin-left: -440px; z-index: 150;}
 .on-table .text {width: 250px; position: relative; z-index: 100;}
 .on-table .teaser {margin-bottom: 135px;}
 .on-table article {height: 280px; padding: 50px 40px; position: relative; background-color: #fff;}
+.on-table article:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
 .on-table article:nth-child(odd) {background-color: rgb(247, 242, 236);}
 .on-table article p {font: italic 16px/24px PT Serif; color: #707579; margin-bottom: 0;}
 .on-table img {position: absolute;}
@@ -84,24 +99,32 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .on-table .item.inner p {color: #fff;}
 .on-table .item.inner h3 {color: #e2c18e;}
 .on-table .menu {width: 489px; height: 672px; background: url(/img/menu.png) no-repeat; position: relative;}
+.on-table .menu:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
 .on-table .menu .text {position: absolute; width: 380px; bottom: 130px; right: 0; text-align: left; padding: 40px; background-color: rgba(103, 72, 105, 0.8);}
 .on-table .menu .text p {font: italic 16px/24px PT Serif; color: #fff;}
 .on-table .content {position: relative; z-index: 200; background: url(/img/atmos.png) no-repeat 100px 28px; padding-top: 100px;}
 
 .important-stuff {background-color: #462e47; padding-bottom: 160px;}
 .important-stuff .bg-text {background-image: url(/img/nuances.png); background-repeat: no-repeat; background-position: 105px 173px; padding-top: 240px;}
-.important-stuff .text {width: 600px; height: 520px;}
-.important-stuff .text .wrapper {width: 300px;}
-.important-stuff .text p {color: #fff;}
-.important-stuff dl dt {float: left; width: 298px; height: 259px; background: #fff; margin-left: 2px; margin-bottom: 2px; overflow: hidden; position: relative;}
+.important-stuff .b-text {width: 600px; height: 520px;}
+.important-stuff .b-text .wrapper {width: 300px;}
+.important-stuff .b-text p {color: #fff;}
+.important-stuff dl dt {float: left; width: 298px; height: 259px; background: #fff; margin-left: 2px; margin-bottom: 2px; position: relative;}
+.important-stuff dl dt a {display: block;}
 .important-stuff dl dt.w600 {width: 598px;}
-.important-stuff dl dt .text {position: absolute; top: 35px; left: 40px; width: 225px;}
+.important-stuff dl dt.w600 .text {width: 305px;}
+.important-stuff dl dt.w600:hover .text {background: none;}
+.important-stuff dl dt .text {position: absolute; top:0; left: 0; width: 100%; height: 100%; padding: 35px 40px;}
 .important-stuff dl dt .text h3 {font: normal 24px/30px Roboto;}
 .important-stuff dl dt .text h3.inner {color: #e2c18e;}
 .important-stuff dl dt .text p {font: italic 16px/24px PT Serif; color: #fff;}
+.important-stuff dl dt:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
+.important-stuff dl dt:hover .text {background-color: rgba(0,0,0,0.8);}
+.important-stuff dl dt .teaser {display: none;}
+.important-stuff dl dt:hover .teaser {display: block;}
 
 .bottom {background-color: #1c2029; position: relative; padding-bottom: 80px; padding-top: 60px;}
-.bottom .triangle {position: absolute; top: -131px; left: 0; width: 100%; height: 131px; background: url(/img/triangles.png) no-repeat center center;}
+.bottom .triangle {position: absolute; top: -126px; left: 0; width: 100%; height: 126px; background: url(/img/triangles.svg) no-repeat center center;}
 
 .three-cols dl {margin-left: -26px;}
 .three-cols dl dt {margin-left: 26px; margin-bottom: 30px; width: 380px; display: inline-block; zoom: 1; *display: inline; vertical-align: top;}
@@ -151,6 +174,9 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .form-order textarea:-moz-placeholder {color: #707579; opacity: 1; font: normal 16px Roboto;}
 .form-order textarea::-moz-placeholder {color: #707579; opacity: 1; font: normal 16px Roboto;}
 .form-order textarea:-ms-input-placeholder {color: #707579; opacity: 1; font: normal 16px Roboto;}
+.form-order input::-webkit-input-placeholder {color: #707579;opacity: 1; font: normal 16px Roboto;}
+
+
 .form-order .two-cols dl dt {width: 300px; float: left;}
 .form-order .two-cols span {font: normal 13px/18px Roboto; color: #707579; margin-top: 10px; display: block;}
 .form-order button[type=submit] {width: 300px; height: 60px; border-radius: 3px; background-color: #c70c46; color: #fff; text-transform: uppercase; font: bold 16px Roboto; border: none; letter-spacing: 3px;}
@@ -171,14 +197,20 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .form-order #wrap.list .jspTrack {background-color: #fff;}
 .form-order #wrap.list .jspDrag {border-radius: 2px; width: 4px; background-color: rgb(242, 242, 242);}
 
+
 .social {margin-bottom: 80px;}
 .social .helper {font: normal 16px/20px Roboto; color: #707579; margin-bottom: 26px;}
-.social .icons a {margin-right: 16px;}
+.social .icons a {margin-right: 16px; display: inline-block; width: 60px; height: 60px; border-radius: 3px; text-align: center; line-height: 60px; color: #fff; font-size: 25px; vertical-align: top;}
+.social .icons a.hvr-sweep-to-right::before {background-color: #375272;}
+.social .icons .vk {background-color: rgb(69, 102, 142);}
+.social .icons .insta {background-color: rgb(63, 114, 155);}
 .social .left {margin-right: 104px; margin-top: 60px; margin-left: 40px;}
 .social .right .title {font: normal 24px/60px Roboto; color: #fff; margin-bottom: 0;}
 .social .right input[type=email] {font: normal 16px Roboto; color: #707579; border-radius: 3px; background: #fff;  border: none; width: 600px; height: 60px; border: none; padding: 0 70px 0 20px;}
 .social .right form {position: relative;}
-.social .right button[type=submit] {position: absolute; background: none; border: none; color: #c70c46; right: 0; top: 0; width: 60px; height: 60px;}
+.social .right button[type=submit] {position: absolute; background: none; border: none; color: #c70c46; right: 0; top: 0; width: 60px; height: 60px; padding: 0;}
+.social .right button[type=submit] i {line-height: 60px;}
+.social input::-webkit-input-placeholder {color: #707579;opacity: 1; font: normal 16px Roboto;}
 
 .b-phone {position: relative; overflow: hidden; font: normal 24px Roboto; color: #e2c18e; text-align: center; margin-bottom: 40px;}
 .b-phone i {vertical-align: middle; margin-right: 20px; color: #707579;}
@@ -207,6 +239,7 @@ header.inner .def {width: 180px; height: 40px; letter-spacing: 1px; position: ab
 .b-content .head {padding-top: 70px; margin-bottom: 120px;}
 
 button.add {font: bold 12px Roboto; color: #d31a53; text-transform: uppercase; border: 1px solid rgba(211, 26, 83, 1); border-radius: 3px; background-color: rgba(211, 26, 83, 0); width: 300px; height: 60px; position: relative;}
+button.add:hover {border-color: #89002b;}
 button.add i {position: absolute; left: 20px; top: 17px;}
 button.added {border:1px solid rgba(155, 109, 37, 0.3); background-color: rgba(211, 26, 83, 0); font: bold 12px Roboto; color: #9b6d25; text-transform: uppercase; border-radius: 3px; width: 300px; height: 60px; position: relative;}
 button.added i {position: absolute; left: 20px; top: 17px;}
@@ -215,13 +248,17 @@ button.added i {position: absolute; left: 20px; top: 17px;}
 .b-content button.add {margin-left: 150px; margin-top: 35px;}
 .b-content button.added {margin-left: 150px; margin-top: 35px;}
 .b-content .item-list {margin-bottom: 120px;}
-.b-content .item-list .item .shadow {background: url(/img/shadow.png); width: 100%; height: 80px; position: absolute; bottom: 0; left: 0;}
+.b-content .item-list .item .shadow {width: 100%; height: 80px; position: absolute; bottom: 0; left: 0;
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */}
 .b-content .item-list .owl-controls .owl-dots {text-align: center; position: absolute; width: 100%; bottom: 25px; left: 0;}
 .b-content .item-list .owl-controls .owl-dots .owl-dot {width: 12px; height: 12px; margin: 0 5px; display: inline-block; zoom: 1; *display: inline; font-size: 0; background: url(/img/carousel-navi-inner.png) no-repeat 0 -74px;}
 .b-content .item-list .owl-controls .owl-dots .owl-dot.active {background-position: 0 -110px;}
-.b-content .item-list .owl-controls .owl-nav div {background: url(/img/carousel-navi-inner.png) no-repeat 0 0; width: 8px; height: 13px; position: absolute; bottom: 25px; z-index: 100;}
-.b-content .item-list .owl-controls .owl-nav .owl-prev {left: 25px; background-position: 0 0;}
-.b-content .item-list .owl-controls .owl-nav .owl-next {right: 25px; background-position: 0 -37px;}
+.b-content .item-list .owl-controls .owl-nav div {background: url(/img/carousel-navi-inner.png) no-repeat center 0; width: 30px; height: 30px; position: absolute; bottom: 15px; z-index: 100;}
+.b-content .item-list .owl-controls .owl-nav .owl-prev {left: 15px; background-position: center 8px;}
+.b-content .item-list .owl-controls .owl-nav .owl-next {right: 15px; background-position: center -29px;}
 .b-content article {background-color: #f7f2ec; height: 600px;}
 .b-content .item-list .text {position: relative; height: 600px; width: 600px;}
 .b-content .item-list .text .wrapper {width: 300px; position: absolute; margin: 0 auto; top: 50%; -webkit-transform: translate(50%,-50%);
@@ -229,20 +266,21 @@ button.added i {position: absolute; left: 20px; top: 17px;}
         transform: translate(50%,-50%);}
 .b-content .item-list .text button {margin-left: 0;}
 .b-content .item-list .text h3 {font-family: Roboto;}
-.b-content .item-list .text p {font: normal 16px/24px Roboto; color: #707579;}
+.b-content .item-list .text p {font: normal 16px/25px Roboto; color: #707579;}
 
-.b-content .bottom-info button.order {width: 600px; height: 80px; border-radius: 3px; background-color: rgb(199, 12, 70); color: #fff; font: normal 16px/30px Roboto; letter-spacing: 2px; text-transform: uppercase; border: none; position: relative;}
+.b-content .bottom-info button.order {width: 600px; height: 80px; border-radius: 3px; background-color: rgb(199, 12, 70); color: #fff; font: bold 16px/30px Roboto; letter-spacing: 2px; text-transform: uppercase; border: none; position: relative;}
 .b-content .bottom-info button.order i {position: absolute; right: 30px; top: 50%; margin-top: -10px;}
-.b-content .bottom-info .link {font: bold 16px/30px Roboto; text-transform: uppercase; color: #c70c46; margin-top: 25px; display: block;}
+.b-content .bottom-info .link {font: bold 16px/30px Roboto; text-transform: uppercase; color: #c70c46; margin-top: 25px; display: block; letter-spacing: 2px;}
 .b-content .bottom-info .link:hover {text-decoration: none;}
 .b-content .bottom-info .link i {vertical-align: middle; margin-right: 20px; height: 30px;}
 
 
 .modal .form-order {width: 1200px; margin-bottom: 0;}
-.modal .modal-dialog {width: 1200px; height: 700px;}
+.modal .modal-dialog {width: 1200px; height: 700px; margin: 50px auto;}
 .modal .modal-content {height: 700px; border: none; border-radius: 0;}
-.modal .close {position: absolute; top: 0px; right: 10px; z-index: 100; font-size: 40px; font-weight: 300;}
-
+.modal .close {position: absolute; top: -50px; right: 10px; z-index: 100; font-size: 40px; font-weight: 300;color: #fff;}
+.modal-backdrop {background-color: #1c2029;}
+.modal-backdrop.in {opacity: 0.8;}
 
 .modal.send .modal-content {height: 700px; position: relative; background-color: #f7f2ec;}
 .modal.send .text-center {width: 600px; position: absolute; margin: 0 auto; top: 50%; -webkit-transform: translate(50%,-50%);

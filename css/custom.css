@@ -1,10 +1,10 @@
 html {-webkit-font-smoothing: antialiased; height: 100%;}
 
-body {font-family: Roboto, sans-serif; height: 100%; width: 100%; background-color: #fff;}
+body {font-family: Roboto, sans-serif; height: 100%; width: 100%; background-color: #fff; min-width: 1260px;}
 
 strong {font-weight: bold;} 
 
-*::-webkit-input-placeholder {color: #707579;opacity: 1; font: normal 16px/60px Roboto;}
+*::-webkit-input-placeholder {color: #707579; opacity: 1; font: normal 16px/60px Roboto;}
 *:-moz-placeholder {color: #707579; opacity: 1; font: normal 16px/60px Roboto;}
 *::-moz-placeholder {color: #707579; opacity: 1; font: normal 16px/60px Roboto;}
 *:-ms-input-placeholder {color: #707579; opacity: 1; font: normal 16px/60px Roboto;}

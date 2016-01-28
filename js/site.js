@@ -23,7 +23,7 @@ function carousel2()
 {
 	$('.carousel-feedback').owlCarousel({
     margin:30,
-    loop:false,
+    loop:true,
     nav:true,
     navText: '',
     items: 1,
@@ -80,7 +80,7 @@ function autoHeight(){
 function carousel3()
 {
 	$('.carousel-item').owlCarousel({
-    loop:false,
+    loop:true,
     nav:true,
     navText: '',
     items: 1
