@@ -1,5 +1,5 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.carousel').length) carousel();
+	// if ($('.carousel').length) carousel();
 	if ($('.carousel-feedback').length) carousel2();
 	if ($('input[type=tel]').length) tel();
 	if ($('#wrap').length) jScrollPane();
