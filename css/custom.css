@@ -1,6 +1,6 @@
 html {-webkit-font-smoothing: antialiased; height: 100%;}
 
-body {font-family: Roboto, sans-serif; height: 100%; width: 100%; background-color: #fff; min-width: 1260px;}
+body {font-family: Roboto, sans-serif; width: 100%; background-color: #fff; min-width: 1260px;}
 
 strong {font-weight: bold;} 
 
