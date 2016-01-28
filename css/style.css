@@ -72,6 +72,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .decor .carousel {width: 380px; margin: 0 auto;}
 .decor .carousel .item {text-align: center; position: relative; margin-bottom: 100px;}
 .decor .carousel .item:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
+.decor .carousel .item:last-child {margin-bottom: 0;}
 .decor .carousel .item .text {position: absolute; width: 380px; bottom: 40px; text-align: left; padding: 40px; background-color: rgba(103, 72, 105, 0.8);} 
 .decor .carousel .item .text p {font: italic 16px/24px PT Serif; color: #fff;}
 .decor .carousel .item img {display: inline-block;}
