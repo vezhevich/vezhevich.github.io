@@ -1,6 +1,6 @@
 button {letter-spacing: 2px;}
 
-.hvr-sweep-to-right::before {background-color: #89002b; border-radius: 3px;}
+.hvr-sweep-to-right::before {background-color: #b60b41; border-radius: 3px;}
 .add.hvr-sweep-to-right::before {border-radius: 2px;}
 
 .def {border-radius: 3px; background-color: rgb(199, 12, 70); width: 220px; height: 60px; border: none; color: #fff; font: bold 12px Roboto; text-transform: uppercase; text-align: center;}
@@ -61,7 +61,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .rest .item-card .green-left {position: absolute; bottom: 70px; left: 0; width: 311px; height: 278px;}
 .rest .triangle {width: 100%; height: 100px; background: url(/img/triangle1.svg) no-repeat left center; position: absolute; left: 0; bottom: -100px; z-index: 100;}
 
-.decor {position: relative; background: url(/img/decor.jpg) no-repeat center center; background-size: cover;}
+.decor {position: relative; background: url(/img/decor.jpg) no-repeat; background-size: cover; background-attachment: fixed;}
 .decor .triangle {width: 100%; height: 101px; background: url(/img/triangle2.svg) no-repeat left center; position: absolute; left: 0; bottom: -1px; z-index: 100;}
 .decor .bg {width: 100%;}
 .decor .content {top: 100px; width: 100%; }
@@ -120,6 +120,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .important-stuff dl dt .text p {font: italic 16px/24px PT Serif; color: #fff;}
 .important-stuff dl dt:hover .link-plus {opacity: 1; visibility: visible; transition-delay: 0s;}
 .important-stuff dl dt:hover .text {background-color: rgba(0,0,0,0.8);}
+.important-stuff dl dt:hover .text h3 {color: #fff;}
 .important-stuff dl dt .teaser {display: none;}
 .important-stuff dl dt:hover .teaser {display: block;}
 
@@ -240,7 +241,7 @@ header.inner .def {width: 180px; height: 40px; letter-spacing: 1px; position: ab
 .b-content .head {padding-top: 70px; margin-bottom: 120px;}
 
 button.add {font: bold 12px Roboto; color: #d31a53; text-transform: uppercase; border: 1px solid rgba(211, 26, 83, 1); border-radius: 3px; background-color: rgba(211, 26, 83, 0); width: 300px; height: 60px; position: relative;}
-button.add:hover {border-color: #89002b;}
+button.add:hover {border-color: #b60b41;}
 button.add i {position: absolute; left: 20px; top: 17px;}
 button.added {border:1px solid rgba(155, 109, 37, 0.3); background-color: rgba(211, 26, 83, 0); font: bold 12px Roboto; color: #9b6d25; text-transform: uppercase; border-radius: 3px; width: 300px; height: 60px; position: relative;}
 button.added i {position: absolute; left: 20px; top: 17px;}
@@ -267,7 +268,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         transform: translate(50%,-50%);}
 .b-content .item-list .text button {margin-left: 0;}
 .b-content .item-list .text h3 {font-family: Roboto;}
-.b-content .item-list .text p {font: normal 16px/25px Roboto; color: #707579;}
+.b-content .item-list .text p {font: 300 16px/25px Roboto; color: #707579;}
 
 .b-content .bottom-info button.order {width: 600px; height: 80px; border-radius: 3px; background-color: rgb(199, 12, 70); color: #fff; font: bold 16px/30px Roboto; letter-spacing: 2px; text-transform: uppercase; border: none; position: relative;}
 .b-content .bottom-info button.order i {position: absolute; right: 30px; top: 50%; margin-top: -10px;}
