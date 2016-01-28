@@ -17,14 +17,13 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 
 
 
-.promo {position: relative;}
+.promo {position: relative; min-height: 600px;}
 .promo .link {position: absolute; width: 100%; text-align: center; bottom: 160px; left: 0; z-index: 100;}
 .promo .link a {font: bold 12px/30px Roboto; color: #d31a53; text-transform: uppercase; letter-spacing: 2px;}
 .promo .link a:hover {text-decoration: none;}
 .promo .link a i {vertical-align: middle;}
 .promo .bg {width: 100%;}
 .promo .wrapper {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.promo .wrapper .centered {min-height: 600px;}
 .promo .logo {margin-top: 26px; float: left;}
 .promo .phone {margin-top: 20px; float: right; font: normal 24px/25px Roboto; color: #fff;}
 .promo .text {width: 600px; margin-top: 75px;}
