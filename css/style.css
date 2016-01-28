@@ -24,6 +24,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Ex
 .promo .link a i {vertical-align: middle;}
 .promo .bg {width: 100%;}
 .promo .wrapper {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.promo .wrapper .centered {min-height: 600px;}
 .promo .logo {margin-top: 26px; float: left;}
 .promo .phone {margin-top: 20px; float: right; font: normal 24px/25px Roboto; color: #fff;}
 .promo .text {width: 600px; margin-top: 75px;}
