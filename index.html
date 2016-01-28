@@ -11,6 +11,7 @@
 		<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
 		<link href="css/hover.css" rel="stylesheet" type="text/css">
 		<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -42,7 +43,7 @@
 					<div class="fl-l w50 example">
 						<h2 class="pl150 h-gradient">По пути<br> в ресторан <i>1/4</i></h2>
 					</div>
-					<div class="fl-l w50">
+					<div class="fl-l w50 wow fadeInUp" data-wow-duration="1.5s">
 						<p>Впечатление о кафе или ресторане часто начинает складываться раньше момента посещения: люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением, написанным вручную, а автомобиль напоминает о вас по всему городу.</p>
 					</div>
 				</div>
@@ -56,7 +57,7 @@
 						<div class="fl-l w50">
 							<div class="pl150 text">
 								<h3 class="h-link"><a href="inner-page.html">Вывеска <span class="link-plus"><i class="material-icons">add</i></span></a></h3>
-								<p>Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
+								<p class="wow fadeInUp">Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
 							</div>
 						</div>
 					</div>
@@ -67,7 +68,7 @@
 							<div class="wrapper">
 								<div class="text">
 									<h3 class="h-link"> <a href="inner-page.html">Штендер  <span class="link-plus"><i class="material-icons">add</i></span></a></h3>
-									<p>Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
+									<p class="wow fadeInUp">Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
 								</div>
 							</div>
 							<img src="/img/pill.png" alt="">
@@ -76,7 +77,7 @@
 							<div class="wrapper">
 								<div class="text">
 									<h3 class="h-link"><a href="inner-page.html">Ростовая фигура <span class="link-plus"><i class="material-icons">add</i></span></a></h3>
-									<p>Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
+									<p class="wow fadeInUp">Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
 								</div>
 							</div>
 							<img src="/img/shape.png" alt="">
@@ -89,7 +90,7 @@
 						<div class="fl-l w50">
 							<div class="pl150 text">
 								<h3 class="h-link"><a href="inner-page.html">Брендирование</br> автомобиля <span class="link-plus"><i class="material-icons">add</i></span></a></h3>
-								<p>Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
+								<p class="wow fadeInUp">Люди оценивают заведение по яркой вывеске, замечают оригинальный штендер с горячим предложением.</p>
 							</div>
 						</div>
 					</div>
@@ -560,6 +561,7 @@
  		<script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
  		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
  		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+ 		<script type="text/javascript" src="js/wow.js"></script>
  		<script type="text/javascript" src="js/site.js"></script>
  		<script>
  			$(".sticky_column").stick_in_parent();
@@ -572,5 +574,8 @@
  				jQuery("a").fancybox();
  			});
  		</script>
+ 		<script>
+	      new WOW().init();
+	    </script>
  	</body>
 </html>
