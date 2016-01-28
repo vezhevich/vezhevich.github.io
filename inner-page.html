@@ -11,6 +11,7 @@
 		<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
 		<link href="css/hover.css" rel="stylesheet" type="text/css">
 		<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -39,7 +40,7 @@
 						<button class="add hvr-sweep-to-right"><i class="material-icons">add</i>Заказать</button>
 					</div>
 					<div class="fl-l w50">
-						<p>Меню — витрина ресторана. Мы знаем, как сделать так, чтобы ваше меню продавало больше. Меню — это не прейскурант, оно должно быть как книга, которую хочется прочитать до конца. Открываешь ее и попадаешь на банкет, столы ломятся, хочется попробовать все и сразу. Меню должно быть вкусным. </p>
+						<p class="wow fadeInUp" data-wow-duration="1.5s">Меню — витрина ресторана. Мы знаем, как сделать так, чтобы ваше меню продавало больше. Меню — это не прейскурант, оно должно быть как книга, которую хочется прочитать до конца. Открываешь ее и попадаешь на банкет, столы ломятся, хочется попробовать все и сразу. Меню должно быть вкусным. </p>
 					</div>
 				</div>
 				<div class="item-list">
@@ -76,7 +77,7 @@
 							<div class="text">
 								<div class="wrapper">
 									<h3>Меню на пластике</h3>
-									<p>Самый долговечный и практичный вид меню. Если оно используется в помещениях с высокой влажностью, то это точно ваш вариант. Листы собираются на пружинку и могут быть как матовыми, так и глянцевыми.</p>
+									<p class="wow fadeInUp" data-wow-duration="1.5s">Самый долговечный и практичный вид меню. Если оно используется в помещениях с высокой влажностью, то это точно ваш вариант. Листы собираются на пружинку и могут быть как матовыми, так и глянцевыми.</p>
 									<button class="add hvr-sweep-to-right"><i class="material-icons">add</i>Заказать</button>
 								</div>
 							</div>
@@ -115,7 +116,7 @@
 							<div class="text">
 								<div class="wrapper">
 									<h3>Меню на флексбинде</h3>
-									<p>Пожалуй самое удобное исполнение меню. Оно раскрывается в корешке на 180 градусов, не заламывается и не рвется. Картонная обложка и крепление на болтах выглядят презентабельно и служат долго. </p>
+									<p class="wow fadeInUp" data-wow-duration="1.5s">Пожалуй самое удобное исполнение меню. Оно раскрывается в корешке на 180 градусов, не заламывается и не рвется. Картонная обложка и крепление на болтах выглядят презентабельно и служат долго. </p>
 									<button class="add hide hvr-sweep-to-right"><i class="material-icons">add</i>Заказать</button>
 									<button class="added"><i class="material-icons">check</i>Добавлено к заказу</button>
 								</div>
@@ -155,7 +156,7 @@
 							<div class="text">
 								<div class="wrapper">
 									<h3>Меню на бумаге</h3>
-									<p>Самый демократичный вариант. Отлично подойдет для бизнес-ланчей, специальных предложений или если у вас часто происходят изменения в ассортименте или ценах.</p>
+									<p class="wow fadeInUp" data-wow-duration="1.5s">Самый демократичный вариант. Отлично подойдет для бизнес-ланчей, специальных предложений или если у вас часто происходят изменения в ассортименте или ценах.</p>
 									<button class="add hvr-sweep-to-right"><i class="material-icons">add</i>Заказать</button>
 								</div>
 							</div>
@@ -382,14 +383,21 @@
  		<script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
  		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
  		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+ 		<script type="text/javascript" src="js/wow.js"></script>
  		<script type="text/javascript" src="js/site.js"></script>
  		<script>
  			$(".sticky_column").stick_in_parent();
+ 		</script> 		
+ 		<script>
+ 			$(".fix").stick_in_parent();
  		</script>
  		<script type="text/javascript">
  			jQuery(document).ready(function() {
  				jQuery("a").fancybox();
  			});
- 		</script>	
+ 		</script>
+ 		<script>
+	      new WOW().init();
+	    </script>	
  	</body>
 </html>
