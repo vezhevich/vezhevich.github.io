@@ -159,6 +159,7 @@ function showform(){
 	$('.list-rooms').each(function() {
     $(this).find('article .show-btn').each(function(i) {
       $(this).click(function(){
+      	$(this).toggleClass('active');
         $('.form-reserved-rooms').addClass('active').siblings().removeClass('active')
           .closest('.list-rooms').find('.form-reserved-rooms').removeClass('active').eq(i).addClass('active');
       });

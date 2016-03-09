@@ -465,6 +465,9 @@ a.next-room:hover {background-position: -56px -56px;}
 .list-rooms .title a {border-bottom: 1px solid #D2AC67;}
 .list-rooms .title a:hover {text-decoration: none;}
 .list-rooms .cost-one {margin-bottom: 30px;}
+.list-rooms .show-btn .hd {display: none;}
+.list-rooms .show-btn.active .hd {display: block;}
+.list-rooms .show-btn.active .sh {display: none;}
 
 .form-reserved-rooms input[type="checkbox"] {display:none;}
 .form-reserved-rooms input[type="checkbox"] + label {cursor: pointer; display: block; padding-left: 45px; padding-top: 10px; padding-bottom: 10px; position: relative; font: normal 14px LetoSans; color: #262626;}
@@ -476,7 +479,7 @@ a.next-room:hover {background-position: -56px -56px;}
 .form-reserved-rooms .list li {padding-left: 0;}
 .form-reserved-rooms .list li::before {display: none;}
 .form-reserved-rooms span {font: 300 13px Open Sans; color: #505050; display: table-cell; padding-bottom: 20px;}
-.form-reserved-rooms dt {display: table;}
+.form-reserved-rooms dt {display: table; position: relative;}
 .form-reserved-rooms .left {width: 190px;}
 .form-reserved-rooms .right {padding-left: 30px;}
 .form-reserved-rooms .title {font: bold 18px/1.2 LetoSans; color: #262626;}
@@ -491,7 +494,9 @@ a.next-room:hover {background-position: -56px -56px;}
 .form-reserved-rooms {display: none; }
 .form-reserved-rooms.active {display: block;}
 
-.form-reserved-rooms b {display: block; width: 30px; height: 36px; float: left;margin-right: 20px; background: url(/img/sprite.png) no-repeat 0 -416px;}
+.form-reserved-rooms .helper {position: absolute; width: 290px; right: -330px; top: 0; font: 300 13px Open Sans;}
+.form-reserved-rooms .icon {display: block; width: 100%; height: 36px; float: left;margin-right: 20px; background: url(/img/sprite.png) no-repeat 0 -416px; margin-bottom: 10px;}
+
 
 .custom {width: 70px; height: 38px;}
 .jq-selectbox__select-text {width: 70px !important; height: 38px !important;}
