@@ -13,14 +13,6 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
 		rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery('button').click(function() {
-				jQuery.scrollTo('#target-el');
-			});
-		});
-		</script>
     </head>
 	<body class="bg-main">
 		<header class="main">
@@ -2102,8 +2094,8 @@
 											</dt>
 										</dl>
 									</div>
-									<a href="#"><button class="btn-def btn-nobg show-btn mb30">Забронировать</button></a>
-									<div id="target" class="form-reserved-rooms clearfix">
+									<a href="#"><button class="btn-def btn-nobg show-btn mb30"><span class="sh">Забронировать</span> <span class="hd">Скрыть форму</span></button></a>
+									<div class="form-reserved-rooms clearfix">
 										<form action="">
 											<h3 class="no-transform">Бронируем номер</h3>
 											<dl>
@@ -2299,6 +2291,10 @@
 													<span class="right">
 														<input class="inner-text" type="text">
 													</span>
+													<div class="helper">
+														<div class="icon"></div>
+														Отправкой формы вы подтверждаете бронирование номера на выбранный период. После отправки номера с вами свяжется администратор для согласования условий оплаты.
+													</div>
 												</dt>												
 												<dt>
 													<span class="left title">Номер телефона</span>
