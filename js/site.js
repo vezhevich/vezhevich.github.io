@@ -1,19 +1,15 @@
 if (window.jQuery) $(document).ready(function() {
 	if ($('.owlCarousel').length) carousel();
+	if ($('.navigation').length) slideToggle();
 	if ($('.owlCarousel2').length) carousel2();
-	if ($('.grid').length) masonry();
-	if ($('.grid2').length) masonry2();
-	if ($('.grid3').length) masonry3();
+	if ($('.owlCarousel3').length) carousel3();
 	if ($('input[type=tel]').length) tel();
-	if ($('.datepicker').length) calendar();
-	if ($('.form-reserve-fixed').length) show();
-	if ($('.navi-room').length) modal();
-	if ($('.modal header').length) fixhead();
-	if ($('.fixed-menu').length) fix();
-	if ($('.reserved-room .form-date').length) showdate();
+	if ($('.modal').length) show();
+	if ($('.show-btn').length) showbtn();
 	if ($('select.custom').length) sel();
-	if ($('.form-reserved-rooms').length) showform();
-	if ($('.show-message').length) showmessage();
+	if ($('.datepicker').length) calendar();
+	if ($('.btn-reserved').length) btnreserved();
+	if ($('.anchor').length) up();
 });
 
 function carousel()
@@ -23,9 +19,29 @@ function carousel()
     loop:false,
     nav:true,
     navText: '',
-    items: 3,
+	responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:2,
+	        },
+	        321:{
+	            items:2,
+	            margin:20,
+	        }
+	    }
 	})
 }
+
+function slideToggle()
+{
+	$(".hamb").click(function() {
+		$(this).addClass('active');
+		$(".navigation").slideToggle();
+		$("header").toggleClass('active');
+		return false;
+	});	
+}
+
 
 function carousel2()
 {
@@ -35,42 +51,52 @@ function carousel2()
     nav:true,
     navText: '',
     items: 1,
+    autoHeight:true
 	})
 }
 
-function masonry()
+function carousel3()
 {
-	$('.grid').masonry({
-	  // options
-	  itemSelector: '.grid-item'
-	});
-}
-
-function masonry2()
-{
-	$('#myModal2').on('shown.bs.modal', function () {
-		$('.grid2').masonry({
-		  itemSelector: '.item',
-		  columnWidth: 1,
-		});
-
-	});
-}
-
-function masonry3()
-{
-	$('#myModal9').on('shown.bs.modal', function () {
-		$('.grid3').masonry({
-		  itemSelector: '.item',
-		  columnWidth: 1,
-		});
-
+	$('.modal').on('shown.bs.modal', function () {
+		$('.owlCarousel3').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    navText: '',
+	    items: 1,
+	    autoHeight:true
+		})
 	});
 }
 
 function tel(){ 
 	$("input[type=tel]").mask("+7 (999) 999-99-99"); 
 	return false; 
+}
+
+function show()
+{
+	$('.modal').on('shown.bs.modal', function () {
+		$("header .closed").addClass('active');
+		return false;
+	});
+	$("header .closed").click(function() {
+		$("header .closed").removeClass('active');
+		$('.modal').modal('hide');
+		return false;
+	});
+}
+
+function showbtn()
+{
+	$(".show-btn").click(function() {
+		$(this).toggleClass('active');
+		$(".wrapper-form").toggleClass('show');
+		return false;
+	});	
+}
+
+function sel(){ 
+	$('select.custom').styler();  
 }
 
 function calendar(){
@@ -95,85 +121,21 @@ function calendar(){
 	});
 }
 
-function show()
+function btnreserved()
 {
-	$(".btn-reserve").click(function() {
-		$(".form-reserve-fixed").addClass('active');
-		return false;
-	});	
-	$(".form-reserve-fixed .close").click(function() {
-		$(".form-reserve-fixed").removeClass('active');
-		return false;
-	});
-}
-
-function modal()
-{
-		$('#myModal').on('shown.bs.modal', function () {
-			$(".navi-room").addClass('active');
-			return false;
-		});
-		$("#myModal").click(function() {
-		$(".navi-room").removeClass('active');
-		return false;
-	});	
-}
-
-function fixhead()
-{
-	$('.modal').on('scroll', function() {
-	var threshold = 60;
-	$('.modal header').css({"top":$(this).scrollTop() + 0});
-	});
-}
-
-function fix()
-{
-	$(window).scroll(function () {
-	    if ($(this).scrollTop() > 800) {
-	        $('.fixed-menu').addClass('active');
-	    } else {
-	        $('.fixed-menu').removeClass('active');
-	    }
-	});
-}
-
-function showdate()
-{
-	$(".select-date .wrap button").click(function() {
-		$(".form-date").addClass('active');
-		$(".wrap").addClass('hide');
-		return false;
-	});	
-	$(".form-date .btn-def").click(function() {
-		$(".form-date").removeClass('active');
-		$(".wrap").removeClass('hide');
-		return false;
-	});
-}
-
-function sel(){ 
-	$('select.custom').styler();  
-}
-
-function showform(){
-	$('.list-rooms').each(function() {
-    $(this).find('article .show-btn').each(function(i) {
-      $(this).click(function(){
-      	$(this).toggleClass('active');
-        $('.form-reserved-rooms').addClass('active').siblings().removeClass('active')
-          .closest('.list-rooms').find('.form-reserved-rooms').removeClass('active').eq(i).addClass('active');
-      });
-    });
-  });
-}
-
-function showmessage()
-{
-	$(".show-message").click(function() {
-		$(".wrapper-room").addClass('hide');
-		$(".form-feedback").addClass('hide');
+	$(".btn-reserved").click(function() {
+		$(".room-detail").addClass('hide');
 		$(".send-message").addClass('show');
 		return false;
 	});	
+}
+
+function up(){
+		$('.modal').on('shown.bs.modal', function () {
+		   $('a.anchor[href^="#"]').click(function(){
+		        var target = $(this).attr('href');
+		        $('.modal').animate({scrollTop: $(target).offset().top}, 1600);
+		        return false; 
+		   }); 	
+	});
 }
