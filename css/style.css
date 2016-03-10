@@ -274,7 +274,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 
 .custom {width: 70px; height: 38px;}
 .jq-selectbox__select-text {width: 70px !important; height: 38px !important;}
-.jq-selectbox__select {border-radius: 0; background: none; box-shadow: none; border: 1px solid #999); color: #505050; text-shadow: none; font: 300 16px/38px LetoSans; border-color: #999; height: 36px;}
+.jq-selectbox__select {border-radius: 0; background: none; box-shadow: none; border: 1px solid #999); color: #505050; text-shadow: none; font: 300 16px/38px LetoSans; border-color: #999; height: 36px; border-radius: 0;}
 .jq-selectbox__select:active {box-shadow: none;}
 .jq-selectbox__select:hover {background: none; border: 1px solid #999);}
 .jq-selectbox__trigger-arrow {border-top-color: #999; opacity: 1;}
@@ -287,7 +287,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .jq-selectbox .placeholder {color: transparent;}
 .jq-selectbox ul {margin-top: 0;}
 
-.reserved-form .datepicker {width: 220px; height: 36px; border: 1px solid #999; padding: 0 50px 0 10px; background-color: transparent; color: #262626; font: 300 14px/36px Open Sans; vertical-align: top; background-image: url(/img/icon-calendar.png); background-repeat: no-repeat; background-position: 95% 8px;}
+.reserved-form .datepicker {width: 220px; height: 36px; border: 1px solid #999; border-radius: 0; padding: 0 50px 0 10px; background-color: transparent; color: #262626; font: 300 14px/36px Open Sans; vertical-align: top; background-image: url(/img/icon-calendar.png); background-repeat: no-repeat; background-position: 95% 8px; -webkit-appearance: none;}
 
 
 .reserved-form .list li:before {display: none;}
@@ -302,7 +302,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .reserved-form .sum {padding-top: 20px;}
 .reserved-form .sum .cost {font-size: 30px; font-weight: bold; }
 .reserved-form .sum .title {margin-bottom: 0;}
-.reserved-form .inner-text {width: 100%; height: 36px; border: 1px solid #999; padding: 0 10px; line-height: 36px; padding-top: 3px;}
+.reserved-form .inner-text {width: 100%; height: 36px; border: 1px solid #999; padding: 0 10px; line-height: 36px; padding-top: 3px; -webkit-appearance: none;}
 
 .reserved-form .subscribe input[type="checkbox"] + label {font: 300 15px/1.5 LetoSans; padding-top: 0;}
 .reserved-form .subscribe input[type="checkbox"] + label::before {top: 2px; margin-top: 0; }
@@ -315,7 +315,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .send-message {background: url(/img/reserved-bg.png) no-repeat 90% 98%;}
 .send-message .list {width: 100%;}
 .send-message .list dl dt {overflow: hidden; position: relative; margin-bottom: 15px;}
-.send-message .list dl dt .name {max-width: 192px; display: block; font: bold 15px LetoSans; float: left; background: #fff; position: relative; z-index: 50; padding-right: 10px; color: #262626;}
+.send-message .list dl dt .name {max-width: 155px; display: block; font: bold 15px LetoSans; float: left; background: #fff; position: relative; z-index: 50; padding-right: 10px; color: #262626;}
 .send-message .list dl dt strong {float: right; padding-left: 10px; background: #fff; position: relative; z-index: 50; font: bold 15px LetoSans; width: 115px;}
 .send-message .list dl dt:after {position: absolute; content: ''; width: 100%; height: 1px; border-bottom: 1px dotted #505050; display: block; left: 0; top: 15px; z-index: 1;}
 
