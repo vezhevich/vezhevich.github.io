@@ -302,7 +302,7 @@ footer .social .group-icon .tw {background-position: -84px 0;}
 .reserved-form .sum {padding-top: 20px;}
 .reserved-form .sum .cost {font-size: 30px; font-weight: bold; }
 .reserved-form .sum .title {margin-bottom: 0;}
-.reserved-form .inner-text {width: 100%; height: 36px; border: 1px solid #999; padding: 0 10px; line-height: 36px; padding-top: 3px; -webkit-appearance: none;}
+.reserved-form .inner-text {width: 100%; height: 36px; border: 1px solid #999; padding: 0 10px; line-height: 36px; padding-top: 3px; -webkit-appearance: none; border-radius: 0;}
 
 .reserved-form .subscribe input[type="checkbox"] + label {font: 300 15px/1.5 LetoSans; padding-top: 0;}
 .reserved-form .subscribe input[type="checkbox"] + label::before {top: 2px; margin-top: 0; }
