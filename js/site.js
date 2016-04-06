@@ -7,7 +7,7 @@ if (window.jQuery) $(document).ready(function() {
 	if ($('.modal').length) show();
 	if ($('.show-btn').length) showbtn();
 	if ($('select.custom').length) sel();
-	if ($('.datepicker').length) calendar();
+	// if ($('.datepicker').length) calendar();
 	if ($('.btn-reserved').length) btnreserved();
 	if ($('.anchor').length) up();
 });
