@@ -1,12 +1,20 @@
 if (window.jQuery) $(document).ready(function() {
-	if ($('.item-card .link').length) slidedown();
+	if ($('.hide-list').length) show();
 });
 
-function slidedown()
-{
-	$(".item-card .link").click(function() {
-		$(this).toggleClass('active')
-		$('.list', $(this).parents('dt')).slideToggle();
-		return false;
+// function show()
+// {
+// 	$(".recommendations .item .link-js").click(function() {
+// 		$(".hide-list").toggleClass('on');
+// 		$(this).toggleClass('active');
+// 		return false;
+// 	});	
+// }
+
+function show(){
+	$(".recommendations .link-js").on("click", function(){
+	$(this).toggleClass("active");
+	$(this).closest(".col").toggleClass("active");
+	return false;
 	});
 }
