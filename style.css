@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Open Sans; /* Гарнитура шрифта */
+    src: url(fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+   }			
+@font-face {
+    font-family: Open Sans; /* Гарнитура шрифта */
+    src: url(fonts/OpenSans-Light.ttf); /* Путь к файлу со шрифтом */
+   }			
+@font-face {
+    font-family: Open Sans; /* Гарнитура шрифта */
+    src: url(fonts/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
+   }			
+@font-face {
+    font-family: Open Sans; /* Гарнитура шрифта */
+    src: url(fonts/OpenSans-Semibold.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {background-color: #f5f8fa;}
+
+#layout {float: right; width: 100%; margin-left: -300px}
+#responsive {margin-left: 320px}
+#extra {float: right; width: 298px; background-color: #fff; border-radius: 5px; background-color: #ffffff;
+border: 1px solid #d3e0e9; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); overflow: hidden;}
+#extra .bg {height: 150px; background: url(/img/uu.jpg) no-repeat center -600px;}
+
+#header {background-color: #eee;}
+
+.profile {text-align: center;}
+.profile img {max-width: 100px; margin-top: -50px; border: 3px solid #fff; border-radius: 100%; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
+
+.item-card dl {margin-left: -15px; margin-top: 0;}
+.item-card dl dt {background: #fff; width: 210px; display: inline-block; vertical-align: top; margin-left: 15px; margin-bottom: 20px; border: 1px solid #d3e0e9; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); overflow: hidden;}
+.item-card dl dt:hover {border: 1px solid #ccc;}
+.item-card .img img {max-width: 100%;}
+.item-card .text {padding: 10px;}
+.item-card .wrapper-item.top {margin-top: -100%;}
+.item-card .wrapper-item {-moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out;}
+
+.fix {position: fixed;}
+
+.item-card .list {padding: 0 10px 10px 10px; display: none;}
+.item-card .list a {display: block;}
+.item-card .link {display: inline-block; zoom: 1; *display: inline; text-decoration: none; border-bottom: 1px dotted #337ab7; font-size: 13px;}
+.item-card .link:hover {border-color: #23527c;}
+.item-card .link.active {border-color: #23527c; color: #23527c;}
