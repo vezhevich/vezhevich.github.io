@@ -1,655 +1,186 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-		<link href="/favicon.ico" rel="icon">
-		<title></title>
-
-		<link href="//fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Serif:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-
-		<link href="/css/social-likes_classic.css" rel="stylesheet">
-		<link href="/css/style.css" rel="stylesheet">
-
-		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="/js/jquery.touchSwipe.min.js"></script>
-		<script src="/js/jquery.sticky-kit.min.js"></script>
-		<script src="/js/social-likes.min.js"></script>
-		<script src="/js/script.js"></script>
-
-	<script src="/js/holder.min.js"></script>
-	</head>
-
-	<body class="clearfix">
-		<main>
-			<h1 class="h-logo">
-				<a href="/" class="logo">
-					<span>webdela.ru</span>
-					<small>блог об интернет-магазинах</small>
-				</a>
-			</h1>
-
-			<article class="blog">
-				<header class="colored">
-					<ul class="breadcrumb clearfix">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Поисковое продвижение</a></li>
-					</ul>
-
-					<h1>Оптимизация карточки товара при продвижении интернет-магазина</h1>
-
-					<div class="date">
-						<time>29 января 2015</time>
-					</div>
-				</header>
-
-				<div class="lead">
-					<p>Каких страниц в интернет-магазине больше всего? Правильно, страниц с товарами. Если разделов, в относительно крупном магазине бывает несколько десятков, то количество товаров легко может перевалить за несколько тысяч. Поэтому оптимизация страниц товара, при правильном подходе даст очень хороший эффект.</p>
-				</div>
-
-				<div class="image clearfix">
-					<img src="holder.js/560x360">
-
-					<p>Иногда есть смысл добавлять текст не только в описание товара и в Title но и в название товара.</p>
-				</div>
-
-				<p>Есть много низко и средне частотных запросов, которые для интернет-магазина вполне тематические, но по которым магазин не ищется или ищется хуже, чем мог бы, в силу простой причины – зачастую в карточке товара нет упоминания соответствующих ключевых слов.</p>
-				<p>В этой статье я расскажу об одном интересном способе продвижения интернет-магазина — настройке автоматической оптимизации карточки товаров под некоторые «события».</p>
-
-				<div class="contents">
-					<h3>Содержание:</h3>
-
-					<ul>
-						<li><a href="#">Идеальная карточка товара</a></li>
-
-						<li><a href="#">Пример реализации</a>
-
-							<ul>
-								<li><a href="#">Событие 1. К товару применена скидка</a></li>
-								<li><a href="#">Событие 2. Если товар относится, к какому-либо празднику</a></li>
-								<li><a href="#">Событие 3. Бесплатная доставка</a></li>
-								<li><a href="#">Событие 4. Если у товара больше изображений чем одно</a></li>
-								<li><a href="#">Событие 5. Если у товаров есть видео</a></li>
-							</ul>
-						</li>
-
-						<li><a href="#">Резюме</a></li>
-					</ul>
-				</div>
-
-				<h2>Идеальная карточка товара</h2>
-				<p>При работе контент-менеджер добавляет товару скидку, выделяет товары в группы под определенные праздники, вносит другие, стандартные для большинства магазинов изменения. </p>
-
-				<p class="lead">Суть в том, чтобы SEO страницы товара настраивалось автоматически, по заранее заложенной схеме, под соответствующие этим изменениям поисковые запросы.</p>
-
-				<p>Например, это могут быть запросы с приставкой «со скидкой», «недорого», «распродажа», а также менее, но все равно продающие приставки: «смотреть фото», «смотреть видео»: — «Вечернее платье купить со скидкой», «Футболка с рисунком панды купить недорого», Маскарадный костюм ведьмы распродажа», «Клубные платья смотреть фото» и т.п.</p>
-				<p>Понятно, что набить каждую карточку товара этими ключевинами — прямая дорога в бан. Поэтому соответствующие <span title="Релева́нтность в информационном поиске — семантическое соответствие поискового запроса и поискового образа документа">ключевые</span> слова должны быть только на релевантных страницах, тех, которые действительно соответствуют этим словам. И это нужно автоматизировать.</p>
-				<p>Делать такую работу вручную — верный способ допустить кучу ошибок, что-то забыв добавить, где-то забыв убрать и т.д. Как результат, неверное описание товара и неверный</p>
-
-				<h3>Событие 1. К товару применена скидка</h3>
-				<p>Если к товарам применена скидка,  то на все детальные страницы таких товаров, добавляются следующие действия:</p>
-
-				<ul>
-					<li>Текст на кнопке «Купить» или «Добавить в корзину»  меняем на «Купить со скидкой».</li>
-					<li>В список характеристик добавляем новую «характеристику» «Купить недорого — да (со скидкой)».</li>
-					<li>В заголовок окна браузера (Title) тоже добавляем соответствующий текст. Например, если раньше заголовок окна браузера был «Черное вечернее платье», то после того, как к товару применили скидку он станет «Черное вечернее платье купить со скидкой».</li>
-				</ul>
-
-				<p>Далее все по реализуем этапно по следующему плану:</p>
-
-				<ol>
-					<li>Можно действия делать зависимыми <a href="#">от размера скидки</a>. Например, если скидка больше 25%, то добавлять текст не «купить со скидкой», а «купить с большой скидкой».</li>
-					<li><a href="#">Принцип похож</a> на тот, когда мета-теги и заголовок формируются автоматически по шаблону из имеющейся информации. Я предлагаю пойти чуть дальше и настроить похожие шаблоны, но для других событий.</li>
-					<li>Принцип похож на тот, когда мета-теги и заголовок формируются автоматически по шаблону из имеющейся информации. Я предлагаю пойти чуть дальше и настроить похожие шаблоны, но для других событий.</li>
-				</ol>
-
-				<div class="image clearfix">
-					<img src="holder.js/600x300">
-				</div>
-				<p class="caption">Если скидка больше 25%, то нужно добавлять текст не «купить со скидкой», а «купить с большой скидкой».</p>
-
-				<h3>Событие 2. Если товар относится, к какому-либо празднику</h3>
-
-				<div class="incut">
-					<p>Иногда есть смысл добавлять текст не только в описание товара и в Title но и в название товара. Чтобы получилось примерно так: «Вечернее длинное платье на новогодний вечер». Чтобы получилось примерно так: «Вечернее длинное платье на новогодний вечер».</p>
-				</div>
-
-				<p>Часто в преддверии праздников (Нового года, 8 марта и т.п.) в интернет-магазинах выделяют группу товаров, которые этому празднику наиболее соответствуют, иногда дополнительно отмечают их в списке особым маркером.</p>
-				<p>Так вот, кроме маркировки таких товаров в списке, для них можно делать еще кое-что. В зависимости от праздника автоматически добавлять на детальной странице товара к описанию текст «на новый год 201х г.». «на 8 марта» и т. п. Добавлять в Title (заголовок окна браузера) текст «на Новый год», «на день Св. Валентина».</p>
-				<p>Иногда есть смысл добавлять текст не только в описание товара и в Title но и в название товара. Чтобы получилось примерно так: «Вечернее длинное платье на новогодний вечер».</p>
-
-				<h3>Таблица всех страниц и разделов</h3>
-
-				<table>
-					<tr>
-						<th>№</th>
-						<th>Название</th>
-						<th>Адрес раздела и комментарий</th>
-						<th>Приоритет</th>
-					</tr>
-
-					<tr>
-						<td>1.</td>
-						<td>Главная</td>
-						<td>/</td>
-						<td>Высокий</td>
-					</tr>
-
-					<tr>
-						<td>2.</td>
-						<td>Список разделов первого уровня</td>
-						<td>/catalog/</td>
-						<td>Высокий</td>
-					</tr>
-				</table>
-
-				<p>Основной минус в том, что готовое решение, в силу специфики не дает уникальности ни в дизайне ни в функционале. Это стандартная «коробка инструментов» для решения стандартных задач. Поэтому, если хотите больше индивидуальности, готовое решение не для вас.</p>
-
-				<blockquote>
-					Но с другой стороны, «вам "шашечки" или "ехать"»? Вам или продажи? Вы уверены что магазин, разработанный по вашим «хочу», учитывающий все ваши пожелания, индивидуальный на сто процентов.
-				</blockquote>
-
-				<p>Вы специалист по юзабилити, интернет-маркетингу, продажам и знаете, как сделать лучше? Вы уверены что студия, в которой вы закажите разработку вашего интернет-магазина, разбирается в теме лучше, чем студия-разработчик готового решения интернет-маркетингу?</p>
-
-				<div class="links">
-					<ul>
-						<li><a href="#"><i class="fa fa-external-link"></i>Wikipedia: Откуда взялись интернет-магазины?</a></li>
-					</ul>
-
-					<ul>
-						<li><a href="#"><i class="fa fa-download"></i>Скачать обратный словарь русского языка</a> (.txt, 1.1 Мб)</li>
-						<li><a href="#"><i class="fa fa-download"></i>Скачать порно бесплатно без СМС в hd-качестве</a> (.avi, 1.7 Гб)</li>
-					</ul>
-				</div>
-
-				<div class="social-likes" data-url="http://yandex.ru">
-					<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
-					<div class="twitter" data-related="sdfsdfsdfsdfs" title="Поделиться ссылкой в Твиттере">Twitter</div>
-					<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
-					<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
-				</div>
-
-				<div class="tags clearfix">
-					<a href="#"><i class="fa fa-tag"></i>1С-Битрикс</a>
-					<a href="#"><i class="fa fa-tag"></i>готовое</a>
-					<a href="#"><i class="fa fa-tag"></i>начинающим</a>
-				</div>
-			</article>
-
-			<section class="subscribe">
-				<p class="title_big">Подпишитесь на новые статьи</p>
-				<p>Новые статьи, фишки, советы будут приходить к вам на электронную почту.  Подписывайтесь!</p>
-
-				<form>
-					<label class="icon"><i class="fa fa-envelope"></i><input type="text" placeholder="Введите ваш e-mail"></label><button type="submit">Подписаться</button>
-				</form>
-			</section>
-
-			<section class="ask clearfix">
-				<img src="holder.js/120x120">
-
-				<p class="title_big">Остались вопросы?</p>
-				<p>Не знаете какая редакция 1С-Битрикс лучше подойдет под ваши задачи?</p>
-
-				<a href="#" class="button">Задайте вопрос</a>
-			</section>
-
-			<hr>
-
-			<section class="material">
-				<p class="title_big">Практическое руководство по работе с Почтой России для небольшого интернет-магазина</h1>
-
-				<div class="description clearfix">
-					<img src="holder.js/280x390">
-
-					<p>Поставьте его на свой сайт, и ваша база подписчиков будет увеличиваться на автопилоте. Поставьте его на свой сайт, и ваша база подписчиков будет увеличиваться на автопилоте сайт увеличиваться будет на автопилоте</p>
-
-					<form class="clearfix">
-						<p>Получите книгу на указанный адрес:</p>
-
-						<label class="icon"><i class="fa fa-envelope"></i><input type="text" placeholder="Введите ваш e-mail"></label><br>
-						<button type="submit">Подробнее</button>
-					</form>
-				</div>
-			</section>
-
-			<hr>
-
-			<section class="blog">
-				<article class="clearfix">
-					<a href="#"><img src="holder.js/200x160"></a>
-
-					<p class="title"><a href="#">Оптимизация изображений в интернет-магазине</a></p>
-					<p>Важные мелочи о которых никто не думает.</p>
-					<small>29 января 2015</small>
-				</article>
-
-				<article class="clearfix">
-					<a href="#"><img src="holder.js/200x160"></a>
-
-					<p class="title"><a href="#">Оптимизация изображений в интернет-магазине</a></p>
-					<p>Важные мелочи о которых никто не думает.</p>
-					<small>29 января 2015</small>
-				</article>
-
-				<article class="clearfix">
-					<a href="#"><img src="holder.js/200x160"></a>
-
-					<p class="title"><a href="#">Оптимизация изображений в интернет-магазине</a></p>
-					<p>Важные мелочи о которых никто не думает.</p>
-					<small>29 января 2015</small>
-				</article>
-			</section>
-
-			<hr>
-
-			<div class="pagination">
-				<span class="active">1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">...</a><a href="#">10</a>
-
-				<div class="navigation">
-					<a href="#">&larr; Назад</a><a href="#">Вперед &rarr;</a>
-				</div>
-			</div>
-
-			<hr>
-
-			<section class="items">
-				<h1>Скачать</h1>
-
-				<p class="description">Маркетинг и менеджмент от практиков Рунета, проходите 100 курсов от лучших специалистов Рунета от 790 рублей в месяц.</p>
-
-				<hr>
-
-				<ul>
-					<li>
-						<a href="#"><img src="holder.js/240x160">
-							<p class="title">Профессиональный интернет-магазин за 2 часа</p>
-						</a>
-					</li><li>
-						<a href="#"><span>бесплатно</span><img src="holder.js/240x160">
-							<p class="title">Профессиональный интернет-магазин за 2 часа</p>
-						</a>
-					</li><li>
-						<a href="#"><img src="holder.js/240x160">
-							<p class="title">Профессиональный интернет-магазин за 2 часа</p>
-						</a>
-					</li><li>
-						<a href="#"><img src="holder.js/240x160">
-							<p class="title">Профессиональный интернет-магазин за 2 часа</p>
-						</a>
-					</li><li>
-						<a href="#"><img src="holder.js/240x160">
-							<p class="title">Профессиональный интернет-магазин за 2 часа</p>
-						</a>
-					</li><li>
-						<a href="#"><img src="holder.js/240x160">
-							<p class="title">Профессиональный интернет-магазин за 2 часа</p>
-						</a>
-					</li>
-				</ul>
-			</section>
-
-			<hr>
-
-			<header class="colored illustration clearfix">
-				<img src="holder.js/200x200">
-
-				<h1>Консультации по интернет-магазинам</h1>
-
-				<div class="lead">
-					<p>Ну например у меня там даже есть где-то описание того, что должно быть написано в этом блоке. На самом деле неважно, здесь просто кирпич текста и все. Есть много низко и средне частотных запросов, которые для интернет-магазина вполне тематические Есть много низко и средне частотных запросов.</p>
-				</div>
-			</header>
-
-			<h2>Описание услуги</h2>
-
-			<p>Есть много низко и средне частотных запросов, которые для интернет-магазина вполне тематические, но по которым магазин не ищется или ищется хуже, чем мог бы, в силу простой причины – зачастую в карточке товара нет упоминания соответствующих ключевых слов.</p>
-
-			<p>Например, это могут быть запросы с приставкой «со скидкой», «недорого», «распродажа», а также менее, но все равно продающие приставки: «смотреть фото», «смотреть видео»: — «Вечернее платье купить со скидкой», «Футболка с рисунком панды купить недорого», Маскарадный костюм ведьмы распродажа», «Клубные платья смотреть фото» и т.п.</p>
-
-			<p>При работе контент-менеджер добавляет товару скидку, выделяет товары в группы под определенные праздники, вносит другие, стандартные для большинства магазинов изменения.</p>
-
-			<section class="order clearfix">
-				<p class="title_medium">Отправить заявку</p>
-
-				<form>
-					<input type="text" placeholder="Введите имя" class="required">
-					<input type="text" placeholder="Телефон">
-					<input type="text" placeholder="Email" class="required">
-					<small>На ваш ящик я отправлю уточняющие вопросы</small>
-
-					<textarea rows="5" placeholder="Какой у вас вопрос?" class="required"></textarea>
-
-					<button type="submit">Подробнее</button>
-				</form>
-
-				<div class="description">
-					<div class="image">
-						<img src="holder.js/120x120">
-					</div>
-
-					<p>Оставьте вашу заявку, я отвечу вам в течение одного рабочего дня.</p>
-				</div>
-			</section>
-
-			<hr>
-
-			<section class="reviews">
-				<h2>Отзывы клиентов</h2>
-
-				<article>
-					<div class="author clearfix">
-						<img src="holder.js/80x80">
-
-						<span>Андрей креер</span><br>
-						<small>«Инфулл Страхование»</small>
-					</div>
-
-					<p>Специфика нашего бизнеса такова, что мы работаем со множеством страховых компаний, и у каждой из них свои правила, которые динамично меняются. Зачастую нужно быстро довести информацию до всех сотрудников офиса. В этом плане чат «Битрикс24» незаменим. Автоматизировав рабочие процессы с «Битрикс24», мы  смогли открыть четыре новых представительства и поддерживать высокую продуктивность в них силами всего 24 штатных сотрудников.</p>
-
-					<div class="more">
-						<a href="#">Подробнее</a>
-					</div>
-				</article>
-
-				<hr>
-
-				<article>
-					<div class="author clearfix">
-						<img src="holder.js/80x80">
-
-						<span>Андрей креер</span><br>
-						<small>«Инфулл Страхование»</small>
-					</div>
-
-					<p>Специфика нашего бизнеса такова, что мы работаем со множеством страховых компаний, и у каждой из них свои правила, которые динамично меняются. Зачастую нужно быстро довести информацию до всех сотрудников офиса. В этом плане чат «Битрикс24» незаменим. Автоматизировав рабочие процессы с «Битрикс24», мы  смогли открыть четыре новых представительства и поддерживать высокую продуктивность в них силами всего 24 штатных сотрудников.</p>
-
-					<div class="more">
-						<a href="#">Подробнее</a>
-					</div>
-				</article>
-			</section>
-
-			<hr>
-
-			<header>
-				<ul class="breadcrumb clearfix">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">О проекте</a></li>
-				</ul>
-
-				<h1>О проекте</h1>
-
-				<div class="menu clearfix">
-					<a href="#">Обо мне</a>
-					<a href="#">Контакты</a>
-					<a href="#">О блоге</a>
-					<a href="#">Услуги</a>
-				</div>
-			</header>
-
-			<section class="clearfix">
-				<h2>Обо мне</h2>
-
-				<img src="holder.js/320x240" class="left">
-
-				<ul>
-					<li>В список характеристик добавляем новую «характеристику» «Купить недорого — да (со скидкой)».</li>
-					<li>В заголовок окна браузера (Title) тоже добавляем соответствующий текст. Например, если раньше заголовок окна браузера был</li>
-					<li>«Черное вечернее платье», то после того, как к товару применили скидку он станет «Черное вечернее платье купить со скидкой».</li>
-				</ul>
-
-				<p>Например, это могут быть запросы с приставкой «со скидкой», «недорого», «распродажа», а также менее, но все равно продающие приставки: «смотреть фото», «смотреть видео»: — «Вечернее платье купить со скидкой», «Футболка с рисунком панды купить недорого», Маскарадный костюм ведьмы распродажа», «Клубные платья смотреть фото» и т.п.</p>
-				<p>При работе контент-менеджер добавляет товару скидку, выделяет товары в группы под определенные праздники, вносит другие, стандартные для большинства магазинов изменения.</p>
-			</section>
-
-			<hr>
-
-			<section class="contacts clearfix">
-				<h2>Контакты</h2>
-
-				<ul>
-					<li>
-						<i class="fa fa-envelope"></i> E-mail: <a href="mailto:webdela.ru@gmail.com">webdela.ru@gmail.com</a>
-						<p class="comment">Это предпочтительный способ связи. Пишите на е-мейл, Его я чаще проверяю и быстрее отвечаю на сообщения.</p>
-					</li>
-				</ul>
-
-				<ul>
-					<li><i class="fa fa-vk"></i> Вконтакте: <a href="#">vk.com/webdela</a></li>
-					<li><i class="fa fa-facebook"></i> Facebook: <a href="#">facebook.com/webdela.ru</a></li>
-					<li><i class="fa fa-twitter"></i> Twitter: <a href="#">twitter.com/webdela</a></li>
-				</ul>
-			</section>
-
-			<hr>
-
-			<section class="prices">
-				<h2>Стоимость</h2>
-
-				<div class="offer">
-					<p class="title">Базовый <span>5 000 руб.</span></p>
-
-					<ul>
-						<li>Per person per month</li>
-						<li>Unlimited Projects</li>
-						<li class="empty"></li>
-						<li class="empty"></li>
-						<li class="empty"></li>
-					</ul>
-
-					<a href="#" class="button">Выбрать</a>
-				</div><div class="offer">
-					<p class="title">Оптимальный <span>10 000 руб.</span></p>
-
-					<ul>
-						<li>Per person per month</li>
-						<li>Unlimited Projects</li>
-						<li>Pay for additional team members</li>
-						<li class="empty"></li>
-						<li class="empty"></li>
-					</ul>
-
-					<a href="#" class="button">Выбрать</a>
-				</div><div class="offer">
-					<p class="title">Расширенный	<span>20 000 руб.</span></p>
-
-					<ul>
-						<li>Per person per month</li>
-						<li>Unlimited Projects</li>
-						<li>Pay for additional team members</li>
-						<li>5 Android .apk builds per month</li>
-						<li>Download prototypes as ZIP</li>
-					</ul>
-
-					<a href="#" class="button">Выбрать</a>
-				</div>
-			</section>
-		</main>
-
-		<div class="scroller">		
-		</div>
-
-		<aside class="left">
-			<div class="label">
-				<i class="fa fa-bars"></i>
-			</div>
-			
-			<h1>
-				<a href="/" class="logo">
-					<span>webdela.ru</span>
-					<small>блог об интернет-магазинах</small>
-				</a>
-			</h1>
-
-			<nav>
-				<ul>
-					<li><a href="#"><i class="fa fa-chevron-left"></i>Назад к блогу</a></li>
-
-					<li class="parent">
-						<a href="#" class="active"><i class="fa fa-file-text"></i>Блог</a>
-
-						<ul class="lv2">
-							<li><a href="#">Дизайн и проектирование</a></li>
-							<li><a href="#">Юзабилити и аудит</a></li>
-							<li><a href="#">Полезные советы</a></li>
-							<li><a href="#">Увеличение продаж</a></li>
-							<li><a href="#">Работа с 1С-Битрикс</a></li>
-							<li><a href="#">Для начинающих</a></li>
-							<li><a href="#">Поисковая оптимизация</a></li>
-							<li><a href="#">Пиздеж по понедельникам</a></li>
-						</ul>
-					</li>
-
-					<li class="parent"><a href="#"><i class="fa fa-star"></i>Услуги</a></li>
-					<li><a href="#"><i class="fa fa-download"></i>Скачать</a></li>
-					<li><a href="#"><i class="fa fa-user-secret"></i>Об авторе</a></li>
-					<li><a href="#"><i class="fa fa-sign-in"></i>Вход</a></li>
-				</ul>
-			</nav>
-
-			<section class="latest">
-				<h3>Свежие статьи</h3>
-
-				<article>
-					<a href="#"><img src="holder.js/160x100">
-					<h4>Готовые решения – интернет-магазины на 1С-Битрикс. Все плюсы и минусы</h4></a>
-				</article>
-
-				<article>
-					<a href="#"><img src="holder.js/160x100">
-					<h4>Готовые решения – интернет-магазины на 1С-Битрикс. Все плюсы и минусы</h4></a>
-				</article>
-
-				<article>
-					<a href="#"><img src="holder.js/160x100">
-					<h4>Готовые решения – интернет-магазины на 1С-Битрикс. Все плюсы и минусы</h4></a>
-				</article>
-			</section>
-
-			<footer>
-				2008 &mdash; 2015 &copy; webdela.ru<br>
-				<a href="mailto:web@webdela.ru">web@webdela.ru</a><br>
-				Сделано на 1С-Битрикс<br>
-				Дизайн сайта: <a href="#">студия Realist</a>
-			</footer>
-		</aside>
-
-		<aside class="right">
-			<div id="sticky" class="stiky-element">
-				<div class="sticky-anchor"></div>	
-				<div class="full">
-					<div class="author clearfix">
-						<img src="holder.js/80x80">
-
-						Автор блога:
-						<h4><a href="#">Юрий Кудренко</a></h4>
-					</div>
-
-					<div class="search">
-						<form>
-							<label class="icon"><i class="fa fa-search"></i><input type="text" placeholder="Что искать?"></label><button type="submit"><i class="fa fa-check"></i></button>
-						</form>
-					</div>
-
-					<div class="subscribe">
-						<h4>Подписка</h4>
-						<p>Обновления блога на ваш e-mail</p>
-
-						<form>
-							<label class="icon"><i class="fa fa-envelope"></i><input type="text" placeholder="Введите ваш e-mail"></label><button type="submit"><i class="fa fa-check"></i></button>
-						</form>
-					</div>
-
-					<div class="social">
-						<h4>Социальные сети</h4>
-						<p>Добавляйтесь в друзья и читайте</p>
-
-						<div class="clearfix">
-							<a href="#"><i class="fa fa-vk"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-rss"></i></a>
+        <title>Портфолио</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="custom.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+	<body>
+		<div id="container">
+			<div id="content" class="clearfix p20">
+				<div id="layout" class="clearfix">
+					<div id="responsive">
+						<h3>Интернет-магазины</h3>
+						<div class="item-card">
+							<dl class="clearfix">
+								<dt>
+									<div class="img"><img src="/img/vegos.png" alt=""></div>
+									<div class="text">
+										"Вегос-М"</br>
+										(adaptive)
+									</br>
+										<a class="link" href="#">Список страниц</a>
+									</div>
+									<div class="list">
+										<a target="_blank" href="/site/vegos/www/index.html">Главная</a>
+										<a target="_blank" href="/site/vegos/www/catalog-all.html">Весь каталог</a>
+										<a target="_blank" href="/site/vegos/www/catalog-inner.html">Каталог категории</a>
+										<a target="_blank" href="/site/vegos/www/tovar.html">Страница товара</a>
+										<a target="_blank" href="/site/vegos/www/order.html">Оформление заказа</a>
+										<a target="_blank" href="/site/vegos/www/basket.html">Корзина</a>
+										<a target="_blank" href="/site/vegos/www/action.html">Акции</a>
+										<a target="_blank" href="/site/vegos/www/catalog-inner-filter.html">Каталог с фильтром</a>
+									</div>
+								</dt>																
+								<dt>
+									<div class="img"><img src="/img/sushi.png" alt=""></div>
+									<div class="text">
+										Sushi House</br>
+										(мобильная версия сайта)</br>
+										<a target="_blank" href="http://m.sushi03.ru">m.sushi03.ru</a>
+									</br>
+										<a class="link" href="#">Список страниц</a>
+									</div>
+									<div class="list">
+										<a target="_blank" href="/site/sushi/www/index.html">Главная</a>
+										<a target="_blank" href="/site/sushi/www/category.html">Страница категории</a>
+										<a target="_blank" href="/site/sushi/www/basket.html">Корзина</a>
+									</div>
+								</dt>																
+								<dt>
+									<div class="img"><img src="/img/sibir.png" alt=""></div>
+									<div class="text">
+										Салон красоты "Сибирячка"
+									</br>
+									<a href="#" class="link">Список страниц</a>
+									</div>
+									<div class="list">
+										<a target="_blank" href="/site/sibir/www/index.html">Главная</a>
+										<a target="_blank" href="/site/sibir/www/magazine.html">Каталог</a>
+										<a target="_blank" href="/site/sibir/www/category.html">Страница категории</a>
+										<a target="_blank" href="/site/sibir/www/tovar.html">Товар</a>
+										<a target="_blank" href="/site/sibir/www/basket.html">Корзина</a>
+									</div>
+								</dt>																
+								<dt>
+									<div class="img"><img src="/img/mall.png" alt=""></div>
+									<div class="text">
+										Интернет-супермаркет
+									</br>
+									<a href="#" class="link">Список страниц</a>
+									</div>
+									<div class="list">
+										<a target="_blank" href="/site/mall/www/index.html">Главная</a>
+										<a target="_blank" href="/site/mall/www/catalog.html">Каталог</a>
+										<a target="_blank" href="/site/mall/www/category.html">Страница категории</a>
+										<a target="_blank" href="/site/mall/www/tovar.html">Страница товара</a>
+										<a target="_blank" href="/site/mall/www/favorite.html">Избранные товары</a>
+										<a target="_blank" href="/site/mall/www/basket.html">Корзина</a>
+										<a target="_blank" href="/site/mall/www/order.html">Оформление заказа</a>
+									</div>
+								</dt>								
+							</dl>
+						</div>
+						<h3>Порталы</h3>
+						<div class="item-card">
+							<dl class="clearfix">
+								<dt>
+									<div class="img"><img src="/img/bgtrk.png" alt=""></div>
+									<div class="text">
+										Информационное агенство (adaptive)</br>
+										<a target="_blank" href="http://bgtrk.ru">bgtrk.ru</a>
+									</div>
+								</dt>
+								<dt>
+									<div class="img"><img src="/img/vti.png" alt=""></div>
+									<div class="text">
+										Информационное агенство + мобильная версия сайта</br>
+										<a target="_blank" href="http://vt-inform.ru">vt-inform.ru</a>
+									</br>
+										<a target="_blank" href="http://m.vt-inform.ru">m.vt-inform.ru (мобильная версия)</a>
+									</br>
+<!-- 									<a href="#" class="link">Список страниц</a> -->
+									</div>
+<!-- 									<div class="list">
+										<a target="_blank" href="/site/vti/www/index.html">Главная</a>
+										<a target="_blank" href="/site/vti/www/news.html">Страница новости</a>
+										<a target="_blank" href="/site/vti/www/news.html">Категория новостей</a>
+										<a target="_blank" href="/site/vti/www/projects.html">Проекты</a>
+										<a target="_blank" href="/site/vti/www/project.html">Страница проекта</a>
+									</div> -->
+								</dt>			
+								<dt>
+									<div class="img"><img src="/img/football.png" alt=""></div>
+									<div class="text">
+										Ассоциация любительского футбола
+									</br>
+									<a href="#" class="link">Список страниц</a>
+									</div>
+									<div class="list">
+										<a target="_blank" href="/site/football/www/index.html">Главная</a>
+										<a target="_blank" href="/site/football/www/match.html">Страница матча</a>
+										<a target="_blank" href="/site/football/www/results.html">Результаты матчей</a>
+										<a target="_blank" href="/site/football/www/team.html">Команда</a>
+										<a target="_blank" href="/site/football/www/teams.html">Все команды</a>
+										<a target="_blank" href="/site/football/www/tournaments.html">Турниры</a>
+										<a target="_blank" href="/site/football/www/super-league.html">Суперлига</a>
+										<a target="_blank" href="/site/football/www/silver-league.html">Серебрянная лига</a>
+									</div>
+								</dt>									
+								<dt>
+									<div class="img"><img src="/img/gigacom.png" alt=""></div>
+									<div class="text">
+										"ГигаКом"</br> телекоммуникационные услуги
+									</br>
+									<a href="#" class="link">Список страниц</a>
+									</div>
+									<div class="list">
+										<a target="_blank" href="/site/gigacom/www/index.html">Главная</a>
+										<a target="_blank" href="/site/gigacom/www/tv.html">Телевидение</a>
+										<a target="_blank" href="/site/gigacom/www/internet-home.html">Интернет</a>
+										<a target="_blank" href="/site/gigacom/www/application.html">Заявка</a>
+										<a target="_blank" href="/site/gigacom/www/inner-services.html">Доп. услуги</a>
+										<a target="_blank" href="/site/gigacom/www/order.html">Заявка на услугу</a>
+									</div>
+								</dt>															
+							</dl>
+						</div>
+						<h3>Landing page</h3>
+						<div class="item-card">
+							<dl class="clearfix">							
+								<dt>
+									<a target="_blank" href="/site/aryn/www/index.html">
+										<div class="img"><img src="/img/aryn.png" alt=""></div>
+										<div class="text">
+											Сайт бизнес центра
+										</div>
+									</a>
+								</dt>																
+							</dl>
 						</div>
 					</div>
-
-					<div class="download">
-						<h4>Скачайте бесплатно</h4>
-
-						<a href="#"><i class="fa fa-file-text-o"></i>Профессиональный интернет магазинза 2 часа. Готовые решения на 1С-Битрикс.</a>
-						<a href="#"><i class="fa fa-file-text-o"></i>Профессиональный интернет магазинза 2 часа. Готовые решения на 1С-Битрикс.</a>
-						<a href="#"><i class="fa fa-file-text-o"></i>Профессиональный интернет магазинза 2 часа. Готовые решения на 1С-Битрикс.</a>
+				</div>
+				<div id="extra" class="fix">
+					<div class="bg"></div>
+					<div class="profile">
+						<img src="/img/av.jpg" alt="">
+					</div>
+					<div class="p20">
+						<p class="text-center text-light">Александр Вежевич</p>
+						<dl>
+							<dt><span>twitter:</span> <a href="https://twitter.com/AVezhevich">AVezhevich</a></dt>
+							<dt><span>E-mail:</span> <a href="mailto:alexwww2004@gmail.com">alexwww2004@gmail.com</a></dt>
+							<dt><span>phone:</span> <a href="tel:8 (964) 400-16-69">8 (964) 400-16-69</a></dt>
+						</dl>
 					</div>
 				</div>
-
-				<div class="compact sticky-content">
-					<img src="holder.js/80x80">
-
-					<i class="fa fa-envelope"></i>
-					<i class="fa fa-search"></i>
-					<i class="fa fa-vk"></i>
-					<i class="fa fa-download"></i>
-				</div>
 			</div>
-		</aside>
-
-		<div class="blackout"></div>
-
-		<section class="subscribe inner fixed hidden clearfix">
-			<img src="holder.js/240x320?theme=social">
-
-			<h2>Подпишитесь на новые статьи</h2>
-			<p>Новые статьи, фишки, советы будут приходить к вам на электронную почту.  Подписывайтесь!</p>
-
-			<form>
-				<label class="icon"><i class="fa fa-envelope"></i><input type="text" placeholder="Введите ваш e-mail"></label><button type="submit">Подписаться</button>
-			</form>
-
-			<i class="fa fa-close"></i>
-		</section>
-		 <script>
-	 		var StickyElement = function(node){
-				  var doc = $(document), 
-				      fixed = false,
-				      anchor = node.find('.sticky-anchor'),
-				      content = node.find('.sticky-content');
-				  
-				  var onScroll = function(e){
-				    var docTop = doc.scrollTop(),
-				        anchorTop = anchor.offset().top;
-				    
-				    console.log('scroll', docTop, anchorTop);
-				    if(docTop > anchorTop){
-				      if(!fixed){
-				        anchor.height(content.outerHeight());
-				        content.addClass('fixed');        
-				        fixed = true;
-				      }
-				    }  else   {
-				      if(fixed){
-				        anchor.height(0);
-				        content.removeClass('fixed'); 
-				        fixed = false;
-				      }
-				    }
-				  };
-				  
-				  $(window).on('scroll', onScroll);
-				};
-
-				var demo = new StickyElement($('#sticky'));
- 		</script>
- 		<script>
- 			$(document).on('scroll',function()
- 			{
- 			var scroll = $(this).scrollTop();
-
- 			$('.full').css('top',scroll);
- 			});
- 		</script>
+		</div>																
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>				
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 		<script type="text/javascript" src="js/site.js"></script>
 	</body>
 </html>
