@@ -1,0 +1,68 @@
+body {
+	background: #fff;
+	font: 87.45%/1.4 "Helvetica Neue", Arial, sans-serif;
+}
+
+h3, h4 {
+	color: #c00;
+}
+
+.g-unselectable {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select:none;
+	user-select: none;
+}
+
+.lte-ie8 .g-unselectable {
+	behavior: expression(
+		( this.onselectstart = function(){ return !(1+(' ' + this.className + ' ').indexOf(' unselectable ')) } ),
+		( this.style.behavior = null )
+	);
+}
+
+/* Opera */
+.g-unselectable::selection { color: inherit } 
+
+/* Collapsible item container */
+.text {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0 0 25px;
+}
+
+.scroller {
+	position: fixed;
+	overflow: hidden;
+	width: 150px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: transparent url('ajax-loader.gif') center center no-repeat scroll;
+}
+
+.scroller_loaded {
+	background: none;
+}
+
+.scroller__canvas {
+	position: relative;
+	width: 100%;
+	height: auto;
+	opacity: 0.5;
+}
+
+.scroller__canvas canvas{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.scroller__handle {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background: rgba(255,0,0,0.3);
+	z-index: 5;
+	cursor: move !important;
+}
