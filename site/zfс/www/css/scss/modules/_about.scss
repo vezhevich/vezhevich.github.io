@@ -1,0 +1,13 @@
+.about {border-bottom: 1px solid #e5e5e5; margin-bottom: 40px;
+	h4 {line-height: 30px; margin-bottom: 40px;}
+	.company {margin-bottom: 30px; width: 100%; max-width: 400px;}
+}
+
+@media (max-width: 599px) {
+	.about {margin-bottom: 30px;
+		h4 {font-size: 16px; line-height: 24px; margin-bottom: 20px;}
+		.company {margin-bottom: 20px;}
+		p {font-size: 14px; line-height: 20px;}
+	}
+	.title-form {font-size: 20px; line-height: 28px;}
+}
