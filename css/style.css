@@ -419,6 +419,12 @@ video#bgvid {
     .left-navigation .lang a img {
       vertical-align: middle;
       margin-top: -2px; }
+.left-navigation .social {
+  text-align: center;
+  margin-top: 50px; }
+  .left-navigation .social a {
+    margin: 0 5px;
+    background-color: #5f86b8; }
 
 .item-wrapper {
   overflow: hidden; }
