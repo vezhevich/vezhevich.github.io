@@ -2115,17 +2115,20 @@ q:before, q:after {
 blockquote, q {
   quotes: "" ""; }
 
-.wrapper-inner .left-col {
-  width: 300px;
-  height: 100%;
-  background-color: #06549e;
-  position: fixed;
-  padding-bottom: 40px;
-  padding-top: 40px; }
-.wrapper-inner .right-col {
-  margin-left: 300px;
-  padding: 50px 40px 80px 40px;
-  position: relative; }
+.wrapper-inner {
+  height: 100%; }
+  .wrapper-inner .left-col {
+    width: 300px;
+    height: 100%;
+    background-color: #06549e;
+    position: fixed;
+    padding-bottom: 40px;
+    padding-top: 40px; }
+  .wrapper-inner .right-col {
+    margin-left: 300px;
+    padding: 50px 40px 80px 40px;
+    position: relative;
+    min-height: 100%; }
 
 /* roboto-condensed-300 - cyrillic_latin */
 @font-face {
@@ -2557,6 +2560,45 @@ video#bgvid {
   margin-bottom: 0;
   font-size: 14px;
   border-top: 1px solid #06549e;
-  padding-top: 10px; }
+  padding-top: 10px;
+  color: #06549e; }
+
+.model-detail .name-model {
+  font-size: 36px;
+  color: #06549e; }
+.model-detail .media {
+  overflow: hidden; }
+  .model-detail .media .photo {
+    width: 500px;
+    float: left;
+    margin-right: 40px; }
+  .model-detail .media .teaser {
+    float: left;
+    overflow: hidden; }
+    .model-detail .media .teaser dl dt {
+      margin-bottom: 20px; }
+    .model-detail .media .teaser p {
+      margin-bottom: 0;
+      font-weight: 300; }
+    .model-detail .media .teaser .title {
+      font-size: 30px;
+      color: #06549e;
+      margin-bottom: 0px;
+      font-weight: normal; }
+
+.breadcrumbs {
+  margin-bottom: 20px; }
+  .breadcrumbs a {
+    font-size: 16px; }
+    .breadcrumbs a i {
+      font-size: 10px;
+      vertical-align: middle;
+      margin-right: 5px;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      margin-top: -2px; }
+    .breadcrumbs a:hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
