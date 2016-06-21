@@ -2487,6 +2487,10 @@ video#bgvid {
       background: #1E65A7;
       color: #fff;
       text-decoration: none; }
+  .left-navigation nav.inner .active {
+    background: #1E65A7;
+    color: #fff;
+    text-decoration: none; }
 
 .item-wrapper {
   overflow: hidden; }
