@@ -31,6 +31,9 @@ table tr th {color: $brand-color; font: bold 18px $brand-font;}
 a {text-decoration:none; color: $linkcolor; outline: none !important;}
 a:hover {color: $linkcolor-hover; text-decoration: underline;}
 
+ul {margin-bottom: 30px;}
+ul li {margin-bottom: 10px; font-size: 22px; font-family: $brand-font;}
+
 ol {counter-reset: li; list-style: none; padding-left: 20px; margin-bottom: 70px;}
 ol li {margin-bottom: 25px; font: normal 22px $brand-font; color: $brand-color;}
 ol li:before {content: counter(li); counter-increment: li; color: #3bb2c2; margin-right: 30px;}

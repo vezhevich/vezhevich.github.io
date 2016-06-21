@@ -204,6 +204,14 @@ a:hover {
   color: #D90000;
   text-decoration: underline; }
 
+ul {
+  margin-bottom: 30px; }
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-family: "Roboto Condensed"; }
+
 ol {
   counter-reset: li;
   list-style: none;
