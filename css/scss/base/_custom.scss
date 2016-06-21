@@ -31,11 +31,6 @@ table tr th {color: $brand-color; font: bold 18px $brand-font;}
 a {text-decoration:none; color: $linkcolor; outline: none !important;}
 a:hover {color: $linkcolor-hover; text-decoration: underline;}
 
-ul {margin-bottom: 70px; padding-left: 20px;}
-ul li {font: normal 22px $brand-font; color: $brand-color; margin-bottom: 25px; position: relative; padding-left: 37px;}
-ul li:before {content: ''; width: 0; height: 0; border-style: solid; border-width: 7px 0 7px 7px; border-color: transparent transparent transparent #3bb2c2; position: absolute; left: 0; top: 8px;}
-
-
 ol {counter-reset: li; list-style: none; padding-left: 20px; margin-bottom: 70px;}
 ol li {margin-bottom: 25px; font: normal 22px $brand-font; color: $brand-color;}
 ol li:before {content: counter(li); counter-increment: li; color: #3bb2c2; margin-right: 30px;}

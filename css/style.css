@@ -204,28 +204,6 @@ a:hover {
   color: #D90000;
   text-decoration: underline; }
 
-ul {
-  margin-bottom: 70px;
-  padding-left: 20px; }
-
-ul li {
-  font: normal 22px "Roboto Condensed";
-  color: #000;
-  margin-bottom: 25px;
-  position: relative;
-  padding-left: 37px; }
-
-ul li:before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7px 0 7px 7px;
-  border-color: transparent transparent transparent #3bb2c2;
-  position: absolute;
-  left: 0;
-  top: 8px; }
-
 ol {
   counter-reset: li;
   list-style: none;
@@ -584,5 +562,33 @@ video#bgvid {
 
 .contact-list.row {
   margin: 0 -10px; }
+
+.news .card {
+  position: relative;
+  height: 350px; }
+  .news .card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
+  .news .card .card-image {
+    height: 200px;
+    overflow: hidden; }
+  .news .card .card-content {
+    height: 130px;
+    overflow: hidden; }
+    .news .card .card-content p {
+      font-size: 18px;
+      line-height: 28px; }
+
+.news-page img {
+  max-width: 100%;
+  display: block; }
+.news-page .slider {
+  margin-bottom: 30px; }
+.news-page .slider .indicators .indicator-item.active {
+  background-color: #06549e; }
 
 /*# sourceMappingURL=style.css.map */
