@@ -586,9 +586,7 @@ video#bgvid {
 .news-page img {
   max-width: 100%;
   display: block; }
-.news-page .slider {
+.news-page .fotorama {
   margin-bottom: 30px; }
-.news-page .slider .indicators .indicator-item.active {
-  background-color: #06549e; }
 
 /*# sourceMappingURL=style.css.map */
