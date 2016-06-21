@@ -2178,6 +2178,10 @@ blockquote, q {
   /* IE9 Compat Modes */
   src: local("Diplomata"), local("Diplomata-Regular"), url("/fonts/diplomata-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/diplomata-v8-latin-regular.woff2") format("woff2"), url("/fonts/diplomata-v8-latin-regular.woff") format("woff"), url("/fonts/diplomata-v8-latin-regular.ttf") format("truetype"), url("/fonts/diplomata-v8-latin-regular.svg#Diplomata") format("svg");
   /* Legacy iOS */ }
+/* colonna mt */
+@font-face {
+  font-family: 'Colonna MT';
+  src: url("/fonts/colonna-mt.ttf") format("truetype"); }
 html {
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -2402,10 +2406,11 @@ video#bgvid {
   position: relative; }
   .main-wrapper .title {
     text-align: center;
-    font-size: 100px;
+    font-size: 200px;
     color: #fff;
-    font-family: 'Diplomata';
-    margin-bottom: 40px; }
+    font-family: 'Colonna MT';
+    margin-bottom: 40px;
+    line-height: 80px; }
     .main-wrapper .title span {
       display: block;
       font-size: 30px;

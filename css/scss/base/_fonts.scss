@@ -90,3 +90,9 @@
        url('/fonts/diplomata-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/fonts/diplomata-v8-latin-regular.svg#Diplomata') format('svg'); /* Legacy iOS */
 }
+
+/* colonna mt */
+@font-face {
+  font-family: 'Colonna MT';
+  src: url('/fonts/colonna-mt.ttf') format('truetype')
+}
