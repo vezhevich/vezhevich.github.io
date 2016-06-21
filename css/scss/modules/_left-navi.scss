@@ -11,4 +11,9 @@
         }
         .active {background: #1E65A7; color: #fff; text-decoration: none;}
     }
+    .lang {top: auto; right: 0; bottom: 20px; width: 100%; text-align: center;
+        a {color: #fff; margin-left: 10px; margin-right: 10px;
+            img {vertical-align: middle; margin-top: -2px;}
+        }
+    }
 }

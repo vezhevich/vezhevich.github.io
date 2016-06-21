@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>EMC model & casting agency</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="/css/materialize.css" rel="stylesheet" type="text/css">
+		<link href="/css/fotorama.css" rel="stylesheet" type="text/css">
+		<link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+	<body>
+		<div class="wrapper-inner clearfix">
+			<div class="left-col left-navigation">
+				<h1 class="title"><a href="/">EMC <span>model & casting</br> agency</span></a></h1>
+				<nav class="inner">
+					<a class="waves-effect waves-light btn" href="models.html">Модели-девушки</a>
+					<!-- <a class="waves-effect waves-light btn">Модели-парни</a> -->
+					<a class="waves-effect waves-light btn" href="#">Модели-дети</a>
+					<a class="waves-effect waves-light btn active" href="#">Онлайн-кастинг</a>
+					<a class="waves-effect waves-light btn" href="contacts.html">Контакты</a>
+				</nav>
+				<div class="lang">
+					<a href="#"><img src="/img/ru.png" alt="">russia</a>
+					<a href="#"><img src="/img/usa.png" alt="">english</a>
+				</div>
+			</div>
+			<div class="right-col">
+				<section class="item-wrapper">
+					<h1>Онлайн-кастинг</h1>
+					<p>Мы занимаемся набором и подготовкой моделей для участия в международных fashion-показах. Если вы уверены в своих силах и способностях и готовы к работе, поучаствуйте в модельном кастинге онлайн.</p>
+					<p>Отправьте информацию о себе, включая ФИО, город проживания и параметры в сантиметрах, а также несколько ваших фотографий (портрет и в полный рост) без макияжа.</p>
+					<div class="row">
+					   <form class="col s12 form-casting">
+					     <div class="row">
+					       <div class="input-field col s12">
+					         <input id="name" type="text" class="validate">
+					         <label for="name">Имя</label>
+					       </div>					       
+					       <div class="input-field col s12">
+					         <input id="surname" type="text" class="validate">
+					         <label for="surname">Фамилия</label>
+					       </div>					      
+					       <div class="input-field col s12">
+					         <input id="tel" type="tel" class="validate">
+					         <label for="tel">Телефон</label>
+					       </div>
+					       <div class="input-field col s12">
+					         <input id="email" type="email" class="validate">
+					         <label for="email">Email</label>
+					       </div>
+					       <div class="input-field col s12">
+					         <textarea id="textarea1" class="materialize-textarea"></textarea>
+					         <label for="textarea1">Информация о вас</label>
+					       </div>
+					     </div>				     
+						<div class="row">
+							<div class="file-field input-field">
+							  <div class="btn">
+							    <span>Фото</span>
+							    <input type="file">
+							  </div>
+							  <div class="file-path-wrapper">
+							    <input class="file-path validate" type="text">
+							  </div>
+							</div>
+						</div>						
+						<div class="row">
+							<div class="file-field input-field">
+							  <div class="btn">
+							    <span>Фото</span>
+							    <input type="file">
+							  </div>
+							  <div class="file-path-wrapper">
+							    <input class="file-path validate" type="text">
+							  </div>
+							</div>
+						</div>						
+						<div class="row">
+							<div class="file-field input-field">
+							  <div class="btn">
+							    <span>Фото</span>
+							    <input type="file">
+							  </div>
+							  <div class="file-path-wrapper">
+							    <input class="file-path validate" type="text">
+							  </div>
+							</div>
+						</div>						
+						<div class="row">
+							<div class="file-field input-field">
+							  <div class="btn">
+							    <span>Фото</span>
+							    <input type="file">
+							  </div>
+							  <div class="file-path-wrapper">
+							    <input class="file-path validate" type="text">
+							  </div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button class="btn waves-effect waves-light btn-large modal-trigger" type="submit" name="action" data-target="modal1">Отправить</button>
+						</div>
+					   </form>
+					 </div>
+					 <div id="modal1" class="modal">
+					     <div class="modal-content">
+					       <p>Ваша анкета отправлена, мы свяжемся с вами в ближайшее время.</p>
+					     </div>
+					     <div class="modal-footer">
+					       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Закрыть</a>
+					     </div>
+					   </div>
+				</section>
+				<p class="copy">© 2016 Модельное агентство DMC</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>				
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="js/materialize.js"></script>
+  		<script type="text/javascript" src="js/fotorama.js"></script>
+  		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+  		<script type="text/javascript" src="js/site.js"></script>
+  		<script>
+  			$(document).ready(function(){
+  			    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  			    $('.modal-trigger').leanModal();
+  			  });
+  		</script>
+	</body>
+</html>
