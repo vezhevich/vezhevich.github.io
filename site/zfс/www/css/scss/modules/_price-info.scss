@@ -1,0 +1,8 @@
+.price-info {
+	a {overflow: hidden; font-size: 14px; color: #000; line-height: 20px; display: block; margin-bottom: 25px;
+		span {color: #8f8f8f;}
+		i {float: left; color: $red; margin-right: 10px;}
+	}
+	a:hover {text-decoration: none; color: #1e64ce;}
+
+}

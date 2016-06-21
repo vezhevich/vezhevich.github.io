@@ -1,0 +1,17 @@
+.search-result-box {position: relative; margin-bottom: 40px; border: 1px solid #dbdbdb; border-radius: 4px;
+	input[type=text]{width: 100%; background-color: #fff; border: none; padding: 0 60px 0 20px; height: 60px; border-radius: 3px; font: normal 16px $brand-font; color: #000;}
+	input[type=text]::-webkit-input-placeholder {color: #8f8f8f ;opacity: 1;}
+	input[type=text]:-moz-placeholder {color: #8f8f8f; opacity: 1;}
+	input[type=text]::-moz-placeholder {color: #8f8f8f; opacity: 1;}
+	input[type=text]:-ms-input-placeholder {color: #8f8f8f; opacity: 1;}
+	button {background: none; border: none; position: absolute; right: 0px; top: 0px; padding: 0; cursor: pointer; width: 60px; height: 60px; color: #e92630;}
+}
+
+@media (min-width: 600px) and (max-width: 939px) {
+	.search-result {margin-bottom: 20px;}
+}
+
+@media (max-width: 599px) {
+	.search-result {margin-bottom: 10px;}
+}
+
