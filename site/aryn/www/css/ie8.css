@@ -1,0 +1,11 @@
+.popup .modal-dialog {margin: 20px auto 0 auto;}
+.tv-info .bigest {font: bold 50px/1 Open Sans;}
+
+ .order INPUT[type='radio'].radio {display: inline-block; zoom: 1; *display: inline; margin-right: 5px;}
+ input[type=checkbox].checkbox {display: inline-block; zoom: 1; *display: inline; margin-right: 10px;}
+
+.ios7-switch {display: none;}
+.switch .js {margin-right: 20px;}
+
+
+input.radio[type="radio"] {display: inline-block; zoom: 1; *display: inline; margin-right: 5px;}

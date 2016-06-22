@@ -1,0 +1,20 @@
+.tech {
+	.item {margin-bottom: 40px;
+		.img {margin-bottom: 15px;
+			img {width: 100%;}
+		}
+		span {display: block;}
+		h6 {margin-bottom: 0;}
+	}
+	.item:hover {
+		a {color: #1e64ce;}
+	}
+}
+
+
+@media (max-width: 599px) {
+	.tech {
+		.item {margin-bottom: 20px;}
+		h6 {font-size: 14px;}
+	}
+}

@@ -1,8 +1,12 @@
 if (window.jQuery) $(document).ready(function() {
-  if ($('input[type=tel]').length) tel();
+	if ($('.item-card .link').length) slidedown();
 });
 
-function tel(){ 
-  $("input[type=tel]").mask("+7 (999) 999-99-99"); 
-  return false; 
+function slidedown()
+{
+	$(".item-card .link").click(function() {
+		$(this).toggleClass('active')
+		$('.list', $(this).parents('dt')).slideToggle();
+		return false;
+	});
 }

@@ -1,0 +1,40 @@
+.informer {background-color: #2f2f2f; padding: 50px 0;
+	.title {font: 500 20px $brand-font; margin-bottom: 20px; color: #fff;}
+	p {font: normal 14px/20px $brand-font; color: #bcbdc0; margin-bottom: 0;}
+	.item {
+		.img {width: 84px; float: left; margin-right: 20px; background: url(/img/sprite.png) no-repeat;}
+		.i1 {background-position: 0 0; height: 80px;}
+		.i2 {background-position: -100px 0; height: 103px;}
+		.i3 {background-position: -200px 0; height: 80px;}
+		.text {overflow: hidden;}
+	}
+}
+
+@media (min-width: 940px) and (max-width: 1239px) {
+	.informer {
+		.title {margin-bottom: 15px;}
+		.item {text-align: center;
+			.img {float: none; margin: 0 auto 20px auto; height: 103px;}
+		}
+	}
+}
+
+@media (min-width: 600px) and (max-width: 939px) {
+	.informer {
+		.item {margin-bottom: 40px;}
+		.item:last-child {margin-bottom: 0px;}
+	}
+}
+
+@media (max-width: 599px) {
+	.informer {
+		.item {margin-bottom: 40px;
+			.img {width: 60px;}
+			.i1 {background-position: 0 -123px; height: 60px;}
+			.i2 {background-position: -80px -123px; height: 75px;}
+			.i3 {background-position: -160px -123px; height: 60px;}
+		}
+		.item:last-child {margin-bottom: 0px;}
+		.title {font-size: 16px; line-height: 24px; margin-bottom: 10px;}
+	}
+}

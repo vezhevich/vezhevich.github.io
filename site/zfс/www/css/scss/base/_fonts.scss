@@ -1,0 +1,30 @@
+@font-face {
+    font-family: PF Square Sans Pro;
+    src: url(/fonts/pfsquaresanspro-bold.ttf);
+    font-weight: bold;
+   }
+@font-face {
+    font-family: Gotham Pro;
+    src: url(/fonts/GothaProBol.otf);
+    font-weight: bold;
+   }
+
+   @font-face {
+    font-family: Rub;
+    src: url(/fonts/RUBDC.otf);
+    font-weight: bold;
+   }
+
+ @font-face {
+    font-family: Rub2;
+    src: url(/fonts/RUBSN.otf);
+    font-weight: bold;
+
+   }
+ @font-face {
+    font-family: Rub3;
+    src: url(/fonts/RUBSR.otf);
+    font-weight: normal;
+   } 
+
+.rub {font-family: 'Rub2';}
