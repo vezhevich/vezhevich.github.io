@@ -477,7 +477,8 @@ video#bgvid {
           font-size: 26px;
           margin: 7px 0; }
     .item-wrapper .item .name {
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-size: 20px; }
     .item-wrapper .item a {
       position: absolute;
       top: 0;
