@@ -1,0 +1,76 @@
+html {-webkit-font-smoothing: antialiased; height: 100%;}
+body {font-family: $brand-font, sans-serif; background-color: #f7f5f3; height: 100%; }
+
+input {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+textarea {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+
+strong {font-weight: 700;}
+
+*::-webkit-input-placeholder {color: $brand-color ;opacity: 1;}
+*:-moz-placeholder {color: $brand-color; opacity: 1;}
+*::-moz-placeholder {color: $brand-color; opacity: 1;}
+*:-ms-input-placeholder {color: $brand-color; opacity: 1;}
+
+.close {opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100);}
+
+table {border-collapse: collapse; border-spacing:0; width: 100%;}
+table tr td, table tr th {padding:10px 0; text-align:left;}
+table tr td {font: 300 15px $brand-font; color: $brand-color;}
+table tr th {color: $brand-color;}
+
+a {text-decoration:none; color: $linkcolor; outline: none !important; font-weight: normal; font-family: $brand-font;}
+a:hover {color: $linkcolor-hover; text-decoration: none;}
+
+ul {margin-bottom: 40px;}
+ul li {font: normal 14px/20px 'Stolzl'; color: #000; margin-bottom: 10px; position: relative; padding-left: 20px;}
+ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 10px; height: 1px; background: #dddddd; vertical-align: middle; position: absolute; left: 0; top: 10px;}
+
+ol {counter-reset: myCounter;}
+ol li {list-style: none; position: relative; margin-bottom: 30px; padding-left: 60px; min-height: 40px; font: 300 18px/32px 'Stolzl';}
+ol li strong {display: block; font: 700 18px/32px 'Stolzl';}
+ol li:before {counter-increment: myCounter; content:counter(myCounter); color: white; background: #c08f5f; display: block; text-align: center; line-height: 40px; width: 40px; height: 40px; position: absolute; top: 0px; left: 0; border-radius: 50%; font-weight: 700; font-size: 18px; font-family: 'Stolzl';}
+
+h1, h2, h3, h4, h5, h6 {line-height: 1.2; margin:0 0 30px 0; color: #000; font-family: $brand-font; font-weight: 500;}
+
+h1{font-size: 48px;}
+h2{font-size: 30px;}
+h3{font-size: 22px;}
+h4{font-size: 18px;}
+
+
+p {font:normal 18px/32px $brand-font; margin:0 0 20px 0; color: $brand-color;}
+
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+.text-center {text-align:center;}
+.text-normal {font-weight:normal;}
+.text-light {font-weight:300;}
+.text-medium {font-weight:600;}
+.text-bold {font-weight:bold;}
+.font-big {font-size: 20px;}
+.font-medium {font-size: 18px;}
+.font-normal {font-size: 16px;}
+.font-small {font-size: 12px;}
+.no-transform {text-transform: none;}
+.no-decor {text-decoration: none;}
+.no-decor-hover:hover {text-decoration: none;}
+.text-transform {text-transform: uppercase;}
+
+.main-title {font-size: 48px;  margin:0 0 30px 0; color: #000; font-family: $brand-font; font-weight: 500; line-height: 1.2;}
+
+@media (min-width: 980px) and (max-width: 1219px) {
+	h1 {font-size: 36px; line-height: 30px;}
+	.main-title {font-size: 36px; line-height: 30px;}
+}
+
+@media (min-width: 620px) and (max-width: 979px) {
+	h1 {font-size: 28px; line-height: 30px;}
+	.main-title {font-size: 28px;}
+}
+
+
+@media (max-width: 619px) {
+	h1 {font-size: 20px; line-height: 30px;}
+	.main-title {font-size: 20px;}
+}
+

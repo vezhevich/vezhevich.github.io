@@ -1,0 +1,13 @@
+.right-column-fixed {position: fixed; top: 0; right: 0; width: 60px; height: 100%; background-color: #fff; background: linear-gradient(to left, white 50%, #ff5c00 50%); background-size: 200% 100%; background-position:right bottom; transition:all .2s ease; z-index: 99999; box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); cursor: pointer;
+	.icon {display: block; width: 60px; height: 60px; text-align: center; line-height: 60px; color: #ff5c00;}
+	.icon.close {display: none;}
+	&:hover {background-color: #ff5c00; background-position:left bottom; 
+		.icon {color: #fff;}
+	}
+}
+
+.right-column-fixed.active {
+	.wrap-item-round {display: none;}
+	.icon.cart {display: none;}
+	.icon.close {display: block;}
+}

@@ -1,0 +1,26 @@
+.signin-tabs {
+	.nav-tabs {border-bottom: none; margin-bottom: 30px; text-align: center; position: relative;
+		li {padding-left: 0; float: none; display: inline-block; zoom: 1; *display: inline; margin-bottom: 0;
+			a {border: none; background: none; color: #888888; font-size: 28px; margin-right: 0; padding: 10px; font-weight: 500;
+				&:hover {background: none; box-shadow: none; border: none;}
+			}
+		}
+		li:before {display: none;}
+		li.active {
+			a {border: none; background: none; color: #000;}
+		}
+	}
+	.link {font-size: 14px; color: #fc5d20;}
+	.remind {text-align: center; font-size: 16px; font-weight: normal; display: block; margin-top: 40px;}
+}
+
+@media (max-width: 619px) {
+	.signin-tabs {
+		.nav-tabs {
+			li {
+				a {font-size: 20px;}
+			}
+		}
+		.remind {font-size: 14px; margin-top: 30px;}
+	}
+}

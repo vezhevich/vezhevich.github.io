@@ -1,0 +1,68 @@
+.modal.product {
+	.close {position: absolute; top: 20px; right: 20px; color: #ff5c00;}
+	.modal-dialog {width: 100%; max-width: 1280px; padding-left: 20px; padding-right: 80px; padding-top: 20px;}
+	.modal-content {border-radius: 0; border: none;}
+	.img {width: 66%; float: left; position: relative; overflow: hidden;
+		img {display: block;}
+		.label {position: absolute; bottom: 40px; right: 40px; width: 60px; height: 60px; border: 2px solid #fff; border-radius: 50%;
+			i {line-height: 50px;}
+		}
+	}
+	.text {float: right; width: 33.89%; padding: 40px; height: 100%;
+		.title {font-size: 24px; font-weight: 500;}
+		.bottom {
+			.cost {font-weight: 500;
+				.in {font-size: 12px; color: #888888; font-weight: normal;
+					i {display: inline-block; zoom: 1; *display: inline; margin: 0 5px;}
+				}
+			}
+			.modal-add-basket {overflow: hidden; position: relative;
+				.qnt {position: absolute; background: #fff; height: 60px; bottom: 0; right: 0px; width: 100%; z-index: 10;  -o-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -o-transform: translateY(60px); -ms-transform: translateY(60px); -moz-transform: translateY(60px); -webkit-transform: translateY(60px);  transform: translateY(60px);
+					button {width: 31.25%; height: 60px; float: left; border: none; background: #fff; cursor: pointer; border: 1px solid #dddddd;
+						/*i {line-height: 40px;}*/
+						&:hover {background-color: #fe5c00; border-color: #fe5c00;
+							i {color: #fff;}
+						}
+					}
+					.down {border-right: 0;}
+					.up {border-left: 0;}
+					input[type=text]{width: 37.5%; height: 60px; float: left; border: 2px solid #fe5c00; background: #fff; text-align: center; font-size: 16px; font-weight: normal; color: #000000; border-radius: 0;}
+				}
+				.qnt.active {-o-transform: translateY(0px); -ms-transform: translateY(0px); -moz-transform: translateY(0px); -webkit-transform: translateY(0px);  transform: translateY(0px);}
+			}
+		}
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1279px) {
+	.modal.product {
+		.text {
+			.title {font-size: 20px; line-height: 26px;}
+		}
+	}
+}
+	.modal-open {padding-right: 0!important;}
+
+    .modal.product.fade .modal-dialog {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+            -ms-transform: scale(0.1);
+             -o-transform: scale(0.1);
+                transform: scale(0.1);
+        -webkit-transition: all 0.3s ease;
+           -moz-transition: all 0.3s ease;
+             -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+    }
+
+    .modal.product.fade.in .modal-dialog {
+        opacity: 1;
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+             -o-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform: translate3d(0%, 0, 0);
+            -ms-transform: translate3d(0%, 0, 0);
+             -o-transform: translate3d(0%, 0, 0);
+                transform: translate3d(0%, 0, 0);
+    }

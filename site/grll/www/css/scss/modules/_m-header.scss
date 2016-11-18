@@ -1,0 +1,123 @@
+.m-header {height: 60px; overflow: hidden; padding-right: 60px; background-color: #161616;
+	.nav-top {float: left; margin-top: 20px; 
+		a {color: #aaaaaa; font: normal 13px $brand-font; display: inline-block; zoom: 1; *display: inline; vertical-align: top; margin-right: 30px;
+			&:hover {color: #fff;}
+		}
+	}
+	.info-top {float: right;
+		i {vertical-align: middle; color: #aaaaaa; font-size: 18px; margin-right: 10px;}
+		.icon {margin-left: 40px; margin-top: 20px; display: inline-block; zoom: 1; *display: inline; vertical-align: top;}
+		.phone {color: #fff; font-size: 16px;}
+		.time {color: #aaaaaa; font-size: 13px;
+			sup {font-size: 8px; vertical-align: top;}
+		}
+		.auth {color: #aaaaaa; font-size: 13px;
+			&:hover {color: #fff;}
+		}
+		.shopping-cart.icon {position: relative;
+			.in-round {position: absolute; top: -10px; right: -5px; width: 16px; height: 16px; display: none; border-radius: 50%; background: #FF5C00; color: #fff; text-align: center; font-size: 10px; line-height: 16px; z-index: 10; animation:mymove .3s; -moz-animation:mymove .3s; -webkit-animation:mymove .3s;}	
+		}
+		.shopping-cart.icon.active {
+			.in-round {display: block; -webkit-animation-name: mymove2;  animation-name: mymove2; }
+		}
+	}
+	.logo-small {float: left; margin-left: 10px; margin-top: 10px;}
+}
+
+@keyframes mymove2 
+  {
+    from {top:-100px; right: -100px;}
+    20% {
+      top: -50px; right: -80px;
+    }
+    to {top:-10px; right:-5px;}
+  }
+
+  @-moz-keyframes mymove
+  {
+    from {top:-100px; right: -100px;}
+    20% {
+      top: -50px; right: -80px;
+    }
+    to {top:-10px; right:-5px;}
+  }
+
+  @-webkit-keyframes mymove
+  {
+    from {top:-100px; right: -100px;}
+    20% {
+      top: -50px; right: -80px;
+    }
+    to {top:-10px; right:-5px;}
+  }
+
+.m-header.up {background-color: #161616; -webkit-transition: .2s ease-in-out; -moz-transition: .2s ease-in-out; -o-transition: .2s ease-in-out; transition: .2s ease-in-out; z-index: 2000;
+}
+
+.m-header.black-style {background: #161616;
+	.info-top {
+		i {color: #fff;}
+	}
+	.nav-icon:after, .nav-icon:before, .nav-icon div {background: #fff;}
+	.phone {
+		span {color: #fff;}
+	}
+}
+
+@media (max-width: 979px) {
+	.m-header {padding-right: 0; background: #fff;
+		.info-top {
+			.icon {margin-left: 30px;}
+			.phone {color: #161616!important;
+				i {font-size: 24px; color: #888888;}
+			}
+			.auth {margin-top: 20px;
+				i {margin-right: 0; font-size: 24px; color: #888888;}
+			}
+			.shopping-cart {
+				i {margin-right: 0; font-size: 24px; color: #888888;}
+			}
+		}
+		.nav-icon {float: left; padding: 20px; width: 60px; height: 60px; margin-left: -20px; cursor: pointer; display: block; z-index: 3; box-sizing: border-box;}
+		.nav-icon:after, .nav-icon:before, .nav-icon div {background: #888888; content: ''; display: block; height: 2px; margin: 3px 0; -moz-transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+		.nav-icon.active:before {transform: translateY(5px) rotate(135deg); -moz-transform: translateY(5px) rotate(135deg); -webkit-transform: translateY(5px) rotate(135deg);}
+		.nav-icon.active:after {transform: translateY(-5px) rotate(-135deg); -moz-transform: translateY(-5px) rotate(-135deg);
+		 -webkit-transform: translateY(-5px) rotate(-135deg);}
+		.nav-icon.active div {-moz-transform: scale(0); -webkit-transform: scale(0); transform: scale(0);}
+	}
+	.m-header.black-style{background: #fff;
+		.info-top {
+			.phone {color: #888888;
+				i {color: #888888;}
+				span {color: #161616;}
+			}
+			.auth {
+				i {color: #888888;}
+			}
+			.shopping-cart {
+				i {color: #888888;}
+			}
+		}
+		.nav-icon:after, .nav-icon:before, .nav-icon div {background: #888888;}
+	}
+	/*.cd-auto-hide-header.m-header {position: static;}*/
+	.m-header.up {background: #fff;}
+}
+
+@media (max-width: 619px) {
+	.m-header {background: #fff;
+		.info-top {
+			i {color: #000;}
+		}
+		.phone {
+			i {color: #000 !important;}
+		}
+		.logo-small {margin-top: 15px;
+			img {max-width: 95px;}
+		}
+		.shopping-cart {margin-bottom: 0;
+			i {color: #000!important;}
+		}
+	}
+}
+

@@ -1,0 +1,8 @@
+.modal-large.right {
+	.modal-dialog {width: 680px; background: #f7f5f3;}
+	.modal-content {border: none; border-radius: 0; background-color: #f7f5f3; padding: 40px 80px 20px 120px;}
+}
+
+.modal-large.right.fade {
+	.modal-dialog {right: -680px;}
+}

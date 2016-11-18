@@ -1,0 +1,97 @@
+.in-basket {width: 100%; height: 60px; background: #ff5c00; color: #fff; font-size: 16px; border: none; cursor: pointer;
+	i {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-right: 20px;}
+}
+.btn-up {width: 100%; height: 60px; background: #fff; text-align: center;
+	a {font-size: 16px; line-height: 60px; color: #fe5c00; display: block;
+		i {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-right: 15px;}
+	}
+}
+
+.btn-def {display: block; height: 60px; width: 100%; background: #fc5d20; color: #fff; font-size: 16px; line-height: 60px; border: none; cursor: pointer;}
+
+.btn-white {width: 100%; height: 60px; background-color: #fff; border: none; cursor: pointer; text-align: center; font-size: 16px; color: #ff5c00;
+	i {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-right: 40px;}
+    &:hover {color: #ff7e00;}
+}
+
+.btn-green {width: 100%; height: 60px; background-color: #64b706; border: none; cursor: pointer; text-align: center; font-size: 16px; color: #fff; position: relative;
+	i {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-left: 40px; position: absolute; right: 20px; top: 50%; margin-top: -10px;}
+}
+
+@media (max-width: 619px) {
+	.btn-up {
+		a {position: relative;
+			i {position: absolute; top: 50%; left: 20px; margin-top: -10px;}
+		}
+	}
+
+	.in-basket {position: relative;
+		i {position: absolute; left: 20px; top: 50%; margin-top: -10px;}
+	}
+}
+
+.hvr-sweep-to-bottom {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: block;
+    position: relative;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color;
+    vertical-align: middle;
+}
+.hvr-sweep-to-bottom::before {
+    background: #ff7e00 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+    color: white;
+}
+.hvr-sweep-to-bottom:hover::before, .hvr-sweep-to-bottom:focus::before, .hvr-sweep-to-bottom:active::before {
+    transform: scaleY(1);
+}
+
+.hvr-sweep-to-right {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: block;
+    position: relative;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color;
+    vertical-align: middle;
+}
+.hvr-sweep-to-right::before {
+    background: #6cc506  none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50% 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+}
+.hvr-sweep-to-right:hover::before, .hvr-sweep-to-right:focus::before, .hvr-sweep-to-right:active::before {
+    transform: scaleX(1);
+}

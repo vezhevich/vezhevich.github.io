@@ -1,0 +1,74 @@
+.item-list {margin-bottom: 40px;}
+.item-card {height: 320px; position: relative; overflow: hidden; margin-bottom: 20px; background: #fff; overflow: hidden;
+	.link-popup {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 1;}
+	.link-page {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 1;}
+	.img {height: 180px;
+		img {width: 100%;}
+	}
+	.text {height: 160px; overflow: hidden; position: absolute; bottom: -20px; left: 0; width: 100%; background: #fff; padding-top: 15px;  -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; z-index: 10;
+		.title {margin-bottom: 7px;  height: 23px; overflow: hidden; padding-left: 20px; padding-right: 20px;
+			a {font-size: 18px; font-weight: normal; line-height: 24px; display: block; color: #000;
+				&:hover {color: #ff5c00;}
+			}
+		}
+		.teaser {font-size: 12px; font-weight: normal; color: #333; line-height: 18px; margin-bottom: 0px; height: 35px; overflow: hidden; padding-left: 20px; padding-right: 20px;}
+		.bottom {padding-left: 20px;  -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; height: 60px;
+			.add-basket {float: right; text-align: center; position: relative;
+				a {display: block; width: 60px; height: 60px;
+					i {line-height: 60px;}
+				}
+				.qnt {position: absolute; background: #fff; height: 60px; bottom: 0; right: 0px; width: 180px; z-index: 10;  -o-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -o-transform: translateY(60px); -ms-transform: translateY(60px); -moz-transform: translateY(60px); -webkit-transform: translateY(60px);  transform: translateY(60px);
+					button {width: 60px; height: 60px; float: left; border: none; background: #fff; cursor: pointer;
+						/*i {line-height: 40px;}*/
+						&:hover {
+							i {color: #fff;}
+						}
+					}
+					input[type=text]{width: 60px; height: 60px; float: left; border: 2px solid #fe5c00; background: #fff; text-align: center; font-size: 16px; font-weight: normal; color: #000000; border-radius: 0;}
+				}
+				.qnt.active {-o-transform: translateY(0px); -ms-transform: translateY(0px); -moz-transform: translateY(0px); -webkit-transform: translateY(0px);  transform: translateY(0px);}
+			}
+			.cost {float: left; font-size: 20px; font-weight: 500; line-height: 60px; margin-bottom: 0;
+				.in {font-size: 12px; color: #888888; font-weight: normal;}
+				.rub {margin-left: 5px;}
+			}
+		}
+	}
+	&:hover {box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+		.text {-o-transform: translateY(-20px); -ms-transform: translateY(-20px); -moz-transform: translateY(-20px); -webkit-transform: translateY(-20px);  transform: translateY(-20px);
+			.bottom {-o-transform: translateY(20px); -ms-transform: translateY(20px); -moz-transform: translateY(20px); -webkit-transform: translateY(20px);  transform: translateY(20px); box-shadow: inset 0px 1px 0px #eee;
+				.add-basket {
+					a {background-color: #ff5c00; transition: background 0.3s ease, color 0.3s linear;
+						i {color: #fff;}
+					}
+				}
+			}
+			.bottom.active {box-shadow: none;}
+		}
+	}
+	.text.active {-o-transform: translateY(-20px); -ms-transform: translateY(-20px); -moz-transform: translateY(-20px); -webkit-transform: translateY(-20px);  transform: translateY(-20px);
+		.bottom {-o-transform: translateY(20px); -ms-transform: translateY(20px); -moz-transform: translateY(20px); -webkit-transform: translateY(20px);  transform: translateY(20px)}
+	}
+}
+
+.item-card.large {
+	.text {max-width: 48.3%;}
+}
+
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.item-card.large {
+		.text {width: 48.4%; left: auto; right: 0;}
+	}
+}
+
+@media (max-width: 619px) {
+	.item-list {margin-bottom: 0px;}
+	.item-card.large {
+		.text {width: 100%; max-width: 100%;}
+	}
+}
+
+
+
+

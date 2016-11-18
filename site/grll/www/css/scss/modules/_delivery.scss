@@ -1,0 +1,88 @@
+.delivery-head {background: none; height: 120px;}
+.delivery {
+	.title {font-size: 28px; line-height: 36px; font-weight: 500; line-height: 1;}
+	.sub-title {font-size: 20px; line-height: 24px; font-weight: 500; margin-bottom: 15px;}
+	.helper {font-size: 14px; line-height: 20px; color: #888888; font-weight: normal;}
+	.info {padding-bottom: 20px;
+		h1 {text-align: center;}
+		p {font-size: 16px; line-height: 24px;}
+		a {color: #fe5c00;}
+	}
+	.pay {background: #fff; padding-top: 50px; padding-bottom: 50px; margin-bottom: 40px;}
+	.location {
+		.helper {margin-top: 20px;}
+		.loc {margin-bottom: 20px; position: relative;
+			.name {float: left; position: relative; background: #f7f5f3; z-index: 2; padding-bottom: 2px; padding-right: 5px;
+				a {font-size: 16px;}
+			}
+			.cost {float: right; color: #161616; position: relative; background: #f7f5f3; z-index: 2; padding-bottom: 2px; padding-left: 5px;}
+		}
+		.loc:before {content: ''; position: absolute; bottom: 2px; left: 0; width: 100%; height: 1px; border-top: 1px dotted #888888; z-index: 1;}
+		.l1 {
+			.name {
+				a {color: #6c00fe;}
+			}
+		}		
+		.l2 {
+			.name {
+				a {color: #01a6cf;}
+			}
+		}		
+		.l3 {
+			.name {
+				a {color: #f52993;}
+			}
+		}
+	}
+	.address {margin-bottom: 30px;
+		.text {font-size: 16px; line-height: 24px;}
+	}
+}
+
+@media (max-width: 1219px) {
+	.delivery {
+		.title {text-align: center;}
+	}
+}
+
+@media (max-width: 979px) {
+	.delivery-head {display: none;}
+}
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.delivery {
+		.title {font-size: 24px;}
+		.pay {padding-bottom: 20px;
+			.item {margin-bottom: 20px;}
+		}
+		.location {margin-bottom: 40px;}
+	}
+}
+
+@media (max-width: 619px) {
+	.delivery {
+		.title {font-size: 20px;}
+		.sub-title {font-size: 16px;}
+		.info {
+			p {font-size: 14px; line-height: 20px;}
+		}
+		.pay {padding-bottom: 10px;
+			.item {margin-bottom: 20px;}
+		}
+		.location {margin-bottom: 40px;
+			.loc {
+				.name {
+					a {font-size: 14px;}
+				}
+			}
+		}
+		.address {
+			.text {font-size: 14px; line-height: 20px; margin: 0;}
+		}
+	}
+}
+
+
+
+
+

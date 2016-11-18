@@ -1,0 +1,17 @@
+.m-logo {text-align: center; margin-bottom: 110px; }
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.m-logo {height: 320px; position: relative; margin-bottom: 0;
+		a {position: relative; width: 100%; height: 100%; display: block;
+			img {margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+		}
+	}
+}
+
+@media (max-width: 619px) {
+	.m-logo {height: 160px; margin-bottom: 0; position: relative;
+		a {position: relative; width: 100%; height: 100%; display: block;
+			img {margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); max-width: 120px;}
+		}
+	}
+}

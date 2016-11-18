@@ -1,0 +1,31 @@
+.m-navigation {text-align: center; padding: 0 60px 0 0px;
+	a {display: inline-block; zoom: 1; *display: inline; vertical-align: top; font-size: 20px; font-weight: 500; color: #fff; text-transform: uppercase; letter-spacing: 1px; margin: 0 25px; position: relative;}
+	.logo-small {display: none;}
+	.container {position: relative;}
+}
+
+.m-navigation.fixed {
+	.logo-small {display: block; position: absolute; left: 20px; top: 0px; height: 60px; margin: 0; padding-top: 10px;}
+}
+
+.m-navigation.fixed-inner {position: fixed; top: 60px; height: 60px; background: #fff;
+	a {font-size: 16px; color: #161616; line-height: 60px; margin: 0 15px;}
+	.logo-small {height: 60px; left: 20px; margin: 0; padding-top: 10px; position: absolute; top: 0; display: block;}
+}
+
+@media (min-width: 980px) and (max-width: 1219px) {
+	.m-navigation {padding-right: 0;}
+	.m-navigation.cd-secondary-nav a {font-size: 16px;}
+}
+
+@media (max-width: 979px) {
+	.m-navigation {background: #f7f5f3; padding: 0;
+		a {display: block; border-bottom: 1px solid #dddddd; margin: 0; color: #ff5c01; height: 60px; line-height: 60px; font-weight: 500; font-size: 20px;}
+	}
+}
+@media (max-width: 619px) {
+	.m-navigation {background: #f7f5f3; padding: 0;
+		a {font-size: 14px;}
+	}
+}
+

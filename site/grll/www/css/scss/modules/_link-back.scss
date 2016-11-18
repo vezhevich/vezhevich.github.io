@@ -1,0 +1,31 @@
+.link-back {position: relative; padding-left: 0px; padding-right: 0px; margin-left: 20px;
+	a {position: absolute; top: 0; left: 0; width: 40px; height: 100%; text-align: right;
+		i {color: #ff5c00; margin-top: 5px;}
+	}
+}
+
+.link-back.inner {margin-left: 0;}
+.link-back-signin {margin-left: 0; padding: 0; float: left; margin-left: -20px; width: 40px; height: 60px; position: relative; z-index: 10;
+	i {position: absolute; top: 50%; left: 20px; margin-left: -8px; margin-top: -10px; color: #ff5c00;}
+}
+
+.link-padding-left {padding-left: 60px;
+	a {text-align: left;}
+}
+
+@media (min-width: 980px) {
+	.link-back {margin-left: 0;
+		a {display: none;}
+	}
+}
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.link-back.wrap-left {
+		a {text-align: left;}
+	}
+}
+
+@media (max-width: 619px) {
+	.link-back-signin {height: 45px;}
+	.link-padding-left {padding-left: 40px;}
+}

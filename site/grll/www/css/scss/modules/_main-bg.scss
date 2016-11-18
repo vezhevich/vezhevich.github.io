@@ -1,0 +1,9 @@
+.main-bg {background: url(../img/main-bg.jpg) top center no-repeat; background-size: cover; height: 100%; position: absolute; width: 100%; z-index: 1;}
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.main-bg {height: 320px; top: 60px;}
+}
+
+@media (max-width: 619px) {
+	.main-bg {height: 160px; top: 60px;}
+}

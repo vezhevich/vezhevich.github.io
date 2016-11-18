@@ -1,0 +1,52 @@
+.modal-large .form-profile {margin-left: 0; margin-right: 0;}
+.form-profile {width: 380px; margin: 0 auto 30px auto; 
+	.wrap {margin-bottom: 20px;}
+	button {margin-top: 40px;}
+	.helper {font-size: 14px; color: #888888; margin-bottom: 10px;}
+	input[type=text], input[type=email], input[type=password], input[type=tel] {width: 100%; height: 60px; background: #fff; border: 2px solid #fff; line-height: 58px; padding: 0 20px; color: #000000; position: relative; border-radius: 0;}
+	input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {border-color: #fc5d20;} 
+	input[type="checkbox"] {display:none;}
+	input[type="checkbox"] + label {font: 400 14px/40px $brand-font; color: #fc5d20; cursor: pointer; display: block; padding-left: 60px; height: 40px; position: relative;}
+	input[type="checkbox"] + label::before {content: ""; display: inline-block; height: 40px; width: 40px; margin: 0 10px 0 0; background-image: url(/img/checkbox.png); background-repeat: no-repeat; vertical-align: text-top; position: absolute; top: -2px; left: 0;}
+	input[type="checkbox"] + label::before {background-position: 0 -60px;}
+	input[type="checkbox"]:checked + label::before {background-position: 0 0;}
+	input[type="checkbox"]:disabled + label::before {background-position: 0 -60px;}
+	
+	input[type=password] {padding-right: 60px;}
+
+	input[type=text]::-webkit-input-placeholder {color: #888888;}
+	input[type=text]:-moz-placeholder {color: #888888;}
+	input[type=text]::-moz-placeholder {color: #888888;}
+	input[type=text]:-ms-input-placeholder {color: #888888;}	
+	input[type=tel]::-webkit-input-placeholder {color: #888888;}
+	input[type=tel]:-moz-placeholder {color: #888888;}
+	input[type=tel]::-moz-placeholder {color: #888888;}
+	input[type=tel]:-ms-input-placeholder {color: #888888;}
+
+	.wrap-password {position: relative;
+		label {display: block; position: absolute; top: 50%; right: 20px; margin-top: -13px;
+			i {color: #bbbbbb;}
+			.no {display: none;}
+		} 
+		label.active .yes {display: none;}
+		label.active .no {display: block;}
+	}
+	.tel {position: relative;
+		span {position: absolute; top: 50%; left: -30px; font-size: 16px; color: #888888; font-weight: normal; margin-top: -8px;}
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1279px) {
+	.modal-large .form-profile {width: 380px;}
+	.form-profile {width: 480px;}
+}
+
+@media (max-width: 619px) {
+	.form-profile {width: 280px;
+		input[type=text], input[type=email], input[type=password], input[type=tel] {font-size: 14px;}
+		.btn-def {margin-top: 20px;}
+		.tel {
+			span {display: none;}
+		}
+	}
+}

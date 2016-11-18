@@ -1,0 +1,5 @@
+.block-center {width: 100%; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+
+@media (max-width: 979px) {
+	.block-center {position: relative; top: 0; left: 0; -webkit-transform: translate(0%,0%); -ms-transform: translate(0%,0%); transform: translate(0%,0%);}
+}

@@ -1,0 +1,25 @@
+body {overflow-x: hidden!important;}
+.wrapper-x {overflow-x: hidden!important;}
+
+.l-wrapper {padding-right: 60px; position: relative; z-index: 10; height: 100%;}
+.wrapper-top {padding-top: 40px; -o-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+
+@media (max-width: 979px) {
+	.l-wrapper {padding-right: 0;}
+	.about-text.wrapper-top {padding-top: 30px;}
+}
+
+.cd-hero.no-head {background: none; height: 120px;}
+
+@media (max-width: 979px) {
+	.cd-hero.no-head  {display: none;}
+	.wrapper-top {padding-top: 100px;}
+}
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.no-padding-sm {padding: 0;}
+}
+
+@media (max-width: 619px) {
+	.no-padding-xs {padding: 0;}
+}

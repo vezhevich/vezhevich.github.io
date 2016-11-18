@@ -1,0 +1,28 @@
+.filter-catalog {text-align: center; margin-bottom: 40px;
+	a {display: inline-block; zoom: 1; *display: inline; vertical-align: top; height: 40px; line-height: 40px; padding: 0 20px; border-radius: 40px; background-color: #f0edea; color: #fe5c00; margin: 0 5px; overflow: hidden; -moz-osx-font-smoothing: grayscale; backface-visibility: hidden; position: relative; transform: translateZ(0px); transition-duration: 0.3s; transition-property: color;}
+    a:before {bottom: 0; content: ""; left: 0; position: absolute; right: 0; top: 0; transform: scaleY(0); transform-origin: 50% 0 0; transition-duration: 0.3s; transition-property: transform; transition-timing-function: ease-out; z-index: -1;}
+    a:hover {color: #fff;}
+    a:hover:before {transform: scaleY(1);}
+	.is-checked.tempura {background-color: #ee9135; color: #fff;}
+	a.tempura:hover:before {background-color: #ee9135; color: #fff;}
+	.is-checked.sharp {background-color: #f22f2f; color: #fff;}
+	a.sharp:hover:before {background-color: #f22f2f; color: #fff;}
+	.is-checked.hot {background-color: #ed621e; color: #fff;}
+	a.hot:hover:before {background-color: #ed621e; color: #fff;}
+	.is-checked.cold {background-color: #15baff; color: #fff;}
+	a.cold:hover:before {background-color: #15baff; color: #fff;}
+	.is-checked.vegan {background-color: #6dc40f; color: #fff;}
+	a.vegan:hover:before {background-color: #6dc40f; color: #fff;}
+	.is-checked.all {background-color: #ffffff;}	
+	a.all:hover:before {background-color: #ffffff;}	
+	a.all:hover {color: #fe5c00;}	
+	.all {
+		i {vertical-align: middle; margin-right: 5px; font-size: 14px;}
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1279px) {
+	.filter-catalog {
+		a {font-size: 14px;}
+	}
+}

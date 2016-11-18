@@ -1,0 +1,19 @@
+.about-promo {background: url(/img/about-promo.jpg) no-repeat; height: 400px; margin-top: 120px;
+	h1 {color: #fff; margin-bottom: 0;}
+}
+
+@media (max-width: 979px) {
+	.about-promo {margin-top: 0;}
+}
+
+@media (min-width: 620px) and (max-width: 979px) {
+	.about-promo {height: 260px; margin-top: 60px; padding-top: 0;
+		h1 {font-size: 28px;}
+	}
+}
+
+@media (max-width: 619px) {
+	.cd-hero.about-promo {height: 140px; margin-top: 60px; padding: 0;
+		h1 {font-size: 20px; margin-bottom: 0;}
+	}
+}

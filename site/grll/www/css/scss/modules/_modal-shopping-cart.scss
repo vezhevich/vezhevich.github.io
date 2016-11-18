@@ -1,0 +1,8 @@
+.modal-shopping-cart.right {
+	.modal-dialog {width: 980px;}
+	.modal-content {border: none; border-radius: 0; background-color: #f7f5f3; padding: 40px 65px 20px 20px;}
+}
+
+.modal-shopping-cart.right.fade {
+	.modal-dialog {right: -980px;}
+}
