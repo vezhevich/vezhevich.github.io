@@ -50,7 +50,7 @@ if (window.jQuery) $(document).ready(function() {
   if ($('.filter').length) filter();
   if ($('.favorite .tovar-list .qnt').length) border();
 
-  setTimeout(function(){$('.modal-location').modal('show');},1000);
+  // setTimeout(function(){$('.modal-location').modal('show');},1000);
 
    $(window).bind('scroll resize', function(){
       $('.background-image-top').css('background-position', '50% -' + $(window).scrollTop() * 0.25 + 'px');
