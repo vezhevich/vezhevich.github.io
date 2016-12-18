@@ -11798,6 +11798,11 @@ p {
   }
 }
 
+.main-collections {
+  position: relative;
+  height: 100%;
+}
+
 .main-collections .grid-item {
   margin-bottom: 40px;
 }

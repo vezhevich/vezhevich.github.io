@@ -3,12 +3,14 @@
 	<head>
         <title>Глазов</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="./css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
-		<link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     </head>
 	<body>
-		<header class="main-header">
+		<div class="environment-background"></div>
+		<header class="main-header white-style">
 			<div class="top hidden-xs">
 				<div class="container">
 					<a data-toggle="modal" data-target="#myModal4" href="#" class="link-location">Петропавловск-Камчатский <i class="material-icons">arrow_drop_down</i></a>
@@ -24,8 +26,7 @@
 			<div class="bottom">
 				<div class="container">
 					<div class="logo">
-						<a class="hidden-xs black-logo" href="./"><img src="./img/logo.png" alt=""></a>
-						<a class="hidden-lg hidden-md hidden-sm white-logo" href="./"><img src="./img/f-logo.png" alt=""></a>
+						<a href="../"><img src="../img/f-logo.png" alt=""></a>
 					</div>
 					<div class="btn catalog hidden-lg hidden-xs"><a href="#">Каталог мебели <i class="material-icons">arrow_drop_down</i></a></div>
 					<nav class="navigation hidden-md hidden-sm hidden-xs">
@@ -53,243 +54,142 @@
 				</div>
 			</div>
 		</header>
-		<div class="background-image-top composition-bg">
-			<div class="container wrapper-center">
+		<div class="container wrapper-up-header">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col-lg-offset-2 head-content environment-head">
+					<h1>3D обстановка</h1>
+					<p>Удобная и интуитивно понятная программа расстановки мебели  онлайн подскажет, как лучше обставить комнату. </p>
+					<div class="btn-send hidden-md hidden-sm hidden-xs"><a class="anchor" href="#anchor1">создать обстановку</a></div>
+					<a class="link anchor" href="#anchor2">Как это работает?</a>
+				</div>
+			</div>
+		</div>
+		<div class="bg-grey timeline-wrapper">
+			<div class="container" id="anchor2">
+				<p class="timeline-title">5 простых шагов</p>
+				<dl class="timeline">
+					<!-- Item 1 -->
+					<dt>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag"></span>
+							</div>
+							<div class="desc">
+								<span>1</span>
+								<p>Задайте габариты вашей комнаты, установите окна и двери</p>
+								<div class="img"><img src="../img/step1.png" alt=""></div>
+							</div>
+						</div>
+					</dt>								
+					<dt>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag"></span>
+							</div>
+							<div class="desc">
+								<span>2</span>
+								<p>Перенесите на сцену мебель и расставьте ее так, как вам удобно</p>
+								<div class="img"><img src="../img/step2.png" alt=""></div>
+							</div>
+						</div>
+					</dt>								
+					<dt>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag"></span>
+							</div>
+							<div class="desc">
+								<span>3</span>
+								<p>Добавьте декор: обои, шторы, предметы интерьера</p>
+								<div class="img"><img src="../img/step3.png" alt=""></div>
+							</div>
+						</div>
+					</dt>								
+					<dt>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag"></span>
+							</div>
+							<div class="desc">
+								<span>4</span>
+								<p>Сохраните картинку и распечатайте спецификацию с перечнем мебели</p>
+								<div class="img"><img src="../img/step4.png" alt=""></div>
+							</div>
+						</div>
+					</dt>								
+					<dt>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag"></span>
+							</div>
+							<div class="desc">
+								<span>5</span>
+								<p>Обсудите с близкими свой план и купите мебель по списку в ближайшем магазине</p>
+								<div class="img"><img src="../img/step5.png" alt=""></div>
+							</div>
+						</div>
+					</dt>
+				</dl>
+			</div>
+		</div>
+		<div class="environment-service">
+			<div class="container">
+				<h2>Возможности сервиса</h2>
 				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
-						<div class="text">
-							Коллекция для спальни Berlin
-							<div class="col-lg-10 col-lg-offset-1 col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
-								<p>Современный спальный гарнитур в коллекции Berlin наполняет интерьер спальни подходящей для сна энергией: тихой, спокойной, даже неподвижной. Такая обстановка приятна людям с противоположным ритмом жизни.</p>
-								<div class="shvr-icon"><a href="shvr.html"><i class="material-icons">settings_ethernet</i><span>Доступна Ширина ВРАЗМЕР</span></a></div>
-							</div>
+					<div class="col-lg-3 col-md-4 col-lg-offset-1 col-sm-12 item col-xs-12">
+						<div class="img">
+							<img src="../img/service1.jpg" alt="">
 						</div>
+						<p>Можно настраивать планировку, размер и расположение стен, дверей, окон.</p>
 					</div>
-				</div>
-			</div>
-			<div class="row-scroll inner hidden-xs">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-2 col-md-3 col-sm-4 col-lg-offset-3 col-md-offset-1"><a class="anchor" href="#anchor1">Особенности</a></div>
-						<div class="col-lg-2 col-md-3 col-sm-4"><a class="anchor" href="#anchor2">В интерьере</a></div>
-						<div class="col-lg-2 col-md-3 col-sm-4"><a class="anchor" href="#anchor3">В других комнатах</a></div>
+					<div class="col-lg-3 col-md-4 col-lg-offset-1 col-sm-12 item col-xs-12">
+						<div class="img">
+							<img src="../img/service2.jpg" alt="">
+						</div>
+						<p>Кликая по изображению мебели, можно увидеть, что скрывается за фасадами</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-lg-offset-1 col-sm-12 item col-xs-12">
+						<div class="img">
+							<img src="../img/service3.jpg" alt="">
+						</div>
+						<p>Мебель со страницы Избранное десктопной версии сайта легко перенести сразу на сцену 3D.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="anchor1"></div>
-		<div class="composition">
-			<h2>Особенности коллекции</h2>
-			<div class="color-view">
-				<div class="two-cols-percent clearfix">
-					<div class="col">
-						<div class="color c1">
-							<div class="round"></div>
-							<div class="name">Дуб сонома</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="color c2">
-							<div class="round"></div>
-							<div class="name">Венге</div>
-						</div>
-					</div>
-				</div>
+		<div class="bg-grey">
+			<div class="environment-layout">
+				<h2>Примеры планировок</h2>
+				<p>Реалистичные картинки с текстурами и тенями с любого ракурса</p>
 			</div>
-			<div class="wrapper">
-				<div class="item horizontal image-left">
-					<div class="two-cols-percent clearfix">
-						<div class="col">
-							<div class="img wow fadeImgLeft">
-								<a data-toggle="modal" data-target="#myModal14" href="#"><img class="wow imgLeft" src="./img/composition1.jpg" alt=""></a>
-								<div class="mask wow maskLeft"></div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="text">
-								<p class="title">Спокойный декор и глубина</p>
-								<p>Темная мебель цвета Венге лучше воспринимает искусственный свет: в комнате заиграют глубокие тени и создадут объем. Стремящиеся вверх белые полосы повторяют устойчивость форм, успокаивают суетливый разум.</p>
-							</div>
-						</div>
-					</div>
-				</div>				
-				<div class="item horizontal image-right">
-					<div class="two-cols-percent clearfix">
-						<div class="col hidden-sm hidden-xs">
-							<div class="text">
-								<p class="title">Три размера кровати</p>
-								<p>— для матрасов шириной на 1800, 1600 и 1400 мм.</p>
-								<p>Разумно использовать площадь маленькой спальни поможет комплектация кровати подъемным механизмом.</p>
-							</div>
-						</div>
-						<div class="col">
-							<div class="img wow fadeImgRight">
-								<a data-toggle="modal" data-target="#myModal14" href="#"><img class="wow imgRight" src="./img/composition2.jpg" alt=""></a>
-								<div class="mask wow maskRight"></div>
-							</div>
-						</div>
-						<div class="col hidden-lg hidden-md">
-							<div class="text">
-								<p class="title">Три размера кровати</p>
-								<p>— для матрасов шириной на 1800, 1600 и 1400 мм.</p>
-								<p>Разумно использовать площадь маленькой спальни поможет комплектация кровати подъемным механизмом.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item image-left">
-					<div class="two-cols-percent clearfix">
-						<div class="col">
-							<div class="img wow fadeImgLeft">
-								<a data-toggle="modal" data-target="#myModal14" href="#"><img class="wow imgLeft" src="./img/composition3.jpg" alt=""></a>
-								<div class="mask wow maskLeft"></div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="text">
-								<p class="title">Полноценный шкаф-гардероб</p>
-								<p>Классический 4-х дверный шкаф с двумя стационарными штангами и полками для белья позволит зонировать хранение вещей для каждого члена семьи. </p>
-								<p>Создать полноценный шкаф-гардероб можно с помощью двух таких шкафов, нужно только поменять местами дверцы и создать большое зеркало в центре.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="item image-full">
-				<div class="img"><a data-toggle="modal" data-target="#myModal14" href="#"><img src="./img/composition4.jpg" alt=""></a></div>
-			</div>
-			<div class="wrapper">
-				<div class="item horizontal image-right">
-					<div class="two-cols-percent clearfix">
-						<div class="col hidden-sm hidden-xs">
-							<div class="text">
-								<p class="title">Кровать с мягким изголовьем</p>
-								<p>из экокожи цвета топленого молока легко поддержать стилевым оформлением спальни однотонными шторами и обоями.</p>
-							</div>
-						</div>
-						<div class="col">
-							<div class="img wow fadeImgRight">
-								<a data-toggle="modal" data-target="#myModal14" href="#"><img class="wow imgRight" src="./img/composition5.jpg" alt=""></a>
-								<div class="mask wow maskRight"></div>
-							</div>
-
-						</div>
-						<div class="col hidden-lg hidden-md">
-							<div class="text">
-								<p class="title">Кровать с мягким изголовьем</p>
-								<p>из экокожи цвета топленого молока легко поддержать стилевым оформлением спальни однотонными шторами и обоями.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item image-left">
-					<div class="two-cols-percent clearfix">
-						<div class="col">
-							<div class="img wow fadeImgLeft">
-								<a data-toggle="modal" data-target="#myModal14" href="#"><img class="wow imgLeft" src="./img/composition6.jpg" alt=""></a>
-								<div class="mask wow maskLeft"></div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="text">
-								<p class="title">Вариант для долгого макияжа</p>
-								<p>За зеркальными створками туалетного столика с зеркалом трельяжного типа скрыт ряд полок, на которых хранят духи и косметику.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item image-right">
-					<div class="two-cols-percent clearfix">
-						<div class="col hidden-xs">
-							<div class="text">
-								<p class="title">Вариант для долгого макияжа</p>
-								<p>За зеркальными створками туалетного столика с зеркалом трельяжного типа скрыт ряд полок, на которых хранят духи и косметику.</p>
-							</div>
-						</div>
-						<div class="col">
-							<div class="img wow fadeImgRight">
-								<a data-toggle="modal" data-target="#myModal14" href="#"><img class="wow imgRight" src="./img/composition7.jpg" alt=""></a>
-								<div class="mask wow maskRight"></div>
-							</div>
-						</div>
-						<div class="col hidden-lg hidden-md hidden-sm">
-							<div class="text">
-								<p class="title">Вариант для долгого макияжа</p>
-								<p>За зеркальными створками туалетного столика с зеркалом трельяжного типа скрыт ряд полок, на которых хранят духи и косметику.</p>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-		<div class="b-video video-composition">
-			<div class="center">
-				<div class="wrapper">
-					<a href="#"></a>
-					<span class="play"><i class="material-icons">play_arrow</i></span>
-					<div class="text">Видеопрезентация коллекции</div>
+			<div class="">
+				<div class="environment-carousel">
+					<div class="item"><img src="../img/layout1.jpg" alt=""></div>
+					<div class="item"><img src="../img/layout1.jpg" alt=""></div>
+					<div class="item"><img src="../img/layout1.jpg" alt=""></div>
 				</div>
 			</div>
 		</div>
-		<div id="anchor2"></div>
-		<div class="container">
-			<h2 class="h-item-card h-composition">Мебель в интерьере</h2>
-			<div class="item-card">
+		<div id="anchor1" class="environment-software">
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="item">
-							<div class="img"><a href="composition-detail.html"><img src="./img/item1.jpg" alt=""></a></div>
-						</div>
-					</div>					
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="item">
-							<div class="img"><a href="composition-detail.html"><img src="./img/item2.jpg" alt=""></a></div>
-						</div>
-					</div>					
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="item">
-							<div class="img"><a href="composition-detail.html"><img src="./img/item3.jpg" alt=""></a></div>
-						</div>
-					</div>					
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hidden-xs">
-						<div class="item">
-							<div class="img"><a href="composition-detail.html"><img src="./img/item4.jpg" alt=""></a></div>
-						</div>
-					</div>					
-				</div>
-			</div>
-		</div>
-		<div class="composition">
-			<div class="inner-collection">
-				<div class="item i1">
-					<a href="#"></a>
-					<span>Коллекция Berlin для гостиной</span>
-				</div>				
-				<div class="item i2">
-					<a href="#"></a>
-					<span>Коллекция Berlin для прихожей</span>
-				</div>
-			</div>
-		</div>
-		<div id="anchor3" class="container composition-carousel-wrapper">
-			<h2 class="h-item-card">Другие коллекции</h2>
-			<div class="item-card composition-carousel inner">
-				<div class="carousel">
-					<div class="item">
-						<div class="img"><a href=""><img src="./img/item1.jpg" alt=""></a></div>
-						<p class="title"><a href="#">Bauhaus</a></p>
-					</div>
-					<div class="item">
-						<div class="img"><a href=""><img src="./img/item2.jpg" alt=""></a></div>
-						<p class="title"><a href="#">Wyspaa</a></p>
-					</div>
-					<div class="item">
-						<div class="img"><a href=""><img src="./img/item3.jpg" alt=""></a></div>
-						<p class="title"><a href="#">Hyper</a></p>
-					</div>
-					<div class="item">
-						<div class="img"><a href=""><img src="./img/item4.jpg" alt=""></a></div>
-						<p class="title"><a href="#">Adele</a></p>
+					<div class="col-lg-6 col-lg-offset-3">
+						<h2>Создайте свою обстановку</h2>
+						<p class="text hidden-md hidden-sm hidden-xs">Создавайте план расстановки мебели</br> и подбирайте лучший вариант</p>
+						<p class="hidden-lg text">Зайдите на сайт с ПК с Windows</p>
+						<div class="row hidden-md hidden-sm hidden-xs">
+							<div class="col-lg-6">
+								<div class="btn software">
+									<a href="#"><i class="material-icons">launch</i>Онлайн-версия</a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="btn download">
+									<a href="#"><i class="material-icons">desktop_windows</i>Скачать программу</a>
+								</div>
+								<span>Для PC, *.EXE, 180 Мб</span>
+							</div>
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -299,7 +199,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
-							<div class="logo"><a href="./"><img src="./img/f-logo.png" alt=""></a></div>
+							<div class="logo"><a href="../"><img src="../img/f-logo.png" alt=""></a></div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-12">
 							<div class="feedback">
@@ -536,7 +436,7 @@
 					<h2 data-index="1" data-reverse-index="1">3D Обстановка</h2>
 					<p data-index="1" data-reverse-index="1" class="helper">Визуализация ваших идей в 3D</p>
 					<div class="img-effect">
-						<img src="./img/modal-mobile-3d.png" alt="">
+						<img src="../img/modal-mobile-3d.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -546,7 +446,7 @@
 					<h2 data-index="1" data-reverse-index="1">Ширина ВРАЗМЕР</h2>
 					<p data-index="1" data-reverse-index="1" class="helper">Ширина мебели меняется в пределах ± 150 мм</p>
 					<div class="img-effect">
-						<img src="./img/modal-mobile-wardrobes.png" alt="">
+						<img src="../img/modal-mobile-wardrobes.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -555,14 +455,14 @@
 					<h2 data-index="1" data-reverse-index="1"><a href="blog.html">Блог</a></h2>
 					<div data-index="1" data-reverse-index="1" class="b-blog-list">				
 						<div class="item clearfix">
-							<div class="img"><a href="blog-post.html"><img src="./img/modal-menu-blog1.jpg" alt=""></a></div>
+							<div class="img"><a href="blog-post.html"><img src="../img/modal-menu-blog1.jpg" alt=""></a></div>
 							<div class="text">
 								<div class="date">17 марта 2016</div>
 								<p class="title"><a href="blog-post.html">Новая кровать ВЕНА с подъемным основанием</a></p>
 							</div>
 						</div>									
 						<div class="item clearfix">
-							<div class="img"><a href="blog-post.html"><img src="./img/modal-menu-blog2.jpg" alt=""></a></div>
+							<div class="img"><a href="blog-post.html"><img src="../img/modal-menu-blog2.jpg" alt=""></a></div>
 							<div class="text">
 								<div class="date">17 марта 2016</div>
 								<p class="title"><a href="blog-post.html">Новая кровать ВЕНА с подъемным основанием</a></p>
@@ -611,50 +511,27 @@
 		    </div>
 		  </div>
 		</div>
-		<!-- Modal -->
-		<div class="modal modal-default modal-composition fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-body">
-					<div class="clearfix">
-						<div class="left">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">close</i></button>
-							<div class="img"><img src="./img/modal-composition.jpg" alt=""></div>
-						</div>
-						<div class="right">
-							<div class="list">
-								<p class="head">Есть в компоновках</p>
-								<div class="item-card">
-									<div class="item">
-										<div class="img"><a href="composition-detail.html"><img src="./img/item1.jpg" alt=""></a></div>
-										<p class="title hidden-md hidden-sm hidden-xs"><a href="composition-detail.html">Компоновка 1</a></p>
-									</div>
-									<div class="item">
-										<div class="img"><a href="composition-detail.html"><img src="./img/item2.jpg" alt=""></a></div>
-										<p class="title hidden-md hidden-sm hidden-xs"><a href="composition-detail.html">Компоновка 2</a></p>
-									</div>																			
-								</div>
-							</div>
-						</div>
-					</div>
-		      </div>
-		    </div>
-		  </div>
-		</div>
 		<div class="menu-overlay"></div>
-		<script type="text/javascript" src="./js/main-slider.js"></script>
-		<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>				
-		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-  		<script type="text/javascript" src="./js/masonry.pkgd.min.js"></script>
-  		<script type="text/javascript" src="./js/slick.js"></script>
-  		<script type="text/javascript" src="./js/scroll-up-bar.js"></script>
-  		<script type="text/javascript" src="./js/owl.carousel.js"></script>
-  		<script type="text/javascript" src="./js/jquery.mCustomScrollbar.js"></script>
-  		<script type="text/javascript" src="./js/wow.min.js"></script>
-  		<script type="text/javascript" src="./js/site.js"></script>
-  		<script>
-  		    new WOW().init();
-  		</script>
+		<script type="text/javascript" src="../js/main-slider.js"></script>
+		<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>				
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+  		<script type="text/javascript" src="../js/slick.js"></script>
+  		<script type="text/javascript" src="../js/scroll-up-bar.js"></script>
+  		<script type="text/javascript" src="../js/owl.carousel.js"></script>
+  		<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+  		<script type="text/javascript" src="../js/page_scroll_indicator.js"></script>
+  		<script type="text/javascript" src="../js/site.js"></script>
+  		<script type="text/javascript">
+  		    var map;
 
+  		    DG.then(function () {
+  		        map = DG.map('map', {
+  		            center: [54.98, 82.89],
+  		            zoom: 13,
+  		            scrollWheelZoom: false
+  		        });
+  		    });
+  		</script>
 	</body>
 </html>
