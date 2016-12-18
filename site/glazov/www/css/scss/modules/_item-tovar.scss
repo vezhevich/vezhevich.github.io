@@ -1,0 +1,157 @@
+.item-tovar {border-bottom: 1px solid #ddd; margin-bottom: 60px;
+	.wrapper {position: relative;}
+	.item {position: relative;
+		.img {margin-bottom: 15px;
+			img {width: 100%;}
+		}
+		.cost {font-size: 20px; line-height: 24px;
+			i {font-size: 16px;}
+		}
+		.cost.sale {display: inline-block; position: relative; color: #555555; font-size: 16px;
+			i {font-size: 14px;}
+			span {position: absolute; left: 100%; margin-left: 10px; font-size: 20px; width: 120px; top: 0; color: #d9568a;
+				i {font-size: 16px;}
+			}
+		}
+		.cost.sale:before {content: ''; position: absolute; width: 100%; height: 2px; background: #555555; left: 0; top: 50%;}
+		.title {height: 60px; overflow: hidden; margin-bottom: 10px;
+			a {font-size: 14px; line-height: 20px; color: #777777;}
+			p {font-size: 14px; line-height: 20px; color: #777777; margin-bottom: 0;
+				a {color: #777;}
+			}
+		}
+		.block-icon {position: absolute; top: -10px; left: 0; width: 100%; padding-top: 12px;
+			i {font-size: 18px; color: #f08931; display: block;}
+			.width-icon {width: 14px; height: 18px; display: inline-block; zoom: 1; *display: inline; background: url(../img/sprite.png) no-repeat 0 -50px;}
+			.shvr {
+				i {float: left; margin-right: 10px;}
+				span {font-size: 14px; color: $linkcolor-hover; display: none;}
+			}
+		}
+		.block-icon > div {margin-bottom: 10px; height: 18px;}
+		.param {display: none; font-size: 12px; line-height: 20px; color: #888888; margin-bottom: 10px;}
+		.color {display: none;
+			.round {width: 30px; height: 30px; @include border-radius(50%); display: inline-block; zoom: 1; *display: inline; vertical-align: top; overflow: hidden; position: relative; border: 2px solid #fff; cursor: pointer; margin-right: 10px;
+				i {display: none; position: absolute; left: 50%; top: 50%; margin-left: -9px; margin-top: -9px; font-size: 18px; color: #e17000;}
+			}
+			.active {border-color: #e17000;
+				i {display: block;}
+			}
+			.c1 {background: url(../img/one-color.jpg) no-repeat center center;}
+			.c2 {background: url(../img/two-color.jpg) no-repeat center center;}
+			.c3 {background: url(../img/three-color.jpg) no-repeat center center;}
+		}
+		.qnt {width: 150px; height: 40px; border: 2px solid $linkcolor-hover; @include border-radius(4px); text-align: center; overflow: hidden; -o-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -o-transform: translateY(40px); -ms-transform: translateY(40px); -moz-transform: translateY(40px); -webkit-transform: translateY(40px);  transform: translateY(40px); position: relative;
+			a {width: 49px;float: left; color: #777; display: block; height: 36px; 
+				i {line-height: 36px; font-style: normal; font-size: 18px;}
+				&:hover {color: $linkcolor-hover;}
+			}
+			input[type="text"] {width: 48px; float: left; background: #fff; border: none; height: 36px; padding: 0; line-height: 36px; text-align: center; font-size: 14px; color: #777777;}
+		}
+		.btn-wrapper {overflow: hidden; position: relative; height: 40px;}
+		.btn-favorite { -o-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; width: 100%;
+			a {
+				i {vertical-align: sub; display: inline-block; zoom: 1; *display: inline;}
+				span {display: none; font-size: 14px; color: #fff; text-transform: uppercase; margin-top: 5px; margin-left: 15px; letter-spacing: 1px; letter-spacing: 2px;}
+			}
+		}
+		.btn-favorite.active {-o-transform: translateY(-40px); -ms-transform: translateY(-40px); -moz-transform: translateY(-40px); -webkit-transform: translateY(-40px);  transform: translateY(-40px);}
+		.qnt.active {-o-transform: translateY(-40px); -ms-transform: translateY(-40px); -moz-transform: translateY(-40px); -webkit-transform: translateY(-40px);  transform: translateY(-40px); z-index: 100; /*-webkit-transition-delay: .1s; transition-delay: .1s;*/}
+		&:hover {@include box-shadow(0,10px,20px,rgba(68, 35, 7, 0.2)); position: absolute; top: -20px; left: 0px; width: 100%; height: auto; padding: 20px; z-index: 10; background: #fff;
+			.title {
+				a {color: #2f6bc6;}
+				p {
+					a {color: #777;}
+				}
+			}
+			.block-icon {background: rgba(255,255,255,0.7);}
+			.shvr {
+				span {display: inline-block; zoom: 1; *display: inline;}
+			}  
+			.btn-wrapper {margin-bottom: 10px;}
+			.btn-favorite {
+				a {border-color: $linkcolor-hover; width: 100%; background-color: $linkcolor-hover;
+					span {display: inline-block; zoom: 1; *display: inline;}
+					i {color: $linkcolor-hover; color: #fff;}
+					&:hover {background: #d46a00;}
+				}
+			}
+			.param {display: block;}
+			.color {display: block;}
+		}
+	}
+}
+
+.wrapper-col {min-height: 351px; margin-bottom: 40px;}
+
+.item-tovar.no-border {border-bottom: none; margin-bottom: 0;}
+
+
+@media (min-width: 999px) and (max-width: 1359px) {
+	.item-tovar {
+		.item {
+			.btn-favorite {
+				a {width: 100%;
+					i {color: #e17000;}
+					span {display: inline-block; color: #888888; letter-spacing: 2px;}
+				}
+			}
+			&:hover {
+				.btn-favorite {
+					a {
+						span {color: #fff;}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 999px) {
+	.item-tovar {margin-bottom: 30px;
+		.item {
+			.cost {font-size: 18px; line-height: 24px;}
+			.title {
+				a {font-size: 13px; line-height: 20px;}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.item-tovar {margin-bottom: 20px;
+		.item {
+			.block-icon {
+				.shvr {
+					span {display: none;}
+				}
+			}
+			.cost {font-size: 16px;
+				i {font-size: 15px;}
+			}
+			.img {margin-bottom: 10px;}
+			.qnt {width: 130px;
+				a {width: 40px;}
+				input[type="text"] {width: 46px;}
+			}
+			.btn-favorite {width: 60px;}
+			&:hover {position: relative; padding: 0; top: auto; left: auto; box-shadow: none;
+				.btn-wrapper {margin-bottom: 0;}
+				.param {display: none;}
+				.color {display: none;}
+				.btn-favorite {width: 60px; transition: none;
+					a {
+						span {display: none;}
+					}
+				}
+			}
+			.cost.sale {font-size: 12px;
+				i {font-size: 12px;}
+				span {font-size: 16px; width: 70px;
+					i {font-size: 15px;}
+				}
+			}
+		}
+	}
+	.wrapper-col {height: auto; min-height: 100%; margin-bottom: 30px;}
+}

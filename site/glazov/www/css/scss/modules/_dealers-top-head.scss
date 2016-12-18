@@ -1,0 +1,27 @@
+.dealers-top-head {
+	.text {
+		p {color: #fff; margin-top: 30px; margin-bottom: 30px; line-height: 28px;}
+		.btn {
+			a {display: inline-block; zoom: 1; *display: inline;}
+		}
+	}
+	.auth {margin-top: 15px; float: right; font-size: 16px; line-height: 28px; display: inline-block; zoom: 1; *display: inline; border-bottom: 1px solid #e17000; padding-bottom: 10px;
+		i {font-size: 20px; vertical-align: text-bottom; margin-left: 10px; color: #e17000;}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.dealers-top-head {text-align: center;
+		.text {margin-bottom: 40px;}
+		.auth {float: none;}
+	}
+}
+
+@media (max-width: 679px) {
+	.dealers-top-head {text-align: center;
+		.text {margin-bottom: 20px; margin-top: 40px;
+			p {margin-top: 20px; margin-bottom: 35px; font-size: 14px; line-height: 24px;}
+		}
+		.auth {float: none; font-size: 14px; line-height: 24px;}
+	}
+}

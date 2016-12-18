@@ -1,0 +1,146 @@
+.shops {
+	.select-shop {font-size: 20px; line-height: 24px; color: #000; font-weight: 500; margin-bottom: 30px;
+		a {color: #000; font-weight: 500;
+			span {border-bottom: 1px solid #c0d2ee; display: inline-block; zoom: 1; *display: inline; padding-bottom: 3px;}
+			i {vertical-align: middle; font-size: 20px;}
+			&:hover {color: $linkcolor-hover;}
+		}
+	}
+	.shop-list {display: table; width: 100%;
+		.table-row {display: table-row; 
+			.table-cell {display: table-cell; border-bottom: 1px solid #e5e5e5; padding-top: 5px; padding-bottom: 5px; font-size: 14px; line-height: 30px; padding-left: 10px; padding-right: 10px;}
+			.head {font-size: 14px; color: #888888;}
+			.name {width: 290px; padding-right: 40px;
+				a {color: #2f6bc6;
+					&:hover {color: $linkcolor-hover;}
+				}
+			}
+			.address {width: 290px; padding-right: 40px;}
+			.phone {width: 180px;
+				a {color: #000;}
+			}
+			&:hover {
+				.table-cell.head {background: none;}
+				.table-cell {background: #f5f5f5;}
+			}
+		}
+	}
+	
+	.shop-list.disable {
+		.table-row {
+			&:hover {
+				.table-cell {background: none;}
+			}
+		}
+	}
+
+	.certified {
+		h3 {position: relative; line-height: 24px;
+			i {color: #5fbd31; position: absolute; top: 0; left: -40px;}
+		}
+		.shop-list {
+			.table-row {
+				.name {width: 180px;}
+				.address {width: 180px; padding-right: 0;}
+			}
+		}
+	}
+	.unverified {
+		h3 {position: relative; line-height: 24px;
+			i {color: #f75858; position: absolute; top: 0; left: -40px;}
+		}
+		.shop-list {
+			.table-row {
+				.name {width: 100%; padding-right: 0; color: #888888;}
+			}
+		}
+	}
+	.top-info {margin-bottom: 40px;
+		p {font-size: 16px; line-height: 28px; margin-bottom: 0;}
+		.small {font-size: 14px; line-height: 24px; color: #555555; margin-top: 20px;}
+	}
+}
+
+@media (max-width: 1359px) {
+	.shops {
+		.certified {
+			h3 {
+				i {position: relative; text-outline: auto; left: auto; vertical-align: middle; margin-right: 10px;}
+			}
+		}
+		.unverified {
+			h3 {
+				i {position: relative; text-outline: auto; left: auto; vertical-align: middle; margin-right: 10px;}
+			}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 1359px) {
+	.shops {
+		#online-shop .shop-list {padding-left: 40px;}
+		.top-info {
+			p {font-size: 14px; line-height: 24px; margin-bottom: 0;}
+			.small {margin-top: 10px;}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.shops {
+		.shop-list {
+			.table-row {
+				.table-cell {padding-left: 0; padding-right: 0;}
+				.name {width: 220px; padding-right: 15px;}
+				.address {width: 220px; padding-right: 15px;}
+				.phone {width: 120px;}
+			}
+		}
+		#map {height: 480px!important;}
+		#map2 {height: 480px!important;}
+		.certified {margin-bottom: 40px;}
+		.top-info {margin-bottom: 30px;
+			p {font-size: 14px; line-height: 24px; margin-bottom: 0;}
+			.small {margin-top: 10px;}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.shops {
+		.select-shop {font-size: 14px; line-height: 24px;}	
+		.shop-list {display: block;
+			.table-row {display: block; border-bottom: 1px solid #e5e5e5; padding-bottom: 10px; margin-bottom: 10px;
+				.table-cell {display: block; border: none; padding: 0; font-size: 14px; line-height: 24px;}
+				.name {font-weight: 500;}
+				&:hover {
+					.table-cell {background: none;}
+				}
+			}
+			.table-row:last-child {border-bottom: none; margin: 0; padding: 0;}
+		}
+		#map {height: 320px!important;}
+		#map2 {height: 320px!important;}
+		.certified {margin-bottom: 40px;
+			.shop-list {display: table;
+				.table-row {display: table-row;
+					.table-cell {display: table-cell; border-bottom: 1px solid #e5e5e5; padding-top: 5px; padding-bottom: 5px; font-size: 13px; line-height: 30px;}
+					.name {width: 140px;}
+					.address {width: 140px; padding-left: 10px;}
+				}
+			}
+		}
+		.unverified {margin-bottom: 20px;
+			.shop-list {
+				.table-row {
+					.name {width: 100%; font-weight: 400; font-size: 13px;}
+				}
+			}
+		}
+		.top-info {margin-bottom: 20px;
+			p {font-size: 14px; line-height: 24px; margin-bottom: 0;}
+			.small {margin-top: 0px;}
+		}
+	}
+}
+

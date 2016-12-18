@@ -1,0 +1,57 @@
+.modal-location {
+	.modal-content {position: relative; @include border-radius(0);}
+	.modal-dialog {width: 400px; margin-top: 150px;}
+	.modal-body {padding: 40px;}
+	.sub-title {font-size: 16px; line-height: 28px; color: #000; margin-bottom: 5px;}
+	.title {font-size: 20px; line-height: 30px; color: #000; margin-bottom: 20px;}
+	p {margin-bottom: 0; font-size: 14px; line-height: 24px; color: #777777;}
+	ul {margin-bottom: 30px;
+		li {font-size: 14px; line-height: 24px; color: #777777; margin-bottom: 0;}
+		li:before {background: #777; top: 13px;}
+	}
+	.group-button {
+		a {height: 60px; line-height: 60px; text-transform: uppercase; display: inline-block; text-align: center; zoom: 1; *display: inline; @include border-radius(4px); vertical-align: top; font-size: 14px; font-weight: 500;}
+		.small {background-color: #e17000; width: 100px; margin-right: 10px; letter-spacing: 2px;
+			&:hover {color: #fff; background: #d46a00;}
+		}
+		.big {background-color: #fff; width: 200px; border: 2px solid #eaeaea; color: #e17000; letter-spacing: 2px;
+			&:hover {border-color: #aaaaaa;}
+		}
+	}
+}
+
+.modal-location.fade .modal-dialog {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+         -o-transform: scale(0.1);
+            transform: scale(0.1);
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+.modal-location.fade.in .modal-dialog {
+    opacity: 1;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+         -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+}
+
+@media (max-width: 679px) {
+	.modal-location {
+		.modal-dialog {width: 280px; margin-top: 30px;}
+		.modal-body {padding: 20px;}
+		.group-button {
+			a {display: block; margin: 0 auto;}
+			.small {margin-bottom: 20px; max-width: 280px; width: 100%;}
+			.big {max-width: 280px; width: 100%;}
+		}
+	}
+}

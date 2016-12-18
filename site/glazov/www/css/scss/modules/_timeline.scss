@@ -1,0 +1,57 @@
+.timeline-wrapper {padding-top: 150px; padding-bottom: 0; margin-bottom: 85px;
+	.timeline-title {font-size: 36px; line-height: 50px; text-align: center; font-weight: 500;}
+	.timeline {position: relative; width: 100%; list-style-type: none; margin-top: 170px;}
+	.timeline:before {position: absolute; left: 0; top: 0; content: ' '; display: block; width: 2px; height: calc(100% - 300px); background: #e5e5e5; z-index: 5;}
+	.timeline dt:after {content: ""; display: block; height: 0; clear: both; visibility: hidden;}
+	.timeline dt:last-child .direction-r {margin-bottom: 0;}
+	.timeline .direction-r {position: relative; width: 100%; float: right; padding-left: 160px; height: 300px; margin-bottom: 160px;}
+	.timeline .flag-wrapper {position: relative; display: inline-block; text-align: center;}
+	.timeline .flag {position: relative; display: inline;}
+	.timeline .direction-l .flag:before,
+	.timeline .direction-r .flag:before {position: absolute; left: -169px; content: ' '; display: block; width: 20px; height: 20px; margin-top: -17px; background: #dddddd; @include border-radius(50%);  border: 2px solid #dddddd; z-index: 10;}
+	.timeline .time {position: absolute; left: -140px; top: -20px; font: bold 150% Russia; color: #0f43b4;}
+	.timeline .desc {height: 300px; width: 830px; position: absolute; top: -130px; display: table; vertical-align: middle;}
+	.timeline .desc p {font: normal 20px/30px $brand-font; display: table-cell; vertical-align: middle; width: 50%; position: relative; z-index: 100;}
+	.timeline .desc span {font-size: 240px; color: #fff; position: absolute; left: -60px; top: 0; display: block; font-weight: 500;}
+	.timeline .img {display: table-cell; vertical-align: middle; width: 50%; text-align: right;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.timeline-wrapper {
+		.timeline-title {font-size: 28px; line-height: 50px;}
+		.timeline .direction-r {padding-left: 120px;}
+		.timeline .direction-r .flag:before {left: -129px;}	
+		.timeline .desc {width: 710px;}
+		.timeline .desc p {font-size: 18px; line-height: 26px;}
+		.timeline .desc span {font-size: 200px;}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.timeline-wrapper {
+		.timeline-title {font-size: 28px; line-height: 50px;}
+		.timeline .direction-r {padding-left: 40px;}
+		.timeline .direction-r .flag:before {left: -49px;}	
+		.timeline .desc {width: 560px; top: -5px;}
+		.timeline .desc p {font-size: 16px; line-height: 26px; padding-right: 50px; vertical-align: top;}
+		.timeline .desc span {font-size: 180px; left: 0; top: -120px;}
+		.timeline .img {
+			img {margin-top: -200px;}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.timeline-wrapper {padding-top: 120px; margin-bottom: 50px; padding-bottom: 40px;
+		.timeline-title {font-size: 20px; line-height: 50px;}
+		.timeline {margin-top: 150px;}
+		.timeline .direction-r {padding-left: 40px; height: 300px; margin-bottom: 160px;}
+		.timeline .direction-r .flag:before {left: -49px;}	
+		.timeline .desc {width: 100%; position: relative; display: block; top: auto; margin-top: -20px; height: auto;}
+		.timeline .desc p {font-size: 14px; line-height: 24px; padding: 0px; vertical-align: top; display: block; width: 100%; margin-bottom: 30px;}
+		.timeline .desc span {font-size: 140px; left: -70px; top: -125px;}
+		.timeline .img {display: block; width: 100%; text-align: center;
+			img {margin: 0; max-width: 140px;}
+		}
+	}
+}

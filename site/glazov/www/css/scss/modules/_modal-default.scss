@@ -1,0 +1,10 @@
+.modal-default {
+	.modal-content {border: none;}
+	.close {position: absolute; top: 40px; right: 40px; z-index: 50;}
+	.modal-body {padding: 0!important;}
+	input[type="email"] {background: #fff; height: 60px; border: 1px solid #ddd; @include border-radius(4px); color: #777777; padding: 0 20px; line-height: 58px; font-size: 16px;}
+	.group-input {font-size: 0; margin-bottom: 20px;}
+	.modal-content {@include border-radius(0); background: #f8f8f8;}
+}
+
+.modal-open {padding-right: 0!important;}

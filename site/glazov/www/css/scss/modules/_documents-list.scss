@@ -1,0 +1,40 @@
+.documents-list {margin-bottom: 30px;
+	ul {margin: 0; padding: 0;
+		li {margin: 0; padding: 0; margin-bottom: 20px;
+			&:hover a {color: $linkcolor-hover;}
+		}
+		li:before {display: none;}
+	}
+	.title {margin-bottom: 0;
+		a {font-size: 16px; line-height: 28px; color: #555555;}
+	}
+	.info {font-size: 12px; line-height: 28px; margin: 0; color: #888888;}
+	.icon {float: left; margin-right: 25px;
+		i {color: #e17000;}
+	}
+	.text {overflow: hidden;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.documents-list {
+		.title {
+			a {font-size: 14px; line-height: 24px;}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.documents-list {
+		.title {
+			a {font-size: 14px; line-height: 24px;}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.documents-list {
+		.title {
+			a {font-size: 14px; line-height: 24px;}
+		}
+	}
+}

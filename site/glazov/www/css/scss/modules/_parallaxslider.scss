@@ -1,0 +1,95 @@
+.wrapper-parallax {position: relative; width: 100%; height: 100%;}
+
+#myparallaxslider{ /* CSS for specific carousel container called #myparallaxslider. */
+width:100%;
+height:100%;
+position: relative;
+}
+
+
+div.parallaxslider img.navbutton{ /* CSS for the nav buttons */
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border: none!important;
+    box-shadow: 0;
+}
+/*div.parallaxslider img.navbutton:hover{border: none!important; box-shadow: 0!important; outline: 0!important; border-color: transparent!important; overflow: hidden; background-position: -100px -100px;}
+div.parallaxslider img.navbutton:focus{border: none!important; box-shadow: 0!important; outline: 0!important; border-color: transparent!important; overflow: hidden; background-position: -100px -100px;}*/
+
+
+
+
+div.parallaxslider *{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+div.parallaxslider div.slide{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+display: none;
+}
+
+div.parallaxslider div.selectedslide {
+    .desc {
+        .text a {z-index: 5;}
+    }
+}
+
+div.parallaxslider div.slide div.bgoverlay{ /* CSS for each image's DIV container within main container */
+position: absolute;
+z-index: 0;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: black;
+background-position: center center; /* center image within carousel */
+background-repeat: no-repeat;
+background-size: cover; /* CSS3 property to scale image within container? "cover" or "contain" */
+}
+
+div.parallaxslider div.slide div.bgoverlay:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4);}
+
+
+div.parallaxslider div.slide div.desc{ /* DIV that contains the textual description inside .slide */
+/*position: absolute;
+color: white;
+text-shadow: 0 -1px 1px #8a8a8a;
+z-index:100;
+pointer-events: none;*/
+}
+div.parallaxslider div.slide div.desc .text a { /* DIV that contains the textual description inside .slide */
+   color: #fff;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 60px;
+    margin: auto;
+    z-index: 100!important;
+
+}
+div.parallaxslider div.slide div.desc .text {position: absolute; width: 1280px; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%,-50%); padding-left: 168px;}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+    div.parallaxslider div.slide div.desc .text {max-width: 80%; padding-left: 177px; -webkit-transform: translate(0,-50%); -ms-transform: translate(0, -50%); transform: translate(0,-50%); left: 0;}
+    div.parallaxslider div.slide div.desc .text a {font-size: 48px; line-height: 52px; width: 100%;}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+    div.parallaxslider div.slide div.desc .text {max-width: 100%; padding-left: 40px; padding-right: 40px; -webkit-transform: translate(0,-50%); -ms-transform: translate(0, -50%); transform: translate(0,-50%); left: 0;}
+    div.parallaxslider div.slide div.desc .text a {width: 100%; font-size: 48px; line-height: 52px; display: block;}
+}
+
+@media (max-width: 679px) {
+    div.parallaxslider div.slide div.desc {display: table;}
+    div.parallaxslider div.slide div.desc .text {display: table-cell; vertical-align: middle; text-align: center; padding: 0; max-width: 100%;}
+    .wrapper-parallax {margin-bottom: 30px; max-height: 360px; margin-top: 60px;}
+    div.parallaxslider div.slide div.desc .text a {width: 100%; padding: 0 20px; font-size: 28px; line-height: 36px; text-transform: none; text-align: center; display: inline-block;}
+    div.parallaxslider div.slide div.desc .text {width: 100%; text-align: center;}
+}

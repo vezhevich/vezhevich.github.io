@@ -1,0 +1,119 @@
+.shvr-advantages {margin-bottom: 70px; margin-top: 80px;
+	.img {height: 122px; width: 100%; display: table; margin-bottom: 20px;
+		.wrapper {display: table-cell;vertical-align: middle;}
+	}
+	.text {
+		.title {font-size: 20px; line-height: 30px; margin-bottom: 20px; color: #000;}
+		p {font-size: 14px; line-height: 24px; color: #888888; margin-bottom: 0;}
+	}
+}
+
+.shvr-mark {margin-bottom: 70px; padding-top: 70px; padding-bottom: 70px;
+	.container {background-image: url(../img/mark.png); background-repeat: no-repeat; background-position: 97% center;}
+	h2 {text-align: center; color: #fff; line-height: 36px;}
+	p {font-size: 16px; line-height: 28px; color: #f6ddca;}
+}
+
+.shvr-instruction {
+	h2 {text-align: center; margin-bottom: 50px;}
+	ol {margin-bottom: 50px;}
+	p {font-size: 14px; line-height: 24px; color: #888888; padding-left: 40px; position: relative;}
+	i {position: absolute; top: 0; left: 0; color: #ef8122; font-size: 20px;}
+	.cost {
+		i {top: 5px;}
+	}
+	.size {
+		i {font-size: 24px;}
+	}
+	hr {margin-top: 40px; margin-bottom: 50px;}
+}
+
+.shvr-collection {
+	.head {text-align: center; margin-bottom: 50px;
+		h2 {line-height: 45px;}
+		p {color: #555555; margin-bottom: 0;
+			i {vertical-align: middle; margin: 0 10px; color: #ef8122;}
+		}
+	}
+}
+
+.btn-shvr {
+	a {width: 290px;}
+}
+
+@media (max-width: 1359px) {
+	.shvr-mark {
+		p {font-size: 14px; line-height: 24px;}
+	}
+	.shvr-instruction {
+		ol {
+			li {font-size: 14px; line-height: 22px;}
+		}
+	}
+	.shvr-collection {
+		.head {
+			p {font-size: 14px; line-height: 22px;}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.shvr-advantages {margin-top: 35px;
+		.col {overflow: hidden; margin-bottom: 50px;}
+		.col:last-child {margin-bottom: 0;}
+		.img {width: 200px; display: block; margin-right: 40px; float: left; margin-bottom: 0;
+			.wrapper {display: block;}
+		}
+		.text {overflow: hidden;
+			.title {font-size: 16px; line-height: 24px; margin-bottom: 10px;}
+		}
+	}
+	.shvr-mark {padding-bottom: 30px; margin-bottom: 40px; padding-top: 50px;
+		.container {background-position: bottom center; padding-bottom: 140px;}
+		h2 {
+			br {display: none;}
+		}
+	}
+	.shvr-instruction {
+		ol {margin-left: 0; margin-bottom: 40px;
+			li:before {font-size: 14px;}
+		}
+		hr {margin-top: 20px; margin-bottom: 20px; margin-left: -40px; margin-right: -40px;}
+	}
+	.shvr-collection {
+		.head {text-align: left; margin-bottom: 30px;
+			h2 {margin-bottom: 10px;}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.shvr-advantages {margin-top: 35px; margin-bottom: 40px;
+		.col {margin-bottom: 40px;}
+		.col:last-child {margin-bottom: 0px;}
+		.img {width: 100%; display: block; margin-right: 0; float: none; margin-bottom: 20px; text-align: center; height: auto;
+			.wrapper {display: block; text-align: center;}
+		}
+		.text {
+			.title {font-size: 16px; line-height: 24px; margin-bottom: 10px;}
+		}
+	}
+	.shvr-mark {padding-bottom: 30px; margin-bottom: 30px; padding-top: 30px;
+		.container {background-position: bottom center; padding-bottom: 140px;}
+	}
+	.shvr-instruction {
+		h2 {margin-bottom: 25px; text-align: left;}
+		ol {margin-left: 20px; margin-bottom: 40px;
+			li:before {font-size: 14px;}
+		}
+		hr {margin-top: 20px; margin-bottom: 20px;}
+	}
+	.shvr-collection {
+		.head {text-align: left; margin-bottom: 30px;
+			h2 {font-size: 20px; line-height: 30px;}
+		}
+	}
+	.btn-shvr {
+		a {width: 280px;}
+	}
+}

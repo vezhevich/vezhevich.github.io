@@ -1,0 +1,64 @@
+.blog-carousel-page {margin-bottom: 50px; overflow: hidden;
+	.item {position: relative;
+		img {max-width: 840px;}
+		p {margin-bottom: 0; font-size: 12px; line-height: 20px; color: #777777; width: 400px; margin-top: 10px;}
+	}
+	.owl-item:before {content: ''; background: rgba(255,255,255,0.8); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;}
+	.owl-item.center:before {background: none;}
+	.owl-controls {
+		.owl-nav {
+			div {width: 80px; height: 80px; position: absolute; top: 50%; margin-top: -40px; border: 2px solid #dddddd; @include border-radius(50%);}
+			.owl-prev {left: 80px; text-align: center; line-height: 75px;}
+			.owl-prev:before {content: '\f104'; display: inline-block; zoom: 1; *display: inline; font-family: 'FontAwesome'; color: #ddd; font-size: 24px;}
+			.owl-next {right: 80px; text-align: center; line-height: 75px;}
+			.owl-next:before {content: '\f105'; display: inline-block; zoom: 1; *display: inline; font-family: 'FontAwesome'; color: #ddd; font-size: 24px;}
+		}
+	}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.blog-carousel-page {margin-left: 40px; overflow: hidden; width: calc(100% - 40px);
+		.owl-item:before {display: none;}
+		.owl-controls {
+			.owl-nav {
+				.owl-prev {left: 40px;}
+				.owl-next {right: 40px;}
+			}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.blog-carousel-page {margin-bottom: 30px; margin-top: 30px;
+		.owl-item:before {display: none;}
+		.item {
+			p {margin-left: 40px;}
+		}
+		.owl-item img {transform-style: inherit;}
+		.owl-controls {
+			.owl-nav {
+				.owl-prev {left: 40px;}
+				.owl-next {right: 40px;}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.blog-carousel-page {margin-bottom: 30px; margin-top: 20px;
+		.owl-item:before {display: none;}
+		.item {
+			p {width: auto; margin-left: 20px;}
+		}
+		.owl-item img {transform-style: inherit;}
+		.owl-controls {
+			.owl-nav {
+				.owl-prev {left: 20px;}
+				.owl-next {right: 20px;}
+			}
+			.owl-dots {text-align: center; margin-top: 20px;}
+			.owl-dots .owl-dot {width: 17px; height: 17px; background: #888; @include border-radius(50%); display: inline-block; zoom: 1; *display: inline; margin: 0 1px; border: 4px solid #fff; padding: 4px; vertical-align: middle;}
+			.owl-dots .owl-dot.active {background: #888; border: 1px solid #888;  @include box-shadow (0px, 0px, 0px, 4px #fff inset); padding: 8px; width: 8px; height: 8px;}
+		}
+	}
+}

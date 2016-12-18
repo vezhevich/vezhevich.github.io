@@ -1,0 +1,195 @@
+.title-dealers {margin-bottom: 50px;}
+.dealers-price {margin-bottom: 60px; margin-top: 50px;
+	p {font-size: 16px; line-height: 28px; color: #555555;}
+	span {font-size: 12px; line-height: 18px; color: #888888; margin-left: 20px; margin-top: 20px; display: inline-block; zoom: 1; *display: inline;}
+	.btn {float: left;}
+}
+
+.dealers-list {
+	.panel {background: #fff; @include border-radius(0); margin-top: 0!important; border: none; border-bottom: 1px solid #eaeaea; @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.2))
+		.panel-heading {height: 100px; background: #fff; padding: 0;
+			.panel-title {display: table; width: 100%; height: 100%; font-size: 20px; line-height: 24px; font-weight: 500;
+				a {display: table-cell; vertical-align: middle; padding: 0 40px; position: relative; color: $linkcolor-hover;
+					i {font-size: 18px; position: absolute; right: 40px; top: 50%; margin-top: -5px; -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg);}
+					&:hover {color: $linkcolor-hover;}
+				}
+				.collapsed {color: #888888;
+					i {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg);}
+				}
+			}
+		}
+		.panel-collapse {
+			.panel-body {border-top: none; padding: 0 40px 20px 40px; position: relative;}
+		}
+	}
+	.panel:last-child {border-bottom: none;}
+	
+	.panel-slide {background: #fff; @include border-radius(0); margin-top: 0!important; border: none; border-bottom: 1px solid #eaeaea; @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.2))
+		.head-slide {display: table; width: 100%; height: 100%;  height: 100px; background: #fff; padding: 0; position: relative; border-top: 1px solid #eaeaea;
+			a {display: table-cell; vertical-align: middle; padding: 0 40px; position: relative; color: #888; font-size: 20px; line-height: 24px; font-weight: 500;}
+			i {font-size: 18px; position: absolute; right: 40px; top: 50%; margin-top: -5px; color: #888;}
+		}
+		.item-slide:first-child .head-slide {border-top: none;}
+		.content {padding: 0 40px 20px 40px; position: relative; display: none;}
+		.content.active .region-manager {opacity: 1; visibility: visible; transition-delay: 0.4s;}
+		.head-slide.active {
+			i {-webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg); color: $linkcolor-hover;}
+			a {color: $linkcolor-hover;}
+		}
+	}
+	.item {border-bottom: 1px solid #eaeaea; padding-bottom: 15px; margin-bottom: 30px;
+		.location {width: 250px; margin-right: 40px; float: left;
+			.title {font-size: 16px; line-height: 24px; color: #000; font-weight: 500; margin-bottom: 10px;}
+			p {font-size: 14px; line-height: 24px;}
+		}
+		.info {width: 470px; float: left;
+			.wrap {margin-bottom: 10px;}
+			p {font-size: 14px; line-height: 24px; margin-bottom: 0px;}
+			a {color: #2f6bc6; font-size: 14px; line-height: 24px;
+				&:hover {color: $linkcolor-hover;}
+			}
+			.phone {
+				a {color: #000;}
+			}
+		}
+		.inner-list {
+			.title {font-size: 16px; line-height: 24px; font-weight: 500;}
+			.wrap {display: table; margin-bottom: 20px;
+				.loc {display: table-cell; font-size: 14px; line-height: 20px; width: 250px;}
+				.phone {display: table-cell; font-size: 14px; line-height: 20px; width: 470px; padding-left: 40px;
+					a {color: #000;}
+				}
+			}
+		}
+	}
+	.item:last-child {border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+	.region-manager {width: 220px; position: absolute; right: 100%; top: -60px; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s;
+		.title {font-weight: 500; margin-bottom: 30px;}
+		.manager {width: 180px; margin-bottom: 30px;
+			.img {width: 64px; height: 64px; overflow: hidden; @include border-radius(50%); margin-bottom: 20px;}
+			.text {overflow: hidden;
+				.name {font-size: 14px; line-height: 20px; margin-bottom: 10px;}
+				.mail {margin-bottom: 10px;
+					a {font-size: 14px; line-height: 20px; color: #2f6bc6;
+						&:hover {text-decoration: underline;}
+					}
+				}
+				.phone {font-size: 16px; line-height: 24px; color: #1d1d1d;
+					a {color: #000;}
+					span {display: block; font-size: 14px; line-height: 20px; color: #888888;}
+				}
+			}
+		}
+	}
+	.panel-collapse.in {
+		.region-manager {opacity: 1; visibility: visible; transition-delay: 0s;}
+	}
+}
+
+@media (max-width: 1359px) {
+	.dealers-price {margin-bottom: 40px;
+		p {font-size: 14px; line-height: 22px;}
+	}
+	.dealers-list {
+		.region-manager {width: 100%; position: relative; right: auto; top: auto; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #eaeaea; transition: 0; opacity: 1; visibility: visible;
+			.title {margin-bottom: 15px;}
+			.manager {width: 240px; float: left; margin-bottom: 0; margin-right: 80px;
+				.img {float: left; margin-right: 20px;}
+				.text {
+					.name {font-size: 13px; line-height: 20px;}
+					.mail {
+						a {font-size: 12px; line-height: 20px;}
+					}
+					.phone {font-size: 14px; line-height: 22px; color: #1d1d1d;
+						span {font-size: 12px; line-height: 20px;}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.title-dealers {margin-bottom: 40px;}
+	.dealers-price {margin-top: 35px;
+		.btn {float: none;}
+		span {display: block; margin-top: 10px; margin-left: 85px;}
+	}
+	.dealers-list {
+		.region-manager {
+			.manager {margin-right: 0;}
+			.manager.first {margin-right: 40px;}
+		}
+		.item {
+			.location {float: none; width: 100%; margin-right: 0;
+				p {margin-bottom: 10px;}
+			}
+			.info {float: none; width: 100%;}
+			.inner-list {
+				.wrap {
+					.phone {width: 240px;}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.title-dealers {margin-bottom: 20px;}
+	.dealers-xs-wrapper {padding-left: 10px; padding-right: 10px;
+		.row {margin-left: -10px; margin-right: -10px;}
+		.col-xs-12 {padding-left: 10px; padding-right: 10px;}
+	}
+	.dealers-price {margin-bottom: 30px; margin-top: 25px;
+		p {margin-bottom: 20px;}
+		.btn {float: none;
+			a {width: 100%;}
+		}
+		span {display: block; text-align: center; margin-top: 10px; margin-left: 0;}
+	}
+	.dealers-list {
+		.panel {
+			.panel-heading {height: 60px;
+				.panel-title {font-size: 18px; line-height: 24px;
+					a {padding: 0 20px;
+						i {right: 20px;}
+					}
+				}
+			}
+			.panel-collapse {
+				.panel-body {padding-left: 20px; padding-right: 20px;}
+			}
+
+
+		}
+		.panel-slide {
+			.head-slide {height: 60px; line-height: 60px;
+				a {font-size: 18px; padding-left: 20px; padding-right: 20px;}
+				i {right: 20px;}
+			}
+			.content {padding-left: 20px; padding-right: 20px;}
+		}
+		.region-manager {
+			.manager {margin-right: 0;
+				.text {
+					.phone {color: #1d1d1d;}
+				}
+			}
+			.manager.first {margin-right: 0; margin-bottom: 30px;}
+		}
+		.item {margin-bottom: 20px; padding-bottom: 10px;
+			.location {float: none; width: 100%; margin-right: 0;
+				p {margin-bottom: 10px;}
+			}
+			.info {float: none; width: 100%;}
+			.inner-list {
+				.wrap {display: block; margin-bottom: 10px;
+					.loc {width: 100%; display: block;}
+					.phone {width: 100%; display: block; padding-left: 0;}
+				}
+			}
+		}
+	}
+	.title-dealers {padding-left: 10px;}
+}
+

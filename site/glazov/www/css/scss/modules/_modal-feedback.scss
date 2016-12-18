@@ -1,0 +1,73 @@
+.modal-feedback {
+	.modal-dialog {width: 840px!important;}
+	.modal-body {width: 620px; margin: 0 auto; padding-top: 80px!important; padding-bottom: 80px!important;}
+	.btn-select-location {display: inline-block; zoom: 1; *display: inline; vertical-align: top; width: 300px; margin-right: 20px;
+		a {display: block; text-align: left; height: 60px; line-height: 58px; border: 1px solid #dddddd; @include border-radius(4px); color: #777777; padding: 0 20px; position: relative; font-size: 16px; background: #fff;
+			i {position: absolute; right: 20px; top: 50%; margin-top: -12px;}
+		}
+	}
+	input[type="email"] {width: 300px; color: #000;}
+	input[type="email"]:focus {border-color: $linkcolor-hover;}
+	textarea {width: 100%; border: 1px solid #ddd; @include border-radius(4px); color: #777777; padding: 20px; background: #fff; resize: none; height: 220px; margin-bottom: 40px; font-size: 16px; line-height: 20px; color: #000;}
+	textarea:focus {border-color: $linkcolor-hover;}
+	.btn-send-form {width: 290px;}
+	.info {margin-top: 30px;
+		p {font-size: 14px; line-height: 24px; margin-bottom: 0; color: #1d1d1d; margin-bottom: 15px;}
+	}
+}
+
+.modal-feedback.fade .modal-dialog {
+	left: -840px;
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.modal.modal-feedback {
+		.modal-dialog {width: 760px!important;}
+		.modal-body {width: 600px;}
+		.btn-select-location {width: 290px;}
+		input[type="email"] {width: 290px;}
+		textarea {height: 120px;}
+	}
+	.modal-feedback.fade .modal-dialog {
+	left: -760px;
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.modal.modal-feedback {
+		.modal-dialog {width: 640px!important;}
+		.modal-body {width: 600px;}
+		.btn-select-location {width: 290px;}
+		input[type="email"] {width: 290px;}
+		textarea {height: 120px;}
+	}
+	.modal-feedback.fade .modal-dialog {
+	left: -640px;
+	}
+}
+
+@media (max-width: 679px) {
+	.modal.modal-feedback {
+		.close {top: 20px;}
+		.modal-dialog {width: 300px!important;}
+		.modal-body {width: 240px; padding-top: 60px!important; padding-bottom: 20px!important;}
+		.btn-select-location {width: 100%; margin-bottom: 20px;
+			a {font-size: 14px;
+				i {font-size: 20px; margin-top: -10px;}
+			}
+		}
+		input[type="email"] {width: 100%; font-size: 14px;}
+		textarea {height: 100px; margin-bottom: 20px; font-size: 14px;}
+		.btn-send-form {width: 100%;
+			i {margin-left: 40px;}
+		}
+		.info {
+			p {font-size: 13px; line-height: 20px;
+				strong {display: block;}
+			}
+		}
+	}
+	.modal-feedback.fade .modal-dialog {
+	left: -280px;
+	}
+}

@@ -1,0 +1,101 @@
+.main-footer {padding-top: 60px; border-top: 1px solid #eaeaea;
+	.top {padding-bottom: 50px;
+		.feedback {
+			.phone	{font-size: 28px; color: #442308; font-weight: 500; display: inline-block; zoom: 1; *display: inline; margin-bottom: 30px;}
+		}
+		nav {
+			ul {margin: 0; padding: 0;
+				li {margin: 0; padding: 0; margin-bottom: 10px;
+					a {font-size: 14px; color: #888888;
+						&:hover {color: $linkcolor-hover;}
+					}
+				}
+				li:before {display: none;}
+				li:last-child {margin-bottom: 0;}
+			}
+		}
+	}
+	.bottom {height: 60px; border-top: 1px solid rgb(234, 234, 234);
+		.copy {float: left; font-size: 12px; color: #888; line-height: 60px;}
+		.realist {float: right; 
+			a {font-size: 12px; color: #888; line-height: 60px;}
+			span {font-size: 18px; font-weight: 500; color: #ef8122;}
+		}
+	}
+}
+
+.main-footer.inner {
+	.bottom {height: 120px;}
+}
+
+@media (min-width:1000px) and (max-width: 1359px) {
+	.main-footer {
+		.top {
+			.feedback {
+				.phone {font-size: 24px;}
+			}
+			nav {
+				ul {
+					li {
+						a {font-size: 13px;}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 999px) {
+	.main-footer {
+		.container {padding-left: 20px; padding-right: 20px;}
+	}
+}
+
+
+@media (min-width:680px) and (max-width: 999px) {
+	.main-footer {padding-top: 40px;
+		.top {
+			.feedback {overflow: hidden; margin-bottom: 30px;
+				.phone {font-size: 24px; float: left; width: 48.43%; border: 1px solid #dddddd; @include border-radius(4px); height: 60px; line-height: 60px; text-align: center; margin-bottom: 0;}
+				.btn {float: right; width: 48.43%; margin-bottom: 0;
+					a {display: block;}
+				}
+			}
+			nav {
+				ul {
+					li {
+						a {font-size: 13px;}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.main-footer {padding-top: 20px; padding-bottom: 20px;
+		.top {padding-bottom: 0;
+			.feedback {overflow: hidden; margin-bottom: 20px;
+				.phone {font-size: 20px; float: none; width: 100%; border: 1px solid #dddddd; @include border-radius(4px); height: 60px; line-height: 60px; text-align: center; margin-bottom: 20px;}
+				.btn {float: right; width: 100%; margin-bottom: 0;
+					a {display: block;}
+				}
+			}
+			nav {
+				ul {
+					li {
+						a {font-size: 13px;}
+					}
+				}
+			}
+		}
+		.bottom {height: auto; padding-top: 20px;
+			.copy {text-align: center; line-height: 20px; font-weight: normal; float: none; margin-bottom: 20px;}
+			.realist {float: none; text-align: center;
+				a {font-size: 13px; line-height: 24px;
+					span {display: block;}
+				}
+			}
+		}
+	}
+}

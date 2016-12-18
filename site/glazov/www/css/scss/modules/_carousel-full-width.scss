@@ -1,0 +1,77 @@
+.carousel-full-width {margin-bottom: 40px; position: relative;
+	.fotorama__img {left: 0!important; /*width: 100%!important;*/ margin: 0 auto;}
+	.fotorama__wrap {width: 100%!important;}
+	.fotorama__nav-wrap {position: absolute; width: 100%; text-align: center; bottom: 0; left: 0;}
+	.fotorama__dot {border-color: #fff;}
+	.fotorama__arr {top: 0; margin: 0; width: 50%; height: 100%;}
+	.fotorama__arr:before {font-family: 'FontAwesome'; display: inline-block; color: $linkcolor-hover; font-size: 24px; position: absolute; top: 50%; left: 50%; margin-top: -40px; margin-left: -40px;}
+	.fotorama__arr--prev {margin-left: 310px; background: none; left: 0; margin: 0;}
+	.fotorama__arr--prev:before {content: '\f104'; width: 80px; height: 80px; background: #fff; @include border-radius(50%); text-align: center; line-height: 80px; display: none;}
+	.fotorama__arr--prev:hover {cursor: url(../img/point-left.png) 40 40, auto;}
+	.fotorama__arr--next {margin-right: 310px; background: none; right: 0; margin: 0;}
+	.fotorama__arr--next:before {content: '\f105'; margin-left: -3px; width: 80px; height: 80px; background: #fff; @include border-radius(50%); text-align: center; line-height: 80px; display: none;}
+	.fotorama__arr--next:hover {cursor: url(../img/point-right.png) 40 40, auto;}
+	.fotorama__fullscreen-icon {background: none; top:10px; right: 10px; width: 80px; height: 80px;  @include border-radius(50%);}
+	.fotorama__fullscreen-icon:before {content:''; color:#fff; font-size: 18px; position: absolute; top: 50%; left: 50%; margin-top: -7px; margin-left: -7px; background: url(../img/sprite.png) no-repeat 0 -137px; width: 14px; height: 14px;}
+	.fotorama__fullscreen-icon:hover {background: #fff;}
+	.fotorama__fullscreen-icon:hover:before {background: url(../img/sprite.png) no-repeat 0 -93px;}
+
+}
+	.fotorama--fullscreen {
+		.fotorama__fullscreen-icon {background: #fff;}
+		.fotorama__fullscreen-icon:before {background: url(../img/sprite.png) no-repeat 0 -181px;}
+		.fotorama__fullscreen-icon:hover:before {background: url(../img/sprite.png) no-repeat 0 -181px;}
+	}
+
+.wrapper-carousel-full-width {position: relative;}
+.wrapper-carousel-full-width:before {content: ''; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s; background: #000; position: absolute; top: 0; left: 0; background: #000; width: 100%; height: 100%; z-index: 1;}
+.wrapper-carousel-full-width.active:before {opacity: .5; visibility: visible; transition-delay: 0s;}
+
+
+@media (max-width: 1359px) {
+	.carousel-full-width {
+		.fotorama__arr--prev {margin-left: 10px;}
+		.fotorama__arr--next {margin-right: 10px;}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.carousel-full-width {
+		.fotorama__arr {opacity: 1!important;}
+		.fotorama__arr:hover {cursor: pointer;}
+		.fotorama__arr:before {width: 60px; height: 60px; line-height: 60px; margin-top: -30px; display: block;}
+		.fotorama__arr:before:focus {display: block;}
+		.fotorama__arr--prev:before {left: 1px; margin-left: 0;}
+		.fotorama__arr--next:before {right: 1px; left: auto; margin-left: 0;}
+		.fotorama__fullscreen-icon {width: 60px; height: 60px; background: #fff; opacity: 1!important;}
+		.fotorama__fullscreen-icon:before {font-size: 14px; margin-top: -7px; margin-left: -7px; background-position: 0 -93px;}
+	}
+	.fotorama--fullscreen {
+		.fotorama__fullscreen-icon {background: #fff;}
+		.fotorama__fullscreen-icon:before {background: url(../img/sprite.png) no-repeat 0 -181px;}
+		.fotorama__fullscreen-icon:hover:before {background: url(../img/sprite.png) no-repeat 0 -181px;}
+	}
+}
+
+@media (max-width: 679px) {
+	.carousel-full-width {
+		.fotorama__arr {background: none; opacity: 1!important;}
+		.fotorama__arr:hover {cursor: pointer;}
+		.fotorama__arr:before {color: #fff; background: none; display: block; width: 40px;}
+		.fotorama__arr:before:focus {color: #fff; background: none; display: block;}
+		.fotorama__arr--prev:before {left: 0px; margin-left: 0;}
+		.fotorama__arr--next:before {right: 0px; left: auto; margin-left: 0;}
+		.fotorama__fullscreen-icon {width: 40px; height: 40px; background: none; right: 0; top: 0; padding: 10px; opacity: 1!important;}
+		.fotorama__fullscreen-icon:before {color: #fff; background: url(../img/sprite.png) no-repeat 0 -137px;}
+		.fotorama__fullscreen-icon:hover:before {color: #fff; background: url(../img/sprite.png) no-repeat 0 -137px;}
+		.fotorama__fullscreen-icon:hover {background: none;}
+		.fotorama__arr--prev {margin-left: 0;}
+		.fotorama__arr--next {margin-right: 0;}
+	}
+		.fotorama--fullscreen {
+		.fotorama__fullscreen-icon {background: #fff;}
+		.fotorama__fullscreen-icon:before {background: url(../img/sprite.png) no-repeat 0 -181px;}
+		.fotorama__fullscreen-icon:hover {background: #fff;}
+		.fotorama__fullscreen-icon:hover:before {background: url(../img/sprite.png) no-repeat 0 -181px;}
+	}
+}

@@ -1,0 +1,36 @@
+.modal-search {
+	.modal-dialog {width: 100%!important; margin: 0 auto;}
+	.search-panel {height: 100px; @include box-shadow(0,1px,3px,rgba(0, 0, 0, 0.3)); background: #fff; overflow: hidden;
+		input[type="text"] {width: 100%; padding: 0; line-height: 100px; border: none; font-size: 20px;}
+		i {position: absolute; left: -45px; top: 50%; margin-top: -12px; color: #e17000; font-size: 24px;}
+	}
+	.search-result {padding: 40px 0;
+		ul {margin: 0; padding: 0; margin-left: -40px;
+			li {margin: 0; padding: 0; width: 180px; margin-left: 40px; float: left; margin-bottom: 10px;
+				a {font-size: 14px; color: #000000;
+					&:hover {color: $linkcolor-hover;}
+				}
+			}
+			li:before {display: none;}
+		}
+	}
+}
+
+@media (max-width: 1359px) {
+	.modal-search {
+		.search-panel {
+			input[type="text"] {padding-left: 40px;}
+			i {left: 15px;}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.modal-search {
+		.search-result {
+			ul {margin-left: -30px;
+				li {margin-left: 30px;}
+			}
+		}
+	}
+}

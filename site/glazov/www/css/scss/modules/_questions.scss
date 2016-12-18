@@ -1,0 +1,78 @@
+.questions {margin-bottom: 40px; position: relative;
+	ul {margin: 0; padding: 0;
+		li {margin: 0; padding: 0; position: relative; margin-bottom: 30px;}
+		li:before {display: none;}
+	}
+	.date {font-size: 12px; line-height: 20px; color: #888888; position: absolute; right: 100%; padding-right: 20px; top: 3px;}
+	.quest {font-size: 16px; line-height: 24px; font-weight: 500; color: #000;}
+	.answer {font-size: 16px; line-height: 24px; color: #555555; font-weight: 400;}
+	.btn-form-question {margin-bottom: 30px;}
+
+}
+.form-question {position: absolute; top: 0px; left: 0; background: #f5f5f5; width: 100%; height: 400px; z-index: 100; display: none;
+	.wrapper {position: relative;}
+	h2 {line-height: 100px; text-align: center; margin-bottom: 0;
+		small {font-size: 16px; vertical-align: top; display: inline-block; zoom: 1; *display: inline; margin-top: -10px; color: $linkcolor-hover; font-weight: 400;}
+	}
+	.close {position: absolute; right: 40px; top: 40px; z-index: 10;}
+	textarea {width: 100%; height: 120px; border: 1px solid #ddd; background: #fff; @include border-radius(4px); padding: 20px; resize: none; margin: 0; margin-bottom: 20px;}
+	textarea:focus {border-color: $linkcolor-hover;}
+	.group {font-size: 0; margin-left: -2.38%;}
+	input[type="text"], input[type="email"] {width: 35.8%; height: 60px; background: #fff; @include border-radius(4px); padding: 20px; border: 1px solid #ddd; font-size: 16px; line-height: 58px; margin-left: 2.38%;}
+	input[type="text"]:focus, input[type="email"]:focus {border-color: $linkcolor-hover;}
+	button {width: 21%; text-align: center; margin-left: 2.38%; float: right;}
+}
+.form-question.active {display: block;}
+
+@media (max-width: 1359px) {
+	.form-question {height: 420px;
+		input[type="text"], input[type="email"] {width: 290px; margin-bottom: 20px;}
+		input[type="email"] {margin: 0;}
+		button {float: right; width: 180px;}
+	}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.form-question {
+		h2 {font-size: 28px;}
+		input[type="text"], input[type="email"] {width: 46.67%; margin-right: 0; margin-left: 3.33%;}
+		.group {margin-left: -3.33%;}
+	}
+}
+
+@media (max-width: 999px) {
+	.questions {
+		ul {
+			li {margin-bottom: 15px;}
+		}
+		.date {position: relative; padding: 0; top: auto; right: auto; float: left;}
+		.quest {margin-left: 70px; font-size: 14px; line-height: 24px;}
+		.answer {margin-left: 70px; font-size: 14px; line-height: 24px;}
+		.btn.show-all {margin-top: 20px;}
+		.btn-form-question {text-align: center;}
+	}
+	.form-question {
+		button {float: none; width: 100%;}
+		h2 {text-align: left;}
+		input[type="text"], input[type="email"] {width: 46.67%; margin-right: 0; margin-left: 3.33%;}
+		.group {margin-left: -3.33%;}
+		button {margin-left: 0;}
+	}
+}
+
+@media (max-width: 679px) {
+	.questions {
+		.date {float: none;}
+		.quest {margin-left: 0;}
+		.answer {margin-left: 0;}
+	}
+	.form-question {height: auto; padding-bottom: 20px; top: 1px;
+		.close {right: 20px;}
+		input[type="text"], input[type="email"] {width: 100%; margin-bottom: 20px; margin-left: 0;}
+		h2 {
+			small {font-size: 16px;}
+		}
+		.group {margin-left: 0;}
+		button {margin-left: 0;}
+	}
+}

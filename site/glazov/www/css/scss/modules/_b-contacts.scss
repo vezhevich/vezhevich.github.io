@@ -1,0 +1,30 @@
+.b-contacts {margin-bottom: 40px;
+	.title {font-size: 14px; line-height: 28px; color: #777777;}
+	a {color: #2f6bc6;
+		&:hover {color: $linkcolor-hover;}
+	}
+	p {font-size: 16px; line-height: 28px; margin-bottom: 5px;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.b-contacts {
+		p {font-size: 14px; line-height: 22px;}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.b-contacts {margin-bottom: 30px;
+		p {font-size: 14px; line-height: 22px;}
+		.address {margin-bottom: 10px;}
+	}
+}
+
+@media (max-width: 679px) {
+	.b-contacts {margin-bottom: 10px;
+		p {font-size: 14px; line-height: 22px;}
+		.address {margin-bottom: 20px;}
+		.phone {margin-bottom: 20px;}
+		.mail {margin-bottom: 20px;}
+	}
+	#map {height: 240px!important;}
+}

@@ -1,0 +1,99 @@
+.main-header {z-index: 998; position: absolute; top: 0; left: 0; width: 100%;
+	.top {height: 40px; background-color: rgba(0,0,0,0.15); overflow: hidden;
+		a {font-size: 12px; color: #fff; display: block; height: 40px; line-height: 40px;
+			&:hover {color: $linkcolor-hover;}
+		}
+		.link-location {float: left;
+			i {vertical-align: middle; font-size: 18px;}
+		}
+		nav {float: right;
+			ul {font-size: 0; margin: 0; padding: 0; margin-right: -35px;
+				li {display: inline-block; zoom: 1; *display: inline; margin: 0; padding: 0; margin-right: 35px;}
+				li:before {display: none;}
+			}
+		}
+	}
+	.bottom {height: 80px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; 
+		ul {margin: 0; padding: 0; font-size: 0;
+			li {margin: 0; padding: 0; display: inline-block; zoom: 1; *display: inline;}
+			li:before {display: none;}
+		}
+		.logo {float: left; height: 80px; display: table;
+			a {display: table-cell; height: 80px; vertical-align: middle;}
+		}
+		.navigation {display: inline-block; zoom: 1; *display: inline;
+			a {line-height: 80px; display: block; padding: 0 20px; font-size: 16px; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); position: relative;}
+			a.pink-color {color: #ffa4c8;
+				&:hover {color: $linkcolor-hover;}
+			}
+			a:before {content: ""; position: absolute; z-index: -1; left: 50%; right: 50%; bottom: 0; background: #e17000; height: 2px; -webkit-transition-property: left, right; transition-property: left, right; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out;}
+			a:hover:before {left: 0; right: 0;}
+			a:focus:before {left: 0; right: 0;}
+		}
+		.nav-right {float: right; display: table; height: 80px; margin-right: -20px;
+			li {display: table-cell; vertical-align: middle; height: 80px;
+				a {display: inline-block; zoom: 1; *display: inline; padding: 0 20px; height: 80px; position: relative;
+					i {line-height: 80px;}
+				}
+				.in {width: 20px; height: 20px; @include border-radius(50%); position: absolute; top: 20px; right: 0; background: #e17000; color: #fff; font-size: 12px; line-height: 20px;}
+			}
+		}
+		.btn.catalog {float: left; margin-left: 20px; margin-top: 20px;
+			a {letter-spacing: 0;}
+		}
+	}
+}
+
+.scroll-active {background: #fff;
+	.black-logo {display: none!important;}
+	.white-logo {display: table-cell!important;}
+	.top {background: rgb(245, 245, 245);
+		a {color: #555555;
+			&:hover {color: $linkcolor-hover;}
+		}
+	}
+	.bottom {border-color: #eaeaea;
+		a {color: #000000;
+			&:hover {color: $linkcolor-hover;}
+		}
+	}
+}
+
+.main-header.white-style {background: #fff; margin-bottom: 40px;
+	.top {background: rgb(245, 245, 245);
+		a {color: #555555;
+			&:hover {color: $linkcolor-hover;}
+		}
+	}
+	.bottom {border-color: #eaeaea;
+		a {color: #000000;
+			&:hover {color: $linkcolor-hover;}
+		}
+	}
+}
+
+@media (max-width: 999px) {
+	.main-header {
+		.container {padding-left: 20px; padding-right: 20px;}
+	}
+}
+
+@media (max-width: 679px) {
+	.main-header {background: #fff;
+		.bottom {height: 60px;
+			.logo {height: 60px;
+				a {height: 60px;}
+				img {max-width: 96px;}
+			}
+			.nav-right {height: 60px; margin-right: -10px;
+				li {height: 60px;
+					a {height: 60px; padding: 0 10px; color: #555555;
+						i {line-height: 60px;}
+						.in {width: 20px; height: 20px; line-height: 20px; font-size: 12px; top: 10px; right: -3px;}
+						&:hover {color: $linkcolor-hover;}
+					}
+				}
+			}
+		}
+	}
+}

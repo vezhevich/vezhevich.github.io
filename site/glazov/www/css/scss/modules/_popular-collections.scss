@@ -1,0 +1,60 @@
+.popular-collections {margin-bottom: 60px; position: relative; z-index: 1; margin-top: 60px;
+	.item {height: 160px; position: relative; overflow: hidden; z-index: 100;
+		.text {display: table; width: 100%; height: 100%; 
+			a {display: table-cell;vertical-align: middle; padding: 20px; font-size: 20px; line-height: 28px; font-weight: 500; color: #404e83;}
+		}
+	}
+	.i1 {
+		background: url(../img/popular-living-room.jpg) no-repeat top center;
+		.text {
+			a {color: #404e83;}
+		}
+	}	
+	.i2 {
+		background: url(../img/popular-coffee-table.jpg) no-repeat top center;
+		.text {
+			a {color: #734385;}
+		}
+	}	
+	.i3 {
+		background: url(../img/popular-tv-wall.jpg) no-repeat top center;
+		.text {
+			a {color: #3d8179;}
+		}
+	}
+	.item:before {content: ''; position: absolute; width: 30px; height: 30px; background: url(../img/sprite.png) no-repeat 0 0; bottom: 0; right: 0; z-index: 10;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.popular-collections {margin-top: 60px;
+		.item {
+			.text {
+				a {font-size: 18px;}
+			}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.popular-collections {margin-bottom: 40px; margin-top: 40px;
+		.item {width: 100%!important; height: 120px; float: left; margin-left: 40px;
+			.text {
+				a {font-size: 16px; line-height: 20px;}
+			}
+		}
+		.i1 {background-position: -85px top;}
+		.i3 {background-position: -70px top;}
+	}
+}
+
+@media (max-width: 679px) {
+	.popular-collections {margin-bottom: 30px; margin-top: 0;
+		.item {width: 200px; height: 120px; float: left; margin-left: 20px;
+			.text {
+				a {font-size: 16px; line-height: 20px;}
+			}
+		}
+		.i1 {background-position: -85px top;}
+		.i3 {background-position: -70px top;}
+	}
+}

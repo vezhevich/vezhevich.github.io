@@ -1,0 +1,197 @@
+.modal-menu-inner {
+	.close {position: absolute; top: 0; right: -60px; width: 60px; height: 100%; background: #eaeaea; vertical-align: top; display: block; text-align: center; z-index: 100; transition: none;
+		i {margin-top: 20px;}
+		&:hover {opacity: 1;
+			i {color: $linkcolor-hover;}
+		}
+	}
+	.modal-dialog {margin-top: 0;margin-bottom: 0; height: 100%;}
+	.modal-body {height: 100%;}
+	.modal-content {height: 100%; background: none; position: relative; box-shadow: none; background: #fff; width: 320px; padding-right: 60px; overflow-y: auto;}
+	.nav {padding: 20px 0;
+		a {color: #1d1d1d; display: block; padding: 10px 20px;
+			&:hover {color: $linkcolor-hover;}
+		}
+		a.active {color: $linkcolor-hover;}
+	}
+	.nav-catalog {border-bottom: 1px solid #ddd;
+		a {font-weight: 500; font-size: 16px;}
+	}
+	.nav-inner {
+		a {font-size: 14px;}
+	}
+	.location {height: 60px; width: 100%; border-bottom: 1px solid #ddd; font-size: 14px; color: #1d1d1d; overflow: hidden; display: table;
+        a {display: table-cell; vertical-align: middle; color: #1d1d1d; padding: 0 20px;}
+		i {font-size: 24px; vertical-align: middle; color: $linkcolor-hover; display: table-cell;}
+		span {display: table-cell; vertical-align: middle; line-height: 20px; padding-left: 10px;}
+	}
+	.search {height: 60px; width: 100%; border-bottom: 1px solid #ddd; position: relative;
+		button {border: none; position: absolute; top: 0; left: 0; width: 45px; height: 59px; padding: 0; text-align: right; background: #fff;}
+		input {width: 100%; height: 59px; line-height: 59px; border: none; padding-left: 55px; font-size: 14px; color: #1d1d1d; padding-top: 0; padding-bottom: 0; padding-right: 0;}
+		i {color: $linkcolor-hover;}
+	}
+}
+
+.menu-overlay {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); z-index: 999; display: none;}
+
+.modal-menu-inner {
+    height: 100%;
+    right: 0;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    width: 0;
+    z-index: 1000;
+    transform: translate3d(100%, 0px, 0px);
+    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0.1s;
+    background: #fff;
+}
+
+.modal-menu-inner {
+	.close {transform: translate3d(100%, 0px, 0px); transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.1s;}
+}
+.modal-menu-inner.open {
+	.close {right: 0;
+		transform: translate3d(0px, 0px, 0px);
+		transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.1s;
+	}
+}
+
+.modal-menu-inner.open {
+    opacity: 1;
+    z-index: 1000;
+    width: 320px;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.1s;
+}
+
+.modal-menu-inner .nav {
+    background-color: #fff;
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+    width: 0;
+    min-width: 250px;
+    transform: translate3d(100%, 0px, 0px);
+}
+
+
+.modal-menu-inner.open .nav {
+    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.modal-menu-inner [data-index] {
+    min-width: 250px;
+    transform: translate3d(100%, 0px, 0px);
+}
+.modal-menu-inner [data-index][data-reverse-index="1"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.05s;
+}
+.modal-menu-inner [data-index][data-reverse-index="2"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.1s;
+}
+.modal-menu-inner [data-index][data-reverse-index="3"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.15s;
+}
+.modal-menu-inner [data-index][data-reverse-index="4"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.2s;
+}
+.modal-menu-inner [data-index][data-reverse-index="5"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.25s;
+}
+.modal-menu-inner [data-index][data-reverse-index="6"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.3s;
+}
+.modal-menu-inner [data-index][data-reverse-index="7"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.35s;
+}
+.modal-menu-inner [data-index][data-reverse-index="8"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.40s;
+}
+.modal-menu-inner [data-index][data-reverse-index="9"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.45s;
+}
+.modal-menu-inner [data-index][data-reverse-index="10"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.50s;
+}
+.modal-menu-inner [data-index][data-reverse-index="11"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.55s;
+}
+.modal-menu-inner [data-index][data-reverse-index="12"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.60s;
+}
+.modal-menu-inner [data-index][data-reverse-index="13"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.65s;
+}
+.modal-menu-inner [data-index][data-reverse-index="14"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.70s;
+}
+.modal-menu-inner [data-index][data-reverse-index="15"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.75s;
+}
+.modal-menu-inner [data-index][data-reverse-index="16"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.80s;
+}
+.modal-menu-inner [data-index][data-reverse-index="17"] {
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.85s;
+}
+
+.modal-menu-inner.open [data-index] {
+    transform: translate3d(0px, 0px, 0px);
+}
+.modal-menu-inner.open [data-index][data-index="1"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.05s;
+}
+.modal-menu-inner.open [data-index][data-index="2"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
+}
+.modal-menu-inner.open [data-index][data-index="3"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+}
+.modal-menu-inner.open [data-index][data-index="4"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.20s;
+}
+.modal-menu-inner.open [data-index][data-index="5"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s;
+}
+.modal-menu-inner.open [data-index][data-index="6"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.30s;
+}
+.modal-menu-inner.open [data-index][data-index="7"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.35s;
+}
+.modal-menu-inner.open [data-index][data-index="8"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.40s;
+}
+.modal-menu-inner.open [data-index][data-index="9"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.45s;
+}
+.modal-menu-inner.open [data-index][data-index="10"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.50s;
+}
+.modal-menu-inner.open [data-index][data-index="11"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.55s;
+}
+.modal-menu-inner.open [data-index][data-index="12"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.60s;
+}
+.modal-menu-inner.open [data-index][data-index="13"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.65s;
+}
+.modal-menu-inner.open [data-index][data-index="14"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.70s;
+}
+.modal-menu-inner.open [data-index][data-index="15"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.75s;
+}
+.modal-menu-inner.open [data-index][data-index="16"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.80s;
+}
+.modal-menu-inner.open [data-index][data-index="17"] {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.85s;
+}

@@ -1,0 +1,86 @@
+.background-image-top {position: relative; overflow: hidden; height: 100%;
+	img {width: 100%; display: block;}
+	.text {font-size: 52px; line-height: 60px; color: #fff; font-weight: 500; text-align: center;}
+	.btn-scroll-down {position: absolute; bottom: 40px; left: 50%; margin-left: -40px;}
+	.wrapper-center {position: absolute; width: 100%; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+}
+
+.background-image-top:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3);}
+
+.background-image-top.inner {
+	.text {text-align: left;
+		small {display: block; 
+			a {font-size: 14px; color: #bbbbbb; text-transform: uppercase; font-weight: 500;
+				&:hover {border-bottom: 1px solid #bbb;}
+			}
+		}
+	}
+}
+
+.background-image-top.shvr-bg {margin-top: 120px; height: calc(100% - 120px); background: url(../img/shvr.jpg) no-repeat top center; background-size: cover; background-attachment: fixed;
+	.wrapper-center {
+		.text {color: #442307;
+			p {color: #fff; font-size: 16px; line-height: 28px; width: 400px; margin-top: 40px; margin-bottom: 40px;}
+		}
+	}
+}
+.background-image-top.shvr-bg:before {display: none;}
+
+.background-image-top.about-bg {background: url(../img/about.jpg) no-repeat top center; background-size: cover; background-attachment: fixed;}
+.background-image-top.blog-page-bg {background: url(../img/blog-page.jpg) no-repeat top center; background-size: cover; background-attachment: fixed;}
+.background-image-top.dealers-bg {background: url(../img/dealers-bg.jpg) no-repeat top center; background-size: cover; background-attachment: fixed;}
+.background-image-top.composition-bg {background: url(../img/composition.jpg) no-repeat top center; background-size: cover; background-attachment: fixed;
+	p {color: #fff; font-size: 16px; line-height: 28px; margin-top: 40px; margin-bottom: 70px;}
+	.shvr-icon {width: 180px; margin: 0 auto;
+		a {display: block;
+			&:hover {
+				span {color: $linkcolor-hover;}
+			}
+		}
+		i {width: 40px; height: 40px; background-color: #ef8122; @include border-radius(50%); line-height: 40px; text-align: center; float: left; margin-right: 20px; color: #fff;}
+		span {overflow: hidden; font-size: 12px; line-height: 18px; color: #dddddd; display: block; text-align: left;}
+	}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.background-image-top {
+		img {width: auto;}
+		.text {font-size: 48px; line-height: 56px;}
+	}
+	.background-image-top.shvr-bg {height: 520px;}
+	.background-image-top.composition-bg {
+		p {font-size: 14px; line-height: 24px;}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.background-image-top {
+		img {width: auto;}
+		.text {font-size: 36px; line-height: 48px;}
+	}
+	.background-image-top.shvr-bg {height: 520px;}
+}
+
+@media (max-width: 679px) {
+	.background-image-top {min-height: 480px;
+		img {width: auto;}
+		.text {font-size: 24px; line-height: 36px;}
+		.btn-scroll-down {width: 40px; height: 40px; display: block; border: 2px solid rgba(255, 255, 255, 0.3); @include border-radius(50%); text-align: center; margin-left: -20px;
+			i {line-height: 40px; color: #fff;}
+		}
+	}
+	.background-image-top.shvr-bg {height: 420px; margin-top: 60px;
+		.wrapper-center {height: 100%; transform: translate(-50%,-50%); left: 50%; top: 50%;
+			.text {text-align: center; margin-top: 60px; height: 100%;
+				p {width: auto; margin-top: 10px; margin-bottom: 30px;}
+			}
+		}
+	}
+	.background-image-top.composition-bg {
+		p {font-size: 14px; line-height: 24px; margin-top: 20px; margin-bottom: 30px;}
+		.shvr-icon {margin: 0;}
+		.text {margin-top: 30px;
+			.col-xs-12 {padding: 0;}
+		}
+	}
+}

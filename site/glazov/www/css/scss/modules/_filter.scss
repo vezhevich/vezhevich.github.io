@@ -1,0 +1,48 @@
+.filter {background-color: #f8f8f8; max-height: 280px; padding: 10%;
+	.wrap {overflow: hidden; margin-left: -10%;
+		.col {width: 39.9%; float: left; font-size: 16px; margin-left: 10%;}
+	}
+	.title {font-size: 14px; text-transform: uppercase; font-weight: 500; padding-bottom: 5.35%; border-bottom: 2px solid #eaeaea; margin-bottom: 5.35%; letter-spacing: 2px;}
+	ul {margin: 0; padding: 0;
+		li {margin: 0; padding: 0;
+			a {color: #555555; display: block; padding-top: 5.35%; padding-bottom: 5.35%; font-size: 14px;
+				&:hover {color: $linkcolor-hover;}
+			}
+			.active {color: $linkcolor-hover;}
+		}
+		li:before {display: none;}
+	}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.filter	{padding-top: 7%; padding-bottom: 5%; min-height: 220px;
+		.title {font-size: 13px;}
+		ul {
+			li {
+				a {font-size: 13px;}
+			}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.filter	{padding-top: 7%; padding-bottom: 5%; min-height: 210px;
+		.title {font-size: 13px;}
+		ul {
+			li {
+				a {font-size: 13px;}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.filter	{
+		.title {font-size: 13px;}
+		ul {
+			li {
+				a {font-size: 13px;}
+			}
+		}
+	}
+}

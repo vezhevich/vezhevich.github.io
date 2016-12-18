@@ -1,0 +1,71 @@
+.help-head {
+	h1 {font-size: 52px; margin-bottom: 60px; margin-top: 40px;}
+	small {font-size: 12px; color: #888888; display: inline-block; zoom: 1; *display: inline; font-weight: normal; display: block; text-align: center; margin-top: 10px;
+		sup {font-size: 6px; vertical-align: top;}
+	}
+	.group-buttons {margin-bottom: 40px;}
+}
+.help-h2 {text-align: center;}
+.help-list {margin-top: 50px;
+	.item {background-color: #fff; @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.2)); height: 260px; margin-bottom: 40px; padding: 40px; position: relative;
+		p {color: #555555; font-size: 16px; line-height: 28px; margin-bottom: 0; font-weight: normal;}
+		a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 50;}
+		&:hover {
+			p {color: #000;}
+		}
+	}
+	.item.big {
+		p {font-size: 20px; line-height: 30px; width: 250px;}
+	}
+	.help-bg1 {background-image: url(../img/help1.png); background-repeat: no-repeat; position: absolute; bottom: 40px; right: 40px; width: 242px; height: 122px;}
+	.help-bg2 {background-image: url(../img/help2.png); background-repeat: no-repeat; position: absolute; bottom: 20px; right: 20px; width: 117px; height: 121px;}
+	.help-bg3 {background-image: url(../img/help3.png); background-repeat: no-repeat; position: absolute; bottom: 20px; right: 20px; width: 139px; height: 122px;}
+	.help-bg4 {background-image: url(../img/help4.png); background-repeat: no-repeat; position: absolute; bottom: 20px; right: 20px; width: 181px; height: 214px;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.help-head {
+		h1 {font-size: 48px;}
+	}
+	.help-list {margin-top: 40px;
+		.item {
+			p {font-size: 14px; line-height: 22px;}
+		}
+		.item.big {
+			p {font-size: 18px; line-height: 30px;}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.help-head {
+		h1 {font-size: 36px; margin-bottom: 35px;}
+	}
+	.help-h2 {text-align: left;}
+	.bg {display: none;}
+	.help-list {margin-top: 30px;
+		.item {height: auto; padding: 20px; margin-bottom: 0;
+			p {font-size: 14px; line-height: 24px;}
+		}
+		.item.big {
+			p {font-size: 14px; line-height: 24px; width: 100%;}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.help-head {
+		h1 {font-size: 24px; margin-bottom: 25px;}
+		small {margin-bottom: 20px;}
+	}
+	.help-h2 {text-align: left;}
+	.bg {display: none;}
+	.help-list {margin-top: 30px; margin-left: -20px; margin-right: -20px; overflow: hidden;
+		.item {height: auto; padding: 20px; margin-bottom: 0;
+			p {font-size: 14px; line-height: 24px;}
+		}
+		.item.big {
+			p {font-size: 14px; line-height: 24px; width: 100%;}
+		}
+	}
+}

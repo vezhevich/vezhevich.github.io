@@ -1,0 +1,91 @@
+.item-card {margin-bottom: 30px; position: relative;
+	.item {position: relative; margin-bottom: 40px;
+		.img {margin-bottom: 15px; overflow: hidden; position: relative;
+			img {width: 100%; display: block;}
+			a:before {content: ''; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s; background: #000; position: absolute; top: 0; left: 0; background: #000; width: 100%; height: 100%; z-index: 10;}
+		}
+		.title {margin-bottom: 0; height: 30px; overflow: hidden;
+			a {font-size: 20px; line-height: 30px; color: #1d1d1d; }
+		}
+		.sale-label {position: absolute; width: 60px; height: 60px; background: #d9568a; @include border-radius(50%); text-align: center; line-height: 60px; color: #fff; font-weight: normal; top: 10px; right: 10px; z-index: 10; font-size: 20px;}
+		&:hover .title {
+			a {color: $linkcolor-hover;}
+		}
+		&:hover .img a:before {opacity: .5; visibility: visible; transition-delay: 0s;}
+	}
+}
+
+.item-card .popular-block .item {position: relative; margin-bottom: 0;}
+.item-card .popular-block .item:before {content: ''; position: absolute; width: 30px; height: 30px; background: url(../img/sprite.png) no-repeat 0 0; bottom: 0; right: 0; z-index: 10;}
+.item-card .popular-block .text {width: 100%; padding-left: 20px; margin: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); font-size: 28px; line-height: 36px; font-weight: 500;}
+.item-card .popular-block .img:before {display: none;}
+.item-card .popular-block.color1 {color: #734385;}
+.item-card .popular-block.color2 {color: #404e83;}
+.item-card .popular-block.color3 {color: #3d8179;}
+.item-card .popular-block .item a {position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%;}
+
+.item-card.wardrobes {
+	.item {
+		.title {height: auto; overflow: visible;
+			a {font-size: 16px; line-height: 28px;}
+		}
+	}
+}
+
+.h-item-card {text-align: center; margin-bottom: 40px;}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.item-card {
+		.item {
+			.img {margin-bottom: 10px;}
+			.title {
+				a {font-size: 18px;}
+			}
+		}
+	}
+	.item-card.wardrobes {
+		.item {
+			.title {height: auto; overflow: visible;
+				a {font-size: 15px; line-height: 22px;}
+			}
+		}
+	}
+	.item-card .popular-block .text {font-size: 24px; line-height: 32px;}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.item-card {margin-bottom: 0;
+		.item {
+			.img {margin-bottom: 10px;}
+			.title {
+				a {font-size: 18px;}
+			}
+		}
+	}
+	.item-card .popular-block .text {font-size: 24px; line-height: 32px;}
+	.item-card.wardrobes {
+		.item {
+			.title {height: auto; overflow: visible;
+				a {font-size: 16px; line-height: 28px;}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.item-card {margin-bottom: 20px;
+		.item {margin-bottom: 20px;
+			.img {margin-bottom: 5px;}
+			.title {
+				a {font-size: 16px;}
+			}
+		}
+	}
+	.item-card.wardrobes {
+		.item {
+			.title {height: auto; overflow: visible;
+				a {font-size: 15px; line-height: 22px;}
+			}
+		}
+	}
+}

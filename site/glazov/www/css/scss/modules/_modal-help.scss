@@ -1,0 +1,65 @@
+.modal-help {
+	.modal-dialog {width: 840px!important;}
+	.modal-content {background: #fff;}
+	.modal-body {margin: 0 auto; padding: 80px 46px 80px 110px !important;  height: 100%;}
+	.mCustomScrollBox {padding-right: 35px;}
+	.mCSB_scrollTools {margin-top: 30px;}
+	h2 {line-height: 36px;}
+	p {font-size: 16px; line-height: 28px;}
+	img {width: 100%; margin-bottom: 20px;}
+	.wrapper-grey {background: #f8f8f8; padding: 20px; margin-bottom: 20px;
+		p {font-size: 14px; line-height: 24px; margin-bottom: 10px;}
+	}
+	table {margin-bottom: 20px; width: 100%;
+		th {font-size: 14px; line-height: 24px; color: #000; font-weight: 500;}
+		td {font-size: 14px; line-height: 20px; color: #000; padding-top: 10px; padding-bottom: 10px;}
+		tr:nth-child(2) td {border-bottom: 1px solid #eaeaea; padding-bottom: 15px;}
+		tr:nth-child(3) td {padding-top: 15px;}
+		tr:last-child td {border-bottom: 1px solid #eaeaea; padding-bottom: 25px;}
+		.col1 {width: 215px; padding-right: 50px;}
+	}
+	.wrapper-table {width: 100%; overflow-x: scroll;}
+}
+
+.modal-help.fade .modal-dialog {
+	left: -840px;
+}
+
+@media (max-width: 1359px) {
+	p {font-size: 14px; line-height: 22px;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.modal-help {
+		.modal-dialog {width: 760px!important;}
+		.modal-body {padding: 80px 46px 80px 80px !important;}
+	}
+	.modal-help.fade .modal-dialog {
+	left: -760px;
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.modal-help {
+		.modal-dialog {width: 640px!important;}
+		.modal-body {padding: 80px 46px 80px 40px !important;}
+		.mCSB_container {margin-right: 0px;}
+	}
+	.modal-help.fade .modal-dialog {
+	left: -640px;
+	}
+}
+
+@media (max-width: 679px) {
+	.modal-help {
+		h2 {line-height: 28px;}
+		p {font-size: 14px; line-height: 24px;}
+		.close {top: 20px; right: 13px;}
+		.modal-dialog {width: 300px!important;}
+		.modal-body {padding-top: 60px!important; padding-bottom: 20px!important; padding-left: 20px!important; padding-right: 0px!important;}
+		.mCSB_container {margin-right: 0px;}
+	}
+	.modal-help.fade .modal-dialog {
+	left: -300px;
+	}
+}

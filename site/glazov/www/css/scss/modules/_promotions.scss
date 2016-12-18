@@ -1,0 +1,48 @@
+.promotions {
+	.item {margin-bottom: 40px;
+		.img {margin-bottom: 15px;
+			a {display: block;
+				img {width: 100%;}
+			}
+		}
+		.date {font-size: 12px; color: #888888; margin-bottom: 10px;}
+		.title {margin-bottom: 5px;
+			a {font-size: 20px; line-height: 30px; color: #1d1d1d;}
+		}
+		.teaser {font-size: 14px; line-height: 22px; color: #555555; margin-bottom: 0;}
+		&:hover .title {
+			a {color: $linkcolor-hover;}
+		}
+	}
+	.btn.show-all {margin-bottom: 60px;}
+}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.promotions {
+		.item {
+			.title {
+				a {font-size: 18px; line-height: 24px;}
+			}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.promotions {
+		.item {
+			.title {
+				a {font-size: 18px; line-height: 24px;}
+			}
+		}
+	}
+}
+
+@media (max-width: 679px) {
+	.promotions {
+		.item {margin-bottom: 30px;
+			.title {
+				a {font-size: 16px; line-height: 22px;}
+			}
+		}
+	}
+}

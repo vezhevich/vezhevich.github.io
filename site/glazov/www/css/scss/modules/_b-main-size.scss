@@ -1,0 +1,40 @@
+.b-main-size {height: 640px; padding: 50px 40px 50px 40px; background: url(../img/size-collection.jpg) no-repeat 100%; text-align: center; background-size: cover;
+	.name {font-size: 36px; color: #442307; line-height: 48px; font-weight: 500; margin-bottom: 20px;}
+	.sub-title {font-size: 20px; color: #fff; line-height: 30px; margin-bottom: 120px;}
+	.btn {
+		a {display: block;}
+	}
+}
+
+.b-main-size img {width: 100%;}
+
+@media (min-width: 1000px) and (max-width: 1359px) {
+	.b-main-size {height: 488px;
+		.name {font-size: 28px; line-height: 36px;}
+		.sub-title {margin-bottom: 43px;}
+		.btn {
+			a {height: auto; line-height: 20px; padding: 20px;}
+		}
+	}
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+	.b-main-size {height: 488px;
+		.name {font-size: 28px; line-height: 36px;}
+		.sub-title {margin-bottom: 43px;}
+		.btn {
+			a {height: auto; line-height: 20px; padding: 20px;}
+		}
+	}
+}
+
+
+@media (max-width: 679px) {
+	.b-main-size {background: #df701e; text-align: center; margin-bottom: 30px; padding: 20px; height: auto;
+		.name {font-size: 20px; color: #442307; line-height: 30px; font-weight: 500; margin-bottom: 20px;}
+		.sub-title {font-size: 16px; color: #fff; line-height: 24px; margin-bottom: 20px;}
+		.btn {
+			a {display: block; min-width: 100%; font-size: 12px; padding: 0 20px;}
+		}
+	}
+}

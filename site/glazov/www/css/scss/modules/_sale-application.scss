@@ -1,0 +1,28 @@
+.sale-application {background: #f5f5f5; overflow: hidden; display: table; margin-bottom: 40px;
+	.text {display: table-cell; width: 680px; vertical-align: middle;}
+	.btn-send {display: table-cell;}
+	span {font-size: 12px; color: #555555; line-height: 18px; margin-bottom: 0; display: table-cell; vertical-align: middle; padding: 0 20px;}
+}
+
+@media (min-width: 1000px) and (max-height: 1359px) {
+	.sale-application {
+		.text {width: 635px;}
+		.btn-send {
+			a {padding: 0 35px; font-size: 13px;}
+		}
+	}
+}
+
+@media (max-width: 999px) {
+	.sale-application {padding: 20px;
+		.text {width: 100%; display: block; margin-bottom: 20px;}
+		.btn-send {width: 100%; display: block;
+			a {display: block;}
+		}
+		span {padding: 0;}
+	}
+}
+
+@media (max-width: 679px) {
+	.sale-application {margin-left: -20px; margin-right: -20px;}
+}
