@@ -2,6 +2,7 @@ if (window.jQuery) $(document).ready(function() {
   $('.main-header').scrollupbar();
 
   if ($('.anchor').length) anchor();
+  if ($('.main-collections').length) mason();
   if ($('.blog-wrapper-carousel .blog-list').length) carousel();
   if ($('.popular-collections.carousel').length) carousel2();
   if ($('.main-collections').length && window.innerWidth < 680) remove_card();
@@ -65,6 +66,12 @@ function anchor (){
    }); 
 }
 
+function mason(){ 
+  $('.main-collections .grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true
+  }); 
+}
 
 function carousel(){ 
   $('.blog-list').owlCarousel({
