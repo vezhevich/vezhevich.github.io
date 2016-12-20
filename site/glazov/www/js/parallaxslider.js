@@ -176,8 +176,8 @@ parallaxSlider.prototype={
 
 		var orientation=setting.orientation
 		var controlpaths=(orientation=="h")? setting.navbuttons.slice(0, 2) : setting.navbuttons.slice(2)
-		var $controls =  $('<img class="navbutton next" data-dir="forth" src="../img/null.png" style="position:absolute; z-index:5; cursor: e-resize!important; vertical-align:top; border: none; border-width:0; outline: 0;' + (orientation=='v'? 'bottom:8px; left:46%' : 'top:46%; right:0px;') + '" />'
-			+ '<img class="navbutton prev" data-dir="back" src="../img/null.png" style="position:absolute; z-index:5; cursor: w-resize!important; vertical-align:top; border:none; border-width:0; outline: 0;' + (orientation=='v'? 'top:8px; left:45%' : 'top:45%; left:0px;') + '" />'
+		var $controls =  $('<img class="navbutton next" data-dir="forth" src="./img/null.png" style="position:absolute; z-index:5; cursor: e-resize!important; vertical-align:top; border: none; border-width:0; outline: 0;' + (orientation=='v'? 'bottom:8px; left:46%' : 'top:46%; right:0px;') + '" />'
+			+ '<img class="navbutton prev" data-dir="back" src="./img/null.png" style="position:absolute; z-index:5; cursor: w-resize!important; vertical-align:top; border:none; border-width:0; outline: 0;' + (orientation=='v'? 'top:8px; left:45%' : 'top:45%; left:0px;') + '" />'
 		)
 		.css({opacity:0})
 		.click(function(){
