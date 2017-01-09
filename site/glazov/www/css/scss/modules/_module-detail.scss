@@ -2,7 +2,7 @@
 	.close {top: 0; right: -50px;
 		i {color: #fff;}
 	}
-	.link-back {position: absolute; top: 0; right: 0;
+	.link-back {position: absolute; top: 0; right: 0; z-index: 100;
 		i {font-size: 24px; color: #acaaa9;}
 		&:hover i {color: $linkcolor-hover;}
 	}
