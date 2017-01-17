@@ -1,0 +1,41 @@
+@font-face { 
+  font-family: 'ProximaNova-Regular';  
+  src: url(../fonts/Proxima_Nova_Regular.otf);
+}
+
+@font-face { 
+  font-family: 'ProximaNova-Light';  
+  src: url(../fonts/Proxima_Nova_Light.otf);
+}
+
+@font-face { 
+  font-family: 'ProximaNova-Semibold';  
+  src: url(../fonts/Proxima_Nova_Semibold.otf);
+}
+
+@font-face { 
+  font-family: 'SommetRoundedBold';  
+  src: url(../fonts/Sommet_Rounded_Bold.otf);
+}
+
+@font-face { 
+  font-family: 'SommetRoundedHeavy';  
+  src: url(../fonts/Sommet_Rounded_Heavy.otf);
+}
+
+@font-face { 
+  font-family: 'SommetRoundedLight';  
+  src: url(../fonts/Sommet_Rounded_Light.otf);
+}
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src:
+       url(../fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}

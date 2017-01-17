@@ -1,0 +1,25 @@
+.block-border {border: 1px solid #dfe0e3; @include border-radius(10px); padding: 35px 30px 30px 30px; position: relative;
+	h3 {position: absolute; top: 0; left: 50%; transform: translateX(-50%); white-space: nowrap; display: inline-block; padding: 0 15px; background-color: #fff; top: -7px;}
+	.bottom {border-top: 1px solid #dfe0e3; margin-top: 25px;
+		a {display: block; margin-top: 25px; position: relative; line-height: 1;
+			span {font-size: 13px; text-transform: uppercase; font-family: ProximaNova-Semibold; border-bottom: 1px solid #d4e1ef;}
+			svg {position: absolute; right: 0; bottom: -2px; width: 20px; height: 20px; fill: #8d959c;}
+			&:hover span {border-color: $linkcolor-hover;}
+			&:hover svg {fill: $linkcolor-hover;}
+		}
+	}
+}
+
+.block-border.inner {padding-bottom: 0; padding-top: 50px;}
+
+@media (min-width: 980px) and (max-width: 1169px) {
+	.block-border.inner {padding-left: 30px; padding-right: 30px; padding-top: 40px;}
+}
+
+@media (max-width: 979px) {
+	.block-border.inner {margin-top: 50px;}
+}
+
+@media (max-width: 767px) {
+	.block-border.inner {padding-left: 0; padding-right: 0; padding-top: 30px; border: none;}
+}
