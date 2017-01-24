@@ -1,0 +1,23 @@
+.social {border: 1px solid #dfe0e3; @include border-radius(10px); padding: 25px 15px; text-align: center; margin-top: 20px;
+	p {font-size: 18px; margin-bottom: 10px;}
+	a {display: inline-block; vertical-align: top; width: 42px; height: 42px; border: 2px solid rgb(223, 224, 227); background: #fff; @include border-radius(50%); line-height: 40px; font-size: 20px;}
+	.vk {color: #497099;
+		&:hover {background: #497099; color: #fff; border-color: #497099;}
+	}
+	.fb {color: #3b5998;
+		&:hover {background: #3b5998; color: #fff; border-color: #3b5998;}
+	}
+	.tv {color: #00aced;
+		&:hover {background: #00aced; color: #fff; border-color: #00aced;}
+	}
+	.insta {color: #336699;
+		&:hover {background: #336699; color: #fff; border-color: #336699;}
+	}
+	.you {color: #cc3333;
+		&:hover {background: #cc3333; color: #fff; border-color: #cc3333;}
+	}
+}
+
+@media (max-width: 1169px) {
+	.social {border: none; margin-top: 0;}
+}

@@ -1,0 +1,24 @@
+.feedback {background-color: #609f05; @include border-radius(10px); padding: 30px; position: relative;
+	p {color: #fff; font-family: SommetRoundedLight;}
+	a {font-size: 13px; color: #fff; border-bottom: 1px dashed #fff;}
+	.review-bot {background: url(../img/review-bot.png) no-repeat; position: absolute; left: 25px; bottom: -27px; width: 40px; height: 27px;}
+	.wrapper {position: relative; overflow: hidden;}
+	.shadow {box-shadow: 0 0 25px 60px rgba(96, 159, 5, 0.9); position: absolute; bottom: 0; left: 0; width: 100%; height: 1px;}
+}
+
+.feedback-detail {
+	.user {padding-left: 70px; padding-top: 15px; float: left;
+		img {float: left; margin-right: 10px;}
+		.text {float: left;
+			p {margin-bottom: 0;}
+			.name {font-size: 15px; color: #000; font-family: ProximaNova-Semibold; font-weight: bold; line-height: 18px;}
+			.date {font-size: 12px; color: #5f6b7d; font-family: ProximaNova-Regular; line-height: 18px;}
+		}
+	}
+	.link {float: right; margin-top: 20px;
+		span {font-family: ProximaNova-Semibold; font-size: 13px; text-transform: uppercase; border-bottom: 1px solid #d4e1ef; display: inline-block;}
+		svg {vertical-align: middle; fill: #8d959c; width: 20px; height: 20px; margin-left: 10px;}
+		&:hover span {border-color: $linkcolor-hover;}
+		&:hover svg {fill: $linkcolor-hover;}
+	}
+}
