@@ -68,8 +68,7 @@ function anchor (){
 
 function mason(){ 
   $('.main-collections .grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true
+    itemSelector: '.grid-item'
   }); 
 }
 
