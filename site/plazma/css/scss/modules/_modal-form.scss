@@ -1,0 +1,24 @@
+.modal-form {
+	.modal-dialog {width: 900px;}
+	.modal-body {padding: 0;}
+	.modal-content {position: relative; @include border-radius (0);}
+	.application-form {padding-left: 60px; padding-right: 60px; padding-top: 50px; padding-bottom: 50px;
+		h2 {font-size: 48px; line-height: 72px;}
+	}
+	.close {position: absolute; right: 30px; top: 30px; width: 30px; height: 30px;  cursor: pointer; z-index: 100; display: inline-block;
+		span {width: 30px; height: 30px; display: inline-block; line-height: 40px; vertical-align: top; font-weight: 100; font-size: 60px; font-family: 'CircleLight'; color: #d3d3d3;}
+	}
+}
+
+@media (max-width: 939px) {
+	.modal-form {
+		.modal-dialog {width: 100%; margin-top: 0;}
+		.application-form {padding: 0px; padding-top: 40px; padding-bottom: 30px; background: #161339;
+			input {height: 38px; margin-bottom: 20px; font-size: 16px;}
+			h2 {font-size: 24px; line-height: 30px; padding-left: 50px; padding-right: 50px; color: #fff; margin-bottom: 20px;}
+			textarea {height: 90px; padding: 10px; font-size: 16px; margin-bottom: 20px;}
+			input, textarea {border: none;}
+		}
+		.error-text {color: #ff0000;}
+	}
+}

@@ -1,0 +1,18 @@
+.main-bg {background: url(../img/main-bg.jpg) no-repeat top center; width: 100%; height: 998px;}
+.separator {width: 120px; height: 1px; background: #e5e5e5; margin: 80px auto;}
+
+@media (max-width: 1319px) {
+	.main-bg {height: auto; padding-bottom: 130px;}
+	.separator {margin: 50px auto;}
+}
+
+
+@media (max-width: 939px) {
+	.main-bg {height: auto; padding-bottom: 70px;}
+}
+
+@media (max-width: 767px) {
+	.main-bg {padding-bottom: 40px;}
+	.separator {margin-top: 20px; margin-bottom: 30px;}
+	.container {padding: 0 20px;}
+}

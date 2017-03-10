@@ -1,0 +1,28 @@
+.promo {text-align: center;
+	p {color: #fff;}
+	.subtitle {font-size: 16px; margin-bottom: 40px; position: relative; text-transform: uppercase;}
+	.title {font-size: 100px; line-height: 90px; margin-bottom: 0;}
+	.title:after {content: ''; width: 120px; height: 1px; background: rgba(255,255,255,0.25); display: block; margin: 70px auto 60px auto;}
+	.param {font-size: 48px; line-height: 42px; color: #eabc23; font-family: 'CirceExtraBold';}
+	.helper {font-size: 24px;}
+	.btn {margin-top: 60px;}
+}
+
+@media (max-width: 1319px) {
+	.promo {
+		.subtitle {font-size: 14px;}
+		.title {font-size: 74px; line-height: 66px;}
+		.param {font-size: 36px; line-height: 33px; font-family: 'CirceBold'; margin-bottom: 5px;}
+		.helper {font-size: 18px; line-height: 33px;}
+	}
+}
+
+@media (max-width: 767px) {
+	.promo {
+		.subtitle {font-size: 12px; line-height: 18px; padding-left: 40px; padding-right: 40px; margin-bottom: 25px;}
+		.title {font-size: 42px; line-height: 40px; margin-bottom: 20px;}
+		.title:after {display: none;}
+		.param {font-size: 28px; margin-bottom: 0;}
+		.helper {font-size: 14px; line-height: 24px;}
+	}
+}

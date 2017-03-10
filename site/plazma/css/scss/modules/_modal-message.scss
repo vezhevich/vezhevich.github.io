@@ -1,0 +1,19 @@
+.modal-message {text-align: center;
+	.modal-dialog {width: 690px;}
+	.modal-body {padding: 50px 65px;}
+	.modal-content {position: relative; @include border-radius (0);}
+	.close {position: absolute; right: 30px; top: 30px; width: 30px; height: 30px;  cursor: pointer; z-index: 100; display: inline-block;
+		span {width: 30px; height: 30px; display: inline-block; line-height: 40px; vertical-align: top; font-weight: 100; font-size: 60px; font-family: 'CircleLight'; color: #d3d3d3;}
+	}
+	p {font-size: 24px; line-height: 42px; margin-bottom: 0;}
+	.title {font-size: 48px; line-height: 72px;}
+}
+
+@media (max-width: 767px) {
+	.modal-message {
+		.modal-dialog {width: 100%;}
+		.modal-body {padding: 40px 20px 20px 20px;}
+		.title {font-size: 24px; line-height: 30px; font-family: 'CirceBold'; margin-bottom: 20px; padding-left: 50px; padding-right: 50px;}
+		p {font-size: 18px; line-height: 30px;}
+	}
+}

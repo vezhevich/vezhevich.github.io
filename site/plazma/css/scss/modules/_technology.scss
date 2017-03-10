@@ -1,0 +1,39 @@
+.technology {padding-top: 100px; padding-bottom: 100px;
+	strong {font-family: 'CirceBold';}
+	p {font-size: 24px; line-height: 42px;}
+	.title {font-size: 48px; line-height: 72px; font-family: CirceBold; text-align: center; margin-bottom: 40px;}
+	.point {text-align: center; margin-top: 20px; margin-top: -20px;
+		.wrapper {position: relative; text-align: center; display: inline-block; zoom: 1; *display: inline; margin-bottom: 0;}
+		.wrapper:before {content: ''; display: block; background: url(../img/sprite.png) no-repeat 0 -59px; width: 44px; height: 48px; margin-left: -80px;}
+	}
+}
+
+@media (max-width: 1319px) {
+	.technology {
+		p {font-size: 18px; line-height: 36px;}
+		.title {font-size: 36px; line-height: 72px;}
+		.point {
+			.wrapper {font-size: 24px; line-height: 42px;}
+			.wrapper:before {left: 70px;}
+		}
+	}
+}
+
+@media (max-width: 939px) {
+	.technology {padding-top: 70px; padding-bottom: 70px;
+		.title {line-height: 50px; font-size: 32px;}
+		.point {
+			.wrapper {font-size: 18px;  line-height: 36px;}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.technology {padding-top: 50px; padding-bottom: 50px;
+		.title {font-size: 26px; line-height: 30px; margin-bottom: 25px;}
+		.point {margin-top: -10px;
+			.wrapper {font-size: 24px; line-height: 30px;}
+			.wrapper:before {margin-left: 20px; width: 31px; height: 34px; background-position: 0 -279px;}
+		}
+	}
+}

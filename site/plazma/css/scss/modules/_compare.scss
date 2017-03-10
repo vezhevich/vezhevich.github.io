@@ -1,0 +1,34 @@
+.compare {padding-top: 100px; padding-bottom: 100px; background: #fafafa;
+	.title {font-size: 48px; line-height: 90px; font-family: 'CirceExtraBold'; text-align: center;}
+	ul {
+		li {font-size: 24px; line-height: 56px; color: #000;}
+	}
+}
+
+@media (max-width: 1319px) {
+	.compare {padding-top: 70px; padding-bottom: 70px;
+		strong {font-family: 'CirceBold';}
+		.title {font-size: 36px; font-family: 'CirceBold';}
+		ul {
+			li {font-size: 20px; line-height: 56px;}
+		}
+	}
+}
+
+@media (max-width: 939px) {
+	.compare {padding-top: 30px; padding-bottom: 30px;
+		ul {
+			li {font-size: 18px; line-height: 36px; min-height: 36px; margin-bottom: 20px;}
+			li:before {top: 0;}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.compare {
+		.title {font-size: 36px; line-height: 40px; font-family: 'CircleLight'; margin-bottom: 35px;}
+		ul {
+			li {font-size: 18px; line-height: 30px;}
+		}
+	}
+}

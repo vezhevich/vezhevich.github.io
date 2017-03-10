@@ -1,0 +1,15 @@
+.btn {
+	a {display: block; background: #ffc400; font-size: 14px; font-family: 'CirceExtraBold'; color: #fff; width: 160px; height: 48px; 
+	@include border-radius(50px); text-align: center; line-height: 50px; text-transform: uppercase;}
+	&:hover a {color: #fff;}
+}
+
+.btn-form {display: block; background: #ffc400; font-size: 20px; font-family: 'CirceExtraBold'; color: #fff; width: 250px; height: 64px; 
+	@include border-radius(50px); text-align: center; line-height: 66px; text-transform: uppercase; border: none; cursor: pointer;
+	&:hover {color: #fff;}
+}
+.btn-form:focus {outline: none;}
+
+.btn.inner {
+	a {background: none; width: auto; padding-left: 50px; padding-right: 50px; border: 1px solid rgba(255,255,255,0.2); display: inline-block; height: 46px; line-height: 48px;}
+}
