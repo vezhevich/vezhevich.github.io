@@ -26,7 +26,6 @@ function carousel(){
       margin:40,
       nav:true,
       navText: ' ',
-      autoHeight: true,
       items: 1,
       responsive:{
         0:{
