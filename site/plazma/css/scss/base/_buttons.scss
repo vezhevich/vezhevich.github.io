@@ -1,7 +1,8 @@
 .btn {
 	a {display: block; background: #ffc400; font-size: 14px; font-family: 'CirceExtraBold'; color: #fff; width: 160px; height: 48px; 
-	@include border-radius(50px); text-align: center; line-height: 50px; text-transform: uppercase;}
-	&:hover a {color: #fff; background: #EFAE00;}
+	@include border-radius(50px); text-align: center; line-height: 50px; text-transform: uppercase;
+		&:hover {color: #fff; background: #EFAE00;}
+	}
 }
 
 .btn-form {display: block; background: #ffc400; font-size: 20px; font-family: 'CirceExtraBold'; color: #fff; width: 250px; height: 64px; 

@@ -1284,7 +1284,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .btn a { display: block; background: #ffc400; font-size: 14px; font-family: 'CirceExtraBold'; color: #fff; width: 160px; height: 48px; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; border-radius: 50px; text-align: center; line-height: 50px; text-transform: uppercase; }
 
-.btn:hover a { color: #fff; background: #EFAE00; }
+.btn a:hover { color: #fff; background: #EFAE00; }
 
 .btn-form { display: block; background: #ffc400; font-size: 20px; font-family: 'CirceExtraBold'; color: #fff; width: 250px; height: 64px; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; border-radius: 50px; text-align: center; line-height: 66px; text-transform: uppercase; border: none; cursor: pointer; }
 
