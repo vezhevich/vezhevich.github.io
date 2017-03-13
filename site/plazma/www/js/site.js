@@ -34,7 +34,7 @@ function carousel(){
             
         },
         768:{    
-
+          autoHeight:false,
         },
         940:{
             
