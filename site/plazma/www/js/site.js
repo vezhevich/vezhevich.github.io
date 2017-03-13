@@ -27,6 +27,9 @@ function carousel(){
       nav:true,
       dots: false,
       autoHeight:true,
+      onInitialized: setOwlStageHeight,
+    onResized: setOwlStageHeight,
+    onTranslated: setOwlStageHeight,
       navText: ['', ''],
       items: 1,
       responsive:{
@@ -41,6 +44,16 @@ function carousel(){
         }
     }
   });
+}
+
+function setOwlStageHeight(event) {
+    var maxHeight = 0;
+    $('.owl-item.active').each(function () { // LOOP THROUGH ACTIVE ITEMS
+        var thisHeight = parseInt( $(this).height() );
+        maxHeight=(maxHeight>=thisHeight?maxHeight:thisHeight);
+    });
+    $('.owl-carousel').css('height', maxHeight );
+    $('.owl-stage-outer').css('height', maxHeight ); // CORRECT DRAG-AREA SO BUTTONS ARE CLICKABLE
 }
 
 function select_table(){
