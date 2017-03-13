@@ -1562,7 +1562,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .process .number { width: 64px; height: 64px; line-height: 64px; color: #fff; background: #ffc400; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; display: block; margin: 0 auto; font-size: 30px; margin-bottom: 30px; margin-top: 20px; }
 
-.process .owl-carousel { position: relative; }
+.process .owl-carousel { position: relative; min-height: 100% !important; }
 
 .process .owl-carousel .owl-nav { width: 49%; float: right; text-align: center; margin-top: -100px; }
 
@@ -1573,6 +1573,12 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 .process .owl-carousel .owl-nav .owl-prev { background-position: 0 -127px; width: 18px; height: 32px; -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); }
 
 .process .owl-carousel .owl-nav .disabled { opacity: 0.2; }
+
+.process .owl-carousel, .process .owl-stage-outer { transition: height 500ms ease-in-out 0s; }
+
+.process .carousel.owl-carousel.owl-loaded.owl-drag { min-height: 100% !important; height: 100% !important; }
+
+.process .owl-height { min-height: 100% !important; height: 100% !important; }
 
 @media (max-width: 1319px) { .process { padding-top: 85px; padding-bottom: 65px; }
   .process h2 { line-height: 48px; }
@@ -1586,7 +1592,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
   .process .text p { margin-bottom: 20px; padding-bottom: 0; }
   .process .number { width: 40px; height: 40px; line-height: 40px; }
   .process .owl-carousel { position: static; text-align: center; }
-  .process .owl-carousel .owl-nav { width: 100%; float: none; margin-top: 0; }
+  .process .owl-carousel .owl-nav { width: 100%; float: none; margin-top: 0; height: 32px; }
   .process .owl-carousel .owl-nav div { margin: 0; position: absolute; }
   .process .owl-carousel .owl-nav .owl-next { right: 50%; margin-right: -40px; }
   .process .owl-carousel .owl-nav .owl-prev { left: 50%; margin-left: -40px; }
