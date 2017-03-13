@@ -25,14 +25,16 @@ function carousel(){
       loop:false,
       margin:40,
       nav:true,
-      navText: ' ',
+      dots: false,
+      autoHeight:true,
+      navText: ['', ''],
       items: 1,
       responsive:{
         0:{
             
         },
         768:{    
-          dots:true
+
         },
         940:{
             
