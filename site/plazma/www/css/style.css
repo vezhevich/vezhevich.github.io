@@ -1655,13 +1655,15 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .modal-form .application-form h2 { font-size: 48px; line-height: 72px; }
 
+.modal-form input { line-height: 54px; }
+
 .modal-form .close { position: absolute; right: 30px; top: 30px; width: 30px; height: 30px; cursor: pointer; z-index: 100; display: inline-block; }
 
 .modal-form .close span { width: 30px; height: 30px; display: inline-block; line-height: 40px; vertical-align: top; font-weight: 100; font-size: 60px; font-family: 'CircleLight'; color: #d3d3d3; }
 
 @media (max-width: 939px) { .modal-form .modal-dialog { width: 100%; margin-top: 0; }
   .modal-form .application-form { padding: 0px; padding-top: 40px; padding-bottom: 30px; background: #161339; }
-  .modal-form .application-form input { height: 38px; margin-bottom: 20px; font-size: 16px; }
+  .modal-form .application-form input { height: 38px; margin-bottom: 20px; font-size: 16px; line-height: 38px; }
   .modal-form .application-form h2 { font-size: 24px; line-height: 30px; padding-left: 50px; padding-right: 50px; color: #fff; margin-bottom: 20px; }
   .modal-form .application-form textarea { height: 90px; padding: 10px; font-size: 16px; margin-bottom: 20px; }
   .modal-form .application-form input, .modal-form .application-form textarea { border: none; }
