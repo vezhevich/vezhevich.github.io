@@ -5,7 +5,7 @@
 		p {font-size: 22px; line-height: 42px; color: #fff; margin-bottom: 0; padding-bottom: 120px;}
 	}
 	.number {width: 64px; height: 64px; line-height: 64px; color: #fff; background: #ffc400; @include border-radius (50%); display: block; margin: 0 auto; font-size: 30px; margin-bottom: 30px; margin-top: 20px;}
-	.owl-carousel {position: relative;
+	.owl-carousel {position: relative; min-height: 100%!important;
 		.owl-nav {width: 49%; float: right; text-align: center; margin-top: -100px;
 			div {position: relative; display: inline-block; zoom: 1; *display: inline; margin: 0 30px; background: url(../img/sprite.png) no-repeat;}
 			.owl-next {background-position: 0 -127px; width: 18px; height: 32px;}
@@ -13,6 +13,7 @@
 			.disabled {opacity: 0.2;}
 		}
 	}
+	.owl-carousel, .owl-stage-outer { transition: height 500ms ease-in-out 0s; }
 }
 
 @media (max-width: 1319px) {
@@ -33,7 +34,7 @@
 		}
 		.number {width: 40px; height: 40px; line-height: 40px;}
 		.owl-carousel {position: static; text-align: center;
-			.owl-nav {width: 100%; float: none; margin-top: 0;
+			.owl-nav {width: 100%; float: none; margin-top: 0; height: 32px;
 				div {margin: 0; position: absolute;}
 				.owl-next {right: 50%; margin-right: -40px;}
 				.owl-prev {left: 50%; margin-left: -40px;}
