@@ -14,6 +14,8 @@
 		}
 	}
 	.owl-carousel, .owl-stage-outer { transition: height 500ms ease-in-out 0s; }
+	.carousel.owl-carousel.owl-loaded.owl-drag {min-height: 100%!important; height: 100%!important;}
+	.owl-height {min-height: 100%!important; height: 100%!important;}
 }
 
 @media (max-width: 1319px) {
