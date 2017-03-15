@@ -7,9 +7,9 @@
 	.number {width: 64px; height: 64px; line-height: 64px; color: #fff; background: #ffc400; @include border-radius (50%); display: block; margin: 0 auto; font-size: 30px; margin-bottom: 30px; margin-top: 20px;}
 	.owl-carousel {position: relative; min-height: 100%!important;
 		.owl-nav {width: 49%; float: right; text-align: center; margin-top: -100px;
-			div {position: relative; display: inline-block; zoom: 1; *display: inline; margin: 0 30px; background: url(../img/sprite.png) no-repeat;}
-			.owl-next {background-position: 0 -127px; width: 18px; height: 32px;}
-			.owl-prev {background-position: 0 -127px; width: 18px; height: 32px;  -moz-transform: rotate(-180deg);-o-transform: rotate(-180deg); -webkit-transform: rotate(-180deg);}
+			div {position: relative; display: inline-block; zoom: 1; *display: inline; margin: 0 30px; background: url(../img/icon-right-point.svg) no-repeat; background-size: 32px;}
+			.owl-next {background-position: -7px 0; width: 18px; height: 32px;}
+			.owl-prev {background-position: -7px 0; width: 18px; height: 32px;  -moz-transform: rotate(-180deg);-o-transform: rotate(-180deg); -webkit-transform: rotate(-180deg);}
 			.disabled {opacity: 0.2;}
 		}
 	}

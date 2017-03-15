@@ -1338,7 +1338,7 @@ ul { margin-bottom: 30px; }
 
 ul li { font: normal 14px/28px "CircleLight"; color: #000; margin-bottom: 10px; position: relative; padding-left: 56px; }
 
-ul li:before { content: ''; display: block; zoom: 1; *display: inline; width: 36px; height: 36px; background: url(../img/sprite.png) no-repeat 0 -179px; vertical-align: middle; position: absolute; left: 0; top: 10px; }
+ul li:before { content: ''; display: block; zoom: 1; *display: inline; width: 36px; height: 36px; background: url(../img/check-circle.png) no-repeat; vertical-align: middle; position: absolute; left: 0; top: 10px; }
 
 ol { counter-reset: myCounter; margin-left: -20px; margin-bottom: 20px; }
 
@@ -1378,7 +1378,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .main-header .phone a { color: #fff; font-size: 24px; line-height: 20px; }
 
-.main-header .phone a i { display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-right: 20px; background: url(../img/sprite.png) no-repeat; width: 40px; height: 39px; }
+.main-header .phone a svg { display: inline-block; zoom: 1; *display: inline; vertical-align: middle; margin-right: 15px; width: 40px; height: 39px; fill: #fff; }
 
 .main-header .btn { float: right; }
 
@@ -1394,7 +1394,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 @media (max-width: 767px) { .main-header { height: 80px; }
   .main-header .phone { float: left; height: 80px; margin-left: 90px; }
-  .main-header .phone a i { background-position: 0 -234px; width: 24px; height: 26px; }
+  .main-header .phone a svg { width: 24px; height: 24px; }
   .main-header .logo { margin-left: 0; left: 20px; top: 20px; position: absolute; }
   .main-header .logo img { width: 40px; position: relative; float: left; }
   .main-header .btn { height: 80px; }
@@ -1437,6 +1437,24 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .advantages .img .wrapper { display: table-cell; vertical-align: middle; }
 
+.advantages .img svg g { fill: #FFC400 !important; }
+
+.advantages .a1 svg { width: 100px; height: 92px; }
+
+.advantages .a2 svg { width: 93px; height: 94px; }
+
+.advantages .a3 svg { width: 76px; height: 100px; }
+
+.advantages .a4 svg { width: 85px; height: 97px; }
+
+.advantages .a5 svg { width: 68px; height: 89px; }
+
+.advantages .a6 svg { width: 86px; height: 89px; }
+
+.advantages .a7 svg { width: 68px; height: 89px; }
+
+.advantages .a8 svg { width: 99px; height: 63px; }
+
 .advantages.inner { background: url(../img/main-bg2.jpg) no-repeat top center; height: 800px; }
 
 .advantages.inner h2 { margin-bottom: 90px; }
@@ -1454,12 +1472,12 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 @media (max-width: 1319px) { .advantages { padding-top: 75px; padding-bottom: 75px; }
   .advantages h2 { margin-bottom: 20px; }
   .advantages p { font-size: 18px; line-height: 24px; }
-  .advantages .a1 img { width: 74px; }
-  .advantages .a2 img { width: 68px; }
-  .advantages .a3 img { width: 56px; }
-  .advantages .a4 img { width: 62px; }
-  .advantages .a5 img { width: 50px; }
-  .advantages .img { margin-bottom: 15px; }
+  .advantages .a1 svg { width: 74px; }
+  .advantages .a2 svg { width: 68px; }
+  .advantages .a3 svg { width: 56px; }
+  .advantages .a4 svg { width: 62px; }
+  .advantages .a5 svg { width: 50px; }
+  .advantages .img { margin-bottom: 10px; }
   .advantages.inner { height: auto; }
   .advantages.inner h2 { margin-bottom: 30px; }
   .advantages.inner .wrapper-col { padding-left: 7.446808%; padding-right: 7.446808%; }
@@ -1470,10 +1488,10 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
   .advantages .wrapper-item { font-size: 0; }
   .advantages .item { float: none; display: inline-block; zoom: 1; *display: inline; vertical-align: top; margin-bottom: 30px; }
   .advantages.inner .wrapper-col { padding-left: 0; padding-right: 0; }
-  .advantages.inner .wrapper-col .col .img { height: 70px; }
-  .advantages.inner .a6 img { width: 70px; }
-  .advantages.inner .a7 img { width: 50px; }
-  .advantages.inner .a8 img { width: 70px; } }
+  .advantages.inner .wrapper-col .col .img { height: 70px !important; }
+  .advantages.inner .a6 svg { width: 70px; height: 70px; }
+  .advantages.inner .a7 svg { width: 50px; height: 68px; }
+  .advantages.inner .a8 svg { width: 70px; height: 44px; } }
 
 @media (max-width: 767px) { .advantages { padding-top: 55px; padding-bottom: 35px; }
   .advantages .img { margin-bottom: 5px; }
@@ -1481,6 +1499,10 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
   .advantages .item p { font-size: 20px; line-height: 26px; }
   .advantages.inner { background-size: cover; padding-bottom: 55px; }
   .advantages.inner .wrapper-col .col { margin-bottom: 40px; }
+  .advantages.inner .wrapper-col .col .img { margin-bottom: 0px; }
+  .advantages.inner .a6 svg { width: 70px; height: 70px; }
+  .advantages.inner .a7 svg { width: 50px; height: 68px; }
+  .advantages.inner .a8 svg { width: 70px; height: 44px; }
   .advantages.inner .subtitle { margin-top: 10px; } }
 
 .compare { padding-top: 100px; padding-bottom: 100px; background: #fafafa; }
@@ -1527,6 +1549,14 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .cost-info .wrapper-col .col .img { margin-bottom: 20px; height: 64px; }
 
+.cost-info svg g { fill: #FFC400 !important; }
+
+.cost-info .c1 svg { width: 48px; height: 64px; }
+
+.cost-info .c2 svg { width: 58px; height: 58px; }
+
+.cost-info .c3 svg { width: 64px; height: 64px; }
+
 @media (max-width: 1319px) { .cost-info { padding-top: 75px; padding-bottom: 75px; }
   .cost-info h2 { margin-bottom: 30px; }
   .cost-info table td { font-size: 18px; }
@@ -1566,11 +1596,11 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .process .owl-carousel .owl-nav { width: 49%; float: right; text-align: center; margin-top: -100px; }
 
-.process .owl-carousel .owl-nav div { position: relative; display: inline-block; zoom: 1; *display: inline; margin: 0 30px; background: url(../img/sprite.png) no-repeat; }
+.process .owl-carousel .owl-nav div { position: relative; display: inline-block; zoom: 1; *display: inline; margin: 0 30px; background: url(../img/icon-right-point.svg) no-repeat; background-size: 32px; }
 
-.process .owl-carousel .owl-nav .owl-next { background-position: 0 -127px; width: 18px; height: 32px; }
+.process .owl-carousel .owl-nav .owl-next { background-position: -7px 0; width: 18px; height: 32px; }
 
-.process .owl-carousel .owl-nav .owl-prev { background-position: 0 -127px; width: 18px; height: 32px; -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); }
+.process .owl-carousel .owl-nav .owl-prev { background-position: -7px 0; width: 18px; height: 32px; -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg); -webkit-transform: rotate(-180deg); }
 
 .process .owl-carousel .owl-nav .disabled { opacity: 0.2; }
 
@@ -1617,7 +1647,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .technology .point .wrapper { position: relative; text-align: center; display: inline-block; zoom: 1; *display: inline; margin-bottom: 0; }
 
-.technology .point .wrapper:before { content: ''; display: block; background: url(../img/sprite.png) no-repeat 0 -59px; width: 44px; height: 48px; margin-left: -80px; }
+.technology .point .wrapper:before { content: ''; display: block; background: url(../img/icon-point.svg) no-repeat top right; background-size: 69px; width: 62px; height: 62px; margin-left: -80px; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -o-transform: rotate(-90deg); }
 
 @media (max-width: 1319px) { .technology p { font-size: 18px; line-height: 36px; }
   .technology .title { font-size: 36px; line-height: 72px; }
@@ -1632,7 +1662,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
   .technology .title { font-size: 26px; line-height: 30px; margin-bottom: 25px; }
   .technology .point { margin-top: -10px; }
   .technology .point .wrapper { font-size: 24px; line-height: 30px; }
-  .technology .point .wrapper:before { margin-left: 20px; width: 31px; height: 34px; background-position: 0 -279px; } }
+  .technology .point .wrapper:before { margin-left: 0px; width: 40px; height: 40px; background-size: 45px; } }
 
 .application-form { background: #fafafa; padding-top: 100px; padding-bottom: 100px; }
 

@@ -4,7 +4,7 @@
 	.title {font-size: 48px; line-height: 72px; font-family: CirceBold; text-align: center; margin-bottom: 40px;}
 	.point {text-align: center; margin-top: 20px; margin-top: -20px;
 		.wrapper {position: relative; text-align: center; display: inline-block; zoom: 1; *display: inline; margin-bottom: 0;}
-		.wrapper:before {content: ''; display: block; background: url(../img/sprite.png) no-repeat 0 -59px; width: 44px; height: 48px; margin-left: -80px;}
+		.wrapper:before {content: ''; display: block; background: url(../img/icon-point.svg) no-repeat top right; background-size: 69px; width: 62px; height: 62px; margin-left: -80px; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -o-transform: rotate(-90deg);}
 	}
 }
 
@@ -33,7 +33,7 @@
 		.title {font-size: 26px; line-height: 30px; margin-bottom: 25px;}
 		.point {margin-top: -10px;
 			.wrapper {font-size: 24px; line-height: 30px;}
-			.wrapper:before {margin-left: 20px; width: 31px; height: 34px; background-position: 0 -279px;}
+			.wrapper:before {margin-left: 0px; width: 40px; height: 40px; background-size: 45px;}
 		}
 	}
 }

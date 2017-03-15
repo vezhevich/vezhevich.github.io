@@ -3,7 +3,18 @@
 	p {margin-bottom: 0; color: #fff; font-size: 24px; line-height: 34px;}
 	.img {height: 100px; width: 100%; text-align: center; margin-bottom: 25px; display: table; vertical-align: middle;
 		.wrapper {display: table-cell; vertical-align: middle;}
+		svg {
+			g {fill: #FFC400!important;}
+		}
 	}
+	.a1 svg {width: 100px; height: 92px;}
+	.a2 svg {width: 93px; height: 94px;}
+	.a3 svg {width: 76px; height: 100px;}
+	.a4 svg {width: 85px; height: 97px;}
+	.a5 svg {width: 68px; height: 89px;}
+	.a6 svg {width: 86px; height: 89px;}
+	.a7 svg {width: 68px; height: 89px;}
+	.a8 svg {width: 99px; height: 63px;}
 }
 
 .advantages.inner {background: url(../img/main-bg2.jpg) no-repeat top center; height: 800px;
@@ -21,12 +32,12 @@
 	.advantages {padding-top: 75px; padding-bottom: 75px;
 		h2 {margin-bottom: 20px;}
 		p {font-size: 18px; line-height: 24px;}
-		.a1 img {width: 74px;}
-		.a2 img {width: 68px;}
-		.a3 img {width: 56px;}
-		.a4 img {width: 62px;}
-		.a5 img {width: 50px;}
-		.img {margin-bottom: 15px;}
+		.a1 svg {width: 74px;}
+		.a2 svg {width: 68px;}
+		.a3 svg {width: 56px;}
+		.a4 svg {width: 62px;}
+		.a5 svg {width: 50px;}
+		.img {margin-bottom: 10px;}
 	}
 
 	.advantages.inner {height: auto;
@@ -48,12 +59,12 @@
 	.advantages.inner {
 		.wrapper-col {padding-left: 0; padding-right: 0;
 			.col {
-				.img {height: 70px;}
+				.img {height: 70px!important;}
 			}
 		}
-		.a6 img {width: 70px;}
-		.a7 img {width: 50px;}
-		.a8 img {width: 70px;}
+		.a6 svg {width: 70px; height: 70px;}
+		.a7 svg {width: 50px; height: 68px;}
+		.a8 svg {width: 70px; height: 44px;}
 	}
 }
 
@@ -66,8 +77,13 @@
 	}
 	.advantages.inner {background-size: cover; padding-bottom: 55px;
 		.wrapper-col {
-			.col {margin-bottom: 40px;}
+			.col {margin-bottom: 40px;
+				.img {margin-bottom: 0px;}
+			}
 		}
+		.a6 svg {width: 70px; height: 70px;}
+		.a7 svg {width: 50px; height: 68px;}
+		.a8 svg {width: 70px; height: 44px;}
 		.subtitle {margin-top: 10px;}
 	}
 }
