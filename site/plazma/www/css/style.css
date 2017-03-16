@@ -1338,7 +1338,7 @@ ul { margin-bottom: 30px; }
 
 ul li { font: normal 14px/28px "CircleLight"; color: #000; margin-bottom: 10px; position: relative; padding-left: 56px; }
 
-ul li:before { content: ''; display: block; zoom: 1; *display: inline; width: 36px; height: 36px; background: url(../img/check-circle.png) no-repeat; vertical-align: middle; position: absolute; left: 0; top: 10px; }
+ul li:before { content: ''; display: block; zoom: 1; *display: inline; width: 36px; height: 36px; background: url(../img/check-circle.svg) no-repeat; vertical-align: middle; position: absolute; left: 0; top: 10px; background-size: 36px; }
 
 ol { counter-reset: myCounter; margin-left: -20px; margin-bottom: 20px; }
 
@@ -1383,6 +1383,8 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 .main-header .btn { float: right; }
 
 .main-header .logo { position: absolute; left: 50%; top: 45px; margin-left: -57px; }
+
+.main-header .logo img { width: 115px; }
 
 .main-header .table { display: table; height: 207px; }
 

@@ -5,7 +5,9 @@
 		}
 	}
 	.btn {float: right;}
-	.logo {position: absolute; left: 50%; top: 45px; margin-left: -57px;}
+	.logo {position: absolute; left: 50%; top: 45px; margin-left: -57px;
+		img {width: 115px;}
+	}
 	.table {display: table; height: 207px;
 		.table-cell {display: table-cell; vertical-align: middle;}
 	}

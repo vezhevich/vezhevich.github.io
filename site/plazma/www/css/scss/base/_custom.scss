@@ -23,7 +23,7 @@ a:hover {color: $linkcolor-hover; text-decoration: none;}
 
 ul {margin-bottom: 30px;}
 ul li {font: normal 14px/28px $brand-font; color: #000; margin-bottom: 10px; position: relative; padding-left: 56px;}
-ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 36px; height: 36px; background: url(../img/check-circle.png) no-repeat; vertical-align: middle; position: absolute; left: 0; top: 10px;}
+ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 36px; height: 36px; background: url(../img/check-circle.svg) no-repeat; vertical-align: middle; position: absolute; left: 0; top: 10px; background-size: 36px;}
 
 ol {counter-reset: myCounter; margin-left: -20px; margin-bottom: 20px;}
 ol li {list-style: none; position: relative; margin-bottom: 10px; padding-left: 20px; min-height: 40px; font: 400 16px/28px $brand-font; color: #555555;}
