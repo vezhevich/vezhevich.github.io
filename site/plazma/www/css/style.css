@@ -1269,7 +1269,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media (min-width: 1320px) { .col-lg-1-5 { width: 20%; float: left; } }
 
-.main-bg { background: url(../img/main-bg.jpg) no-repeat top center; width: 100%; height: 998px; background-size: cover; }
+.main-bg { background: url(../img/main-bg-inner.jpg) no-repeat top center; width: 100%; height: 998px; background-size: cover; }
 
 .separator { width: 120px; height: 1px; background: #e5e5e5; margin: 80px auto; }
 
@@ -1457,7 +1457,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
 
 .advantages .a8 svg { width: 99px; height: 63px; }
 
-.advantages.inner { background: url(../img/main-bg2.jpg) no-repeat; background-size: cover; height: 800px; }
+.advantages.inner { background: url(../img/main-bg2-inner.jpg) no-repeat; background-size: cover; height: 800px; }
 
 .advantages.inner h2 { margin-bottom: 90px; }
 
