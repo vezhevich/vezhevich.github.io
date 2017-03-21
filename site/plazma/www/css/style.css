@@ -1278,7 +1278,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media (max-width: 939px) { .main-bg { height: auto; padding-bottom: 70px; } }
 
-@media (max-width: 767px) { .main-bg { padding-bottom: 40px; }
+@media (max-width: 767px) { .main-bg { padding-bottom: 40px; background-position: center top; }
   .separator { margin-top: 20px; margin-bottom: 30px; }
   .container { padding: 0 20px; } }
 
@@ -1499,7 +1499,7 @@ p { font: normal 16px/28px "CircleLight"; margin: 0 0 20px 0; color: #000; }
   .advantages .img { margin-bottom: 5px; }
   .advantages .item { margin-bottom: 25px; }
   .advantages .item p { font-size: 20px; line-height: 26px; }
-  .advantages.inner { background-size: cover; padding-bottom: 55px; }
+  .advantages.inner { background-size: cover; padding-bottom: 55px; background-position: center top; }
   .advantages.inner .wrapper-col .col { margin-bottom: 40px; }
   .advantages.inner .wrapper-col .col .img { margin-bottom: 0px; }
   .advantages.inner .a6 svg { width: 70px; height: 70px; }
