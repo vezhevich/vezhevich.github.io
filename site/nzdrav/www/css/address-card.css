@@ -1,0 +1,219 @@
+.address-cards-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 30px;
+}
+
+
+.address-card-list-item {
+    margin: 0 10px 30px 10px;
+    width: calc((100%/4) - 20px);
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px 20px 25px 20px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    color: #3A4454;
+    font-size: 0.92rem;
+    line-height: 1.3;
+    height: 252px;
+}
+
+
+.address-card-list-item-inner {
+    box-sizing: border-box;
+    transition: box-shadow 0.15s ease-out;
+    box-shadow: none;
+}
+
+.address-card-list-item__title {
+    position: relative;
+    height: 84px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.address-card-list-item__title-fog {
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    height: 40px;
+    transition: opacity 0.15s ease-out;
+}
+
+.address-card-list-item__title a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    outline: none !important;
+}
+
+.address-card-list-item__address {
+    margin-bottom: 25px;
+    height: 19.1333px;
+    overflow: hidden;
+}
+
+.address-card-list-item__phone {
+    outline: none !important;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size:  0.9375rem;
+}
+
+.address-card-list-item__station {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5px;
+    height: 19px;
+    overflow: hidden;
+}
+
+.address-card-list-item__station-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.address-card-list-item__station-icon img {
+    max-width: 100%;
+}
+
+.address-card-list-item__station-text {
+    width: calc(100% - 25px);
+}
+
+.address-card-list-item:hover .address-card-list-item__station {
+    height: auto;
+}
+.address-card-list-item:hover .address-card-list-item__address {
+    min-height: 19px;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1259px) {
+    .address-card-list-item {
+        width: calc((100%/2) - 20px);
+    }
+}
+
+@media screen and (max-width: 747px) {
+    .address-cards-block {
+        padding: 0 20px;
+    }
+    .address-cards-list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .address-card-list-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .address-cards-block-item {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .address-cards-block-item h3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .address-card-list-item {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .address-card-list-item:first-child {
+        border-top: 1px solid #e0e0e0;
+    }
+    .address-card-list-item__address {
+        height: 100%;
+        margin-top: 10px;
+    }
+    .address-card-list-item__station {
+        height: 100%;
+    }
+    .address-card-list-item__title {
+        height: 100%;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .address-card-list-item__title::before {
+        content: '';
+        width: 17px;
+        height: 9px;
+        background: url("../images/icons/arrow-down-dark.svg") no-repeat;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        -webkit-transition: .2s ease-in ;
+        -moz-transition: .2s ease-in ;
+        -ms-transition: .2s ease-in ;
+        -o-transition: .2s ease-in ;
+        transition: .2s ease-in ;
+    }
+    .address-card-list-item__title.active::before {
+        -webkit-transform: rotate(-180deg); /* Chrome y Safari */
+        -moz-transform: rotate(-180deg); /* Firefox */
+        -o-transform: rotate(-180deg); /* Opera */    
+    }
+    .address-card-list-item__title a {
+        padding-right: 30px;
+    }
+    .address-card-list-item__title h4 {
+        font-size: 0.9375rem;
+        line-height: 18px;
+        font-weight: 600;
+    }
+    .address-card-list-item__title-fog {
+        display: none;
+    }
+    .address-card-list-item__address, .address-card-list-item__phone, .address-card-list-item__station, .address-card-list-item__distance {
+        display: none;
+    }
+    .address-card__hidden-block.active {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 747px) {
+    .address-card-list-item:hover {
+        border: none;
+    }
+
+    .address-card-list-item:hover .address-card-list-item-inner {
+        position: absolute;
+        padding: 20px 20px 25px 20px;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: #fff;
+        z-index: 2;
+        box-shadow: 0 2px 10px rgba(0,121,212, 0.16);
+        border-radius: 5px;
+        border: 1px solid #E0E0E0;
+    }
+
+    .address-card-list-item:hover .address-card-list-item__title-fog {
+        opacity: 0;
+    }
+
+    .address-card-list-item:hover .address-card-list-item__title {
+        height: auto;
+    }
+}

@@ -1,0 +1,167 @@
+/* фильтры программ*/
+.programs-filter {
+	margin-bottom: 20px;
+}
+.programs-filter__item--left {
+	float: left;
+}
+.programs-filter__item--right {
+	float: right;
+	margin-left: 30px;
+}
+.programs-filter__item {
+	border: 1px solid #D4D4D4;
+	border-radius: 50px;
+	padding: 7px 20px 6px 20px;
+	font-size: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.programs-filter__item-icon {
+	height: 5px;
+}
+
+@media screen and (max-width: 747px) {
+	.programs-filter__item {
+		float: none;
+		display: block;
+		margin-left: 0;
+		margin-right: 0; 
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
+
+/*карточки программ*/
+
+.programs-wrap {
+	box-sizing: border-box;
+}
+
+.programs-list {
+	font-size: 0;
+	margin-left: -30px;
+}
+
+.programs-list-col {
+	width: 33.3%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.programs-list__item {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-size: 0;
+	border: 1px solid #EBEBEB;
+	font-size: 1rem;
+	position: relative;
+	background: #fff;
+	height: 465px;
+}
+.programs-list__item:hover {
+	box-shadow: 0 25px 20px -19px #a7a7a7;
+}
+.programs-list__img {
+	border-bottom: 1px solid #EBEBEB;
+}
+.programs-list__img img {
+	max-width: 100%;
+	display: block;
+}
+.programs-list__text {
+	padding: 20px;
+}
+.programs-list__date {
+	font-size: 0.75rem;
+	color: #7E838B;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+.programs-list__title {
+	color: #3A4454;
+	font-size: 1.25rem;
+	line-height: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	max-height: 150px;
+	overflow: hidden;
+}
+.programs-list__teaser {
+	color: #7E838B;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 	0.625rem;
+	height: 15px;
+	overflow: hidden;
+}
+.programs-list__label {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 10;
+	font-size: 0.75rem;
+	font-weight: bold;
+	color: #3A4454;
+	text-transform: uppercase;
+	line-height: 20px;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.programs-list__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+@media screen and (max-width: 1259px) {
+	.programs-list {
+		margin-left: -15px;
+	}
+	.programs-list-col {
+		width: 49.9%;
+	}
+	.programs-list__item {
+		margin-left: 15px;
+	}
+	.programs-list__img {
+		height: 210px;
+		overflow: hidden;
+	}
+	.programs-list__img img  {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 747px) {
+	.programs-list {
+		margin-left: 0;
+	}
+	.programs-list-col {
+		width: 100%!important;
+		margin-left: 0;
+		float: none;
+	}
+	.programs-list__item {
+		margin-left: 0;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.programs-list__item:hover {
+		box-shadow: none;
+	}
+	.programs-list__img {
+		height: 130px;
+	}
+	.programs-wrap {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

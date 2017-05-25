@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Медицинская помощь детям в Москве</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://yastatic.net/share2/share.js" async="async"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="main-wrap">
+            <div class="main-header">
+                <div class="header-wrapper-middle header-burger-wrapper">
+                    <a href="#" class="header-burger js-header-burger">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header-ctn">
+                    <div class="header-wrapper-middle">
+                        <a href="http://mosgorzdrav.ru/ru-RU/index.html" class="header-logo">
+                            <img src="../images/icons/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-wrapper-middle menu-list-ctn js-menu-list">
+                        <nav class="header-nav">
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Навигатор</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="#" class="sub-cat-link">
+                                                Практические инструкции </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-dispanser.html">
+                                                        Как пройти диспансеризацию</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-kardio.html">
+                                                        Если нужна установка кардиостимулятора</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-kohlear.html">
+                                                        Если нужна установка кохлеарного импланта</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-scrining2.html">
+                                                        Как пройти женский онкологический скрининг</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-taberkules.html">
+                                                         Как оформлять справки об отсутствии детского туберкулеза</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="#" class="sub-cat-link">
+                                                Колонки врачей </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-2.html">
+                                                        Реанимация: как все устроено</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-3.html">
+                                                        Страхи и правда об инфекционных больницах</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-4.html">
+                                                        Медицинская помощь детям в Москве
+                                                    </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-5.html">
+                                                        О работе МНПЦ дерматовенерологии и косметологии</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-6.html">
+                                                        Как организована комплексная реабилитация детей в Научно-практическом
+                                                        центре детской психоневрологии</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="#" class="sub-cat-link">
+                                                ТОП10. Лучшее в Москве </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-ambulance.html">
+                                                        ТОП10 медицинских организаций по активности проведения дней открытых
+                                                        дверей </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-clinic-children.html">
+                                                        Топ-10 детских поликлиник по обеспеченности маршрутами наземного
+                                                        транспорта </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-gratitude.html">
+                                                         Топ-10 крупных медицинских организаций по количеству полученных
+                                                        благодарностей</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-site.html">
+                                                         Топ-10 поликлиник по удобству сайтов для пациентов</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-social.html">
+                                                         Топ-10 медицинских организаций по популярности в социальных сетях</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Гражданам</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/emias.html">
+                                                Запись к врачу </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/medical.html">
+                                                Медицинские организации </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/health.html" class="sub-cat-link">
+                                                Медицинская помощь </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/card/87.html">
+                                                        Неотложная помощь </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/list/18.html">
+                                                        Высокотехнологичная помощь </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/maternity/eko.html">
+                                                        ЭКО </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/health/pharmacies.html">
+                                                        Лекарства и аптеки </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/health/drugs.html">
+                                                        Важнейшие лекарственные средства </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/card/94.html">
+                                                        Мобильные медицинские комплексы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/health/spid.html">
+                                                        Проблемы ВИЧ/СПИД </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/card/95.html">
+                                                        Паллиативная помощь </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Социальным группам </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/maternity.html">
+                                                        Родителям и детям </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/pensioners.html">
+                                                        Пенсионерам </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/disabled.html">
+                                                        Инвалидам </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/drivers.html">
+                                                        Водителям </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/donation.html">
+                                                        Донорам </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/foreigners.html">
+                                                        Иногородним </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/foreigners2.html">
+                                                        Иностранцам </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/independent_evaluation.html">
+                                                Оценка качества услуг </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/background.html">
+                                                Справочные телефоны </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/appeal.html">
+                                                Вопросы и обращения </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/findme.html">
+                                                Поиск пропавших людей </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/thanks/page/index.html.html">
+                                                Акция "Спасибо, доктор" </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/lifestyle.html">
+                                                Здоровый образ жизни </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Специалистам</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Работа </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/work/vacancy.html">
+                                                        Вакансии </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/work/faq.html">
+                                                        Вопросы оплаты труда </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/work/best-employer.html">
+                                                        Конкурс «Лучший работодатель» </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Обучение </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/teaching/education.html">
+                                                        Образование </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/teaching/qualification.html">
+                                                        Повышение квалификации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation.html">
+                                                        Аттестация </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/teaching/conferences.html">
+                                                        Клинико-анатомические конференции </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity.html"
+                                               class="sub-cat-link">
+                                                Научная деятельность </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity/clinical.html">
+                                                        Клинические рекомендации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity/methodical.html">
+                                                        Методические рекомендации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity/academic-council.html">
+                                                        Ученый совет </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/roosov.html">
+                                                Столичное объединение врачей </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/event.html">
+                                                Календарь событий </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/internet.html">
+                                                Интернет-ресурсы </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Департамент</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                О департаменте </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/socialsphere.html">
+                                                        Комплекс социальной сферы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/history.html">
+                                                        История </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/departament-guidance.html">
+                                                        Руководство </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/units.html">
+                                                        Структурные подразделения </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/bureau.html">
+                                                        Оргметодотделы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/specialists.html">
+                                                        Внештатные специалисты </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/collegia.html">
+                                                        Коллегия </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/soviet.html">
+                                                        Совет главных врачей </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/sovetdzm.html">
+                                                        Общественный совет </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/youth-council.html">
+                                                        Молодежный совет </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/expert-sovet.html">
+                                                        Экспертный совет </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Организации и учреждения </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/healthcare.html">
+                                                        Медицинские организации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/open-days.html">
+                                                        Дни открытых дверей </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/medical/default/list/14.html">
+                                                        Образовательные учреждения </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/medical/default/list/13.html">
+                                                        Специализированные службы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/directorate.html">
+                                                        Дирекции </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/medical/default/list/15.html">
+                                                        Прочие организации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/interaction.html">
+                                                        Общественные организации </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Государственные услуги </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/gosuslugi/licensing.html">
+                                                        Лицензирование в сфере здравоохранения </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/control-activities.html">
+                                                Надзорные мероприятия </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/attestation.html"
+                                               class="sub-cat-link">
+                                                Аттестация специалистов </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/high.html">
+                                                        Специалистов с высшим образованием </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/middle.html">
+                                                        Специалистов со средним образованием </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/region.html">
+                                                        Экспертов по региональному контролю </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/foreign.html">
+                                                        Лиц, получивших подготовку в иностранных государствах </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/purchase.html">
+                                                Контроль в сфере закупок </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/anticorruption.html">
+                                                Противодействие коррупции </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/contacts.html">
+                                                Контакты </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/blagodarnosti.html">
+                                                Благодарности </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Пресс-центр</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/news.html">
+                                                Новости </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/material.html">
+                                                Материалы </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/journal.html">
+                                                Периодические издания </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/press-contacts.html">
+                                                Контакты для СМИ </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="http://mosgorzdrav.ru/ru-RU/document.html">Документы</a>
+
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="http://mosgorzdrav.ru/ru-RU/feed.html">Развитие</a>
+                                <div class="sub-nav-box sub-nav-box--to-right">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/targets.html">
+                                                Программы </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/evolution.html">
+                                                Статьи </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/infographics.html">
+                                                Инфографика </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/moskovskoe-zdravoohranenie.html">
+                                                Цели </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/suggest.html">
+                                                Краудсорсинг </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header-wrapper-middle">
+                        <div class="header-group-icons">
+                            <div class="header-nav__item">
+                                <a class="header-group-icons__item header-nav-link header-nav__item--login"
+                                   href="javascript:void(0)"></a>
+                                <div class="sub-nav-box sub-nav-box--to-right login__menu">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/cabinet/login/oauth.html?authclient=mos"
+                                               class="cabinetLogin" data-popup-height="725" data-popup-width="910">Вход</a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/cabinet/login/oauth.html?authclient=mos"
+                                               class="cabinetLogin" data-popup-height="725"
+                                               data-popup-width="910">Регистрация</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-group-icons__item header-nav-link header-nav__item--search"
+                                   href="http://mosgorzdrav.ru/ru-RU/search.html?phrase"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-menu js-left-menu">
+        <div class="left-nav-box">
+            <div class="left-nav-box-inner">
+                <div class="main">
+                    <div class="left-nav-btn">
+                        <a href="#" class="left-nav-close js-left-nav-close"><span>Меню</span></a>
+                    </div>
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="http://mosgorzdrav.ru/ru-RU/index.html"></a>
+                        </div>
+                    </div>
+                    <div class="for-info">
+                        <p class="phone">+7 495 777-77-77</p>
+
+                        <p><a href="http://mosgorzdrav.ru/ru-RU/citizens/background.html">Справочные телефоны</a></p>
+                    </div>
+                    <div class="links">
+                        <div class="tech-links">
+                            <a class="old-ver" href="http://mosgorzdrav.ru/ru-RU/about.html">О сайте</a>
+                            <a class="err-mess" href="http://mosgorzdrav.ru/ru-RU/index.html#p-feedback">Нашли
+                                ошибку?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ext">
+                    <p class="adr">Москва, Оружейный переулок, 43</p>
+
+                    <p class="email">zdrav@mos.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<div class="promo bg-visual">
+    <div class="main-wrap">
+        <div class="main-wrap-promo">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs__item hidden-xs" href="#">Навигатор</a>
+                <span class="breadcrumbs__triangle"><img src="../images/icons/triangle.svg" alt=""></span>
+                <a class="breadcrumbs__item hidden-lg hidden-md" href="#">Колонки врачей</a>
+                <a class="breadcrumbs__item hidden-xs" href="#">Медицинская помощь детям в Москве</a>
+            </div>
+            <div class="promo__date hidden-xs">31 марта 2017 <span class="promo__time">12:30</span></div>
+            <h1 class="promo__title">Медицинская помощь детям в Москве</h1>
+        </div>
+        <div class="main-wrap-promo-inner main-wrap-promo-inner--white">
+            <div class="promo-group-button">
+                <a class="promo-group-button__item button-share" href="#">
+                    <span>поделиться</span> 
+                    <span class="icon-popup-share"></span>
+                    <img src="../images/icons/popup-close.svg" alt="">
+                    <div class="group-button-share ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram" data-counter data-limit="0"></div>
+                </a>
+                <a class="promo-group-button__item button-favorite" href="#" rel="sidebar"><span>в избранное</span> <span class="icon-fav"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="b-content">
+    <div class="main-wrap">
+        <div class="main-wrap-content main-wrap-content-bg">
+            <div class="l-two-cols clearfix">
+                <div class="l-two-cols__left">
+                    <div class="media hidden-lg">
+                        <div class="media-wrapper">
+                            <div class="media__img">
+                                <img src="../images/doctor3.jpg" alt="">
+                            </div>
+                            <div class="media__title">Тимур Дмитриевич Долидзе</div>
+                        </div>
+                        <div class="media__text">Заместитель главного врача по травматологии и ортопедии Детской городской поликлиники №110</div>
+                    </div>
+                    <p class="text-default">В своей работе я часто сталкиваюсь с разными родительскими страхами, сомнениями и вопросами, на которые сегодня хочу ответить.</p>
+                    <p class="text-default">Начнем с того, что многие родители не знают, к каким врачам можно отвести ребенка самостоятельно, а когда требуется направление педиатра. Принцип здесь простой: через педиатра записываются к узким специалистам — к неврологу, ортопеду, детскому урологу, кардиологу, нефрологу, гастроэнтерологу. А такие врачи, как офтальмолог, оториноларинголог, хирург, доступны для самостоятельной записи.</p>
+                    <p class="text-head"> Сроки, в которые ребенок может попасть к врачу, определяются законом и для всех поликлиник едины: педиатр принимает в день обращения, хирург — в течение трех дней, специалист — в течение семи дней.</p>
+                    <p class="text-default">Плановые исследования, например, компьютерная томография, проводятся в течение двух-четырех недель после первого обращения. Но если исследование необходимо ребенку по экстренным показаниям, его в любом случае проведут в тот же день, а ребенка кладут в стационар. К примеру, если хирург на приеме заподозрил у ребенка аппендицит, а уже вечер, и лаборатория в поликлинике не работает, то врач вызывает скорую помощь, и ребенка госпитализируют. В больнице на базе приемного отделения ему проводят лабораторную диагностику, диагноз подтверждают или снимают. Если остаются сомнения, то ребенка оставляют в стационаре под наблюдением.</p>
+                     <div class="content-image">
+                        <img src="../images/image6.jpg" alt="">
+                    </div>
+                    <p class="text-default">Если же ребенку требуется плановое редкое и достаточно сложное обследование, которое не проводится в вашей поликлинике, то врач дает направление в ближайшую поликлинику со специалистом или аппаратом в наличии (например, томографом). Родителям при этом никуда ездить не нужно: в вашей поликлинике оформляют направление на исследование, отправляют его по электронной почте в нужную поликлинику, затем из поликлиники звонят родителям и согласовывают дату исследования.</p>
+                    <p class="text-default">К таким сложным исследованиям относятся, например, компьютерная томография, магнитно-резонансная томография, электромиография. Электромиография – это исследование проводимости и ответа на проводимость нервных волокон. Оно требуется достаточно редко: в основном на него направляют детей с сахарным диабетом, чтобы определить, нет ли микроциркуляторных нарушений чувствительности, и в некоторых других случаях. Такое исследование проводится на базе нашей поликлиники. </p>
+                    <p class="text-default">Другой вопрос, который часто волнует родителей, — когда нужно показывать ребенка врачу. Первое и самое главное — когда ребенок заболел. Не нужно стесняться! При любом недомогании, если ребенок пожаловался на что-то, на что никогда не жаловался, если что-то резко изменилось в его поведении, если поднялась температура — надо идти к врачу или вызвать неотложку, либо врача на дом. Врач придет в течение дня, неотложка — в течение двух часов, экстренная помощь — в течение 20 минут. Это время тоже регламентировано.</p>
+                     <div class="content-image">
+                        <img src="../images/image7.jpg" alt="">
+                    </div>
+                    <p class="text-default">Существуют и плановые профилактические осмотры, они актуальны для детей до трех лет и молодых родителей. Педиатр ответит на самые важные вопросы, например, как правильно кормить новорожденного, как ухаживать за молочными железами, чтобы молоко не застаивалось, как вводить прикорм, чтобы не было аллергии и нарушений пищеварения, и направит на осмотры к специалистам. Ребенка обязательно показывают педиатру на дому на 14-й и 21-й дни жизни, далее в течение первого года ежемесячно в поликлинике. На втором году жизни ребенка водят к педиатру раз в три месяца, затем ребенок приходит на осмотр в три года — перед оформлением в детский сад, в пять или шесть лет и в шесть или семь лет – за год до поступления в школу и непосредственно перед школой. Если ребенок здоров, то водить его в поликлинику чаще не нужно.</p>
+                    <p class="text-default">До 15 лет ребенок наблюдается у детских врачей и на прием должен приходить вместе с родителями, но по закону уже с 12 лет учитывается его мнение. После 15 лет он может сам подписывать добровольное информированное согласие на осмотр и имеет полное право на врачебную тайну. Например, если девушка старше 15 лет обратится с какими-то проблемами или вопросами к гинекологу, он не станет сообщать об этом родителям. Врач-гинеколог докладывает главному врачу, и мы берем этот случай на заметку, но ребенок и его право на анонимность защищены законом.</p>
+                    <p class="text-head">Существует распространенный миф, что иногороднего ребенка в Москве не примут, если, к примеру, он приехал в гости или на экскурсию и вдруг заболел. Это совершенно не так. Если ребенок гражданин России, врач его все равно примет и окажет помощь.</p>
+                    <p class="text-default">С иностранными гражданами немного сложнее. Есть соответствующие постановления правительства РФ о правилах оказания экстренной медицинской помощи иностранным гражданам. В них четко указано, что при экстренных состояниях помощь оказывается бесплатно независимо от гражданства. Если состояние неотложное, то платно. Но ни один врач не возьмет на себя ответственность без осмотра определить, неотложное это состояние или экстренное. Чтобы это понять, пациента нужно сначала осмотреть. А чтобы осмотреть, нужно его записать и принять.</p>
+                     <div class="content-image">
+                        <img src="../images/image8.jpg" alt="">
+                    </div>
+                    <p class="text-default">В принципе если человек не умирает, значит, помощь не экстренная. Но в детской травме нельзя сказать, что с пациентом произойдет через какое-то время. Мы его не примем, а он выйдет и упадет без сознания — вдруг его по голове ударили. Регистратор записывает всех, пациент все равно попадает к врачу на полноценный прием с осмотром и постановкой диагноза. Но в дальнейшем, если врач уверен, что нет никаких серьезных повреждений или, к примеру, перелом без смещения, состояние пациента автоматически переходит в амбулаторное, а на повторный прием иностранный гражданин уже бесплатно прийти не сможет. У нас официально разрешены платные услуги, иностранцы оплачивают свое дальнейшее лечение. В любом случае без первой помощи ребенок не останется.</p>
+<!--                      <div class="tags">
+                         <div class="tags__title">Теги:</div>
+                        <a class="tags__item" href="#">дети,</a>
+                        <a class="tags__item" href="#">педиатрия,</a>
+                        <a class="tags__item" href="#">травматология,</a>
+                        <a class="tags__item" href="#">первая помощь</a>
+                     </div>
+                     <div class="group-buttons">
+                         <a class="group-buttons__link" href="#">Поделиться</a>
+                         <a href="#">Оценить</a>
+                         <a class="group-buttons__link button-favorite" href="#" rel="sidebar">В закладки</a>
+                     </div> -->
+                </div>
+                <div class="l-two-cols__right">
+                    <div class="media hidden-md hidden-xs">
+                        <div class="media-wrapper clearfix">
+                            <div class="media__img">
+                                <img src="../images/doctor3.jpg" alt="">
+                            </div>
+                            <div class="media__title">Тимур Дмитриевич Долидзе</div>
+                        </div>
+                        <div class="media__text">Заместитель главного врача по травматологии и ортопедии Детской городской поликлиники №110</div>
+                    </div>
+                    <div class="vertical-slide">
+                        <div class="vertical-slide__title">Инструкции</div>
+                        <div class="vertical-slide-wrapper">
+                            <div class="slide-slick">
+                                <div class="vertical-slide__item">
+                                    <a href="../instructions/instruction-scrining2.html">Как пройти женский онкологический скрининг</a>
+                                </div>                        
+                                <div class="vertical-slide__item">
+                                    <a href="../instructions/instruction-kohlear.html">Если нужна установка кохлеарного импланта</a>
+                                </div>                        
+                                <div class="vertical-slide__item">
+                                    <a href="../instructions/instruction-kardio.html">Если нужна установка кардиостимулятора</a>
+                                </div>                            
+                                <div class="vertical-slide__item">
+                                    <a href="../instructions/instruction-taberkules.html">Как оформлять справки об отсутствии детского туберкулеза</a>
+                                </div>                        
+                                <div class="vertical-slide__item">
+                                    <a href="../instructions/instruction-dispanser.html">Как пройти диспансеризацию</a>
+                                </div>                        
+                            </div>
+                            <div class="slide-slick-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer footer-inner main-footer">
+    <div class="main-wrap main-wrap--wide">
+        <div class="main-wrap-content-bg main-wrap-content footer-inner-content">
+            <div class="t t-foot t-simple t-lg t-fixed footer-inner-content">
+                <div class="td td--low td-left hidden-xs">
+                    <a href="https://dzdrav.mos.ru/" target="_blank">
+                        <div class="partner">
+                            <div class="pic">
+                                <img src="../images/footer-pic-1.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="td td--low hidden-xs">
+                    <a href="https://www.mos.ru/" target="_blank">
+                        <div class="partner">
+                            <div class="pic">
+                                <img src="../images/footer-pic-2.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="td td--low hidden-xs">
+                    <a href="http://emias.mos.ru/" target="_blank">
+                        <div class="partner">
+                            <div class="pic">
+                                <img src="../images/footer-pic-3.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="td">
+                    <a class="err-mess" href="http://mosgorzdrav.ru/ru-RU/index.html#p-feedback">Нашли ошибку?</a>
+                </div>
+                <div class="td">
+                    <ul class="soc__list">
+                        <li class="soc__item">
+                            <a target="_blank" href="https://www.facebook.com/dzdmos" class="soc soc_fb"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="http://vk.com/dzdmos" class="soc soc_vk"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="https://ok.ru/dzdmos" class="soc soc_od"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="https://twitter.com/dzdmos" class="soc soc_tw"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="https://instagram.com/dzdmos" class="soc soc_in"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="td td-right hidden-xs">
+                    <p class="copyright">
+                        © Департамент здравоохранения<br>города Москвы, 2004-2017 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/slick.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

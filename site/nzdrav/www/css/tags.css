@@ -1,0 +1,47 @@
+.tags {
+	border-bottom: 1px solid #DADADA;
+	border-top: 1px solid #DADADA;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+.tags__title {
+	color: #7E838B;
+	font-size: 	0.9375rem;
+	font-style: italic;
+	font-family: 'lato';
+	margin-bottom: 25px;
+	font-weight: 300;
+}
+.tags__item {
+	font-size: 1.25rem;
+	color: #3A4454;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border-bottom: 1px solid #3A4454;
+	text-decoration: none;
+	font-weight: 600;
+}
+.tags__item:hover {
+	border-color: transparent;
+}
+.tags__item:last-child {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 747px) {
+	.tags {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 20px;
+	}
+	.tags__title {
+		margin-bottom: 15px;
+	}
+}

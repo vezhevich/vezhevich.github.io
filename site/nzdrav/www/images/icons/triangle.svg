@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="7px" viewBox="0 0 6 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kolonka" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MED_Kolonka_1280" transform="translate(-217.000000, -121.000000)" fill="#86BCB9">
+            <g id="zagolovok" transform="translate(0.000000, 89.000000)">
+                <g id="Group-15" transform="translate(128.000000, 25.000000)">
+                    <path d="M94.6102026,10.0040412 L89.9521253,7.06917876 C89.8144189,6.98719414 89.6434242,7.00085322 89.514281,7.00085322 C88.9977086,7.00085322 89.0000002,7.39968021 89.0000002,7.5007212 L89.0000002,13.4992576 C89.0000002,13.5846796 88.9977387,13.9991557 89.514281,13.9991557 C89.6434242,13.9991557 89.8144491,14.0127545 89.9521253,13.9308 L94.6101725,10.9959677 C94.992506,10.7684672 94.9264419,10.4999894 94.9264419,10.4999894 C94.9264419,10.4999894 94.9925362,10.2315116 94.6102026,10.0040412 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

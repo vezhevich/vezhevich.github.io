@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Если нужна установка кардиостимулятора</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://yastatic.net/share2/share.js" async="async"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-89511082-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<?php
+    $email = "alexwww2004@gmail.com"; //Здесь прописать свой e-mail asty.pro@yandex.ru,6423980@gmail.com,
+    $subject = 'Заявка на сайте'; //тема письма
+    $email_from = 'flamedeluxe@yandex.ru'; // от кого письмо
+
+    if($_POST) {
+    $first-name = htmlspecialchars(trim($_POST['first-name']));
+    $last-name = htmlspecialchars(trim($_POST['last-name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $problem = htmlspecialchars(trim($_POST['problem']));
+
+    $site = $_SERVER['HTTP_HOST'];
+    if($_POST['email']) {
+    $mail = htmlspecialchars($_POST['email']);
+    }else {
+    $mail = htmlspecialchars($_POST['mail']);
+    }
+
+    $date = date("H:i:s m.d.y");
+    $message = "
+    Имя: {$first-name}<br/>
+    Фамилия: {$last-name}<br/>
+    Mail: {$email}<br/>
+    Проблема: {$problem}<br/>;
+    $subject = "{$item}";
+
+    $headers = "From: admin \r\n";
+    $headers .= "Mime-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+
+    if (mail($email, $subject, $message, $headers)) {
+    $response['success'] = $success;
+    } else {
+    $response['error']['mail'];
+    }
+
+    };
+?>
+<body class="test-mode-wrapper">
+<div class="test-mode">“Тестовая версия. Ваши замечания, комментарии и предложения просьба направлять через специальную форму”</div>
+<header class="header">
+    <div class="header-inner header-inner-test-mode">
+        <div class="main-wrap">
+            <div class="main-header">
+                <div class="header-wrapper-middle header-burger-wrapper">
+                    <a href="#" class="header-burger js-header-burger">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header-ctn">
+                    <div class="header-wrapper-middle">
+                        <a href="http://mosgorzdrav.ru/ru-RU/index.html" class="header-logo">
+                            <img src="../images/icons/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-wrapper-middle menu-list-ctn js-menu-list">
+                        <nav class="header-nav">
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Навигатор</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="#" class="sub-cat-link">
+                                                Практические инструкции </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-dispanser.html">
+                                                        Как пройти диспансеризацию</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-kardio.html">
+                                                        Если нужна установка кардиостимулятора</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-kohlear.html">
+                                                        Если нужна установка кохлеарного импланта</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-scrining2.html">
+                                                        Как пройти женский онкологический скрининг</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../instructions/instruction-taberkules.html">
+                                                         Как оформлять справки об отсутствии детского туберкулеза</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="#" class="sub-cat-link">
+                                                Колонки врачей </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-2.html">
+                                                        Реанимация: как все устроено</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-3.html">
+                                                        Страхи и правда об инфекционных больницах</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-4.html">
+                                                        Медицинская помощь детям в Москве
+                                                    </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-5.html">
+                                                        О работе МНПЦ дерматовенерологии и косметологии</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../columns/column-6.html">
+                                                        Как организована комплексная реабилитация детей в Научно-практическом
+                                                        центре детской психоневрологии</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="#" class="sub-cat-link">
+                                                ТОП10. Лучшее в Москве </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-ambulance.html">
+                                                        ТОП10 медицинских организаций по активности проведения дней открытых
+                                                        дверей </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-clinic-children.html">
+                                                        Топ-10 детских поликлиник по обеспеченности маршрутами наземного
+                                                        транспорта </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-gratitude.html">
+                                                         Топ-10 крупных медицинских организаций по количеству полученных
+                                                        благодарностей</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-site.html">
+                                                         Топ-10 поликлиник по удобству сайтов для пациентов</a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="../top10/top10-social.html">
+                                                         Топ-10 медицинских организаций по популярности в социальных сетях</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Гражданам</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/emias.html">
+                                                Запись к врачу </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/medical.html">
+                                                Медицинские организации </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/health.html" class="sub-cat-link">
+                                                Медицинская помощь </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/card/87.html">
+                                                        Неотложная помощь </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/list/18.html">
+                                                        Высокотехнологичная помощь </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/maternity/eko.html">
+                                                        ЭКО </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/health/pharmacies.html">
+                                                        Лекарства и аптеки </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/health/drugs.html">
+                                                        Важнейшие лекарственные средства </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/card/94.html">
+                                                        Мобильные медицинские комплексы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/health/spid.html">
+                                                        Проблемы ВИЧ/СПИД </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/health/default/card/95.html">
+                                                        Паллиативная помощь </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Социальным группам </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/maternity.html">
+                                                        Родителям и детям </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/pensioners.html">
+                                                        Пенсионерам </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/disabled.html">
+                                                        Инвалидам </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/drivers.html">
+                                                        Водителям </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/donation.html">
+                                                        Донорам </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/foreigners.html">
+                                                        Иногородним </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/citizens/social/foreigners2.html">
+                                                        Иностранцам </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/independent_evaluation.html">
+                                                Оценка качества услуг </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/background.html">
+                                                Справочные телефоны </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/appeal.html">
+                                                Вопросы и обращения </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/findme.html">
+                                                Поиск пропавших людей </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/thanks/page/index.html.html">
+                                                Акция "Спасибо, доктор" </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/citizens/lifestyle.html">
+                                                Здоровый образ жизни </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Специалистам</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Работа </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/work/vacancy.html">
+                                                        Вакансии </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/work/faq.html">
+                                                        Вопросы оплаты труда </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/work/best-employer.html">
+                                                        Конкурс «Лучший работодатель» </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Обучение </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/teaching/education.html">
+                                                        Образование </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/teaching/qualification.html">
+                                                        Повышение квалификации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation.html">
+                                                        Аттестация </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/teaching/conferences.html">
+                                                        Клинико-анатомические конференции </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity.html"
+                                               class="sub-cat-link">
+                                                Научная деятельность </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity/clinical.html">
+                                                        Клинические рекомендации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity/methodical.html">
+                                                        Методические рекомендации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/professional/scientific-activity/academic-council.html">
+                                                        Ученый совет </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/roosov.html">
+                                                Столичное объединение врачей </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/event.html">
+                                                Календарь событий </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/professional/internet.html">
+                                                Интернет-ресурсы </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Департамент</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                О департаменте </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/socialsphere.html">
+                                                        Комплекс социальной сферы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/history.html">
+                                                        История </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/departament-guidance.html">
+                                                        Руководство </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/units.html">
+                                                        Структурные подразделения </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/bureau.html">
+                                                        Оргметодотделы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/specialists.html">
+                                                        Внештатные специалисты </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/collegia.html">
+                                                        Коллегия </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/soviet.html">
+                                                        Совет главных врачей </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/sovetdzm.html">
+                                                        Общественный совет </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/youth-council.html">
+                                                        Молодежный совет </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/aboutdep/expert-sovet.html">
+                                                        Экспертный совет </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Организации и учреждения </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/healthcare.html">
+                                                        Медицинские организации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/open-days.html">
+                                                        Дни открытых дверей </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/medical/default/list/14.html">
+                                                        Образовательные учреждения </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/medical/default/list/13.html">
+                                                        Специализированные службы </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/directorate.html">
+                                                        Дирекции </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/medical/default/list/15.html">
+                                                        Прочие организации </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/departament-structure/interaction.html">
+                                                        Общественные организации </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="javascript:void(0)" class="sub-cat-link">
+                                                Государственные услуги </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/gosuslugi/licensing.html">
+                                                        Лицензирование в сфере здравоохранения </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/control-activities.html">
+                                                Надзорные мероприятия </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/attestation.html"
+                                               class="sub-cat-link">
+                                                Аттестация специалистов </a>
+                                            <ul class="dd-list sub-dd-list">
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/high.html">
+                                                        Специалистов с высшим образованием </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/middle.html">
+                                                        Специалистов со средним образованием </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/region.html">
+                                                        Экспертов по региональному контролю </a>
+                                                </li>
+                                                <li class="dd-item">
+                                                    <a href="http://mosgorzdrav.ru/ru-RU/department/attestation/foreign.html">
+                                                        Лиц, получивших подготовку в иностранных государствах </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/purchase.html">
+                                                Контроль в сфере закупок </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/anticorruption.html">
+                                                Противодействие коррупции </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/contacts.html">
+                                                Контакты </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/department/blagodarnosti.html">
+                                                Благодарности </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="javascript:void(0)">Пресс-центр</a>
+                                <div class="sub-nav-box">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/news.html">
+                                                Новости </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/material.html">
+                                                Материалы </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/journal.html">
+                                                Периодические издания </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/press-center/press-contacts.html">
+                                                Контакты для СМИ </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="http://mosgorzdrav.ru/ru-RU/document.html">Документы</a>
+
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-nav-link" href="http://mosgorzdrav.ru/ru-RU/feed.html">Развитие</a>
+                                <div class="sub-nav-box sub-nav-box--to-right">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/targets.html">
+                                                Программы </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/evolution.html">
+                                                Статьи </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/infographics.html">
+                                                Инфографика </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/moskovskoe-zdravoohranenie.html">
+                                                Цели </a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/feed/suggest.html">
+                                                Краудсорсинг </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header-wrapper-middle">
+                        <div class="header-group-icons">
+                            <div class="header-nav__item">
+                                <a class="header-group-icons__item header-nav-link header-nav__item--login"
+                                   href="javascript:void(0)"></a>
+                                <div class="sub-nav-box sub-nav-box--to-right login__menu">
+                                    <ul class="dd-list main-dd-list">
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/cabinet/login/oauth.html?authclient=mos"
+                                               class="cabinetLogin" data-popup-height="725" data-popup-width="910">Вход</a>
+                                        </li>
+                                        <li class="dd-item">
+                                            <a href="http://mosgorzdrav.ru/ru-RU/cabinet/login/oauth.html?authclient=mos"
+                                               class="cabinetLogin" data-popup-height="725"
+                                               data-popup-width="910">Регистрация</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="header-group-icons__item header-nav-link header-nav__item--search"
+                                   href="http://mosgorzdrav.ru/ru-RU/search.html?phrase"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-menu js-left-menu">
+        <div class="left-nav-box">
+            <div class="left-nav-box-inner">
+                <div class="main">
+                    <div class="left-nav-btn">
+                        <a href="#" class="left-nav-close js-left-nav-close"><span>Меню</span></a>
+                    </div>
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="http://mosgorzdrav.ru/ru-RU/index.html"></a>
+                        </div>
+                    </div>
+                    <div class="for-info">
+                        <p class="phone">+7 495 777-77-77</p>
+
+                        <p><a href="http://mosgorzdrav.ru/ru-RU/citizens/background.html">Справочные телефоны</a></p>
+                    </div>
+                    <div class="links">
+                        <div class="tech-links">
+                            <a class="old-ver" href="http://mosgorzdrav.ru/ru-RU/about.html">О сайте</a>
+                            <a class="err-mess" href="http://mosgorzdrav.ru/ru-RU/index.html#p-feedback">Нашли
+                                ошибку?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ext">
+                    <p class="adr">Москва, Оружейный переулок, 43</p>
+
+                    <p class="email">zdrav@mos.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<div class="promo bg-visual2">
+    <div class="main-wrap">
+        <div class="main-wrap-promo">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs__item hidden-xs" href="#">Навигатор</a>
+                <span class="breadcrumbs__triangle"><img src="../images/icons/triangle.svg" alt=""></span>
+                <a class="breadcrumbs__item hidden-lg hidden-md" href="#">Инструкции</a>
+                <a class="breadcrumbs__item hidden-xs" href="#">Если нужна установка кардиостимулятора</a>
+            </div>
+            <div class="promo__date hidden-xs">31 марта 2017 <span class="promo__time">12:30</span></div>
+            <h1 class="promo__title">Если нужна установка кардиостимулятора</h1>
+        </div>
+        <div class="main-wrap-promo-inner">
+            <p class="promo__text">При заболеваниях сердечно-сосудистой системы, связанных с брадикардией, то есть
+                редким пульсом вплоть до кратковременных остановок сердца, бывает показана установка
+                электрокардиостимулятора (ЭКС). Это медицинский прибор, обеспечивающий нормальную частоту сердечных
+                сокращений. В Москве можно не только установить кардиостимулятор за счет средств фонда ОМС, но и
+                бесплатно проверять и перепрограммировать его при необходимости.</p>
+            <div class="promo-group-button">
+                <a class="promo-group-button__item button-share" href="#">
+                    <span>поделиться</span> 
+                    <span class="icon-popup-share"></span>
+                    <img src="../images/icons/popup-close.svg" alt="">
+                    <div class="group-button-share ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram" data-counter data-limit="0"></div>
+                </a>
+<!--                 <a class="promo-group-button__item button-favorite" href="#" rel="sidebar"><span>в избранное</span> <span class="icon-fav"></span></a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wrap-instruction main-wrap-instruction-full-width hidden-xs">
+    <div class="c-content-tabs">
+        <a href="#" data-tab-target="instruction" class="c-content-tabs__item js-tab active">Инструкция</a>
+        <a href="#" data-tab-target="questions" class="c-content-tabs__item js-tab">Вопросы и ответы</a>
+    </div>
+</div>
+<section class="xs">
+    <div class="main-wrap-instruction main-wrap-instruction-full-width">
+        <div class="c-content-tabs hidden-lg hidden-md first">
+            <a href="#" data-tab-target="instruction" class="c-content-tabs__item js-tab-xs active">Инструкция</a>
+        </div>
+        <div data-tab="instruction" class="l-instruction js-tab-col active">
+            <div class="c-instruction-dots"></div>
+            <div class="l-instruction__cont">
+                <div class="c-instruction-block c-instruction-block--first js-step active"
+                     data-step="1">
+                     <div class="c-instruction-block__checkbox-wrapper"></div>
+                    <input type="checkbox" class="c-instruction-block__check">
+                    <label class="c-instruction-block__label"></label>
+                    <h2>Выберите тип обследования</h2>
+                    <div class="c-instruction-block__cont">
+                        <div class="c-instruction-block__scene">
+                            <a href="#" data-scene="0" class="c-instruction-block__scene-btn js-scene-btn">Плановый</a>
+                            <a href="#" data-scene="1" class="c-instruction-block__scene-btn js-scene-btn"
+                               data-scene-final="y">Экстренный</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-step">
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Проконсультируйтесь у кардиолога</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Запишитесь к участковому терапевту в поликлинике, к которой вы прикреплены, и получите у
+                                него направление к кардиологу</p>
+                            <p>Кардиолог примет в той же поликлинике или другом ее филиале</p>
+                            <p>Понадобится: </p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>полис ОМС</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>По назначению кардиолога пройдите дополнительные обследования </h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Список возможных обследований:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>электрокардиография (ЭКГ)</li>
+                                <li>эхокардиография</li>
+                                <li>суточное мониторирование ЭКГ</li>
+                                <li>консультации врачей-специалистов при наличии хронических заболеваний, чтобы
+                                    предусмотреть возможные осложнения
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>При необходимости проконсультируйтесь у аритмолога</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>В случае необходимости, кардиолог поликлиники выдаст направление на консультацию у аритмолога в одну из больниц города. Выберите медицинскую организацию:</p>
+
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>ГБУЗ города Москвы «Городская клиническая больница имени С.П. Боткина ДЗМ»</li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница имени В.М. Буянова ДЗМ»</li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница № 15 имени О.М. Филатова ДЗМ»
+                                </li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница № 67 имени Л.А. Ворохобова ДЗМ»
+                                </li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница им. И.В. Давыдовского ДЗМ»</li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница имени С.С. Юдина ДЗМ»</li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница № 4 ДЗМ»</li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница № 51 ДЗМ»</li>
+                                <li>ГБУЗ города Москвы «Городская клиническая больница им. В.В. Вересаева»</li>
+                                <li>ГБУЗ города Москвы «Научно-практический центр интервенционной кардиоангиологии
+                                    Департамента здравоохранения г. Москвы»
+                                </li>
+                                <li>ГБУЗ города Москвы «НИИ СП имени Н.В. Склифосовского ДЗМ»</li>
+                            </ul>
+
+
+                            <p>Для записи на консультацию к аритмологу вам понадобятся:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>паспорт</li>
+                                <li>полис ОМС</li>
+                                <li>направление от кардиолога</li>
+                                <li>выписка из амбулаторной карты</li>
+                                <li>результаты проведенных обследований</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Узнайте дату госпитализации</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Врач назначит дату госпитализации и выдаст список анализов, которые нужно сдать. Список необходимых анализов устанавливается медицинской организацией.</p>
+                        </div>
+                    </div>
+
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Подготовьтесь к госпитализации</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Вам понадобятся:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>паспорт</li>
+                                <li>полис ОМС</li>
+                                <li>свидетельство обязательного пенсионного страхования (СНИЛС) при наличии</li>
+                                <li>направление от кардиолога</li>
+                                <li>выписка из амбулаторной карты</li>
+                                <li>результаты проведенных обследований</li>
+                            </ul>
+                            <p>Установка электрокардиостимулятора и сам прибор для граждан РФ бесплатны.</p>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>В назначенное время придите в клинику для госпитализации</h2>
+                        <div class="c-instruction-block__cont">
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>Установка электрокардиостимулятора занимает 1–2 часа</li>
+                                <li>Выписка – через 3–4 дня после операции</li>
+                                <li>В больнице врач даст рекомендации по особенностям образа жизни с
+                                    электрокардиостимулятором
+                                </li>
+                                <li>В течение 4–6 недель после операции избегайте серьезных физических нагрузок</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Проконсультируйтесь с  лечащим врачом о проверках электрокардиостимулятора</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Частота проверок зависит от состояния здоровья пациента и модели прибора, но их следует проводить не реже одного раза в год. Проверяйте устройство при любом сомнении в корректности его
+                                работы.</p>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="0">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>При необходимости обращайтесь к специалистам для проверки и перепрограммирования
+                            электрокардиостимулятора </h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Проверка прибора бесплатна при наличии полиса ОМС. Обращайтесь для проверки при любых
+                                неприятных ощущениях в области сердца, потерях сознания, редком пульсе и т.д. </p>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="1">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Вызовите скорую помощь</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Позвоните по номеру «103» или «112». </p>          <p>Симптомы для вызова скорой помощи:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>редкий пульс</li>
+                                <li>обмороки</li>
+                                <li>неприятные ощущения в области сердца</li>
+                            </ul>
+                            <p>Врач скорой помощи осмотрит, сделает электрокардиографию (ЭКГ) и при наличии показаний предложит госпитализацию.</p>                </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="1">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Госпитализация</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Возьмите с собой:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>паспорт</li>
+                                <li>полис ОМС</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="1">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Дополнительные обследования в больнице и операция </h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Перечень дополнительных обследований определяет врач. </p> <p>В экстренных случаях операция по установке электрокардиостимулятора выполняется в ближайшее время:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>Установка электрокардиостимулятора занимает 1–2 часа</li>
+                                <li>Выписка – через 3–4 дня после операции</li>
+                                <li>В больнице врач даст рекомендации по особенностям образа жизни с
+                                    электрокардиостимулятором
+                                </li>
+                                <li>В течение 4–6 недель после операции избегайте серьезных физических нагрузок</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="1">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>Проконсультируйтесь с лечащим врачом о проверках электрокардиостимулятора</h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Частота проверок зависит от состояния здоровья пациента и модели прибора, но их следует проводить не реже одного раза в год. Кроме того, проверяйте устройство при любом сомнении в корректности его работы.</p>
+                        </div>
+                    </div>
+                    <div class="c-instruction-block hidden" data-scene-item="1">
+                        <div class="c-instruction-block__checkbox-wrapper"></div>
+                        <input type="checkbox" class="c-instruction-block__check">
+                        <label class="c-instruction-block__label"></label>
+                        <h2>При необходимости обращайтесь к специалистам для проверки и перепрограммирования
+                            электрокардиостимулятора </h2>
+                        <div class="c-instruction-block__cont">
+                            <p>Проверка прибора бесплатна при наличии полиса ОМС. Обращайтесь для проверки при любых
+                                неприятных ощущениях в области сердца, потерях сознания, редком пульсе и т.д. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l-instruction__aside hidden-xs">
+                <a href="#" class="c-instruction-aside-item">
+                    <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Когда показана установка электрокардиостимулятора </h4>
+                </a>
+                <div class="c-popup">
+                    <div class="c-popup__inner">
+                        <div class="c-popup__header">
+                            <h2>Когда показана установка электрокардиостимулятора</h2>
+                        </div>
+                        <div class="c-popup__cont">
+                            <p>Электрокардиостимулятор (ЭКС) – медицинский прибор, обеспечивающий нормальную частоту сердечных сокращений и помогающий сердцу работать без сбоев. </p>
+                            <p>В норме сердце человека сокращается с периодичностью 60–100 ударов в минуту. При более редких сокращениях врачи говорят о брадикардии: сердце не успевает обеспечить организм достаточным количеством крови, а значит, и кислородом. Возникают одышка и головокружения, возможны и кратковременные потери сознания. </p>
+                            <p>Справиться с этим состоянием в некоторых случаях можно с помощью постоянного приема медикаментов, но современная медицина предлагает и другой способ – имплантацию электрокардиостимулятора. </p>
+                            <p>При наличии показаний установка кардиостимулятора проводится бесплатно при наличии полиса ОМС. Возможностью получить этот вид высокотехнологичной медицинской помощи ежегодно пользуются около полутора тысяч москвичей.</p>
+                        </div>
+                        <div class="promo-group-button">
+                            <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                                <div class="group-button-share ya-share2"
+                                     data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                     data-counter data-limit="0"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="c-instruction-aside-item">
+                    <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Как работает электрокардиостимулятор </h4>
+                </a>
+                <div class="c-popup">
+                    <div class="c-popup__inner">
+                        <div class="c-popup__header">
+                            <h2>Как работает электрокардиостимулятор</h2>
+                        </div>
+                        <div class="c-popup__cont">
+                            <p>Электрокардиостимулятор – небольшое электронное устройство, которое в ходе операции имплантируется человеку под кожу, обычно в область ключицы. От прибора отходят электроды – тонкие провода, соединяющие его с сердцем. </p>
+                            <p>Электрокардиостимулятор можно запрограммировать так, чтобы он оптимально подходил конкретному пациенту, ведь нарушения сердечного ритма могут быть разного вида и тяжести. Прибор получает по электродам сигналы о сокращении сердца и, если сокращений недостаточно, отправляет обратный импульс, заставляя сердце сократиться принудительно. Для самого человека работа прибора незаметна. </p>
+                        </div>
+                        <div class="promo-group-button">
+                            <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                                <div class="group-button-share ya-share2"
+                                     data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                     data-counter data-limit="0"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="c-instruction-aside-item">
+                    <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Какими бывают электрокардиостимуляторы </h4>
+                </a>
+                <div class="c-popup">
+                    <div class="c-popup__inner">
+                        <div class="c-popup__header">
+                            <h2>Какими бывают электрокардиостимуляторы</h2>
+                        </div>
+                        <div class="c-popup__cont">
+                            <p>Различают однокамерные и двухкамерные электрокардиостимуляторы. Первые предназначены для стимуляции только желудочка или только предсердия, вторые – для стимуляции и предсердия, и желудочка. </p>
+                            <p>В более редких случаях может потребоваться трехкамерный электрокардиостимулятор – он воздействует на правое предсердие и оба желудочка одновременно. </p>
+                            <p>Какой именно тип электрокардиостимулятора потребуется конкретному пациенту, определяет кардиохирург. Устройства, как и операция, для пациента бесплатны.</p>
+                        </div>
+                        <div class="promo-group-button">
+                            <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                                <div class="group-button-share ya-share2"
+                                     data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                     data-counter data-limit="0"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="c-instruction-aside-item">
+                    <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Как проводится операция по имплантации электрокардиостимулятора </h4>
+                </a>
+                <div class="c-popup">
+                    <div class="c-popup__inner">
+                        <div class="c-popup__header">
+                            <h2>Как проводится операция по имплантации электрокардиостимулятора</h2>
+                        </div>
+                        <div class="c-popup__cont">
+                            <p>Имплантация – это относительно несложная операция, которая в большинстве случаев проводится под местной анестезией. Пациенту делается небольшой разрез кожи и подкожной клетчатки, обычно в верхней части грудной клетки чуть ниже ключицы. Электроды по вене подводятся к сердцу под рентгеновским контролем, закрепляются и подключаются к кардиостимулятору. Затем устройство устанавливается под кожей, а разрез зашивается. </p>
+                            <p>Прибор еще в операционной обязательно проходит проверку. Выписка после операции происходит на 3–4-й день, специальной реабилитации не требуется.</p>
+                            <p>В дальнейшем необходимо ежегодно приходить в клинику для проверки устройства, через 7–8 лет может потребоваться его замена, когда завершится срок службы аккумулятора. </p>
+                        </div>
+                        <div class="promo-group-button">
+                            <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                                <div class="group-button-share ya-share2"
+                                     data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                     data-counter data-limit="0"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="c-instruction-aside-item">
+                    <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Кто может установить электрокардиостимулятор бесплатно </h4>
+                </a>
+                <div class="c-popup">
+                    <div class="c-popup__inner">
+                        <div class="c-popup__header">
+                            <h2>Кто может установить электрокардиостимулятор бесплатно</h2>
+                        </div>
+                        <div class="c-popup__cont">
+                            <p>Если врач определил необходимость имплантации устройства, установка электрокардиостимулятора бесплатна для любого гражданина Российской Федерации, имеющего полис ОМС.</p>
+                            <p>Для получения направления необходимо пройти первичное обследование у кардиолога в поликлинике, к которой вы прикреплены. Врач может назначить дополнительные обследования, например:</p>
+                            <ul class="c-instruction-block__list c-instruction-block__list-large">
+                                <li>электрокардиографию (ЭКГ – стандартный метод исследования, позволяющий
+                                    регистрировать частоту и регулярность сердечных сокращений);
+                                </li>
+                                <li>эхокардиографию (ультразвуковое исследование сердца, показывающее нарушения в его
+                                    строении);
+                                </li>
+                                <li>суточное мониторирование ЭКГ (непрерывное снятие электрокардиограммы в течение как
+                                    минимум 24 часов с помощью портативного аппарата для более точной диагностики
+                                    нарушений сердечного ритма);
+                                </li>
+                                <li>консультации врачей-специалистов при наличии хронических заболеваний (необходимы,
+                                    чтобы предусмотреть возможные осложнения при операции установки
+                                    электрокардиостимулятора).
+                                </li>
+                            </ul>
+                            <p>Если врач выявит показания к имплантации электрокардиостимулятора, он даст направление в
+                                одну из городских больниц, где примут окончательное решение, а затем назначат дату
+                                госпитализации. </p>
+                            <p>Для пациента бесплатны операция, пребывание в больнице и сам электрокардиостимулятор.
+                                Также бесплатно в дальнейшем можно проходить проверки, перепрограммирование и замену
+                                устройства. </p>
+                        </div>
+                        <div class="promo-group-button">
+                            <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                                <div class="group-button-share ya-share2"
+                                     data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                     data-counter data-limit="0"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="c-instruction-aside-item">
+                    <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Как часто необходимо проверять электрокардиостимулятор </h4>
+                </a>
+                <div class="c-popup">
+                    <div class="c-popup__inner">
+                        <div class="c-popup__header">
+                            <h2>Как часто необходимо проверять электрокардиостимулятор</h2>
+                        </div>
+                        <div class="c-popup__cont">
+                            <p>Проверка электрокардиостимулятора рекомендуется не реже одного раза в год, а также в тех случаях, когда возникают любые сомнения в корректности его работы.</p>
+                            <p>Проверка проводится дистанционно и не требует непосредственного доступа к прибору. С помощью специального программного обеспечения специалист удостоверится, что ЭКС работает нормально. При необходимости прибор может быть перепрограммирован – например, если специалист обратит внимание, что он включается слишком часто, когда сердце справляется и самостоятельно. Также на проверке будет определено состояние аккумулятора.</p>
+                            <p>Плановая замена ЭКС проводится обычно через 7–8 лет после установки. Она связана с истощением ресурса аккумулятора у прибора. О необходимости замены пациента предупредят заранее, на очередной проверке. Для замены потребуется госпитализация в больницу и проведение повторной операции: после выполнения разреза прибор извлекается, электроды проверяются на работоспособность, устанавливается новый прибор. </p>
+                            <p>Все плановые проверки и замена электрокардиостимулятора проводятся также бесплатно за счет средств ОМС.  </p>
+                        </div>
+                        <div class="promo-group-button">
+                            <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                                <div class="group-button-share ya-share2"
+                                     data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                     data-counter data-limit="0"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-content-tabs hidden-lg hidden-md">
+            <a href="#" data-tab-target="questions" class="c-content-tabs__item js-tab-xs">Вопросы и ответы</a>
+        </div>
+        <div data-tab="questions" class="js-tab-col">
+            <div class="panel-slide">
+                <div class="panel-slide-item">
+                    <div class="panel-slide-head"><a class="panel-slide-head__text" href="#">Когда показана установка
+                        электрокардиостимулятора</a></div>
+                    <div class="panel-slide-content">
+                        <p class="text-small">Электрокардиостимулятор (ЭКС) – медицинский прибор, обеспечивающий
+                            нормальную частоту сердечных сокращений и помогающий сердцу работать без сбоев. </p>
+                        <p class="text-small">В норме сердце человека сокращается с периодичностью 60–100 ударов в
+                            минуту. При более редких сокращениях врачи говорят о брадикардии: сердце не успевает
+                            обеспечить организм достаточным количеством крови, а значит, и кислородом. Возникают одышка
+                            и головокружения, возможны и кратковременные потери сознания. </p>
+                        <p class="text-small">Справиться с этим состоянием в некоторых случаях можно с помощью
+                            постоянного приема медикаментов, но современная медицина предлагает и другой способ –
+                            имплантацию электрокардиостимулятора. </p>
+                        <p class="text-small">При наличии показаний установка кардиостимулятора доступна бесплатно при
+                            наличии полиса ОМС. Возможностью получить этот вид высокотехнологичной медицинской помощи
+                            ежегодно пользуются около полутора тысяч москвичей.</p>
+                    </div>
+                </div>
+                <div class="panel-slide-item">
+                    <div class="panel-slide-head"><a class="panel-slide-head__text" href="#">Как работает
+                        электрокардиостимулятор</a></div>
+                    <div class="panel-slide-content">
+                        <p class="text-small">Электрокардиостимулятор – небольшое электронное устройство, которое в ходе
+                            операции имплантируется человеку под кожу, обычно в область ключицы. От прибора отходят
+                            электроды – тонкие провода, соединяющие его с сердцем. </p>
+                        <p class="text-small">Электрокардиостимулятор можно запрограммировать так, чтобы он оптимально
+                            подходил конкретному пациенту, ведь нарушения сердечного ритма могут быть разного вида и
+                            тяжести. Прибор получает по электродам сигналы о сокращении сердца и, если сокращений
+                            недостаточно, отправляет обратный импульс, заставляя сердце сократиться принудительно. Для
+                            самого человека работа прибора незаметна. </p>
+                    </div>
+                </div>
+                <div class="panel-slide-item">
+                    <div class="panel-slide-head"><a class="panel-slide-head__text" href="#">Какими бывают
+                        электрокардиостимуляторы</a></div>
+                    <div class="panel-slide-content">
+                        <p class="text-small">Различают однокамерные и двухкамерные электрокардиостимуляторы. Первые
+                            предназначены для стимуляции только желудочка или только предсердия, вторые – для стимуляции
+                            и предсердия, и желудочка. </p>
+                        <p class="text-small">В более редких случаях может потребоваться трехкамерный
+                            электрокардиостимулятор – он воздействует на правое предсердие и оба желудочка
+                            одновременно. </p>
+                        <p class="text-small">Какой именно тип электрокардиостимулятора потребуется конкретному
+                            пациенту, определяет кардиохирург. Устройства, как и операция, для пациента бесплатны.</p>
+                    </div>
+                </div>
+                <div class="panel-slide-item">
+                    <div class="panel-slide-head"><a class="panel-slide-head__text" href="#">Как проводится операция по
+                        имплантации электрокардиостимулятора</a></div>
+                    <div class="panel-slide-content">
+                        <p class="text-small">Имплантация – это относительно несложная операция, которая в большинстве
+                            случаев проводится под местной анестезией. Пациенту делается небольшой разрез кожи и
+                            подкожной клетчатки, обычно в верхней части грудной клетки чуть ниже ключицы. Электроды по
+                            вене подводятся к сердцу под рентгеновским контролем, затем закрепляются и подключаются к
+                            кардиостимулятору. Затем устройство устанавливается под кожей, а разрез зашивается. </p>
+                        <p class="text-small">Прибор еще в операционной обязательно проходит проверку. Выписка после
+                            операции происходит на 3–4-й день, специальной реабилитации не требуется.</p>
+                        <p class="text-small">В дальнейшем необходимо ежегодно приходить в клинику для проверки
+                            устройства, через 7–8 лет может потребоваться его замена, когда завершится срок службы
+                            аккумулятора. </p>
+                    </div>
+                </div>
+                <div class="panel-slide-item">
+                    <div class="panel-slide-head"><a class="panel-slide-head__text" href="#">Кто может установить
+                        электрокардиостимулятор бесплатно</a></div>
+                    <div class="panel-slide-content">
+                        <p class="text-small">Установка электрокардиостимулятора бесплатна для любого гражданина
+                            Российской Федерации, имеющего полис ОМС, если врач определил необходимость имплантации
+                            устройства.</p>
+                        <p class="text-small">Для получения направления необходимо пройти первичное обследование у
+                            кардиолога в поликлинике, к которой вы прикреплены. Врач может назначить дополнительные
+                            обследования, например:</p>
+                        <ul class="c-instruction-block__list">
+                            <li>электрокардиографию (ЭКГ – стандартный метод исследования, позволяющий регистрировать
+                                частоту и регулярность сердечных сокращений);
+                            </li>
+                            <li>эхокардиографию (ультразвуковое исследование сердца, показывающее нарушения в его
+                                строении);
+                            </li>
+                            <li>суточное мониторирование ЭКГ (непрерывное снятие электрокардиограммы в течение как
+                                минимум 24 часов с помощью портативного аппарата для более точной диагностики нарушений
+                                сердечного ритма);
+                            </li>
+                            <li>консультации врачей-специалистов при наличии хронических заболеваний (необходимы, чтобы
+                                предусмотреть возможные осложнения при операции установки электрокардиостимулятора).
+                            </li>
+                        </ul>
+                        <p class="text-small">Если врач выявит показания к имплантации электрокардиостимулятора, он даст направление в одну из городских больниц, где примут окончательное решение, а затем назначат дату госпитализации. </p>
+                        <p class="text-small">Для пациента бесплатны операция, пребывание в больнице и сам электрокардиостимулятор. Также бесплатно в дальнейшем можно проходить проверки, перепрограммирование и замену устройства. </p>
+                        <p>Если врач выявит показания к имплантации электрокардиостимулятора, он даст направление в одну
+                            из городских больниц, где примут окончательное решение, а затем назначат дату
+                            госпитализации. </p>
+                        <p>Для пациента бесплатны операция, пребывание в больнице и сам электрокардиостимулятор. Также
+                            бесплатно в дальнейшем можно проходить проверки, перепрограммирование и замену
+                            устройства. </p>
+                    </div>
+                </div>
+                <div class="panel-slide-item">
+                    <div class="panel-slide-head"><a class="panel-slide-head__text" href="#">Как часто необходимо
+                        проверять электрокардиостимулятор</a></div>
+                    <div class="panel-slide-content">
+                        <p class="text-small">Проверка электрокардиостимулятора рекомендуется не реже одного раза в год,
+                            а также в тех случаях, когда возникают любые сомнения в корректности его работы.</p>
+                        <p class="text-small">Проверка проводится дистанционно и не требует непосредственного доступа к
+                            прибору. С помощью специального программного обеспечения специалист удостоверится, что ЭКС
+                            работает нормально. При необходимости прибор может быть перепрограммирован – например, если
+                            специалист обратит внимание, что он включается слишком часто, когда сердце справляется и
+                            самостоятельно. Также на проверке будет определено состояние аккумулятора.</p>
+                        <p class="text-small">Плановая замена ЭКС проводится обычно через 7–8 лет после установки. Она
+                            связана с истощением ресурса аккумулятора у прибора. О необходимости замены пациента
+                            предупредят заранее, на очередной проверке. Для замены потребуется госпитализация в больницу
+                            и проведение повторной операции: после выполнения разреза прибор извлекается, электроды
+                            проверяются на работоспособность, устанавливается новый прибор. </p>
+                        <p class="text-small">Все плановые проверки и замена электрокардиостимулятора проводятся также
+                            бесплатно за счет средств ОМС. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-instruction__aside hidden-lg hidden-md">
+            <a href="#" class="c-instruction-aside-item">
+                <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Когда показана установка электрокардиостимулятора </h4>
+            </a>
+            <div class="c-popup">
+                <div class="c-popup__inner">
+                    <div class="c-popup__header">
+                        <h2>Когда показана установка электрокардиостимулятора</h2>
+                    </div>
+                    <div class="c-popup__cont">
+                        <p>Электрокардиостимулятор (ЭКС) – медицинский прибор, обеспечивающий нормальную частоту сердечных сокращений и помогающий сердцу работать без сбоев. </p>
+                        <p>В норме сердце человека сокращается с периодичностью 60–100 ударов в минуту. При более редких сокращениях врачи говорят о брадикардии: сердце не успевает обеспечить организм достаточным количеством крови, а значит, и кислородом. Возникают одышка и головокружения, возможны и кратковременные потери сознания. </p>
+                        <p>Справиться с этим состоянием в некоторых случаях можно с помощью постоянного приема медикаментов, но современная медицина предлагает и другой способ – имплантацию электрокардиостимулятора. </p>
+                        <p>При наличии показаний установка кардиостимулятора проводится бесплатно при наличии полиса ОМС. Возможностью получить этот вид высокотехнологичной медицинской помощи ежегодно пользуются около полутора тысяч москвичей.</p>
+                    </div>
+                    <div class="promo-group-button">
+                        <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                            <div class="group-button-share ya-share2"
+                                 data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                 data-counter data-limit="0"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="c-instruction-aside-item">
+                <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Как работает электрокардиостимулятор </h4>
+            </a>
+            <div class="c-popup">
+                <div class="c-popup__inner">
+                    <div class="c-popup__header">
+                        <h2>Как работает электрокардиостимулятор</h2>
+                    </div>
+                    <div class="c-popup__cont">
+                        <p>Электрокардиостимулятор – небольшое электронное устройство, которое в ходе операции имплантируется человеку под кожу, обычно в область ключицы. От прибора отходят электроды – тонкие провода, соединяющие его с сердцем. </p>
+                        <p>Электрокардиостимулятор можно запрограммировать так, чтобы он оптимально подходил конкретному пациенту, ведь нарушения сердечного ритма могут быть разного вида и тяжести. Прибор получает по электродам сигналы о сокращении сердца и, если сокращений недостаточно, отправляет обратный импульс, заставляя сердце сократиться принудительно. Для самого человека работа прибора незаметна. </p>
+                    </div>
+                    <div class="promo-group-button">
+                        <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                            <div class="group-button-share ya-share2"
+                                 data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                 data-counter data-limit="0"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="c-instruction-aside-item">
+                <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Какими бывают электрокардиостимуляторы </h4>
+            </a>
+            <div class="c-popup">
+                <div class="c-popup__inner">
+                    <div class="c-popup__header">
+                        <h2>Какими бывают электрокардиостимуляторы</h2>
+                    </div>
+                    <div class="c-popup__cont">
+                        <p>Различают однокамерные и двухкамерные электрокардиостимуляторы. Первые предназначены для стимуляции только желудочка или только предсердия, вторые – для стимуляции и предсердия, и желудочка. </p>
+                        <p>В более редких случаях может потребоваться трехкамерный электрокардиостимулятор – он воздействует на правое предсердие и оба желудочка одновременно. </p>
+                        <p>Какой именно тип электрокардиостимулятора потребуется конкретному пациенту, определяет кардиохирург. Устройства, как и операция, для пациента бесплатны.</p>
+                    </div>
+                    <div class="promo-group-button">
+                        <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                            <div class="group-button-share ya-share2"
+                                 data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                 data-counter data-limit="0"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="c-instruction-aside-item">
+                <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Как проводится операция по имплантации электрокардиостимулятора </h4>
+            </a>
+            <div class="c-popup">
+                <div class="c-popup__inner">
+                    <div class="c-popup__header">
+                        <h2>Как проводится операция по имплантации электрокардиостимулятора</h2>
+                    </div>
+                    <div class="c-popup__cont">
+                        <p>Имплантация – это относительно несложная операция, которая в большинстве случаев проводится под местной анестезией. Пациенту делается небольшой разрез кожи и подкожной клетчатки, обычно в верхней части грудной клетки чуть ниже ключицы. Электроды по вене подводятся к сердцу под рентгеновским контролем, закрепляются и подключаются к кардиостимулятору. Затем устройство устанавливается под кожей, а разрез зашивается. </p>
+                        <p>Прибор еще в операционной обязательно проходит проверку. Выписка после операции происходит на 3–4-й день, специальной реабилитации не требуется.</p>
+                        <p>В дальнейшем необходимо ежегодно приходить в клинику для проверки устройства, через 7–8 лет может потребоваться его замена, когда завершится срок службы аккумулятора. </p>
+                    </div>
+                    <div class="promo-group-button">
+                        <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                            <div class="group-button-share ya-share2"
+                                 data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                 data-counter data-limit="0"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="c-instruction-aside-item">
+                <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Кто может установить электрокардиостимулятор бесплатно </h4>
+            </a>
+            <div class="c-popup">
+                <div class="c-popup__inner">
+                    <div class="c-popup__header">
+                        <h2>Кто может установить электрокардиостимулятор бесплатно</h2>
+                    </div>
+                    <div class="c-popup__cont">
+                        <p>Если врач определил необходимость имплантации устройства, установка электрокардиостимулятора бесплатна для любого гражданина Российской Федерации, имеющего полис ОМС.</p>
+                        <p>Для получения направления необходимо пройти первичное обследование у кардиолога в поликлинике, к которой вы прикреплены. Врач может назначить дополнительные обследования, например:</p>
+                        <ul class="c-instruction-block__list c-instruction-block__list-large">
+                            <li>электрокардиографию (ЭКГ – стандартный метод исследования, позволяющий
+                                регистрировать частоту и регулярность сердечных сокращений);
+                            </li>
+                            <li>эхокардиографию (ультразвуковое исследование сердца, показывающее нарушения в его
+                                строении);
+                            </li>
+                            <li>суточное мониторирование ЭКГ (непрерывное снятие электрокардиограммы в течение как
+                                минимум 24 часов с помощью портативного аппарата для более точной диагностики
+                                нарушений сердечного ритма);
+                            </li>
+                            <li>консультации врачей-специалистов при наличии хронических заболеваний (необходимы,
+                                чтобы предусмотреть возможные осложнения при операции установки
+                                электрокардиостимулятора).
+                            </li>
+                        </ul>
+                        <p>Если врач выявит показания к имплантации электрокардиостимулятора, он даст направление в
+                            одну из городских больниц, где примут окончательное решение, а затем назначат дату
+                            госпитализации. </p>
+                        <p>Для пациента бесплатны операция, пребывание в больнице и сам электрокардиостимулятор.
+                            Также бесплатно в дальнейшем можно проходить проверки, перепрограммирование и замену
+                            устройства. </p>
+                    </div>
+                    <div class="promo-group-button">
+                        <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                            <div class="group-button-share ya-share2"
+                                 data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                 data-counter data-limit="0"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="c-instruction-aside-item">
+                <h4 class="c-instruction-aside-item__title"><img src="../images/icons/triangle-green.svg" alt="">Как часто необходимо проверять электрокардиостимулятор </h4>
+            </a>
+            <div class="c-popup">
+                <div class="c-popup__inner">
+                    <div class="c-popup__header">
+                        <h2>Как часто необходимо проверять электрокардиостимулятор</h2>
+                    </div>
+                    <div class="c-popup__cont">
+                        <p>Проверка электрокардиостимулятора рекомендуется не реже одного раза в год, а также в тех случаях, когда возникают любые сомнения в корректности его работы.</p>
+                        <p>Проверка проводится дистанционно и не требует непосредственного доступа к прибору. С помощью специального программного обеспечения специалист удостоверится, что ЭКС работает нормально. При необходимости прибор может быть перепрограммирован – например, если специалист обратит внимание, что он включается слишком часто, когда сердце справляется и самостоятельно. Также на проверке будет определено состояние аккумулятора.</p>
+                        <p>Плановая замена ЭКС проводится обычно через 7–8 лет после установки. Она связана с истощением ресурса аккумулятора у прибора. О необходимости замены пациента предупредят заранее, на очередной проверке. Для замены потребуется госпитализация в больницу и проведение повторной операции: после выполнения разреза прибор извлекается, электроды проверяются на работоспособность, устанавливается новый прибор. </p>
+                        <p>Все плановые проверки и замена электрокардиостимулятора проводятся также бесплатно за счет средств ОМС.  </p>
+                    </div>
+                    <div class="promo-group-button">
+                        <a class="c-popup__share button-share" href="#"><span>поделиться</span> <span class="icon-popup-share"></span>
+                            <div class="group-button-share ya-share2"
+                                 data-services="vkontakte,facebook,odnoklassniki,twitter,lj,whatsapp,skype,telegram"
+                                 data-counter data-limit="0"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer footer-inner main-footer">
+    <div class="main-wrap main-wrap--wide">
+        <div class="main-wrap-content-bg main-wrap-content footer-inner-content">
+            <div class="t t-foot t-simple t-lg t-fixed footer-inner-content">
+                <div class="td td--low td-left hidden-xs">
+                    <a href="https://dzdrav.mos.ru/" target="_blank">
+                        <div class="partner">
+                            <div class="pic">
+                                <img src="../images/footer-pic-1.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="td td--low hidden-xs">
+                    <a href="https://www.mos.ru/" target="_blank">
+                        <div class="partner">
+                            <div class="pic">
+                                <img src="../images/footer-pic-2.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="td td--low hidden-xs">
+                    <a href="http://emias.mos.ru/" target="_blank">
+                        <div class="partner">
+                            <div class="pic">
+                                <img src="../images/footer-pic-3.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="td">
+                    <a class="err-mess" href="http://mosgorzdrav.ru/ru-RU/index.html#p-feedback">Нашли ошибку?</a>
+                </div>
+                <div class="td">
+                    <ul class="soc__list">
+                        <li class="soc__item">
+                            <a target="_blank" href="https://www.facebook.com/dzdmos" class="soc soc_fb"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="http://vk.com/dzdmos" class="soc soc_vk"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="https://ok.ru/dzdmos" class="soc soc_od"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="https://twitter.com/dzdmos" class="soc soc_tw"></a>
+                        </li>
+                        <li class="soc__item">
+                            <a target="_blank" href="https://instagram.com/dzdmos" class="soc soc_in"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="td td-right hidden-xs">
+                    <p class="copyright">
+                        © Департамент здравоохранения<br>города Москвы, 2004-2017 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="feedback-modal">
+    <a href="#" class="close-modal"><img src="../images/icons/popup-close.svg" alt=""></a>
+    <form action="../instructions/instruction-kardio.html" method="post" id="contact" data-id="1">
+        <ul class="flex-feedback">
+            <li>
+                <h3>Обратная связь</h3>
+            </li>
+            <li>
+                <label for="first-name">Имя</label>
+                <input type="text" name="first-name" id="first-name"
+                       aria-describedby="name-format" required aria-required="true"
+                       pattern="^[а-яА-ЯёЁ]+$"
+                       title="Только буквы А-Я"
+                       placeholder="">
+            </li>
+            <li>
+                <label for="last-name">Фамилия</label>
+                <input type="text" name="last-name" id="last-name" placeholder=""
+                       aria-describedby="name-format" required aria-required="true"
+                       pattern="^[а-яА-ЯёЁ]+$"
+                       title="Только буквы А-Я">
+            </li>
+            <li>
+                <label for="email">Эл. почта</label>
+                <input type="email" name="email" id="email" placeholder=""
+                       required aria-required="true"
+                       pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+            </li>
+            <li>
+                <label for="problem">Кратко опишите Вашу проблему</label>
+                <textarea name="problem" id="problem"></textarea>
+            </li>
+            <li>
+                <button type="submit">Получить консультацию</button>
+            </li>
+        </ul>
+    </form>
+</div>
+<script>
+    $(document).on('submit', 'form', function(event) {
+        event.preventDefault();
+        var form = $(this);
+        var id = $(this).attr('data-id');
+        form.find('.error').removeClass('active');
+
+        $.ajax({
+          url: $(this).attr('action'),
+          type: 'POST',
+          dataType: 'html',
+          data: form.serialize(),
+        })
+        .done(function(data) {
+
+          var res = $(data).find('form[data-id='+id+']').html();
+          form.html(res);
+
+          if(!$(data).find('form[data-id='+id+'] .error').length) {
+            $.fancybox.open({ src  : '#thanks', type : 'inline' });
+
+            setTimeout(function(){
+              $.fancybox.close();
+            }, 4000);
+          }
+        });
+
+        return false;
+        
+      });
+</script>
+<div class="shade" id="shade"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" id="statsmosru" src="https://stats.mos.ru/counter.js" onload="statsMosRuCounter()" defer="defer" async="true"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter34650690 = new Ya.Metrika({
+                        id: 34650690,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                    w.yaCounter14112952 = new Ya.Metrika({
+                        id: 14112952,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                    w.yaCounter28146807 = new Ya.Metrika({
+                        id: 28146807,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                    w.yaCounter24897560 = new Ya.Metrika({
+                        id:24897560,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch (e) {
+                }
+            });
+            var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks"); </script>
+<noscript><div><img src="//mc.yandex.ru/watch/34650690" style="position:absolute; left:-9999px;" alt=""/></div>;</noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/14112952" style="position:absolute; left:-9999px;" alt=""/></div>;</noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/28146807" style="position:absolute; left:-9999px;" alt=""/></div>;</noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/24897560" style="position:absolute; left:-9999px;" alt=""/></div>;</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

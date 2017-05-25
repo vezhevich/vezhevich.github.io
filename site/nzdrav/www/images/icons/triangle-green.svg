@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Instuction" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MED_Instuction_1280" transform="translate(-1086.000000, -742.000000)" fill="#B6D500">
+            <g id="popup_1" transform="translate(953.000000, 677.000000)">
+                <g id="Group-18" transform="translate(20.000000, 20.000000)">
+                    <path d="M122.61749,50.149785 L114.632215,45.1185922 C114.396147,44.9780471 114.103013,45.0014627 113.881625,45.0014627 C112.996072,45.0014627 113,45.6851661 113,45.8583792 L113,56.1415844 C113,56.2880221 112.996124,56.9985526 113.881625,56.9985526 C114.103013,56.9985526 114.396198,57.0218648 114.632215,56.8813714 L122.617439,51.8502303 C123.272867,51.4602294 123.159615,50.9999818 123.159615,50.9999818 C123.159615,50.9999818 123.272919,50.5397342 122.61749,50.149785 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

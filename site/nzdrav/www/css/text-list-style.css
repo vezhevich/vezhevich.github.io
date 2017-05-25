@@ -1,0 +1,20 @@
+.text-list-style__item {
+	font-size: 1.25rem;
+	line-height: 30px;
+	margin-bottom: 40px;
+	position: relative;
+	padding-left: 30px;
+}
+.text-list-style__item::before {
+	content: '';
+	background: url(../images/icons/triangle-blue.svg);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 13px;
+	position: absolute;
+	left: 0;
+	top: 7px;
+}
+.text-list-style__item strong {
+	display: block;
+}
