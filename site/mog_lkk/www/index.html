@@ -37,5 +37,17 @@
 	<script src="./js/jquery.js"></script>
 	<script src="./js/jquery.maskedinput.js"></script>
 	<script src="./js/main.js"></script>
+	<script>
+		<script>
+			$('input[type=tel]').on( 'focus', function(e){
+				if( window.innerWidth < 400)
+			  {
+			  	$('.main-wrapper').animate({
+			        scrollTop: $(this).offset().top
+			    }, 100);
+			  }
+			  });
+		</script>
+	</script>
 </body>
 </html>
