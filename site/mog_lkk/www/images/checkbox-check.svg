@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-750.000000, -464.000000)" id="checkbox-active" stroke="#1E1E1E">
+            <g transform="translate(750.000000, 463.000000)">
+                <g id="Group" transform="translate(0.000000, 1.000000)">
+                    <rect id="Rectangle-28" x="0.5" y="0.5" width="19" height="19" rx="3"></rect>
+                    <path d="M8.36632395,13.6680204 L8.29627729,13.5979738 L5.62562799,10.9273245 L5.41708533,10.7187818 L5,11.1358671 L5.20854266,11.3444098 L7.87919196,14.0150591 L8.01848662,14.1543538 L8.36632395,14.5021911 L8.57486662,14.2936484 L16.242887,6.62562799 L16.4514297,6.41708533 L16.0343444,6 L15.8258017,6.20854266 L8.36632395,13.6680204 Z" id="Line" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

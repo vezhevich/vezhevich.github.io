@@ -1,0 +1,102 @@
+html {
+	-webkit-font-smoothing: antialiased; 
+	height: 100%; 
+	font-size: 100%;
+}
+body {
+	font-family: "pfsans-light", sans-serif; 
+	height: 100%; 
+	font-size: 1rem;
+	background-color: #fff;
+}
+
+.container {
+	min-width: 320px;
+	height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*типографика*/
+h1 {
+	font-size: 2.1875rem;
+	color: #10496A;
+	line-height: 45px;
+	font-family: "pfslab-light";
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 30px;
+	color: #1E1E1E;
+}
+.main-form-text-medium {
+	font-weight: 600;
+}
+/*-------end-------*/
+
+/*кнопки*/
+.btn-default {
+	background: #FBBF34;
+	border-radius: 5px;
+	font-family: "pfsans-regular";
+	font-size: 1.25rem;
+	color: #10496A;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 13px 50px 10px 50px;
+	border: none;
+	text-decoration: none;
+}
+.btn-default:hover {
+	background-color: #FBB410;
+}
+.btn-mute {
+	background: #F3F3F3;
+	color: #A7A7A7;
+}
+.btn-mute:hover {
+	background: #F3F3F3;
+	color: #A7A7A7;
+}
+.btn-back {
+	text-decoration: none;
+	color: #00AEE6;
+}
+/*-------end-------*/
+
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 1.5625rem;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 0.9375rem;
+		line-height: 25px;
+	}
+	.btn-default {
+		padding-left: 28px;
+		padding-right: 28px;
+	}
+}
