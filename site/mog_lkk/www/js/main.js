@@ -5,7 +5,7 @@ if (window.jQuery) $(document).ready(function() {
 });
 
 function tel(){ 
-  $("input[type=tel]").mask("+7 999 999-9999"); 
+  $("input[type=tel]").mask("+7-999-999-9999"); 
   return false; 
 }
 
