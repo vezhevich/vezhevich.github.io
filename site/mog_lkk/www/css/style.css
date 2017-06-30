@@ -67,6 +67,25 @@
 	box-sizing: border-box;
 	box-shadow: none!important;
 	-webkit-appearance: none;
+	position: relative;
+}
+.main-form-wrapper-input-phone {
+	position: relative;
+	display: inline-block;
+}
+.main-form-wrapper-input-phone::before {
+	content: '+7';
+	position: absolute;
+	left: 16px;
+	top: 13px;
+	display: block;
+	font-size: 	1.25rem;
+	font-family: "pfsans-medium";
+	z-index: 100;
+	color: #1E1E1E;
+}
+.main-form-wrapper-input-phone .main-form-input {
+	padding-left: 40px;
 }
 .main-form-input--error {
 	border-color: #F04E23;

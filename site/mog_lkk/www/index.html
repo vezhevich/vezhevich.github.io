@@ -3,23 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Бесплатный Wi-fi доступ посетителям филиалов «Мособлгаз»</title>
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 	<div class="container">
 		<div class="main-wrapper">
 			<div class="main-logo-xs">
-				<a href="#"><img src="./images/logo-xs.svg" alt=""></a>
+				<a href="#"><img src="/images/logo-xs.svg" alt=""></a>
 			</div>
 			<div class="main-content">
 				<h1>Бесплатный Wi-fi доступ посетителям филиалов «Мособлгаз»</h1>
 				<form action="" class="main-form">
 					<p>Для доступа к сети укажите и подтвердите ваш номер мобильного телефона. Если у вас нет личного кабинета, он будет создан автоматически.</p>
 					<div class="main-form-title">Номер моб. телефона</div>
-					<div class="main-form-wrapper">
+					<div class="main-form-wrapper main-form-wrapper-input-phone">
 						<!-- main-form-input--error -->
-						<input id="tel" type="tel" class="main-form-input" placeholder="+7 (983) 2332-2345">
+						<input id="tel" type="tel" class="main-form-input" placeholder="(983) 2344-2341">
 						<!-- <div class="main-form-input-text--error">Некорректный номер телефона</div> -->
 					</div>
 					<div class="main-form-helper">
@@ -32,13 +32,13 @@
 		</div>
 		<div class="main-copy">© 2017 ГУП МО «Мособлгаз»</div>
 		<div class="main-logo">
-			<a href="#"><img src="./images/logo.svg" alt=""></a>
+			<a href="#"><img src="/images/logo.svg" alt=""></a>
 		</div>
 	</div>
-	<script src="./js/jquery.js"></script>
-	<script src="./js/jquery.maskedinput.js"></script>
-	<script src="./js/vanilla-masker.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/vanilla-masker.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 		function inputHandler(masks, max, event) {
 			var c = event.target;
@@ -49,15 +49,16 @@
 			c.value = VMasker.toPattern(v, masks[m]);
 		}
 
-		var telMask = ['+9 999-999-9999', '+9 999-999-9999'];
+		var telMask = ['999-999-9999', '999-999-9999'];
 		var tel = document.querySelector('#tel');
 		VMasker(tel).maskPattern(telMask[0]);
 		tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
 
-		var docMask = ['+9 999-999-9999', '+9 999-999-9999'];
+		var docMask = ['999-999-9999', '999-999-9999'];
 		var doc = document.querySelector('#doc');
 		VMasker(doc).maskPattern(docMask[0]);
 		doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
 	</script>
+
 </body>
 </html>
