@@ -66,6 +66,7 @@
 	width: 286px;
 	box-sizing: border-box;
 	box-shadow: none!important;
+	-webkit-appearance: none;
 }
 .main-form-input--error {
 	border-color: #F04E23;
