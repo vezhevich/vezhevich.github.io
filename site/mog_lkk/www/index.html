@@ -19,7 +19,7 @@
 					<div class="main-form-title">Номер моб. телефона</div>
 					<div class="main-form-wrapper">
 						<!-- main-form-input--error -->
-						<input type="tel" class="main-form-input" placeholder="+7 (983) 2332-2345">
+						<input id="tel" type="tel" class="main-form-input" placeholder="+7 (983) 2332-2345">
 						<!-- <div class="main-form-input-text--error">Некорректный номер телефона</div> -->
 					</div>
 					<div class="main-form-helper">
@@ -37,7 +37,30 @@
 	</div>
 	<script src="./js/jquery.js"></script>
 	<script src="./js/jquery.maskedinput.js"></script>
+	<script src="js/vanilla-masker.js"></script>
 	<script src="./js/main.js"></script>
+	<script>
+		<script>
+			function inputHandler(masks, max, event) {
+				var c = event.target;
+				var v = c.value.replace(/\D/g, '');
+				var m = c.value.length > max ? 1 : 0;
+				VMasker(c).unMask();
+				VMasker(c).maskPattern(masks[m]);
+				c.value = VMasker.toPattern(v, masks[m]);
+			}
+
+			var telMask = ['+9 999-999-9999', '+9 999-999-9999'];
+			var tel = document.querySelector('#tel');
+			VMasker(tel).maskPattern(telMask[0]);
+			tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
+
+			var docMask = ['+9 999-999-9999', '+9 999-999-9999'];
+			var doc = document.querySelector('#doc');
+			VMasker(doc).maskPattern(docMask[0]);
+			doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
+		</script>
+	</script>
 	<script>
 		$('.main-form-wrapper').on( 'click', function(e){
 			if( window.innerWidth <= 768)
