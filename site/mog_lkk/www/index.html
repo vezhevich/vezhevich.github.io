@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Бесплатный Wi-fi доступ посетителям филиалов «Мособлгаз»</title>
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 	<div class="container">
 		<div class="main-wrapper">
 			<div class="main-logo-xs">
-				<a href="#"><img src="./images/logo-xs.svg" alt=""></a>
+				<a href="#"><img src="/images/logo-xs.svg" alt=""></a>
 			</div>
 			<div class="main-content">
 				<h1>Бесплатный Wi-fi доступ посетителям филиалов «Мособлгаз»</h1>
@@ -18,8 +18,9 @@
 					<p>Для доступа к сети укажите и подтвердите ваш номер мобильного телефона. Если у вас нет личного кабинета, он будет создан автоматически.</p>
 					<div class="main-form-title">Номер моб. телефона</div>
 					<div class="main-form-wrapper">
-						<input type="tel" class="main-form-input main-form-input--error">
-						<div class="main-form-input-text--error">Некорректный номер телефона</div>
+						<!-- main-form-input--error -->
+						<input type="tel" class="main-form-input">
+						<!-- <div class="main-form-input-text--error">Некорректный номер телефона</div> -->
 					</div>
 					<div class="main-form-helper">
 						<input id="p1" type="checkbox" class="main-form-checkbox">
@@ -31,23 +32,21 @@
 		</div>
 		<div class="main-copy">© 2017 ГУП МО «Мособлгаз»</div>
 		<div class="main-logo">
-			<a href="#"><img src="./images/logo.svg" alt=""></a>
+			<a href="#"><img src="/images/logo.svg" alt=""></a>
 		</div>
 	</div>
-	<script src="./js/jquery.js"></script>
-	<script src="./js/jquery.maskedinput.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/main.js"></script>
 	<script>
-
-			$('input[type=tel]').on( 'click', function(e){
-				if( window.innerWidth <= 768)
-			  {
-			  	$('.main-wrapper').animate({
-			        scrollTop: $(this).offset().top
-			    }, 300);
-			  }
-			  });
-
+		$('input[type=tel]').on( 'click', function(e){
+			if( window.innerWidth <= 768)
+		  {
+		  	$('.main-wrapper').animate({
+		        scrollTop: $(this).offset().top
+		    }, 300);
+		  }
+		  });
 	</script>
 </body>
 </html>
