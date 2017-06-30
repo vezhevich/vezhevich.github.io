@@ -1,11 +1,11 @@
 if (window.jQuery) $(document).ready(function() {
-  if ($('input[type=tel]').length) tel();
+  if ($('input').length) tel();
     if ($('input').length) placeholder_off();
 
 });
 
 function tel(){ 
-  $("input[type=tel]").mask("+7-999-999-9999"); 
+  $("input").mask("+7-999-999-9999"); 
   return false; 
 }
 
