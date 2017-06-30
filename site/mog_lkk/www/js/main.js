@@ -1,8 +1,8 @@
-if (window.jQuery) $(document).ready(function() {
-  // if ($('input').length) tel();
-    if ($('input').length) placeholder_off();
+// if (window.jQuery) $(document).ready(function() {
+//   if ($('input').length) tel();
+//     if ($('input').length) placeholder_off();
 
-});
+// });
 
 // function tel(){ 
 //   $("input").mask("+7-999-999-9999"); 
@@ -10,12 +10,12 @@ if (window.jQuery) $(document).ready(function() {
 // }
 
 
-function placeholder_off(){ 
-  $('input').focus(function(){
-    $(this).data('placeholder',$(this).attr('placeholder'))
-    $(this).attr('placeholder','');
-  });
-  $('input,textarea').blur(function(){
-    $(this).attr('placeholder',$(this).data('placeholder'));
-  });  
-}
+// function placeholder_off(){ 
+//   $('input').focus(function(){
+//     $(this).data('placeholder',$(this).attr('placeholder'))
+//     $(this).attr('placeholder','');
+//   });
+//   $('input,textarea').blur(function(){
+//     $(this).attr('placeholder',$(this).data('placeholder'));
+//   });  
+// }
