@@ -40,26 +40,24 @@
 	<script src="./js/vanilla-masker.js"></script>
 	<script src="./js/main.js"></script>
 	<script>
-		<script>
-			function inputHandler(masks, max, event) {
-				var c = event.target;
-				var v = c.value.replace(/\D/g, '');
-				var m = c.value.length > max ? 1 : 0;
-				VMasker(c).unMask();
-				VMasker(c).maskPattern(masks[m]);
-				c.value = VMasker.toPattern(v, masks[m]);
-			}
+		function inputHandler(masks, max, event) {
+			var c = event.target;
+			var v = c.value.replace(/\D/g, '');
+			var m = c.value.length > max ? 1 : 0;
+			VMasker(c).unMask();
+			VMasker(c).maskPattern(masks[m]);
+			c.value = VMasker.toPattern(v, masks[m]);
+		}
 
-			var telMask = ['+9 999-999-9999', '+9 999-999-9999'];
-			var tel = document.querySelector('#tel');
-			VMasker(tel).maskPattern(telMask[0]);
-			tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
+		var telMask = ['+9 999-999-9999', '+9 999-999-9999'];
+		var tel = document.querySelector('#tel');
+		VMasker(tel).maskPattern(telMask[0]);
+		tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
 
-			var docMask = ['+9 999-999-9999', '+9 999-999-9999'];
-			var doc = document.querySelector('#doc');
-			VMasker(doc).maskPattern(docMask[0]);
-			doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
-		</script>
+		var docMask = ['+9 999-999-9999', '+9 999-999-9999'];
+		var doc = document.querySelector('#doc');
+		VMasker(doc).maskPattern(docMask[0]);
+		doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
 	</script>
 	<script>
 		$('.main-form-wrapper').on( 'click', function(e){
