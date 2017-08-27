@@ -3,7 +3,7 @@ $('.grid').masonry({
   itemSelector: '.grid-item',
   horizontalOrder: false,
   percentPosition: true,
-  initLayout: false,
+  initLayout: true,
   columnWidth: 1
 });
 
