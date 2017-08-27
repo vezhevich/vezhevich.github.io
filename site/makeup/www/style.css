@@ -88,6 +88,10 @@ h2 {
 	width: 100%;
 	display: block;
 }
+.grid {
+	margin: 0 auto;
+	width: auto;
+}
 
 /* планшет горизонтальный */
 @media screen and (max-width: 1399px) {

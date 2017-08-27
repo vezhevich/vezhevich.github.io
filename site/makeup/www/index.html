@@ -151,5 +151,17 @@
 	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/site.js"></script>
+	<script>
+			$(document).ready(function() {
+			$('.grid').masonry({
+			  horizontalOrder: false,
+			  initLayout: true,
+			  isFitWidth: true,
+			  itemSelector: '.grid-item'
+			  }).imagesLoaded(function() {
+			  $('.grid').masonry('reload');
+			  });
+			});	
+	</script>
 </body>
 </html>
