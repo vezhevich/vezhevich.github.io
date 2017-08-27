@@ -2,7 +2,6 @@ $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
   horizontalOrder: false,
-  percentPosition: true,
   initLayout: true,
   columnWidth: 1
 });
