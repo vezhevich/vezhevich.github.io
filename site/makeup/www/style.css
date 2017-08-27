@@ -89,10 +89,8 @@ h2 {
 	display: block;
 }
 .grid {
-	margin: 0 auto;
-	width: auto;
+	min-height: 100%!important;
 }
-
 /* планшет горизонтальный */
 @media screen and (max-width: 1399px) {
 	.gallery-list-item {
