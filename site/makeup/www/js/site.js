@@ -1,7 +1,8 @@
 $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
-  horizontalOrder: false
+  horizontalOrder: false,
+  percentPosition: true
 });
 
 $("[data-fancybox]").fancybox({
