@@ -3,7 +3,8 @@ $('.grid').masonry({
   itemSelector: '.grid-item',
   horizontalOrder: false,
   percentPosition: true,
-  initLayout: false
+  initLayout: false,
+  columnWidth: 1
 });
 
 $("[data-fancybox]").fancybox({
