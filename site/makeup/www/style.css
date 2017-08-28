@@ -85,12 +85,10 @@ h2 {
 	float: left;
 }
 .gallery-list-item img {
-	width: 100%;
+	max-width: 100%;
 	display: block;
 }
-.grid {
-	min-height: 100%!important;
-}
+
 /* планшет горизонтальный */
 @media screen and (max-width: 1399px) {
 	.gallery-list-item {
