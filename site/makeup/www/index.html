@@ -152,14 +152,18 @@
 		© Все права защищены 2017
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/site.js"></script>
 	<script>
-		$('.grid').masonry({
-		  itemSelector: '.grid-item'
-		});
+		var $container = $('.grid');
+		    $container.imagesLoaded( function() {
+		        $container.masonry({
+		            itemSelector: '.grid-item'
+		        });
+		        $container.addClass('loaded');
+		    });
 	</script>
 </body>
 </html>
