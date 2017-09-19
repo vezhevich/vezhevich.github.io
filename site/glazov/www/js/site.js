@@ -67,10 +67,13 @@ function anchor (){
 }
 
 function mason(){ 
-  $('.main-collections .grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true
-  }); 
+  var $container = $('.main-collections .grid');
+      $container.imagesLoaded(function() {
+          $container.masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true
+          });
+      });
 }
 
 function carousel(){ 
