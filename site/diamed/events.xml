@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<monthly>   
+    <event>
+        <id>1</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-1</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>    
+    <event>
+        <id>2</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-2</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>    
+    <event>
+        <id>3</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-3</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>    
+    <event>
+        <id>4</id>
+        <name>Выходной</name>
+        <startdate>2017-11-4</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>    
+    <event>
+        <id>5</id>
+        <name>Выходной</name>
+        <startdate>2017-11-5</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>
+    <event>
+        <id>6</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-6</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>7</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-7</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>8</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-8</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>9</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-9</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>10</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-10</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>11</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-11</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>12</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-12</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>13</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-13</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>14</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-14</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>15</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-15</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>16</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-16</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>17</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-17</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>18</id>
+        <name>Выходной</name>
+        <startdate>2017-11-18</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>19</id>
+        <name>Выходной</name>
+        <startdate>2017-11-19</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>
+    <event>
+        <id>20</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-20</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>21</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-21</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>22</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-22</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>23</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-23</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>24</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-24</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>25</id>
+        <name>Выходной</name>
+        <startdate>2017-11-25</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>26</id>
+        <name>Выходной</name>
+        <startdate>2017-11-26</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event> 
+    <event>
+        <id>27</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-27</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>28</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-28</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>29</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-29</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>     
+    <event>
+        <id>30</id>
+        <name>14:00–22:00</name>
+        <startdate>2017-11-30</startdate>
+        <starttime>9:00</starttime> <!-- optional (military time) -->
+        <endtime>13:00</endtime> <!-- optional (military time) -->
+        <color>#ffb128</color> <!-- optional -->
+    </event>  
+
+</monthly>

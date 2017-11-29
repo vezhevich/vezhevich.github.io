@@ -1,0 +1,607 @@
+/* шрифт Roboto */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/Roboto/Robotobold.woff") format("woff"),
+    url("../fonts/Roboto/Robotobold.ttf") format("truetype"),
+    url("../fonts/Roboto/Robotobold.woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* икончатый шрифт */
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello/font/fontello.eot"),
+  url("../fonts/fontello/font/fontello.svg"),
+  url("../fonts/fontello/font/fontello.ttf"),
+  url("../fonts/fontello/font/fontello.woff"),
+  url("../fonts/fontello/font/fontello.woff2");
+}
+
+/* табы на странице стоматологии */
+.tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  color: #808080;
+}
+
+.tab {
+  cursor: pointer;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'RobotoBold';
+  position: relative;
+  margin-right: 100px;
+}
+
+.tab::after {
+  content: '';
+  width: 100%;
+  height: 8px;
+  background-color: #9B9B9B;
+  display: block;
+  margin-top: 18px;
+}
+
+.tab strong {
+  display: block;
+  color: #1A1A1A;
+  letter-spacing: -1px;
+}
+
+.tab strong span {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.6px;
+  font-family: 'RalewayLight';
+}
+
+.tab:first-of-type {
+  margin-left: 0;
+  border-left-color: #fff; ё
+}
+
+.tab:last-of-type {
+  border-right-color: transparent; 
+}
+
+.tab-content {
+  width: 100%;
+  padding-top: 60px;
+  background-color: #fff;
+  -webkit-order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; 
+}
+
+.tabs .tabs-input, .tab-content {
+  display: none; 
+}
+
+.tabs .tabs-input:checked + .tab {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-right-color: #ddd; 
+}
+
+.tabs .tabs-input:checked + .tab::after {
+  background-color: #F26E20;
+}
+
+.tabs .tabs-input:checked + .tab + .tab-content {
+  display: block; 
+}
+
+/* Список услуг */
+.srv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  margin-bottom: 60px;
+}
+
+.srv-list__item::before {
+  display: none;
+} 
+
+.srv-list__item {
+  width: 33.3%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  font-family: 'RalewayRegular';
+  color: #1F2A6C;
+}
+
+.srv-list__item span {
+  width: 50px;
+  display: inline-block;
+  color: #247A85;
+}
+
+/* карточка специалиста */
+.item-media__wrapper {
+  margin-top: 30px;
+  font-size: 0;
+  margin-left: -30px;
+}
+
+.item-media {
+  width: 255px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.item-media--mod {
+  width: 250px;
+}
+
+.item-media__img {
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+.item-media__img img {
+  display: block;
+}
+
+.item-media__text {
+  margin-top: 20px;
+}
+
+.item-media__text-title {
+  padding-right: 30px;
+  margin-bottom: 8px;
+}
+
+.item-media__text-title a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1F2A6C;
+  letter-spacing: -0.45px;
+}
+
+.item-media__text-teaser {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  letter-spacing: -0.4px;
+}
+
+/* карта */
+.location-map {
+  margin-left: -30px;
+  margin-right: -30px;
+  position: relative;
+  min-height: 200px;
+  margin-top: 30px;
+}
+
+.location-map #map {
+  height: 450px;
+}
+
+.location-map #map2 {
+  height: 450px;
+}
+
+.location-map__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
+/* страница diamed-service */
+.l-diamed-service {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  width: 1170px!important;
+  box-sizing: border-box;
+}
+
+.l-diamed-service .layout {
+  display: flex;
+  width: 100%;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.l-diamed-service .layout .l-col {
+  width: 300px;
+  background-color: #F0F7F7;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.l-diamed-service .layout .r-col {
+  padding: 30px 30px 0 30px;
+  width: calc(100% - 300px);
+  box-sizing: border-box;
+}
+
+.l-diamed-service .layout .l-col::before {
+  content: '';
+  opacity: 0.03;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.00) 0%, #247884 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 36px;
+  display: block;
+
+}
+
+.h1-roboto, .h2-roboto, .h3-roboto, .h4-roboto {
+  font-family: 'RobotoBold';
+}
+
+.h1-roboto {
+  letter-spacing: -1px;
+}
+
+.h3-roboto {
+  letter-spacing: -0.75px;
+}
+
+.diamed-service-cont__img {
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.diamed-service-cont p {
+  margin-bottom: 30px;
+}
+
+.diamed-price {
+  margin-bottom: 40px;
+}
+
+.diamed-price__row {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'RalewayRegular';
+}
+
+.diamed-price__border {
+  display: flex;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 5px;
+  
+}
+
+
+.diamed-price__row:hover {
+  background-color: #E2F0F0;
+}
+
+.diamed-price__row:hover .diamed-price__border {
+  border-color: transparent;
+}
+
+.diamed-price__number {
+  margin-left: auto;
+}
+
+.diamed-service-cont .form-app {
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.diamed-service-cont h1 span {
+  color: #247A85;
+  margin-right: 15px;
+}
+
+/* табы в лефой колонке */
+.tabs-aside {
+  background-color: transparent;
+  padding-top: 30px;
+}
+
+.tabs-aside .tab-content {
+  background-color: transparent;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #247A85;
+  margin-top: -2px;
+}
+
+.tabs-aside .tab strong span {
+  display: none;
+}
+
+.tabs-aside .tab {
+  margin-right: 0;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'RalewayRegular';
+}
+
+.tabs-aside .tab strong {
+  color: #1F2A6C;
+}
+
+.tabs-aside .tab-one {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.tabs-aside .tab-two {
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.tabs-aside .tabs-input:checked + .tab {
+  background-color: transparent;
+}
+
+.tabs-aside .tabs-input:checked + .tab strong {
+  color: #000;
+}
+
+.tabs-aside .srv-list__item {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+
+.tabs-aside .srv-list__item a {
+  color: #000000;
+}
+
+.tabs-aside .srv-list__item--active a {
+  color: #F26E20;
+}
+
+
+.tabs-aside .srv-list__item span {
+  display: none;
+}
+
+.tabs-aside .tab::after {
+  height: 4px;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+/* страница специалиста */
+.list-specialist-mod .img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+.list-specialist-mod .img img {
+  max-width: 100px;
+}
+
+.list-specialist-mod .text p {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1F2A6C;
+}
+
+.list-specialist-mod .text .font-normal {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 'RalewayLight';
+}
+
+h3 {letter-spacing: -0.75px;}
+
+.diamed-spec-aside {
+  margin-top: 10px;
+}
+
+.diamed-spec-aside h3 {
+  margin-bottom: 30px;
+}
+
+.expert-mod .img {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 230px;
+}
+
+.expert-mod .img img {
+  display: block;
+  width: 100%;
+}
+
+.expert-mod .text__teaser {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  letter-spacing: -0.6px;
+  margin-bottom: 20px;
+  font-family: 'RalewayLight';
+}
+
+.expert-mod .text__teaser a {
+  color: #23296E!important;
+}
+
+.breadcrumbs span {
+  z-index: 5;
+}
+
+.expert-teaser {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.expert-teaser p {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.45px;
+  font-family: 'RalewayLight';
+}
+
+.diamed-specialist .form-app {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* календарь */
+#calendar {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#calendar .monthly-header {
+  display: none;
+}
+
+#calendar .monthly-day-blank {
+  background: url(../images/calendar.svg) no-repeat;
+  background-position: 50% 50%;
+}
+
+#calendar .monthly-day, .monthly-day-blank {
+  height: 70px!important;
+}
+
+#calendar .monthly-day-wrap {
+  display: block;
+  overflow: visible;
+  width: auto;
+}
+
+#calendar .monthly-week {
+  display: flex;
+}
+
+#calendar .monthly-day-title-wrap {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+#calendar .monthly-day-title-wrap div {
+  text-align: left;
+  color: #9B9B9B;
+  font-family: 'BrutalRegular';
+  text-transform: capitalize;
+}
+
+#calendar .monthly-day-number {
+  font-size: 18px;
+  font-family: 'BrutalRegular';
+  letter-spacing: -0.45px;
+  left: 10px;
+  top: 10px;
+}
+
+#calendar .monthly-day-event {
+  padding-top: 25px; 
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+#calendar .monthly-today .monthly-day-number {
+  background: none;
+  color: #000;
+}
+
+#calendar .monthly-today {
+  box-shadow: none;
+  background: #FAEDE5;
+  position: relative;
+}
+
+#calendar .monthly-today::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 1px solid #F26E20;
+  padding: 0;
+  z-index: 10;
+}
+
+#calendar .monthly-indicator-wrap {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  width: 100%;
+  background: none;
+}
+
+#calendar .monthly-indicator-wrap .monthly-event-indicator {
+  background: none!important;
+  text-align: left;
+}
+
+#calendar .monthly-event-indicator span {
+  color: #9B9B9B!important;
+}
+
+#calendar .monthly-today .monthly-event-indicator span {
+  color: #000!important;
+}
+
+#calendar .monthly-day .monthly-event-indicator span {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  font-family: 'BrutalRegular';
+}
+
+.tabsfix {
+  position: fixed;
+  top: 0;
+  padding-top: 60px;
+  width: 300px;
+}
+
+/* отзывы */
+
+.feedback-list-mod dl dt p {
+  font-family: 'RalewayLight';
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback-list-mod .feedback-list-mod__bottom p {
+  margin-bottom: 0;
+}
+
+.feedback-list-mod dt {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 20px;
+}
+
+.diamed-specialist h3 {
+  margin-bottom: 20px;
+}
