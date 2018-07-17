@@ -638,7 +638,7 @@ $(function() {
 
 //показываем фильтры в правой колонке на странице категории
 $(function() {
-    $(document).on('click touchstart', '.js-filters__item-title', function(e) {
+    $(document).on('click', '.js-filters__item-title', function(e) {
         e.preventDefault();
         $(this).toggleClass('filters__item-title_active');
     });
@@ -646,7 +646,7 @@ $(function() {
 
 //перебираем активные кнопки в фильтрах
 $(function() {
-    $(document).on('click touchstart', '.js-filters__group-btn-item', function() {
+    $(document).on('click', '.js-filters__group-btn-item', function() {
         $('.js-filters__group-btn-item').removeClass('filters__group-btn-item_active');
         $(this).addClass('filters__group-btn-item_active');
     });
