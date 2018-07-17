@@ -363,7 +363,7 @@ $(function() {
 
 //взрываем мобильное меню
 $(function() {
-    $(document).on('click', '.header-main__burder', function() {
+    $(document).on('click  touchstart', '.header-main__burder', function() {
         $('.mobile-menu').toggleClass('mobile-menu_show');
         $('.mobile-menu-wrapper').toggleClass('mobile-menu-wrapper_pull');
         $('body').toggleClass('body-fixed');
