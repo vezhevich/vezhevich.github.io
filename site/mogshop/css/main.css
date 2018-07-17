@@ -7039,7 +7039,7 @@ filters__btn-show_show {
     right: 0;
     padding: 20px 15px;
     display: block;
-    z-index: 2; }
+    z-index: 10; }
   .filters__pull_show-xs .filters__close_xs div::before {
     margin: 0;
     width: auto;
