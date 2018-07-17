@@ -734,7 +734,7 @@ $(function() {
         $('body').addClass('body-fixed');
     });
 
-    $(document).on('click', '.js-filters__close_xs', function() {
+    $(document).on('click touchstart', '.js-filters__close_xs', function() {
         $('body').removeClass('body-fixed');
         $('.filters__pull').removeClass('filters__pull_show-xs');
     });
