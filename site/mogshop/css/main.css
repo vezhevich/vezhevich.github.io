@@ -4624,7 +4624,8 @@ p {
     transition: .2s ease-in-out;
     -webkit-box-shadow: inset -43px -8px 23px -39px rgba(0, 0, 0, 0.1);
             box-shadow: inset -43px -8px 23px -39px rgba(0, 0, 0, 0.1);
-    display: block; }
+    display: block;
+    -webkit-overflow-scrolling: touch; }
   .mobile-menu-wrapper_pull {
     -webkit-transform: translate(270px, 0);
         -ms-transform: translate(270px, 0);
