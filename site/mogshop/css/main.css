@@ -2215,7 +2215,7 @@ p {
   font-family: "pfagoraslabpro-light";
   color: #fff;
   background-color: #F5A623;
-  background-image: url("/images/pattern.png");
+  background-image: url("../images/pattern.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3187,7 +3187,7 @@ p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(/images/round-badge.svg); }
+  background: url(../images/round-badge.svg); }
 
 .product-card__gift span::before {
   margin: -10px 0 0 0;
@@ -6660,16 +6660,16 @@ input[type="checkbox"].input + label::before, input[type="radio"].input + label:
   left: 0; }
 
 input[type="checkbox"].input + label::before {
-  background-image: url(/images/icons/checkbox.svg); }
+  background-image: url(../images/icons/checkbox.svg); }
 
 input[type="checkbox"].input:checked + label::before {
-  background-image: url(/images/icons/checkbox-in.svg); }
+  background-image: url(../images/icons/checkbox-in.svg); }
 
 input[type="radio"].input + label::before {
-  background-image: url(/images/icons/radio.svg); }
+  background-image: url(../images/icons/radio.svg); }
 
 input[type="radio"].input:checked + label::before {
-  background-image: url(/images/icons/radio-in.svg); }
+  background-image: url(../images/icons/radio-in.svg); }
 
 .header-main_mini .header-main__phone a {
   font-size: 1.3333rem;
