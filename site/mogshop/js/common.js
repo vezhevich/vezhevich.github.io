@@ -677,7 +677,7 @@ $(function() {
 
 //показываем фильтры справа
 $(function() {
-    $(document).on('click touchstart', '.js-filters__btn-show', function() {
+    $(document).on('click', '.js-filters__btn-show', function() {
         $(this).toggleClass('filters__btn-show_active');
         $('body').toggleClass('body-fixed');
         $('.filters__pull').toggleClass('filters__pull_show');
@@ -698,20 +698,20 @@ $(window).on('load ready resize', function () {
         $('.sorter').hide();
         $('.sorter').addClass('sorter_hide');
 
-        $(document).on('click touchstart', '.js-sorter', function() {
+        $(document).on('click', '.js-sorter', function() {
             $('.sorter__left .dropdown-menu').addClass('dropdown-menu_show-xs');
             $('body').addClass('body-fixed');
             $('.sorter').show();
             $('.sorter').removeClass('sorter_hide');
         });
 
-        $(document).on('click touchstart', '.dropdown .dropdown-menu li', function() {
+        $(document).on('click', '.dropdown .dropdown-menu li', function() {
             $('.dropdown .dropdown-menu').removeClass('dropdown-menu_show-xs');
             $('.sorter').hide();
             $('.sorter').addClass('sorter_hide');
         });
 
-        $(document).on('click touchstart', '.js-dropdown-menu__close', function() {
+        $(document).on('click', '.js-dropdown-menu__close', function() {
             $('.sorter__left .dropdown-menu').removeClass('dropdown-menu_show-xs');
             $('body').removeClass('body-fixed');
             $('.sorter').hide();
@@ -720,7 +720,7 @@ $(window).on('load ready resize', function () {
     } else {
         $('.sorter').show();
         $('.sorter').removeClass('sorter_hide');
-        $(document).on('click touchstart', '.dropdown .dropdown-menu li', function() {
+        $(document).on('click', '.dropdown .dropdown-menu li', function() {
             $('.sorter').show();
             $('.sorter').removeClass('sorter_hide');
         });
@@ -729,12 +729,12 @@ $(window).on('load ready resize', function () {
 
 //показываем фильтрацию на мобиле
 $(function() {
-    $(document).on('click touchstart', '.js-filter', function() {
+    $(document).on('click', '.js-filter', function() {
         $('.filters__pull').addClass('filters__pull_show-xs');
         $('body').addClass('body-fixed');
     });
 
-    $(document).on('click touchstart', '.js-filters__close_xs', function() {
+    $(document).on('click', '.js-filters__close_xs', function() {
         $('body').removeClass('body-fixed');
         $('.filters__pull').removeClass('filters__pull_show-xs');
     });
