@@ -95,6 +95,14 @@
 <glyph glyph-name="catalog-square-1" unicode="&#xe853;" d="M0 850h400v-400h-400z m0-600h400v-400h-400z m600 600h400v-400h-400z m0-600h400v-400h-400z" horiz-adv-x="1000" />
 
 <glyph glyph-name="catalog-list-1" unicode="&#xe854;" d="M0 850h1000v-200h-1000z m0-400h1000v-200h-1000z m0-400h1000v-200h-1000z" horiz-adv-x="1000" />
+
+<glyph glyph-name="plus" unicode="&#xe855;" d="M441 791a59 59 0 1 0 118 0v-882a59 59 0 1 0-118 0v882z m500-382a59 59 0 0 0 0-118h-882a59 59 0 1 0 0 118h882z" horiz-adv-x="1000" />
+
+<glyph glyph-name="minus" unicode="&#xe856;" d="M294 262a294 294 0 1 0 0 588h4412a294 294 0 1 0 0-588h-4412z" horiz-adv-x="5000" />
+
+<glyph glyph-name="sign" unicode="&#xe857;" d="M1250 100v-250h-1250v250h1250z m0 750v-250h-1250v250h1250z" horiz-adv-x="1250" />
+
+<glyph glyph-name="check" unicode="&#xe858;" d="M330 15l731 731 21 21 41-41-21-21-751-751-21-21-27 28-21 20-262 262-20 20 41 41 20-20 262-262 7-7z" horiz-adv-x="1167" />
 </font>
 </defs>
 </svg>

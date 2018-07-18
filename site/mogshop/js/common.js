@@ -1,6 +1,10 @@
 //закрываем банненр над шапкой
 $(function() {
     $(document).on('click touchstart', '.sale-top__close', function() {
+        // $.cookie('sale-top', 'hidden', {
+        //     expires: 1000,
+        //     path: '/',
+        // });
         $('.sale-top').addClass('sale-top_hide');
     });
 });
@@ -624,7 +628,7 @@ $(function() {
     });
 });
 
-//tooltip на странице корзины
+//tooltip ошибки поля input на странице корзины
 $(function() {
     $('.js-input-error').tooltipster({
         animation: 'fade',
@@ -632,6 +636,18 @@ $(function() {
         content: $('#tooltip-promo'),
         side: ['left'],
         theme: 'tooltip-promo',
+        maxWidth: '240'
+    });
+});
+
+//tooltip на иконке вопроса на странице корзины
+$(function() {
+    $('.js-promo-tooltip').tooltipster({
+        animation: 'fade',
+        delay: 200,
+        content: $('#tooltip-promo-question'),
+        side: ['bottom'],
+        theme: 'tooltip-bottom',
         maxWidth: '240'
     });
 });
@@ -741,6 +757,8 @@ $(function() {
     });
 });
 
+//выезжающие справа на планшете фильтры
+//требуют доработки
 $(function() {
     $('.filters__result').on('click', function(){
         var elem = $(this);
@@ -749,6 +767,46 @@ $(function() {
         var heightElement = elemOffset - winScroll;
         console.log(heightElement);
 
-        $('.filters__pull').css('top',heightElement)
+        $('.filters__pull').css('top', heightElement);
+        $('.filters__pull').css('height', "calc(100% - " + heightElement+"px)");
     })
+});
+
+// маска для телефона
+$(function() {
+    if ($(document).find('.input-mask').length) {
+        var selector = document.getElementsByClassName("input-mask");
+
+        var im = new Inputmask({"mask": "+7 (999) 999-99-99"});
+        im.mask(selector);
+    }
+});
+
+//автовысота textarea
+$(function() {
+    autosize(document.querySelectorAll('textarea'));
+});
+
+//показываем подробности в списке услуг в модальном окне
+$(function() {
+    $(document).on('click', '.js-service-list__teaser-link', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('service-list__teaser-link_active');
+        $(this).prev('.service-list__teaser-wrapper').toggleClass('service-list__teaser-wrapper_show');
+    });
+});
+
+//добавляем/удаляем услугу к заказу в модальном окне
+$(function() {
+    $(document).on('click', '.js-service-list__add', function(e) {
+        e.preventDefault();
+        $(this).addClass('service-list__add_active');
+        $(this).next('.service-list__remove').addClass('service-list__remove_show');
+    });
+
+    $(document).on('click', '.js-service-list__remove', function(e) {
+        e.preventDefault();
+        $(this).removeClass('service-list__remove_show');
+        $(this).prev('.service-list__add').removeClass('service-list__add_active');
+    });
 });

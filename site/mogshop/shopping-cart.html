@@ -82,11 +82,11 @@
         </header>
         <div class="mobile-menu-wrapper mobile-menu-wrapper_after-header">
             <div class="l-wrapper-centered">
-                    <div class="breadcrumbs breadcrumbs_inner">
-                        <a class="breadcrumbs__item" href="#"><span class="icon-arrow_small"></span>Вернуться к покупкам</a>
-                    </div>
-                    <h2 class="title_blue">Корзина</h2>
-                    <div class="shopping-cart">
+                <div class="breadcrumbs breadcrumbs_inner">
+                    <a class="breadcrumbs__item" href="#"><span class="icon-arrow_small"></span>Вернуться к покупкам</a>
+                </div>
+                <h2 class="title_blue">Корзина</h2>
+                <div class="shopping-cart">
                             <div class="shopping-cart__item">
                                 <div class="shopping-cart__img">
                                     <img src="./images/view/product1.png" alt="">
@@ -95,10 +95,10 @@
                                     <div class="shopping-cart__text-top">
                                         <div class="shopping-cart__title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
                                         <div class="shopping-cart__qnt">
-                                            <div class="shopping-cart__qnt-minus shopping-cart__qnt-btn">-</div>
+                                            <div class="shopping-cart__qnt-minus shopping-cart__qnt-btn"><span class="icon-minus"></span></div>
                                             <input type="text" class="input shopping-cart__qnt-input" value="1">
                                             <span class="shopping-cart__qnt-in">шт</span>
-                                            <div class="shopping-cart__qnt-plus shopping-cart__qnt-btn">+</div>
+                                            <div class="shopping-cart__qnt-plus shopping-cart__qnt-btn"><span class="icon-plus"></span></div>
                                         </div>
                                         <div class="shopping-cart__cost">
                                             <span>112 497 р.</span>
@@ -107,8 +107,8 @@
                                     </div>
                                     <div class="shopping-cart__text-bottom">
                                         <div class="shopping-cart__group-link">
-                                            <a href="#">Выбрать услуги (8)</a>
-                                            <a href="#">Выбрать аксессуары</a>
+                                            <a class="js-modal" href="#modal-service">Выбрать услуги (8)</a>
+                                            <a class="js-modal" href="#modal-accessories">Выбрать аксессуары</a>
                                         </div>
                                         <div class="shopping-cart__helper">Оплата возможна после доставки!</div>
                                     </div>
@@ -125,10 +125,10 @@
                                     <div class="shopping-cart__text-top">
                                         <div class="shopping-cart__title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
                                         <div class="shopping-cart__qnt">
-                                            <div class="shopping-cart__qnt-minus shopping-cart__qnt-btn">-</div>
+                                            <div class="shopping-cart__qnt-minus shopping-cart__qnt-btn"><span class="icon-minus"></span></div>
                                             <input type="text" class="input shopping-cart__qnt-input" value="1">
                                             <span class="shopping-cart__qnt-in">шт</span>
-                                            <div class="shopping-cart__qnt-plus shopping-cart__qnt-btn">+</div>
+                                            <div class="shopping-cart__qnt-plus shopping-cart__qnt-btn"><span class="icon-plus"></span></div>
                                         </div>
                                         <div class="shopping-cart__cost">
                                             <span> <span class="shopping-cart__cost-old">110 000 р.</span> 112 497 р.</span>
@@ -158,10 +158,10 @@
                                     <div class="shopping-cart__text-top">
                                         <div class="shopping-cart__title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
                                         <div class="shopping-cart__qnt">
-                                            <div class="shopping-cart__qnt-minus shopping-cart__qnt-btn">-</div>
+                                            <div class="shopping-cart__qnt-minus shopping-cart__qnt-btn"><span class="icon-minus"></span></div>
                                             <input type="text" class="input shopping-cart__qnt-input" value="1">
                                             <span class="shopping-cart__qnt-in">шт</span>
-                                            <div class="shopping-cart__qnt-plus shopping-cart__qnt-btn">+</div>
+                                            <div class="shopping-cart__qnt-plus shopping-cart__qnt-btn"><span class="icon-plus"></span></div>
                                         </div>
                                         <div class="shopping-cart__cost">
                                             <span>112 497 р.</span>
@@ -169,13 +169,13 @@
                                         </div>
                                     </div>
                                     <div class="shopping-cart__text-bottom">
-                                        <div class="shopping-car__service-list">
+                                        <div class="shopping-cart__service-list">
                                             <div class="table-two-cols__wrapper">
                                                 <div class="table-two-cols">
                                                     <div class="table-two-cols__row">
                                                         <div class="table-two-cols__col table-two-cols__col-first">
                                                             <span class="table-two-cols__wrapper-text">
-                                                                <input class="input" id="s-list1" type="checkbox" name="params" />
+                                                                <input class="input" id="s-list1" type="checkbox" name="params" checked/>
                                                                 <label for="s-list1">Монтаж оборудования</label>
                                                             </span>
                                                         </div>
@@ -187,7 +187,7 @@
                                                     <div class="table-two-cols__row">
                                                         <div class="table-two-cols__col table-two-cols__col-first">
                                                             <span class="table-two-cols__wrapper-text">
-                                                                <input class="input" id="s-list2" type="checkbox" name="params" />
+                                                                <input class="input" id="s-list2" type="checkbox" name="params" checked/>
                                                                 <label for="s-list2">Подключение оборудования</label>
                                                             </span>
                                                         </div>
@@ -210,8 +210,8 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="shopping-cart__order-info">
-                        <div class="shopping-cart__order-info-left">
+                <div class="order-info">
+                        <div class="order-info__left">
                             <div class="shopping-cart__promo">
                                 <div class="shopping-cart__promo-title">Промо-код</div>
                                 <div class="shopping-cart__promo-wrapper">
@@ -220,7 +220,7 @@
                                         <input type="text" class="input shopping-cart__promo-input">
                                         <div class="shopping-cart__promo-helper">Скидка 4 590 рублей</div>
                                     </div>
-                                    <div class="shopping-cart__promo-tooltip">?</div>
+                                    <div class="shopping-cart__promo-tooltip js-promo-tooltip">?</div>
                                 </div>
                                 <div class="shopping-cart__promo-card">
                                     <a href="#">У меня есть карта АО Мособлгаз</a>
@@ -231,22 +231,136 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="shopping-cart__order-info-right">
-                            <div class="shopping-cart__order-info-cost">
+                        <div class="order-info__right">
+                            <div class="order-info__cost">
                                 <span>К оплате</span>
                                 149 577 р.
                             </div>
-                            <div class="shopping-cart__order-info-btn">
+                            <div class="order-info__btn">
                                 <a href="#" class="btn-default">Оформить заказ</a>
                             </div>
-                            <div class="shopping-cart__order-info-helper">Доставка не включена в указанную сумму.  Она будет рассчитана при оформлении заказа.</div>
+                            <div class="order-info__helper">Доставка не включена в указанную сумму.  Она будет рассчитана при оформлении заказа.</div>
                         </div>
                     </div>
                 <h2 class="title_blue">Оформление заказа</h2>
+                <div class="order">
+                    <div class="order__bio">
+                        <div class="order__bio-info">
+                            <div class="order__bio-info-item">
+                                <div class="label-default">Ваше имя</div>
+                                <!--input-default_error для ошибки-->
+                                <input type="text" class="input input-default">
+                            </div>
+                            <div class="order__bio-info-item">
+                                <div class="label-default">Номер телефона</div>
+                                <!--input-default_error для ошибки-->
+                                <input type="tel" class="input input-default input-mask">
+                            </div>
+                            <div class="order__bio-info-item">
+                                <div class="label-default">E-mail</div>
+                                <!--input-default_error для ошибки-->
+                                <input type="email" class="input input-default">
+                            </div>
+                        </div>
+                        <div class="order__bio-auth">
+                            <div class="order__bio-auth-text">Авторизуйтесь на сайте, и мы сохраним  всю информацию о заказе и автоматически заполним ваши контактные данные.</div>
+                            <div class="order__bio-auth-social">
+                                <a href="#">Авторизация</a>
+                                <a class="order__bio-auth-social-icon" href="#"><img src="./images/vk.svg" alt=""></a>
+                                <a class="order__bio-auth-social-icon" href="#"><img src="./images/fb.svg" alt=""></a>
+                                <a class="order__bio-auth-social-icon" href="#"><img src="./images/tw.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__delivery">
+                        <div class="label-default order__delivery-label">Способ получения заказа</div>
+                        <div class="order__delivery-item">
+                            <input class="input" id="d1" type="radio" name="delivery" checked/>
+                            <label for="d1">Доставка</label>
+                        </div>
+                        <div class="order__delivery-item">
+                            <input class="input" id="d2" type="radio" name="delivery" />
+                            <label for="d2">Самовывоз</label>
+                        </div>
+                        <div class="order__delivery-address">
+                            <div class="order__delivery-item order__delivery-item_modified-width">
+                                <div class="label-default">Укажите населённый пункт</div>
+                                <!--input-default_error для ошибки-->
+                                <input type="text" class="input input-default">
+                            </div>
+                            <div class="order__delivery-item">
+                                <div class="label-default">Введите адрес доставки</div>
+                                <textarea class="textarea-default" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="order__delivery-time">
+                            <div class="order__delivery-time-wrapper order__delivery-time-date">
+                                <div class="label-default">Выберите дату доставки</div>
+                                <div class="date-picker">
+                                    <input type="text" class="input input-default">
+                                </div>
+                            </div>
+                            <div class="order__delivery-time-wrapper order__delivery-time-interval clearfix">
+                                <div class="label-default">Укажите интервал доставки</div>
+                                <select name="" id="" class="custom-select">
+                                    <option value="">с 12.00 до 13.30</option>
+                                    <option value="">с 14.00 до 14.30</option>
+                                    <option value="">с 15.00 до 15.30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="order__delivery-cost">
+                            <span>Стоимость доставки:</span> 1099 р.
+                        </div>
+                        <div class="order__payment">
+                            <div class="order__payment-item clearfix">
+                                <div class="label-default">Выберите способ оплаты</div>
+                                <select name="" id="" class="custom-select">
+                                    <option value="">Банковской картой при получении заказа</option>
+                                    <option value="">Банковской картой при получении заказа</option>
+                                    <option value="">Банковской картой при получении заказа</option>
+                                </select>
+                            </div>
+                            <div class="order__payment-item">
+                                <div class="label-default">Комментарий (необязательное поле)</div>
+                                <textarea name="" id="" cols="30" rows="10" class="textarea-default textarea" placeholder="Оставьте комментарий к заказу"></textarea>
+                            </div>
+                        </div>
+                        <div class="order-summ">
+                            <div class="order-info__cost">
+                                <span>К оплате</span>
+                                149 577 р.
+                            </div>
+                            <div class="order-info__btn">
+                                <a href="#" class="btn-default">Оформить заказ</a>
+                            </div>
+                            <div class="order-info__helper">120 бонусных рублей за этот заказ</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
             <div class="order-panel">
                 <div class="container">
-                    sdf
+                    <div class="order-panel__item">
+                        <span>4 товара</span>
+                        <span>149 087 р.</span>
+                    </div>
+                    <div class="order-panel__item">
+                        <span>2 услуги</span>
+                        <span>4 100 р.</span>
+                    </div>
+                    <div class="order-panel__item order-panel__item_inner">
+                        <span>Промо-код</span>
+                        <span>4 590 р.</span>
+                    </div>
+                    <div class="order-panel__item">
+                        <span>Доставка</span>
+                        <span>1 099 р.</span>
+                    </div>
+                    <div class="order-panel__item order-panel__item_last">
+                        <span>Сумма к оплате</span>
+                        <span>153 677 р.</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,6 +445,175 @@
         <br>
         Введённый промо-код не существует.
     </span>
+    <span id="tooltip-promo-question" class="tooltip-promo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae, voluptatum. Aliquam cupiditate debitis dolor dolore ea fugit in laborum, magnam necessitatibus obcaecati odio, qui reiciendis sequi soluta veritatis vitae?
+    </span>
+</div>
+<!--модальное окно-->
+<div id="modal-accessories" class="mfp-hide modal-default">
+    <div class="modal-default__wrapper">
+        <h4>Аксессуары</h4>
+        <div class="filters__group-btn filters__group-btn_row">
+            <span class="js-filters__group-btn-item btn-default btn-bordered-round">Для подключения</span>
+            <span class="js-filters__group-btn-item btn-default btn-bordered-round">Для эксплуатации</span>
+            <span class="js-filters__group-btn-item btn-default btn-bordered-round">Для очистки</span>
+            <span class="js-filters__group-btn-item btn-default btn-bordered-round">Для ремонта</span>
+        </div>
+        <div class="product-card-horizontal product-card-horizontal_two-cols">
+            <div class="product-card-horizontal__item">
+                <div class="product-card-horizontal__img">
+                    <img src="./images/view/product-horizontal.jpg" alt="">
+                </div>
+                <div class="product-card-horizontal__text">
+                    <div class="product-card-horizontal__title"><a class="js-modal" href="#modal-accessories">Газовый композитный баллон Ragasco 24,5 л</a></div>
+                    <div class="product-card-horizontal__bottom">
+                        <div class="product-card-horizontal__cost">7 690 р.</div>
+                        <div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-horizontal__item">
+                <div class="product-card-horizontal__img">
+                    <img src="./images/view/product-horizontal2.jpg" alt="">
+                </div>
+                <div class="product-card-horizontal__text">
+                    <div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+                    <div class="product-card-horizontal__bottom">
+                        <div class="product-card-horizontal__cost">7 690 р.</div>
+                        <div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-horizontal__item">
+                <div class="product-card-horizontal__img">
+                    <img src="./images/view/product-horizontal.jpg" alt="">
+                </div>
+                <div class="product-card-horizontal__text">
+                    <div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+                    <div class="product-card-horizontal__bottom">
+                        <div class="product-card-horizontal__cost">7 690 р.</div>
+                        <div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-horizontal__item">
+                <div class="product-card-horizontal__img">
+                    <img src="./images/view/product-horizontal2.jpg" alt="">
+                </div>
+                <div class="product-card-horizontal__text">
+                    <div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+                    <div class="product-card-horizontal__bottom">
+                        <div class="product-card-horizontal__cost">7 690 р.</div>
+                        <div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-horizontal__item">
+                <div class="product-card-horizontal__img">
+                    <img src="./images/view/product-horizontal.jpg" alt="">
+                </div>
+                <div class="product-card-horizontal__text">
+                    <div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+                    <div class="product-card-horizontal__bottom">
+                        <div class="product-card-horizontal__cost">7 690 р.</div>
+                        <div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-horizontal__item">
+                <div class="product-card-horizontal__img">
+                    <img src="./images/view/product-horizontal2.jpg" alt="">
+                </div>
+                <div class="product-card-horizontal__text">
+                    <div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+                    <div class="product-card-horizontal__bottom">
+                        <div class="product-card-horizontal__cost">7 690 р.</div>
+                        <div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-default__content-center">
+            <a href="#" class="btn_blue btn-default">Показать еще</a>
+        </div>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="modal-service" class="mfp-hide modal-default">
+    <div class="modal-default__wrapper">
+        <h4>Услуги</h4>
+        <div class="service-list">
+            <div class="service-list__item">
+                <div class="service-list__cost">1 990 р.</div>
+                <div class="service-list__title">Подключение оборудования</div>
+                <div class="service-list__teaser">
+                    <div class="service-list__teaser-wrapper">
+                        Услуга « Подключение оборудования» включает в себя подключение к источнику водоснабжения и газовой сети. Необходимое для подключения оборудование не входит в стоимость подключения.  
+                        <br>
+                        <br>
+                        Вы сможете назначить удобный день и время подключения после оформления  и оплаты заказа. Ближайшая доступная дата подключения: 21.07.2018 года.
+                    </div>
+                    <div class="service-list__teaser-link js-service-list__teaser-link">
+                        <a class="service-list__teaser-link_show" href="#">Подробнее</a>
+                        <a class="service-list__teaser-link_hide" href="#">Скрыть подробности</a>
+                    </div>
+                    <div class="service-list__bottom">
+                        <a class="service-list__add js-service-list__add" href="#">
+                            <span class="service-list__add_show">Добавить к заказу</span>
+                            <span class="service-list__add_hide">Добавлено</span>
+                        </a>
+                        <a class="service-list__remove js-service-list__remove" href="#">Удалить услугу</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-list__item">
+                <div class="service-list__cost">1 990 р.</div>
+                <div class="service-list__title">Монтаж оборудования</div>
+                <div class="service-list__teaser">
+                    <div class="service-list__teaser-wrapper">
+                        Услуга « Подключение оборудования» включает в себя подключение к источнику водоснабжения и газовой сети. Необходимое для подключения оборудование не входит в стоимость подключения.  
+                        <br>
+                        <br>
+                        Вы сможете назначить удобный день и время подключения после оформления  и оплаты заказа. Ближайшая доступная дата подключения: 21.07.2018 года.
+                    </div>
+                    <div class="service-list__teaser-link js-service-list__teaser-link">
+                        <a class="service-list__teaser-link_show" href="#">Подробнее</a>
+                        <a class="service-list__teaser-link_hide" href="#">Скрыть подробности</a>
+                    </div>
+                    <div class="service-list__bottom">
+                        <a class="service-list__add js-service-list__add" href="#">
+                            <span class="service-list__add_show">Добавить к заказу</span>
+                            <span class="service-list__add_hide">Добавлено</span>
+                        </a>
+                        <a class="service-list__remove js-service-list__remove" href="#">Удалить услугу</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-list__item">
+                <div class="service-list__cost">1 990 р.</div>
+                <div class="service-list__title">Продление гарантийного срока на 2 года</div>
+                <div class="service-list__teaser">
+                    <div class="service-list__teaser-wrapper">
+                        Услуга « Подключение оборудования» включает в себя подключение к источнику водоснабжения и газовой сети. Необходимое для подключения оборудование не входит в стоимость подключения.  
+                        <br>
+                        <br>
+                        Вы сможете назначить удобный день и время подключения после оформления  и оплаты заказа. Ближайшая доступная дата подключения: 21.07.2018 года.
+                    </div>
+                    <div class="service-list__teaser-link js-service-list__teaser-link">
+                        <a class="service-list__teaser-link_show" href="#">Подробнее</a>
+                        <a class="service-list__teaser-link_hide" href="#">Скрыть подробности</a>
+                    </div>
+                    <div class="service-list__bottom">
+                        <a class="service-list__add js-service-list__add" href="#">
+                            <span class="service-list__add_show">Добавить к заказу</span>
+                            <span class="service-list__add_hide">Добавлено</span>
+                        </a>
+                        <a class="service-list__remove js-service-list__remove" href="#">Удалить услугу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>

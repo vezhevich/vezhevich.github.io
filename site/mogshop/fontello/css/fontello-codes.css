@@ -44,3 +44,7 @@
 .icon-star:before { content: '\e852'; } /* '' */
 .icon-catalog-square-1:before { content: '\e853'; } /* '' */
 .icon-catalog-list-1:before { content: '\e854'; } /* '' */
+.icon-plus:before { content: '\e855'; } /* '' */
+.icon-minus:before { content: '\e856'; } /* '' */
+.icon-sign:before { content: '\e857'; } /* '' */
+.icon-check:before { content: '\e858'; } /* '' */
