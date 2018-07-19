@@ -100,15 +100,80 @@
             <div class="header-main__middle">
                 <div class="container">
                     <div class="header-main__logo">
-                        <a href="#"><img src="./images/logo.svg" alt=""></a>
+                        <a href="/"><img src="./images/logo.svg" alt=""></a>
                         <a class="header-main__logo_xs" href="/"><img src="./images/logo-xs.svg" alt=""></a>
                     </div>
                     <div class="header-main__search">
-                        <input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
-                        <button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+                        <div class="header-main__search-close_xs js-header-main__search-close_xs"><span class="icon-close"></span></div>
+                        <div class="header-main__search-wrapper">
+                            <input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
+                            <button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+                        </div>
+                        <div class="header-main__search-result">
+                            <div class="header-main__search-title">Товары</div>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product1.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product1.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product1.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <div class="header-main__search-title">Категории</div>
+                            <div class="header-main__search-result-list">
+                                <a href="#" class="header-main__search-result-list-item">Водонагреватели Electrolux <span>20 товаров</span></a>
+                                <a href="#" class="header-main__search-result-list-item">Очистка и ионизация Electrolux <span>40 товаров</span></a>
+                                <a href="#" class="header-main__search-result-list-item">Грили и барбекю Electrolux <span>40 товаров</span></a>
+                                <a href="#" class="header-main__search-result-list-item">Увлажнители и мойки Electrolux <span>40 товаров</span></a>
+                            </div>
+                            <a href="#" class="header-main__search-more">
+                                Смотреть все результаты <span>(70)</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="header-main__info">
-                        <div class="header-main__search-xs"></div>
+                        <div class="header-main__search-xs js-header-main__search-xs"></div>
                         <a href="#" class="header-main__info-item header-main__favorite">
                             <span class="header-main__info-icon icon-lois"></span>
                             <span class="header-main__info-counter">3</span>
@@ -155,11 +220,17 @@
                     <div class="l-two-cols__left filters__pull">
                         <ul class="catalog-list catalog-list_category list_unstyle">
                             <li class="catalog-list__item">
-                                <a href="#">Автохолодильники</a>
+                                <a href="#">Кухонные плиты</a>
                                 <ul class="list_unstyle catalog-list-lv2">
                                     <li><a href="#">Полноразмерные</a></li>
                                     <li><a href="#">Варочные панели</a></li>
-                                    <li><a href="#">Настольные</a></li>
+                                    <li>
+                                        <a class="active" href="#">Настольные</a>
+                                        <ul class="list_unstyle catalog-list-lv3">
+                                            <li><a href="#">Газовые</a></li>
+                                            <li><a href="#">Электрические</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -330,7 +401,13 @@
                                 <ul class="list_unstyle catalog-list-lv2">
                                     <li><a href="#">Полноразмерные <span>53</span></a></li>
                                     <li><a href="#">Варочные панели <span>41</span></a></li>
-                                    <li><a href="#">Настольные <span>40</span></a></li>
+                                    <li>
+                                        <a class="active" href="#">Настольные <span>40</span></a>
+                                        <ul class="list_unstyle catalog-list-lv3">
+                                            <li><a href="#">Газовые <span>10</span></a></li>
+                                            <li><a href="#">Электрические <span>30</span></a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -339,7 +416,8 @@
                                 <a href="#" class="btn-default btn-bordered-yellow js-filter">Фильтры</a>
                                 <a href="#" class="btn-default btn-bordered-yellow js-sorter">Сортировка</a>
                             </div>
-                            <div class="filters__btn-show btn_blue btn-default js-filters__btn-show">
+                            <!--это выезжающее меню слева корявоработающее js-filters__btn-show-->
+                            <div class="filters__btn-show btn_blue btn-default js-filter">
                                 <span class="filters__btn-show_show">показать фильтры</span>
                                 <span class="filters__btn-show_hide">скрыть фильтры</span>
                             </div>

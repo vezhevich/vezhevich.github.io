@@ -100,15 +100,80 @@
             <div class="header-main__middle">
                 <div class="container">
                     <div class="header-main__logo">
-                        <a href="#"><img src="./images/logo.svg" alt=""></a>
+                        <a href="/"><img src="./images/logo.svg" alt=""></a>
                         <a class="header-main__logo_xs" href="/"><img src="./images/logo-xs.svg" alt=""></a>
                     </div>
                     <div class="header-main__search">
-                        <input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
-                        <button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+                        <div class="header-main__search-close_xs js-header-main__search-close_xs"><span class="icon-close"></span></div>
+                        <div class="header-main__search-wrapper">
+                            <input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
+                            <button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+                        </div>
+                        <div class="header-main__search-result">
+                            <div class="header-main__search-title">Товары</div>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product1.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product1.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product1.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <a href="#" class="product-card_small">
+                                <div class="product-card_small-img">
+                                    <img src="./images/view/product2.png" alt="">
+                                </div>
+                                <div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+                                <div class="product-card_small-cost">23 790 руб.</div>
+                            </a>
+                            <div class="header-main__search-title">Категории</div>
+                            <div class="header-main__search-result-list">
+                                <a href="#" class="header-main__search-result-list-item">Водонагреватели Electrolux <span>20 товаров</span></a>
+                                <a href="#" class="header-main__search-result-list-item">Очистка и ионизация Electrolux <span>40 товаров</span></a>
+                                <a href="#" class="header-main__search-result-list-item">Грили и барбекю Electrolux <span>40 товаров</span></a>
+                                <a href="#" class="header-main__search-result-list-item">Увлажнители и мойки Electrolux <span>40 товаров</span></a>
+                            </div>
+                            <a href="#" class="header-main__search-more">
+                                Смотреть все результаты <span>(70)</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="header-main__info">
-                        <div class="header-main__search-xs"></div>
+                        <div class="header-main__search-xs js-header-main__search-xs"></div>
                         <a href="#" class="header-main__info-item header-main__favorite">
                             <span class="header-main__info-icon icon-lois"></span>
                             <span class="header-main__info-counter">3</span>
@@ -175,8 +240,8 @@
                     <div class="l-two-cols__right">
                         <h1>Каталог</h1>
                         <div class="catalog-switch">
-                            <div class="catalog-switch__item"><span class="icon-catalog-square-1"></span></div>
-                            <div class="catalog-switch__item catalog-switch__item_active"><span class="icon-catalog-list-1"></span></div>
+                            <div class="catalog-switch__item js-catalog-square"><span class="icon-catalog-square-1"></span></div>
+                            <div class="catalog-switch__item catalog-switch__item_active js-catalog-list"><span class="icon-catalog-list-1"></span></div>
                         </div>
                         <div class="catalog js-catalog">
                             <div class="catalog__item">
@@ -466,6 +531,76 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                        <div class="catalog-square">
+                            <a href="#" class="catalog-square__item catalog-square__item_lg" style="background-image: url(/images/view/catalog1.jpg)">
+                                <h2 class="title_bg">
+                                    Отопительные котлы
+                                </h2>
+                            </a>
+                            <a href="#" class="catalog-square__item catalog-square__item_lg" style="background-image: url(/images/view/catalog2.jpg)">
+                                <h2 class="title_bg">
+                                    Счётчики газа
+                                </h2>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog3.jpg)"></div>
+                                <div class="catalog-square__title">Камины</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog4.jpg)"></div>
+                                <div class="catalog-square__title">Кондиционеры</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog5.jpg)"></div>
+                                <div class="catalog-square__title">Метеоприборы</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog6.jpg)"></div>
+                                <div class="catalog-square__title">Очистка и ионизация</div>
+                            </a>
+                            <a href="#" class="catalog-square__item catalog-square__item_lg" style="background-image: url(/images/view/catalog1.jpg)">
+                                <h2 class="title_bg">
+                                    Отопительные котлы
+                                </h2>
+                            </a>
+                            <a href="#" class="catalog-square__item catalog-square__item_lg" style="background-image: url(/images/view/catalog2.jpg)">
+                                <h2 class="title_bg">
+                                    Счётчики газа
+                                </h2>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog3.jpg)"></div>
+                                <div class="catalog-square__title">Камины</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog4.jpg)"></div>
+                                <div class="catalog-square__title">Кондиционеры</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog5.jpg)"></div>
+                                <div class="catalog-square__title">Метеоприборы</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog6.jpg)"></div>
+                                <div class="catalog-square__title">Очистка и ионизация</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog3.jpg)"></div>
+                                <div class="catalog-square__title">Камины</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog4.jpg)"></div>
+                                <div class="catalog-square__title">Кондиционеры</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog5.jpg)"></div>
+                                <div class="catalog-square__title">Метеоприборы</div>
+                            </a>
+                            <a href="#" class="catalog-square__item">
+                                <div class="catalog-square__img" style="background-image: url(/images/view/catalog6.jpg)"></div>
+                                <div class="catalog-square__title">Очистка и ионизация</div>
+                            </a>
                         </div>
                     </div>
                 </div>

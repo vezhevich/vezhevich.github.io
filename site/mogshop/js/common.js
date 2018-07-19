@@ -613,6 +613,11 @@ $(window).on('load ready resize', function () {
         itemSelector: '.catalog__item',
         percentPosition: true
     });
+
+    $(document).on('click', '.js-catalog-list', function(e) {
+        e.preventDefault();
+        $('.js-catalog').masonry('layout');
+    });
 });
 
 //удаляем товар в корзине
@@ -692,20 +697,21 @@ $(function() {
 });
 
 //показываем фильтры справа
-$(function() {
-    $(document).on('click', '.js-filters__btn-show', function() {
-        $(this).toggleClass('filters__btn-show_active');
-        $('body').toggleClass('body-fixed');
-        $('.filters__pull').toggleClass('filters__pull_show');
-        $('.filters__pull-content').toggleClass('filters__pull-content_hide');
-    });
-
-    $(window).on('resize', function () {
-        $('.filters__pull').removeClass('filters__pull_show');
-        $('.filters__pull-content').removeClass('filters__pull-content_hide');
-        $('body').removeClass('body-fixed');
-    });
-});
+//пока что убрал из за корявости работы
+// $(function() {
+//     $(document).on('click', '.js-filters__btn-show', function() {
+//         $(this).toggleClass('filters__btn-show_active');
+//         $('body').toggleClass('body-fixed');
+//         $('.filters__pull').toggleClass('filters__pull_show');
+//         $('.filters__pull-content').toggleClass('filters__pull-content_hide');
+//     });
+//
+//     $(window).on('resize', function () {
+//         $('.filters__pull').removeClass('filters__pull_show');
+//         $('.filters__pull-content').removeClass('filters__pull-content_hide');
+//         $('body').removeClass('body-fixed');
+//     });
+// });
 
 
 //показываем сортировку на мобиле
@@ -808,5 +814,102 @@ $(function() {
         e.preventDefault();
         $(this).removeClass('service-list__remove_show');
         $(this).prev('.service-list__add').removeClass('service-list__add_active');
+    });
+});
+
+//результаты поиска в шапке
+$(function() {
+    $(document).on('keyup', '.header-main__search-input', function(){
+        $('.header-main__search').find('.header-main__search-input').each(function(){
+            if($(this).val() != ''){
+                // Если поле не пустое удаляем класс-указание
+                $('.header-main__search-result').addClass('header-main__search-result_show');
+            } else {
+                // Если поле пустое добавляем класс-указание
+                $('.header-main__search-result').removeClass('header-main__search-result_show');
+            }
+        });
+    });
+});
+
+
+//на мобиле взрываем поиск
+$(function() {
+    $(document).on('click touchstart', '.js-header-main__search-xs', function(e) {
+        e.preventDefault();
+        $('.header-main__search').toggleClass('header-main__search_show-xs');
+        $('body').toggleClass('body-fixed');
+
+        $(document).on('keyup', '.header-main__search-input', function(){
+            $('.header-main__search').find('.header-main__search-input').each(function(){
+                if($(this).val() != ''){
+                    // Если поле не пустое удаляем класс-указание
+                    $('.header-main__search-result').show();
+                } else {
+                    // Если поле пустое добавляем класс-указание
+                    $('.header-main__search-result').hide();
+                }
+            });
+        });
+    });
+    $(document).on('click', '.js-header-main__search-close_xs', function(e) {
+        e.preventDefault();
+        $('body').toggleClass('body-fixed');
+        $('.header-main__search').removeClass('header-main__search_show-xs');
+    });
+});
+
+//переключатель вида каталога
+$(function() {
+    $(document).on('click', '.js-catalog-square', function(e) {
+        e.preventDefault();
+        $('.catalog-switch__item').removeClass('catalog-switch__item_active');
+        $(this).addClass('catalog-switch__item_active');
+        $('.catalog').addClass('catalog_hide');
+        $('.catalog-square').addClass('catalog-square_show');
+    });
+    $(document).on('click', '.js-catalog-list', function(e) {
+        e.preventDefault();
+        $('.catalog-switch__item').removeClass('catalog-switch__item_active');
+        $(this).addClass('catalog-switch__item_active');
+        $('.catalog').removeClass('catalog_hide');
+        $('.catalog-square').removeClass('catalog-square_show');
+    });
+});
+
+//показываем допольнительные поля для юридического лица на странице оформления заказа
+$(function() {
+    $(document).on('click', '.js-entity', function() {
+        var inputCheck = $('input[type="checkbox"].input-entity').prop("checked");
+        if (inputCheck == false) {
+            $('.order__bio-info-entity').removeClass('order__bio-info-entity_show');
+        } else if (inputCheck == true) {
+            $('.order__bio-info-entity').addClass('order__bio-info-entity_show');
+        }
+    });
+});
+
+//показываем/скрываем карту если выбрали самовывоз на странице оформления заказа
+$(function() {
+    $(document).on('click', '.js-point-delivery', function() {
+        var inputCheck = $('input[type="radio"].point-delivery').prop("checked");
+        if (inputCheck == false) {
+            $('.order__delivery-address').removeClass('order__delivery-address_hide');
+            $('.order__delivery-point').removeClass('order__delivery-point_show');
+        } else if (inputCheck == true) {
+            $('.order__delivery-address').addClass('order__delivery-address_hide');
+            $('.order__delivery-point').addClass('order__delivery-point_show');
+        }
+    });
+
+    $(document).on('click', '.js-delivery', function() {
+        var inputCheck = $('input[type="radio"].js-delivery').prop("checked");
+        if (inputCheck == false) {
+            $('.order__delivery-address').addClass('order__delivery-address_hide');
+            $('.order__delivery-point').addClass('order__delivery-point_show');
+        } else if (inputCheck == true) {
+            $('.order__delivery-address').removeClass('order__delivery-address_hide');
+            $('.order__delivery-point').removeClass('order__delivery-point_show');
+        }
     });
 });

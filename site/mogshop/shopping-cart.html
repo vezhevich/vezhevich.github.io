@@ -69,7 +69,7 @@
             <div class="header-main__middle">
                 <div class="container">
                     <div class="header-main__logo">
-                        <a href="#"><img src="./images/logo.svg" alt=""></a>
+                        <a href="/"><img src="./images/logo.svg" alt=""></a>
                         <a class="header-main__logo_xs" href="/"><img src="./images/logo-xs.svg" alt=""></a>
                     </div>
                     <div class="header-main__phone">
@@ -252,6 +252,10 @@
                                 <input type="text" class="input input-default">
                             </div>
                             <div class="order__bio-info-item">
+                                <input class="input js-entity input-entity" id="e1" type="checkbox" name="entity" />
+                                <label for="e1">Юридическое лицо</label>
+                            </div>
+                            <div class="order__bio-info-item">
                                 <div class="label-default">Номер телефона</div>
                                 <!--input-default_error для ошибки-->
                                 <input type="tel" class="input input-default input-mask">
@@ -260,6 +264,23 @@
                                 <div class="label-default">E-mail</div>
                                 <!--input-default_error для ошибки-->
                                 <input type="email" class="input input-default">
+                            </div>
+                            <div class="order__bio-info-entity">
+                                <div class="order__bio-info-item">
+                                    <div class="label-default">Название организации</div>
+                                    <!--input-default_error для ошибки-->
+                                    <input type="text" class="input input-default">
+                                </div>
+                                <div class="order__bio-info-item">
+                                    <div class="label-default">ИНН</div>
+                                    <!--input-default_error для ошибки-->
+                                    <input type="text" class="input input-default">
+                                </div>
+                                <div class="order__bio-info-item">
+                                    <div class="label-default">КПП</div>
+                                    <!--input-default_error для ошибки-->
+                                    <input type="text" class="input input-default">
+                                </div>
                             </div>
                         </div>
                         <div class="order__bio-auth">
@@ -275,11 +296,11 @@
                     <div class="order__delivery">
                         <div class="label-default order__delivery-label">Способ получения заказа</div>
                         <div class="order__delivery-item">
-                            <input class="input" id="d1" type="radio" name="delivery" checked/>
+                            <input class="input js-delivery" id="d1" type="radio" name="delivery" checked/>
                             <label for="d1">Доставка</label>
                         </div>
                         <div class="order__delivery-item">
-                            <input class="input" id="d2" type="radio" name="delivery" />
+                            <input class="input js-point-delivery point-delivery" id="d2" type="radio" name="delivery" />
                             <label for="d2">Самовывоз</label>
                         </div>
                         <div class="order__delivery-address">
@@ -291,6 +312,108 @@
                             <div class="order__delivery-item">
                                 <div class="label-default">Введите адрес доставки</div>
                                 <textarea class="textarea-default" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="order__delivery-point">
+                            <h5>Выберите пункт самовывоза</h5>
+                            <div class="order__delivery-point-map-wrapper">
+                                <div class="delivery-address-list-wrapper js-delivery-address-list">
+                                    <div class="delivery-address-header">
+                                            <div class="delivery-address-header-search-wrap js-delivery-address-header-search-ctn">
+                                                <div class="delivery-address-header-search">
+                                                    <div class="delivery-address-header-search--button js-delivery-address-header-search-button">
+                                                        <span class="icon-search"></span>
+                                                    </div>
+                                                    <div class="delivery-address-header-search--input-ctn">
+                                                        <input type="text" id="suggest" class="delivery-address-header-search-input js-delivery-address-header-search-input"/>
+                                                        <div class="delivery-address-header-search-close js-delivery-address-header-search-close">
+                                                            <span class="icon-close"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Результаты поиска, на случай если яндекс не канает -->
+                                                <!--<div class="delivery-address-header-search-list js-delivery-address-header-search-list">
+                                                    <a href="#" class="delivery-address-header-search-list&#45;&#45;item">Мадрид</a>
+                                                    <a href="#" class="delivery-address-header-search-list&#45;&#45;item">Махачкала</a>
+                                                    <a href="#" class="delivery-address-header-search-list&#45;&#45;item">Мариуполь</a>
+                                                    <a href="#" class="delivery-address-header-search-list&#45;&#45;item">Марий-Эл</a>
+                                                </div>-->
+                                            </div>
+                                            <div class="delivery-address-header-menu js-info-tabs-menu">
+                                                <div class="delivery-address-header-menu--item js-info-tabs-menu--item active">Списком</div>
+                                                <div class="delivery-address-header-menu--item js-info-tabs-menu--item">На карте</div>
+                                            </div>
+                                            <div class="delivery-address-header-button">
+                                                <a href="" class="btn-default blue js-delivery-map-closest">Найти ближайший</a>
+                                            </div>
+                                        </div>
+                                    <div class="delivery-address-content js-info-tabs-content">
+                                        <div class="delivery-address-content-item js-info-tabs-content-item active">
+
+                                                <div class="delivery-address-content-list-wrapper">
+                                                    <div class="delivery-address-content-list-wrap">
+                                                        <div class="delivery-address-content-list-over">
+                                                            <div class="delivery-address-content-list js-delivery-address-content-list">
+                                                                <div class="delivery-address-content-list-item js-delivery-address-content-list-item">
+                                                                    <div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Балашиха</div>
+                                                                    <div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+                                                                        <div class="delivery-address-content-list-item--description">проспект Ленина, дом 77</div>
+                                                                        <a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone">+7 (495) 546 76 54</a>
+                                                                    </div>
+                                                                    <div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+                                                                </div>
+                                                                <div class="delivery-address-content-list-item js-delivery-address-content-list-item">
+                                                                    <div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Фрязино</div>
+                                                                    <div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+                                                                        <div class="delivery-address-content-list-item--description">ул. Иванова, дом 16</div>
+                                                                        <a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone">+7 (499) 879 09 87</a>
+                                                                    </div>
+                                                                    <div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+                                                                </div>
+                                                                <div class="delivery-address-content-list-item js-delivery-address-content-list-item">
+                                                                    <div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Щёлково</div>
+                                                                    <div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+                                                                        <div class="delivery-address-content-list-item--description">ул. Октябрьская, дом 20 «А»</div>
+                                                                        <a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone">+7 (495) 875 34 21</a>
+                                                                    </div>
+                                                                    <div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="delivery-address-content-list-fog js-delivery-address-content-list-fog"></div>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                        <div class="delivery-address-content-item js-info-tabs-content-item">
+                                            <div class="delivery-address-content-map-wrap">
+                                                <div class="container">
+                                                    <div class="delivery-address-content-map-legend-wrap">
+                                                        <div class="delivery-address-content-map-legend">
+                                                            <div class="delivery-address-content-map-legend--zone">
+                                                                <div class="delivery-address-content-map-legend--zone-style"></div>
+                                                                <div class="delivery-address-content-map-legend--zone-title">Зона доставки</div>
+                                                            </div>
+                                                            <div class="delivery-address-content-map-legend--pin">
+                                                                <div class="delivery-address-content-map-legend--pin-icon">
+                                                                    <img src="/images/view/map-pin.svg" alt=""/>
+                                                                </div>
+                                                                <div class="delivery-address-content-map-legend--pin-title">Пункт самовывоза</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script type="text/javascript">
+
+                                                </script>
+                                                <div class="delivery-address-content-map" id="delivery-map">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="order__delivery-time">
@@ -616,6 +739,9 @@
     </div>
 </div>
 <script src="js/libs.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&coordorder=longlat" type="text/javascript"></script>
+<script src="js/map/delivery-map.js"></script>
 <script src="js/common.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
