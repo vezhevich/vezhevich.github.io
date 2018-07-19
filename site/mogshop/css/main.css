@@ -7368,7 +7368,7 @@ filters__btn-show_show {
   .filters__pull_show-xs .filters__close_xs {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 15px;
     padding: 20px 15px;
     display: block;
     z-index: 10; }
