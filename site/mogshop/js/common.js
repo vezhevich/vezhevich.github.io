@@ -582,15 +582,7 @@ $(function() {
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
-        mainClass: 'mfp-fade',
-        callbacks: {
-            open: function() {
-                jQuery('body').addClass('body-fixed');
-            },
-            close: function() {
-                jQuery('body').removeClass('body-fixed');
-            }
-        }
+        mainClass: 'mfp-fade'
     });
 })
 
@@ -860,7 +852,7 @@ $(function() {
             });
         });
     });
-    $(document).on('click', '.js-header-main__search-close_xs', function(e) {
+    $(document).on('click touchstart', '.js-header-main__search-close_xs', function(e) {
         e.preventDefault();
         $('body').toggleClass('body-fixed');
         $('.header-main__search').removeClass('header-main__search_show-xs');
