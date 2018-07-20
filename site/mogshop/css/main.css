@@ -6525,7 +6525,8 @@ p {
 @media screen and (max-width: 767px) {
   .mfp-container {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    height: auto !important; }
   .modal-default {
     padding: 20px 15px;
     margin-top: 0;
