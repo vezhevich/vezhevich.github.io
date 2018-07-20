@@ -2952,7 +2952,9 @@ p {
     position: relative;
     bottom: auto;
     left: auto;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .promo__carousel-title {
+    margin-bottom: 0; } }
 
 .card-label {
   font-size: 0.6667rem;
@@ -8208,12 +8210,20 @@ filters__btn-show_show {
     margin-bottom: 10px; }
   .order__delivery-point-map-wrapper .delivery-address-header-button .btn-default {
     display: block; }
+  .order__delivery-point-map-wrapper .delivery-address-header-button {
+    position: relative;
+    z-index: 10; }
+  .order__delivery-point-map-wrapper .delivery-address-header-search--button {
+    top: 0; }
   .order__delivery-point-map-wrapper {
     margin-left: -15px;
     margin-right: -15px; }
   .order__delivery-point-map-wrapper .delivery-address-header {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px;
+    position: relative; }
+  .order__delivery-point-map-wrapper .delivery-address-header-search {
+    padding-top: 0; } }
 
 .input-default {
   border: 1px solid #B6B6B6;
@@ -8248,7 +8258,9 @@ filters__btn-show_show {
   line-height: 20px;
   color: #1E1E1E;
   font-family: "pfagorasanspro-medium";
-  padding: 10px; }
+  padding: 10px;
+  -webkit-appearance: none;
+  outline: none; }
 
 .textarea-default:hover {
   border-color: #000000; }
