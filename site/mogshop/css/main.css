@@ -6529,8 +6529,7 @@ p {
   .modal-default {
     padding: 20px 15px;
     margin-top: 0;
-    margin-bottom: 0;
-    height: 100%; }
+    margin-bottom: 0; }
   .mfp-content {
     vertical-align: top;
     max-width: 100%;
