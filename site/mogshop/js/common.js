@@ -913,3 +913,24 @@ $(function() {
         }
     });
 });
+
+//карусель облегченных товаров в модальном окне
+$(window).on('load ready resize', function () {
+    var $btnCarousel = $('.js-filters__group-btn-carousel');
+    var btnItem = $('.btn-bordered-round').length;
+
+    $btnCarousel.addClass('owl-carousel');
+
+    if (btnItem > 1) {
+        $btnCarousel.owlCarousel({
+            nav: false,
+            dots: false,
+            margin: 10,
+            navText: '',
+            autoWidth: true,
+        });
+    } else {
+        $btnCarousel.trigger('destroy.owl.carousel');
+        $btnCarousel.removeClass('owl-carousel');
+    }
+});
