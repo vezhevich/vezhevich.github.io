@@ -683,10 +683,10 @@ $(function() {
         $(this).parents('.dropdown').toggleClass('active');
         $(this).parents('.dropdown').find('.dropdown-menu').slideToggle(300);
     });
-    $('.dropdown').focusout(function () {
-        $(this).removeClass('active');
-        $(this).find('.dropdown-menu').slideUp(300);
-    });
+    // $('.dropdown').focusout(function () {
+    //     $(this).removeClass('active');
+    //     $(this).find('.dropdown-menu').slideUp(300);
+    // });
     $('.dropdown .dropdown-menu li').click(function () {
         $('.dropdown .dropdown-menu li').removeClass('active');
         $(this).addClass('active');
