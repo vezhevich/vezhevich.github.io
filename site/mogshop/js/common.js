@@ -599,7 +599,7 @@ $(function() {
             }
         }
     });
-})
+});
 
 //карусель облегченных товаров в модальном окне
 $(window).on('load ready resize', function () {
