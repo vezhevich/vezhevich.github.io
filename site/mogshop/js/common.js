@@ -581,9 +581,11 @@ $(window).on('load ready resize', function () {
 $(function() {
     function fScrollDisable() {
         scrollLock.hide('body');
+        scrollLock.hide('html');
     }
     function fScrollEnable() {
         scrollLock.show('body');
+        scrollLock.show('html');
     }
 
     $('.js-modal').magnificPopup({
