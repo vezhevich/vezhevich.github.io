@@ -6485,7 +6485,9 @@ p {
   max-width: 830px;
   width: 100%;
   margin: 20px auto;
-  padding: 50px; }
+  padding: 50px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .modal-default.small {
   max-width: 470px;
