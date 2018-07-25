@@ -776,10 +776,9 @@ p {
   padding: 20px 0; }
 
 .body-fixed {
-  height: 100%;
   overflow: hidden;
-  width: 100%;
-  position: fixed; }
+  position: relative;
+  height: 100%; }
 
 .visible-xs {
   display: none !important; }
