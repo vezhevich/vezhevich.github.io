@@ -776,7 +776,7 @@ p {
   padding: 20px 0; }
 
 .body-fixed {
-  overflow: hidden; }
+  overflow: hidden !important; }
 
 .visible-xs {
   display: none !important; }

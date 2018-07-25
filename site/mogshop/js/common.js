@@ -583,8 +583,14 @@ $(function() {
         type:'inline',
         midClick: true,
         mainClass: 'mfp-fade',
-        fixedContentPos: true,
-        fixedBgPos: true
+        callbacks: {
+            open: function() {
+                jQuery('body').addClass('body-fixed');
+            },
+            close: function() {
+                jQuery('body').removeClass('body-fixed');
+            }
+        }
     });
 })
 
