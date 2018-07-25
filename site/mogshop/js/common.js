@@ -585,11 +585,9 @@ $(function() {
         mainClass: 'mfp-fade',
         callbacks: {
             open: function() {
-                jQuery('body').addClass('noscroll');
                 scrollLock.hide('body');
             },
             close: function() {
-                jQuery('body').removeClass('noscroll');
                 scrollLock.show();
             }
         }

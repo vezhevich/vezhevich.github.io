@@ -6485,9 +6485,7 @@ p {
   max-width: 830px;
   width: 100%;
   margin: 20px auto;
-  padding: 50px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
+  padding: 50px; }
 
 .modal-default.small {
   max-width: 470px;
@@ -6531,9 +6529,6 @@ p {
 
 .mfp-container {
   padding: 0; }
-
-.mfp-wrap, .mfp-container, .mfp-content {
-  overflow-y: scroll !important; }
 
 @media screen and (max-width: 1023px) {
   .mfp-container {
