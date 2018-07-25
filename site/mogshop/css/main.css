@@ -776,7 +776,8 @@ p {
   padding: 20px 0; }
 
 .body-fixed {
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  position: fixed; }
 
 .visible-xs {
   display: none !important; }
@@ -6480,8 +6481,7 @@ p {
   max-width: 830px;
   width: 100%;
   margin: 20px auto;
-  padding: 50px;
-  -webkit-overflow-scrolling: touch; }
+  padding: 50px; }
 
 .mfp-fade.mfp-bg {
   opacity: 0;
