@@ -678,15 +678,15 @@ $(function() {
 
 //dropdown
 $(function() {
-    $('.dropdown').click(function () {
-        $(this).attr('tabindex', 1).focus();
-        $(this).toggleClass('active');
-        $(this).find('.dropdown-menu').slideToggle(300);
+    $('.dropdown .select span').click(function () {
+        $(this).parents('.dropdown').attr('tabindex', 1).focus();
+        $(this).parents('.dropdown').toggleClass('active');
+        $(this).parents('.dropdown').find('.dropdown-menu').slideToggle(300);
     });
-    // $('.dropdown').focusout(function () {
-    //     $(this).removeClass('active');
-    //     $(this).find('.dropdown-menu').slideUp(300);
-    // });
+    $('.dropdown').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+    });
     $('.dropdown .dropdown-menu li').click(function () {
         $('.dropdown .dropdown-menu li').removeClass('active');
         $(this).addClass('active');
@@ -720,24 +720,18 @@ $(function() {
 //показываем сортировку на мобиле
 $(window).on('load ready resize', function () {
     if ($(window).width() < '768') {
-        $('.sorter').hide();
-        $('.sorter').addClass('sorter_hide');
-
         $('.js-sorter').click(function(e) {
             e.preventDefault();
 
             $('.sorter__left .dropdown-menu').addClass('dropdown-menu_show-xs');
             $('body').addClass('body-fixed');
-            $('.sorter').show();
-            $('.sorter').removeClass('sorter_hide');
+
         });
 
         $('.dropdown .dropdown-menu li').click(function(e) {
             e.preventDefault();
 
             $('.dropdown .dropdown-menu').removeClass('dropdown-menu_show-xs');
-            $('.sorter').hide();
-            $('.sorter').addClass('sorter_hide');
             $('body').removeClass('body-fixed');
         });
 
@@ -746,18 +740,6 @@ $(window).on('load ready resize', function () {
 
             $('.sorter__left .dropdown-menu').removeClass('dropdown-menu_show-xs');
             $('body').removeClass('body-fixed');
-            $('.sorter').hide();
-            $('.sorter').addClass('sorter_hide');
-        });
-    } else {
-        $('.sorter').show();
-        $('.sorter').removeClass('sorter_hide');
-
-        $('.dropdown .dropdown-menu li').click(function(e) {
-            e.preventDefault();
-
-            $('.sorter').show();
-            $('.sorter').removeClass('sorter_hide');
         });
     }
 });
