@@ -586,12 +586,11 @@ $(function() {
         callbacks: {
             open: function() {
                 jQuery('body').addClass('noscroll');
-                jQuery('html').addClass('noscroll');
                 scrollLock.hide('body');
+                scrollLock.hide('html');
             },
             close: function() {
                 jQuery('body').removeClass('noscroll');
-                jQuery('html').removeClass('noscroll');
                 scrollLock.show();
             }
         }
