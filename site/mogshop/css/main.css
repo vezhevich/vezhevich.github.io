@@ -6475,13 +6475,7 @@ p {
   color: #006DAA; }
 
 .modal-default {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
   background: #FFF;
   padding: 20px;
   width: auto;
@@ -6526,8 +6520,19 @@ p {
 .modal-default__content-center {
   text-align: center; }
 
-.mfp-container {
-  padding: 0; }
+.mfp-container, .mfp-content {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.mfp-container::before {
+  display: none; }
+
+.mfp-content {
+  overflow: auto; }
 
 @media screen and (max-width: 1023px) {
   .mfp-container {
