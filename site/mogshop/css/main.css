@@ -781,6 +781,7 @@ p {
   width: 100%; }
 
 .noscroll {
+  overflow: visible !important;
   overflow-y: scroll !important; }
 
 .visible-xs {
@@ -6529,6 +6530,10 @@ p {
 
 .mfp-container {
   padding: 0; }
+
+.mfp-wrap {
+  overflow: visible !important;
+  overflow-y: scroll !important; }
 
 @media screen and (max-width: 1023px) {
   .mfp-container {
