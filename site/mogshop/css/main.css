@@ -6481,7 +6481,6 @@ p {
   width: 100%;
   margin: 20px auto;
   padding: 50px;
-  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
 
 .mfp-fade.mfp-bg {
