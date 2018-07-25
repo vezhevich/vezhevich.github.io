@@ -352,7 +352,7 @@ $(window).on('load ready resize', function () {
 
 //показываем меню в подвале
 $(function() {
-    $(document).on('click touchstart', '.js-footer-main-nav', function(e) {
+    $(document).on('click', '.js-footer-main-nav', function(e) {
         e.preventDefault();
         $(this).toggleClass('show');
     });
