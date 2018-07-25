@@ -37,7 +37,8 @@ $(window).on('load ready resize', function () {
 
 //добавляем active для favorite и compare в карточке товара
 $(function() {
-    $('.js-product-card-icon').click(function() {
+    $('.js-product-card-icon').click(function(e) {
+        e.preventDefault();
         $(this).toggleClass('js-product-card-icon_active');
     });
 });
