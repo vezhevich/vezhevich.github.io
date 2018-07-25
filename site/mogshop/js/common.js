@@ -1,6 +1,6 @@
 //закрываем банненр над шапкой
 $(function() {
-    $(document).on('click touchstart', '.sale-top__close', function() {
+    $(document).on('click', '.sale-top__close', function() {
         // $.cookie('sale-top', 'hidden', {
         //     expires: 1000,
         //     path: '/',
@@ -359,7 +359,7 @@ $(function() {
 
 //подкатегории в мобильном меню
 $(function() {
-    $(document).on('click touchstart', '.mobile-menu__nav-lv1 > li > a', function(e) {
+    $(document).on('click', '.mobile-menu__nav-lv1 > li > a', function(e) {
         e.preventDefault();
         $(this).toggleClass('active');
     });
@@ -376,7 +376,7 @@ $(function() {
 
 //добавляем в избранное на странице товара
 $(function() {
-    $(document).on('click touchstart', '.js-product__info-item', function(e) {
+    $(document).on('click', '.js-product__info-item', function(e) {
         e.preventDefault();
         $(this).toggleClass('product__info-activity-item_active');
     });
@@ -582,7 +582,9 @@ $(function() {
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
-        mainClass: 'mfp-fade'
+        mainClass: 'mfp-fade',
+        fixedContentPos: true,
+        fixedBgPos: true
     });
 })
 
@@ -765,18 +767,18 @@ $(function() {
 
 //выезжающие справа на планшете фильтры
 //требуют доработки
-$(function() {
-    $('.filters__result').on('click', function(){
-        var elem = $(this);
-        var winScroll = $(window).scrollTop();
-        var elemOffset = elem.offset().top
-        var heightElement = elemOffset - winScroll;
-        console.log(heightElement);
-
-        $('.filters__pull').css('top', heightElement);
-        $('.filters__pull').css('height', "calc(100% - " + heightElement+"px)");
-    })
-});
+// $(function() {
+//     $('.filters__result').on('click', function(){
+//         var elem = $(this);
+//         var winScroll = $(window).scrollTop();
+//         var elemOffset = elem.offset().top
+//         var heightElement = elemOffset - winScroll;
+//         console.log(heightElement);
+//
+//         $('.filters__pull').css('top', heightElement);
+//         $('.filters__pull').css('height', "calc(100% - " + heightElement+"px)");
+//     })
+// });
 
 // маска для телефона
 $(function() {
@@ -932,5 +934,71 @@ $(window).on('load ready resize', function () {
     } else {
         $btnCarousel.trigger('destroy.owl.carousel');
         $btnCarousel.removeClass('owl-carousel');
+    }
+});
+
+//удаляем товары в избранном
+$(function() {
+    $(document).on('click', '.js-favorite__clear', function() {
+        $(this).hide();
+        $('.product-card-horizontal__item').animate({opacity: 0}, 100, function() {
+            $(this).slideUp(200, function(){
+                $(this).remove();
+            });
+        });
+    });
+});
+
+
+//карусель сравнения товаров
+$(function() {
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        hashNavigation: {
+            watchState: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // when window width is <= 320px
+            320: {
+                slidesPerView: 2
+            },
+            480: {
+                slidesPerView: 2
+            },
+            680: {
+                slidesPerView: 3
+            },
+            1023: {
+                slidesPerView: 4
+            }
+        }
+    });
+});
+
+
+//фиксируем панель сравнения товаров
+$(function() {
+    var sticky = new Sticky('.compare-product');
+
+    if ($(document).find('.compare-product_fixed').length) {
+        $('.compare-filter').addClass('compare-filter_modified-top');
+    }
+});
+
+//
+$(function() {
+    var compareOption = document.querySelector(".compare-filter .option.selected");
+    var compareCurrent = document.querySelector(".compare-filter .current");
+    if ($(window).width() < '768') {
+        compareOption.innerHTML = 'Параметры';
+        compareCurrent.innerHTML = 'Параметры';
+    } else {
+        compareOption.innerHTML = 'Параметры для сравнения';
+        compareCurrent.innerHTML = 'Параметры для сравнения';
     }
 });
