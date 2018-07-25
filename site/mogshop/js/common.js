@@ -585,10 +585,12 @@ $(function() {
         mainClass: 'mfp-fade',
         callbacks: {
             open: function() {
-                jQuery('.propper').addClass('body-fixed');
+                jQuery('body').addClass('body-fixed');
+                jQuery('html').addClass('html-fixed');
             },
             close: function() {
-                jQuery('.propper').removeClass('body-fixed');
+                jQuery('body').removeClass('body-fixed');
+                jQuery('html').removeClass('html-fixed');
             }
         }
     });

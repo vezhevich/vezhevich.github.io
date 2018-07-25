@@ -780,6 +780,11 @@ p {
   height: 100%;
   width: 100%; }
 
+.html-fixed {
+  position: fixed;
+  height: 100%;
+  width: 100%; }
+
 .visible-xs {
   display: none !important; }
 
