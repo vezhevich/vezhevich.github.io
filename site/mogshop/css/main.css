@@ -6479,7 +6479,8 @@ p {
   top: 0;
   left: 0;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background: #FFF;
   padding: 20px;
