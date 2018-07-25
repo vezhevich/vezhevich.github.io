@@ -582,7 +582,16 @@ $(function() {
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
-        mainClass: 'mfp-fade'
+        mainClass: 'mfp-fade',
+        callbacks: {
+            open: function() {
+                jQuery('body').addClass('noscroll');
+                scrollLock.hide();
+            },
+            close: function() {
+                jQuery('body').removeClass('noscroll');
+            }
+        }
     });
 })
 
