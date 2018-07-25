@@ -352,8 +352,10 @@ $(window).on('load ready resize', function () {
 
 //показываем меню в подвале
 $(function() {
+
     $(document).on('click', '.js-footer-main-nav', function(e) {
         e.preventDefault();
+        e.stopPropagation();
         $(this).toggleClass('show');
     });
 });
