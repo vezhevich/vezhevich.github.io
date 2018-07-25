@@ -690,6 +690,7 @@ $(function() {
     $('.dropdown .dropdown-menu li').click(function () {
         $('.dropdown .dropdown-menu li').removeClass('active');
         $(this).addClass('active');
+        $('.dropdown-menu').slideUp(300);
         $(this).parents('.dropdown').find('span').html($(this).html());
         $(this).parents('.dropdown').find('input').attr('value', $(this).attr('class'));
     });
@@ -718,37 +719,34 @@ $(function() {
 
 
 //показываем сортировку на мобиле
-$(window).on('load ready resize', function () {
-    if ($(window).width() < '768') {
-        $('.sorter').hide();
+$(function() {
 
-        $('.js-sorter').click(function(e) {
-            e.preventDefault();
+    $('.js-sorter').click(function(e) {
+        e.preventDefault();
 
-            $('.sorter__left .dropdown-menu').addClass('dropdown-menu_show-xs');
-            $('body').addClass('body-fixed');
-            $('.sorter').show();
-        });
+        $('.sorter__left .dropdown-menu').addClass('dropdown-menu_show-xs');
+        $('body').addClass('body-fixed');
+        $('.sorter').addClass('sorter_show');
+    });
 
-        $('.dropdown .dropdown-menu li').click(function(e) {
-            e.preventDefault();
+    $('.dropdown .dropdown-menu li').click(function(e) {
+        e.preventDefault();
 
-            $('.dropdown .dropdown-menu').removeClass('dropdown-menu_show-xs');
-            $('body').removeClass('body-fixed');
-            $('.sorter').hide();
-        });
+        $('.dropdown .dropdown-menu').removeClass('dropdown-menu_show-xs');
+        $('body').removeClass('body-fixed');
+        $('.sorter').removeClass('sorter_show');
 
-        $('.js-dropdown-menu__close').click(function(e) {
-            e.preventDefault();
+    });
 
-            $('.sorter__left .dropdown-menu').removeClass('dropdown-menu_show-xs');
-            $('body').removeClass('body-fixed');
-            $('.sorter').hide();
-        });
-    } else {
-        $('.sorter').show();
-    }
+    $('.js-dropdown-menu__close').click(function(e) {
+        e.preventDefault();
+
+        $('.sorter__left .dropdown-menu').removeClass('dropdown-menu_show-xs');
+        $('body').removeClass('body-fixed');
+        $('.sorter').removeClass('sorter_show');
+    });
 });
+
 
 //показываем фильтрацию на мобиле
 $(function() {
