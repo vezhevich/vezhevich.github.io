@@ -586,11 +586,9 @@ $(function() {
         callbacks: {
             open: function() {
                 jQuery('body').addClass('body-fixed');
-                jQuery('html').addClass('html-fixed');
             },
             close: function() {
                 jQuery('body').removeClass('body-fixed');
-                jQuery('html').removeClass('html-fixed');
             }
         }
     });

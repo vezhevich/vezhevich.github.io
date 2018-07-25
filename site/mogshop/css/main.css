@@ -780,11 +780,6 @@ p {
   height: 100%;
   width: 100%; }
 
-.html-fixed {
-  position: fixed;
-  height: 100%;
-  width: 100%; }
-
 .visible-xs {
   display: none !important; }
 
@@ -6480,7 +6475,10 @@ p {
   color: #006DAA; }
 
 .modal-default {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
   background: #FFF;
   padding: 20px;
   width: auto;
