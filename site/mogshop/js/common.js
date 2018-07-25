@@ -352,7 +352,8 @@ $(window).on('load ready resize', function () {
 
 //показываем меню в подвале
 $(function() {
-    $(document).on('click touchstart', '.js-footer-main-nav', function() {
+    $(document).on('click touchstart', '.js-footer-main-nav', function(e) {
+        e.preventDefault();
         $(this).toggleClass('show');
     });
 });
@@ -582,18 +583,7 @@ $(function() {
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
-        mainClass: 'mfp-fade',
-        callbacks: {
-            open: function() {
-                jQuery('body').addClass('noscroll');
-                scrollLock.hide('body');
-                scrollLock.hide('html');
-            },
-            close: function() {
-                jQuery('body').removeClass('noscroll');
-                scrollLock.show();
-            }
-        }
+        mainClass: 'mfp-fade'
     });
 })
 
