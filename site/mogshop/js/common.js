@@ -583,7 +583,7 @@ $(function() {
         scrollLock.hide('body');
     }
     function fScrollEnable() {
-        scrollLock.show();
+        scrollLock.show('body');
     }
 
     $('.js-modal').magnificPopup({
