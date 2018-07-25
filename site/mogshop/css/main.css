@@ -780,6 +780,9 @@ p {
   height: 100%;
   width: 100%; }
 
+.noscroll {
+  overflow-y: scroll; }
+
 .visible-xs {
   display: none !important; }
 
