@@ -578,7 +578,8 @@ $(window).on('load ready resize', function () {
 });
 
 //взрываем попап
-$(function() {
+function attach_magnific_popup(e) {
+    e.preventDefault();
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
@@ -592,7 +593,7 @@ $(function() {
             }
         }
     });
-})
+}
 
 //карусель облегченных товаров в модальном окне
 $(window).on('load ready resize', function () {
