@@ -578,22 +578,28 @@ $(window).on('load ready resize', function () {
 });
 
 //взрываем попап
-function attach_magnific_popup(e) {
-    e.preventDefault();
+$(function() {
+    function fScrollDisable() {
+        scrollLock.hide('body');
+    }
+    function fScrollEnable() {
+        scrollLock.show();
+    }
+
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
         mainClass: 'mfp-fade',
         callbacks: {
             open: function() {
-                jQuery('body').addClass('body-fixed');
+                fScrollDisable();
             },
             close: function() {
-                jQuery('body').removeClass('body-fixed');
+                fScrollEnable();
             }
         }
     });
-}
+})
 
 //карусель облегченных товаров в модальном окне
 $(window).on('load ready resize', function () {
