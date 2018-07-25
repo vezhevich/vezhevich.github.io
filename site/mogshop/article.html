@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Заголовок</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Описание сайта содержит не более 150 символов">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="mobile-menu">
+	<div class="mobile-menu__nav">
+		<ul class="list_unstyle mobile-menu__nav-lv1">
+			<li><a href="#">Войти</a></li>
+			<li>
+				<a href="#">Каталог</a>
+				<ul class="list_unstyle mobile-menu__nav-lv2">
+					<li class="footer-main-nav__item"><a href="#">Автохолодильники</a></li>
+					<li class="footer-main-nav__item"><a href="#">Обогреватели</a></li>
+					<li class="footer-main-nav__item"><a href="#">Метеоприборы</a></li>
+					<li class="footer-main-nav__item"><a href="#">Водонагреватели</a></li>
+					<li class="footer-main-nav__item"><a href="#">Увлажнители и мойки</a></li>
+					<li class="footer-main-nav__item"><a href="#">Очистка и ионизация</a></li>
+					<li class="footer-main-nav__item"><a href="#">Кухонные плиты</a></li>
+					<li class="footer-main-nav__item"><a href="#">Отопление</a></li>
+					<li class="footer-main-nav__item"><a href="#">Осушители</a></li>
+					<li class="footer-main-nav__item"><a href="#">Вентиляция</a></li>
+					<li class="footer-main-nav__item"><a href="#">Полотенцесушители</a></li>
+					<li class="footer-main-nav__item"><a href="#">Грили и барбекю</a></li>
+					<li class="footer-main-nav__item"><a href="#">Сушилки для рук</a></li>
+					<li class="footer-main-nav__item"><a href="#">Камины</a></li>
+					<li class="footer-main-nav__item"><a href="#">Фильтры для воды</a></li>
+					<li class="footer-main-nav__item"><a href="#">Кондиционеры</a></li>
+					<li class="footer-main-nav__item"><a href="#">Насосы</a></li>
+					<li class="footer-main-nav__item"><a href="#">Услуги</a></li>
+					<li class="footer-main-nav__item"><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Покупателям</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Полезная информация</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="mobile-menu__info">
+			<div class="mobile-menu__info-location">
+				<span class="icon-pin"></span>
+				Балашиха
+			</div>
+			<div class="mobile-menu__info-phone">
+				<a href="tel:88002002904">8 800 200-29-04</a>
+				<span> Заказать звонок</span>
+			</div>
+			<div class="mobile-menu__info-work-time">
+				<span>Пн-пт: 10.00 – 18.00,</span> <span> сб: 12.00 – 13.00</span>
+			</div>
+			<div class="mobile-menu__info-lang">
+				<a class="mobile-menu__info-lang_active" href="#">Ru</a>
+				<span>|</span>
+				<a href="#">En</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="l-wrapper-footer-bottom">
+	<div class="l-wrapper-content">
+		<header class="header-main header-main_inner-page">
+			<div class="header-main__top">
+				<div class="container">
+					<ul class="header-main__top-nav list_unstyle">
+						<li class="header-main__top-nav-item"><a href="#">Статьи</a></li>
+						<li class="header-main__top-nav-item"><a href="#">Новости</a></li>
+						<li class="header-main__top-nav-item">
+							<a href="#">О компании</a>
+							<ul class="header-main__top-nav-lv2 list_unstyle">
+								<li><a href="#">Об АО «Мособлгаз»</a></li>
+								<li><a href="#">Отзывы о компании</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="header-main__top-nav-item"><a href="#">Возврат</a></li>
+						<li class="header-main__top-nav-item"><a href="#">Бонусная программа</a></li>
+					</ul>
+					<ul class="header-main__top-nav list_unstyle">
+						<!--когда пользователь авторизирован добавляем класс header-main__auth_in-->
+						<li class="header-main__top-nav-item header-main__auth">
+							<a class="header-main__auth-enter" href="#"><span class="icon-login"></span>Вход</a>
+							<a class="header-main__auth-user" href="#"><span class="icon-login"></span>Егор Собакин</a>
+							<ul class="header-main__top-nav-lv2 list_unstyle">
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</li>
+						<li class="header-main__top-nav-item"><a href="#"><span class="icon-pin"></span>Балашиха</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-main__middle">
+				<div class="container">
+					<div class="header-main__logo">
+						<a href="/"><img src="./images/logo.svg" alt=""></a>
+						<a class="header-main__logo_xs" href="/"><img src="./images/logo-xs.svg" alt=""></a>
+					</div>
+					<div class="header-main__search">
+						<div class="header-main__search-close_xs js-header-main__search-close_xs"><span class="icon-close"></span></div>
+						<div class="header-main__search-wrapper">
+							<input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
+							<button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+						</div>
+						<div class="header-main__search-result">
+							<div class="header-main__search-title">Товары</div>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<div class="header-main__search-title">Категории</div>
+							<div class="header-main__search-result-list">
+								<a href="#" class="header-main__search-result-list-item">Водонагреватели Electrolux <span>20 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Очистка и ионизация Electrolux <span>40 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Грили и барбекю Electrolux <span>40 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Увлажнители и мойки Electrolux <span>40 товаров</span></a>
+							</div>
+							<a href="#" class="header-main__search-more">
+								Смотреть все результаты <span>(70)</span>
+							</a>
+						</div>
+					</div>
+					<div class="header-main__info">
+						<div class="header-main__search-xs js-header-main__search-xs"></div>
+						<a href="#" class="header-main__info-item header-main__favorite">
+							<span class="header-main__info-icon icon-lois"></span>
+							<span class="header-main__info-counter">3</span>
+						</a>
+						<a href="#" class="header-main__info-item header-main__comparison">
+							<span class="header-main__info-icon icon-compare"></span>
+							<span class="header-main__info-counter">1</span>
+						</a>
+						<a href="#" class="header-main__info-item header-main__shopping-cart">
+							<div class="header-main__info-item-wrapper">
+								<span class="header-main__info-icon icon-cart"></span>
+								<span class="header-main__info-counter">13</span>
+							</div>
+							Корзина
+						</a>
+						<div id="ol" class="header-main__burder"><span class="icon-burger"></span></div>
+					</div>
+					<div class="header-main__phone">
+						<a href="tel:88002002904">8 800 200-29-04</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main__bottom">
+				<div class="container">
+					<ul class="list_unstyle header-main__nav">
+						<li class="header-main__nav-item"><a href="catalog.html"><span class="icon-list"></span>Каталог</a></li>
+						<li class="header-main__nav-item"><a href="#">Услуги</a></li>
+						<li class="header-main__nav-item"><a href="#">Доставка</a></li>
+						<li class="header-main__nav-item"><a href="#">Оплата</a></li>
+						<li class="header-main__nav-item"><a href="#">Акции</a></li>
+					</ul>
+					<a href="#" class="btn header-main__btn"><span class="icon-phone"></span>Закзать звонок</a>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-menu-wrapper mobile-menu-wrapper_after-header">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a class="breadcrumbs__item" href="#"><span class="icon-arrow_small"></span>Главная</a>
+					<a class="breadcrumbs__item" href="#">Каталог</a>
+					<a class="breadcrumbs__item" href="#">Водонагреватели</a>
+					<a class="breadcrumbs__item" href="#">Накопительные водонагреватели</a>
+					<a class="breadcrumbs__item" href="#">Polaris</a>
+					<a class="breadcrumbs__item" href="#">Водонагреватель накопительный Polaris AQUA SLR 80V</a>
+				</div>
+				<div class="article-head">
+					<h1 class="article-head-title">Выбираем газовую колонку</h1>
+					<div class="article-head-description">
+						В отличие от бойлера, работающего на электричестве, эксплуатация газовых колонок обходится дешевле. Причем нагрев воды с использованием газовых колонок экономичнее
+						в разы. Современные газовые колонки обладают превосходной производительностью и большой мощностью, имеют привлекательный дизайн, безопасны в эксплуатации.
+					</div>
+				</div>
+				<div class="article-image-large">
+					<img src="./images/view/article-image1.jpg" alt=""/>
+				</div>
+				<div class="article-text-wrap small">
+					<div class="article-text">
+						<h2 class="article-text-title">Технические характеристики газовой колонки</h2>
+						<p>Когда речь идет о технических характеристиках газовой колонки, прежде всего – это производительность и мощность.</p>
+						<p>Если у вас нет потребности в большом объеме горячей воды – нет необходимости в приобретении газовой колонки с высокой производительностью/мощностью. Только для мойки посуды вполне будет достаточно нагревателя с производительностью 10 литров в минуту и мощностью 17 кВт. Такие характеристики имеет модель
+							<a class="article-tooltip js-article-tooltip" href="#">
+								NEVA - 4510
+								<span class="icon-tooltip"></span>
+								<span class="article-tooltip-block">
+									<span class="article-tooltip-image"><img src="./images/view/product1.png" alt=""/></span>
+									<span class="article-tooltip-info">
+										Газовая колонка Bosch GWH 13-2G 
+										<span class="article-tooltip-price">13 290 р.</span>
+									</span>
+								</span>
+							</a>.
+						</p>
+						<p>Хотите совместить мойку посуды и принятие душа? Придется выбирать более мощную газовую колонку, например
+							<a class="article-tooltip js-article-tooltip" href="">
+								Bosch GWH 13-2G (WRD 13-2G)
+								<span class="icon-tooltip"></span>
+								<span class="article-tooltip-block">
+									<span class="article-tooltip-image"><img src="./images/view/product1.png" alt=""/></span>
+									<span class="article-tooltip-info">
+										Газовая колонка Bosch GWH 13-2G
+										<span class="article-tooltip-price">13 290 р.</span>
+									</span>
+								</span>
+							</a>.
+							Эта модель обладает производительностью 13 литров в минуту и мощностью 22.6 кВт.
+						</p>
+					</div>
+				</div>
+				<div class="article-text-wrap small image left">
+					<div class="article-image" style="background-image: url('./images/view/article-image2.jpg');"></div>
+					<div class="article-text">
+						<h2 class="article-text-title">Тип розжига газовой колонки</h2>
+						<p>В отличие от более старых моделей, использующих ручное поджигание спичкой – практически все современные газовые колонки оснащены автоподжигом. Это может быть электророзжиг или пьезорозжиг.</p>
+						<p>Если у вас нет потребности в большом объеме горячей воды – нет необходимости в приобретении газовой колонки с высокой производительностью/мощностью.</p>
+						<p>Только для мойки посуды вполне будет достаточно нагревателя с производительностью 10 литров в минуту и мощностью 17 кВт. Такие характеристики имеет модель
+							<a class="article-tooltip js-article-tooltip" href="#">
+								NEVA - 4510
+								<span class="icon-tooltip"></span>
+								<span class="article-tooltip-block">
+										<span class="article-tooltip-image"><img src="./images/view/product1.png" alt=""/></span>
+										<span class="article-tooltip-info">
+											Газовая колонка Bosch GWH 13-2G
+											<span class="article-tooltip-price">13 290 р.</span>
+										</span>
+									</span>
+							</a>.
+						</p>
+						<p>Современные газовые колонки обладают превосходной производительностью и большой мощностью, имеют привлекательный дизайн, безопасны в эксплуатации.</p>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal-block-info-wrap">
+					<div class="horizontal-block-info">
+						<div class="product-card-horizontal__item">
+							<div class="product-card-horizontal__img">
+								<img src="./images/view/product3.png" alt="">
+							</div>
+							<div class="product-card-horizontal__text">
+								<div class="product-card-horizontal__info-activity">
+									<a href="#" class="product__info-activity-item js-product__info-item">
+										<span class="icon-lois"></span>
+										<span class="product__info-activity-text_hide">В избранном</span>
+										<span class="product__info-activity-text_show">В избранное</span>
+									</a>
+									<a href="#" class="product__info-activity-item js-product__info-item">
+										<span class="icon-compare"></span>
+										<span class="product__info-activity-text">Сравнить</span>
+									</a>
+								</div>
+								<div class="product-card-horizontal__title"><a class="js-modal" href="#modal-accessories">Газовая колонка Electrolux GWH 265 ERN Nanoplus</a></div>
+								<div class="product-card-horizontal__bottom">
+									<div class="product-card-horizontal__cost"><span class="product-card__cost_old">11 299 р.</span>7 690 р.</div>
+									<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span>В корзину</a></div>
+								</div>
+								<a class="product-card-horizontal__one-click" href="#">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="container">
+				<div class="article-text-wrap small image right">
+					<div class="article-image" style="background-image: url('./images/view/article-image3.jpg');"></div>
+					<div class="article-text">
+						<h2 class="article-text-title">Безопасность газовой колонки</h2>
+						<p>Важно уделить внимание, каким образом производитель обеспечивает безопасность  эксплуатации газовой колонки. Мы рекомендуем приобретать водонагреватели, оснащенные системой защиты газ-контроль. Желательно, если газовая колонка имеет ограничение температуры нагрева и защиту от перегрева. Некоторые модели фильтруют воду и газ.</p>
+						<p>Среди дополнительных функций газовых колонок – наличие дисплея, индикатора включения, индикатора нагрева, термометра, датчика опрокидывания тяги. Выбирая газовую колонку, обратите внимание на особенности установки, габариты и вес.</p>
+						<p>Если у вас возникли затруднения при выборе газовой колонки или есть вопросы по установке и эксплуатации водонагревателя, проконсультируйтесь со специалистами нашей компании. Мы поможем вам подобрать нужную модель.</p>
+					</div>
+				</div>
+				<div class="article-text-wrap small">
+					<div class="article-text">
+						<h2 class="article-text-title">Технические характеристики газовой колонки</h2>
+						<p>Когда речь идет о технических характеристиках газовой колонки, прежде всего – это производительность и мощность.</p>
+						<p>Если у вас нет потребности в большом объеме горячей воды – нет необходимости в приобретении газовой колонки с высокой производительностью/мощностью. Только для мойки посуды вполне будет достаточно нагревателя с производительностью 10 литров в минуту и мощностью 17 кВт. Такие характеристики имеет модель
+							<a class="article-tooltip js-article-tooltip" href="#">
+								NEVA - 4510
+								<span class="icon-tooltip"></span>
+								<span class="article-tooltip-block">
+									<span class="article-tooltip-image"><img src="./images/view/product1.png" alt=""/></span>
+									<span class="article-tooltip-info">
+										Газовая колонка Bosch GWH 13-2G
+										<span class="article-tooltip-price">13 290 р.</span>
+									</span>
+								</span>
+							</a>.
+						</p>
+						<p>Хотите совместить мойку посуды и принятие душа? Придется выбирать более мощную газовую колонку, например
+							<a class="article-tooltip js-article-tooltip" href="">
+								Bosch GWH 13-2G (WRD 13-2G)
+								<span class="icon-tooltip"></span>
+								<span class="article-tooltip-block">
+									<span class="article-tooltip-image"><img src="./images/view/product1.png" alt=""/></span>
+									<span class="article-tooltip-info">
+										Газовая колонка Bosch GWH 13-2G
+										<span class="article-tooltip-price">13 290 р.</span>
+									</span>
+								</span>
+							</a>.
+							Эта модель обладает производительностью 13 литров в минуту и мощностью 22.6 кВт.
+						</p>
+					</div>
+				</div>
+				<div class="article-images-block-wrap">
+					<div class="article-images-block-over">
+						<div class="article-images-block">
+							<div class="article-images-item-wrap"><div class="article-images-item" style="background-image: url('./images/view/article-image4.jpg');"></div></div>
+							<div class="article-images-item-wrap"><div class="article-images-item" style="background-image: url('./images/view/article-image5.jpg');"></div></div>
+							<div class="article-images-item-wrap"><div class="article-images-item" style="background-image: url('./images/view/article-image6.jpg');"></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal-block-info-wrap">
+					<div class="horizontal-block-info">
+						<div class="horizontal-block-info-text">
+							Когда речь идет о технических характеристиках газовой колонки, прежде всего – это производительность и мощность.
+						</div>
+					</div>
+				</div>
+			<div class="container">
+				<div class="article-video-wrap">
+					<div class="article-video js-article-video">
+						<div class="article-video-button js-article-video-button" style="background-image: url('./images/view/article-video.jpg');"></div>
+						<iframe id="article-player" width="560" height="315" src="https://www.youtube.com/embed/U2qEred9ECs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="product-card-list-wrap">
+					<h2 class="product-card-list-title">
+						Товары, упомянутые в статье
+					</h2>
+					<div class="product-card-list js-product-card-list-sale product-card-list_full-width">
+						<div class="product-card">
+							<div class="product-card__label-list">
+								<div class="card-label card-label_new">Новинка</div>
+								<div class="card-label card-label_sale">Скидка</div>
+								<div class="card-label card-label_point"><span class="icon-shevron"></span></div>
+							</div>
+							<div class="js-product-card-icon product-card__favorite">
+								<span class="icon-lois"></span>
+							</div>
+							<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+								<span class="icon-compare"></span>
+							</a>
+							<!--всевозможные бейджы-->
+							<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>
+							<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+							<div class="product-card__img">
+								<img src="./images/view/product1.png" alt="">
+							</div>
+							<div class="product-card__title">
+								<a href="#">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+							</div>
+							<div class="product-card__cost"><span class="product-card__cost_old">35 499 р.</span>37 499 р.</div>
+							<div class="product-card__bottom">
+								<div class="product-card__rating">
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item"></div>
+								</div>
+								<div class="product-card__code">13809745</div>
+								<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+								<div class="product-card__one-click">
+									<a href="#">Купить в один клик</a>
+								</div>
+							</div>
+							<span class="icon-diagonal_badge"></span>
+						</div>
+						<div class="product-card">
+							<div class="product-card__label-list">
+								<div class="card-label card-label_hit">Хит продаж</div>
+								<div class="card-label card-label_sale">Скидка</div>
+								<div class="card-label card-label_point"><span class="icon-shevron"></span></div>
+							</div>
+							<div class="js-product-card-icon product-card__favorite">
+								<span class="icon-lois"></span>
+							</div>
+							<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+								<span class="icon-compare"></span>
+							</a>
+							<!--всевозможные бейджы-->
+							<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+							<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>
+							<div class="product-card__img">
+								<img src="./images/view/product2.png" alt="">
+							</div>
+							<div class="product-card__title">
+								<a href="#">Газовый водонагреватель Ferolli P360 mk.III</a>
+							</div>
+							<div class="product-card__cost">54 290 р.</div>
+							<div class="product-card__bottom">
+								<div class="product-card__rating">
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item"></div>
+								</div>
+								<div class="product-card__code">13809745</div>
+								<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+								<div class="product-card__one-click">
+									<a href="#">Купить в один клик</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card__label-list">
+								<div class="card-label card-label_hit">Хит продаж</div>
+								<div class="card-label card-label_sale">Скидка</div>
+							</div>
+							<div class="js-product-card-icon product-card__favorite">
+								<span class="icon-lois"></span>
+							</div>
+							<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+								<span class="icon-compare"></span>
+							</a>
+							<!--всевозможные бейджы-->
+							<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+							<div class="product-card__img">
+								<img src="./images/view/product3.png" alt="">
+							</div>
+							<div class="product-card__title">
+								<a href="#">Газовый водонагреватель Ferolli P360 mk.III</a>
+							</div>
+							<div class="product-card__cost"><span class="product-card__cost_old">11 299 р.</span>8 990 р.</div>
+							<div class="product-card__bottom">
+								<div class="product-card__rating">
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item"></div>
+								</div>
+								<div class="product-card__code">13809745</div>
+								<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+								<div class="product-card__one-click">
+									<a href="#">Купить в один клик</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card__label-list">
+								<div class="card-label card-label_hit">Хит продаж</div>
+								<div class="card-label card-label_sale">Скидка</div>
+							</div>
+							<div class="js-product-card-icon product-card__favorite">
+								<span class="icon-lois"></span>
+							</div>
+							<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+								<span class="icon-compare"></span>
+							</a>
+							<!--всевозможные бейджы-->
+							<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+							<div class="product-card__img">
+								<img src="./images/view/product4.png" alt="">
+							</div>
+							<div class="product-card__title">
+								<a href="#">Очиститель воздуха со сменными фильтрами Amaircare Roomaid</a>
+							</div>
+							<div class="product-card__cost">12 490 р.</div>
+							<div class="product-card__bottom">
+								<div class="product-card__rating">
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item"></div>
+								</div>
+								<div class="product-card__code">13809745</div>
+								<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+								<div class="product-card__one-click">
+									<a href="#">Купить в один клик</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card">
+							<div class="product-card__label-list">
+								<div class="card-label card-label_hit">Хит продаж</div>
+								<div class="card-label card-label_sale">Скидка</div>
+							</div>
+							<div class="js-product-card-icon product-card__favorite">
+								<span class="icon-lois"></span>
+							</div>
+							<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+								<span class="icon-compare"></span>
+							</a>
+							<!--всевозможные бейджы-->
+							<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+							<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+							<div class="product-card__img">
+								<img src="./images/view/product4.png" alt="">
+							</div>
+							<div class="product-card__title">
+								<a href="#">Очиститель воздуха со сменными фильтрами Amaircare Roomaid</a>
+							</div>
+							<div class="product-card__cost">12 490 р.</div>
+							<div class="product-card__bottom">
+								<div class="product-card__rating">
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item product-card__rating-item_inner"></div>
+									<div class="product-card__rating-item"></div>
+								</div>
+								<div class="product-card__code">13809745</div>
+								<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+								<div class="product-card__one-click">
+									<a href="#">Купить в один клик</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-main mobile-menu-wrapper l-footer-bottom">
+		<div class="container">
+			<div class="footer-main__top">
+				<div class="footer-main-wrapper">
+					<span class="footer-main-wrapper__title js-footer-main-nav">Каталог</span>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Автохолодильники</a></li>
+						<li class="footer-main-nav__item"><a href="#">Обогреватели</a></li>
+						<li class="footer-main-nav__item"><a href="#">Метеоприборы</a></li>
+						<li class="footer-main-nav__item"><a href="#">Водонагреватели</a></li>
+						<li class="footer-main-nav__item"><a href="#">Увлажнители и мойки</a></li>
+						<li class="footer-main-nav__item"><a href="#">Очистка и ионизация</a></li>
+						<li class="footer-main-nav__item"><a href="#">Кухонные плиты</a></li>
+						<li class="footer-main-nav__item"><a href="#">Отопление</a></li>
+						<li class="footer-main-nav__item"><a href="#">Осушители</a></li>
+						<li class="footer-main-nav__item"><a href="#">Вентиляция</a></li>
+						<li class="footer-main-nav__item"><a href="#">Полотенцесушители</a></li>
+						<li class="footer-main-nav__item"><a href="#">Грили и барбекю</a></li>
+						<li class="footer-main-nav__item"><a href="#">Сушилки для рук</a></li>
+						<li class="footer-main-nav__item"><a href="#">Камины</a></li>
+						<li class="footer-main-nav__item"><a href="#">Фильтры для воды</a></li>
+						<li class="footer-main-nav__item"><a href="#">Кондиционеры</a></li>
+						<li class="footer-main-nav__item"><a href="#">Насосы</a></li>
+						<li class="footer-main-nav__item"><a href="#">Услуги</a></li>
+						<li class="footer-main-nav__item"><a href="#">Акции</a></li>
+					</ul>
+				</div>
+				<div class="footer-main-wrapper footer-main-wrapper_modified">
+					<span class="footer-main-wrapper__title js-footer-main-nav">О компании</span>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Об АО «Мособлгаз</a></li>
+						<li class="footer-main-nav__item"><a href="#">Отзывы о компании</a></li>
+						<li class="footer-main-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Оплата</a></li>
+						<li class="footer-main-nav__item"><a href="#">Доставка</a></li>
+						<li class="footer-main-nav__item"><a href="#">Возврат</a></li>
+						<li class="footer-main-nav__item"><a href="#">Гарантии качества</a></li>
+					</ul>
+				</div>
+				<div class="footer-main__info">
+					<div class="footer-main__info-phone">
+						<a href="tel:84954772045">8 495 477-20-45</a>
+					</div>
+					<div class="footer-main__info-address">
+						Московская область, Одинцовский район,   1-й км Рублево-Успенского шоссе, д.1, корп. Б
+					</div>
+					<div class="footer-main__info-work-time">
+						<span>Пн-пт: 10.00 – 18.00,</span> <span>сб: 12.00 – 13.00</span>
+					</div>
+					<div class="footer-main__info-mail">
+						<a href="mailto:shop@mosoblgaz.ru">shop@mosoblgaz.ru</a>
+					</div>
+					<div class="footer-main__info-social">
+						<a href="#"><span class="icon-vk"></span></a>
+						<a href="#"><span class="icon-fb"></span></a>
+						<a href="#"><span class="icon-tw"></span></a>
+					</div>
+					<div class="footer-main__info-pay">
+						<span>Принимаем к оплате</span>
+						<img src="/images/visa.svg" alt="">
+						<img src="/images/mastercard.svg" alt="">
+						<img src="/images/maestro.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="footer-main__bottom">
+				<span>© 2018 АО «Мособлгаз»</span>
+				<span><a href="#">Сделано в KR.digital</a></span>
+			</div>
+		</div>
+	</footer>
+</div>
+<div class="tooltip-templates">
+    <span id="tooltip-compare" class="tooltip-compare">
+        К сравнению
+    </span>
+</div>
+<div id="modal-accessories" class="mfp-hide modal-default">
+	<div class="modal-default__wrapper">
+		<h4>Дымоход Polaris Aqua Smoke-218</h4>
+		<div class="product product_inner">
+			<div class="product__view l-wrapper-swap_1">
+				<div class="product-card__label-list">
+					<div class="card-label card-label_new">Новинка</div>
+					<div class="card-label card-label_hit">Хит продаж</div>
+				</div>
+				<img src="./images/view/product.jpg" alt="">
+				<div class="product__info-activity">
+					<a href="#" class="product__info-activity-item js-product__info-item">
+						<span class="icon-lois"></span>
+						<span class="product__info-activity-text_hide">В избранном</span>
+						<span class="product__info-activity-text_show">В избранное</span>
+					</a>
+					<a href="#" class="product__info-activity-item js-product__info-item">
+						<span class="icon-compare"></span>
+						<span class="product__info-activity-text">Сравнить</span>
+					</a>
+					<a href="#" class="product__info-activity-item js-product__info-item">
+						<span class="icon-share"></span>
+						<span class="product__info-activity-text">Поделиться</span>
+					</a>
+				</div>
+			</div>
+			<div class="product__info l-wrapper-swap_3">
+				<div class="product__info-characteristic">
+					<div class="table-two-cols__wrapper">
+						<div class="table-two-cols">
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Объём</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">80 литров</span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Мощность нагрева</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">2.5 кВт </span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Потребляемая мощность</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">2500 Вт </span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Гарантия</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">1 год </span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Объём</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">80 литров</span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Мощность нагрева</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">2.5 кВт </span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Потребляемая мощность</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">2500 Вт </span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+							<div class="table-two-cols__row">
+								<div class="table-two-cols__col table-two-cols__col-first">
+									<span class="table-two-cols__wrapper-text">Гарантия</span>
+								</div>
+								<div class="table-two-cols__col table-two-cols__col-second">
+									<span class="table-two-cols__wrapper-text">1 год </span></div>
+								<span class="table-two-cols__border-bottom"></span>
+							</div>
+						</div>
+					</div>
+					<div class="product__info-characteristic-link js-product__info-characteristic">
+						<a href="#"><span>Смотреть все характеристики</span><span>Скрыть</span> </a>
+					</div>
+				</div>
+			</div>
+			<div class="product__check-wrapper l-wrapper-swap_2">
+				<div class="product__check">
+					<div class="product__check-cost">15 499 р.</div>
+					<div class="product__check-btn">
+						<a href="#" class="btn-default"><span class="icon-cart"></span> В корзину</a>
+					</div>
+					<div class="product__check-one-click">
+						<a href="#">Купить в один клик</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h5>Подходит для</h5>
+		<div class="product-card-list js-product-card-light-carousel product-card-light-carousel">
+			<div class="product-card product-card_light">
+				<div class="product-card__img">
+					<img src="./images/view/product1.png" alt="">
+				</div>
+				<div class="product-card__title">
+					<a href="#">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+				</div>
+				<div class="product-card__cost">37 499 р.</div>
+			</div>
+			<div class="product-card product-card_light">
+				<div class="product-card__img">
+					<img src="./images/view/product1.png" alt="">
+				</div>
+				<div class="product-card__title">
+					<a href="#">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+				</div>
+				<div class="product-card__cost">37 499 р.</div>
+			</div>
+			<div class="product-card product-card_light">
+				<div class="product-card__img">
+					<img src="./images/view/product1.png" alt="">
+				</div>
+				<div class="product-card__title">
+					<a href="#">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+				</div>
+				<div class="product-card__cost">37 499 р.</div>
+			</div>
+			<div class="product-card product-card_light">
+				<div class="product-card__img">
+					<img src="./images/view/product1.png" alt="">
+				</div>
+				<div class="product-card__title">
+					<a href="#">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+				</div>
+				<div class="product-card__cost">37 499 р.</div>
+			</div>
+			<div class="product-card product-card_light">
+				<div class="product-card__img">
+					<img src="./images/view/product1.png" alt="">
+				</div>
+				<div class="product-card__title">
+					<a href="#">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+				</div>
+				<div class="product-card__cost">37 499 р.</div>
+			</div>
+		</div>
+		<h5>Похожие товары</h5>
+		<div class="product-card-horizontal product-card-horizontal_modal js-product-card-horizontal">
+			<div class="product-card-horizontal__item">
+				<div class="product-card-horizontal__img">
+					<img src="./images/view/product-horizontal.jpg" alt="">
+				</div>
+				<div class="product-card-horizontal__text">
+					<div class="product-card-horizontal__title"><a class="js-modal" href="#modal-accessories">Газовый композитный баллон Ragasco 24,5 л</a></div>
+					<div class="product-card-horizontal__bottom">
+						<div class="product-card-horizontal__cost">7 690 р.</div>
+						<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="product-card-horizontal__item">
+				<div class="product-card-horizontal__img">
+					<img src="./images/view/product-horizontal2.jpg" alt="">
+				</div>
+				<div class="product-card-horizontal__text">
+					<div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+					<div class="product-card-horizontal__bottom">
+						<div class="product-card-horizontal__cost">7 690 р.</div>
+						<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="product-card-horizontal__item">
+				<div class="product-card-horizontal__img">
+					<img src="./images/view/product-horizontal.jpg" alt="">
+				</div>
+				<div class="product-card-horizontal__text">
+					<div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+					<div class="product-card-horizontal__bottom">
+						<div class="product-card-horizontal__cost">7 690 р.</div>
+						<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="product-card-horizontal__item">
+				<div class="product-card-horizontal__img">
+					<img src="./images/view/product-horizontal2.jpg" alt="">
+				</div>
+				<div class="product-card-horizontal__text">
+					<div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+					<div class="product-card-horizontal__bottom">
+						<div class="product-card-horizontal__cost">7 690 р.</div>
+						<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="product-card-horizontal__item">
+				<div class="product-card-horizontal__img">
+					<img src="./images/view/product-horizontal.jpg" alt="">
+				</div>
+				<div class="product-card-horizontal__text">
+					<div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+					<div class="product-card-horizontal__bottom">
+						<div class="product-card-horizontal__cost">7 690 р.</div>
+						<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="product-card-horizontal__item">
+				<div class="product-card-horizontal__img">
+					<img src="./images/view/product-horizontal2.jpg" alt="">
+				</div>
+				<div class="product-card-horizontal__text">
+					<div class="product-card-horizontal__title"><a href="#">Газовый композитный баллон Ragasco 24,5 л</a></div>
+					<div class="product-card-horizontal__bottom">
+						<div class="product-card-horizontal__cost">7 690 р.</div>
+						<div class="product-card-horizontal__btn"><a class="btn-default" href=""><span class="icon-cart"></span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

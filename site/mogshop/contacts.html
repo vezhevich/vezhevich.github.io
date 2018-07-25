@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Заголовок</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Описание сайта содержит не более 150 символов">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="mobile-menu">
+	<div class="mobile-menu__nav">
+		<ul class="list_unstyle mobile-menu__nav-lv1">
+			<li><a href="#">Войти</a></li>
+			<li>
+				<a href="#">Каталог</a>
+				<ul class="list_unstyle mobile-menu__nav-lv2">
+					<li class="footer-main-nav__item"><a href="#">Автохолодильники</a></li>
+					<li class="footer-main-nav__item"><a href="#">Обогреватели</a></li>
+					<li class="footer-main-nav__item"><a href="#">Метеоприборы</a></li>
+					<li class="footer-main-nav__item"><a href="#">Водонагреватели</a></li>
+					<li class="footer-main-nav__item"><a href="#">Увлажнители и мойки</a></li>
+					<li class="footer-main-nav__item"><a href="#">Очистка и ионизация</a></li>
+					<li class="footer-main-nav__item"><a href="#">Кухонные плиты</a></li>
+					<li class="footer-main-nav__item"><a href="#">Отопление</a></li>
+					<li class="footer-main-nav__item"><a href="#">Осушители</a></li>
+					<li class="footer-main-nav__item"><a href="#">Вентиляция</a></li>
+					<li class="footer-main-nav__item"><a href="#">Полотенцесушители</a></li>
+					<li class="footer-main-nav__item"><a href="#">Грили и барбекю</a></li>
+					<li class="footer-main-nav__item"><a href="#">Сушилки для рук</a></li>
+					<li class="footer-main-nav__item"><a href="#">Камины</a></li>
+					<li class="footer-main-nav__item"><a href="#">Фильтры для воды</a></li>
+					<li class="footer-main-nav__item"><a href="#">Кондиционеры</a></li>
+					<li class="footer-main-nav__item"><a href="#">Насосы</a></li>
+					<li class="footer-main-nav__item"><a href="#">Услуги</a></li>
+					<li class="footer-main-nav__item"><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Покупателям</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Полезная информация</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="mobile-menu__info">
+			<div class="mobile-menu__info-location">
+				<span class="icon-pin"></span>
+				Балашиха
+			</div>
+			<div class="mobile-menu__info-phone">
+				<a href="tel:88002002904">8 800 200-29-04</a>
+				<span> Заказать звонок</span>
+			</div>
+			<div class="mobile-menu__info-work-time">
+				<span>Пн-пт: 10.00 – 18.00,</span> <span> сб: 12.00 – 13.00</span>
+			</div>
+			<div class="mobile-menu__info-lang">
+				<a class="mobile-menu__info-lang_active" href="#">Ru</a>
+				<span>|</span>
+				<a href="#">En</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="l-wrapper-footer-bottom">
+	<div class="l-wrapper-content">
+		<header class="header-main header-main_inner-page">
+			<div class="header-main__top">
+				<div class="container">
+					<ul class="header-main__top-nav list_unstyle">
+						<li class="header-main__top-nav-item"><a href="#">Статьи</a></li>
+						<li class="header-main__top-nav-item"><a href="#">Новости</a></li>
+						<li class="header-main__top-nav-item">
+							<a href="#">О компании</a>
+							<ul class="header-main__top-nav-lv2 list_unstyle">
+								<li><a href="#">Об АО «Мособлгаз»</a></li>
+								<li><a href="#">Отзывы о компании</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="header-main__top-nav-item"><a href="#">Возврат</a></li>
+						<li class="header-main__top-nav-item"><a href="#">Бонусная программа</a></li>
+					</ul>
+					<ul class="header-main__top-nav list_unstyle">
+						<!--когда пользователь авторизирован добавляем класс header-main__auth_in-->
+						<li class="header-main__top-nav-item header-main__auth">
+							<a class="header-main__auth-enter" href="#"><span class="icon-login"></span>Вход</a>
+							<a class="header-main__auth-user" href="#"><span class="icon-login"></span>Егор Собакин</a>
+							<ul class="header-main__top-nav-lv2 list_unstyle">
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</li>
+						<li class="header-main__top-nav-item"><a href="#"><span class="icon-pin"></span>Балашиха</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-main__middle">
+				<div class="container">
+					<div class="header-main__logo">
+						<a href="/"><img src="./images/logo.svg" alt=""></a>
+						<a class="header-main__logo_xs" href="/"><img src="./images/logo-xs.svg" alt=""></a>
+					</div>
+					<div class="header-main__search">
+						<div class="header-main__search-close_xs js-header-main__search-close_xs"><span class="icon-close"></span></div>
+						<div class="header-main__search-wrapper">
+							<input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
+							<button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+						</div>
+						<div class="header-main__search-result">
+							<div class="header-main__search-title">Товары</div>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<div class="header-main__search-title">Категории</div>
+							<div class="header-main__search-result-list">
+								<a href="#" class="header-main__search-result-list-item">Водонагреватели Electrolux <span>20 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Очистка и ионизация Electrolux <span>40 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Грили и барбекю Electrolux <span>40 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Увлажнители и мойки Electrolux <span>40 товаров</span></a>
+							</div>
+							<a href="#" class="header-main__search-more">
+								Смотреть все результаты <span>(70)</span>
+							</a>
+						</div>
+					</div>
+					<div class="header-main__info">
+						<div class="header-main__search-xs js-header-main__search-xs"></div>
+						<a href="#" class="header-main__info-item header-main__favorite">
+							<span class="header-main__info-icon icon-lois"></span>
+							<span class="header-main__info-counter">3</span>
+						</a>
+						<a href="#" class="header-main__info-item header-main__comparison">
+							<span class="header-main__info-icon icon-compare"></span>
+							<span class="header-main__info-counter">1</span>
+						</a>
+						<a href="#" class="header-main__info-item header-main__shopping-cart">
+							<div class="header-main__info-item-wrapper">
+								<span class="header-main__info-icon icon-cart"></span>
+								<span class="header-main__info-counter">13</span>
+							</div>
+							Корзина
+						</a>
+						<div id="ol" class="header-main__burder"><span class="icon-burger"></span></div>
+					</div>
+					<div class="header-main__phone">
+						<a href="tel:88002002904">8 800 200-29-04</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main__bottom">
+				<div class="container">
+					<ul class="list_unstyle header-main__nav">
+						<li class="header-main__nav-item"><a href="catalog.html"><span class="icon-list"></span>Каталог</a></li>
+						<li class="header-main__nav-item"><a href="#">Услуги</a></li>
+						<li class="header-main__nav-item"><a href="#">Доставка</a></li>
+						<li class="header-main__nav-item"><a href="#">Оплата</a></li>
+						<li class="header-main__nav-item"><a href="#">Акции</a></li>
+					</ul>
+					<a href="#" class="btn header-main__btn"><span class="icon-phone"></span>Закзать звонок</a>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-menu-wrapper mobile-menu-wrapper_after-header">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a class="breadcrumbs__item" href="#"><span class="icon-arrow_small"></span>Главная</a>
+					<a class="breadcrumbs__item" href="#">Каталог</a>
+					<a class="breadcrumbs__item" href="#">Водонагреватели</a>
+					<a class="breadcrumbs__item" href="#">Накопительные водонагреватели</a>
+					<a class="breadcrumbs__item" href="#">Polaris</a>
+					<a class="breadcrumbs__item" href="#">Водонагреватель накопительный Polaris AQUA SLR 80V</a>
+				</div>
+				<h1>Контакты <span class="desktop-visible">и адреса магазинов</span></h1>
+			</div>
+			<div class="delivery-address-list-wrapper contacts js-delivery-address-list">
+				<div class="contacts-container">
+					<div class="contacts-block-wrap">
+						<div class="contacts-block-left">
+							<div class="contacts-block-title">Приём заказов</div>
+							<div class="contacts-block-info">
+								<div class="contacts-block-info-item">
+									<div class="contacts-block-info-item--left">Телефон</div>
+									<div class="contacts-block-info-item--right">
+										<a href="tel:84954772045" class="contacts-block-info-item--phone">8 (495) 477-20-45</a>
+										<a href="#modal-callback" class="contacts-block-info-item--callback js-modal">Заказать звонок</a>
+									</div>
+								</div>
+								<div class="contacts-block-info-item">
+									<div class="contacts-block-info-item--left">E-mail</div>
+									<div class="contacts-block-info-item--right">
+										<a href="mailto:shop@mosoblgaz.ru" class="contacts-block-info-item--mail">shop@mosoblgaz.ru</a>
+										<a href="#" class="contacts-block-info-item--callback">Отправить сообщение</a>
+									</div>
+								</div>
+								<div class="contacts-block-info-item">
+									<div class="contacts-block-info-item--left">Прием заказов на сайте</div>
+									<div class="contacts-block-info-item--right">
+										круглосуточно
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="contacts-block-right">
+							<div class="contacts-block-title">Реквизиты компании</div>
+							<div class="contacts-block-text">
+								Акционерное Общество «Мособлгаз» (АО «Мособлгаз»)
+							</div>
+							<div class="contacts-block-text">
+								ОГРН 1175024034734 <br/>
+								ИHH 5032292612 <br/>
+								КПП 503201001
+							</div>
+							<div class="contacts-block-text">
+								143026, Московская область, <br/>
+								Одинцовский район, р.п. <br/>
+								Новоивановское, ул.Калинина, дом 1.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="delivery-address-header">
+						<h2 class="delivery-address-header-title">
+							Адреса самовывоза
+						</h2>
+						<div class="delivery-address-header-menu js-info-tabs-menu">
+							<div class="delivery-address-header-menu--item js-info-tabs-menu--item active">Списком</div>
+							<div class="delivery-address-header-menu--item js-info-tabs-menu--item">На карте</div>
+						</div>
+						<div class="delivery-address-header-search-wrap js-delivery-address-header-search-ctn">
+							<div class="delivery-address-header-search">
+								<div class="delivery-address-header-search--button js-delivery-address-header-search-button">
+									<span class="icon-search"></span>
+								</div>
+								<div class="delivery-address-header-search--input-ctn">
+									<input type="text" class="delivery-address-header-search-input js-delivery-address-header-search-input"/>
+									<div class="delivery-address-header-search-close js-delivery-address-header-search-close">
+										<span class="icon-close"></span>
+									</div>
+								</div>
+							</div>
+							<div class="delivery-address-header-search-list js-delivery-address-header-search-list">
+								<a href="#" class="delivery-address-header-search-list--item">Мадрид</a>
+								<a href="#" class="delivery-address-header-search-list--item">Махачкала</a>
+								<a href="#" class="delivery-address-header-search-list--item">Мариуполь</a>
+								<a href="#" class="delivery-address-header-search-list--item">Марий-Эл</a>
+							</div>
+						</div>
+						<div class="delivery-address-header-button">
+							<a href="" class="btn-default blue js-delivery-map-closest">Найти ближайший</a>
+						</div>
+					</div>
+				</div>
+				<div class="delivery-address-content js-info-tabs-content">
+					<div class="delivery-address-content-item js-info-tabs-content-item active">
+						<div class="container">
+							<div class="delivery-address-content-list-wrapper">
+								<div class="delivery-address-content-list-wrap">
+									<div class="delivery-address-content-list-over">
+										<div class="delivery-address-content-list js-delivery-address-content-list">
+											<div class="delivery-address-content-list-item js-delivery-address-content-list-item js-address-map-coords" data-lat="37.03157786328126" data-lon="55.760189227727665">
+												<div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Балашиха</div>
+												<div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+													<div class="delivery-address-content-list-item--description js-delivery-address-content-list-item-description">проспект Ленина, дом 77</div>
+													<a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone js-delivery-address-content-list-item-phone">+7 (495) 546 76 54</a>
+													<div class="delivery-address-content-list-item-working">
+														<div class="delivery-address-content-list-item-working--title">Режим работы</div>
+														<div class="delivery-address-content-list-item-working--text js-delivery-address-content-list-item-working">
+															Пн-пт: с 10.00 до 18.00 <br/>
+															Сб: с 10.00 до 16.30
+														</div>
+													</div>
+												</div>
+												<div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+											</div>
+											<div class="delivery-address-content-list-item js-delivery-address-content-list-item" data-lat="38.93770579296875" data-lon="55.41407580073717">
+												<div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Фрязино</div>
+												<div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+													<div class="delivery-address-content-list-item--description js-delivery-address-content-list-item-description">ул. Иванова, дом 16</div>
+													<a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone js-delivery-address-content-list-item-phone">+7 (499) 879 09 87</a>
+													<div class="delivery-address-content-list-item-working">
+														<div class="delivery-address-content-list-item-working--title">Режим работы</div>
+														<div class="delivery-address-content-list-item-working--text js-delivery-address-content-list-item-working">
+															Пн-пт: с 10.00 до 18.00 <br/>
+															Сб: с 10.00 до 16.30
+														</div>
+													</div>
+												</div>
+												<div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+											</div>
+											<div class="delivery-address-content-list-item js-delivery-address-content-list-item js-address-map-coords" data-lat="38.93770579296875" data-lon="55.41407580073717">
+												<div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Фрязино</div>
+												<div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+													<div class="delivery-address-content-list-item--description js-delivery-address-content-list-item-description">ул. Иванова, дом 16</div>
+													<a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone js-delivery-address-content-list-item-phone">+7 (499) 879 09 87</a>
+													<div class="delivery-address-content-list-item-working">
+														<div class="delivery-address-content-list-item-working--title">Режим работы</div>
+														<div class="delivery-address-content-list-item-working--text js-delivery-address-content-list-item-working">
+															Пн-пт: с 10.00 до 18.00 <br/>
+															Сб: с 10.00 до 16.30
+														</div>
+													</div>
+												</div>
+												<div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+											</div>
+											<div class="delivery-address-content-list-item js-delivery-address-content-list-item js-address-map-coords" data-lat="37.225211896484396" data-lon="55.40235560791462">
+												<div class="delivery-address-content-list-item--title js-delivery-address-content-list-item-title">г. Щёлково</div>
+												<div class="delivery-address-content-list-item-info js-delivery-address-content-list-item-info">
+													<div class="delivery-address-content-list-item--description js-delivery-address-content-list-item-description">ул. Октябрьская, дом 20 «А»</div>
+													<a href="tel:+7(495)5467654" class="delivery-address-content-list-item--phone js-delivery-address-content-list-item-phone">+7 (495) 875 34 21</a>
+													<div class="delivery-address-content-list-item-working">
+														<div class="delivery-address-content-list-item-working--title">Режим работы</div>
+														<div class="delivery-address-content-list-item-working--text js-delivery-address-content-list-item-working">
+															Пн-пт: с 10.00 до 18.00 <br/>
+															Сб: с 10.00 до 16.30
+														</div>
+													</div>
+												</div>
+												<div class="delivery-address-content-list-item-icon"><span class="icon-shevron"></span></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="delivery-address-content-list-fog js-delivery-address-content-list-fog"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-address-content-item js-info-tabs-content-item">
+						<div class="delivery-address-content-map-wrap">
+							<div class="container">
+								<div class="delivery-address-content-map-legend-wrap">
+									<div class="delivery-address-content-map-legend">
+										<div class="delivery-address-content-map-legend--zone">
+											<div class="delivery-address-content-map-legend--zone-style"></div>
+											<div class="delivery-address-content-map-legend--zone-title">Зона доставки</div>
+										</div>
+										<div class="delivery-address-content-map-legend--pin">
+											<div class="delivery-address-content-map-legend--pin-icon">
+												<img src="/images/view/map-pin.svg" alt=""/>
+											</div>
+											<div class="delivery-address-content-map-legend--pin-title">Пункт самовывоза</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script type="text/javascript">
+
+							</script>
+							<div class="delivery-address-content-map" id="delivery-map">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-main mobile-menu-wrapper l-footer-bottom">
+		<div class="container">
+			<div class="footer-main__top">
+				<div class="footer-main-wrapper">
+					<span class="footer-main-wrapper__title js-footer-main-nav">Каталог</span>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Автохолодильники</a></li>
+						<li class="footer-main-nav__item"><a href="#">Обогреватели</a></li>
+						<li class="footer-main-nav__item"><a href="#">Метеоприборы</a></li>
+						<li class="footer-main-nav__item"><a href="#">Водонагреватели</a></li>
+						<li class="footer-main-nav__item"><a href="#">Увлажнители и мойки</a></li>
+						<li class="footer-main-nav__item"><a href="#">Очистка и ионизация</a></li>
+						<li class="footer-main-nav__item"><a href="#">Кухонные плиты</a></li>
+						<li class="footer-main-nav__item"><a href="#">Отопление</a></li>
+						<li class="footer-main-nav__item"><a href="#">Осушители</a></li>
+						<li class="footer-main-nav__item"><a href="#">Вентиляция</a></li>
+						<li class="footer-main-nav__item"><a href="#">Полотенцесушители</a></li>
+						<li class="footer-main-nav__item"><a href="#">Грили и барбекю</a></li>
+						<li class="footer-main-nav__item"><a href="#">Сушилки для рук</a></li>
+						<li class="footer-main-nav__item"><a href="#">Камины</a></li>
+						<li class="footer-main-nav__item"><a href="#">Фильтры для воды</a></li>
+						<li class="footer-main-nav__item"><a href="#">Кондиционеры</a></li>
+						<li class="footer-main-nav__item"><a href="#">Насосы</a></li>
+						<li class="footer-main-nav__item"><a href="#">Услуги</a></li>
+						<li class="footer-main-nav__item"><a href="#">Акции</a></li>
+					</ul>
+				</div>
+				<div class="footer-main-wrapper footer-main-wrapper_modified">
+					<span class="footer-main-wrapper__title js-footer-main-nav">О компании</span>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Об АО «Мособлгаз</a></li>
+						<li class="footer-main-nav__item"><a href="#">Отзывы о компании</a></li>
+						<li class="footer-main-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Оплата</a></li>
+						<li class="footer-main-nav__item"><a href="#">Доставка</a></li>
+						<li class="footer-main-nav__item"><a href="#">Возврат</a></li>
+						<li class="footer-main-nav__item"><a href="#">Гарантии качества</a></li>
+					</ul>
+				</div>
+				<div class="footer-main__info">
+					<div class="footer-main__info-phone">
+						<a href="tel:84954772045">8 495 477-20-45</a>
+					</div>
+					<div class="footer-main__info-address">
+						Московская область, Одинцовский район,   1-й км Рублево-Успенского шоссе, д.1, корп. Б
+					</div>
+					<div class="footer-main__info-work-time">
+						<span>Пн-пт: 10.00 – 18.00,</span> <span>сб: 12.00 – 13.00</span>
+					</div>
+					<div class="footer-main__info-mail">
+						<a href="mailto:shop@mosoblgaz.ru">shop@mosoblgaz.ru</a>
+					</div>
+					<div class="footer-main__info-social">
+						<a href="#"><span class="icon-vk"></span></a>
+						<a href="#"><span class="icon-fb"></span></a>
+						<a href="#"><span class="icon-tw"></span></a>
+					</div>
+					<div class="footer-main__info-pay">
+						<span>Принимаем к оплате</span>
+						<img src="/images/visa.svg" alt="">
+						<img src="/images/mastercard.svg" alt="">
+						<img src="/images/maestro.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="footer-main__bottom">
+				<span>© 2018 АО «Мособлгаз»</span>
+				<span><a href="#">Сделано в KR.digital</a></span>
+			</div>
+		</div>
+	</footer>
+</div>
+<div class="tooltip-templates">
+    <span id="tooltip-compare" class="tooltip-compare">
+        К сравнению
+    </span>
+</div>
+<!--модальное окно-->
+<div id="modal-callback" class="mfp-hide modal-default small">
+	<div class="modal-default__wrapper">
+		<h4 class="callback-form-title">Обратная связь</h4>
+		<div class="callback-form">
+			<form action="">
+				<div class="callback-form-item">
+					<div class="label-default">Ваше имя</div>
+					<!--input-default_error для ошибки-->
+					<input type="text" class="input input-default" placeholder="Введите ваше имя">
+				</div>
+				<div class="callback-form-item">
+					<div class="label-default">Номер телефона</div>
+					<!--input-default_error для ошибки-->
+					<input type="tel" class="input input-default input-mask input-default_error" placeholder="Введите ваш телефон" im-insert="true">
+					<span class="form-default-error">Ошибка</span>
+				</div>
+				<div class="callback-form-item">
+					<div class="label-default">Адрес электронной почты</div>
+					<!--input-default_error для ошибки-->
+					<input type="mail" class="input input-default" placeholder="Введите вашу почту">
+				</div>
+				<div class="callback-form-item">
+					<div class="label-default">Сообщение</div>
+					<!--input-default_error для ошибки-->
+					<textarea class="textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+				</div>
+				<div class="callback-form-user-accept">
+					Нажимая кнопку «Отправить», я соглашаюсь на <a href="#">получение рекламных и информационных сообщений</a> и
+					<a href="">обработку персональных данных</a>.
+				</div>
+				<input class="btn-default" type="submit" value="Отправить"/>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&coordorder=longlat" type="text/javascript"></script>
+<script src="js/map/delivery-map.js"></script>
+<script src="js/common.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

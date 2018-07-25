@@ -1,10 +1,6 @@
 $(document).ready(function() {
 	if($('.js-delivery-info-tabs-ctn').length){
-		fInfoTabs('.js-delivery-info-tabs-ctn');
-	}
-
-	if($('.js-delivery-address-list').length){
-		fInfoTabs('.js-delivery-address-list');
+		fInfoTabs($('.js-delivery-info-tabs-ctn'));
 	}
 
 	if($('.js-delivery-address-content-list-fog').length){
@@ -23,7 +19,41 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).toggleClass('active');
 	});
+
+	$('.js-article-video-button').on('click', function (e) {
+		fPlayYoutubeVideo($(this));
+		e.preventDefault();
+	});
+
+	$('.js-article-tooltip').on('click', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var $tooltipItems = $('.js-article-tooltip');
+		var $this = $(this);
+		if($this.hasClass('active')){
+			return false;
+		}
+		$tooltipItems.removeClass('active');
+		$this.addClass('active');
+
+	});
+	$('body').on('click', function () {
+		var $tooltipItems = $('.js-article-tooltip');
+		$tooltipItems.removeClass('active');
+	});
 });
+
+function fPlayYoutubeVideo($btn) {
+	var $videoBlock = $btn.parents('.js-article-video').eq(0);
+	var $videoPlayer = $videoBlock.find('#article-player');
+	var	videoSrc = $videoPlayer.attr('src');
+	$videoPlayer.attr('src', videoSrc + '&autoplay=1');
+	setTimeout(function () {
+		$videoBlock.addClass('active');
+	},200);
+
+}
+var mapActivePoint = -1;
 
 function fSetFogWidth(item, itemWidthCtn) {
 	var itemWidth = item.parent().find(itemWidthCtn).width();
@@ -47,23 +77,21 @@ function fAddressListSearch() {
 		e.stopPropagation();
 		$searchCtn.removeClass('active');
 		$searchList.removeClass('active');
-	})
+	});
 	$('.js-delivery-address-header-search-input').on('input', function (e) {
 		e.stopPropagation();
 		$searchList.addClass('active');
-	})
+	});
 	$('body').on('click', function () {
 		$searchList.removeClass('active');
-	})
+	});
 }
 
-function fInfoTabs(item) {
-	var $infoTabsCtn = $(document).find(item);
+function fInfoTabs($infoTabsCtn, $map) {
 	var $infoTabsMenuCtn = $infoTabsCtn.find('.js-info-tabs-menu');
 	var $infoTabsMenuItem = $infoTabsMenuCtn.find('.js-info-tabs-menu--item');
 	var $infoTabsContentCtn = $infoTabsCtn.find('.js-info-tabs-content');
 	var $infoTabsContentItem = $infoTabsContentCtn.find('.js-info-tabs-content-item');
-
 	fTabsSetHeight($infoTabsContentCtn,$infoTabsContentItem.eq(0));
 	$infoTabsMenuItem.on('click', function (e) {
 		e.preventDefault();
@@ -77,6 +105,17 @@ function fInfoTabs(item) {
 			$this.addClass('active');
 			$infoTabsContentItem.eq(activeItem).addClass('active');
 			fTabsSetHeight($infoTabsContentCtn, $infoTabsContentItem.eq(activeItem));
+			if(typeof $map !== 'undefined' && activeItem === 1){
+				setTimeout(function () {
+					if(mapActivePoint !== -1){
+						$map.setCenter(mapActivePoint, 10, {
+							useMapMargin: true,
+							checkZoomRange: true
+						});
+					}
+					$map.container.fitToViewport();
+				},2000);
+			}
 		}
 	});
 
@@ -103,6 +142,7 @@ function deliveryMapInit() {
 	});
 	var $addressListCtn = $('.js-delivery-address-content-list');
 	var $addressListItems = $addressListCtn.find('.js-delivery-address-content-list-item');
+	var $addressListItemsCoords = $addressListCtn.find('.js-address-map-coords');
 	var geolocation = ymaps.geolocation;
 	var myMap = new ymaps.Map('delivery-map', {
 				center: [50.443705, 30.530946],
@@ -167,8 +207,8 @@ function deliveryMapInit() {
 
 							return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
 								[position.left, position.top], [
-									position.left + this._$element[0].offsetWidth/2,
-									position.top + this._$element[0].offsetHeight + 100
+									position.left + this._$element[0].offsetWidth,
+									position.top + this._$element[0].offsetHeight - 250
 								]
 							]));
 						},
@@ -195,8 +235,8 @@ function deliveryMapInit() {
 			height: 10
 		});
 
-	if(typeof deliveryMapData !== 'undefined'){
-		deliveryCreatePlacemark(deliveryMapData, '/images/view/map-pin.svg');
+	if($addressListItemsCoords.length > 0){
+		deliveryCreatePlacemark($addressListItemsCoords, './images/view/map-pin.svg');
 	}
 
 	var myPolygon = new ymaps.Polygon([deliveryMapPolyline],
@@ -226,10 +266,21 @@ function deliveryMapInit() {
 		});
 	});
 
-	var suggestView = new ymaps.SuggestView('suggest', {provider: deliveryAddressProvider, results: 3});
+	if($('.js-delivery-address-list').length){
+		fInfoTabs($('.js-delivery-address-list'), myMap);
+	}
 
 	function deliveryCreatePlacemark(data, imageUrl){
-		var coordsLength = getObjectSize(data);
+		var coordsLength = $addressListItemsCoords.length;
+		var itemDataLat;
+		var itemDataLon;
+		var itemContentTitle;
+		var itemContentDescription;
+		var itemContentPhone;
+		var itemContentWorking;
+		var itemContentButtons;
+
+		/*var coordsLength = getObjectSize(data);
 
 		for (var i = 0, l = coordsLength; i < l; i++) {
 			wayPointsCollection.add(new ymaps.Placemark(data[i].coords,
@@ -241,7 +292,36 @@ function deliveryMapInit() {
 						iconImageHref: imageUrl,
 					})
 			);
-		}
+		}*/
+		$addressListItemsCoords.each(function () {
+			var $this = $(this);
+			var itemBalloonContent;
+			itemDataLat = $this.data('lat');
+			itemDataLon = $this.data('lon');
+			itemContentTitle = $this.find('.js-delivery-address-content-list-item-title').text();
+			itemContentDescription = $this.find('.js-delivery-address-content-list-item-description').text();
+			itemContentPhone = $this.find('.js-delivery-address-content-list-item-phone').text();
+			itemContentWorking = $this.find('.js-delivery-address-content-list-item-working').html();
+			itemContentButtons = $this.find('.js-delivery-address-content-list-item-buttons').html();
+			itemBalloonContent = itemContentDescription;
+			if(itemContentPhone.length > 0){
+				itemBalloonContent += '<div class="itb_delivery_balloon_phone">Телефон: '+itemContentPhone+'</div>';
+			}
+			if(typeof itemContentWorking !== 'undefined'){
+				itemBalloonContent += '<div class="itb_delivery_balloon_working">'+itemContentWorking+'</div>';
+			}
+			if(typeof itemContentButtons !== 'undefined'){
+				itemBalloonContent += '<div class="itb_delivery_balloon_buttons">'+itemContentButtons+'</div>';
+			}
+			wayPointsCollection.add(new ymaps.Placemark([itemDataLat, itemDataLon],
+					{
+						balloonHeader: itemContentTitle,
+						balloonContent: itemBalloonContent
+					}, {
+						iconImageHref: imageUrl,
+					})
+			);
+		});
 	}
 
 	$('.js-delivery-map-closest').on('click', function (e) {
@@ -253,8 +333,15 @@ function deliveryMapInit() {
 		e.preventDefault();
 		e.stopPropagation();
 		$this = $(this);
-		elemIndex = $addressListItems.index($this);
-		fSetActiveAddress(elemIndex);
+		if($this.hasClass('js-address-map-coords')){
+			elemIndex = $addressListItemsCoords.index($this);
+			fSetActiveAddress(elemIndex, true);
+			console.log('coords');
+		}else{
+			elemIndex = $addressListItems.index($this);
+			fSetActiveAddress(elemIndex, false);
+			console.log('no-coords');
+		}
 	});
 
 	$('.delivery-address-content-list-item--phone').on('click', function (e) {
@@ -263,7 +350,7 @@ function deliveryMapInit() {
 
 	function fClosestPoint() {
 		var givenPoint;
-		var coordsLength = getObjectSize(deliveryMapData);
+		var coordsLength = $addressListItemsCoords.length;
 		var minDist = 6200000;
 		var closestPointIdx = 0;
 		geolocation.get({
@@ -279,25 +366,38 @@ function deliveryMapInit() {
 					closestPointIdx = i;
 				}
 				if(coordsLength - 1 <= i ){
-					fSetActiveAddress(closestPointIdx);
+					fSetActiveAddress(closestPointIdx, true);
 				}
 			})
 		});
 	}
 
-	function fSetActiveAddress(activeIndex){
-		if(!$addressListItems.eq(activeIndex).hasClass('active')){
-			var $infoTabsContentCtn = $addressListItems.parents('.js-info-tabs-content');
-			var $infoTabsContentItem = $infoTabsContentCtn.find('.js-info-tabs-content-item.active');
+	function fSetActiveAddress(activeIndex, hasCoords){
+		var $infoTabsContentCtn = $addressListItems.parents('.js-info-tabs-content');
+		var $infoTabsContentItem = $infoTabsContentCtn.find('.js-info-tabs-content-item.active');
+
+
 			$addressListItems.removeClass('active');
-			$addressListItems.eq(activeIndex).addClass('active');
-			wayPointsCollection.get(activeIndex).balloon.open();
-			myMap.setCenter(wayPointsCollection.get(activeIndex).geometry.getCoordinates(), 10, {
-				useMapMargin: true,
-				checkZoomRange: true
-			});
+			if(!hasCoords){
+				if(!$addressListItems.eq(activeIndex).hasClass('active')) {
+					$addressListItems.eq(activeIndex).addClass('active');
+				}
+			}else{
+				if(!$addressListItemsCoords.eq(activeIndex).hasClass('active')) {
+					$addressListItemsCoords.eq(activeIndex).addClass('active');
+					wayPointsCollection.get(activeIndex).balloon.open();
+					mapActivePoint = wayPointsCollection.get(activeIndex).geometry.getCoordinates();
+					setTimeout(function () {
+						myMap.setCenter(mapActivePoint, 10, {
+							useMapMargin: true,
+							checkZoomRange: true
+						});
+						myMap.container.fitToViewport();
+					},200);
+				}
+			}
 			fTabsSetHeight($infoTabsContentCtn, $infoTabsContentItem);
-		}
+
 	}
 
 }

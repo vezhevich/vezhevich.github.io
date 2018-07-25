@@ -582,15 +582,7 @@ $(function() {
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
-        mainClass: 'mfp-fade',
-        callbacks: {
-            open: function() {
-                jQuery('body').addClass('body-fixed');
-            },
-            close: function() {
-                jQuery('body').removeClass('body-fixed');
-            }
-        }
+        mainClass: 'mfp-fade'
     });
 })
 
@@ -996,7 +988,7 @@ $(function() {
     }
 });
 
-//
+//замена текста в фильтрах на странице сравнения
 $(function() {
     var compareOption = document.querySelector(".compare-filter .option.selected");
     var compareCurrent = document.querySelector(".compare-filter .current");
