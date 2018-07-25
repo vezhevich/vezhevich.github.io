@@ -3577,6 +3577,8 @@ p {
     line-height: 15px; }
   .product-card__favorite:hover span::before, .product-card__compare:hover span::before {
     color: #b5b5b5; }
+  .product-card__favorite:focus span::before, .product-card__compare:focus span::before {
+    color: #b5b5b5; }
   .product-card__favorite, .product-card__compare, .product-card__one-click, .product-card__code {
     display: none !important; }
   .product-card__cost {
