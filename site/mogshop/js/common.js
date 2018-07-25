@@ -720,12 +720,14 @@ $(function() {
 //показываем сортировку на мобиле
 $(window).on('load ready resize', function () {
     if ($(window).width() < '768') {
+        $('.sorter').hide();
+
         $('.js-sorter').click(function(e) {
             e.preventDefault();
 
             $('.sorter__left .dropdown-menu').addClass('dropdown-menu_show-xs');
             $('body').addClass('body-fixed');
-
+            $('.sorter').show();
         });
 
         $('.dropdown .dropdown-menu li').click(function(e) {
@@ -733,6 +735,7 @@ $(window).on('load ready resize', function () {
 
             $('.dropdown .dropdown-menu').removeClass('dropdown-menu_show-xs');
             $('body').removeClass('body-fixed');
+            $('.sorter').hide();
         });
 
         $('.js-dropdown-menu__close').click(function(e) {
@@ -740,7 +743,10 @@ $(window).on('load ready resize', function () {
 
             $('.sorter__left .dropdown-menu').removeClass('dropdown-menu_show-xs');
             $('body').removeClass('body-fixed');
+            $('.sorter').hide();
         });
+    } else {
+        $('.sorter').show();
     }
 });
 
