@@ -581,19 +581,28 @@ $(window).on('load ready resize', function () {
 
 //взрываем попап
 $(function() {
+    var startWindowScroll = 0;
     $('.js-modal').magnificPopup({
         type:'inline',
         midClick: true,
         mainClass: 'mfp-fade',
         fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
         callbacks: {
             beforeOpen: function() {
                 startWindowScroll = $(window).scrollTop();
-                $('html').addClass('mfp-helper');
+            },
+            open: function(){
+                if ( $('.mfp-content').height() < $(window).height() ){
+                    $('body').on('touchmove', function (e) {
+                        e.preventDefault();
+                    });
+                }
             },
             close: function() {
-                $('html').removeClass('mfp-helper');
                 $(window).scrollTop(startWindowScroll);
+                $('body').off('touchmove');
             }
         }
     });

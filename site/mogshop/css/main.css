@@ -6533,13 +6533,6 @@ p {
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translateZ(0); }
 
-html.mfp-helper {
-  height: 100%; }
-  html.mfp-helper body {
-    overflow: hidden;
-    height: 100%;
-    -webkit-transform: translateZ(0); }
-
 @media screen and (max-width: 1023px) {
   .mfp-container {
     padding-left: 20px;
