@@ -6565,14 +6565,17 @@ html.mfp-helper {
     height: 100%; }
   .mfp-fade.mfp-bg {
     background: #fff;
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    display: none; }
   .modal-default__content-center {
     margin-bottom: 30px; }
   .modal-default h4 {
     padding-right: 40px;
     margin-bottom: 20px; }
   .mfp-close-btn-in .mfp-close {
-    line-height: 60px; } }
+    line-height: 60px; }
+  .modal-default__wrapper {
+    height: 100%; } }
 
 .product_inner {
   margin-bottom: 30px; }
