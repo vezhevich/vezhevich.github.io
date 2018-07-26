@@ -777,11 +777,7 @@ p {
 
 .body-fixed {
   overflow: hidden;
-  position: relative;
-  -webkit-overflow-scrolling: auto; }
-
-body {
-  -webkit-overflow-scrolling: touch; }
+  position: relative; }
 
 .visible-xs {
   display: none !important; }
@@ -6553,11 +6549,7 @@ body {
   .mfp-content {
     vertical-align: top;
     max-width: 100%;
-    width: 100%;
-    height: 100%; }
-  .mfp-fade.mfp-bg {
-    background: #fff;
-    opacity: 1 !important; }
+    width: 100%; }
   .modal-default__content-center {
     margin-bottom: 30px; }
   .modal-default h4 {
