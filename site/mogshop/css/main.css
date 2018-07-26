@@ -779,6 +779,17 @@ p {
   overflow: hidden;
   position: relative; }
 
+.mfp-wrap {
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0); }
+
+html.mfp-helper {
+  height: 100%; }
+  html.mfp-helper body {
+    overflow: hidden;
+    height: 100%;
+    -webkit-transform: translateZ(0); }
+
 .visible-xs {
   display: none !important; }
 
@@ -6549,7 +6560,11 @@ p {
   .mfp-content {
     vertical-align: top;
     max-width: 100%;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+  .mfp-fade.mfp-bg {
+    background: #fff;
+    opacity: 1 !important; }
   .modal-default__content-center {
     margin-bottom: 30px; }
   .modal-default h4 {

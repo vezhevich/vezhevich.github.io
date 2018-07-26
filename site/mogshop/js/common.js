@@ -585,14 +585,11 @@ $(function() {
         type:'inline',
         midClick: true,
         mainClass: 'mfp-fade',
-        // callbacks: {
-        //     open: function() {
-        //         jQuery('body').addClass('body-fixed');
-        //     },
-        //     close: function() {
-        //         jQuery('body').removeClass('body-fixed');
-        //     }
-        // }
+        fixedContentPos: true,
+        callbacks: {
+            beforeOpen: function() { $('html').addClass('mfp-helper'); },
+            close: function() { $('html').removeClass('mfp-helper'); }
+        }
     });
 })
 
