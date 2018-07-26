@@ -777,7 +777,11 @@ p {
 
 .body-fixed {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  -webkit-overflow-scrolling: auto; }
+
+body {
+  -webkit-overflow-scrolling: touch; }
 
 .visible-xs {
   display: none !important; }
