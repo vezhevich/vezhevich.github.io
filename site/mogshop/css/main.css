@@ -779,17 +779,6 @@ p {
   overflow: hidden;
   position: relative; }
 
-.mfp-wrap {
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateZ(0); }
-
-html.mfp-helper {
-  height: 100%; }
-  html.mfp-helper body {
-    overflow: hidden;
-    height: 100%;
-    -webkit-transform: translateZ(0); }
-
 .visible-xs {
   display: none !important; }
 
@@ -6540,6 +6529,17 @@ html.mfp-helper {
   margin-right: auto;
   width: 100%; }
 
+.mfp-wrap {
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0); }
+
+html.mfp-helper {
+  height: 100%; }
+  html.mfp-helper body {
+    overflow: hidden;
+    height: 100%;
+    -webkit-transform: translateZ(0); }
+
 @media screen and (max-width: 1023px) {
   .mfp-container {
     padding-left: 20px;
@@ -6560,8 +6560,7 @@ html.mfp-helper {
   .mfp-content {
     vertical-align: top;
     max-width: 100%;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   .mfp-fade.mfp-bg {
     background: #fff;
     opacity: 1 !important; }
