@@ -587,8 +587,14 @@ $(function() {
         mainClass: 'mfp-fade',
         fixedContentPos: true,
         callbacks: {
-            beforeOpen: function() { $('html').addClass('mfp-helper'); },
-            close: function() { $('html').removeClass('mfp-helper'); }
+            beforeOpen: function() {
+                startWindowScroll = $(window).scrollTop();
+                $('html').addClass('mfp-helper');
+            },
+            close: function() {
+                $('html').removeClass('mfp-helper');
+                $(window).scrollTop(startWindowScroll);
+            }
         }
     });
 })
