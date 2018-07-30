@@ -385,8 +385,8 @@ $(function() {
             $('body').on('touchmove', function (e) {
                 e.preventDefault();
             });
-            $('.l-wrapper-footer-bottom').css('overflow', 'hidden');
             $('.product-panel').hide();
+            $('.l-wrapper-footer-bottom').css('overflow', 'hidden');
         } else {
             $('body').off('touchmove');
             $('.product-panel').show();
