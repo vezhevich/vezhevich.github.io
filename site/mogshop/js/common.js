@@ -380,16 +380,15 @@ $(function() {
         $('.mobile-menu').toggleClass('mobile-menu_show');
         $('.mobile-menu-wrapper').toggleClass('mobile-menu-wrapper_pull');
         $('body').toggleClass('body-fixed');
-        if (('.mobile-menu-wrapper').hasClass("mobile-menu-wrapper_pull")) {
+
+        if ($('.mobile-menu').hasClass("mobile-menu_show")) {
             $('body').on('touchmove', function (e) {
                 e.preventDefault();
             });
-            $('.l-wrapper-footer-bottom').on('touchmove', function (e) {
-                e.preventDefault();
-            });
+            $('.product-panel').hide();
         } else {
             $('body').off('touchmove');
-            $('.l-wrapper-footer-bottom').off('touchmove');
+            $('.product-panel').show();
         }
     });
 });
