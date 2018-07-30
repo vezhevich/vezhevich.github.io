@@ -4863,7 +4863,6 @@ p {
             box-shadow: inset -43px -8px 23px -39px rgba(0, 0, 0, 0.1);
     display: block;
     -webkit-overflow-scrolling: touch;
-    -webkit-transform: translateZ(0);
     overflow-y: scroll;
     height: 100vh; }
   .mobile-menu-wrapper_pull {
