@@ -380,6 +380,13 @@ $(function() {
         $('.mobile-menu').toggleClass('mobile-menu_show');
         $('.mobile-menu-wrapper').toggleClass('mobile-menu-wrapper_pull');
         $('body').toggleClass('body-fixed');
+        if (('.mobile-menu-wrapper').hasClass("mobile-menu-wrapper_pull")) {
+            $('body').on('touchmove', function (e) {
+                e.preventDefault();
+            });
+        } else {
+            $('body').off('touchmove');
+        }
     });
 });
 
