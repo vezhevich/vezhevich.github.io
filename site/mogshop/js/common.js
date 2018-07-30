@@ -385,10 +385,16 @@ $(function() {
             $('body').on('touchmove', function (e) {
                 e.preventDefault();
             });
+            $('.l-wrapper-footer-bottom').on('touchmove', function (e) {
+                e.preventDefault();
+            });
+            $('.l-wrapper-footer-bottom').css('overflow', 'hidden');
             $('.product-panel').hide();
         } else {
             $('body').off('touchmove');
+            $('.l-wrapper-footer-bottom').off('touchmove');
             $('.product-panel').show();
+            $('.l-wrapper-footer-bottom').css('overflow', 'visible');
         }
     });
 });
