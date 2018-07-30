@@ -4862,7 +4862,10 @@ p {
     -webkit-box-shadow: inset -43px -8px 23px -39px rgba(0, 0, 0, 0.1);
             box-shadow: inset -43px -8px 23px -39px rgba(0, 0, 0, 0.1);
     display: block;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0);
+    overflow-y: scroll;
+    height: 100vh; }
   .mobile-menu-wrapper_pull {
     -webkit-transform: translate(270px, 0);
         -ms-transform: translate(270px, 0);
@@ -6535,12 +6538,6 @@ p {
 .mfp-wrap {
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translateZ(0); }
-
-.l-wrapper-footer-bottom {
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateZ(0);
-  overflow-y: scroll;
-  height: 100vh; }
 
 @media screen and (max-width: 1023px) {
   .mfp-container {
