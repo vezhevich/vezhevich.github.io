@@ -777,9 +777,7 @@ p {
 
 .body-fixed {
   overflow: hidden;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateZ(0); }
+  position: relative; }
 
 .visible-xs {
   display: none !important; }
@@ -4873,7 +4871,8 @@ p {
         -ms-transform: translate(270px, 0);
             transform: translate(270px, 0);
     -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out; }
+    transition: .2s ease-in-out;
+    -webkit-overflow-scrolling: touch; }
   .mobile-menu_show {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
