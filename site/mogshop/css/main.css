@@ -6538,7 +6538,9 @@ p {
 
 .l-wrapper-footer-bottom {
   -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateZ(0); }
+  -webkit-transform: translateZ(0);
+  overflow-y: scroll;
+  height: 100vh; }
 
 @media screen and (max-width: 1023px) {
   .mfp-container {

@@ -384,12 +384,8 @@ $(function() {
             $('body').on('touchmove', function (e) {
                 e.preventDefault();
             });
-            $('.l-wrapper-footer-bottom').on('touchmove', function (e) {
-                e.preventDefault();
-            });
         } else {
             $('body').off('touchmove');
-            $('.l-wrapper-footer-bottom').off('touchmove');
         }
     });
 });
