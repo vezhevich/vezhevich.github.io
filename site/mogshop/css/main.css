@@ -777,7 +777,9 @@ p {
 
 .body-fixed {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0); }
 
 .visible-xs {
   display: none !important; }
@@ -4872,7 +4874,7 @@ p {
             transform: translate(270px, 0);
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
-    -webkit-overflow-scrolling: touch; }
+    overflow: hidden; }
   .mobile-menu_show {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
