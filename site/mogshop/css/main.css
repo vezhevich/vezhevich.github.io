@@ -4870,7 +4870,8 @@ p {
         -ms-transform: translate(270px, 0);
             transform: translate(270px, 0);
     -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out; }
+    transition: .2s ease-in-out;
+    overflow: hidden; }
   .mobile-menu_show {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
