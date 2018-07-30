@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Заголовок</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Описание сайта содержит не более 150 символов">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="mobile-menu">
+	<div class="mobile-menu__nav">
+		<ul class="list_unstyle mobile-menu__nav-lv1">
+			<li><a href="#">Войти</a></li>
+			<li>
+				<a href="#">Каталог</a>
+				<ul class="list_unstyle mobile-menu__nav-lv2">
+					<li class="footer-main-nav__item"><a href="#">Автохолодильники</a></li>
+					<li class="footer-main-nav__item"><a href="#">Обогреватели</a></li>
+					<li class="footer-main-nav__item"><a href="#">Метеоприборы</a></li>
+					<li class="footer-main-nav__item"><a href="#">Водонагреватели</a></li>
+					<li class="footer-main-nav__item"><a href="#">Увлажнители и мойки</a></li>
+					<li class="footer-main-nav__item"><a href="#">Очистка и ионизация</a></li>
+					<li class="footer-main-nav__item"><a href="#">Кухонные плиты</a></li>
+					<li class="footer-main-nav__item"><a href="#">Отопление</a></li>
+					<li class="footer-main-nav__item"><a href="#">Осушители</a></li>
+					<li class="footer-main-nav__item"><a href="#">Вентиляция</a></li>
+					<li class="footer-main-nav__item"><a href="#">Полотенцесушители</a></li>
+					<li class="footer-main-nav__item"><a href="#">Грили и барбекю</a></li>
+					<li class="footer-main-nav__item"><a href="#">Сушилки для рук</a></li>
+					<li class="footer-main-nav__item"><a href="#">Камины</a></li>
+					<li class="footer-main-nav__item"><a href="#">Фильтры для воды</a></li>
+					<li class="footer-main-nav__item"><a href="#">Кондиционеры</a></li>
+					<li class="footer-main-nav__item"><a href="#">Насосы</a></li>
+					<li class="footer-main-nav__item"><a href="#">Услуги</a></li>
+					<li class="footer-main-nav__item"><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Покупателям</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Полезная информация</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="mobile-menu__info">
+			<div class="mobile-menu__info-location">
+				<span class="icon-pin"></span>
+				Балашиха
+			</div>
+			<div class="mobile-menu__info-phone">
+				<a href="tel:88002002904">8 800 200-29-04</a>
+				<span> Заказать звонок</span>
+			</div>
+			<div class="mobile-menu__info-work-time">
+				<span>Пн-пт: 10.00 – 18.00,</span> <span> сб: 12.00 – 13.00</span>
+			</div>
+			<div class="mobile-menu__info-lang">
+				<a class="mobile-menu__info-lang_active" href="#">Ru</a>
+				<span>|</span>
+				<a href="#">En</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="l-wrapper-footer-bottom">
+	<div class="l-wrapper-content">
+		<header class="header-main header-main_inner-page">
+			<div class="header-main__top">
+				<div class="container">
+					<ul class="header-main__top-nav list_unstyle">
+						<li class="header-main__top-nav-item"><a href="#">Статьи</a></li>
+						<li class="header-main__top-nav-item"><a href="#">Новости</a></li>
+						<li class="header-main__top-nav-item">
+							<a href="#">О компании</a>
+							<ul class="header-main__top-nav-lv2 list_unstyle">
+								<li><a href="#">Об АО «Мособлгаз»</a></li>
+								<li><a href="#">Отзывы о компании</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="header-main__top-nav-item"><a href="#">Возврат</a></li>
+						<li class="header-main__top-nav-item"><a href="#">Бонусная программа</a></li>
+					</ul>
+					<ul class="header-main__top-nav list_unstyle">
+						<!--когда пользователь авторизирован добавляем класс header-main__auth_in-->
+						<li class="header-main__top-nav-item header-main__auth">
+							<a class="header-main__auth-enter" href="#"><span class="icon-login"></span>Вход</a>
+							<a class="header-main__auth-user" href="#"><span class="icon-login"></span>Егор Собакин</a>
+							<ul class="header-main__top-nav-lv2 list_unstyle">
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Выход</a></li>
+							</ul>
+						</li>
+						<li class="header-main__top-nav-item"><a href="#"><span class="icon-pin"></span>Балашиха</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-main__middle">
+				<div class="container">
+					<div class="header-main__logo">
+						<a href="/"><img src="./images/logo.svg" alt=""></a>
+						<a class="header-main__logo_xs" href="/"><img src="./images/logo-xs.svg" alt=""></a>
+					</div>
+					<div class="header-main__search">
+						<div class="header-main__search-close_xs js-header-main__search-close_xs"><span class="icon-close"></span></div>
+						<div class="header-main__search-wrapper">
+							<input class="input header-main__search-input" type="text" placeholder="Поиск по товарам">
+							<button class="header-main__search-button" type="submit"><span class="icon-search"></span></button>
+						</div>
+						<div class="header-main__search-result">
+							<div class="header-main__search-title">Товары</div>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product1.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<a href="#" class="product-card_small">
+								<div class="product-card_small-img">
+									<img src="./images/view/product2.png" alt="">
+								</div>
+								<div class="product-card_small-title">Газовая колонка Electrolux GWH 265 ERN Nanoplus</div>
+								<div class="product-card_small-cost">23 790 руб.</div>
+							</a>
+							<div class="header-main__search-title">Категории</div>
+							<div class="header-main__search-result-list">
+								<a href="#" class="header-main__search-result-list-item">Водонагреватели Electrolux <span>20 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Очистка и ионизация Electrolux <span>40 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Грили и барбекю Electrolux <span>40 товаров</span></a>
+								<a href="#" class="header-main__search-result-list-item">Увлажнители и мойки Electrolux <span>40 товаров</span></a>
+							</div>
+							<a href="#" class="header-main__search-more">
+								Смотреть все результаты <span>(70)</span>
+							</a>
+						</div>
+					</div>
+					<div class="header-main__info">
+						<div class="header-main__search-xs js-header-main__search-xs"></div>
+						<a href="#" class="header-main__info-item header-main__favorite">
+							<span class="header-main__info-icon icon-lois"></span>
+							<span class="header-main__info-counter">3</span>
+						</a>
+						<a href="#" class="header-main__info-item header-main__comparison">
+							<span class="header-main__info-icon icon-compare"></span>
+							<span class="header-main__info-counter">1</span>
+						</a>
+						<a href="#" class="header-main__info-item header-main__shopping-cart">
+							<div class="header-main__info-item-wrapper">
+								<span class="header-main__info-icon icon-cart"></span>
+								<span class="header-main__info-counter">13</span>
+							</div>
+							Корзина
+						</a>
+						<div id="ol" class="header-main__burder"><span class="icon-burger"></span></div>
+					</div>
+					<div class="header-main__phone">
+						<a href="tel:88002002904">8 800 200-29-04</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-main__bottom">
+				<div class="container">
+					<ul class="list_unstyle header-main__nav">
+						<li class="header-main__nav-item"><a href="catalog.html"><span class="icon-list"></span>Каталог</a></li>
+						<li class="header-main__nav-item"><a href="#">Услуги</a></li>
+						<li class="header-main__nav-item"><a href="#">Доставка</a></li>
+						<li class="header-main__nav-item"><a href="#">Оплата</a></li>
+						<li class="header-main__nav-item"><a href="#">Акции</a></li>
+					</ul>
+					<a href="#" class="btn header-main__btn"><span class="icon-phone"></span>Закзать звонок</a>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-menu-wrapper mobile-menu-wrapper_after-header">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a class="breadcrumbs__item" href="#"><span class="icon-arrow_small"></span>Главная</a>
+					<a class="breadcrumbs__item" href="#">Акции</a>
+				</div>
+				<h1>Акции</h1>
+				<div class="page-head-image-wrap offer" style="background-image: url('./images/view/offer-page-image.jpg');">
+					<div class="page-head-image">
+						<div class="page-head-image_title"><span><span class="page-head-image_title-bg">Скидки 30% на духовки и плиты только до конца мая!</span></span></div>
+						<div class="page-head-image_description"><a href="" class="btn-default">Подробнее</a></div>
+					</div>
+				</div>
+				<div class="offers-list-wrap">
+					<div class="offers-list">
+						<div class="offers-list-item-wrap">
+							<a href="#" class="offers-list-item" style="background-image: url('./images/view/offer-item1.jpg');">
+								<span class="offers-list-item--date">4 апреля — 12 мая</span>
+								<span class="offers-list-item--title">Скидки до 60% на водонагреватели Viessmann</span>
+								<span class="offers-list-item--more">Подробнее <span class="icon-arrow_small"></span></span>
+							</a>
+						</div>
+						<div class="offers-list-item-wrap">
+							<a href="#" class="offers-list-item" style="background-image: url('./images/view/offer-item2.jpg');">
+								<span class="offers-list-item--date">1 — 9 мая</span>
+								<span class="offers-list-item--title">Газовый гриль Weber e410-3 на особых условиях в майские праздники </span>
+								<span class="offers-list-item--more">Подробнее <span class="icon-arrow_small"></span></span>
+							</a>
+						</div>
+						<div class="offers-list-item-wrap">
+							<a href="#" class="offers-list-item" style="background-image: url('./images/view/offer-item3.jpg');">
+								<span class="offers-list-item--date">4 апреля — 12 мая</span>
+								<span class="offers-list-item--title">Cashback до 10 000  рублей при покупке трёх и более товаров</span>
+								<span class="offers-list-item--more">Подробнее <span class="icon-arrow_small"></span></span>
+							</a>
+						</div>
+						<div class="offers-list-item-wrap">
+							<a href="#" class="offers-list-item" style="background-image: url('./images/view/offer-item4.jpg');">
+								<span class="offers-list-item--date">1 — 9 мая</span>
+								<span class="offers-list-item--title">Три месяца подписки Megogo в подарок</span>
+								<span class="offers-list-item--more">Подробнее <span class="icon-arrow_small"></span></span>
+							</a>
+						</div>
+						<div class="offers-list-item-wrap">
+							<a href="#" class="offers-list-item" style="background-image: url('./images/view/offer-item5.jpg');">
+								<span class="offers-list-item--date">4 апреля — 12 мая</span>
+								<span class="offers-list-item--title">Скидки на бытовую технику компании Electrolux</span>
+								<span class="offers-list-item--more">Подробнее <span class="icon-arrow_small"></span></span>
+							</a>
+						</div>
+						<div class="offers-list-item-wrap">
+							<a href="#" class="offers-list-item" style="background-image: url('./images/view/offer-item6.jpg');">
+								<span class="offers-list-item--date">1 — 9 мая</span>
+								<span class="offers-list-item--title">Три месяца подписки Megogo в подарок</span>
+								<span class="offers-list-item--more">Подробнее <span class="icon-arrow_small"></span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<h2 class="title-link"><a href="#">Рекомендуем<span class="icon-arrow_small"></span></a></h2>
+				<div class="product-card-list js-carousel-card-list_full-width product-card-carousel">
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_new">Новинка</div>
+							<div class="card-label card-label_point"><span class="icon-shevron"></span></div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product1.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Газовая колонка Electrolux  GWH 265 ERN Nanoplus</a>
+						</div>
+						<div class="product-card__cost"><span class="product-card__cost_old">35 499 р.</span>37 499 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+						<span class="icon-diagonal_badge"></span>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+							<div class="card-label card-label_point"><span class="icon-shevron"></span></div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product2.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Газовый водонагреватель Ferolli P360 mk.III</a>
+						</div>
+						<div class="product-card__cost">54 290 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+							<div class="card-label card-label_sale">Скидка</div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product3.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Газовый водонагреватель Ferolli P360 mk.III</a>
+						</div>
+						<div class="product-card__cost"><span class="product-card__cost_old">11 299 р.</span>8 990 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+							<div class="card-label card-label_discuss">Обсуждаемое</div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product4.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Очиститель воздуха со сменными фильтрами Amaircare Roomaid</a>
+						</div>
+						<div class="product-card__cost">12 490 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product5.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Газовый котёл Ferroli Atlas D87 (WN) одноконтурный</a>
+						</div>
+						<div class="product-card__cost">136 390 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+							<div class="card-label card-label_recommend">Рекомендуем</div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product6.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Очиститель воздуха со сменными фильтрами Mitsubishi Electric MA-E83H-R1</a>
+						</div>
+						<div class="product-card__cost">5 199 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>-->
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product7.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Газовая плита Gorenje D380-CH с электрической духовкой</a>
+						</div>
+						<div class="product-card__cost">53 890 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__label-list">
+							<div class="card-label card-label_hit">Хит продаж</div>
+							<div class="card-label card-label_sale">Скидка</div>
+						</div>
+						<div class="js-product-card-icon product-card__favorite">
+							<span class="icon-lois"></span>
+						</div>
+						<a href="#tooltip-compare" class="js-product-card-icon product-card__compare js-tooltip-compare">
+							<span class="icon-compare"></span>
+						</a>
+						<!--всевозможные бейджы-->
+						<!--<div class="product-card__gift product-card__gift-rocket"><span class="icon-rocket"></span></div>-->
+						<div class="product-card__gift product-card__gift-gift"><span class="icon-gift"></span></div>
+						<!--<div class="product-card__gift product-card__gift-sale "><span>25%</span></div>-->
+						<a href="product.html" class="product-card__img">
+							<img src="./images/view/product8.png" alt="">
+						</a>
+						<div class="product-card__title">
+							<a href="product.html">Газовая варочная панель Fornelli PGA 45 FIERO</a>
+						</div>
+						<div class="product-card__cost"><span class="product-card__cost_old">11 599 р.</span>13 499 р.</div>
+						<div class="product-card__bottom">
+							<div class="product-card__rating">
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+								<div class="product-card__rating-item product-card__rating-item_inner"></div>
+							</div>
+							<div class="product-card__code">13809745</div>
+							<a href="#" class="product-card__btn btn-default"><span class="icon-cart"></span> В корзину</a>
+							<div class="product-card__one-click">
+								<a class="js-modal" href="#modal-buy-one-click">Купить в один клик</a>
+							</div>
+						</div>
+						<span class="icon-diagonal_badge"></span>
+					</div>
+				</div>
+				<div class="offers-subscription-wrap">
+					<div class="offers-subscription-text">
+						Ни дня без акции — наш девиз. Каждый день в «МОСОБЛГАЗ» — выгодные цены, скидки и интересные предложения. Следите за нашими новостями!
+					</div>
+					<div class="subscription__text"><span class="subscription__text-row"><span class="icon-letter"></span>Подпишитесь!</span> Скидки, акции, новинки для вас!</div>
+					<form class="subscription__form">
+						<input type="text" class="input subscription__input" placeholder="Адрес электронной почты">
+						<button class="btn-default subscription__btn" type="submit">Подписаться</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer class="footer-main mobile-menu-wrapper l-footer-bottom">
+		<div class="container">
+			<div class="footer-main__top">
+				<div class="footer-main-wrapper">
+					<span class="footer-main-wrapper__title js-footer-main-nav">Каталог</span>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Автохолодильники</a></li>
+						<li class="footer-main-nav__item"><a href="#">Обогреватели</a></li>
+						<li class="footer-main-nav__item"><a href="#">Метеоприборы</a></li>
+						<li class="footer-main-nav__item"><a href="#">Водонагреватели</a></li>
+						<li class="footer-main-nav__item"><a href="#">Увлажнители и мойки</a></li>
+						<li class="footer-main-nav__item"><a href="#">Очистка и ионизация</a></li>
+						<li class="footer-main-nav__item"><a href="#">Кухонные плиты</a></li>
+						<li class="footer-main-nav__item"><a href="#">Отопление</a></li>
+						<li class="footer-main-nav__item"><a href="#">Осушители</a></li>
+						<li class="footer-main-nav__item"><a href="#">Вентиляция</a></li>
+						<li class="footer-main-nav__item"><a href="#">Полотенцесушители</a></li>
+						<li class="footer-main-nav__item"><a href="#">Грили и барбекю</a></li>
+						<li class="footer-main-nav__item"><a href="#">Сушилки для рук</a></li>
+						<li class="footer-main-nav__item"><a href="#">Камины</a></li>
+						<li class="footer-main-nav__item"><a href="#">Фильтры для воды</a></li>
+						<li class="footer-main-nav__item"><a href="#">Кондиционеры</a></li>
+						<li class="footer-main-nav__item"><a href="#">Насосы</a></li>
+						<li class="footer-main-nav__item"><a href="#">Услуги</a></li>
+						<li class="footer-main-nav__item"><a href="#">Акции</a></li>
+					</ul>
+				</div>
+				<div class="footer-main-wrapper footer-main-wrapper_modified">
+					<span class="footer-main-wrapper__title js-footer-main-nav">О компании</span>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Об АО «Мособлгаз</a></li>
+						<li class="footer-main-nav__item"><a href="#">Отзывы о компании</a></li>
+						<li class="footer-main-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="footer-main-nav list_unstyle">
+						<li class="footer-main-nav__item"><a href="#">Оплата</a></li>
+						<li class="footer-main-nav__item"><a href="#">Доставка</a></li>
+						<li class="footer-main-nav__item"><a href="#">Возврат</a></li>
+						<li class="footer-main-nav__item"><a href="#">Гарантии качества</a></li>
+					</ul>
+				</div>
+				<div class="footer-main__info">
+					<div class="footer-main__info-phone">
+						<a href="tel:84954772045">8 495 477-20-45</a>
+					</div>
+					<div class="footer-main__info-address">
+						Московская область, Одинцовский район,   1-й км Рублево-Успенского шоссе, д.1, корп. Б
+					</div>
+					<div class="footer-main__info-work-time">
+						<span>Пн-пт: 10.00 – 18.00,</span> <span>сб: 12.00 – 13.00</span>
+					</div>
+					<div class="footer-main__info-mail">
+						<a href="mailto:shop@mosoblgaz.ru">shop@mosoblgaz.ru</a>
+					</div>
+					<div class="footer-main__info-social">
+						<a href="#"><span class="icon-vk"></span></a>
+						<a href="#"><span class="icon-fb"></span></a>
+						<a href="#"><span class="icon-tw"></span></a>
+					</div>
+					<div class="footer-main__info-pay">
+						<span>Принимаем к оплате</span>
+						<img src="/images/visa.svg" alt="">
+						<img src="/images/mastercard.svg" alt="">
+						<img src="/images/maestro.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="footer-main__bottom">
+				<span>© 2018 АО «Мособлгаз»</span>
+				<span><a href="#">Сделано в KR.digital</a></span>
+			</div>
+		</div>
+	</footer>
+</div>
+<div class="tooltip-templates">
+    <span id="tooltip-compare" class="tooltip-compare">
+        К сравнению
+    </span>
+</div>
+<!--модальное окно-->
+<div id="modal-callback" class="mfp-hide modal-default small">
+	<div class="modal-default__wrapper">
+		<h4 class="callback-form-title">Обратная связь</h4>
+		<div class="callback-form">
+			<form action="">
+				<div class="callback-form-item">
+					<div class="label-default">Ваше имя</div>
+					<!--input-default_error для ошибки-->
+					<input type="text" class="input input-default" placeholder="Введите ваше имя">
+				</div>
+				<div class="callback-form-item">
+					<div class="label-default">Номер телефона</div>
+					<!--input-default_error для ошибки-->
+					<input type="tel" class="input input-default input-mask input-default_error" placeholder="Введите ваш телефон" im-insert="true">
+					<span class="form-default-error">Ошибка</span>
+				</div>
+				<div class="callback-form-item">
+					<div class="label-default">Адрес электронной почты</div>
+					<!--input-default_error для ошибки-->
+					<input type="mail" class="input input-default" placeholder="Введите вашу почту">
+				</div>
+				<div class="callback-form-item">
+					<div class="label-default">Сообщение</div>
+					<!--input-default_error для ошибки-->
+					<textarea class="textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+				</div>
+				<div class="callback-form-user-accept">
+					Нажимая кнопку «Отправить», я соглашаюсь на <a href="#">получение рекламных и информационных сообщений</a> и
+					<a href="">обработку персональных данных</a>.
+				</div>
+				<input class="btn-default" type="submit" value="Отправить"/>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&coordorder=longlat" type="text/javascript"></script>
+<script src="js/map/delivery-map.js"></script>
+<script src="js/common.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

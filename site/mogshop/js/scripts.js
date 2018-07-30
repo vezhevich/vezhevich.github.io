@@ -41,7 +41,141 @@ $(document).ready(function() {
 		var $tooltipItems = $('.js-article-tooltip');
 		$tooltipItems.removeClass('active');
 	});
+
+	if($('.js-rounded-timer').length > 0){
+		fRoundedTimer();
+	}
+
+
 });
+
+function fRoundedTimer() {
+	var $roundedTimer = $('.js-rounded-timer');
+	$roundedTimer.each(function () {
+		var $this = $(this);
+		var elemId = $this.attr('id');
+
+		var $timerBlockDays = $this.find('.js-rounded-timer-days');
+		var $timerBlockDaysValue = $timerBlockDays.find('.js-rounded-timer-value');
+		var $timerBlockDaysText = $timerBlockDays.find('.js-rounded-timer-text');
+		var $timerBlockHours = $this.find('.js-rounded-timer-hours');
+		var $timerBlockHoursValue = $timerBlockHours.find('.js-rounded-timer-value');
+		var $timerBlockHoursText = $timerBlockHours.find('.js-rounded-timer-text');
+		var $timerBlockMinutes = $this.find('.js-rounded-timer-minutes');
+		var $timerBlockMinutesValue = $timerBlockMinutes.find('.js-rounded-timer-value');
+		var $timerBlockMinutesText = $timerBlockMinutes.find('.js-rounded-timer-text');
+		var $timerBlockSeconds = $this.find('.js-rounded-timer-seconds');
+		var $timerBlockSecondsValue = $timerBlockSeconds.find('.js-rounded-timer-value');
+		var $timerBlockSecondsText = $timerBlockSeconds.find('.js-rounded-timer-text');
+
+		var dateStart = $this.data('start');
+		var dateEnd = $this.data('end');
+		var secondStart = Date.parse(dateStart)/1000;
+		var secondEnd = Date.parse(dateEnd)/1000;
+		var currentDate = Date.parse(new Date())/1000;
+		var fullTime = secondEnd - secondStart;
+		var currentInterval = secondEnd - currentDate;
+
+		if(currentInterval < 0){
+			$this.html('Акция закончилась');
+			return false;
+		}
+
+		var intervalPercent = currentInterval/(fullTime / 100) ^ 0;
+		var intervalPercentNew = intervalPercent;
+		var currentDays = currentInterval/86400 ^ 0;
+		var currentHours = (currentInterval-currentDays*86400)/3600 ^ 0;
+		var currentMinutes = (currentInterval-currentDays*86400-currentHours*3600)/60 ^ 0;
+		var currentSeconds = currentInterval-currentDays*86400-currentHours*3600-currentMinutes*60;
+
+		var progressBarCtn = $this.find('.js-rounded-timer-progress');
+		var progressBarPoint = progressBarCtn.find('.js-rounded-timer-point');
+		var progressBarSvg = progressBarCtn.find('.js-rounded-timer-progress-svg');
+		var progressBarSvgCircle = progressBarSvg.find($('circle.complete'));
+		var radius = progressBarSvgCircle.attr('r');
+		var circumference = 2 * Math.PI * radius;
+		var strokeDashOffset = circumference - ((intervalPercent * circumference) / 100) ^ 0;
+		progressBarCtn.data('percent', intervalPercent);
+
+		fChangeTimerValues();
+		fSetProgressInterval(true);
+		fStartTimer();
+		setPointPosition();
+		console.log(intervalPercent);
+
+		//Рисуем progressbar
+		function fSetProgressInterval() {
+			strokeDashOffset = circumference - ((intervalPercent * circumference) / 100) ^ 0;
+			progressBarSvgCircle.animate({'stroke-dashoffset': strokeDashOffset}, 1200);
+		}
+		
+		function fStartTimer() {
+			var timerTicks = setInterval(function () {
+				currentSeconds--;
+				if(currentSeconds === 0 && currentMinutes === 0 && currentHours === 0 && currentDays === 0){
+					console.log('Timer end');
+					currentDays = 0;
+					clearInterval(timerTicks);
+				}
+				if(currentSeconds < 0){
+					currentMinutes--;
+					currentSeconds = 59;
+					if(currentMinutes < 0){
+						currentHours--;
+						currentMinutes = 59;
+						if(currentHours < 0){
+							currentDays--;
+							currentHours = 23;
+							if(currentDays < 0){
+								currentDays = 0;
+							}
+						}
+					}
+				}
+				fChangeTimerValues();
+			}, 100);
+		}
+
+		function fChangeTimerValues(){
+			// Проставляем значения dd hh mm ss
+			$timerBlockDaysValue.html(currentDays);
+			$timerBlockDaysText.html(declOfNum(currentDays,['день','дня','дней']));
+			$timerBlockHoursValue.html(currentHours);
+			$timerBlockHoursText.html(declOfNum(currentHours,['час','часа','часов']));
+			$timerBlockMinutesValue.html(currentMinutes);
+			$timerBlockMinutesText.html(declOfNum(currentMinutes,['минута','минуты','минут']));
+			$timerBlockSecondsValue.html(currentSeconds);
+			$timerBlockSecondsText.html(declOfNum(currentSeconds,['секунда','секунды','секунд']));
+			//
+			currentInterval = currentDays*86400+currentHours*3600+currentMinutes*60+currentSeconds;
+			intervalPercentNew = currentInterval/(fullTime / 100) ^ 0;
+			if(intervalPercentNew < intervalPercent){
+				intervalPercent = intervalPercentNew;
+				progressBarCtn.attr('data-percent', intervalPercent);
+				fSetProgressInterval();
+				setPointPosition();
+			}
+		}
+
+		function setPointPosition(){
+			var $ = {
+				radius  :     70, // радиус окружности
+				speed   :     20
+			};
+			currentOffset = 100 - intervalPercent;
+			var f = 15.7;
+			var s = 2 * Math.PI / 180; //Вычислим угол
+			f += (s*1.8)*currentOffset;
+			progressBarPoint.css('left', 70 + $.radius * Math.sin(f)  + 'px');
+			progressBarPoint.css('top', 70 + $.radius * Math.cos(f)  + 'px');
+			if(!progressBarPoint.hasClass('active')){
+				setTimeout(function () {
+					progressBarPoint.addClass('active');
+				},900);
+			}
+		}
+	});
+}
 
 function fPlayYoutubeVideo($btn) {
 	var $videoBlock = $btn.parents('.js-article-video').eq(0);
@@ -408,4 +542,10 @@ function getObjectSize(dataElement){
 		elementIndex = Number(i) + 1;
 	}
 	return elementIndex;
+}
+
+function declOfNum(number, titles)
+{
+	cases = [2, 0, 1, 1, 1, 2];
+	return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
 }

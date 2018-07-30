@@ -61,6 +61,7 @@ $(window).on('load ready resize', function () {
     $cardCarousel.addClass('owl-carousel');
 
     if (cardItem > 1) {
+        hideShadow();
         $cardCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -101,6 +102,7 @@ $(window).on('load ready resize', function () {
     $brandCarousel.addClass('owl-carousel');
 
     if (brandItem > 1) {
+        hideShadow();
         $brandCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -142,6 +144,7 @@ $(window).on('load ready resize', function () {
     $saleCarousel.addClass('owl-carousel');
 
     if (saleItem > 1 && $(window).width() < '1420') {
+        hideShadow();
         $saleCarousel.owlCarousel({
             margin: 10,
             navText: '',
@@ -177,6 +180,7 @@ $(window).on('load ready resize', function () {
     $mediaCarousel.addClass('owl-carousel');
 
     if (mediaItem > 1) {
+        hideShadow();
         $mediaCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -232,6 +236,7 @@ $(window).on('load ready resize', function () {
     $cardCarousel.addClass('owl-carousel');
 
     if (cardItem > 1) {
+        hideShadow();
         $cardCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -275,6 +280,7 @@ $(window).on('load ready resize', function () {
     $newsCarousel.addClass('owl-carousel');
 
     if (newsItem > 1) {
+        hideShadow();
         $newsCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -331,6 +337,7 @@ $(window).on('load ready resize', function () {
     $advCarousel.addClass('owl-carousel');
 
     if (advItem > 1 && $(window).width() < '1420') {
+        hideShadow();
         $advCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -406,6 +413,7 @@ $(window).on('load ready resize', function () {
     $cardCarousel.addClass('owl-carousel');
 
     if (cardItem > 1) {
+        hideShadow();
         $cardCarousel.owlCarousel({
             nav: true,
             dots: false,
@@ -451,6 +459,7 @@ $(window).on('load ready resize', function () {
     $setCarousel.addClass('owl-carousel');
 
     if (setItem > 1) {
+        hideShadow();
         $setCarousel.owlCarousel({
             nav: false,
             dots: false,
@@ -550,6 +559,7 @@ $(window).on('load ready resize', function () {
     $cardCarousel.addClass('owl-carousel');
 
     if (cardItem > 1 && $(window).width() < '1420') {
+        hideShadow();
         $cardCarousel.owlCarousel({
             nav: false,
             dots: false,
@@ -616,6 +626,7 @@ $(window).on('load ready resize', function () {
     $cardCarousel.addClass('owl-carousel');
 
     if (cardItem > 1) {
+        hideShadow();
         $cardCarousel.owlCarousel({
             nav: false,
             dots: false,
@@ -679,13 +690,23 @@ $(function() {
     });
 });
 
-//показываем фильтры в правой колонке на странице категории
+//показываем фильтры в левой колонке на странице категории
 $(function() {
     $('.js-filters__item-title').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('filters__item-title_active');
     });
 });
+
+//показываем все фильтры раскрытыми
+$(window).on('load ready resize', function () {
+    if ($(window).width() < '1024') {
+        $('.filters__item-title').removeClass('filters__item-title_active');
+    } else {
+        $('.filters__item-title').addClass('filters__item-title_active');
+    }
+});
+
 
 //перебираем активные кнопки в фильтрах
 $(function() {
@@ -955,6 +976,7 @@ $(window).on('load ready resize', function () {
     $btnCarousel.addClass('owl-carousel');
 
     if (btnItem > 1) {
+        hideShadow();
         $btnCarousel.owlCarousel({
             nav: false,
             dots: false,
@@ -1034,3 +1056,51 @@ $(function() {
     }
 });
 
+//убираем тень у карусели в конце слайда
+function hideShadow() {
+    var $Carousel = $('.owl-carousel');
+    var $itemCarousel;
+    $Carousel.each(function () {
+        var $this = $(this);
+        $this.find('.owl-item:last-child').addClass('last');
+        $itemCarousel = $this.find('.owl-item.last');
+        $this.on('translated.owl.carousel ', function() {
+            $itemCarousel = $this.find('.owl-item.last');
+            if ($itemCarousel.hasClass("active")) {
+                $this.find('.owl-stage-outer').addClass('noshadow');
+            } else {
+                $this.find('.owl-stage-outer').removeClass('noshadow');
+            }
+        });
+
+        $this.on('drag.owl.carousel', function() {
+            $itemCarousel = $this.find('.owl-item.last');
+            if ($itemCarousel.hasClass("active")) {
+                $this.find('.owl-stage-outer').addClass('noshadow');
+            } else {
+                $this.find('.owl-stage-outer').removeClass('noshadow');
+            }
+        });
+    });
+}
+
+$(function() {
+    $('.shopping-cart__qnt-plus').on('click', function(){
+        var elem = $(this).closest('.shopping-cart__qnt').find('.shopping-cart__qnt-input');
+        var val = Number(elem.val())+1;
+        elem.val(val);
+        if (val > 1) {
+            $(this).closest('.shopping-cart__qnt').find('.shopping-cart__qnt-minus').removeClass('shopping-cart__qnt-btn_mute');
+        }
+    });
+
+    $('.shopping-cart__qnt-minus').on('click', function(){
+        var elem = $(this).closest('.shopping-cart__qnt').find('.shopping-cart__qnt-input');
+        var val = Number(elem.val())-1;
+        if (val < 1) val = 1;
+        elem.val(val);
+        if (val < 2) {
+            $(this).closest('.shopping-cart__qnt-minus').addClass('shopping-cart__qnt-btn_mute');
+        }
+    });
+});
