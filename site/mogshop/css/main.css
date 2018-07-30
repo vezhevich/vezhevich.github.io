@@ -4848,6 +4848,9 @@ p {
   .mobile-menu-wrapper {
     -webkit-overflow-scrolling: touch;
     -webkit-transform: translateZ(0); }
+  .l-wrapper-footer-bottom {
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0); }
   .mobile-menu {
     background: #fff;
     width: 270px;
