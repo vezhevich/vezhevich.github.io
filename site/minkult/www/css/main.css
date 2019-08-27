@@ -428,6 +428,9 @@ template {
   width: 280px;
   margin-left: 40px; }
 
+.l-two-cols_mod-bottom {
+  margin-bottom: 60px; }
+
 .l-separator {
   width: 100%;
   height: 1px;
