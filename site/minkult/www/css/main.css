@@ -4411,7 +4411,8 @@ blockquote {
 
 .b-media_vertical-carousel-wrapper {
   overflow: hidden;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: -20px; }
 
 .b-media_vertical-carousel-wrapper .swiper-container {
   overflow: visible; }
