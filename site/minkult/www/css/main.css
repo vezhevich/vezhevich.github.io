@@ -452,6 +452,10 @@ template {
   background: #F8F8F8;
   padding: 40px 0 60px 0; }
 
+.l-wrapper-black {
+  background: #222222;
+  padding: 40px 0 40px 0; }
+
 .l-wrapper-gray .l-two-cols {
   margin-bottom: 0; }
 
@@ -2425,6 +2429,10 @@ blockquote {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 0; }
+
+/* блок на главной */
+.b-poster_main {
+  margin-bottom: 60px; }
 
 /* список новостей в правой колонке */
 .b-news-aside__title {
@@ -4434,13 +4442,13 @@ blockquote {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  right: -40px; }
+  right: -30px; }
 
 .b-media_vertical-carousel-wrapper .swiper-button-prev {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  left: -40px; }
+  left: -30px; }
 
 .b-media_vertical-carousel-wrapper .swiper-button-disabled {
   opacity: 0; }
@@ -4491,13 +4499,201 @@ blockquote {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  right: -40px; }
+  right: -30px; }
 
 .b-playbill_full-page-wrapper .swiper-button-prev {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  left: -40px; }
+  left: -30px; }
 
 .b-playbill_full-page-wrapper .swiper-button-disabled {
   opacity: 0; }
+
+/*  медиа на главной */
+.b-media_main .b-media__item-img img {
+  display: block;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden; }
+
+.b-media_main .b-media__item-img {
+  margin-bottom: 0; }
+
+.b-media_main .b-media__item {
+  height: 100%;
+  margin-bottom: 40px; }
+
+.b-media_main .b-media__item_lg .b-media__item-title {
+  max-width: 940px;
+  width: 100%; }
+
+.b-media_main .b-media__item_lg .b-media__item-title a {
+  font-family: "Formular-Bold";
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 110%; }
+
+/* медиа блоки 4 в ширину */
+.b-media_main-mod {
+  margin-left: 0;
+  -webkit-flex-flow: nowrap;
+      -ms-flex-flow: nowrap;
+          flex-flow: nowrap; }
+
+.b-media_main-mod-wrapper .swiper-container {
+  overflow: visible; }
+
+.b-media_main-mod .b-media__item {
+  width: 260px;
+  margin-left: 0;
+  margin-bottom: 0; }
+
+.b-media_main-mod .b-media__item-img {
+  height: 180px; }
+
+.b-media_main-mod .b-media__item-title a {
+  color: #ffffff; }
+
+.b-media_main-mod .b-media__item-date {
+  color: #E6E6E6; }
+
+.b-media_main-mod-wrapper {
+  overflow: hidden; }
+
+.b-media_main-mod-wrapper .swiper-button {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: none;
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E01174;
+  font-size: 0.75rem;
+  outline: none;
+  top: 90px;
+  margin: 0; }
+
+.b-media_main-mod-wrapper .swiper-button-next {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  right: -30px; }
+
+.b-media_main-mod-wrapper .swiper-button-prev {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -30px; }
+
+.b-media_main-mod-wrapper .swiper-button-disabled {
+  opacity: 0; }
+
+/* карусель продуктов на главной */
+.b-product-carousel .b-product__item {
+  margin-left: 0;
+  width: 180px;
+  margin-bottom: 0; }
+
+.b-product-carousel {
+  overflow: visible; }
+
+.b-product-carousel__wrapper {
+  overflow: hidden; }
+
+.b-product-carousel .swiper-wrapper {
+  -webkit-flex-flow: nowrap;
+      -ms-flex-flow: nowrap;
+          flex-flow: nowrap;
+  margin-left: 0; }
+
+.b-product-carousel .b-product__item-img {
+  height: 180px;
+  margin-bottom: 10px; }
+
+.b-product-carousel .b-product__item-title {
+  font-size: 0.8rem;
+  line-height: 130%;
+  color: #777777; }
+
+.b-product-carousel .b-product__item-cost {
+  margin-bottom: 5px; }
+
+.b-product-carousel__wrapper .swiper-button {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: none;
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E01174;
+  font-size: 0.75rem;
+  outline: none;
+  top: 50px;
+  margin: 0; }
+
+.b-product-carousel__wrapper .swiper-button-next {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  right: -30px; }
+
+.b-product-carousel__wrapper .swiper-button-prev {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -30px; }
+
+.b-product-carousel__wrapper .swiper-button-disabled {
+  opacity: 0; }
+
+/* партнеры на главной */
+.b-partner-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.b-partner-list__item {
+  width: -webkit-calc(25% - 20px);
+  width: calc(25% - 20px);
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }

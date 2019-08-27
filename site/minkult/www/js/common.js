@@ -122,6 +122,73 @@ $(function () {
     });
 });
 
+// главный слайдер на главной
+$(function () {
+    var swiper = new Swiper('.js-b-main-slider', {
+        autoHeight: true,
+        spaceBetween: 40,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+});
+
+// слайдер статей на главной
+$(function () {
+    var swiper = new Swiper('.js-b-media_vertical-carousel', {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
+// слайдер афиши на главной
+$(function () {
+    var swiper = new Swiper('.js-b-playbill_full-page-carousel', {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
+// слайдер медиа на главной
+$(function () {
+    var swiper = new Swiper('.js-b-media_main-mod', {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
+// слайдер товаро на главной
+$(function () {
+    var swiper = new Swiper('.js-b-product-carousel', {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
 /* map */
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {

@@ -47,105 +47,445 @@
         </div>
     </header>
     <section class="main-content">
-        <div class="l-container">
-            <div class="l-content_flx">
-                <h1 class="title-h1_mod-bottom">Афиша</h1>
-                <ul class="b-navi-page list_unstyle">
-                    <li class="b-navi-page__item b-navi-page__item_active"><a href="#">Скоро</a></li>
-                    <li class="b-navi-page__item"><a href="#">Август</a></li>
-                    <li class="b-navi-page__item"><a href="#">Сентябрь</a></li>
-                    <li class="b-navi-page__item"><a href="#">Октябрь</a></li>
-                </ul>
-                <select name="" id="" class="b-select-custom">
-                    <option data-display="Категории" value="">Категории</option>
-                    <option value="">Концерты</option>
-                    <option value="">Спектакли</option>
-                </select>
+        <div class="b-main-slider">
+            <div class="l-container">
+                <div class="js-b-main-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="b-main-slider__item swiper-slide">
+                            <div class="b-main-slider__item-left">
+                                <div class="b-main-slider__helper">Новости</div>
+                                <div class="b-main-slider__title"><a href="#">На фестивале оперы выступят звезды мировой сцены</a></div>
+                                <div class="b-main-slider__teaser">С 15 по 22 сентября на сцене Бурятского театра оперы и балета пройдет VI Фестиваль оперы имени Лхасарана Линховоина c участием известных оперных артистов.</div>
+                            </div>
+                            <div class="b-main-slider__item-right b-main-slider__img" style="background-image: url(./images/content/main-slider.jpg)">
+                                <img src="./images/content/main-slider.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="b-main-slider__item swiper-slide">
+                            <div class="b-main-slider__item-left">
+                                <div class="b-main-slider__helper">Новости</div>
+                                <div class="b-main-slider__title"><a href="#">На фестивале оперы выступят звезды мировой сцены</a></div>
+                                <div class="b-main-slider__teaser">С 15 по 22 сентября на сцене Бурятского театра оперы и балета пройдет VI Фестиваль оперы имени Лхасарана Линховоина c участием известных оперных артистов. С 15 по 22 сентября на сцене Бурятского театра оперы и балета пройдет VI Фестиваль оперы имени Лхасарана Линховоина c участием известных оперных артистов.</div>
+                            </div>
+                            <div class="b-main-slider__item-right b-main-slider__img" style="background-image: url(./images/content/main-slider.jpg)">
+                                <img src="./images/content/main-slider.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="b-main-slider__item swiper-slide">
+                            <div class="b-main-slider__item-left">
+                                <div class="b-main-slider__helper">Новости</div>
+                                <div class="b-main-slider__title"><a href="#">На фестивале оперы выступят звезды мировой сцены</a></div>
+                                <div class="b-main-slider__teaser">С 15 по 22 сентября на сцене Бурятского театра оперы и балета пройдет VI Фестиваль оперы имени Лхасарана Линховоина c участием известных оперных артистов. С 15 по 22 сентября на сцене Бурятского театра оперы и балета пройдет VI Фестиваль оперы имени Лхасарана Линховоина c участием известных оперных артистов. С 15 по 22 сентября на сцене Бурятского театра оперы и балета пройдет VI Фестиваль оперы имени Лхасарана Линховоина c участием известных оперных артистов.</div>
+                            </div>
+                            <div class="b-main-slider__item-right b-main-slider__img" style="background-image: url(./images/content/main-slider.jpg)">
+                                <img src="./images/content/main-slider.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-main-slider__nav">
+                        <div class="b-main-slider__nav-wrapper">
+                            <div class="b-main-slider__nav-buttons">
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"><span class="icon-corner"></span></div>
+                                <div class="swiper-button-prev"><span class="icon-corner"></span></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="l-container">
             <div class="l-two-cols">
                 <div class="l-two-cols__left">
-                    <div class="b-playbill">
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">8 Августа</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                    <h5><a href="#">Новости <span class="icon-arrow-back"></span></a></h5>
+                    <div class="b-media b-media_horizontal">
+                        <article class="b-media__item">
+                            <a href="news-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="news-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
                             </div>
                         </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                        <article class="b-media__item">
+                            <a href="news-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="news-page.html">Впервые в Бурятии выступит Российский национальный молодежный симфонический оркестр</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
                             </div>
                         </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">8 Августа</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                        <article class="b-media__item">
+                            <a href="news-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="news-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
                             </div>
                         </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                        <article class="b-media__item">
+                            <a href="news-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="news-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
                             </div>
                         </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">8 Августа</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                        <article class="b-media__item">
+                            <a href="news-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="news-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
                             </div>
                         </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
-                            </div>
-                        </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
-                            </div>
-                        </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">8 Августа</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
-                            </div>
-                        </article>
-                        <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
-                            <div class="playbill__item-text">
-                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
-                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                        <article class="b-media__item">
+                            <a href="news-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="news-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
                             </div>
                         </article>
                     </div>
                     <a href="#" class="btn-large">Показать еще</a>
                 </div>
                 <div class="l-two-cols__right">
-                    <div class="b-poster">
+                    <div class="b-poster b-poster_main">
                         <a href="#"><img src="./images/content/poster.jpg" alt=""></a>
                     </div>
-                    <div class="b-news-aside">
-                        <div class="b-news-aside__title"><a href="news.html">Новости</a></div>
-                        <div class="b-news-aside__list">
-                            <a href="news-page.html" class="b-news-aside__list-item">Что покажет улан-удэнцам «Сказка странствий». Эксклюзивный фоторепортаж</a>
-                            <a href="news-page.html" class="b-news-aside__list-item">Актер Русского драмтеатра в Улан-Удэ приоткрыл завесу тайны над спектаклем и личной жизнью</a>
-                            <a href="news-page.html" class="b-news-aside__list-item">«Ворошиловские стрелки» - будущие актеры Буряад театра</a>
-                            <a href="news-page.html" class="b-news-aside__list-item">Юрий Мандаганов: «Я надеюсь, что в Бурятии появится школа флорентийской мозаики»</a>
-                            <a href="news-page.html" class="b-news-aside__list-item">«Песня – любовь моя, судьба моя»</a>
-                        </div>
+                    <div class="b-media">
+                        <div class="b-media__title"><a href="voting.html">Голосование</a></div>
+                        <article class="b-media__item">
+                            <a href="voting-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-title">
+                                    <a href="voting-page.html">Актуальное интервью на телеканале «МИР»: Соелма Дагаева о национальном проекте «Культура»</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="l-wrapper-gray b-media_vertical-carousel-wrapper">
+            <div class="l-container">
+                <h5><a href="#">Статьи <span class="icon-arrow-back"></span></a></h5>
+                <div class="swiper-container js-b-media_vertical-carousel">
+                    <div class="b-media b-media_vertical b-media_vertical-carousel swiper-wrapper">
+                        <article class="b-media__item swiper-slide">
+                            <a href="article-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="article-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="article-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="article-page.html">Впервые в Бурятии выступит Российский национальный молодежный симфонический оркестр</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="article-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="article-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="article-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="article-page.html">Впервые в Бурятии выступит Российский национальный молодежный симфонический оркестр</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="article-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="article-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                                <div class="b-media__item-teaser">Даши Намдаков сегодня побывал на экспозициях и в фондах хранения Художественного музея.</div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button"><span class="icon-corner"></span></div>
+                    <div class="swiper-button-prev swiper-button"><span class="icon-corner"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-playbill_full-page-wrapper">
+            <div class="l-container">
+                <h5><a href="#">Афиша <span class="icon-arrow-back"></span></a></h5>
+                <div class="swiper-container js-b-playbill_full-page-carousel">
+                    <div class="b-playbill b-playbill_full-page b-playbill_full-page-carousel swiper-wrapper">
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">8 Августа</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                            </div>
+                        </article>
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                            </div>
+                        </article>
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">8 Августа</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                            </div>
+                        </article>
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                            </div>
+                        </article>
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                            </div>
+                        </article>
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">8 Августа</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                            </div>
+                        </article>
+                        <article class="playbill__item swiper-slide">
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <div class="playbill__item-text">
+                                <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
+                                <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button"><span class="icon-corner"></span></div>
+                    <div class="swiper-button-prev swiper-button"><span class="icon-corner"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="l-wrapper-black b-media_main-mod-wrapper">
+            <div class="l-container">
+                <h5><a href="#">Медиа<span class="icon-arrow-back"></span></a></h5>
+                <div class="b-media b-media_vertical b-media_vertical-modified b-media_vertical-text-sm b-media_main">
+                    <article class="b-media__item b-media__item_lg">
+                        <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media-main.jpg)">
+                            <img src="./images/content/media-main.jpg" alt="">
+                        </a>
+                        <div class="b-media__item-text">
+                            <div class="b-media__item-date">8 Августа</div>
+                            <div class="b-media__item-title">
+                                <a href="media-page.html">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-container js-b-media_main-mod">
+                    <div class="b-media b-media_vertical b-media_vertical-modified b-media_vertical-text-sm b-media_main-mod swiper-wrapper">
+                        <article class="b-media__item swiper-slide">
+                            <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="media-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="media-page.html">Впервые в Бурятии выступит Российский национальный молодежный симфонический оркестр</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="media-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="media-page.html">Впервые в Бурятии выступит Российский национальный молодежный симфонический оркестр</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="media-page.html">Даши Намдаков посетил Художественный музей им. Сампилова</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="b-media__item swiper-slide">
+                            <a href="media-page.html" class="b-media__item-img" style="background-image: url(./images/content/media.jpg)"></a>
+                            <div class="b-media__item-text">
+                                <div class="b-media__item-date">8 Августа</div>
+                                <div class="b-media__item-title">
+                                    <a href="media-page.html">Впервые в Бурятии выступит Российский национальный молодежный симфонический оркестр</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button"><span class="icon-corner"></span></div>
+                    <div class="swiper-button-prev swiper-button"><span class="icon-corner"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-product-carousel__wrapper l-wrapper-gray">
+            <div class="l-container">
+                <h5><a href="#">Каталог народного творчества<span class="icon-arrow-back"></span></a></h5>
+                <div class="b-product-carousel js-b-product-carousel swiper-container">
+                    <div class="b-product b-product_modified swiper-wrapper">
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product1.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product2.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product3.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product2.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product3.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product4.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product1.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product2.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product3.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product2.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product3.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="b-product__item swiper-slide">
+                            <div class="b-product__item-img" style="background-image: url(./images/content/product4.jpg)"></div>
+                            <div class="b-product__item-text">
+                                <div class="b-product__item-cost">4500 руб.</div>
+                                <div class="b-product__item-title">Шкатулка 8-гранная большая/90*90*80/серпентинит</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button"><span class="icon-corner"></span></div>
+                    <div class="swiper-button-prev swiper-button"><span class="icon-corner"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="l-container">
+            <div class="b-partner-list">
+                <a href="#" class="b-partner-list__item"><img src="./images/content/partner-list1.png" alt=""></a>
+                <a href="#" class="b-partner-list__item"><img src="./images/content/partner-list2.png" alt=""></a>
+                <a href="#" class="b-partner-list__item"><img src="./images/content/partner-list3.png" alt=""></a>
+                <a href="#" class="b-partner-list__item"><img src="./images/content/partner-list4.png" alt=""></a>
             </div>
         </div>
     </section>
