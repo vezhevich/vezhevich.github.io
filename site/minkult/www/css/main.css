@@ -2871,7 +2871,8 @@ blockquote {
 
 /* инверсия цвета */
 .b-head-page_invers {
-  padding-top: 190px; }
+  padding-top: 190px;
+  margin-top: auto; }
 
 .b-head-page_invers .b-head-page__title {
   color: #ffffff;
@@ -3167,7 +3168,20 @@ blockquote {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  height: 100vh; }
+
+.b-page-bg .l-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .b-page-bg .btn-close_position {
   top: 190px;
