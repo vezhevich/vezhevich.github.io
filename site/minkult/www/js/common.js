@@ -28,7 +28,8 @@ $(function () {
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+            tCounter: '<span class="mfp-counter">%curr% / %total%</span>'
         },
         image: {
             tError: '<a href="%url%">Изображение #%curr%</a> в данный момент недоступно.',
@@ -49,7 +50,8 @@ $(function () {
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+            tCounter: '<span class="mfp-counter">%curr% / %total%</span>'
         },
         image: {
             tError: '<a href="%url%">Изображение #%curr%</a> в данный момент недоступно.',
@@ -59,6 +61,16 @@ $(function () {
         }
     });
 });
+
+//gallery на media
+// $(function () {
+//     $().fancybox({
+//         selector : '.js-b-gallery-list a:visible',
+//         buttons : [
+//             'close'
+//         ]
+//     });
+// });
 
 //gallery product
 $(function () {
@@ -127,6 +139,7 @@ $(function () {
     var swiper = new Swiper('.js-b-main-slider', {
         autoHeight: true,
         spaceBetween: 40,
+        // slidesPerView: 'auto',
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
