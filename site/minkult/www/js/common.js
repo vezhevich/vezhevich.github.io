@@ -127,11 +127,28 @@ $(function () {
 });
 
 // гамбургер
-$(function () {
-    $('.b-header__hamburger').click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass('active');
-    });
+$(window).on('load ready resize', function () {
+    if ($(window).width() < '1260') {
+        $('.b-header__hamburger').click(function(e) {
+            e.preventDefault();
+            $(this).addClass('active');
+            $('body').addClass('fixed');
+        });
+
+        $('.js-close-menu').click(function(e) {
+            e.preventDefault();
+            $('.b-header__hamburger').removeClass('active');
+            $('body').removeClass('fixed');
+        });
+    } else {
+        $('body').removeClass('fixed');
+        $('.b-header__hamburger').removeClass('active');
+
+        $('.b-header__hamburger').click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    }
 });
 
 // главный слайдер на главной
@@ -160,6 +177,15 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            659: {
+                slidesPerView: 1,
+                autoHeight: true
+            }
+        }
     });
 });
 
@@ -173,6 +199,14 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            659: {
+                spaceBetween: 20
+            }
+        }
     });
 });
 
@@ -186,10 +220,18 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            659: {
+                spaceBetween: 20
+            }
+        }
     });
 });
 
-// слайдер товаро на главной
+// слайдер товар на главной
 $(function () {
     var swiper = new Swiper('.js-b-product-carousel', {
         slidesPerView: 6,
@@ -199,8 +241,93 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        pagination: {
+            el: '.swiper-pagination',
+        },
     });
 });
+
+//слайдер афиши на странице афиши на мобиле
+$(function () {
+    var mySwiper1 = undefined;
+    function initSwiper1() {
+        var screenWidth = $(window).width();
+        if(screenWidth < 1259 && mySwiper1 == undefined) {
+            mySwiper1 = new Swiper('.js-b-playbill_full-page-afisha-carousel', {
+                slidesPerView: 'auto',
+                spaceBetween: 40,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        } else if (screenWidth > 1260 && mySwiper1 != undefined) {
+            mySwiper1.destroy();
+            mySwiper1 = undefined;
+            jQuery('.swiper-wrapper').removeAttr('style');
+            jQuery('.swiper-slide').removeAttr('style');
+        }
+    }
+
+    initSwiper1();
+
+    $(window).on('resize', function(){
+        initSwiper1();
+    });
+});
+
+//слайдер навигации на странице
+$(function () {
+    var mySwiper2 = undefined;
+    function initSwiper2() {
+        var screenWidth = $(window).width();
+        if(screenWidth < 759 && mySwiper2 == undefined) {
+            mySwiper2 = new Swiper('.js-b-navi-page', {
+                slidesPerView: 'auto',
+                freeMode: true
+            });
+        } else if (screenWidth > 760 && mySwiper2 != undefined) {
+            mySwiper2.destroy();
+            mySwiper2 = undefined;
+            jQuery('.swiper-wrapper').removeAttr('style');
+            jQuery('.swiper-slide').removeAttr('style');
+        }
+    }
+
+    initSwiper2();
+
+    $(window).on('resize', function(){
+        initSwiper2();
+    });
+});
+
+//слайдер media на странице новости начиная с планшета
+$(function () {
+    var mySwiper3 = undefined;
+    function initSwiper3() {
+        var screenWidth = $(window).width();
+        if(screenWidth < 1259 && mySwiper3 == undefined) {
+            mySwiper3 = new Swiper('.js-b-media-news-page-carousel', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        } else if (screenWidth > 1260 && mySwiper3 != undefined) {
+            mySwiper3.destroy();
+            mySwiper3 = undefined;
+            jQuery('.swiper-wrapper').removeAttr('style');
+            jQuery('.swiper-slide').removeAttr('style');
+        }
+    }
+
+    initSwiper3();
+
+    $(window).on('resize', function(){
+        initSwiper3();
+    });
+});
+
 
 /* map */
 ymaps.ready(function () {

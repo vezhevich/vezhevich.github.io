@@ -35,6 +35,23 @@
                     <div class="b-header__hamburger-ctn">
                         <a href="#" class="b-header__hamburger"><span class="icon-hamb"></span></a>
                         <div class="b-header-dropdown-menu">
+                            <div class="b-header-dropdown-menu_hidden">
+                                <span class="icon-close js-close-menu"></span>
+                                <a class="btn-small" href="#">Купить билеты</a>
+                                <ul class="b-header__navi-ul list_unstyle">
+                                    <li class="b-header__navi-item b-header__navi-item_active"><a href="afisha.html">Афиша</a></li>
+                                    <li class="b-header__navi-item"><a href="news.html">Новости</a></li>
+                                    <li class="b-header__navi-item"><a href="articles.html">Статьи</a></li>
+                                    <li class="b-header__navi-item"><a href="media.html">Медиа</a></li>
+                                    <li class="b-header__navi-item"><a href="voting.html">Голосования</a></li>
+                                    <li class="b-header__navi-item"><a href="#">Конкурсы и фестивали</a></li>
+                                    <li class="b-header__navi-item"><a href="#">Объявления</a></li>
+                                </ul>
+                                <div class="b-header__top-links">
+                                    <a class="b-header__top-links-item" href="institutions.html">Учреждения культуры</a>
+                                    <a class="b-header__top-links-item" href="catalog.html">Каталог народного творчества</a>
+                                </div>
+                            </div>
                             <a href="#" class="b-header-dropdown-menu__item">О министерстве <img src="./images/icons/external-link.svg" alt=""></a>
                             <a href="#" class="b-header-dropdown-menu__item">Оценка качества услуг <img src="./images/icons/external-link.svg" alt=""></a>
                             <a href="#" class="b-header-dropdown-menu__item">О проекте</a>
@@ -50,12 +67,16 @@
         <div class="l-container">
             <div class="l-content_flx">
                 <h1 class="title-h1_mod-bottom">Афиша</h1>
-                <ul class="b-navi-page list_unstyle">
-                    <li class="b-navi-page__item b-navi-page__item_active"><a href="#">Скоро</a></li>
-                    <li class="b-navi-page__item"><a href="#">Август</a></li>
-                    <li class="b-navi-page__item"><a href="#">Сентябрь</a></li>
-                    <li class="b-navi-page__item"><a href="#">Октябрь</a></li>
-                </ul>
+                <div class="b-navi-page-slide">
+                    <div class="js-b-navi-page swiper-container">
+                        <ul class="b-navi-page list_unstyle swiper-wrapper">
+                            <li class="b-navi-page__item swiper-slide b-navi-page__item_active"><a href="#">Скоро</a></li>
+                            <li class="b-navi-page__item swiper-slide"><a href="#">Август</a></li>
+                            <li class="b-navi-page__item swiper-slide"><a href="#">Сентябрь</a></li>
+                            <li class="b-navi-page__item swiper-slide"><a href="#">Октябрь</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <select name="" id="" class="b-select-custom">
                     <option data-display="Категории" value="">Категории</option>
                     <option value="">Концерты</option>
@@ -66,63 +87,81 @@
                 <div class="l-two-cols__left">
                     <div class="b-playbill">
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">8 Августа</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">8 Августа</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">8 Августа</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill1.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">8 Августа</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Впервые в Бурятии выступит Российский национальный симфонический оркестр</a>
                             </div>
                         </article>
                         <article class="playbill__item">
-                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)"></a>
+                            <a href="afisha-page.html" class="playbill__item-img" style="background-image: url(./images/content/playbill2.jpg)">
+                                <img src="./images/content/playbill1.jpg" alt="">
+                            </a>
                             <div class="playbill__item-text">
                                 <div class="playbill__item-date">с 8 Августа по 23 сентября</div>
                                 <a href="afisha-page.html" class="playbill__item-title">Стартовал Фестиваль городских экскурсий</a>
@@ -176,6 +215,7 @@
     <!--модальное окно-->
     <div id="modal-search" class="mfp-hide white-popup-block b-modal-search">
         <form class="b-modal-search__form" action="">
+            <span class="icon-arrow-back popup-modal-dismiss"></span>
             <input class="input" type="text" placeholder="Что нужно найти?">
             <button><span class="icon-search"></span></button>
         </form>
