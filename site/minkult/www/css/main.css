@@ -3939,7 +3939,30 @@ body.fixed {
     padding-right: 20px;
     width: 100%; }
   .b-gallery-detail_caption-bottom .swiper-pagination {
-    display: none; } }
+    display: none; }
+  .b-gallery-detail-popup .mfp-bottom-bar {
+    margin-left: 0;
+    padding: 10px 20px;
+    background: #999999; }
+  .b-gallery-detail-popup .mfp-counter {
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 130%;
+    margin-top: 0; }
+  .b-gallery-detail-popup .mfp-title {
+    padding-left: 20px;
+    font-size: 0.8rem;
+    line-height: 130%;
+    margin-top: 0; }
+  .b-gallery-detail-popup img.mfp-img {
+    padding: 36px 0; }
+  .b-gallery-detail-popup .mfp-arrow-right {
+    right: 40px; }
+  .b-gallery-detail-popup .mfp-arrow-left {
+    left: 40px; }
+  .b-gallery-detail-popup .mfp-close {
+    top: 10px;
+    right: 10px; } }
 
 /* дефолтная таблица */
 .b-table-default {
@@ -4326,7 +4349,31 @@ body.fixed {
     height: 80px; }
   .b-gallery-list__item_sm {
     width: 60px;
-    height: 80px; } }
+    height: 80px; }
+  .b-gallery-list-popup .mfp-arrow-right {
+    right: 40px; }
+  .b-gallery-list-popup .mfp-arrow-left {
+    left: 40px; }
+  .b-gallery-list-popup .mfp-close {
+    top: 10px;
+    right: 10px; }
+  .b-gallery-list-popup .mfp-bottom-bar {
+    margin-top: 0;
+    top: 100%;
+    bottom: auto;
+    left: 0;
+    padding: 10px 20px;
+    background: #999999; }
+  .b-gallery-list-popup .mfp-counter {
+    color: #ffffff;
+    left: 10px;
+    font-size: 0.8rem;
+    line-height: 130%; }
+  .b-gallery-list-popup .mfp-title {
+    margin-top: 0;
+    padding-left: 70px;
+    font-size: 0.8rem;
+    line-height: 130%; } }
 
 /* шара */
 .b-share_center {
