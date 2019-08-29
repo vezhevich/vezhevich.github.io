@@ -233,7 +233,7 @@ $(function () {
 
 // слайдер товар на главной
 $(function () {
-    var swiper = new Swiper('.js-b-product-carousel', {
+    swiper = new Swiper('.js-b-product-carousel', {
         slidesPerView: 6,
         spaceBetween: 20,
         slidesPerView: 'auto',
@@ -247,39 +247,28 @@ $(function () {
     });
 });
 
-//слайдер афиши на странице афиши на мобиле
 $(function () {
-    var mySwiper1 = undefined;
-    function initSwiper1() {
+    var mySwiper = undefined;
+    var mySwiper2 = undefined;
+
+    function initSwiper() {
         var screenWidth = $(window).width();
-        if(screenWidth < 1259 && mySwiper1 == undefined) {
-            mySwiper1 = new Swiper('.js-b-playbill_full-page-afisha-carousel', {
+
+        if(screenWidth < 1259 && mySwiper == undefined) {
+            mySwiper = new Swiper('.js-swiper-tablet', {
                 slidesPerView: 'auto',
-                spaceBetween: 40,
+                spaceBetween: 20,
                 pagination: {
                     el: '.swiper-pagination',
                 },
             });
-        } else if (screenWidth > 1260 && mySwiper1 != undefined) {
-            mySwiper1.destroy();
-            mySwiper1 = undefined;
+        } else if (screenWidth > 1260 && mySwiper != undefined) {
+            mySwiper.destroy();
+            mySwiper = undefined;
             jQuery('.swiper-wrapper').removeAttr('style');
             jQuery('.swiper-slide').removeAttr('style');
         }
-    }
 
-    initSwiper1();
-
-    $(window).on('resize', function(){
-        initSwiper1();
-    });
-});
-
-//слайдер навигации на странице
-$(function () {
-    var mySwiper2 = undefined;
-    function initSwiper2() {
-        var screenWidth = $(window).width();
         if(screenWidth < 759 && mySwiper2 == undefined) {
             mySwiper2 = new Swiper('.js-b-navi-page', {
                 slidesPerView: 'auto',
@@ -293,41 +282,12 @@ $(function () {
         }
     }
 
-    initSwiper2();
+    initSwiper();
 
     $(window).on('resize', function(){
-        initSwiper2();
+        initSwiper();
     });
 });
-
-//слайдер media на странице новости начиная с планшета
-$(function () {
-    var mySwiper3 = undefined;
-    function initSwiper3() {
-        var screenWidth = $(window).width();
-        if(screenWidth < 1259 && mySwiper3 == undefined) {
-            mySwiper3 = new Swiper('.js-b-media-news-page-carousel', {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-            });
-        } else if (screenWidth > 1260 && mySwiper3 != undefined) {
-            mySwiper3.destroy();
-            mySwiper3 = undefined;
-            jQuery('.swiper-wrapper').removeAttr('style');
-            jQuery('.swiper-slide').removeAttr('style');
-        }
-    }
-
-    initSwiper3();
-
-    $(window).on('resize', function(){
-        initSwiper3();
-    });
-});
-
 
 /* map */
 ymaps.ready(function () {
