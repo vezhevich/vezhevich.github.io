@@ -127,28 +127,23 @@ $(function () {
 });
 
 // гамбургер
-$(window).on('load ready resize', function () {
-    if ($(window).width() < '1260') {
-        $('.b-header__hamburger').click(function(e) {
-            e.preventDefault();
-            $(this).addClass('active');
-            $('body').addClass('fixed');
-        });
+$(function () {
+    $('.js-modal-menu').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        mainClass: 'b-modal-menu-wrapper',
+        midClick: true,
+        alignTop: true,
+        showCloseBtn: false
+    });
+});
 
-        $('.js-close-menu').click(function(e) {
-            e.preventDefault();
-            $('.b-header__hamburger').removeClass('active');
-            $('body').removeClass('fixed');
-        });
-    } else {
-        $('body').removeClass('fixed');
-        $('.b-header__hamburger').removeClass('active');
-
-        $('.b-header__hamburger').click(function(e) {
-            e.preventDefault();
-            $(this).toggleClass('active');
-        });
-    }
+$(function () {
+    $('.js-dropdown-menu').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
 });
 
 // главный слайдер на главной
