@@ -132,7 +132,7 @@ $(function () {
         type: 'inline',
         preloader: false,
         focus: '#username',
-        mainClass: 'b-modal-menu-wrapper',
+        mainClass: 'b-modal-menu',
         midClick: true,
         alignTop: true,
         showCloseBtn: false
@@ -285,90 +285,126 @@ $(function () {
 });
 
 /* map */
-ymaps.ready(function () {
+// ymaps.ready(function () {
+//     var myMap = new ymaps.Map('map', {
+//             center: [51.840782, 107.577908],
+//             zoom: 12,
+//             behaviors: ['default', 'scrollZoom'],
+//             controls: []
+//         }, {
+//             searchControlProvider: 'yandex#search'
+//         }),
+//         /**
+//          * Создадим кластеризатор, вызвав функцию-конструктор.
+//          * Список всех опций доступен в документации.
+//          * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Clusterer.xml#constructor-summary
+//          */
+//         clusterer = new ymaps.Clusterer({
+//             /**
+//              * Через кластеризатор можно указать только стили кластеров,
+//              * стили для меток нужно назначать каждой метке отдельно.
+//              * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage.xml
+//              */
+//             preset: 'islands#invertedVioletClusterIcons',
+//             /**
+//              * Ставим true, если хотим кластеризовать только точки с одинаковыми координатами.
+//              */
+//             groupByCoordinates: false,
+//             /**
+//              * Опции кластеров указываем в кластеризаторе с префиксом "cluster".
+//              * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ClusterPlacemark.xml
+//              */
+//             clusterDisableClickZoom: true,
+//             clusterHideIconOnBalloonOpen: false,
+//             geoObjectHideIconOnBalloonOpen: false
+//         }),
+//         /**
+//          * Функция возвращает объект, содержащий данные метки.
+//          * Поле данных clusterCaption будет отображено в списке геообъектов в балуне кластера.
+//          * Поле balloonContentBody - источник данных для контента балуна.
+//          * Оба поля поддерживают HTML-разметку.
+//          * Список полей данных, которые используют стандартные макеты содержимого иконки метки
+//          * и балуна геообъектов, можно посмотреть в документации.
+//          * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/GeoObject.xml
+//          */
+//         getPointData = function (index) {
+//             return {
+//                 balloonContentBody: 'балун <strong>метки ' + index + '</strong>',
+//                 clusterCaption: 'метка <strong>' + index + '</strong>'
+//             };
+//         },
+//         /**
+//          * Функция возвращает объект, содержащий опции метки.
+//          * Все опции, которые поддерживают геообъекты, можно посмотреть в документации.
+//          * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/GeoObject.xml
+//          */
+//         getPointOptions = function () {
+//             return {
+//                 preset: 'islands#violetIcon'
+//             };
+//         },
+//         points = [
+//             // [51.840277, 107.577700], [51.840198, 107.578816], [51.840683, 107.578934], [51.840012, 107.579428]
+//         ],
+//         geoObjects = [];
+//
+//     /**
+//      * Данные передаются вторым параметром в конструктор метки, опции - третьим.
+//      * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Placemark.xml#constructor-summary
+//      */
+//     for (var i = 0, len = points.length; i < len; i++) {
+//         geoObjects[i] = new ymaps.Placemark(points[i], getPointData(i));
+//     }
+//
+//     clusterer.add(geoObjects);
+//     myMap.geoObjects.add(clusterer);
+//     myMap.behaviors.disable('scrollZoom');
+//
+//     // Откроем балун на третьей метке в массиве.
+//     var objectState = clusterer.getObjectState(geoObjects[2]);
+//     if (objectState.isClustered) {
+//         // Если метка находится в кластере, выставим ее в качестве активного объекта.
+//         // Тогда она будет "выбрана" в открытом балуне кластера.
+//         objectState.cluster.state.set('activeObject', geoObjects[2]);
+//         clusterer.balloon.open(objectState.cluster);
+//     } else if (objectState.isShown) {
+//         // Если метка не попала в кластер и видна на карте, откроем ее балун.
+//         geoObjects[2].balloon.open();
+//     }
+// });
+
+ymaps.ready(init);
+
+function init () {
     var myMap = new ymaps.Map('map', {
-            center: [51.840782, 107.577908],
-            zoom: 12,
-            behaviors: ['default', 'scrollZoom'],
+            center: [51.825422188487, 107.58953090772],
+            zoom: 14,
             controls: []
         }, {
             searchControlProvider: 'yandex#search'
         }),
-        /**
-         * Создадим кластеризатор, вызвав функцию-конструктор.
-         * Список всех опций доступен в документации.
-         * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Clusterer.xml#constructor-summary
-         */
-        clusterer = new ymaps.Clusterer({
-            /**
-             * Через кластеризатор можно указать только стили кластеров,
-             * стили для меток нужно назначать каждой метке отдельно.
-             * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage.xml
-             */
-            preset: 'islands#invertedVioletClusterIcons',
-            /**
-             * Ставим true, если хотим кластеризовать только точки с одинаковыми координатами.
-             */
-            groupByCoordinates: false,
-            /**
-             * Опции кластеров указываем в кластеризаторе с префиксом "cluster".
-             * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ClusterPlacemark.xml
-             */
-            clusterDisableClickZoom: true,
-            clusterHideIconOnBalloonOpen: false,
-            geoObjectHideIconOnBalloonOpen: false
-        }),
-        /**
-         * Функция возвращает объект, содержащий данные метки.
-         * Поле данных clusterCaption будет отображено в списке геообъектов в балуне кластера.
-         * Поле balloonContentBody - источник данных для контента балуна.
-         * Оба поля поддерживают HTML-разметку.
-         * Список полей данных, которые используют стандартные макеты содержимого иконки метки
-         * и балуна геообъектов, можно посмотреть в документации.
-         * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/GeoObject.xml
-         */
-        getPointData = function (index) {
-            return {
-                balloonContentBody: 'балун <strong>метки ' + index + '</strong>',
-                clusterCaption: 'метка <strong>' + index + '</strong>'
-            };
-        },
-        /**
-         * Функция возвращает объект, содержащий опции метки.
-         * Все опции, которые поддерживают геообъекты, можно посмотреть в документации.
-         * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/GeoObject.xml
-         */
-        getPointOptions = function () {
-            return {
-                preset: 'islands#violetIcon'
-            };
-        },
-        points = [
-            [51.840277, 107.577700], [51.840198, 107.578816], [51.840683, 107.578934], [51.840012, 107.579428]
-        ],
-        geoObjects = [];
+        objectManager = new ymaps.ObjectManager({
+            clusterize: true
+        });
 
-    /**
-     * Данные передаются вторым параметром в конструктор метки, опции - третьим.
-     * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Placemark.xml#constructor-summary
-     */
-    for (var i = 0, len = points.length; i < len; i++) {
-        geoObjects[i] = new ymaps.Placemark(points[i], getPointData(i));
-    }
+    myMap.geoObjects.add(objectManager);
 
-    clusterer.add(geoObjects);
-    myMap.geoObjects.add(clusterer);
-    myMap.behaviors.disable('scrollZoom');
+    $.ajax({
+        url: "data.json"
+    }).done(function(data) {
+        objectManager.add(data);
+        // Откроем балун на метке с id == 1.
+        var objectState = objectManager.getObjectState(1);
+        if (objectState.isClustered) {
+            // Сделаем так, чтобы указанный объект был "выбран" в балуне.
+            objectManager.clusters.state.set('activeObject', objectManager.objects.getById(1));
+            // Все сгенерированные кластеры имеют уникальные идентификаторы.
+            // Этот идентификатор нужно передать в менеджер балуна, чтобы указать,
+            // на каком кластере нужно показать балун.
+            objectManager.clusters.balloon.open(objectState.cluster.id);
+        } else {
+            objectManager.objects.balloon.open(1);
+        }
+    });
 
-    // Откроем балун на третьей метке в массиве.
-    var objectState = clusterer.getObjectState(geoObjects[2]);
-    if (objectState.isClustered) {
-        // Если метка находится в кластере, выставим ее в качестве активного объекта.
-        // Тогда она будет "выбрана" в открытом балуне кластера.
-        objectState.cluster.state.set('activeObject', geoObjects[2]);
-        clusterer.balloon.open(objectState.cluster);
-    } else if (objectState.isShown) {
-        // Если метка не попала в кластер и видна на карте, откроем ее балун.
-        geoObjects[2].balloon.open();
-    }
-});
+}
