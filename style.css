@@ -43,3 +43,14 @@ border: 1px solid #d3e0e9; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 
 .item-card .link {display: inline-block; zoom: 1; *display: inline; text-decoration: none; border-bottom: 1px dotted #337ab7; font-size: 13px;}
 .item-card .link:hover {border-color: #23527c;}
 .item-card .link.active {border-color: #23527c; color: #23527c;}
+
+@media screen and (max-width: 767px) {
+	#extra {
+		float: none;
+		width: 100%;
+	}
+
+	#responsive {
+		margin-left: 0
+	}
+}
