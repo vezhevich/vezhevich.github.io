@@ -132,7 +132,7 @@ $(function () {
         type: 'inline',
         preloader: false,
         focus: '#username',
-        mainClass: 'b-modal-menu',
+        mainClass: 'b-modal-menu-wrapper',
         midClick: true,
         alignTop: true,
         showCloseBtn: false
