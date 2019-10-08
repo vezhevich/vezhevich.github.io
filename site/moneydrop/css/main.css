@@ -696,8 +696,12 @@ p {
   text-decoration: none; }
 
 .b-rub, .b-rub_tahoma {
-  font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif;
+  font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif !important;
   line-height: normal; }
+
+.b-rub_bold {
+  font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif !important;
+  font-weight: bold; }
 
 @media screen and (max-width: 767px) {
   h1 {
