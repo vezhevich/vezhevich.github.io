@@ -26,8 +26,8 @@ $(function () {
 // скрываем/показываем пароль
 $(function () {
     $('.b-form-show-pass').click(function(){
-        var type = $('.input-password').attr('type') == "text" ? "password" : 'text';
-        $('.input-password').prop('type', type);
+        var type =  $(this).parents('.b-form__input-wrapper').find('.input-password').attr('type') == "text" ? "password" : 'text';
+        $(this).parents('.b-form__input-wrapper').find('.input-password').prop('type', type);
     });
 });
 
@@ -112,6 +112,27 @@ $(function () {
         $('.b-calendar').removeClass('active');
         $('body').removeClass('scroll-lock');
         $('.page-overlay').removeClass('active');
+    });
+});
+
+/* вводить только цифры */
+$(function () {
+    $("#only_num").keydown(function(event) {
+
+        // Разрешаем: backspace, delete, tab и escape
+        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
+            // Разрешаем: Ctrl+A
+            (event.keyCode == 65 && event.ctrlKey === true) ||
+            // Разрешаем: home, end, влево, вправо
+            (event.keyCode >= 35 && event.keyCode <= 39)) {
+            // Ничего не делаем
+            return;
+        } else {
+            // Запрещаем все, кроме цифр на основной клавиатуре, а так же Num-клавиатуре
+            if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                event.preventDefault();
+            }
+        }
     });
 });
 

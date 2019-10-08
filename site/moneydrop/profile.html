@@ -30,7 +30,7 @@
                     <div class="b-header__enter-user-img" style="background-image: url(./images/content/user.jpg)"></div>
                     <div class="b-header__enter-user-text">
                         <div class="b-header__enter-user-top">8 (913) 123-45-67</div>
-                        <div class="b-header__enter-user-bottom">4200 ₽</div>
+                        <div class="b-header__enter-user-bottom">4200 <span class="b-rub">i</span></div>
                     </div>
                 </a>
                 <a href="#" class="b-header__enter-log-out"><img src="./images/svg/icon-switch.svg" alt=""></a>
@@ -75,8 +75,8 @@
                         <div class="b-profile__card-text">
                             <div class="b-profile__card-title">Александр <span>Ковальский</span></div>
                             <div class="b-profile__card-teaser">
-                                <div class="b-profile__card-teaser-phone">8 (913) 123-45-67</div>
-                                <a href="#" class="b-profile__card-teaser-email">kowalski_sasha@gmail.ru</a>
+                                <div class="b-profile__card-teaser-phone"><a class="no-decor">8 (913) 123-45-67</a></div>
+                                <a href="mailto:kowalski_sasha@gmail.ru" class="b-profile__card-teaser-email">kowalski_sasha@gmail.ru</a>
                                 <a href="#" class="b-profile__card-text-edit"><img src="./images/svg/icon-edit.svg" alt=""></a>
                             </div>
                         </div>
@@ -124,10 +124,10 @@
                             </div>
                             <div class="b-profile__widgets-item-spec-bottom">
                                 <div class="b-profile__widgets-item-spec-group">
-                                    <a href="#" class="b-profile__widgets-item-spec-group-icon"><img src="./images/svg/icon-code.svg" alt=""></a>
-                                    <a href="#" class="b-profile__widgets-item-spec-group-icon"><img src="./images/svg/icon-share.svg" alt=""></a>
-                                    <a href="#" class="b-profile__widgets-item-spec-group-icon"><img src="./images/svg/icon-edit-inner.svg" alt=""></a>
-                                    <a href="#" class="b-profile__widgets-item-spec-group-icon"><img src="./images/svg/icon-delete.svg" alt=""></a>
+                                    <a href="javascript:;" class="b-profile__widgets-item-spec-group-icon tooltip" data-tooltip-content="#tooltip_qr"><img src="./images/svg/icon-code.svg" alt=""></a>
+                                    <a href="javascript:;" class="b-profile__widgets-item-spec-group-icon tooltip" data-tooltip-content="#tooltip_link"><img src="./images/svg/icon-share.svg" alt=""></a>
+                                    <a href="javascript:;" class="b-profile__widgets-item-spec-group-icon"><img src="./images/svg/icon-edit-inner.svg" alt=""></a>
+                                    <a href="javascript:;" class="b-profile__widgets-item-spec-group-icon"><img src="./images/svg/icon-delete.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
 </section>
 <footer class="b-footer">
     <div class="l-container b-footer__wrapper">
-        <a href="#" class="b-footer__logo">
+        <a href="/" class="b-footer__logo">
             <img src="./images/logo-footer.svg" alt="">
         </a>
         <nav class="b-footer__nav">
@@ -226,7 +226,7 @@
             <div class="b-modal-default__title">Записать <br>на NFC-метку</div>
             <div class="b-form__item">
                 <select class="custom-select" name="" id="">
-                    <option value="">Страница 1</option>
+                    <option value="">Lorem ipsum dolor sit amet dolor sit amet</option>
                     <option value="">Страница 2</option>
                     <option value="">Страница 3</option>
                     <option value="">Страница 4</option>
@@ -262,6 +262,58 @@
         <span>Ошибка записи :(</span>
         <div class="b-form__bottom b-form__bottom_full-width btn btn-bordered btn-bordered_green">
             <a href="#"><img src="./images/svg/icon-reload.svg" alt="">Повторить</a>
+        </div>
+    </div>
+</div>
+<!-- tooltips -->
+<div class="tooltip_templates">
+    <div id="tooltip_qr">
+        <div class="b-tooltip">
+            <div class="b-tooltip__img">
+                <img src="./images/content/qr-code.jpg" alt="">
+            </div>
+            <div class="b-tooltip__teaser"><a href="#">https://moneydrop.com/user/1244/</a></div>
+            <div class="b-tooltip__bottom">
+                <div class="b-tooltip__bottom-item b-tooltip__bottom-item_mod">
+                    <a href="#"><img src="./images/svg/icon-copy.svg" alt="">
+                        Копировать</a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-vk.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-fb.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-tg.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-wp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tooltip_link">
+        <div class="b-tooltip b-tooltip_sm">
+            <div class="b-tooltip__teaser"><a href="#">https://moneydrop.com/user/1244/</a></div>
+            <div class="b-tooltip__bottom">
+                <div class="b-tooltip__bottom-item b-tooltip__bottom-item_mod">
+                    <a href="#"><img src="./images/svg/icon-copy.svg" alt="">
+                        Копировать</a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-vk.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-fb.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-tg.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-wp.svg" alt=""></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
