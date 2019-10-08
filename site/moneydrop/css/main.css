@@ -695,9 +695,9 @@ p {
 .no-decor:hover {
   text-decoration: none; }
 
-.b-rub {
-  font-family: 'ALSRubl';
-  font-weight: bold; }
+.b-rub, .b-rub_tahoma {
+  font-family: 'ALSRubl-Tahoma', Tahoma, sans-serif;
+  line-height: normal; }
 
 @media screen and (max-width: 767px) {
   h1 {
@@ -1015,10 +1015,18 @@ p {
   src: url(../fonts/MuseoSansCyrl-900Italic.otf), url("../fonts/MuseoSansCyrl-900Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoSansCyrl-900Italic.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'ALSRubl';
-  font-style: normal;
+  font-family: 'ALSRubl-Tahoma';
+  src: url("../fonts/b-rub_tahoma/alsrubl-tahoma-regular.eot");
+  src: url("../fonts/b-rub_tahoma/alsrubl-tahoma-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/b-rub_tahoma/alsrubl-tahoma-regular.woff") format("woff"), url("../fonts/b-rub_tahoma/alsrubl-tahoma-regular.ttf") format("truetype"), url("../fonts/b-rub_tahoma/alsrubl-tahoma-regular.svg#ALSRublTahomaItalic") format("svg");
   font-weight: normal;
-  src: url(../fonts/rouble.otf); }
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ALSRubl-Tahoma';
+  src: url("../fonts/b-rub_tahoma/alsrubl-tahoma-bold.eot");
+  src: url("../fonts/b-rub_tahoma/alsrubl-tahoma-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/b-rub_tahoma/alsrubl-tahoma-bold.woff") format("woff"), url("../fonts/b-rub_tahoma/alsrubl-tahoma-bold.ttf") format("truetype"), url("../fonts/b-rub_tahoma/alsrubl-tahoma-bold.svg#ALSRublTahomaItalic") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 /* buttons */
 .btn {
