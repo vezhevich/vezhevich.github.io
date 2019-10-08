@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Описание сайта содержит не более 150 символов">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="b-header">
+    <div class="l-container b-header__wrapper">
+        <div class="b-header__left">
+            <a href="/" class="b-header__logo">
+                <img src="./images/logo.svg" alt="">
+            </a>
+            <ul class="b-header__nav list_unstyle">
+               <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
+               <li class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></li>
+            </ul>
+        </div>
+        <div class="b-header__right">
+            <div class="b-header__enter">
+                <a class="b-header__enter-item js-modal" href="#b-modal-enter">Вход</a>
+                <span>и</span>
+                <a class="b-header__enter-item" href="reg.html">регистрация</a>
+            </div>
+        </div>
+        <a href="#b-modal-menu" class="b-header__hamb js-modal"></a>
+    </div>
+</header>
+<section class="main-content">
+    <div class="l-container">
+        Жмем 'Вход' что бы увидеть модальное окно входа
+    </div>
+</section>
+<footer class="b-footer">
+    <div class="l-container b-footer__wrapper">
+        <a href="#" class="b-footer__logo">
+            <img src="./images/logo-footer.svg" alt="">
+        </a>
+        <nav class="b-footer__nav">
+            <ul class="list_unstyle">
+                <li><a href="#">О сервисе</a></li>
+                <li><a href="#">Договор оферты</a></li>
+            </ul>
+        </nav>
+        <nav class="b-footer__nav">
+            <ul class="list_unstyle">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </nav>
+        <div class="b-footer__company">
+            <img src="./images/logo-company.svg" alt="">
+            <span>Разработка — <a href="#">5 УГЛОВ</a> <br> © 2019 MoneyDrop</span>
+        </div>
+    </div>
+</footer>
+<!--модальное окно-->
+<div id="b-modal-enter" class="mfp-hide white-popup b-modal-default">
+    <div class="b-modal-default__wrapper">
+        <div class="b-modal-default__title"><span class="hidden-xs">Привет, <br>друг!</span><span class="visible-xs">Вход <a
+                class="b-modal-default__title-link-xs" href="reg.html">Регистрация</a></span></div>
+        <form class="b-form" action="">
+            <div class="b-form__item">
+                <input type="tel" class="input input-mask" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="b-form__item">
+                <input type="text" class="input" placeholder="Пин-код">
+            </div>
+            <div class="b-form__item b-form__helper">
+                Забыли свой ПИН?
+                <br>
+                <a href="#">Получите временный по SMS</a>
+            </div>
+            <div class="b-form__bottom">
+                <span>Войти</span>
+                <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-menu" class="mfp-hide white-popup b-modal-default b-modal-menu">
+    <div class="b-modal-default__wrapper">
+        <nav>
+            <ul class="b-header__nav list_unstyle">
+                <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
+                <li class="b-header__nav-item"><a href="#">Договор оферты</a></li>
+                <li class="b-header__nav-item"><a href="#">Политика конфиденциальности</a></li>
+                <li class="b-header__nav-item"><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </nav>
+        <div class="b-modal-menu__bottom">
+            <div class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></div>
+        </div>
+    </div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

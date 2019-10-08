@@ -1,0 +1,147 @@
+// взрываем модальное окно
+$(function () {
+    $('.js-modal').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        mainClass: 'b-modal-white-bg',
+        midClick: true,
+
+    });
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+});
+
+// маска для телефона
+$(function () {
+    if ($(document).find('.input-mask').length) {
+        var selector = document.getElementsByClassName("input-mask");
+
+        var im = new Inputmask({"mask": "+7 (999) 999-99-99"});
+        im.mask(selector);
+    }
+});
+
+// скрываем/показываем пароль
+$(function () {
+    $('.b-form-show-pass').click(function(){
+        var type = $('.input-password').attr('type') == "text" ? "password" : 'text';
+        $('.input-password').prop('type', type);
+    });
+});
+
+//результаты поиска
+$(function () {
+    $(document).on('keyup', '.js-input-search', function () {
+        $('.b-form__item-search-wrap').find('.js-input-search').each(function () {
+            if ($(this).val() != '' && $(this).val().length > 0) {
+                // Если поле не пустое удаляем класс-указание
+                $('.b-form__search-result-bg').addClass('show');
+            } else {
+                // Если поле пустое добавляем класс-указание
+                $('.b-form__search-result-bg').removeClass('show');
+            }
+        });
+    });
+});
+
+//редактируем номер телефона
+$(function () {
+    $('.js-b-form__item-link').click(function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $(".b-form__item-edit .input-mask").removeAttr("readonly");
+        $(".b-form__item-edit").addClass("active");
+        $(".js-b-form__item-close").show();
+    });
+
+    $('.js-b-form__item-close').click(function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $(".b-form__item-edit .input-mask").attr('readonly', true);
+        $(".b-form__item-edit").removeClass("active");
+        $(".js-b-form__item-link").show();
+    });
+});
+
+//кастомный селект
+$(function () {
+    $('.custom-select').niceSelect();
+});
+
+//акордеон
+$(function () {
+    $("#my-accordion").accordionjs({
+        closeOther  : false,
+        activeIndex : false,
+    });
+});
+
+//tooltip
+$(function () {
+    $('.tooltip').tooltipster({
+        trigger: 'click',
+        minWidth: '315',
+        side: ['top', 'bottom', 'left', 'right'],
+        contentAsHTML: true,
+        interactive: true,
+        contentCloning: true
+    });
+});
+
+//в резиновых таблицах показываем группу иконок
+$(function () {
+    $('.js-b-table__slide-link').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+});
+
+//по клику показываем календарь на мобилах
+$(function () {
+    $('.js-b-calendar').click(function(e) {
+        e.preventDefault();
+        $('.b-calendar').toggleClass('active');
+        $('body').addClass('scroll-lock');
+        $('.page-overlay').addClass('active');
+    });
+
+    $('.b-calendar__close').click(function(e) {
+        e.preventDefault();
+        $('.b-calendar').removeClass('active');
+        $('body').removeClass('scroll-lock');
+        $('.page-overlay').removeClass('active');
+    });
+});
+
+
+/* на мобиле крутим навигацию */
+$(function () {
+    var mySwiper = undefined;
+
+    function initSwiper() {
+        var screenWidth = $(window).width();
+
+        if(screenWidth < 767 && mySwiper == undefined) {
+            mySwiper = new Swiper('.js-b-navi-ctn', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                spaceBetween: 20,
+            });
+        } else if (screenWidth > 768 && mySwiper != undefined) {
+            mySwiper.destroy();
+            mySwiper = undefined;
+            jQuery('.swiper-wrapper').removeAttr('style');
+            jQuery('.swiper-slide').removeAttr('style');
+        }
+    }
+
+    initSwiper();
+
+    $(window).on('resize', function(){
+        initSwiper();
+    });
+});
+
+

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Описание сайта содержит не более 150 символов">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="b-header">
+    <div class="l-container b-header__wrapper">
+        <div class="b-header__left">
+            <a href="/" class="b-header__logo">
+                <img src="./images/logo.svg" alt="">
+            </a>
+            <ul class="b-header__nav list_unstyle">
+                <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
+                <li class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></li>
+            </ul>
+        </div>
+        <div class="b-header__right">
+            <div class="b-header__enter b-header__enter_in">
+                <a class="b-header__enter-item js-modal" href="#b-modal-enter">Вход</a>
+                <span>и</span>
+                <a class="b-header__enter-item" href="reg.html">регистрация</a>
+                <a href="#b-modal-user" class="b-header__enter-user js-modal">
+                    <div class="b-header__enter-user-img" style="background-image: url(./images/content/user.jpg)"></div>
+                    <div class="b-header__enter-user-text">
+                        <div class="b-header__enter-user-top">8 (913) 123-45-67</div>
+                        <div class="b-header__enter-user-bottom">4200 ₽</div>
+                    </div>
+                </a>
+                <a href="#" class="b-header__enter-log-out"><img src="./images/svg/icon-switch.svg" alt=""></a>
+            </div>
+        </div>
+        <a href="#b-modal-menu" class="b-header__hamb js-modal"></a>
+    </div>
+</header>
+<section class="main-content">
+    <div class="l-container">
+        <div class="l-two-cols">
+            <div class="l-two-cols__left">
+                <div class="b-navi-wrapper">
+                    <nav class="b-navi swiper-container js-b-navi-ctn">
+                        <ul class="list_unstyle swiper-wrapper">
+                            <li class="b-navi__item swiper-slide"><a href="profile.html">Сводка</a></li>
+                            <li class="b-navi__item b-navi__item_active swiper-slide"><a href="my-pay-pages.html">Мои платёжные страницы</a></li>
+                            <li class="b-navi__item swiper-slide"><a href="profile-history.html">История оплат</a></li>
+                            <li class="b-navi__item swiper-slide"><a href="profile-support.html">Поддержка</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-green btn-green_mod">
+                        <a class="btn js-modal" href="#b-modal-add-nfc"><img src="./images/svg/icon-nfc.svg" alt="">Записать на NFC-метку</a>
+                    </div>
+                    <div class="hidden-xs">
+                        <br>
+                        <br>
+                        <a class="js-modal" href="#b-modal-nfc-info">Другое модальное окно "Поднесите телефон" жми</a>
+                        <br>
+                        <br>
+                        <a class="js-modal" href="#b-modal-nfc-check">Другое модальное окно "Метка записана" жми</a>
+                        <br>
+                        <br>
+                        <a class="js-modal" href="#b-modal-nfc-warning">Другое модальное окно "Ошибка записи" жми</a>
+                    </div>
+                </div>
+            </div>
+            <div class="l-two-cols__right">
+                <section class="b-tabs">
+                    <input id="tab_1" type="radio" name="tab" checked="checked" />
+                    <input id="tab_2" type="radio" name="tab" />
+
+                    <label for="tab_1" id="tab_l1">Созданные <span class="hidden-xs">мной</span></label>
+                    <label for="tab_2" id="tab_l2">Привязанные</label>
+
+                    <div style="clear:both"></div>
+
+                    <div class="tabs_cont">
+                        <div id="tab_c1">
+                            <a href="#" class="b-tabs__link"><span></span>Создать</a>
+                            <div class="b-table b-table_pay">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Пин</th>
+                                            <th scope="col">Название</th>
+                                            <th scope="col">ID компании</th>
+                                            <th scope="col">Действия</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Пин"><a href="#">2349</a></td>
+                                                <td data-label="Название">Шоколадница-Павелецкая</td>
+                                                <td data-label="ID компании">8964 (Шоколадница)</td>
+                                                <td class="b-table__slide" data-label="Действия">
+                                                    <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                        <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                                    <div class="b-table_pay__group">
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                            <img src="./images/svg/icon-action1.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                            <img src="./images/svg/icon-action2.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action3.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action4.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Пин"><a href="#">2349</a></td>
+                                                <td data-label="Название">Шоколадница-Курская</td>
+                                                <td data-label="ID компании">-</td>
+                                                <td class="b-table__slide" data-label="Действия">
+                                                    <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                        <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                                    <div class="b-table_pay__group">
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                            <img src="./images/svg/icon-action1.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                            <img src="./images/svg/icon-action2.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action3.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action4.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Пин"><a href="#">2349</a></td>
+                                                <td data-label="Название">Шоколадница-Павелецкая</td>
+                                                <td data-label="ID компании">-</td>
+                                                <td class="b-table__slide" data-label="Действия">
+                                                    <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                        <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                                    <div class="b-table_pay__group">
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                            <img src="./images/svg/icon-action1.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                            <img src="./images/svg/icon-action2.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action3.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action4.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Пин"><a href="#">2349</a></td>
+                                                <td data-label="Название">Шоколадница-Курская</td>
+                                                <td data-label="ID компании">6831</td>
+                                                <td class="b-table__slide" data-label="Действия">
+                                                    <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                        <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                                    <div class="b-table_pay__group">
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                            <img src="./images/svg/icon-action1.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                            <img src="./images/svg/icon-action2.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action3.svg" alt="">
+                                                        </div>
+                                                        <div class="b-table_pay__group-item">
+                                                            <img src="./images/svg/icon-action4.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                        <div id="tab_c2">
+                            <div class="b-tabs__teaser">
+                                Вы можете передать работодателю свой номер телефона <b>+7 (913) 123-45-67</b>, <br>чтобы он осуществил привязку вашего аккаунта к своим корпоративным платежным страницам.
+                            </div>
+                            <div class="b-table b-table_pay-inner">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Пин</th>
+                                        <th scope="col">Компания</th>
+                                        <th scope="col">Название ссылки</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td data-label="Пин"><a href="#">2349</a></td>
+                                        <td data-label="Компания">Шоколадница</td>
+                                        <td data-label="Название ссылки">8964 (Шоколадница)</td>
+                                        <td class="b-table__slide" data-label="Действия">
+                                            <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                            <div class="b-table_pay__group">
+                                                <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                    <img src="./images/svg/icon-action1.svg" alt="">
+                                                </div>
+                                                <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                    <img src="./images/svg/icon-action2.svg" alt="">
+                                                </div>
+                                                <div class="b-table_pay__group-item">
+                                                    <img src="./images/svg/icon-action5.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Пин"><a href="#">2349</a></td>
+                                        <td data-label="Компания">Шоколадница</td>
+                                        <td data-label="Название ссылки">8964 (Шоколадница)</td>
+                                        <td class="b-table__slide" data-label="Действия">
+                                            <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                            <div class="b-table_pay__group">
+                                                <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                    <img src="./images/svg/icon-action1.svg" alt="">
+                                                </div>
+                                                <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                    <img src="./images/svg/icon-action2.svg" alt="">
+                                                </div>
+                                                <div class="b-table_pay__group-item">
+                                                    <img src="./images/svg/icon-action5.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Пин"><a href="#">2349</a></td>
+                                        <td data-label="Компания">Шоколадница</td>
+                                        <td data-label="Название ссылки">8964 (Шоколадница)</td>
+                                        <td class="b-table__slide" data-label="Действия">
+                                            <a class="js-b-table__slide-link b-table__slide-link" href="#">Действия
+                                                <img src="./images/svg/icon-corner.svg" alt=""></a>
+                                            <div class="b-table_pay__group">
+                                                <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_qr">
+                                                    <img src="./images/svg/icon-action1.svg" alt="">
+                                                </div>
+                                                <div class="b-table_pay__group-item tooltip" data-tooltip-content="#tooltip_link">
+                                                    <img src="./images/svg/icon-action2.svg" alt="">
+                                                </div>
+                                                <div class="b-table_pay__group-item">
+                                                    <img src="./images/svg/icon-action5.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="b-footer">
+    <div class="l-container b-footer__wrapper">
+        <a href="#" class="b-footer__logo">
+            <img src="./images/logo-footer.svg" alt="">
+        </a>
+        <nav class="b-footer__nav">
+            <ul class="list_unstyle">
+                <li><a href="#">О сервисе</a></li>
+                <li><a href="#">Договор оферты</a></li>
+            </ul>
+        </nav>
+        <nav class="b-footer__nav">
+            <ul class="list_unstyle">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </nav>
+        <div class="b-footer__company">
+            <img src="./images/logo-company.svg" alt="">
+            <span>Разработка — <a href="#">5 УГЛОВ</a> <br> © 2019 MoneyDrop</span>
+        </div>
+    </div>
+</footer>
+<!--модальное окно-->
+<div id="b-modal-menu" class="mfp-hide white-popup b-modal-default b-modal-menu">
+    <div class="b-modal-default__wrapper">
+        <nav>
+            <ul class="b-header__nav list_unstyle">
+                <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
+                <li class="b-header__nav-item"><a href="#">Договор оферты</a></li>
+                <li class="b-header__nav-item"><a href="#">Политика конфиденциальности</a></li>
+                <li class="b-header__nav-item"><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </nav>
+        <div class="b-modal-menu__bottom">
+            <div class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></div>
+        </div>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-enter" class="mfp-hide white-popup b-modal-default">
+    <div class="b-modal-default__wrapper">
+        <div class="b-modal-default__title">Привет, <br>друг!</div>
+        <form class="b-form" action="">
+            <div class="b-form__item">
+                <input type="tel" class="input input-mask" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="b-form__item">
+                <input type="text" class="input" placeholder="Пин-код">
+            </div>
+            <div class="b-form__item b-form__helper">
+                Забыли свой ПИН?
+                <br>
+                <a href="#">Получите временный по SMS</a>
+            </div>
+            <div class="b-form__bottom">
+                <span>Войти</span>
+                <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-user" class="mfp-hide white-popup b-modal-default">
+    <div class="b-modal-default__wrapper">
+        <div class="b-header__enter-user-text">
+            <div class="b-header__enter-user-top">8 (913) 123-45-67  <a href="#" class="b-header__enter-log-out"><img src="./images/svg/icon-switch.svg" alt=""></a></div>
+            <div class="b-header__enter-user-bottom">4200 ₽</div>
+        </div>
+        <nav>
+            <ul class="list_unstyle">
+                <li><a href="#">Сводка</a></li>
+                <li><a href="#">Платёжные страницы</a></li>
+                <li><a href="#">История оплат</a></li>
+                <li><a href="#">Поддержка</a></li>
+            </ul>
+        </nav>
+        <div class="btn-green btn-green_mod">
+            <a class="btn js-modal" href="#b-modal-add-nfc"><img src="./images/svg/icon-nfc.svg" alt="">Записать на NFC-метку</a>
+        </div>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-add-nfc" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper">
+        <form class="b-form" action="">
+            <div class="b-modal-default__title">Записать <br>на NFC-метку</div>
+            <div class="b-form__item">
+                <select class="custom-select" name="" id="">
+                    <option value="">Страница 1</option>
+                    <option value="">Страница 2</option>
+                    <option value="">Страница 3</option>
+                    <option value="">Страница 4</option>
+                </select>
+            </div>
+            <div class="b-form__item b-form__helper b-form__helper_modified b-form__helper_modified-color">
+                Выберите свою страницу или <br> запишите чужую
+            </div>
+            <div class="b-form__bottom b-form__bottom_full-width btn btn-green">
+                <button class="" type="submit">Записать метку</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-nfc-info" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper b-modal-default__wrapper-vertical-center">
+        <img src="./images/svg/icon-hand-nfc.svg" alt="">
+        <span>Поднесите телефон вплотную к NFC метке</span>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-nfc-check" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper b-modal-default__wrapper-vertical-center">
+        <img src="./images/svg/icon-round-check.svg" alt="">
+        <span>Метка записана!</span>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-nfc-warning" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper b-modal-default__wrapper-vertical-bottom">
+        <img src="./images/svg/icon-warning.svg" alt="">
+        <span>Ошибка записи :(</span>
+        <div class="b-form__bottom b-form__bottom_full-width btn btn-bordered btn-bordered_green">
+            <a href="#"><img src="./images/svg/icon-reload.svg" alt="">Повторить</a>
+        </div>
+    </div>
+</div>
+<!-- tooltips -->
+<div class="tooltip_templates">
+    <div id="tooltip_qr">
+        <div class="b-tooltip">
+            <div class="b-tooltip__img">
+                <img src="./images/content/qr-code.jpg" alt="">
+            </div>
+            <div class="b-tooltip__teaser"><a href="#">https://moneydrop.com/user/1244/</a></div>
+            <div class="b-tooltip__bottom">
+                <div class="b-tooltip__bottom-item b-tooltip__bottom-item_mod">
+                    <a href="#"><img src="./images/svg/icon-copy.svg" alt="">
+                    Копировать</a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-vk.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-fb.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-tg.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-wp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tooltip_link">
+        <div class="b-tooltip b-tooltip_sm">
+            <div class="b-tooltip__teaser"><a href="#">https://moneydrop.com/user/1244/</a></div>
+            <div class="b-tooltip__bottom">
+                <div class="b-tooltip__bottom-item b-tooltip__bottom-item_mod">
+                    <a href="#"><img src="./images/svg/icon-copy.svg" alt="">
+                    Копировать</a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-vk.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-fb.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-tg.svg" alt=""></a>
+                </div>
+                <div class="b-tooltip__bottom-item">
+                    <a href="#"><img src="./images/svg/icon-wp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
