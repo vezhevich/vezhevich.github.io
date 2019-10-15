@@ -101,6 +101,7 @@ $(function () {
 $(function () {
     $('.tooltip').tooltipster({
         // trigger: 'click',
+        trigger: 'ontouchstart' in window || navigator.maxTouchPoints ? 'click' : 'hover',
         minWidth: '315',
         side: ['top', 'bottom', 'left', 'right'],
         contentAsHTML: true,
