@@ -2975,7 +2975,8 @@ input[type="checkbox"].input-style_centered + label::before {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  position: relative; }
 
 .b-form__media-img {
   width: 200px;
@@ -2991,19 +2992,25 @@ input[type="checkbox"].input-style_centered + label::before {
 
 .b-form__media-text {
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-.b-form__media-text div {
-  width: 85px;
-  height: 36px;
-  position: relative; }
-
-.b-form__media-text div::before {
-  content: 'Загрузить новое фото';
-  z-index: 0;
+.b-form__media-text span {
+  max-width: 85px;
+  display: block;
   color: #009933;
-  font-size: 1rem;
-  line-height: 18px; }
+  margin-left: 230px; }
 
 .b-form__media-text input {
   opacity: 0;
@@ -3015,7 +3022,9 @@ input[type="checkbox"].input-style_centered + label::before {
   position: absolute;
   top: 0;
   left: 0;
-  height: 36px; }
+  height: 100%;
+  width: 100%;
+  font-size: 0; }
 
 .b-form__item-link {
   display: inline-block; }
@@ -3130,6 +3139,8 @@ input[type="checkbox"].input-style_centered + label::before {
     height: 160px;
     margin-top: 10px;
     margin-right: 20px; }
+  .b-form__media-text span {
+    margin-left: 180px; }
   .b-form__helper {
     line-height: 18px; }
   .b-form__item-edit input[type="checkbox"].input-style + label {

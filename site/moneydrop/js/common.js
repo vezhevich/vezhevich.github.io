@@ -100,7 +100,7 @@ $(function () {
 //tooltip
 $(function () {
     $('.tooltip').tooltipster({
-        trigger: 'click',
+        // trigger: 'click',
         minWidth: '315',
         side: ['top', 'bottom', 'left', 'right'],
         contentAsHTML: true,
