@@ -11,10 +11,6 @@ $(function () {
         focus: '.first-input',
         callbacks: {
             beforeOpen: function() {
-                if($(window).width() < 768) {
-                    this.st.focus = '.first-input';
-                } 
-
                 startWindowScroll = $(window).scrollTop();
             },
             open: function(){
@@ -22,6 +18,10 @@ $(function () {
                     $('body').on('touchmove', function (e) {
                         e.preventDefault();
                     });
+                }
+
+                if($(window).width() < 768) {
+                    this.st.focus = '.first-input';
                 }
             },
             close: function() {
