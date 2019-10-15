@@ -8,6 +8,7 @@ $(function () {
         fixedContentPos: true,
         fixedBgPos: true,
         overflowY: 'auto',
+        focus: '.first-input',
         callbacks: {
             beforeOpen: function() {
                 startWindowScroll = $(window).scrollTop();
@@ -166,6 +167,14 @@ $(function () {
     $('.js-b-send-message_hide').click(function(){
         $('.b-send-message').removeClass('active');
     });
+});
+
+// ставим фокус в поле при открытии модального окна
+$(function () {
+    $('js-modal-focus').click(function(){
+        $('#b-modal-edit-phone .input-mask').focus();
+    });
+
 });
 
 
