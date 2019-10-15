@@ -11,6 +11,10 @@ $(function () {
         focus: '.first-input',
         callbacks: {
             beforeOpen: function() {
+                if($(window).width() < 768) {
+                    this.st.focus = '.first-input';
+                } 
+
                 startWindowScroll = $(window).scrollTop();
             },
             open: function(){
