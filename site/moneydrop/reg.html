@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Описание сайта содержит не более 150 символов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,7 +19,7 @@
             </a>
             <ul class="b-header__nav list_unstyle">
                 <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
-                <li class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></li>
+                <li class="b-header__nav-item btn-small-white"><a class="js-modal" href="#b-modal-feedback">Связться с нами</a></li>
             </ul>
         </div>
         <div class="b-header__right">
@@ -102,7 +103,7 @@
             </ul>
         </nav>
         <div class="b-modal-menu__bottom">
-            <div class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></div>
+            <div class="b-header__nav-item btn-small-white"><a class="js-modal" href="#b-modal-feedback">Связться с нами</a></div>
         </div>
     </div>
 </div>
@@ -128,6 +129,41 @@
                 <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
             </div>
         </form>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-feedback" class="mfp-hide white-popup b-modal-default b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper">
+        <div class="b-modal-default__title">связаться</div>
+        <form class="b-form" action="">
+            <div class="b-form__item">
+                <span class="b-form__label b-form__label_color">Ваш контактный номер</span>
+                <input type="tel" class="input input-mask" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="b-form__item">
+                <span class="b-form__label b-form__label_color">Как к вам обращаться?</span>
+                <input type="text" class="input" placeholder="Ваше имя">
+            </div>
+            <div class="b-form__button">
+                <div class="btn btn-green">
+                    <a class="js-modal" href="#b-modal-feedback-info">Отправить</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-feedback-info" class="mfp-hide white-popup b-modal-default b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper">
+        <div class="b-modal-default__title b-modal-default__title_mod-bottom">Успешно!</div>
+        <div class="b-modal-default__info b-modal-default__info_mod-text">
+            <span>Оператор свяжется с вами в течении рабочего дня.</span>
+        </div>
+        <div class="b-form__button">
+            <div class="btn btn-green">
+                <a class="popup-modal-dismiss" href="#">Закрыть</a>
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/libs.min.js"></script>

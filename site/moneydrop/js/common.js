@@ -5,6 +5,25 @@ $(function () {
         preloader: false,
         mainClass: 'b-modal-white-bg',
         midClick: true,
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        callbacks: {
+            beforeOpen: function() {
+                startWindowScroll = $(window).scrollTop();
+            },
+            open: function(){
+                if ( $('.mfp-content').height() < $(window).height() ){
+                    $('body').on('touchmove', function (e) {
+                        e.preventDefault();
+                    });
+                }
+            },
+            close: function() {
+                $(window).scrollTop(startWindowScroll);
+                $('body').off('touchmove');
+            }
+        }
 
     });
     $(document).on('click', '.popup-modal-dismiss', function (e) {
@@ -133,6 +152,18 @@ $(function () {
                 event.preventDefault();
             }
         }
+    });
+});
+
+
+// скрываем/показываем сообщение об успехе отправки формы
+$(function () {
+    $('.js-b-send-message_show').click(function(){
+        $('.b-send-message').addClass('active');
+    });
+
+    $('.js-b-send-message_hide').click(function(){
+        $('.b-send-message').removeClass('active');
     });
 });
 

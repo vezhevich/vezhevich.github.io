@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Описание сайта содержит не более 150 символов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,7 +19,7 @@
             </a>
             <ul class="b-header__nav list_unstyle">
                 <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
-                <li class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></li>
+                <li class="b-header__nav-item btn-small-white"><a class="js-modal" href="#b-modal-feedback">Связться с нами</a></li>
             </ul>
         </div>
         <div class="b-header__right">
@@ -30,7 +31,7 @@
                     <div class="b-header__enter-user-img" style="background-image: url(./images/content/user.jpg)"></div>
                     <div class="b-header__enter-user-text">
                         <div class="b-header__enter-user-top">8 (913) 123-45-67</div>
-                        <div class="b-header__enter-user-bottom">4200 <span class="b-rub">Р</span></div>
+                        <div class="b-header__enter-user-bottom">4200 <span class="b-rub"></span></div>
                     </div>
                 </a>
                 <a href="#" class="b-header__enter-log-out"><img src="./images/svg/icon-switch.svg" alt=""></a>
@@ -55,7 +56,7 @@
                     <div class="btn-green btn-green_mod">
                         <a class="btn js-modal" href="#b-modal-add-nfc"><img src="./images/svg/icon-nfc.svg" alt="">Записать на NFC-метку</a>
                     </div>
-                    <div class="hidden-xs">
+                    <div class="hidden-xs hidden-sm">
                         <br>
                         <br>
                         <a class="js-modal" href="#b-modal-nfc-info">Другое модальное окно "Поднесите телефон" жми</a>
@@ -109,9 +110,23 @@
                         <h4>Не нашли ответ на свой вопрос?</h4>
                         <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Напишите свой вопрос"></textarea>
                         <div class="btn btn-green">
-                            <button type="submit">Отправить</button>
+                            <!--для демонстрации сообщения об успешной отправке
+                            заменил button на a-->
+                            <!--<button type="submit">Отправить</button>-->
+                            <a href="javascript:;" class="js-b-send-message_show">Отправить</a>
                         </div>
                     </form>
+                    <div class="b-send-message__ctn">
+                        <div class="b-send-message__ctn-img">
+                            <img src="./images/svg/icon-round-check.svg" alt="">
+                        </div>
+                        <div class="b-send-message__ctn-text">
+                            Александр, спасибо за вопрос! <br> Ответ поступит вам в течении суток на указанную вами электронную почту.
+                        </div>
+                        <div class="b-send-message__ctn-btn btn btn-green">
+                            <a class="js-b-send-message_hide" href="javascript:;">Ожидаю</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,7 +167,7 @@
             </ul>
         </nav>
         <div class="b-modal-menu__bottom">
-            <div class="b-header__nav-item btn-small-white"><a href="#">Связться с нами</a></div>
+            <div class="b-header__nav-item btn-small-white"><a class="js-modal" href="#b-modal-feedback">Связться с нами</a></div>
         </div>
     </div>
 </div>
@@ -184,7 +199,7 @@
     <div class="b-modal-default__wrapper">
         <div class="b-header__enter-user-text">
             <div class="b-header__enter-user-top">8 (913) 123-45-67  <a href="#" class="b-header__enter-log-out"><img src="./images/svg/icon-switch.svg" alt=""></a></div>
-            <div class="b-header__enter-user-bottom">4200 <span class="b-rub">Р</span></div>
+            <div class="b-header__enter-user-bottom">4200 <span class="b-rub"></span></div>
         </div>
         <nav>
             <ul class="list_unstyle">
@@ -200,13 +215,13 @@
     </div>
 </div>
 <!--модальное окно-->
-<div id="b-modal-add-nfc" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height">
+<div id="b-modal-add-nfc" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
     <div class="b-modal-default__wrapper">
         <form class="b-form" action="">
             <div class="b-modal-default__title">Записать <br>на NFC-метку</div>
             <div class="b-form__item">
                 <select class="custom-select" name="" id="">
-                    <option value="">Страница 1</option>
+                    <option value="">Lorem ipsum page user longest lorem ipsum</option>
                     <option value="">Страница 2</option>
                     <option value="">Страница 3</option>
                     <option value="">Страница 4</option>
@@ -222,26 +237,61 @@
     </div>
 </div>
 <!--модальное окно-->
-<div id="b-modal-nfc-info" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height">
+<div id="b-modal-nfc-info" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
     <div class="b-modal-default__wrapper b-modal-default__wrapper-vertical-center">
         <img src="./images/svg/icon-hand-nfc.svg" alt="">
         <span>Поднесите телефон вплотную к NFC метке</span>
     </div>
 </div>
 <!--модальное окно-->
-<div id="b-modal-nfc-check" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height">
+<div id="b-modal-nfc-check" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
     <div class="b-modal-default__wrapper b-modal-default__wrapper-vertical-center">
         <img src="./images/svg/icon-round-check.svg" alt="">
         <span>Метка записана!</span>
     </div>
 </div>
 <!--модальное окно-->
-<div id="b-modal-nfc-warning" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height">
+<div id="b-modal-nfc-warning" class="mfp-hide white-popup b-modal-default b-modal-default_mod-height b-modal-default_full-width-xs">
     <div class="b-modal-default__wrapper b-modal-default__wrapper-vertical-bottom">
         <img src="./images/svg/icon-warning.svg" alt="">
         <span>Ошибка записи :(</span>
         <div class="b-form__bottom b-form__bottom_full-width btn btn-bordered btn-bordered_green">
             <a href="#"><img src="./images/svg/icon-reload.svg" alt="">Повторить</a>
+        </div>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-feedback" class="mfp-hide white-popup b-modal-default b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper">
+        <div class="b-modal-default__title">связаться</div>
+        <form class="b-form" action="">
+            <div class="b-form__item">
+                <span class="b-form__label b-form__label_color">Ваш контактный номер</span>
+                <input type="tel" class="input input-mask" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="b-form__item">
+                <span class="b-form__label b-form__label_color">Как к вам обращаться?</span>
+                <input type="text" class="input" placeholder="Ваше имя">
+            </div>
+            <div class="b-form__button">
+                <div class="btn btn-green">
+                    <a class="js-modal" href="#b-modal-feedback-info">Отправить</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--модальное окно-->
+<div id="b-modal-feedback-info" class="mfp-hide white-popup b-modal-default b-modal-default_full-width-xs">
+    <div class="b-modal-default__wrapper">
+        <div class="b-modal-default__title b-modal-default__title_mod-bottom">Успешно!</div>
+        <div class="b-modal-default__info b-modal-default__info_mod-text">
+            <span>Оператор свяжется с вами в течении рабочего дня.</span>
+        </div>
+        <div class="b-form__button">
+            <div class="btn btn-green">
+                <a class="popup-modal-dismiss" href="#">Закрыть</a>
+            </div>
         </div>
     </div>
 </div>
