@@ -3661,13 +3661,7 @@ input[type="checkbox"].input-style_centered + label::before {
     margin-bottom: 10px; }
   .b-profile__widgets-item-spec-list li {
     display: inline-block;
-    margin-right: 20px; }
-  .b-profile__widgets .ct-series-a {
-    stroke: #50AF47;
-    stroke-width: 10px; }
-  .b-profile__widgets .ct-series-b {
-    stroke: #003333;
-    stroke-width: 10px; } }
+    margin-right: 20px; } }
 
 @media screen and (max-width: 1023px) {
   .b-profile__widgets {
