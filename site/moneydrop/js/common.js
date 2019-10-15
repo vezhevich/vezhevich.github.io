@@ -12,16 +12,17 @@ $(function () {
         callbacks: {
             beforeOpen: function() {
                 startWindowScroll = $(window).scrollTop();
+                if($(window).width() < 768) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
             },
             open: function(){
                 if ( $('.mfp-content').height() < $(window).height() ){
                     $('body').on('touchmove', function (e) {
                         e.preventDefault();
                     });
-                }
-
-                if($(window).width() < 768) {
-                    this.st.focus = '.first-input';
                 }
             },
             close: function() {
@@ -203,11 +204,34 @@ $(function () {
         }
     }
 
+    $(function () {
+        mySwiper.slideTo(getSlideIndexByClass('b-navi__item_active'));
+
+        function getSlideIndexByClass(className) {
+            var index = 0;
+            $.each($('.swiper-wrapper').children(), function(i, item) {
+                if ($(item).hasClass(className)) {
+                    index = i;
+                    return false;
+                }
+            });
+            return index;
+        }
+    });
+
+    // другой способ который тоже не работает на 3 пукнте меню
+    // $(function () {
+    //     if ($('.b-navi__item').hasClass('b-navi__item_active')) {
+    //         mySwiper.slideTo($('.b-navi__item.b-navi__item_active').index(),1000,false );
+    //     };
+    // });
+
     initSwiper();
 
     $(window).on('resize', function(){
         initSwiper();
     });
+
 });
 
 
