@@ -182,6 +182,20 @@ $(function () {
 
 });
 
+// диаграмма
+$(function () {
+    new Chartist.Pie('.ct-chart', {
+        series: [72, 28]
+    }, {
+        donut: true,
+        donutWidth: 27,
+        donutSolid: true,
+        startAngle: 1,
+        showLabel: false
+    });
+
+
+});
 
 /* на мобиле крутим навигацию */
 $(function () {
@@ -204,7 +218,7 @@ $(function () {
         }
     }
 
-    $(function () {
+    $(window).on('load ready', function(){
         mySwiper.slideTo(getSlideIndexByClass('b-navi__item_active'));
 
         function getSlideIndexByClass(className) {
