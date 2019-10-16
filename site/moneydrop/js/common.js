@@ -235,7 +235,7 @@ $(function () {
 });
 
 
-диаграмма
+// диаграмма
 $(function () {
     new Chartist.Pie('.ct-chart', {
         series: [72, 28]
