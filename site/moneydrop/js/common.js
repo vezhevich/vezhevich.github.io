@@ -182,20 +182,6 @@ $(function () {
 
 });
 
-// диаграмма
-$(function () {
-    new Chartist.Pie('.ct-chart', {
-        series: [72, 28]
-    }, {
-        donut: true,
-        donutWidth: 27,
-        donutSolid: true,
-        startAngle: 1,
-        showLabel: false
-    });
-
-
-});
 
 /* на мобиле крутим навигацию */
 $(function () {
@@ -217,28 +203,28 @@ $(function () {
             jQuery('.swiper-slide').removeAttr('style');
         }
     }
-
-    $(window).on('load ready', function(){
-        mySwiper.slideTo(getSlideIndexByClass('b-navi__item_active'));
-
-        function getSlideIndexByClass(className) {
-            var index = 0;
-            $.each($('.swiper-wrapper').children(), function(i, item) {
-                if ($(item).hasClass(className)) {
-                    index = i;
-                    return false;
-                }
-            });
-            return index;
-        }
-    });
+    //
+    // $(window).on('load ready', function(){
+    //     mySwiper.slideTo(getSlideIndexByClass('b-navi__item_active'));
+    //
+    //     function getSlideIndexByClass(className) {
+    //         var index = 0;
+    //         $.each($('.swiper-wrapper').children(), function(i, item) {
+    //             if ($(item).hasClass(className)) {
+    //                 index = i;
+    //                 return false;
+    //             }
+    //         });
+    //         return index;
+    //     }
+    // });
 
     // другой способ который тоже не работает на 3 пукнте меню
-    // $(function () {
-    //     if ($('.b-navi__item').hasClass('b-navi__item_active')) {
-    //         mySwiper.slideTo($('.b-navi__item.b-navi__item_active').index(),1000,false );
-    //     };
-    // });
+    $(function () {
+        if ($('.b-navi__item').hasClass('b-navi__item_active')) {
+            mySwiper.slideTo($('.b-navi__item.b-navi__item_active').index(),1000,false );
+        };
+    });
 
     initSwiper();
 
@@ -249,3 +235,15 @@ $(function () {
 });
 
 
+диаграмма
+$(function () {
+    new Chartist.Pie('.ct-chart', {
+        series: [72, 28]
+    }, {
+        donut: true,
+        donutWidth: 27,
+        donutSolid: true,
+        startAngle: 1,
+        showLabel: false
+    });
+});
