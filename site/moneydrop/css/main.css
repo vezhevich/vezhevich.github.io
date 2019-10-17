@@ -2775,7 +2775,9 @@ p {
   .b-modal-offset-top .mfp-wrap.mfp-close-btn-in {
     margin-top: 60px;
     height: -webkit-calc(100% - 60px);
-    height: calc(100% - 60px); } }
+    height: calc(100% - 60px); }
+  .b-modal-offset-top .mfp-bg.b-modal-white-bg {
+    background-color: transparent; } }
 
 /* b-form */
 .b-form__item {
