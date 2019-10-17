@@ -91,42 +91,56 @@
     </div>
 </footer>
 <!--модальное окно-->
-<div id="b-modal-enter" class="mfp-hide white-popup b-modal-default">
-    <div class="b-modal-default__wrapper">
-        <div class="b-modal-default__title"><span class="hidden-xs">Привет, <br>друг!</span><span class="visible-xs">Вход <a
-                class="b-modal-default__title-link-xs" href="reg.html">Регистрация</a></span></div>
-        <form class="b-form" action="">
-            <div class="b-form__item">
-                <input type="tel" class="input input-mask first-input" placeholder="+7 (___) ___-__-__">
-            </div>
-            <div class="b-form__item">
-                <input type="text" class="input" placeholder="Пин-код">
-            </div>
-            <div class="b-form__item b-form__helper">
-                Забыли свой ПИН?
-                <br>
-                <a href="#">Получите временный по SMS</a>
-            </div>
-            <div class="b-form__bottom">
-                <span>Войти</span>
-                <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
-            </div>
-        </form>
+<div id="b-modal-enter" class="mfp-hide white-popup b-modal-default b-modal-default_inner">
+    <div class="b-modal-default__header">
+        <div class="b-modal-default__header">
+            <a href="/" class="b-modal-default__header-logo"><img src="./images/logo.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="b-modal-default_border-radius">
+        <div class="b-modal-default__wrapper">
+            <div class="b-modal-default__title"><span class="hidden-xs">Привет, <br>друг!</span><span class="visible-xs">Вход <a
+                    class="b-modal-default__title-link-xs" href="reg.html">Регистрация</a></span></div>
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <input type="tel" class="input input-mask first-input" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="b-form__item">
+                    <input type="text" class="input" placeholder="Пин-код">
+                </div>
+                <div class="b-form__item b-form__helper">
+                    Забыли свой ПИН?
+                    <br>
+                    <a href="#">Получите временный по SMS</a>
+                </div>
+                <div class="b-form__bottom">
+                    <span>Войти</span>
+                    <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 <!--модальное окно-->
-<div id="b-modal-menu" class="mfp-hide white-popup b-modal-default b-modal-menu">
-    <div class="b-modal-default__wrapper">
-        <nav>
-            <ul class="b-header__nav list_unstyle">
-                <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
-                <li class="b-header__nav-item"><a href="#">Договор оферты</a></li>
-                <li class="b-header__nav-item"><a href="#">Политика конфиденциальности</a></li>
-                <li class="b-header__nav-item"><a href="#">Пользовательское соглашение</a></li>
-            </ul>
-        </nav>
-        <div class="b-modal-menu__bottom">
-            <div class="b-header__nav-item btn-small-white"><a class="js-modal" href="#b-modal-feedback">Связться с нами</a></div>
+<div id="b-modal-menu" class="mfp-hide white-popup b-modal-default b-modal-menu b-modal-default_inner">
+    <div class="b-modal-default__header">
+        <div class="b-modal-default__header">
+            <a href="/" class="b-modal-default__header-logo"><img src="./images/logo.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="b-modal-default_border-radius">
+        <div class="b-modal-default__wrapper">
+            <nav>
+                <ul class="b-header__nav list_unstyle">
+                    <li class="b-header__nav-item"><a href="#">О сервисе</a></li>
+                    <li class="b-header__nav-item"><a href="#">Договор оферты</a></li>
+                    <li class="b-header__nav-item"><a href="#">Политика конфиденциальности</a></li>
+                    <li class="b-header__nav-item"><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </nav>
+            <div class="b-modal-menu__bottom">
+                <div class="b-header__nav-item btn-small-white"><a class="js-modal" href="#b-modal-feedback">Связться с нами</a></div>
+            </div>
         </div>
     </div>
 </div>
