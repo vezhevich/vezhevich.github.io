@@ -15,7 +15,7 @@ $(function () {
                 if($(window).width() < 768) {
                     this.st.focus = false;
                 } else {
-                    this.st.focus = '#name';
+                    this.st.focus = '.first-input';
                 }
             },
             open: function(){
