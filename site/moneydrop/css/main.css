@@ -2737,6 +2737,9 @@ p {
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translateZ(0); }
 
+.b-modal-default_inner .b-modal-default__header {
+  display: none; }
+
 @media screen and (max-width: 767px) {
   .b-modal-default__title-link-xs {
     font-size: 1.2857rem;
@@ -2756,10 +2759,9 @@ p {
     height: calc(100% - 60px);
     border-radius: 10px 10px 0 0; }
   #b-modal-enter, #b-modal-user, #b-modal-menu {
-    margin-top: 60px;
     max-width: 100%; }
   #b-modal-enter .mfp-close, #b-modal-user .mfp-close, #b-modal-menu .mfp-close {
-    top: -50px;
+    top: 10px;
     right: 10px;
     width: 40px;
     height: 40px;
@@ -2772,10 +2774,41 @@ p {
     max-width: 100%;
     height: 100% !important;
     border-radius: 0 !important; }
-  .b-modal-offset-top .mfp-wrap.mfp-close-btn-in .b-modal-default {
-    margin-top: 60px; }
-  .b-modal-offset-top .b-modal-white-bg {
-    background-color: transparent; } }
+  .b-modal-default_inner {
+    padding-top: 0; }
+  .b-modal-default_inner .b-modal-default__header {
+    background-color: #ffffff;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: -10px;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 10px;
+    height: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .b-modal-default_inner .b-modal-default__header + .b-modal-default_border-radius {
+    z-index: 2;
+    position: relative; }
+  .b-modal-default_inner {
+    background-color: transparent;
+    margin-top: 0; }
+  .b-modal-default_inner .b-modal-default_border-radius {
+    border-radius: 10px 10px 0 0;
+    background-color: #003333;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 30px; }
+  .b-modal-default_inner .b-modal-default__header-logo {
+    margin-left: -20px; } }
 
 /* b-form */
 .b-form__item {
@@ -3777,7 +3810,14 @@ input[type="checkbox"].input-style_centered + label::before {
   .b-profile__widgets-item-spec-list li:last-child {
     margin-bottom: 0; }
   .b-profile__widgets-item-spec-teaser {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .b-profile__widgets-item_full-width-xs {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: -webkit-calc(100% + 60px);
+    width: calc(100% + 60px); } }
 
 /* custom-select */
 .custom-select {
@@ -4253,12 +4293,71 @@ input[type="checkbox"].input-style_centered + label::before {
   height: 10px;
   background-image: url(../images/svg/icon-rub-normal.svg); }
 
+.b-table_profile {
+  padding: 0;
+  margin-bottom: 0; }
+
+.b-table_profile table tr td:nth-child(3) {
+  width: 90px; }
+
+.b-table_profile table tr td {
+  vertical-align: top; }
+
+.b-table__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #cccccc;
+  margin-top: 5px; }
+
+.b-table__bottom-link-add {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.b-table__bottom-link-add span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #009933;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px; }
+
+.b-table__bottom-link-add span img {
+  max-width: 12px; }
+
 @media screen and (max-width: 767px) {
   .b-table {
     margin-left: -30px;
     margin-right: -30px;
     padding-left: 20px;
     padding-right: 20px; }
+  .b-table_profile {
+    margin: 0;
+    padding: 0; }
   .b-table table {
     border: 0; }
   .b-table table thead {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="b-modal-offset-top">
+<body>
 <header class="b-header">
     <div class="l-container b-header__wrapper">
         <div class="b-header__left">
@@ -61,27 +61,34 @@
     </div>
 </footer>
 <!--модальное окно-->
-<div id="b-modal-enter" class="mfp-hide white-popup b-modal-default">
-    <div class="b-modal-default__wrapper">
-        <div class="b-modal-default__title"><span class="hidden-xs">Привет, <br>друг!</span><span class="visible-xs">Вход <a
-                class="b-modal-default__title-link-xs" href="reg.html">Регистрация</a></span></div>
-        <form class="b-form" action="">
-            <div class="b-form__item">
-                <input type="tel" class="input input-mask first-input" placeholder="+7 (___) ___-__-__">
-            </div>
-            <div class="b-form__item">
-                <input type="text" class="input" placeholder="Пин-код">
-            </div>
-            <div class="b-form__item b-form__helper">
-                Забыли свой ПИН?
-                <br>
-                <a href="#">Получите временный по SMS</a>
-            </div>
-            <div class="b-form__bottom">
-                <span>Войти</span>
-                <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
-            </div>
-        </form>
+<div id="b-modal-enter" class="mfp-hide white-popup b-modal-default b-modal-default_inner">
+    <div class="b-modal-default__header">
+        <div class="b-modal-default__header">
+            <a href="/" class="b-modal-default__header-logo"><img src="./images/logo.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="b-modal-default_border-radius">
+        <div class="b-modal-default__wrapper">
+            <div class="b-modal-default__title"><span class="hidden-xs">Привет, <br>друг!</span><span class="visible-xs">Вход <a
+                    class="b-modal-default__title-link-xs" href="reg.html">Регистрация</a></span></div>
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <input type="tel" class="input input-mask first-input" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="b-form__item">
+                    <input type="text" class="input" placeholder="Пин-код">
+                </div>
+                <div class="b-form__item b-form__helper">
+                    Забыли свой ПИН?
+                    <br>
+                    <a href="#">Получите временный по SMS</a>
+                </div>
+                <div class="b-form__bottom">
+                    <span>Войти</span>
+                    <button type="submit"><img src="./images/svg/icon-arrow-right.svg" alt=""></button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 <!--модальное окно-->
