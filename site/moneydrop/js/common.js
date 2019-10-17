@@ -39,14 +39,14 @@ $(function () {
 });
 
 // маска для телефона
-$(function () {
-    if ($(document).find('.input-mask').length) {
-        var selector = document.getElementsByClassName("input-mask");
-
-        var im = new Inputmask({"mask": "+7 (999) 999-99-99"});
-        im.mask(selector);
-    }
-});
+// $(function () {
+//     if ($(document).find('.input-mask').length) {
+//         var selector = document.getElementsByClassName("input-mask");
+//
+//         var im = new Inputmask({"mask": "+7 (999) 999-99-99"});
+//         im.mask(selector);
+//     }
+// });
 
 // скрываем/показываем пароль
 $(function () {
