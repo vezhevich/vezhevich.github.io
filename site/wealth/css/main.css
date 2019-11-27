@@ -3754,7 +3754,7 @@ form.call_us button[type="submit"] {
 }
 
 .av_content__teaser_border {
-    background: linear-gradient(to right, white, purple);
+    background: linear-gradient(to right, red, purple);
     padding: 3px;
     margin-bottom: 30px;
     animation: animation;
