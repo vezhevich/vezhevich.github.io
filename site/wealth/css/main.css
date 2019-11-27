@@ -3725,6 +3725,12 @@ form.call_us button[type="submit"] {
     margin-bottom: 30px;
     margin-top: 0;
     text-align: center;
+    animation: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: both;
 }
 
 .av_content__teaser {
@@ -3732,6 +3738,15 @@ form.call_us button[type="submit"] {
     line-height: 32px;
     padding: 20px;
     background: #272e44;
+}
+
+@keyframes animation {
+    from {
+        transform: translate(0, 130px);
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .av_content__teaser h2 {
@@ -3742,11 +3757,23 @@ form.call_us button[type="submit"] {
     background: linear-gradient(to right, white, purple);
     padding: 3px;
     margin-bottom: 30px;
+    animation: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1.2s;
+    opacity: 0;
+    animation-fill-mode: both;
 }
 
 .av-question-list {
     list-style: none;
     padding: 0;
+    animation: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: both;
 }
 
 .av-question-list li {
@@ -3799,4 +3826,13 @@ form.call_us button[type="submit"] {
     border-radius: 50px!important;
     width: 100%;
     max-width: 280px;
+}
+
+.av-question-form .blue_btn_rounded {
+    animation: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1.7s;
+    opacity: 0;
+    animation-fill-mode: both;
 }
