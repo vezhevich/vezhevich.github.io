@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wealth View</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/date.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/date.min.js"></script>
+
+    </head>
+    <body class="all">
+        <header id="header" class="lk">
+            <div class="header_line">
+                <div class="lc_left_header_block header_right_block">
+                    <div id="logo">
+                        Wealth View
+                    </div>
+                    
+                    <nav>
+                        <a href="#">О ПРОЕКТЕ</a>
+                        <a href="#">СТАТЬИ</a>
+                        <a href="#">ОТЗЫВЫ</a>
+                        <a href="#">F.A.Q</a>
+                    </nav>
+                </div>
+                <div class="header_right_block lc_header_right_block">
+                    <img src="img/setting.png" alt="">
+                    <span>James Williams</span>
+                    <img src="img/avatar.png" alt="">
+                </div>
+            </div>
+        </header>
+        <div class="lc_common_block">
+            <div class="left_sidebar">
+                <div class="sidebar_item">
+                    <div class="sidebar_item_title active">
+                        <div>
+                            <img src="img/bag.png" alt="">
+                            <span>Новый пункт меню</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar_item">
+                    <div class="sidebar_item_title">
+                        <div>
+                            <img src="img/bag.png" alt="">
+                            <span>Мои портфели</span>
+                        </div>
+                        <img src="img/arrow_1.png" alt="" class="rotate">
+                    </div>
+                    <div class="sub_sidebar_item">
+                        <ul class="treeCSS">
+                            <li>
+                                <ul class="nav nav-tabs" id="myTab_bags" role="tablist">
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" id="bag_1-tab" data-toggle="tab" href="#bag_1" role="tab" aria-controls="bag_1" aria-selected="true">
+                                            <div><i class="far fa-circle"></i> Портфель 1</div>
+                                            <i class="fas fa-trash-alt remove"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bag_2-tab" data-toggle="tab" href="#bag_2" role="tab" aria-controls="bag_2" aria-selected="false">
+                                            <div><i class="far fa-circle"></i>Портфель 2</div>
+                                            <i class="fas fa-trash-alt remove"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bag_3-tab" data-toggle="tab" href="#bag_3" role="tab" aria-controls="bag_3" aria-selected="false">
+                                            <div><i class="far fa-circle"></i>Портфель 3</div>
+                                            <i class="fas fa-trash-alt remove"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <hr class="sidebar_hr">
+                        <a href="#" class="add_bt_line">
+                            <img src="img/add_bt.png" alt="">
+                            Новый Портфель
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar_item">
+                    <div class="sidebar_item_title">
+                        <div>
+                            <img src="img/stat.png" alt="">
+                            <span>Бэк-тест</span>
+                        </div>
+                        <img src="img/arrow_1.png" alt="" class="rotate">
+                    </div>
+                    <div class="sub_sidebar_item">
+                        <ul class="treeCSS">
+                            <li>
+                                <ul class="nav nav-tabs" id="myTab_bt" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bt_1-tab" data-toggle="tab" href="#bt_1" role="tab" aria-controls="bt_1" aria-selected="true">
+                                            <div><i class="far fa-circle"></i> Бэк-тест 1</div>
+                                            <i class="fas fa-trash-alt remove"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bt_2-tab" data-toggle="tab" href="#bt_2" role="tab" aria-controls="bt_2" aria-selected="false">
+                                            <div><i class="far fa-circle"></i>Бэк-тест 2</div>
+                                            <i class="fas fa-trash-alt remove"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bt_3-tab" data-toggle="tab" href="#bt_3" role="tab" aria-controls="bt_3" aria-selected="false">
+                                            <div><i class="far fa-circle"></i>Бэк-тест 3</div>
+                                            <i class="fas fa-trash-alt remove"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <hr class="sidebar_hr">
+                        <a href="#" class="add_bt_line">
+                            <img src="img/add_bt.png" alt="">
+                            Новый Бэк-тест
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lc_right_content">
+                <div class="lc_right_content_container">
+                   <div class="av_content_centered">
+                       <h1>Заголовок опроса будет находится тут</h1>
+                       <div class="av_content__teaser_border">
+                           <div class="av_content__teaser">
+                               <h2>Рекомендации</h2>
+                               Рекомендации и советы по прохождению опроса. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deleniti dolorem ea harum hic inventore ipsam iure, labore laboriosam magni, nam quasi, quod tempora ullam vero. Exercitationem impedit numquam quo?
+                           </div>
+                       </div>
+                       <form class="av-question-form" action="">
+                           <ul class="av-question-list">
+                               <li>
+                                   Текст вопроса пользователю
+                                   <label class="checkbox">
+                                       <input id="question1" name="question1" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input id="question2" name="question1" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                               </li>
+                               <li>
+                                   Текст вопроса пользователю
+                                   <label class="checkbox">
+                                       <input name="question2" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input name="question2" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input name="question2" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                               </li>
+                               <li>
+                                   Текст вопроса пользователю
+                                   <label class="checkbox">
+                                       <input name="question3" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input name="question3" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input name="question3" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                               </li>
+                               <li>
+                                   Текст вопроса пользователю
+                                   <label class="checkbox">
+                                       <input name="question4" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input name="question4" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                                   <label class="checkbox">
+                                       <input name="question4" type="radio" />
+                                       <div class="checkbox__text">Вариант ответа пользователя на вопрос</div>
+                                   </label>
+                               </li>
+                           </ul>
+                           <button type="submit" class="blue_btn blue_btn_rounded">Отправить</button>
+                       </form>
+                   </div>
+                </div> <!-- END lc_right_content_container -->
+            </div> <!-- END lc_right_content -->
+        </div> <!-- END LC COMMON BLOCK -->
+        <footer id="footer" class="lk">
+                                                    
+                                                    <div class="footer_line">
+                                                        <div>
+                                                            <i class="fas fa-envelope"></i>
+                                                            <a href="#">Name@gmail.com</a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#" class="ttu">О ПРОЕКТЕ</a>
+                                                            <span>|</span>
+                                                            <a href="#" class="ttu">СТАТЬИ</a>
+                                                            <span>|</span>
+                                                            <a href="#" class="ttu">ОТЗЫВЫ</a>
+                                                            <span>|</span>
+                                                            <a href="#" class="ttu">F.A.Q</a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#" class="ttu">пользовательское соглашение</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </footer>
+            <div id="overlay"></div>
+            <div id="login_block">
+            <div class="login_block_title">
+                Авторизация
+                <img src="img/close.png" alt="" class="close_login close_btn">
+            </div>
+            <div class="login_form_block">
+                <form id="login_form" class="login_form">
+                    <label>Имя пользователя или email *</label>
+                    <input type="text" name="login">
+                    <label>Пароль *</label>
+                    <input type="password" name="password">
+                    <button type="submit">ВОЙТИ</button>
+                    <div class="remember_lost_line">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox" />
+                                <div class="checkbox__text">Запомнить меня</div>
+                            </label>
+                            
+                        </div>
+                        <div><a href="#" class="lost_password">Забыли пароль?</a></div>
+                    </div>
+                </form>
+            </div>
+            <div class="register_block">
+                <span class="register_title">
+                    НЕТ АККАУНТА ?
+                </span>
+                <p>Регистрация на нашем сайте позволит Вам получить доступ к вашему личному кабинету.</p>
+                <div class="register_href"><a href="#" >РЕГИСТРАЦИЯ</a></div>
+                <span class="register_title">
+                    войти с помощью:
+                </span>
+                <div class="login_with_line">
+                    <div>
+                        <div><img src="img/login_g.png" alt=""></div>
+                        <span><a href="#">Войти</a></span>
+                    </div>
+                    <div>
+                        <div><img src="img/login_f.png" alt=""></div>
+                        <span><a href="#">Войти</a></span>
+                    </div>
+                    <div>
+                        <div><img src="img/login_v.png" alt=""></div>
+                        <span><a href="#">Войти</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="register_block">
+            <div class="login_block_title">
+                Регистрация
+                <img src="img/close.png" alt="" class="close_login close_btn">
+            </div>
+            <div class="login_form_block">
+                <form id="register_form" class="login_form">
+                    <label>Ваше имя * </label>
+                    <input type="text" name="name">
+                    <label>Логин * </label>
+                    <input type="text" name="login">
+                    <label>Пароль * </label>
+                    <input type="password" name="password">
+                    <label>Повтор пароля * </label>
+                    <input type="password" name="password_repeat">
+                    <label>Электронная почта * </label>
+                    <input type="email" name="email">
+                    <button type="submit">РЕГИСТРАЦИЯ</button>
+                </form>
+            </div>
+            <div class="register_block">
+                <div class="login_with_line login_in_form_line">
+                    <div>
+                        <a href="#" class="login_btn login_in_form">
+                            <span>Войти</span>
+                            <img src="img/plus.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_made_operation" class="modal_block">
+            <div class="modal_title">
+                СОЗДАНИЕ ОПЕРАЦИИ
+                <div><span class="require_star">*</span> - Обязательно для заполнения</div>
+            </div>
+            <div class="modal_content">
+                <form class="lu">
+                    <div class="mo_line">
+                        <div>
+                            <label>ДАТА ОПЕРАЦИИ <span class="require_star"> *</span></label>
+                            <div class="selectBox">
+
+                                <img src="img/arrow.png" alt="" width="15px" class="arrow">
+
+                                <p class="valueTag" name="select">03.04.2019</p>
+
+                                <ul class="selectMenuBox">
+                                    <li class="option">03.04.2019</li>
+                                    <li class="option">03.04.2019</li>
+                                    <li class="option">03.04.2019</li>
+                                    <li class="option">03.04.2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <label>КЛАСС АКТИВА</label>
+                            <div class="selectBox">
+
+                                <img src="img/arrow.png" alt="" width="15px" class="arrow">
+
+                                <p class="valueTag" name="select">Акции</p>
+
+                                <ul class="selectMenuBox">
+                                    <li class="option">Акции</li>
+                                    <li class="option">Акции</li>
+                                    <li class="option">Акции</li>
+                                    <li class="option">Акции</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <label>ТИП ОПЕРАЦИИ</label>
+                            <div class="selectBox">
+
+                                <img src="img/arrow.png" alt="" width="15px" class="arrow">
+
+                                <p class="valueTag" name="select">Покупка</p>
+
+                                <ul class="selectMenuBox">
+                                    <li class="option">Покупка</li>
+                                    <li class="option">Покупка</li>
+                                    <li class="option">Покупка</li>
+                                    <li class="option">Покупка</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mo_line">
+                        <div>
+                            <label>НАЗВАНИЕ АКТИВА <span class="require_star"> *</span></label>
+                            <input type="text" value="Apple">
+                        </div>
+                    </div>
+                    <div class="mo_line">
+                        <div>
+                            <label>КОЛИЧЕСТВО <span class="require_star"> *</span></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>СТОИМОСТЬ <span class="require_star"> *</span></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>ЦЕНА <span class="require_star"> *</span></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mo_line">
+                        <div>
+                            <label>% ОТ ПОРТФЕЛЯ <span class="require_star"> *</span></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>ДОХОДНОСТЬ (%) <span class="require_star"> *</span></label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>НКД <span class="require_star"> *</span></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <!-- <div class="mo_line">
+                        <div>
+                            <label>ДАТА ЗАКРЫТИЯ <span class="require_star"> *</span></label>
+                            <div class="selectBox">
+
+                                <img src="img/arrow.png" alt="" width="15px" class="arrow">
+
+                                <p class="valueTag" name="select">03.04.2019</p>
+
+                                <ul class="selectMenuBox">
+                                    <li class="option">03.04.2019</li>
+                                    <li class="option">03.04.2019</li>
+                                    <li class="option">03.04.2019</li>
+                                    <li class="option">03.04.2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <label>СРОК(мес.) <span class="require_star"> *</span></label>
+                            <div class="type_number">
+                                <img src="img/arrow.png" alt="" class="number_1 number_img">
+                                <img src="img/arrow.png" alt="" class="number_2 number_img">
+                                <input type="number" value="22">
+                            </div>
+
+                        </div>
+                        <div>
+                            <label>ВАЛЮТА</label>
+                            <div class="selectBox">
+
+                                <img src="img/arrow.png" alt="" width="15px" class="arrow">
+
+                                <p class="valueTag" name="select">RUB</p>
+
+                                <ul class="selectMenuBox">
+                                    <li class="option">EUR</li>
+                                    <li class="option">USD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="remember_lost_line">
+                        <!-- <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="checkbox__text">Ежемесячная капитализация</div>
+                            </label>
+
+                        </div> -->
+                        <div>
+                            <a href="#" class="blue_btn create_btn">
+                                <span>Создать</span>
+                            <img src="img/ok.png" alt=""></a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <img src="img/close.png" alt="" class="modal_close close_btn">
+        </div>
+        <div id="modal_mobile_horiz" class="modal_block">
+            <div class="modal_title">
+                Внимание !
+            </div>
+            <div class="modal_content">
+                <div>
+                    <p>Пожалуйста, переведите экран телефона
+                    в горизонтальный режим.</p>
+                    <img src="img/mob_hor.png" alt="">
+                    <a href="#" class="close_mob_banner blue_btn">ОК</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
