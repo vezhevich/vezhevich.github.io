@@ -3753,6 +3753,15 @@ form.call_us button[type="submit"] {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    background: #22273a;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+}
+
+.av-question-list li:hover {
+    box-shadow: 0px 5px 17px rgba(0,0,0,0.5);
 }
 
 .av-question-list label {
