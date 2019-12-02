@@ -3950,6 +3950,12 @@ form.call_us button[type="submit"] {
 }
 
 @media screen and (max-width: 1023px) {
+    .av-auth:hover .av-auth__menu {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+
     .av-auth:hover .av-auth__icon svg path {
         fill: #fff;
     }

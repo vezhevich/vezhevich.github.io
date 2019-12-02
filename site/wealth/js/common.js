@@ -343,7 +343,7 @@ $( function() {
 $( function() {
     var screenWidth = $(window).width();
     if(screenWidth < 1024) {
-        $('.js-av-auth-show').on('click', function(e) {
+        $('.js-av-auth-show').click(function(e) {
             e.preventDefault();
             $(this).toggleClass('active');
         });
