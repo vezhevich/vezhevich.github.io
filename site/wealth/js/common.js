@@ -340,7 +340,7 @@ $( function() {
 
 
 // добавляем/показываем меню авторизации пользователя на мобилах
-$(window).on('load ready resize', function () {
+$( function() {
     var screenWidth = $(window).width();
     if(screenWidth < 1024) {
         $('.js-av-auth-show').on('click', function(e) {
