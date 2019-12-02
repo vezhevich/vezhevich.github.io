@@ -340,12 +340,12 @@ $( function() {
 
 
 // добавляем/показываем меню авторизации пользователя на мобилах
-$( function() {
-    var screenWidth = $(window).width();
-    if(screenWidth < 1024) {
-        $('.js-av-auth-show').on('click', function(e) {
-            e.preventDefault();
-            $(this).toggleClass('active');
-        });
-    }
-});
+// $( function() {
+//     var screenWidth = $(window).width();
+//     if(screenWidth < 1024) {
+//         $('.js-av-auth-show').on('click', function(e) {
+//             e.preventDefault();
+//             $(this).toggleClass('active');
+//         });
+//     }
+// });
