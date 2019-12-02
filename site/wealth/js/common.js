@@ -337,3 +337,15 @@ $( function() {
       source: availableTags
     });
   } );
+
+
+// добавляем/показываем меню авторизации пользователя на мобилах
+$(window).on('load ready resize', function () {
+    var screenWidth = $(window).width();
+    if(screenWidth < 1024) {
+        $('.js-av-auth-show').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    }
+});
