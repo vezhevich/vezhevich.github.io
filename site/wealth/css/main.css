@@ -3852,6 +3852,8 @@ form.call_us button[type="submit"] {
     align-items: center;
     justify-content: center;
     transition: .2s ease-in-out;
+    position: relative;
+    z-index: 20;
 }
 
 .av-auth__icon svg {
