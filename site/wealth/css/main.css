@@ -3888,11 +3888,20 @@ form.call_us button[type="submit"] {
     border-radius: 5px;
 }
 
-.av-auth:hover .av-auth__menu {
+.av-auth__icon.active + .av-auth__menu {
     visibility: visible;
     opacity: 1;
     z-index: 10;
     transform: translate(0, 0);
+}
+
+.av-auth__icon.active svg path, .av-auth:hover .av-auth__icon.active svg path {
+fill: #1a1d2b;
+}
+
+.av-auth__icon.active, .av-auth:hover .av-auth__icon.active {
+background-color: #fff;
+box-shadow: 0 0 0 5px #1a1d2b;
 }
 
 .av-auth__menu-logout {
@@ -3949,38 +3958,31 @@ form.call_us button[type="submit"] {
     }
 }
 
-@media screen and (max-width: 1023px) {
-    .av-auth:hover .av-auth__menu {
-        visibility: hidden;
-        opacity: 0;
-        z-index: -1;
-    }
+/*@media screen and (max-width: 1023px) {*/
+    /*.av-auth:hover .av-auth__menu {*/
+        /*visibility: hidden;*/
+        /*opacity: 0;*/
+        /*z-index: -1;*/
+    /*}*/
 
-    .av-auth:hover .av-auth__icon svg path {
-        fill: #fff;
-    }
+    /*.av-auth:hover .av-auth__icon svg path {*/
+        /*fill: #fff;*/
+    /*}*/
 
-    .av-auth:hover .av-auth__icon {
-        background-color: #1a1d2b;
-        box-shadow: none;
-    }
+    /*.av-auth:hover .av-auth__icon {*/
+        /*background-color: #1a1d2b;*/
+        /*box-shadow: none;*/
+    /*}*/
 
-    .av-auth__icon.active svg path, .av-auth:hover .av-auth__icon.active svg path {
-        fill: #1a1d2b;
-    }
+    /*.av-auth__icon.active svg path, .av-auth:hover .av-auth__icon.active svg path {*/
+        /*fill: #1a1d2b;*/
+    /*}*/
 
-    .av-auth__icon.active, .av-auth:hover .av-auth__icon.active {
-        background-color: #fff;
-        box-shadow: 0 0 0 5px #1a1d2b;
-    }
-
-    .av-auth__icon.active + .av-auth__menu {
-        visibility: visible;
-        opacity: 1;
-        z-index: 10;
-        transform: translate(0, 0);
-    }
-}
+    /*.av-auth__icon.active, .av-auth:hover .av-auth__icon.active {*/
+        /*background-color: #fff;*/
+        /*box-shadow: 0 0 0 5px #1a1d2b;*/
+    /*}*/
+/*}*/
 
 @media screen and (max-width: 560px) {
     .av-auth {
