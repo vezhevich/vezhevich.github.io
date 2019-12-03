@@ -3895,11 +3895,11 @@ form.call_us button[type="submit"] {
     transform: translate(0, 0);
 }
 
-.av-auth__icon.active svg path, .av-auth:hover .av-auth__icon.active svg path {
+.av-auth:hover .av-auth__icon.active svg path, .av-auth__icon.active svg path {
 fill: #1a1d2b;
 }
 
-.av-auth__icon.active, .av-auth:hover .av-auth__icon.active {
+.av-auth:hover .av-auth__icon.active, .av-auth__icon.active {
 background-color: #fff;
 box-shadow: 0 0 0 5px #1a1d2b;
 }
@@ -3955,6 +3955,17 @@ box-shadow: 0 0 0 5px #1a1d2b;
     .lc_header_right_block {
         width: auto!important;
         margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .av-auth:hover .av-auth__icon svg path {
+        fill: #fff;
+    }
+
+    .av-auth:hover .av-auth__icon {
+        background-color: #1a1d2b;
+        box-shadow: none;
     }
 }
 
