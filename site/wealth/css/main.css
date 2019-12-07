@@ -3982,3 +3982,83 @@ form.call_us button[type="submit"] {
         width: 100%;
     }
 }
+
+/* promo на главной */
+.av-promo {
+    height: calc(100vh - 81px);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: cover;
+}
+
+.av-promo .arrow{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.av-promo .bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .av-promo {
+        height: 100%;
+        min-height: 400px;
+    }
+
+    .av-promo .arrow{
+        display: none;
+    }
+}
+
+/* header */
+@media screen and (max-width: 1199px) {
+    .av-header .header_line {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .av-header #logo {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .av-header .header_line {
+        flex-direction: column;
+    }
+
+    .av-header #logo {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* main_content */
+.main_content {
+    overflow: hidden;
+}
