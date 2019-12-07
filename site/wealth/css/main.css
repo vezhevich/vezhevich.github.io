@@ -4027,7 +4027,12 @@ form.call_us button[type="submit"] {
 @media screen and (max-width: 767px) {
     .av-promo {
         height: 100%;
-        min-height: 400px;
+        min-height: 350px;
+        background-image: none!important;
+        padding-top: 50px!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .av-promo .arrow{
@@ -4059,6 +4064,27 @@ form.call_us button[type="submit"] {
 }
 
 /* main_content */
-.main_content {
+.av-main_content {
     overflow: hidden;
 }
+
+@media screen and (max-width: 767px) {
+    .av-main_content .about_block > img {
+        max-width: 280px;
+    }
+
+    .av-main_content .about_block {
+        padding-top: 150px;
+    }
+
+    .av-main_content .about_line > div {
+        margin-right: 0!important;
+        align-items: center;
+    }
+
+    .av-main_content .about_line > div p {
+        text-align: center;
+    }
+}
+
+
