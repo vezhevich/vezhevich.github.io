@@ -2931,7 +2931,7 @@ html {
   font-size: 18px; }
 
 body {
-  font-family: "IBMPlexSans-Regular", sans-serif;
+  font-family: "IBM Plex Sans Regular", sans-serif;
   height: 100%;
   font-size: 1rem;
   background-color: #F9F9FB; }
@@ -2988,7 +2988,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   color: #222222;
-  font-family: "IBMPlexSans-Semibold";
+  font-family: "IBM Plex Sans Semibold";
   font-weight: 600;
   margin-top: 0; }
 
@@ -3022,7 +3022,7 @@ p {
   line-height: 27px;
   margin: 0 0 20px 0;
   color: #333333;
-  font-family: "IBMPlexSans-Regular"; }
+  font-family: "IBM Plex Sans Regular"; }
 
 .clearfix:after {
   content: "";
@@ -3162,7 +3162,7 @@ ol li {
   color: #222222;
   font-size: 1.1111rem;
   line-height: 24px;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   margin-bottom: 15px; }
 
 .content-bg-gray ul {
@@ -3365,25 +3365,25 @@ ol li {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/iconfont/MaterialIcons-Regular.woff) format("woff"), url(../fonts/iconfont/MaterialIcons-Regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'IBMPlexSans-Regular';
+  font-family: 'IBM Plex Sans Regular';
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/IBM/IBMPlexSans-Regular.ttf); }
 
 @font-face {
-  font-family: 'IBMPlexSans-Medium';
+  font-family: 'IBM Plex Sans Medium';
   font-style: normal;
   font-weight: 500;
   src: url(../fonts/IBM/IBMPlexSans-Medium.ttf); }
 
 @font-face {
-  font-family: 'IBMPlexSans-Semibold';
+  font-family: 'IBM Plex Sans Semibold';
   font-style: normal;
   font-weight: 600;
   src: url(../fonts/IBM/IBMPlexSans-Semibold.ttf); }
 
 .btn-default {
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   -webkit-border-radius: 50px;
           border-radius: 50px;
   font-size: 0.8889rem;
@@ -3495,7 +3495,7 @@ ol li {
   background: #F9F9FB;
   border: 1px solid rgba(36, 81, 195, 0.3);
   color: #2451C3;
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   -webkit-transition: all 0.1s cubic-bezier(0, 0, 1, 1);
   transition: all 0.1s cubic-bezier(0, 0, 1, 1); }
 
@@ -3509,7 +3509,7 @@ ol li {
 .btn-white-bg {
   background: #fff;
   color: #2451C3;
-  font-family: "IBMPlexSans-Regular"; }
+  font-family: "IBM Plex Sans Regular"; }
 
 .btn-white-bg_bordered {
   border: 1px solid #fff; }
@@ -4664,7 +4664,7 @@ ol li {
   display: inline-block;
   vertical-align: top;
   color: #1E6F09;
-  font-family: "IBMPlexSans-Semibold"; }
+  font-family: "IBM Plex Sans Semibold"; }
 
 .header__nav ul {
   display: -webkit-box;
@@ -4791,13 +4791,13 @@ ol li {
   text-decoration: none;
   display: inline-block;
   vertical-align: baseline;
-  font-family: "IBMPlexSans-Semibold"; }
+  font-family: "IBM Plex Sans Semibold"; }
 
 .header-main__phone-item span, .header-main__phone-item i {
   color: #777777; }
 
 .header-main__phone-item span {
-  font-family: "IBMPlexSans-Regular"; }
+  font-family: "IBM Plex Sans Regular"; }
 
 .header-main__phone-item i {
   vertical-align: middle;
@@ -4981,7 +4981,7 @@ ol li {
   .header__nav-item {
     padding: 10px 0;
     font-size: 1rem;
-    font-family: "IBMPlexSans-Medium";
+    font-family: "IBM Plex Sans Medium";
     line-height: 22px;
     display: block;
     position: relative;
@@ -5291,14 +5291,14 @@ ol li {
   line-height: 37px;
   color: #fff;
   margin-bottom: 40px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .promo-project__sub-title {
   color: #222222;
   margin-bottom: 30px;
   font-size: 1.3333rem;
   line-height: 29px;
-  font-family: "IBMPlexSans-Semibold"; }
+  font-family: "IBM Plex Sans Semibold"; }
 
 .promo-project__list-item {
   color: #2451C3;
@@ -5402,7 +5402,7 @@ ol li {
   font-size: 1.1111rem;
   line-height: 22px;
   margin-bottom: 10px;
-  font-family: "IBMPlexSans-Semibold"; }
+  font-family: "IBM Plex Sans Semibold"; }
 
 .advantage-list__teaser {
   font-size: 1rem;
@@ -5437,7 +5437,7 @@ ol li {
       -ms-flex-pack: center;
           justify-content: center;
   color: #FDCE34;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   font-size: 1.3333rem; }
 
 .advantage-list__step {
@@ -5878,7 +5878,7 @@ ol li {
   margin-top: auto;
   font-size: 1.1111rem;
   line-height: 22px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .news-main__date {
   color: #999999; }
@@ -6081,13 +6081,13 @@ ol li {
   display: inline-block;
   vertical-align: baseline;
   margin-bottom: 20px;
-  font-family: "IBMPlexSans-Semibold"; }
+  font-family: "IBM Plex Sans Semibold"; }
 
 .footer-main__phone span, .header-main__phone i {
   color: #777777; }
 
 .footer-main__phone span {
-  font-family: "IBMPlexSans-Regular"; }
+  font-family: "IBM Plex Sans Regular"; }
 
 .footer-main__phone i {
   vertical-align: middle;
@@ -6451,7 +6451,7 @@ ol li {
   font-size: 2.6667rem;
   line-height: 58px;
   margin-bottom: 20px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .modal-content__teaser {
   font-size: 1rem;
@@ -6507,7 +6507,7 @@ ol li {
   transition: stroke .1s; }
 
 .fancybox-container {
-  font-family: "IBMPlexSans-Regular"; }
+  font-family: "IBM Plex Sans Regular"; }
 
 .modal-content__text-thanks {
   text-align: center; }
@@ -6683,7 +6683,7 @@ ol li {
   position: relative;
   width: 100%;
   padding-right: 30px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .steps__title i {
   position: absolute;
@@ -6915,7 +6915,7 @@ ol li {
   padding-right: 10px;
   font-size: 1.1111rem;
   line-height: 22px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .collapse__head:hover {
   background-color: #F3F7FF;
@@ -6990,7 +6990,7 @@ ol li {
   padding: 40px;
   height: 100%;
   text-decoration: none;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   font-size: 1.1111rem;
   line-height: 24px; }
 
@@ -7137,7 +7137,7 @@ ol li {
   color: #222222;
   white-space: nowrap;
   margin-right: 20px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .table-two-cols__row-head {
   border-top: 0; }
@@ -7323,7 +7323,7 @@ ol li {
   text-shadow: none;
   font-size: 0.8889rem;
   line-height: 19px;
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   font-weight: normal;
   border-bottom: 1px solid #EAEAEA;
   -webkit-border-radius: 0;
@@ -7415,7 +7415,7 @@ ol li {
 
 .program-credit-list-item__title {
   color: #222222;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   font-size: 1.3333rem;
   line-height: 29px;
   margin-bottom: 14px; }
@@ -7480,13 +7480,13 @@ ol li {
   color: #222222;
   font-size: 1rem;
   line-height: 24px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .program-credit-list-item__number_green {
   color: #1E6F09;
   font-size: 32px;
   line-height: 38px;
-  font-family: "IBMPlexSans-Regular"; }
+  font-family: "IBM Plex Sans Regular"; }
 
 .program-credit-list-item__link {
   margin-top: 10px;
@@ -7708,10 +7708,10 @@ ol li {
   color: #222222;
   font-size: 1.1111rem;
   line-height: 24px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .program-credit-info__number_green {
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   font-size: 1.7778rem;
   line-height: 38px;
   color: #1E6F09; }
@@ -7841,7 +7841,7 @@ ol li {
   color: #FFFFFF;
   font-size: 1.3333rem;
   line-height: 29px;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   z-index: 2; }
 
 .object-list__title span {
@@ -7849,7 +7849,7 @@ ol li {
   font-size: 1rem;
   line-height: 30px;
   color: #ffffff;
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   margin-top: 10px; }
 
 .object-list__item_lg .object-list__title {
@@ -7879,7 +7879,7 @@ ol li {
   padding: 0;
   font-size: 1.7778rem;
   line-height: 38px;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   margin-bottom: 30px; }
 
 .object-list__item_inner ul li {
@@ -8124,7 +8124,7 @@ ol li {
 
 .object-detail__location-text {
   color: #fff;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   font-size: 1.7778rem;
   line-height: 38px; }
 
@@ -8309,7 +8309,7 @@ ol li {
 .responsive-table td {
   font-size: 1rem;
   line-height: 30px;
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   vertical-align: top;
   position: relative;
   padding-top: 20px;
@@ -8426,7 +8426,7 @@ ol li {
   margin-bottom: 0; }
 
 .informer-feedback__phone {
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   font-size: 1.1111rem;
   margin-top: 10px !important; }
 
@@ -8833,7 +8833,7 @@ ol li {
   font-size: 1.3333rem;
   line-height: 29px;
   color: #222222;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .news-list__item:hover .news-list__title {
   color: #2451C3;
@@ -8952,7 +8952,7 @@ ol li {
   border-color: #319018;
   background: #319018;
   color: #fff;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .paginator__item_last {
   margin-right: 0;
@@ -9311,7 +9311,7 @@ ol li {
   font-size: 1.3333rem;
   line-height: 29px;
   color: #222222;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   text-decoration: none; }
 
 .contacts__map-info-phone span {
@@ -9364,10 +9364,10 @@ ol li {
   text-decoration: none;
   font-size: 1rem;
   line-height: 22px;
-  font-family: "IBMPlexSans-Medium"; }
+  font-family: "IBM Plex Sans Medium"; }
 
 .contacts__list-phone span {
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   font-size: 0.8889rem; }
 
 .contacts .administration__list {
@@ -10049,7 +10049,7 @@ ol li {
   border: 1px solid #dddddd;
   border-bottom: none;
   color: #222222;
-  font-family: "IBMPlexSans-Medium";
+  font-family: "IBM Plex Sans Medium";
   font-size: 1.1111rem;
   line-height: 24px;
   display: -webkit-box;
@@ -10210,7 +10210,7 @@ ol li {
 .default-table td {
   font-size: 1rem;
   line-height: 30px;
-  font-family: "IBMPlexSans-Regular";
+  font-family: "IBM Plex Sans Regular";
   vertical-align: top;
   position: relative;
   border-top: 1px solid #EAEAEA;
@@ -10497,7 +10497,7 @@ ol li {
 .program-promo__title {
   font-size: 2.6667rem;
   line-height: 62px;
-  font-weight: 600;
+  font-family: "IBM Plex Sans Semibold";
   margin-bottom: 6px;
   text-decoration: none;
   color: #222222; }
@@ -10505,7 +10505,7 @@ ol li {
 .program-promo__title a {
   font-size: 2.6667rem;
   line-height: 62px;
-  font-weight: 600;
+  font-family: "IBM Plex Sans Semibold";
   text-decoration: none;
   color: #222222; }
 
