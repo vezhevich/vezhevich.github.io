@@ -10551,6 +10551,11 @@ ol li {
           border-radius: 8px;
   overflow: hidden; }
 
+.program-promo_index:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFF0C0), to(rgba(255, 240, 192, 0)));
+  background: -webkit-linear-gradient(left, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
+  background: linear-gradient(90deg, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%); }
+
 .program-promo_index:hover {
   -webkit-box-shadow: 0px 2px 20px rgba(36, 81, 195, 0.3);
           box-shadow: 0px 2px 20px rgba(36, 81, 195, 0.3); }
