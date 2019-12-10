@@ -1,0 +1,46 @@
+//таблица в две колонки в модальном окне программы кредитования
+
+/*===== media queries =====*/
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .modal-mortgage-program .table-two-cols__col-first {
+    margin-bottom: 8px;
+    color: #333333;
+  }
+
+  .modal-mortgage-program .table-two-cols__list-item {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .modal-mortgage-program .table-two-cols__list-item a {
+    font-size: 0.8889rem;
+    line-height: 26px;
+  }
+
+  .modal-mortgage-program .table-two-cols__list-item::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: #2451C3;
+    border-radius: 50%;
+  }
+
+  .modal-mortgage-program .table-two-cols__row:last-child {
+    border-bottom: 0;
+  }
+
+  .modal-mortgage-program .table-two-cols__row-head {
+    display: none;
+  }
+
+  .modal-mortgage-program .table-two-cols {
+    margin-bottom: 0;
+  }
+}

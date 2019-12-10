@@ -1,0 +1,26 @@
+//модальное окно карты
+#modal-map {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+#modal-map #map {
+  width: 100%;
+  height: 100%
+}
+
+.leaflet-top.leaflet-right {
+  display: none!important;
+}
+
+/*===== media queries =====*/
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  #modal-map #map {
+    width: 100%;
+    height: 100vh;
+  }
+}

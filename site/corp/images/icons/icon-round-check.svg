@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1260" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="MaterialIcons-Regular, Material Icons" font-size="18" font-weight="normal">
+        <g id="1260-property-new-object" transform="translate(-842.000000, -1053.000000)" fill="#319018">
+            <g id="body" transform="translate(0.000000, 240.000000)">
+                <g id="1-description" transform="translate(40.000000, 760.000000)">
+                    <g id="stages" transform="translate(800.000000, 0.000000)">
+                        <g id="Stacked-Group" transform="translate(0.000000, 40.000000)">
+                            <g id="Group-10" transform="translate(0.000000, 11.000000)">
+                                <g id="icon/icon-24-green" transform="translate(0.000000, 1.000000)">
+                                    <text id="close">
+                                        <tspan x="1" y="18">check_circle</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="36px" viewBox="0 0 26 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1260" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1260-index" transform="translate(-447.000000, -1322.000000)">
+            <g id="body" transform="translate(0.000000, 170.000000)">
+                <g id="features" transform="translate(40.000000, 1150.000000)">
+                    <g id="features-copy">
+                        <g id="Group-3" transform="translate(400.000000, 0.000000)">
+                            <g id="icon">
+                                <rect id="Rectangle-3" x="0" y="0" width="40" height="40"></rect>
+                                <ellipse id="Oval-3" stroke="#FDCE34" stroke-width="2" cx="13" cy="12" rx="5" ry="6"></ellipse>
+                                <path d="M14.7965198,6.4377125 C18.3692945,9.31024886 25.708513,8.56609462 28.2681488,3.53421546" id="Path-5" stroke="#FDCE34" stroke-width="2"></path>
+                                <path d="M28,4 L12,36" id="Line" stroke="#FDCE34" stroke-width="2" stroke-linecap="square"></path>
+                                <ellipse id="Oval-3-Copy" stroke="#FDCE34" stroke-width="2" cx="27" cy="28" rx="5" ry="6"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

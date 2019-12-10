@@ -1,0 +1,135 @@
+//модальное окно контента
+.modal-content {
+  max-width: 830px;
+  width: 100%;
+  position: static;
+}
+
+.modal-content__title {
+  font-size: 2.6667rem;
+  line-height: 58px;
+  margin-bottom: 20px;
+  font-family: $font-medium;
+}
+
+.modal-content__teaser {
+  font-size: 1rem;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+  //модальное окно контента
+.modal-content_modified {
+  overflow: visible;
+}
+
+.fancybox-ctn .fancybox-bg {
+  background: #fff;
+  opacity: 1;
+}
+
+.fancybox-close-small, .fancybox-button--close {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  color: #7187BF;
+  background: rgba(113,135,191,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 40px;
+  position: fixed;
+}
+
+.fancybox-button--close {
+  color: #7187BF;
+}
+
+.fancybox-close-small:hover, .fancybox-button--close:hover {
+  background: rgba(113,135,191,1);
+  color: #fff;
+}
+
+.fancybox-close-small svg, .fancybox-button--close svg {
+  width: 43px;
+  height: 43px;
+  fill: transparent;
+  opacity: .8;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  transition: stroke .1s;
+}
+
+.fancybox-container {
+  font-family: $font-regular;
+}
+
+//модальное окно спасибо
+.modal-content__text-thanks {
+  text-align: center;
+}
+
+.modal-content__text-thanks h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content__text-thanks p {
+  margin-bottom: 40px;
+}
+
+.fancybox-slide--html {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1259px) {
+  .modal-content {
+    padding-top: 80px;
+  }
+
+  .fancybox-slide--html {
+    padding: 0;
+  }
+
+  .fancybox-slide::before {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .modal-content {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fancybox-slide--html {
+    padding: 0;
+  }
+
+  .modal-content__title {
+    font-size: 	1.5556rem;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+
+  .modal-content__teaser {
+    font-size: 0.8889rem;
+    line-height: 24px;
+  }
+
+  .fancybox-close-small, .fancybox-button--close {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 20px;
+  }
+
+  .fancybox-close-small svg, .fancybox-button--close svg {
+    width: 35px;
+    height: 35px;
+  }
+}

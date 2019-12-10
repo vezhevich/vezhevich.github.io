@@ -1,0 +1,269 @@
+//форма заявка на кредит на главной странице
+.form-calc {
+  margin-bottom: 60px;
+}
+
+.form-calc__shadow {
+  position: relative;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-calc__shadow::before {
+  content: '';
+  width: calc(100% - 40px);
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 40px 0 rgba(112,143,172,0.40);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  display: block;
+}
+
+.form-calc__shadow-inner::before {
+  display: none;
+}
+
+.form-calc__wrapper {
+  background-color: #fff;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 100px;
+  border-radius: 8px;
+  z-index: 5;
+  position: relative;
+}
+
+.form-calc__title {
+  font-size: 1.7778rem;
+  line-height: 37px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.form-calc__group-item {
+  display: flex;
+  flex-flow: wrap;
+  margin-left: -18px;
+}
+
+.form-calc__item {
+  margin-left: 18px;
+  width: calc(50% - 18px);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-calc__item_full-width {
+  width: calc(1000% - 18px);
+}
+
+.form-calc__item-checkbox {
+  margin-bottom: 15px;
+  font-size: 0.8889rem;
+  line-height: 24px;
+}
+
+.form-calc__bottom {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.form-calc__bottom .btn {
+  margin-left: auto;
+}
+
+.form-calc__bottom .form-calc__item-checkbox {
+  margin-bottom: 0;
+}
+
+.form-calc__bottom .form-calc__label {
+  margin-bottom: 0;
+}
+
+.form-calc__item-checkbox {
+  margin-right: 60px;
+}
+
+.form-calc__label {
+  color: #999999;
+  margin-bottom: 7px;
+}
+
+.form-calc__amount {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.form-calc__input {
+  border-bottom: 1px solid #EAEAEA;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 30px;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+.form-calc__input:invalid {
+  box-shadow: none;
+}
+
+.form-calc__input:focus {
+  border-color: rgba(36,81,195,0.5);
+}
+
+.form-calc__group-checkbox {
+  margin-top: 8px;
+}
+
+.form-calc__textarea {
+  border: 0;
+  padding: 0;
+  resize: none;
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  height: 40px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.form-calc__textarea:focus {
+  border-color: rgba(36,81,195,0.5);
+}
+
+//ошибки формы
+.form-calc__error {
+  color: #FF5C5C;
+  font-size: 0.7778rem;
+  line-height: 17px;
+  margin-top: 5px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  transition: opacity 0.1s linear;
+}
+
+.form-calc__input_error {
+  border-color: #FF5C5C!important;
+  transition: border-color .3s linear;
+}
+
+.form-calc__input_error + .form-calc__error {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+/*===== media queries =====*/
+
+@media screen and (min-width: 768px) and (max-width: 1259px) {
+  .form-calc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-calc__shadow, .form-calc__wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form-calc__wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .form-calc form {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .form-calc_mortgage-program-detail {
+    margin-top: -40px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .form-calc {
+    margin-bottom: 40px;
+    background: #fff;
+  }
+
+  .form-calc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-calc form {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-calc__wrapper {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+
+  .form-calc__group-item {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .form-calc__item {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form-calc__bottom {
+    flex-direction: column;
+  }
+
+  .form-calc__title {
+    font-size: 	1.3333rem;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+
+  .form-calc__group-checkbox {
+    margin-top: 0;
+  }
+
+  .form-calc__item-checkbox {
+    margin-right: 0;
+  }
+
+  .form-calc__bottom {
+    margin-top: 20px;
+  }
+
+  .form-calc__bottom .form-calc__item-checkbox {
+    margin-bottom: 25px;
+  }
+
+  .form-calc__shadow::before {
+    display: none;
+  }
+
+  .form-calc .btn-shadow {
+    display: block;
+    width: 100%;
+  }
+
+  //форма на странице mortgage-program-detail
+  .form-calc_mortgage-program-detail {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+  }
+}

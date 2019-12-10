@@ -1,0 +1,42 @@
+//тултип на форме авторизации
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
+  background: #fff;
+  border: 1px solid #D9E0E4;
+  border-radius: 6px;
+  max-width: 200px;
+}
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized.tooltipster-right .tooltipster-arrow-background {
+  border-right-color: #fff;
+}
+
+.tooltipster-sidetip.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized.tooltipster-right .tooltipster-arrow-border {
+  border-right-color: #D9E0E4;
+}
+
+.tooltipster-sidetip.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized.tooltipster-right .tooltipster-arrow {
+  left: -1px;
+}
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized.tooltipster-left .tooltipster-arrow-background {
+  border-left-color: #fff;
+}
+
+.tooltipster-sidetip.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized.tooltipster-left .tooltipster-arrow-border {
+  border-left-color: #D9E0E4;
+}
+
+.tooltipster-sidetip.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized.tooltipster-left .tooltipster-arrow {
+  right: -1px;
+}
+
+.tooltipster-sidetip .tooltipster-content {
+  color: #999999;
+}
+
+.js-tooltip {
+  color: #999999;
+  font-size: 1rem;
+  margin-left: 5px;
+}

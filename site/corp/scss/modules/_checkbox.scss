@@ -1,0 +1,29 @@
+//кстомные чекбоксы
+.form-calc__item-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.form-calc__item-checkbox input[type="checkbox"] + label {
+  cursor: pointer;
+  display: block;
+  padding-left: 30px;
+  position: relative;
+}
+
+.form-calc__item-checkbox input[type="checkbox"] + label::before {
+  content: "check_box_outline_blank";
+  font-family: "Material Icons";
+  display: inline-block;
+  margin: 0 10px 0 0;
+  vertical-align: text-top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #999999;
+  font-size: 1.3333rem;
+}
+
+.form-calc__item-checkbox input[type="checkbox"]:checked + label::before {
+  content: 'check_box';
+  color: #319018;
+}

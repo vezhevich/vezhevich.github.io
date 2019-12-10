@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="28" y="10" width="12" height="30"></rect>
+        <rect id="path-2" x="0" y="0" width="30" height="40"></rect>
+    </defs>
+    <g id="1260" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1260-index" transform="translate(-440.000000, -1560.000000)">
+            <g id="body" transform="translate(0.000000, 170.000000)">
+                <g id="features" transform="translate(40.000000, 1150.000000)">
+                    <g id="features-copy-2" transform="translate(0.000000, 240.000000)">
+                        <g id="Group-3" transform="translate(400.000000, 0.000000)">
+                            <g id="icon">
+                                <rect id="Rectangle-3" x="0" y="0" width="40" height="40"></rect>
+                                <g id="Rectangle-3-Copy">
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <rect stroke="#FDCE34" stroke-width="2" x="29" y="11" width="10" height="28"></rect>
+                                </g>
+                                <g id="Rectangle-3-Copy-2">
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    <rect stroke="#FDCE34" stroke-width="2" x="1" y="1" width="28" height="38"></rect>
+                                </g>
+                                <g id="Group-10-Copy" transform="translate(5.000000, 26.000000)" stroke="#FDCE34" stroke-width="2">
+                                    <path d="M17.5,1 L19,1 L18,0 L18,2 L19,1 L17.5,1 Z M15.5,1 L15,1 L15,1.5 L15,0 L14,1 L15.5,1 Z M15,4 L15,6 L16,5 L14,5 L15,6 L15,4 Z" id="Combined-Shape"></path>
+                                    <path d="M10.5,1 L12,1 L11,0 L11,2 L12,1 L10.5,1 Z M10.5,1 L8,1 L8,1.5 L8,0 L7,1 L10.5,1 Z M8,4 L8,6 L9,5 L7,5 L8,6 L8,4 Z" id="Combined-Shape-Copy-2"></path>
+                                    <path d="M3.5,1 L5,1 L4,0 L4,2 L5,1 L3.5,1 Z M3.5,1 L1,1 L1,1.5 L1,0 L0,1 L3.5,1 Z M1,4 L1,6 L2,5 L0,5 L1,6 L1,4 Z" id="Combined-Shape-Copy"></path>
+                                </g>
+                                <g id="Group-10-Copy-3" transform="translate(5.000000, 16.000000)" stroke="#FDCE34" stroke-width="2">
+                                    <path d="M17.5,1 L19,1 L18,0 L18,2 L19,1 L17.5,1 Z M15.5,1 L15,1 L15,1.5 L15,0 L14,1 L15.5,1 Z M15,4 L15,6 L16,5 L14,5 L15,6 L15,4 Z" id="Combined-Shape"></path>
+                                    <path d="M10.5,1 L12,1 L11,0 L11,2 L12,1 L10.5,1 Z M10.5,1 L8,1 L8,1.5 L8,0 L7,1 L10.5,1 Z M8,4 L8,6 L9,5 L7,5 L8,6 L8,4 Z" id="Combined-Shape-Copy-2"></path>
+                                    <path d="M3.5,1 L5,1 L4,0 L4,2 L5,1 L3.5,1 Z M3.5,1 L1,1 L1,1.5 L1,0 L0,1 L3.5,1 Z M1,4 L1,6 L2,5 L0,5 L1,6 L1,4 Z" id="Combined-Shape-Copy"></path>
+                                </g>
+                                <g id="Group-10-Copy-2" transform="translate(5.000000, 6.000000)" stroke="#FDCE34" stroke-width="2">
+                                    <path d="M17.5,1 L19,1 L18,0 L18,2 L19,1 L17.5,1 Z M15.5,1 L15,1 L15,1.5 L15,0 L14,1 L15.5,1 Z M15,4 L15,6 L16,5 L14,5 L15,6 L15,4 Z" id="Combined-Shape"></path>
+                                    <path d="M10.5,1 L12,1 L11,0 L11,2 L12,1 L10.5,1 Z M10.5,1 L8,1 L8,1.5 L8,0 L7,1 L10.5,1 Z M8,4 L8,6 L9,5 L7,5 L8,6 L8,4 Z" id="Combined-Shape-Copy-2"></path>
+                                    <path d="M3.5,1 L5,1 L4,0 L4,2 L5,1 L3.5,1 Z M3.5,1 L1,1 L1,1.5 L1,0 L0,1 L3.5,1 Z M1,4 L1,6 L2,5 L0,5 L1,6 L1,4 Z" id="Combined-Shape-Copy"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

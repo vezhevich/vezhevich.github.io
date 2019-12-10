@@ -1,0 +1,128 @@
+//белые блоки с шагами 1,2,3
+.steps {
+  display: flex;
+  margin-left: -20px;
+  margin-bottom: 40px;
+}
+
+.steps__item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  margin-left: 20px;
+  width: calc(33.3% - 20px);
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.steps__title {
+  margin-bottom: 10px;
+  font-size: 1.1111rem;
+  position: relative;
+  width: 100%;
+  padding-right: 30px;
+  font-family: $font-medium;
+}
+
+.steps__title i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #999999;
+  font-size: 1.3333rem;
+}
+
+.steps__text {
+  font-size: 1rem;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.steps__text a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(36,81,195,0.50);
+  padding-bottom: 2px;
+}
+
+.steps__text p:last-child {
+  margin-bottom: 0;
+}
+
+.steps__text p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+//если не нужен отступ снизу
+.steps_last {
+  margin-bottom: 0;
+}
+
+/*===== media queries =====*/
+@media screen and (max-width: 1259px) {
+  .steps {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .steps_last {
+    margin-bottom: 0;
+  }
+
+  .steps__item {
+    width: 100%;
+    min-height: 100%;
+    margin-left: 0;
+    padding: 30px 20px;
+    align-items: flex-start;
+  }
+
+  .steps__text {
+    font-size: 0.8889rem;
+    line-height: 24px;
+  }
+
+  .steps__text:last-child {
+    margin-bottom: 0;
+  }
+
+  .steps__btn-bottom {
+    width: auto!important;
+  }
+
+  .steps .morphing-btn-wrap {
+    width: auto!important;
+    display: inline-block!important;
+  }
+
+  .steps__item .btn-default {
+    padding: 14px 30px;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .steps__btn-bottom {
+    width: 100%!important;
+  }
+
+  .steps .morphing-btn-wrap {
+    width: 100%!important;
+    display: block!important;
+  }
+
+  .steps__item .btn-default {
+    padding: 15px 20px;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .steps__text p {
+    font-size: 0.8889rem;
+    line-height: 24px;
+  }
+}

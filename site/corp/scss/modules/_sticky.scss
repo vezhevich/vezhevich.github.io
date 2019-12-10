@@ -1,0 +1,29 @@
+#sticker {
+  padding-bottom: 20px;
+  z-index: 5;
+}
+
+//без отступа снизу
+#sticker.sticky_modified-bottom {
+  padding-bottom: 1px;
+  margin-bottom: -1px;
+}
+
+#sticker.is-sticky.is-visible {
+  top: 140px!important;
+  transition: top 0.2s linear;
+}
+
+#sticker.is-sticky.is-hidden {
+  top: 20px!important;
+  transition: top 0.2s linear 0.4s;
+}
+
+/*===== media queries =====*/
+
+//@media screen max 767px
+@media screen and (max-width: 1259px) {
+  #sticker {
+    padding-bottom: 0;
+  }
+}

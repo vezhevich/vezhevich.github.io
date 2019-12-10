@@ -1,0 +1,142 @@
+//список партнеров
+.partner-list {
+  display: flex;
+  margin-left: -40px;
+  margin-top: -60px;
+  flex-flow: wrap;
+}
+
+.partner-list__item {
+  width: calc(25% - 40px);
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.partner-list__item a {
+  text-decoration: none;
+  display: block;
+}
+
+.partner-list__img {
+  height: 260px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.partner-list__shadow {
+  position: relative;
+}
+
+.partner-list__shadow::before {
+  content: '';
+  width: calc(100% - 40px);
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 2px 20px 0 rgba(36,81,195,0.30);
+  opacity: 0;
+  z-index: 1;
+  display: block;
+}
+
+.partner-list__shadow:hover::before {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+
+.partner-list__img img {
+  max-width: 260px;
+  max-height: 260px;
+}
+
+.partner-list__img i {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 20px;
+  color: #2451C3;
+}
+
+.partner-list__text {
+  font-size: 0.8889rem;
+  line-height: 24px;
+  color: #555555;
+}
+
+.partner-list__item a:hover .partner-list__text {
+  color: #2451C3;
+}
+
+.partner-list__img i {
+  display: none;
+}
+
+.partner-list__item:hover .partner-list__img i {
+  display: block;
+}
+
+/*===== media queries =====*/
+
+@media screen and (min-width: 768px) and (max-width: 1259px) {
+  .partner-list {
+    margin-left: -20px;
+    flex-flow: wrap;
+  }
+
+  .partner-list__item {
+    width: calc(33.3% - 20px);
+    margin-left: 20px;
+  }
+
+  .partner-list__img {
+    height: 210px;
+  }
+}
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .partner-list__shadow::before, .partner-list__shadow::after {
+    display: none;
+  }
+
+  .partner-list {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: -40px;
+  }
+
+  .partner-list__item {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .partner-list__shadow, .partner-list__img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .partner-list__shadow {
+    margin-bottom: 20px;
+  }
+
+  .partner-list__img {
+    margin-bottom: 0;
+  }
+
+  .partner-list__img img {
+    max-height: 160px;
+    max-width: 120px;
+  }
+
+  .partner-list__img i {
+    display: none;
+  }
+}

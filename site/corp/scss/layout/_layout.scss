@@ -1,0 +1,237 @@
+/* основоной контейнер  */
+.container {
+	min-width: 320px; 
+	max-width: 1260px;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+	margin: 0 auto;
+}
+
+//прибитый подвал
+.l-wrapper-footer-bottom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.l-wrapper-content {
+  flex: 1 0 auto;
+}
+
+.l-wrapper-content_white-bg {
+  background: #fff;
+}
+
+.l-footer {
+  flex: 0 0 auto;
+}
+
+//белая обертка на внутренних страницах сразу после шапки
+.l-white-wrapper-after-header {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+//модифицированная белая обертка на внутренних страницах сразу после шапки без отступа снизу
+.l-white-wrapper-after-header_modified {
+  margin-bottom: 0;
+}
+
+//модифицированная белая обертка на внутренних страницах сразу после шапки без отступа снизу и серху
+.l-white-wrapper-after-header_contacts-page {
+  padding-top: 0;
+}
+
+//серая обертка на внутренних страницах сразу после шапки
+.l-gray-wrapper-after-header {
+  background-color: #F9F9FB;
+  padding-top: 60px;
+}
+
+//белая обертка на внутренних страницах в любом месте кроме (сразу после шапки)
+.l-white-wrapper {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+//модифицированная белая обертка на внутренних страницах в любом месте кроме (сразу после шапки)
+.l-white-wrapper_modified {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.l-white-wrapper_modified:last-child {
+  margin-bottom: 60px;
+}
+
+//модифицированная белая обертка на внутренних страницах в любом месте кроме (сразу после шапки) на последнем нет отступа
+.l-white-wrapper_modified-inner:last-child {
+  margin-bottom: auto;
+}
+
+//шаблон в две колонки
+.l-two-cols {
+  display: flex;
+}
+
+.l-two-cols__left {
+  max-width: 780px;
+  width: 100%;
+}
+
+.l-two-cols__right {
+  max-width: 300px;
+  width: 100%;
+  margin-left: auto;
+}
+
+//шаблон в две колонки модифицированный
+.l-two-cols_modified .l-two-cols__left {
+  max-width: 740px;
+  width: 100%;
+}
+.l-two-cols_modified .l-two-cols__right {
+  max-width: 380px;
+  width: 100%;
+}
+
+/*===== media queries =====*/
+
+@media screen and (min-width: 768px) and (max-width: 1259px) {
+  //шаблон в две колонки
+  .l-two-cols {
+    flex-direction: column;
+  }
+
+  .l-two-cols__left {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .l-two-cols__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .l-white-wrapper-after-header {
+    margin-top: 0;
+  }
+
+  .l-gray-wrapper-after-header {
+    padding-top: 80px;
+  }
+
+  .l-two-cols_mortgage-program-detail .l-two-cols__right {
+    display: none;
+  }
+
+  .l-white-wrapper-after-header_new-building {
+    padding-bottom: 20px;
+  }
+
+  .l-white-wrapper_modified {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  //шаблон в две колонки
+  .l-two-cols {
+    flex-direction: column;
+  }
+
+  .l-two-cols__left {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .l-two-cols__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .l-white-wrapper-after-header {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+  }
+
+  //белая обертка на внутренних страницах в любом месте кроме (сразу после шапки)
+  .l-white-wrapper {
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .l-white-wrapper:last-child {
+    margin-bottom: -30px;
+    padding-bottom: 20px;
+  }
+
+  //на странице объекта
+  .l-white-wrapper_object-page:last-child {
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+  }
+
+  //шаблон в две колонки на странице mortgage-program-detail
+  .l-two-cols_mortgage-program-detail .l-two-cols__right {
+    display: none;
+  }
+
+  .l-white-wrapper-after-header_mortgage-program-detail {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  //шаблон в две колонки на странице mortgage-support
+  .l-two-cols_mortgage-support .l-two-cols__right {
+    margin-top: 30px;
+  }
+
+  //серая обертка на внутренних страницах сразу после шапки
+  .l-gray-wrapper-after-header {
+    padding-top: 80px;
+  }
+
+  //белая обертка которая одет сразу после шапки на странице new-building
+  .l-white-wrapper-after-header_new-building {
+    padding-bottom: 0;
+  }
+
+  //шаблон в две колонки модифицированный
+  .l-two-cols_modified .l-two-cols__left {
+    max-width: 100%;
+    width: 100%;
+  }
+  .l-two-cols_modified .l-two-cols__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  //модифицированная белая обертка на внутренних страницах в любом месте кроме (сразу после шапки)
+  .l-white-wrapper_modified {
+    padding: 25px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+  }
+
+  .l-white-wrapper_modified:last-child {
+    margin-bottom: 20px;
+  }
+
+}

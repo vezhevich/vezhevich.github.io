@@ -1,0 +1,103 @@
+//модальное окно из кнопки
+
+.morphing-btn-wrap {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.morphing-btn {
+  -webkit-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s!important;
+  -moz-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s!important;
+  -o-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s!important;
+  transition: color 0.3s 0.2s, width 0.2s 0s!important;
+  white-space: nowrap!important;
+  box-sizing: border-box!important;
+}
+
+.morphing-btn_circle {
+  color: transparent !important;
+  padding-left: 0!important;
+  padding-right: 0!important;
+  //width: 35.6px !important;
+  width: 100% !important;
+
+  /* Override inline style rule */
+  -webkit-transition: color 0.2s 0s, width .3s 0.2s!important;
+  -moz-transition: color 0.2s 0s, width .3s 0.2s!important;
+  -o-transition: color 0.2s 0s, width .3s 0.2s!important;
+  transition: color 0.2s 0s, width .3s 0.2s!important;
+}
+
+.morphing-btn-clone {
+  position: fixed!important;
+  background: #319018!important;
+  //border-radius: 50%!important;
+  border-radius: 50px!important;
+  z-index: 100!important;
+  -webkit-transition: all 0.5s cubic-bezier(.65, .05, .36, 1)!important;
+  -moz-transition: all 0.5s cubic-bezier(.65, .05, .36, 1)!important;
+  -o-transition: all 0.5s cubic-bezier(.65, .05, .36, 1)!important;
+  transition: all 0.5s cubic-bezier(.65, .05, .36, 1)!important;
+  -webkit-backface-visibility: hidden!important;
+  backface-visibility: hidden!important;
+}
+
+.morphing-btn-clone_visible {
+  display: block;
+  -webkit-transform: scale(3) !important;
+  -moz-transform: scale(3) !important;
+  -ms-transform: scale(3) !important;
+  -o-transform: scale(3) !important;
+  transform: scale(3) !important;
+}
+
+.fancybox-morphing .fancybox-bg {
+  background: #fff;
+  opacity: 1;
+}
+
+.fancybox-morphing .fancybox-toolbar {
+  top: 20px;
+  right: 40px;
+}
+
+.fancybox-morphing .fancybox-button--close {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.fancybox-morphing .fancybox-button--close::after,
+.fancybox-morphing .fancybox-button--close::before {
+  height: 1.55px;
+  width: 22px;
+  left: calc(50% - 11px);
+}
+
+.fancybox-morphing .fancybox-button--close:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#morphing-content {
+  position: static;
+  max-width: 630px;
+}
+
+#morphing-content .form-calc {
+  margin-bottom: 0!important;
+}
+
+#morphing-content .form-calc__wrapper {
+  padding: 0;
+}
+
+.hidden-modal {
+  display: none;
+}
+
+@media screen and (max-width: 767px){
+  #morphing-content {
+    padding-top: 60px;
+  }
+}

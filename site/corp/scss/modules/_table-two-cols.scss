@@ -1,0 +1,102 @@
+//таблица из двух колонок
+.table-two-cols {
+  margin-bottom: 40px;
+}
+
+.table-two-cols__row {
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #EAEAEA;
+}
+
+.table-two-cols__row:last-child {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.table-two-cols__col {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.table-two-cols__col-first {
+  max-width: 280px;
+  width: 100%;
+}
+
+.table-two-cols__col-second {
+  max-width: 480px;
+  width: 100%;
+}
+
+.table-two-cols__list-item {
+  font-size: 0.7778rem;
+  line-height: 16px;
+  color: #999999;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.table-two-cols__list-item a {
+  font-size: 1rem;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.table-two-cols__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.table-two-cols__list-item span {
+  font-size: 1.1111rem;
+  line-height: 22px;
+  color: #222222;
+  white-space: nowrap;
+  margin-right: 20px;
+  font-family: $font-medium;
+}
+
+.table-two-cols__row-head {
+  border-top: 0;
+}
+
+.table-two-cols__row-head .table-two-cols__col-first, .table-two-cols__row-head .table-two-cols__col-second {
+  color: #999999;
+}
+
+//таблица из двух колонок там где нужен отступ снизу
+.table-two-cols__wrapper_modified {
+  margin-bottom: 60px;
+}
+
+/*===== media queries =====*/
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .table-two-cols__row {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .table-two-cols__col {
+    padding: 0;
+    font-size: 0.8889rem;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #555555
+  }
+
+  .table-two-cols__row:first-child .table-two-cols__col {
+    margin-bottom: 15px;
+  }
+
+  .table-two-cols__row:first-child .table-two-cols__col:last-child {
+    margin-bottom: 0;
+  }
+
+  .table-two-cols {
+    margin-bottom: 20px;
+  }
+}

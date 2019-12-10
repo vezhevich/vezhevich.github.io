@@ -1,0 +1,202 @@
+//кнопка по умолчанию
+.btn-default {
+  font-family: $font-medium;
+  border-radius: 50px;
+  font-size: 0.8889rem;
+  color: #fff;
+  padding: 10px 25px 12px 25px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
+  position: relative;
+}
+
+.btn-default:hover {
+  transition: background 0.1s linear;
+}
+
+//зеленая кнопка
+.btn-green {
+  background-color: #319018;
+}
+
+.btn-shadow:hover .btn-green::after {
+  background: #3AB01B;
+}
+
+.btn-shadow:hover .btn-green {
+  background: #3AB01B;
+}
+
+//тень по дефолту
+.btn-shadow {
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.btn-shadow::before {
+  content: '';
+  box-shadow: 0 2px 20px 0 #319018;
+  border-radius: 60px;
+  display: block;
+  height: 40px;
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 1;
+  opacity: 0;
+}
+
+.btn-shadow:hover::before {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+  width: 100%;
+}
+
+//кнопка увеличивается в ширине на 10 пикселей
+.btn-shadow .btn-default::after {
+  content: '';
+  width: 100%;
+  height: calc(100% + 2px);
+  position: absolute;
+  left: 50%;
+  top: -1px;
+  z-index: -1;
+  border-radius: 50px;
+  transform: translate(-50%, 0);
+  transition: all .1s cubic-bezier(0,0,1,1);
+}
+
+.btn-shadow:hover .btn-default::after {
+  width: calc(100% + 20px);
+  transition: all .1s cubic-bezier(0,0,1,1);
+}
+
+//тень для кнопки синего цвета
+.btn-shadow_blue:hover::before {
+  box-shadow: 0 2px 20px 0 rgba(36,81,195,0.30);
+}
+
+//кнопка маленького размера
+.btn-sm {
+  padding: 12px 27px 10px 27px;
+}
+
+//тень для маленькой кнопки
+.btn-shadow_sm:hover::before {
+  height: 30px;
+}
+
+//кнопка большого размера
+.btn-lg {
+  padding: 19px 60px 17px 60px;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+//тень для большой кнопки
+.btn-shadow_lg:hover::before {
+  height: 40px;
+}
+
+//кнопка среднего размера
+.btn-md {
+  padding: 19px 40px 17px 40px;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+//кнопка среднего размера с меньшей высотой
+.btn-md_modified {
+  padding: 17px 30px 15px 30px;
+}
+
+// кнопка с синим бордером и серым задником
+.btn-border-blue {
+  background: #F9F9FB;
+  border: 1px solid rgba(36,81,195,0.3);
+  color: #2451C3;
+  font-family: $font-regular;
+  transition: all .1s cubic-bezier(0,0,1,1);
+}
+
+.btn-shadow_blue:hover .btn-default::after {
+  background: #F9F9FB;
+  border: 1px solid rgba(36,81,195,0.3);
+}
+
+.btn-shadow_blue:hover .btn-border-blue {
+  border-color: transparent;
+}
+
+// кнопка с белым задником без бордера
+.btn-white-bg {
+  background: #fff;
+  color: #2451C3;
+  font-family: $font-regular;
+}
+
+.btn-white-bg_bordered {
+  border: 1px solid #fff;
+}
+
+.btn-shadow:hover .btn-white-bg {
+  background: #F3F7FF;
+  border: 1px solid transparent;
+}
+
+//кнопка на всю ширину
+.btn-full-width {
+  display: block;
+  width: 100%;
+}
+
+/*===== media queries =====*/
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .btn-default {
+    font-size: 0.8889rem;
+    display: block;
+    width: 100%;
+  }
+
+  .btn-shadow {
+    width: 100%;
+    display: block;
+  }
+
+  .btn-shadow::before {
+    display: none;
+  }
+
+  .btn-shadow:hover .btn-default::after {
+    width: 100%;
+  }
+
+  .btn-shadow .btn-default::after {
+    display: none;
+  }
+
+  //кнопка большого размера
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .btn-border-blue {
+    font-size: 	0.8889rem;
+    line-height: 24px;
+    padding: 12px 20px;
+  }
+
+  .btn-shadow_blue:hover .btn-border-blue {
+    border: 1px solid rgba(36,81,195,0.3);
+  }
+}

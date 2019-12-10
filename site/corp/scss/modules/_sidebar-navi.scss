@@ -1,0 +1,36 @@
+//навигация в правой колонке, которая умеет плавать
+.sidebar-navi {
+  margin-bottom: 60px;
+  background: #fff;
+}
+
+.sidebar-navi_without-bg {
+  background: none;
+}
+
+.sidebar-navi__item a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 0.8889rem;
+  line-height: 24px;
+  display: block;
+  padding: 10px 20px;
+  border-left: 1px solid #EAEAEA;
+}
+
+.sidebar-navi__item a:hover {
+  background: rgba(243,247,255,1);
+  transition: background 0.2s linear;
+}
+
+.sidebar-navi__item_active {
+  border-left: 1px solid rgba(49,144,24,0.5)!important;
+  color: #1E6F09!important;
+}
+
+/*===== media queries =====*/
+@media screen and (max-width: 1259px) {
+  .sidebar-navi {
+    display: none;
+  }
+}

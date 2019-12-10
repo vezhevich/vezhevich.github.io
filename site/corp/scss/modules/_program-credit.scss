@@ -1,0 +1,236 @@
+//кредитные программы на главное странице, сразу после шапки
+.program-credit {
+  margin-bottom: 50px;
+}
+
+.program-credit__wrapper {
+  font-size: 0;
+  margin-left: -20px;
+}
+
+.program-credit__shadow {
+  background-color: #fff;
+  width: calc(33.3% - 20px);
+  height: 250px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: left;
+  border-radius: 8px;
+  position: relative;
+}
+
+.program-credit__shadow::before {
+  content: '';
+  height: 40px;
+  width: calc(100% - 20px);
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  box-shadow: 0 2px 20px 0 rgba(36,81,195,0.30);
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.program-credit__shadow:hover::before {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+
+.program-credit__shadow::after {
+  content: '';
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background: #fff;
+  border-radius: 8px;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+
+.program-credit__shadow:hover::after {
+  opacity: 1;
+  transition: all 0.1s linear;
+}
+
+.program-credit__shadow:hover .program-credit__title {
+  color: #2451C3;
+}
+
+.program-credit__item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-decoration: none;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.program-credit__sub-title {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.program-credit__item_lg-size {
+  background-color: #F8DC53;
+  height: 520px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: left;
+  width: calc(33.3% - 20px);
+}
+
+.program-credit__item_lg-size .program-credit__title {
+  margin-bottom: 55px;
+  font-size: 1.7778rem;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+
+.program-credit__text-green {
+  color: #1E6F09;
+  font-size: 1.7778rem;
+  line-height: 21px;
+}
+
+.program-credit__wrapper-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.program-credit__helper {
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+.program-credit__title {
+  font-size: 1.3333rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.program-credit__title a {
+  text-decoration: none;
+  color: #222222;
+  border-bottom: 1px solid transparent;
+}
+
+.program-credit__item:hover .program-credit__title a {
+  color: #2451C3;
+  border-bottom: 1px solid #2451C3;
+}
+
+.program-credit__teaser {
+  color: #999999;
+}
+
+.program-credit__item-bottom {
+  margin-top: auto;
+}
+
+/*===== media queries =====*/
+
+//@media screen max 1259px
+@media screen and (min-width: 768px) and (max-width: 1259px) {
+  .program-credit {
+    padding-top: 80px;
+  }
+
+  .program-credit__item_lg-size {
+    height: 540px;
+  }
+
+  .program-credit__shadow {
+    height: 260px;
+  }
+
+  .program-credit__item_lg-size, .program-credit__shadow {
+    width: calc(50% - 20px);
+  }
+}
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .program-credit {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .program-credit__wrapper {
+    margin-left: 0;
+  }
+
+  .program-credit .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .program-credit__item {
+    padding: 30px 20px;
+  }
+
+  .program-credit__item_lg-size, .program-credit__shadow {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .program-credit__shadow {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+
+  .program-credit__item_lg-size {
+    border-radius: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-position: center 231px;
+    background-size: 320px;
+    margin-bottom: 20px;
+  }
+
+  .program-credit__item_lg-size .program-credit__title {
+    font-size: 1.5556rem;
+    line-height: 34px;
+    margin-bottom: 5px;
+  }
+
+  .program-credit__item_lg-size .btn-shadow {
+    margin-top: auto;
+  }
+
+  .program-credit__item_lg-size .btn-shadow .btn-default {
+    display: block;
+  }
+
+  .program-credit__shadow::after, .program-credit__shadow::before {
+    display: none;
+  }
+
+  .program-credit__item-bottom {
+    margin-top: 20px;
+  }
+
+  .program-credit__wrapper-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

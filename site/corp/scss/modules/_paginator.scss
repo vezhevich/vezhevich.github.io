@@ -1,0 +1,71 @@
+//пагинация страниц
+.paginator {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.paginator__item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgba(36,81,195,0.3);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  transition: all 0.1s linear;
+}
+
+.paginator__item:hover {
+  border-color: #319018;
+  background: #319018;
+  color: #fff;
+}
+
+.paginator__item_active {
+  border-color: #319018;
+  background: #319018;
+  color: #fff;
+  font-family: $font-medium;
+}
+
+.paginator__item_last {
+  margin-right: 0;
+  margin-left: 20px;
+  width: auto;
+  border-radius: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+}
+
+.paginator__item_more {
+  display: none;
+}
+
+/*===== media queries =====*/
+
+//@media screen max 767px
+@media screen and (max-width: 767px) {
+  .paginator {
+    flex-direction: column;
+    margin-bottom: -20px;
+  }
+
+  .paginator__item {
+    display: none;
+    font-size: 0.8889rem;
+  }
+
+  .paginator__item_more {
+    display: flex;
+    width: 100%;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    height: 50px;
+    font-size: 0.8889rem;
+  }
+}
