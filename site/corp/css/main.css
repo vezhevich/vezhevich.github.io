@@ -10483,7 +10483,10 @@ ol li {
   .swiper-container:hover .swiper-button-next, .swiper-container:hover .swiper-button-prev {
     display: none; } }
 
-/* новая детальная страница програмы */
+/* новая детальная страница программы */
+.program-credit {
+  padding-top: 0; }
+
 .program-promo {
   min-height: 290px;
   position: relative;
@@ -10549,7 +10552,8 @@ ol li {
 .program-promo_index {
   -webkit-border-radius: 8px;
           border-radius: 8px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px; }
 
 .program-promo_index:before {
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFF0C0), to(rgba(255, 240, 192, 0)));
@@ -10614,7 +10618,11 @@ ol li {
   .program-promo::before {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFF0C0), to(rgba(255, 240, 192, 0)));
     background: -webkit-linear-gradient(left, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
-    background: linear-gradient(90deg, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%); } }
+    background: linear-gradient(90deg, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%); }
+  .program-promo {
+    margin-top: 20px; }
+  .program-promo_index {
+    margin-top: 80px; } }
 
 @media screen and (max-width: 939px) {
   .program-promo {
@@ -10627,6 +10635,8 @@ ol li {
     width: 70%; } }
 
 @media screen and (max-width: 767px) {
+  .program-credit {
+    margin-top: 0; }
   .program-promo {
     background-image: none !important;
     background-color: #FFF0C0; }
@@ -10637,4 +10647,15 @@ ol li {
     line-height: 30px !important; }
   .program-promo__teaser {
     font-size: 0.8889rem;
-    line-height: 24px; } }
+    line-height: 24px; }
+  .program-promo_index {
+    margin-left: -20px;
+    margin-right: -20px;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  .program-promo_index:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .l-white-wrapper-after-header_mortgage-program-detail-inner {
+    margin-bottom: 40px;
+    padding-bottom: 40px; } }
