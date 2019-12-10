@@ -10500,9 +10500,9 @@ ol li {
 
 .program-promo::before {
   content: '';
-  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFF0C0), to(rgba(255, 240, 192, 0)));
-  background: -webkit-linear-gradient(left, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
-  background: linear-gradient(90deg, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #FFF0C0), to(rgba(255, 240, 192, 0)));
+  background: -webkit-linear-gradient(left, #FFF0C0 80%, rgba(255, 240, 192, 0) 100%);
+  background: linear-gradient(90deg, #FFF0C0 80%, rgba(255, 240, 192, 0) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -10605,6 +10605,12 @@ ol li {
 .steps_program-detail-inner .btn-sm {
   padding: 10px 27px 12px 27px; }
 
+@media screen and (max-width: 1259px) {
+  .program-promo::before {
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFF0C0), to(rgba(255, 240, 192, 0)));
+    background: -webkit-linear-gradient(left, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
+    background: linear-gradient(90deg, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%); } }
+
 @media screen and (max-width: 939px) {
   .program-promo {
     background-size: cover;
@@ -10613,10 +10619,7 @@ ol li {
     padding-top: 30px;
     padding-bottom: 30px; }
   .program-promo::before {
-    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FFF0C0), to(rgba(255, 240, 192, 0)));
-    background: -webkit-linear-gradient(left, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
-    background: linear-gradient(90deg, #FFF0C0 60%, rgba(255, 240, 192, 0) 100%);
-    width: 90%; } }
+    width: 70%; } }
 
 @media screen and (max-width: 767px) {
   .program-promo {
