@@ -10497,7 +10497,7 @@ ol li {
 .program-promo__title {
   font-size: 2.6667rem;
   line-height: 62px;
-  font-family: 'IBMPlexSans-Semibold';
+  font-weight: 600;
   margin-bottom: 6px;
   text-decoration: none;
   color: #222222; }
@@ -10505,7 +10505,7 @@ ol li {
 .program-promo__title a {
   font-size: 2.6667rem;
   line-height: 62px;
-  font-family: 'IBMPlexSans-Semibold';
+  font-weight: 600;
   text-decoration: none;
   color: #222222; }
 
