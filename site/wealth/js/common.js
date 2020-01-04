@@ -141,7 +141,24 @@ $('.filter_active').on('click', function(e) {
   $('#overlay').show();
 });
 
+/* модальное окно добавления комментария */
+$('.send_comment .blue_btn').on('click', function(e) {
+  e.preventDefault();
+  e_h = $(this).offset().top;
+  if($('body').width()<1200) $('#com_added').css({'top' : e_h, 'transform' : 'translate(-50%,0)'});
+  $('#com_added').show('slow');
+  $('#overlay').show();
+});
 
+/* модальное окно добавления отзыва */
+$('#i_want_modal .modal_submit .blue_btn').on('click', function(e) {
+    e.preventDefault();
+    e_h = $(this).offset().top;
+    if($('body').width()<1200) $('#review_added').css({'top' : e_h, 'transform' : 'translate(-50%,0)'});
+    $('#i_want_modal').hide('slow');
+    $('#review_added').show('slow');
+    $('#overlay').show();
+});
 
 $('.close_mob_banner').on('click', function() {
   if($('body').width()>500) {

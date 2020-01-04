@@ -4088,4 +4088,15 @@ form.call_us button[type="submit"] {
     }
 }
 
+/* modal review_added & com_added */
+#com_added.modal_block, #review_added.modal_block {
+    width: 850px;
+}
+
+#com_added .modal_title, #review_added .modal_title {
+    border-bottom: none;
+    text-transform: none;
+    text-align: center;
+    justify-content: center;
+}
 
