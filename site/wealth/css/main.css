@@ -3920,6 +3920,10 @@ form.call_us button[type="submit"] {
     left: 0 !important;
 }
 
+/* ровно здесь начинаются мои стили,
+   отмечаю их префиксом av что бы было отличие.
+   Пока так и буду писать, потом наведем порядок.
+*/
 
 /* страница опроса */
 .av_content_centered {
@@ -4327,6 +4331,14 @@ form.call_us button[type="submit"] {
     line-height: 22px;
 }
 
+.right_content_sidebar .article_content {
+    width: 100%;
+}
+
+.acc_title {
+    line-height: normal;
+}
+
 @media screen and (max-width: 989px) {
     .about_line > div:not(:last-child) {
         margin-right: 0;
@@ -4353,5 +4365,9 @@ form.call_us button[type="submit"] {
 
     .header_right_block nav a {
         font-size: 12px;
+    }
+
+    form.call_us {
+        padding: 20px 25px;
     }
 }
