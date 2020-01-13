@@ -4339,6 +4339,18 @@ form.call_us button[type="submit"] {
     line-height: normal;
 }
 
+form.lu label .info_common_block {
+    margin-left: 10px;
+}
+
+.select_line, .made_operation {
+    flex-shrink: 0;
+}
+
+.made_operation {
+    margin-left: 20px;
+}
+
 @media screen and (max-width: 989px) {
     .about_line > div:not(:last-child) {
         margin-right: 0;
