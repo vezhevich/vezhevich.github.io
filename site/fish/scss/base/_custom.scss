@@ -1,0 +1,190 @@
+html {
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%; 
+	font-size: 15px;
+}
+body {
+	font-family: "ProximaNova-Regular", sans-serif; 
+	height: 100%; 
+	font-size: 1rem;
+	background-color: #f3f3f3;
+}
+
+/*Применить конкретно к объекту а не глобально*/
+/*input {
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none;
+}*/
+
+strong {
+	font-weight: bold;
+}
+
+*::-webkit-input-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
+
+*:-moz-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
+
+*::-moz-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
+
+*:-ms-input-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
+
+input {
+	outline: none;
+}
+
+
+a {
+	text-decoration:underline; 
+	outline: none; 
+	font-weight: normal; 
+	-webkit-transition: .1s ease-in-out; 
+	-moz-transition: .1s ease-in-out; 
+	-o-transition: .1s ease-in-out; 
+	transition: .1s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1, h2 {
+	color: #1A1A1A; 
+	font-family: "ProximaNova-Bold";
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.6667rem;
+	line-height: 43px;
+	text-transform: none;
+}
+
+h2 {
+	font-size: 1.3333rem;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	letter-spacing: 0.48px;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 20px;
+	margin:0 0 20px 0; 
+	color: #1A1A1A;
+	font-weight: normal;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content-center {
+	text-align: center;
+}
+
+.main-title-link {
+	font-size: 1rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Regular";
+	text-transform: none;
+	color: #1A1A1A;
+	margin-left: 20px;
+	letter-spacing: 0;
+}
+
+.visible-xs {
+	display: none;
+}
+
+.main-title-h1 {
+	font-family: "ProximaNova-Semibold";
+	font-weight: normal;
+}
+
+/* фиксируем body когда открываем меню на мобиле */
+.body-fixed {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+	.hidden-xs {
+		display: none!important;
+	}
+
+	h2 {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1rem;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+
+	.visible-xs {
+		display: block!important;
+	}
+
+	.main-title-carousel {
+		padding-right: 100px;
+	}
+
+	.main-title-h1 {
+		display: none;
+	}
+
+	.main-title-h1--modified {
+		display: block;
+	}
+
+	.main-title-link {
+		margin-left: 0;
+		display: inline-block;
+	}
+
+	h2 {
+		padding-right: 80px;
+	}
+
+	h2 > span {
+		margin-right: 20px;
+	}
+}

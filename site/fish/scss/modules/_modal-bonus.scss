@@ -1,0 +1,56 @@
+.modal-bonus {
+	transform: translateY(0);
+}
+
+.modal-bonus .modal-wrapper {
+	max-width: 450px;
+	padding-bottom: 40px;
+}
+
+.modal-bonus__text {
+	font-size: 1rem;
+	line-height: 25px;
+	margin-top: 20px;
+}
+
+.modal-bonus__head {
+	text-align: center;
+}
+
+.modal-bonus__head-img {
+	margin-bottom: 7px;
+}
+
+.modal-bonus__head-img img {
+	margin-top: -35px;
+	max-width: 150px;
+	width: 100%;
+}
+
+.modal-bonus__head-title {
+	font-size: 1.5625rem;
+	line-height: 30px;
+}
+
+.modal-bonus__head-teaser {
+	font-size: 2.1875rem;
+	font-family: "ProximaNova-Semibold";
+}
+
+.modal-bonus__bottom {
+	text-align: center;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+	.modal-bonus .modal-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+	}
+
+	.modal-bonus__head-img img {
+		margin-top: 0;
+		max-width: 100px;
+	}
+}

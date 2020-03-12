@@ -1,0 +1,126 @@
+.page404-wrapper{
+    background-color: #fff;
+    min-height: 450px;
+    font-size: 0;
+    color: #1a1a1a;
+    font-weight: bold;
+    border-bottom: 20px solid #f3f3f3;
+}
+.page404-wrapper:before{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -1px;
+}
+.page404-wrap{
+    position: relative;
+    padding-left: 197px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.page404-head{
+    font-size: 5.333rem;
+    line-height: 3.333rem;
+}
+.page404-title{
+    font-size: 4rem;
+    line-height: 4rem;
+
+    width: 490px;
+}
+.page404-description{
+    font-size: 1.333rem;
+    line-height: 3.333rem;
+    font-weight: normal;
+}
+.page404-description a{
+    color:#1a1a1a;
+}
+@media screen and (min-width: 768px){
+    .page404-wrapper{
+        height: calc(100vh - 330px);
+    }
+    .page404-head{
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -7px;
+        top: 60px;
+    }
+    .page404-head_desc{
+        display: none;}
+    .page404-image{
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translate3d(0, -50%, 0);
+        -moz-transform: translate3d(0, -50%, 0);
+        -ms-transform: translate3d(0, -50%, 0);
+        -o-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
+        width: calc(100% - 687px);
+    }
+    .page404-image_mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 999px){
+    .page404-wrap{
+        padding-left: 110px;}
+    .page404-title{
+        width: 309px;
+        font-size: 3.333rem;
+        line-height: 3.333rem;
+        margin-bottom: 19px;}
+    .page404-description{
+        width: 220px;
+        font-size: 1.333rem;
+        line-height: 2rem;}
+    .page404-image{
+        width: calc(100% - 428px);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .page404-wrapper{
+        min-height: calc(100vh - 180px);
+        border-top: 20px solid #f3f3f3;
+    }
+    .page404-wrap{
+        padding: 23px 20px 19px;
+        display: block;
+    }
+    .page404-head{
+        font-size: 1.333rem;
+        line-height: 1.333rem;
+        margin-bottom: 16px;
+        font-weight: normal;
+    }
+    .page404-title{
+        width: auto;
+        max-width: 400px;
+    }
+    .page404-description{
+        margin-bottom: 20px;
+    }
+    .page404-image{
+        position: relative;
+        right: -20px;
+        width: 100%;
+        text-align: right;
+    }
+    .page404-image img{
+        max-width: 100%;
+        max-height: 176px;
+    }
+    .page404-image_desktop{
+        display: none;
+    }
+}

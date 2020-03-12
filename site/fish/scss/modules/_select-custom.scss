@@ -1,0 +1,52 @@
+.select-custom.nice-select {
+	float: none!important;
+	background: none!important;
+	border: 0!important;
+	height: auto!important;
+	padding-left: 0;
+}
+
+.select-custom.nice-select .list {
+	left: auto;
+	right: 0;
+	border: 1px solid #F3F3F3;
+	box-shadow: 0 10px 10px 0 rgba(26,26,26,0.10);
+	border-radius: 0;
+	z-index: 50;
+}
+
+.select-custom.nice-select::after {
+	border-width: 1px;
+	border-color: #000000;
+	width: 8px;
+	height: 8px;
+	margin-top: -5px;
+}
+
+.select-custom.nice-select .option {
+	padding-right: 50px;
+	font-size: 1.3333rem;
+}
+
+.select-custom.nice-select .selected {
+	position: relative;
+	background: none!important;
+}
+
+.select-custom.nice-select .selected::before {
+	content: '';
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -5px;
+	width: 14px;
+	height: 10px;
+	background: url(../img/icon-tic.svg) no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+	.select-custom {
+		display: none;
+	}
+}
+

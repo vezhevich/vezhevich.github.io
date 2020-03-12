@@ -1,0 +1,38 @@
+.catalog-tovars-title a {
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.simple-page-info {
+  padding-bottom: 20px;
+}
+.order-tab {
+  margin-bottom: 0;
+}
+
+.form-error-default {
+  font-size: 0.8rem;
+  color: #CF1A3A;
+  margin-top: 5px;}
+
+label.form-error-default {
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+.catalog-cards-item--md .catalog-cards-image img {
+  max-width: 160px;
+}
+
+.form-feedback-item label[for=reviewStars] {
+  display: block;
+  padding-top: 10px;
+  clear: both;
+}
+
+.header-favoutite-scroll-ctn {
+  max-height: 200px;
+}

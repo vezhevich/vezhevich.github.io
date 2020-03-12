@@ -1,0 +1,358 @@
+.contact-info-head {
+	margin-bottom: 50px;
+}
+
+.contact-info-head-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-info-head-flex-left {
+	max-width: 515px;
+	width: 100%;
+}
+
+.contact-info-head-cols {
+	display: flex;
+	margin-left: -60px;
+}
+
+.contact-info-head-cols-item {
+	width: 200px;
+	margin-left: 60px;
+}
+
+.contact-info-head-text {
+	font-size: 1.3333rem;
+	line-height: 30px;
+}
+
+.contact-info-head-text a {
+	text-decoration: none;
+	color: #1A1A1A;
+}
+
+.contact-info-head-cols {
+	margin-top: 18px;
+}
+
+.contact-info-head-cols-item {
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.contact-info-head-cols-item a {
+	color: #1A1A1A;
+}
+
+.contact-info-head .btn {
+	width: 190px;
+}
+
+/* стили для блока с табами который взят со страницы order */
+.contact-info .order-tabs {
+	background-color: #fff;
+}
+
+.contact-info .order-tab {
+	padding: 0;
+	margin-left: 40px;
+	background: #fff;
+	border: none;
+	padding-bottom: 15px;
+}
+
+.contact-info .order-tab-content {
+	margin-top: 0;
+	border: none;
+}
+
+.contact-info .order-tab strong {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: #808080;
+	margin-bottom: 0;
+}
+
+.contact-info .order-tab strong sup {
+	font-size: 0.6667rem;
+	color: #CF1A3A;
+	top: -10px;
+}
+
+.contact-info .order-tabs .order-tabs-input:checked + .order-tab strong {
+	color: #1A1A1A;
+}
+
+.contact-info-details-title {
+	font-size: 1.6667rem;
+	margin-bottom: 20px;
+}
+
+.contact-info-details {
+	padding: 30px 40px 50px 40px;
+	max-width: 540px;
+}
+
+
+.contact-info-deatails-item {
+	font-size: 1rem;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.contact-info-deatails-item:last-child {
+	margin-bottom: 0;
+}
+
+.contact-info .order-map-balloon {
+	height: 280px;
+}
+
+.contact-info .order-map-balloon-head-title {
+	height: 50px;
+}
+
+.contact-info .order-map-balloon-inner {
+	height: auto;
+}
+
+.contact-info .order-map-balloon-inner .order-map-balloon-head-title {
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.contact-info .order-map-balloon-inner .order-map-balloon-content-item {
+	margin-bottom: 20px;
+}
+
+.contact-info .order-map-balloon-inner .order-map-balloon-content-item a {
+	color: #1A1A1A;
+	text-decoration: none;
+}
+
+.contact-info .order-map-balloon-inner .order-map-balloon-content-item:last-child {
+	margin-bottom: 0;
+}
+
+.contact-info .order-map-list {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.contact-info .order-map-list-location-teaser {
+	width: 100%;
+}
+
+.contact-info .order-map-list-location-teaser {
+	display: none;
+}
+
+.contact-info .order-map-list-location-item-link-js a {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.contact-info .order-map-list-location-item-link-js span {
+	border-bottom: 1px solid #1A1A1A;
+	line-height: 1;
+}
+
+.contact-info .order-map-list-location-item-link-js--active .order-map-list-location-teaser {
+	display: block;
+}
+
+.contact-info .order-map-list-location-work-time-last {
+	margin-left: 40px;
+}
+
+.contact-info .order-map-list-location-address {
+	margin-right: 40px;
+}
+
+#YMapsID2 {
+	width: 100%;
+	height: 390px;
+}
+
+.contact-info .order-map-list-location-teaser--active {
+	display: block;
+}
+
+.contact-info .order-map-list-location-item-link-hide {
+	display: none;
+	color: #808080;
+	border-bottom: 1px solid #808080!important;
+}
+
+.contact-info .order-map-list-location-item-link-show {
+	display: block;
+}
+
+.contact-info .order-map-list-location-item-link-js--active .order-map-list-location-item-link-show {
+	display: none;
+}
+
+.contact-info .order-map-list-location-item-link-js--active .order-map-list-location-item-link-hide {
+	display: block;
+}
+
+@media screen and (max-width: 959px) {
+	.contact-info .order-map-list-location-address {
+		width: 330px;
+		margin-right: 20px;
+	}
+
+	.contact-info .order-map-list-location-work-time-last {
+		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contact-info-title-h1 {
+		font-size: 2rem;
+		line-height: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.contact-info-head {
+		margin-bottom: 20px;
+	}
+
+	.contact-info-head-flex {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex-direction: column;
+	}
+
+	.contact-info-head-flex-left {
+		margin-bottom: 10px;
+	}
+
+	.contact-info-head-cols-item {
+		margin-bottom: 20px;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.contact-info-head-cols-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.contact-info-head-cols {
+		flex-direction: column;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.contact-info-head-text {
+		font-size: 1.3333rem;
+		line-height: 30px;
+	}
+
+	.contact-info-head-cols {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.contact-info .order-tab strong {
+		display: block;
+	}
+
+	.contact-info .order-tab {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
+		padding-top: 15px;
+		border-top: 1px solid #E0E0E0;
+	}
+
+	.contact-info .order-tab::before {
+		content: '\e805';
+		font-family: "fontello";
+		position: absolute;
+		right: 25px;
+		top: 15px;
+		display: block;
+		transform: rotate(90deg);
+		color: #808080;
+		font-size: 0.8667rem;
+		transition: .2s ease-in-out;
+	}
+
+	.contact-info .order-tab.active::before {
+		transform: rotate(-90deg);
+	}
+
+	.contact-info .order-tab-content {
+		-webkit-order: 0;
+		order: 0;
+		padding-top: 0;
+	}	
+
+	#YMapsID2, #YMapsID {
+		height: 235px;
+	}
+
+	.contact-info .order-map-balloon {
+		margin-top: 15px;
+		height: auto;
+	}
+
+	.contact-info .order-map-balloon-head-title {
+		height: auto;
+		font-size: 1.3333rem;
+		line-height: 20px;
+	}
+
+	.contact-info .order-map-balloon-content {
+		height: auto!important;
+	}
+
+	.contact-info-details {
+		padding-top: 0;
+		max-width: 100%;
+		width: 100%;
+		padding: 20px;
+		border-top: 1px solid #E0E0E0;
+	}
+
+	.contact-info-details-title {
+		font-size: 1.3333rem;
+		line-height: 20px; 
+	}
+
+	.contact-info .order-map-balloon-inner .order-map-balloon-content-item {
+		margin-bottom: 15px;
+	}
+
+	.contact-info .order-map-balloon-head {
+		margin-bottom: 0;
+	}	
+
+	.contact-info .order-map-list--active {
+		padding: 0;
+	}	
+
+	.contact-info .order-map-list-location-address {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.contact-info .order-map-list-location-work-time-last {
+		margin-left: 0;
+	}
+
+	.contact-info .order-map-list-location-work-time {
+		margin-top: 15px;
+	}
+}

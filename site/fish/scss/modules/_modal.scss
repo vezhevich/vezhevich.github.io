@@ -1,0 +1,100 @@
+.modal {
+	max-width: 570px;
+	width: 100%;
+	margin: 40px auto;
+	border-radius: 4px;
+	transform: translateY(0);
+	transition: all .33s;
+	padding: 0!important;
+	overflow: visible!important;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.10);
+	background: #fff;
+}
+
+/* кастом для модалок magnific-popup */
+.mfp-container {
+	padding: 0;
+}
+
+.mfp-bg {
+	background: #fff;
+	opacity: 0.9;
+}
+
+.mfp-bg-red {
+	background: #CF1A3A;
+	opacity: 1;
+}
+
+.mfp-content-top .mfp-close {
+	color: #fff;
+}
+
+.mfp-content-top {
+	vertical-align: top;
+}
+/* ----- end ----- */
+
+.modal-wrapper {
+	max-width: 360px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-title {
+	text-align: center;
+	text-transform: none;
+	font-size: 2.3333rem;
+	font-family: "ProximaNova-Semibold";
+	font-weight: normal;
+	line-height: 35px;
+}
+
+.modal-wrapper-wave {
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-radius: 4px;
+}
+
+.modal-wave {
+	position: absolute;
+	right: -100px;
+	bottom: -75px;
+}
+
+.fancybox-bg {
+	background: rgba(255,255,255,0.9);
+}
+
+.fancybox-is-open .fancybox-bg-red {
+	background: #CF1A3A;
+	opacity: 1!important;
+}
+
+@media screen and (max-width: 959px) {
+	.modal-wave {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal {
+		margin-top: 0!important;
+		margin-bottom: 0!important;
+		transform: translateY(0);
+	}
+
+	.modal-wrapper-wave {
+		padding-top: 60px;
+	}
+
+	.modal-title {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 20px;
+	}
+}

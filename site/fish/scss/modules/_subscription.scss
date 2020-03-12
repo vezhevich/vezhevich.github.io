@@ -1,0 +1,262 @@
+.subscription {
+	background-color: #00B4AD;
+	margin-top: 40px;
+	height: 415px;
+	display: flex;
+	align-items: flex-start;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.subscription-title {
+	font-size: 1.3333rem;
+	line-height: 20px;
+	color: #fff;
+	font-family: "ProximaNova-Semibold";
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+
+.subscription-text {
+	color: #fff;
+	font-size: 1rem;
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+
+.subscription-full-width {
+	height: 100px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.subscription-full-width .subscription-title {
+	margin: 0;
+	width: 122px;
+	margin-left: 30px;
+	margin-right: 40px;
+}
+
+.subscription-full-width .subscription-text {
+	margin: 0;
+	width: 145px;
+	margin-right: 60px;
+}
+
+.subscription-form {
+	display: none;
+	flex-direction: column;
+	position: relative;
+}
+
+.subscription-form label.form-error-default {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.subscription-form.show {
+	display: flex;
+}
+
+.subscription-form__input {
+	background: no-repeat;
+	border: 1px solid rgba(255,255,255,0.50);
+	border-radius: 5px;
+	max-width: 174px;
+	height: 40px;
+	padding: 10px;
+	color: #fff;
+	outline: none;
+	margin-bottom: 10px;
+	transition: .2s ease-in-out;
+}
+
+.subscription-form__input:focus {
+	border-color: #fff;
+}
+
+.subscription-form__input::-webkit-input-placeholder {
+	color: #FFFFFF;
+	opacity: 1;
+	font-weight: normal; }
+
+.subscription-form__input:-moz-placeholder {
+	color: #FFFFFF;
+	opacity: 1;
+	font-weight: normal; }
+
+.subscription-form__input::-moz-placeholder {
+	color: #FFFFFF;
+	opacity: 1;
+	font-weight: normal; }
+
+.subscription-form__input:-ms-input-placeholder {
+	color: #FFFFFF;
+	opacity: 1;
+	font-weight: normal; }
+
+.subscription-form__button {
+	background: none;
+	cursor: pointer;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+}
+
+.subscription-form__button:hover span {
+	color: #00B4AD;
+}
+
+.subscription-form__button span {
+	color: #fff;
+	margin-left: 10px;
+}
+
+.subscription-full-width .subscription-form {
+	flex-direction: row;
+}
+
+.subscription-full-width .subscription-form__input {
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1439px) {
+	.subscription {
+		margin-top: 30px;
+		height: 100px;
+		flex-direction: row;
+		align-items: center;
+	}
+	.subscription-title {
+		width: 125px;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 30px;
+		margin-right: 25px;
+	}
+	.subscription-text {
+		width: 145px;
+		margin-bottom: 0;
+		margin-right: 115px;
+	}
+
+	.subscription-form {
+		flex-direction: row;
+	}
+
+	.subscription-form__input {
+		margin-bottom: 0;
+		margin-right: 10px;
+	}
+
+	.subscription-form label.form-error-default {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.subscription {
+		height: 410px;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 60px;
+	}
+
+	.subscription-title {
+		margin-top: 10px;
+		margin-left: 0;
+		margin-bottom: 3px;
+	}
+
+	.subscription-text {
+		margin-bottom: 40px;
+	}
+
+	.subscription-full-width {
+		height: 120px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.subscription-full-width .subscription-title {
+		margin: 0;
+		width: 122px;
+		margin-left: 30px;
+		margin-right: 40px;
+	}
+
+	.subscription-full-width .subscription-text {
+		margin: 0;
+		width: 145px;
+		margin-right: 60px;
+	}
+
+	.subscription-form {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.subscription-form__input {
+		margin-right: 0;
+		margin-bottom: 10px;
+		max-width: 100%;
+	}
+
+	.subscription-full-width .subscription-form {
+		flex-direction: column;
+		max-width: 200px;
+	}
+
+	.subscription-full-width .subscription-form__input {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.subscription-form label.form-error-default {
+		position: relative;
+		left: auto;
+		top: auto;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.subscription {
+		margin-top: 10px;
+		height: auto;
+	}
+
+	.subscription img {
+		display: none;
+	}
+
+	.subscription-title, .subscription-text {
+		margin: 0;
+		width: 100%;
+	}
+
+	.subscription-text {
+		margin-bottom: 10px;
+	}
+
+	.subscription-full-width {
+		display: none;
+	}
+
+	.subscription-form {
+		max-width: 300px;
+	}
+}

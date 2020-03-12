@@ -1,0 +1,577 @@
+.activity {
+  margin-left: -15px;
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+.activity-item-title {
+  color: #1A1A1A;
+  font-family: "ProximaNova-Semibold";
+  padding: 20px 15px 10px 15px;
+}
+
+.activity-item-title-lg {
+  font-size: 1.3333rem;
+  line-height: 25px;
+}
+
+.activity-item-title-md {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.activity-item-title--white {
+  color: #fff;
+}
+
+.activity-item-title--border-bottom {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.activity-item {
+  width: 210px;
+  margin-left: 15px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 20px;
+  vertical-align: top;
+  transition: .2s ease-in-out;
+}
+
+.activity-item a {
+  color: #000;
+}
+
+.activity-item.activity-hot a {
+  color: #fff;
+}
+
+.activity-item .btn-bordered--white {
+  color: #fff;
+}
+
+.activity-item:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* рейтинг на странице активности */
+.activity-rating {
+  position: relative;
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+.activity-rating-live span {
+  background-image: url(../img/icon-star-inner.svg);
+  background-size: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 25px;
+  float: left;
+  margin-right: 6px;
+}
+
+.activity-rating-live span i {
+  background-image: url(../img/icon-star-white.svg);
+  background-size: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 25px;
+  display: block;
+}
+
+/* блок с отзывом */
+.activity-feedback {
+  background-color: #00B4AD;
+  padding: 60px 15px;
+}
+
+.activity-feedback .activity-item-title-lg {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.activity-feedback-helper {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #fff;
+}
+
+.activity .btn {
+  margin-top: 35px;
+}
+
+/* самый популярный товар */
+.activity-popular-tovar .catalog-cards-item {
+  margin: 0;
+  height: auto;
+  width: 100%!important;
+  border-right: 0!important;
+}
+
+.activity-popular-tovar .catalog-cards-item a {
+  padding: 15px 15px 10px 15px;
+}
+
+.activity-popular-tovar .catalog-cards-item:hover {
+  box-shadow: none;
+}
+
+.activity-popular-tovar .catalog-cards-title {
+  max-height: 35px;
+  height: auto;
+}
+
+/* активность с рецептом */
+.activity-recipes .recipes-item {
+  margin: 0;
+  width: 100%!important;
+}
+
+.activity-recipes .recipes-item:hover {
+  box-shadow: none;
+}
+
+.activity-recipes .recipes-item-text-title {
+  height: auto;
+  font-family: "ProximaNova-Regular";
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.activity-recipes .catalog-cards-comment {
+  margin-bottom: 5px;
+}
+
+.activity-recipes .recipes-item-text {
+  padding-top: 10px;
+}
+
+/* красный блок с огнем */
+.activity-hot {
+  background-color: #CF1A3A;
+  color: #fff;
+}
+
+.activity-hot-top {
+  border-bottom: 1px solid #fff;
+  padding: 20px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.activity-hot-top .icon-icon-fire::before {
+  font-size: 1.2rem!important;
+  color: #ffffff!important;
+  margin-right: 0;
+}
+
+.activity-hot .tooltips span {
+  width: 140px!important;
+}
+
+.activity-hot-number {
+  font-size: 3.3333rem;
+  line-height: 50px;
+  font-family: "ProximaNova-Bold";
+}
+
+.activity-hot-title {
+  font-size: 1.3333rem;
+  line-height: 20px;
+  font-family: "ProximaNova-Semibold";
+}
+
+.activity-hot-text {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.activity-hot-text p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #fff;
+}
+
+.activity-hot-text strong {
+  font-family: "ProximaNova-Bold";
+}
+
+/* активность социальных сетей */
+.activity-social {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.activity-social p {
+  margin-bottom: 0;
+}
+
+.activity-social-image {
+  margin-bottom: 15px;
+}
+
+/* активность бонусов */
+.activity-bonus {
+  text-align: center;
+}
+
+.activity-bonus-text {
+  font-size:  1.3333rem;
+  line-height: 20px;
+  font-family: "ProximaNova-Semibold";
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.activity-bonus-text span {
+  font-size:  2.3333rem;
+  font-family: "ProximaNova-Bold";
+  display: block;
+  margin-bottom: 5px;
+}
+
+.activity-bonus p {
+  margin-bottom: 0;
+  text-align: left;
+  padding: 0 15px 15px 15px;
+}
+
+/* отзыв пользователя */ 
+.activity-feedback-user .product-card-feedback-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.activity-feedback-user .product-card-feedback-item-head {
+  padding: 15px;
+  border-bottom: 1px solid #F0F0F0;
+  position: relative;
+}
+
+.activity-feedback-user .product-card-feedback-item-user {
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.activity-feedback-user .product-card-feedback-item-info {
+  width: calc(100% - 50px);
+}
+
+.activity-feedback-user .product-card-feedback-item-rating .icon-icon-star {
+  font-size: 0.8667rem;
+}
+
+.activity-feedback-user .product-card-feedback-item-text {
+  padding: 0 15px 15px 15px;
+  font-size: 1rem;
+  line-height: 20px;
+  max-height: 185px;
+  overflow: hidden;
+  position: relative;
+}
+
+.activity-feedback-user .product-card-feedback-item-text_hide::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0 0 15px 35px #fff;
+}
+
+.activity-feedback-user .activity-feedback-user-soc {
+  position: absolute;
+  right: 10px;
+  bottom: -5px;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.activity-feedback-user-wrapper {
+  position: relative;
+}
+
+.activity-feedback-user .activity-feedback-user-soc img {
+  max-width: 15px;
+  display: block;
+}
+
+.activity-feedback-user .product-card-feedback-item {
+  padding-bottom: 10px;
+}
+
+/* активность прогресса пользователя */
+.activity-progress-content {
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-progress .activity-rank {
+  color: #CF1A3A;
+  font-family: "ProximaNova-Semibold";
+  text-align: center;
+}
+
+.activity-progress .activity-rank > div {
+  font-size: 3rem;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+.activity-progress .activity-rank span {
+  display: block;
+}
+
+.activity-progress .activity-advance-text {
+  font-size: 1rem;
+  line-height: 17px;
+}
+
+.activity-progress .activity-advance {
+  text-align: center;
+}
+
+.activity-progress .activity-advance img {
+  margin-bottom: 10px;
+}
+
+.activity-item .tooltips {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.activity-item .tooltips > div {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.activity-item .tooltips > div::before {
+  color: #808080;
+  margin-right: 4px;
+}
+
+.activity-item .tooltips .icon-icon-view::before {
+  font-size: 0.6667rem;
+}
+
+.activity-item .tooltips .icon-icon-shopping-cart::before {
+  font-size: 0.8rem;
+}
+
+.activity-item .tooltips:hover span {
+  bottom: auto;
+  top: 40px;
+}
+
+.activity-item .tooltips span::before {
+  display: none;
+}
+
+.activity-item .tooltips span::after {
+  display: none;
+}
+
+.activity-item .tooltips span {
+  border: none;
+  background-color: #1A1A1A;
+  border-radius: 0;
+  color: #fff;
+  text-align: center;
+  width: 90px;
+  display: inline-block;
+  transform: translate(-50%,0);
+  margin: auto;
+  padding: 7px;
+  font-size:  0.8rem;
+}
+
+.activity-helper {
+  text-align: center;
+  font-size: 1.3333rem;
+  color: #808080;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .activity-title-h1 {
+    padding: 0 20px;
+    font-size: 1.6667rem;
+    line-height: 30px;
+  }
+
+  .activity-title-h1 span {
+    margin-right: 10px;
+  }
+
+  .activity {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .activity-item {
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .activity-helper {
+    display: none;
+  }
+
+  .activity-item:hover {
+    box-shadow: none;
+  }
+
+  .activity-item .tooltips:hover span {
+    left: auto;
+    right: 0;
+    margin: 0;
+    transform: translate(0, 0);
+  }
+
+  /* блок с отзывом */
+  .activity-feedback {
+    padding: 15px;
+  }
+
+  .activity-feedback .activity-item-title {
+    margin-bottom: 10px;
+  }
+
+  .activity-feedback .activity-item-title br {
+    display: none;
+  }
+
+  .activity-feedback .btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  /* самый популярный товар */
+  .activity-popular-tovar .catalog-cards-item a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 35px;
+  }
+
+  .activity-popular-tovar .catalog-cards-item .catalog-cards-teaser {
+    width: calc(100% - 70px);
+  }  
+
+  .activity-popular-tovar .catalog-cards-item .catalog-cards-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .activity-popular-tovar .catalog-cards-item .catalog-cards-image img {
+    max-width: 60px;
+  }
+
+  .activity-popular-tovar-inner .catalog-cards-item a {
+    padding-top: 10px;
+  } 
+
+  /* красный блок с огнем */
+  .activity-hot-top {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activity-hot-title {
+    padding-left: 15px;
+  }
+
+  /* активность социальных сетей */
+  .activity-social {
+    text-align: left;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .activity-social .activity-item-title {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .activity-social-image {
+    margin-bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .activity-social-image img {
+    max-width: 40px;
+  }
+
+  .activity-social br {
+    display: none;
+  }
+
+  .activity-social p {
+    width: calc(100% - 50px);
+  }
+
+  /* активность бонусов */
+  .activity-bonus {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }  
+
+  .activity-bonus .activity-item-title {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .activity-bonus-text {
+    margin: 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .activity-bonus p {
+    padding: 0;
+    margin-top: -5px;
+  }
+}

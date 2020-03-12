@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/second.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<header class="header">
+		<div class="header-separator"></div>
+		<div class="container-full-width header-flex">
+			<a class="header-hamburger" href="#">
+				<svg width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg"><g stroke="#1A1A1A" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M-.525.75h18.15M-.525 7.75h18.15M-.525 14.75h18.15"/></g></svg>
+				<span class="icon-icon-fish"></span>
+			</a>
+			<div class="header-wrapper-search">
+				<div class="header-logo">
+					<a href="/">
+						<img src="./img/logo.svg" alt="">
+						<span>Казань. Доставка продуктов</span>
+					</a>
+				</div>
+				<div class="header-navi">
+					<a class="header-navi-item" href="#">Каталог</a>
+					<a class="header-navi-item" href="#">Акции</a>
+					<a class="header-navi-item" href="#">Рецепты</a>
+					<a class="header-navi-item header-navi-item--round" href="#">Отзывы</a>
+					<a class="header-navi-item" href="#">Доставка</a>
+					<a class="header-navi-item" href="#">Гарантии</a>
+					<a class="header-navi-item" href="#">Контакты</a>
+				</div>
+				<div class="header-search">
+					<button class="header-search-button">
+						<span class="icon-icon-search-inner"></span>			
+					</button>
+					<input id="inputSearch" class="header-search-input" type="text" placeholder="Искать товары">
+					<a href="#" class="header-search-button-close">
+						<span class="icon-icon-close"></span>
+					</a>
+					<!-- добавляем header-search-result--active что бы выводить результаты поиска -->
+					<div class="header-search-result">
+						<a href="#" class="header-search-result-item">
+							<div class="header-search-result-item-image"><img src="./img/search-result1.jpg" alt=""></div>
+							<div class="header-search-result-item-title">Вомер охлажденный тушка</div>
+							<div class="header-search-result-item-cost">320 р/шт</div>
+						</a>						
+						<a href="#" class="header-search-result-item">
+							<div class="header-search-result-item-image"><img src="./img/search-result2.jpg" alt=""></div>
+							<div class="header-search-result-item-title">Зубатка пестрая охлажденная</div>
+							<div class="header-search-result-item-cost">450 р/шт</div>
+						</a>						
+						<a href="#" class="header-search-result-item">
+							<div class="header-search-result-item-image"><img src="./img/search-result3.jpg" alt=""></div>
+							<div class="header-search-result-item-title">Форель радужная из Карелии</div>
+							<div class="header-search-result-item-cost">720 р/шт</div>
+						</a>
+						<a href="#" class="header-search-result-bottom">Перейти к результатам поиска</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-info">
+				<a href="tel:+89153498877" class="header-info-item header-phone">+7 915 349 88 77 <br> <span>с 9:00 до 20:00</span></a>
+				<!-- когда пользователь авторизовался добавляем класс header-auth-active -->
+				<div class="header-info-item header-auth">
+					<span class="icon-icon-user"></span>
+					<div class="header-auth-user" style="background: url(./img/user.jpg);"></div>
+					<div class="header-dropdown header-dropdown-auth header-dropdown-auth-unregistered">
+						<div class="header-dropdown-wrapper">
+							<a data-fancybox data-src="#modal-reg" href="#" class="btn btn--red btn--middle-full-width">зарегистрироваться</a>
+							<a data-fancybox data-src="#modal-auth" href="#modal-auth" class="btn btn-bordered btn-bordered--grey btn--middle-full-width btn-transparent">войти</a>
+							<div>Зарегистрированным пользователям доступна  бонусная система</div>
+						</div>
+					</div>					
+					<div class="header-dropdown header-dropdown-auth header-dropdown-auth-registered">
+						<div class="header-dropdown-auth-registered-info">
+							<div class="header-dropdown-auth-registered-info-name">Жанна Дубова</div>
+							<div class="header-dropdown-auth-registered-info-status"><img src="./img/icon-guru.svg" alt="">Гуру покупок</div>
+							<div class="header-dropdown-auth-registered-info-bonus">На вашем счете 456 бонусов</div>
+						</div>
+						<div class="header-dropdown-auth-registered-navi">
+							<ul>
+								<li>
+									<a class="header-dropdown-auth-registered-navi-item" href="#">Профиль</a>
+								</li>
+								<li>
+									<a class="header-dropdown-auth-registered-navi-item" href="#">Список Заказов</a>
+								</li>
+								<li>
+									<a class="header-dropdown-auth-registered-navi-item" href="#">Система Бонусов</a>
+								</li>
+							</ul>
+						</div>
+						<div class="header-dropdown-auth-registered-bottom">
+							<a class="header-dropdown-auth-registered-bottom-link" href="#"><img src="./img/icon-exit.svg" alt="">Выйти</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-info-item header-favorite">
+					<div class="header-favorite-wrapper">
+						<span class="icon-icon-favorite"></span>
+						<div class="header-favorite-in">2</div>
+					</div>
+					<div class="header-dropdown favorite-dropdown">
+						<div class="header-dropdown-wrapper">
+							<div class="header-dropdown-title">Избранное</div>
+							<a href="#" class="favorite-dropdown-item">
+								<div class="favorite-dropdown-item-img">
+									<img src="./img/favorite-item.jpg" alt="">
+								</div>
+								<div class="favorite-dropdown-item-text">
+									<div class="favorite-dropdown-item-text-title">Икра красная горбуши</div>
+									<div class="favorite-dropdown-item-text-cost">320 р/шт</div>
+								</div>
+							</a>							
+							<a href="#" class="favorite-dropdown-item">
+								<div class="favorite-dropdown-item-img">
+									<img src="./img/favorite-item2.jpg" alt="">
+								</div>
+								<div class="favorite-dropdown-item-text">
+									<div class="favorite-dropdown-item-text-title">Икра красная горбуши</div>
+									<div class="favorite-dropdown-item-text-cost">320 р/шт</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="header-dropdown-bottom">Перейти в избранное</a>
+					</div>
+				</div>
+				<div class="header-info-item header-shopping-cart">
+					<div class="header-shopping-cart-wrapper">
+						<span class="icon-icon-shopping-cart"></span>
+						<span class="header-shopping-cart-summ">3 567р</span>
+						<span class="header-shopping-cart-in">3</span>
+					</div>
+					<div class="header-dropdown header-dropdown-shopping-cart">
+						<div class="header-dropdown-title">Корзина</div>
+						<div class="shopping-cart-item">
+							<div class="shopping-cart-item-img">
+								<img src="./img/shopping-cart1.jpg" alt="">
+							</div>
+							<div class="shopping-cart-item-title">Сыр Моцарелла, Россия</div>
+							<div class="shopping-cart-item-qnt">
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 10</title><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+								</button>
+								<input name="" class="shopping-cart-item-qnt-numer" value="10" type="text">
+								<span class="shopping-cart-item-qnt-in">шт</span>
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><title>Group 15</title><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+								</button>
+							</div>
+							<div class="shopping-cart-item-cost">10 320 р/шт</div>
+						</div>
+						<div class="shopping-cart-item">
+							<div class="shopping-cart-item-img">
+								<img src="./img/shopping-cart2.jpg" alt="">
+							</div>
+							<div class="shopping-cart-item-title">Тунец филе кусочки</div>
+							<div class="shopping-cart-item-qnt">
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 10</title><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+								</button>
+								<input name="" class="shopping-cart-item-qnt-numer" value="10" type="text">
+								<span class="shopping-cart-item-qnt-in">шт</span>
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><title>Group 15</title><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+								</button>
+							</div>
+							<div class="shopping-cart-item-cost">320 р/шт</div>
+						</div>
+						<div class="shopping-cart-item">
+							<div class="shopping-cart-item-img">
+								<img src="./img/shopping-cart3.jpg" alt="">
+							</div>
+							<div class="shopping-cart-item-title">Лисички свежие</div>
+							<div class="shopping-cart-item-qnt">
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 10</title><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+								</button>
+								<input name="" class="shopping-cart-item-qnt-numer" value="10" type="text">
+								<span class="shopping-cart-item-qnt-in">шт</span>
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><title>Group 15</title><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+								</button>
+							</div>
+							<div class="shopping-cart-item-cost">1 320 р/шт</div>
+						</div>
+						<div class="shopping-cart-bottom">
+							<div class="shopping-cart-bottom-text">В корзине 3 товара на <span>760 р</span></div>
+							<button class="btn btn--red btn--middle" type="button">Оформить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="sticky-footer-wrapper layout-wrapper-live">
+		<section class="container-main">
+
+			<div class="page404-wrapper">
+				<div class="page404-wrap">
+					<div class="page404-head">
+						404
+						<span class="page404-head_desc">ошибка</span>
+					</div>
+					<div class="page404-title">
+						Упс! <br/>Вы ищите что-то, что нельзя есть!
+					</div>
+					<div class="page404-description">
+						Перейдите на <a href="/">главную</a> или в <a href="#">каталог товаров</a>
+					</div>
+					<div class="page404-image">
+						<img class="page404-image_desktop" src="./img/page404_fish.png" alt=""/>
+						<img class="page404-image_mobile" src="./img/page404_fish_mobile.png" alt=""/>
+					</div>
+				</div>
+			</div>
+
+			<div class="sticky-footer-push"></div>
+		</section>
+	</section>
+	<section id="live" class="live live-inner">
+		<a href="#" class="live-button-feedback">оставить отзыв</a>
+		<div class="live-head">
+			<div class="live-head-text">Активность</div>
+			<a href="#" class="live-head-button">
+				<span class="icon-icon-corner"></span>
+			</a>
+		</div>
+		<a href="#" class="live-button-show"><img src="./img/logo-live-button.svg" alt=""></a>
+		<div class="live-wrap">
+			<div class="live-scroll">
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/live-img.jpg" alt=""></div>
+					<div class="live-item-text">
+						Иван Кореньков только что купил 3 кг <a href="#">лисички свежие</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/live-img2.jpg" alt=""></div>
+					<div class="live-item-text">
+						Виктор Т. добавил фото к рецепту <a href="#">Тилапия в панировке с пармезаном</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-hot">
+					<span class="icon-icon-fire"></span>
+					<div class="live-item-img"><img src="./img/live-img.jpg" alt=""></div>
+					<div class="live-item-text">
+						Иван Кореньков только что купил 3 кг <a href="#">лисички свежие</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/live-img3.svg" alt=""></div>
+					<div class="live-item-text">
+						Жанна Д. получила <a href="#">новое достижение</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-progress">
+					<div class="live-item-img"><div class="icon-icon-guru-inner"></div></div>
+					<div class="live-item-text">
+						Жанна Д. достигла ранга <a href="#">Гуру рыбалки</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-bonus">
+					<div class="live-item-img">+100</div>
+					<div class="live-item-text">
+						Ольга З. получила <a href="#">бонусные баллы</a> за привязку социальных сетей 
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/activity-fb.svg" alt=""></div>
+					<div class="live-item-text">
+						3 988 подписчиков в нашей группе <a href="#">в Одноклассниках</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-feedback">
+					<div class="live-item-img-wrapper">
+						<div class="live-item-img-small"><img src="./img/activity-fb.svg" alt=""></div>
+						<div class="live-item-img">
+							<img src="./img/cabinet-image.jpg" alt="">
+						</div>
+					</div>
+					<div class="live-item-text">
+						Жанна Дубова оставила отзыв о магазине на нашей <a href="#">странице Facebook</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>
+				<div class="live-item live-item-comment">
+					<div class="live-item-img"><div class="icon-icon-comment"></div></div>
+					<div class="live-item-text">
+						Виктор Ж. оставил <a href="#">отзыв о магазине</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer js-site-footer">
+		<div class="container-full-width clearfix">
+			<div class="footer-navi-wrapper">
+				<div class="footer-title">О магазине</div>			
+				<ul class="footer-navi">
+					<li class="footer-navi-item"><a href="#">Доставка</a></li>
+					<li class="footer-navi-item"><a href="#">Оплата</a></li>
+					<li class="footer-navi-item"><a href="#">Контактная информация</a></li>
+					<li class="footer-navi-item"><a href="#">Наши новости</a></li>
+					<li class="footer-navi-item"><a href="#">Ваши отзывы</a></li>
+				</ul>
+			</div>			
+			<div class="footer-navi-wrapper">
+				<div class="footer-title">Покупателям</div>			
+				<ul class="footer-navi">
+					<li class="footer-navi-item"><a href="#">Каталог</a></li>
+					<li class="footer-navi-item"><a href="#">Рецепты</a></li>
+					<li class="footer-navi-item"><a href="#">Отзывы</a></li>
+					<li class="footer-navi-item"><a href="#">Действующие акции</a></li>
+					<li class="footer-navi-item"><a href="#">Система бонусов</a></li>
+				</ul>
+			</div>
+			<div class="footer-contacts">
+				<div class="footer-title">Контактная информация</div>
+				<div class="footer-cantacts-address">109429, г. Казань,  </br>ул. Верхние Поля, д.51А, стр.2</br>ООО «Дикая рыба»</div>
+				<div class="footer-contacts-phone">
+					<a href="tel:+74956409640">+7 495 640-9-640</a>
+				</div>
+				<div class="footer-kr">Сделано в <a href="https://kr.digital/">kr.digital</a></div>
+			</div>
+			<div class="footer-mobile-app">
+				<div class="footer-title">Скачивайте приложения</div>	
+				<a href="#"><img src="./img/appstore.svg" alt=""></a>
+				</br>
+				<a href="#"><img src="./img/google-play.svg" alt=""></a>
+			</div>
+			<div class="footer-social">
+				<div class="footer-title">Мы в социальных сетях</div>	
+			</div>			
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

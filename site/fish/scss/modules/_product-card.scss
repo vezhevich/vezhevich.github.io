@@ -1,0 +1,1159 @@
+.product-card {
+	margin-top: 15px;
+}
+
+.product-card-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	flex-flow: wrap;
+}
+
+/* блок слева с картинкой */
+.product-card-view {
+	width: 59.4594594%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+/* блок справа с описание товара */
+.product-card-teaser {
+	width: 39.1891891%;
+	position: relative;
+}
+
+/* лейблы на товаре */
+.product-card-view-label-list {
+	padding: 0;
+	left: 0;
+	top: 0;
+	flex-direction: column;
+	z-index: 10;
+}
+
+.product-card-view-label {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.product-card-view-list-wrapper {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.product-card-view-ratio {
+	margin-left: 0;
+}
+
+/* товар в карусели */
+.product-card-view-carousel {
+	padding-top: 80px;
+	max-width: 375px;
+}
+
+.product-card-view-carousel img {
+	max-width: 100%;
+}
+
+.product-card-view-carousel .fotorama__nav-wrap {
+	margin-top: 25px;
+}
+
+.product-card-view-carousel .fotorama__thumb {
+	border: 1px solid #F0F0F0;
+	background: none;
+}
+
+.product-card-view-carousel .fotorama__thumb-border {
+	background: none;
+}
+
+/* всплывающий alert */
+.product-card-view-alert-wrapper {
+	position: absolute;
+	left: 0;
+	top: 70px;
+	z-index: 10;
+}
+
+.product-card-view-alert {
+	width: 190px;
+	padding: 15px 35px 15px 15px;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	background: #fff;
+	margin-bottom: 20px;
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all .33s;
+}
+
+.product-card-view-alert--active {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.product-card-view-alert-close {
+	position: absolute;
+	right: 15px;
+	top: 17px;
+}
+
+.product-card-view-alert span {
+	color: #00B4AD;
+}
+
+/* Заголовок товара */
+.product-card-teaser-title {
+	font-size: 3rem;
+	line-height: 45px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 10px;
+	text-transform: none;
+}
+
+.product-card-teaser-title-sale {
+	color: #033868;
+	font-size: 0.6667rem;
+	line-height: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-family: "ProximaNova-Bold";
+	margin-bottom: 0;
+	margin-top: -34px;
+}
+
+.product-card-teaser-title-sale:hover {
+	color: #CF1A3A;
+}
+
+.product-card-teaser-title-sale:hover a {
+	color: #CF1A3A;
+	border-bottom-color: #CF1A3A;
+}
+
+.product-card-teaser-title-sale a {
+	text-decoration: none;
+	color: #033868;
+	border-bottom: 1px solid #033868;
+	font-family: "ProximaNova-Bold";
+}
+
+.product-card-teaser-title-sale-tooltips span {
+	font-size: 1rem!important;
+	text-transform: none;
+	letter-spacing: 0;
+	font-weight: normal;
+	font-family: "ProximaNova-Regular";
+	line-height: 17px;
+}
+
+.product-card-teaser-title-sale-tooltips b {
+	font-weight: normal;
+	font-family: "ProximaNova-Semibold";
+}
+
+.product-card-teaser-param {
+	display: flex;
+	color: #808080;
+	font-size: 0.8667rem;
+	line-height: 15px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.product-card-teaser-param-article {
+	margin-right: 20px;
+}
+
+.product-card-teaser-param-storage {
+	display: flex;
+}
+
+.product-card-teaser-param-storage-tooltips {
+	color: #CF1A3A;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 1px solid #CF1A3A;
+	text-align: center;
+	margin-left: 5px;
+	display: inline-block!important;
+}
+
+.product-card-teaser-cost {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 10px;
+}
+
+.product-card-teaser-cost-normal {
+	font-size: 2rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Bold";
+	color: #1A1A1A;
+}
+
+.product-card-teaser-cost-old {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #808080;
+	text-decoration: line-through;
+	margin-left: 10px;
+	font-family: "ProximaNova-Semibold";
+}
+
+/* qnt */
+.product-card-teaser-qnt {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.product-card-teaser-qnt-helper {
+	margin-bottom: 10px;
+	color: #808080;
+	font-size: 0.8667rem;
+	line-height: 15px;
+}
+
+.product-card-teaser-qnt-input {
+	border: 1px solid #F0F0F0;
+	border-radius: 4px;
+	width: 43px;
+	height: 40px;
+	padding: 0;
+	text-align: center;
+	margin-right: 3px;
+}
+
+.product-card-teaser-qnt-in {
+	color: #808080;
+	font-size: 1rem;
+	margin-right: 10px;
+}
+
+.product-card-teaser-qnt-minus {
+	margin-right: 10px;
+}
+
+.product-card-teaser-qnt-button-buy {
+	margin-left: 10px;
+}
+
+.product-card-teaser-qnt-button-buy:hover {
+	background-color: #BA1935;
+}
+
+.product-card-teaser-qnt-qounter {
+	color: #CF1A3A;
+	font-size: 1rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Bold";
+	margin-left: 20px;
+}
+
+.product-card-teaser-add-favorite {
+	display: none;
+	width: 230px;
+	margin-top: 10px;
+	padding-top: 14px;
+	padding-bottom: 13px;
+}
+
+/* рейтинг продукта */
+.product-card-teaser-rating {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.product-card-teaser-rating-item {
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+	text-decoration: none;
+	color: #1A1A1A;
+}
+
+.product-card-teaser-rating-item .icon-icon-fire {
+	font-size: 1.3333rem;
+}
+
+.product-card-teaser-rating-item-counter {
+	background: 
+	linear-gradient(-35deg, rgba(251,197,58,1) 50%, transparent 0),
+	linear-gradient(45deg, transparent 0, rgba(255,212,51,1) 0, rgba(255,212,51,1) 0);
+	border-radius: 4px;
+	font-family: "ProximaNova-Black";
+	color: #fff;
+	font-size: 1.1333rem;
+	line-height: 17px;
+	padding: 7px 10px;
+	margin-right: 7px;
+}
+
+.product-card-teaser-rating-item .icon-icon-fire {
+	color: #CF1A3A;
+}
+
+.product-card-teaser-rating-item .tooltips {
+	margin-left: 10px;
+}
+
+/* о доставке продукта */
+.product-card-teaser-delivery-item {
+	margin-bottom: 15px;
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+}
+
+.product-card-teaser-delivery-item:last-child {
+	margin-bottom: 0;
+}
+
+.product-card-teaser-delivery-item-title a {
+	font-family: "ProximaNova-Semibold";
+	color: #1A1A1A;
+}
+
+/* шара продукта */
+.product-card-teaser-share {
+	border-top: 1px solid #F0F0F0;
+	margin-top: 15px;
+	padding-top: 12px;
+}
+
+.product-card-teaser-share-title {
+	font-family: "ProximaNova-Bold";
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
+/* иконка избранного */
+.product-card-teaser .catalog-cards-label-favorite {
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: -50px;
+}
+
+/* табы продукта */
+.product-card-tabs {
+	padding-left: 100px;
+}
+
+.product-card-tabs h2 {
+	text-transform: none;
+	font-family: "ProximaNova-Semibold";
+}
+
+.product-card-tabs-two-cols {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-card-tabs-two-cols-left {
+	max-width: 690px;
+	width: 100%;
+}
+
+.product-card-tabs-two-cols-right {
+	width: 260px;
+}
+
+.product-card-tabs-content {
+	max-width: 780px;
+	width: 100%;
+}
+
+.product-card-tabs-sup {
+	position: absolute; 
+	top: 5px;
+	right: 10px;
+	font-size: 0.6667rem;
+	color: #CF1A3A;
+	font-family: "ProximaNova-Bold";
+}
+
+/* ссылка на бонусы */
+.product-card-bonus {
+	background: #00B4AD;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	padding: 20px 40px 20px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 17px;
+	font-family: "ProximaNova-Semibold";
+}
+
+.product-card-bonus .icon-icon-email {
+	margin-right: 30px;
+	font-size: 	2.2667rem;
+}
+
+/* ссылка на бонусы на внутренних страницах в левой колонке */
+.product-card-bonus-inner {
+	padding: 15px 14px;
+	margin-top: 30px;
+}
+
+.product-card-bonus-inner .icon-icon-email {
+	margin-right: 20px;
+}
+
+/* характеристики продукта */
+.product-card-char {
+	margin-bottom: 40px;
+}
+
+.product-card-char-item {
+	font-size: 1rem;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.product-card-char-item-black {
+	color: #1A1A1A;
+	margin-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.product-card-char-item-grey {
+	color: #808080;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.product-card-char-item a {
+	color: #1A1A1A;
+}
+
+/* о товаре */
+.product-card-about-content-right {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	max-width: 255px;
+}
+
+.product-card-about iframe {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px; 
+  max-width: 225px;
+  max-height: 155px;} 
+
+.product-card-about {
+	font-size: 1rem;
+	line-height: 25px;
+}
+
+.product-card-about img {
+	display: block;
+}
+
+/* отзывы о товаре */
+.product-card-feedback-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 20px;
+}
+
+.product-card-feedback-head-sum {
+	display: flex;
+	font-size: 1.6667rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Semibold";
+}
+
+.product-card-feedback-head-rating {
+	font-size: 1.3333rem;
+	margin-left: 16px;
+}
+
+.product-card-feedback-item {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E6E6E6;
+	background: #fff;
+}
+
+.product-card-feedback-item-head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.product-card-feedback-item-user {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 20px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.product-card-feedback-item-user img {
+	display: block;
+	width: 100%;
+}
+
+.product-card-feedback-item-info-date {
+	color: #A4A4A4;
+	font-size: 0.8rem;
+	line-height: 17px;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.product-card-feedback-item-info-name {
+	color: #1A1A1A;
+	font-size: 1rem;
+	line-height: 17px;
+	font-family: "ProximaNova-Semibold";
+}
+
+.product-card-feedback-item-text {
+	font-size: 1rem;
+	line-height: 25px;
+}
+
+.product-card-feedback-item-rating {
+	margin-left: 10px;
+}
+
+.product-card-feedback-item-rating .icon-icon-star--active {
+	color: #FAC917;
+}
+
+.product-card-feedback-item-text-gallery {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.product-card-feedback-item-text-gallery img {
+	max-width: 100px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.product-card-feedback-item-text-gallery img:hover {
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.20);
+}
+
+/* наборы во вкладке описание */
+.product-card-set-title {
+	font-size: 0.8rem;
+	line-height: 12px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Bold";
+	text-transform: uppercase;
+	margin-bottom: 6px;
+}
+
+.product-card-set-helper {
+	font-size: 0.8667rem;
+	line-height: 15px;
+	color: #808080;
+	margin-bottom: 10px;
+}
+
+.product-card-set-wrapper {
+	border: 1px solid #F0F0F0;
+	margin-bottom: 20px;
+}
+
+.product-card-set-list {
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.product-card-set-list-item {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 10px 12px 10px 25px;
+	position: relative;
+}
+
+.product-card-set-list-item::before {
+	content: '+';
+	position: absolute;
+	bottom: -10px;
+	left: 10px;
+	font-family: "ProximaNova-Bold";
+	font-size: 1rem;
+	color: #1A1A1A;
+}
+
+.product-card-set-list-item:last-child::before {
+	display: none;
+}
+
+.product-card-set-list-item:hover {
+	text-decoration: underline;
+	color: #1A1A1A;
+}
+
+.product-card-set-list-img {
+	width: 60px;
+	margin-right: 10px;
+}
+
+.product-card-set-list-img img {
+	max-width: 60px;
+}
+
+.product-card-set-list-text {
+	color: #1A1A1A;
+	width: calc(100% - 70px);
+}
+
+.product-card-set-bottom {
+	display: flex;
+	align-items: center;
+	padding: 20px 20px 20px 10px;
+	justify-content: space-between;
+}
+
+.product-card-set-summ {
+	font-size: 1.3333rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Bold";
+}
+
+.product-card-set-summ span {
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.product-card-set-summ > span {
+	margin-right: 10px;
+}
+
+/* товара нет в наличии */
+.product-card-teaser-not-available .product-card-teaser-delivery, .product-card-teaser-not-available .product-card-teaser-cost, .product-card-teaser-not-available .product-card-teaser-qnt-wrapper, .product-card-teaser-not-available .product-card-teaser-title-sale {
+	display: none;
+}
+
+.product-card-teaser-param-not-available .product-card-teaser-param-storage {
+	display: none;
+}
+
+.product-card-teaser-param-storage--modified {
+	display: none;
+}
+
+.product-card-teaser-param-not-available .product-card-teaser-param-storage--modified {
+	display: inline-block;
+}
+
+.product-card-teaser-form {
+	display: none;
+	margin-bottom: 40px;
+	flex-direction: column;
+}
+
+.product-card-teaser-form__label {
+	font-family: "ProximaNova-Bold";
+	font-size: 1.3333rem;
+	line-height: 20px;
+	margin-bottom: 16px;
+}
+
+.product-card-teaser-form__input {
+	max-width: 300px;
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+	font-size: 1rem;
+	line-height: 18px;
+	padding: 12px 10px;
+	color: #000;
+	transition: .3s ease-in-out;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+.product-card-teaser-form__input-error {
+	border-color: #CF1A3A;
+}
+
+.product-card-teaser-form__input-text-error {
+	display: none;
+	color: #CF1A3A;
+	font-size: 1rem;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.product-card-teaser-form__input:focus {
+	border-color: #1A1A1A;
+}
+
+.product-card-teaser-form__input::-webkit-input-placeholder {
+  color: #808080;
+  opacity: 1;
+  font-family: "ProximaNova-Semibold";
+  font-weight: normal; }
+
+.product-card-teaser-form__input:-moz-placeholder {
+  color: #808080;
+  opacity: 1;
+  font-family: "ProximaNova-Semibold";
+  font-weight: normal; }
+
+.product-card-teaser-form__input::-moz-placeholder {
+  color: #808080;
+  opacity: 1;
+  font-family: "ProximaNova-Semibold";
+  font-weight: normal; }
+
+.product-card-teaser-form__input:-ms-input-placeholder {
+  color: #808080;
+  opacity: 1;
+  font-family: "ProximaNova-Semibold";
+  font-weight: normal; }
+
+.product-card-teaser-form button {
+	max-width: 168px;
+	font-size: 1rem;
+	letter-spacing: 0.8px;
+}
+
+.product-card-teaser-not-available .product-card-teaser-form {
+	display: flex;
+}
+
+.product-card-feedback-head-rating .icon-icon-star {
+	color: #A4A4A4;
+}
+
+.product-card-feedback-head-rating .icon-icon-star--active {
+	color: #FAC917!important;
+}
+.product-card-teaser-qnt-wrapper{
+  position: relative;
+}
+.product-card-teaser-max-remnants{
+  color: #BA1935;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+  font-size: 0.8667rem;
+}
+/* --------------- media queries карточки товара --------------- */
+
+@media screen and (max-width: 1439px){
+	/* блок слева с картинкой */
+	.product-card-view {
+		width: 51.4124294%;
+		padding-right: 20px;
+	}
+
+	/* блок справа с описание товара */
+	.product-card-teaser {
+		width: 48.5875706%;
+	}
+
+	/* всплывающий alert */
+	.product-card-view-alert-wrapper {
+		display: none;
+	}
+
+	/* табы продукта */
+	.product-card-tabs {
+		padding-left: 0;
+	}
+
+	.product-card-tabs-two-cols-left {
+		max-width: calc(100% - 290px);
+	}
+
+	.product-card-view-carousel {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.product-card-teaser-title-sale {
+		margin-top: -25px;
+	}
+
+	.product-card-about iframe {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	/* блок справа с описание товара */
+	.product-card-teaser {
+		width: 55.6318681%;
+	}
+
+	.product-card-view {
+		width: 39.8351648%;
+	}
+
+	.product-card-tabs-two-cols {
+		flex-direction: column;
+	}
+
+	.product-card-tabs-two-cols-left {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 0;
+	}
+
+	.product-card-teaser-title {
+		font-size: 2.6667rem;
+		line-height: 40px;
+		margin-bottom: 17px;
+	}
+
+	/* новый лайоут только для вкладки описание */
+	.product-card-tabs-two-cols-inner {
+		flex-direction: row;
+	}
+
+	.product-card-tabs-two-cols-inner .product-card-tabs-two-cols-left {
+		max-width: 440px;
+	}
+
+	.product-card-tabs .tabone {
+		padding-left: 0!important;
+	}
+
+	.product-card-about-content-right {
+		float: none;
+		display: block;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+
+	.product-card-about img {
+		display: block;
+	}
+
+
+	/* убрал зеленую карточку бонусов только на третьей вкладке рецепты */
+	.product-card-tabs .tabthree .product-card-bonus {
+		display: none;
+	}
+
+	/* ссылка на бонусы на внутренних страницах в левой колонке */
+	.product-card-bonus-inner {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.product-card-wrapper {
+		flex-direction: column;
+	}
+
+	.product-card-view {
+		width: 100%;
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+
+	.product-card-teaser {
+		width: 100%;
+	}
+
+	.product-card .catalog-cards-label-favorite {
+		display: none;
+	}
+
+	product-card-teaser-title-sale {
+		margin-top: -20px;
+	}
+
+	.product-card-view-label-list {
+		padding-top: 0;
+		padding-left: 20px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.product-card-teaser-title {
+		padding: 15px 20px 0 20px;
+		font-size: 2rem;
+		margin-bottom: 0;
+        line-height: 35px;
+	}
+
+	.product-card-teaser-param {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex-flow: wrap;
+		font-size: 0.8rem;
+		align-items: flex-start;
+		margin-bottom: 10px;
+	}
+
+	.product-card-teaser-param-article {
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.product-card-view-list-wrapper {
+		margin-bottom: 0;
+	}
+
+	.product-card-teaser-cost {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+
+	.product-card-teaser-add-favorite {
+		display: block;
+	}
+
+	.product-card-teaser-qnt-wrapper {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+
+	.product-card-teaser-qnt {
+		flex-flow: wrap;
+		justify-content: center;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.product-card-teaser-qnt-qounter {
+		display: none;
+	}
+
+	.product-card-teaser-qnt-button-buy {
+		margin-left: 0;
+		width: 230px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+
+	.product-card-teaser-rating {
+		display: none;
+	}
+
+	.product-card-teaser-delivery {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.product-card-teaser-share {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.product-card-wrapper {
+		margin-bottom: 0;
+	}
+
+	.product-card-tabs-sup {
+		position: relative;
+		right: 0;
+		top: -10px;
+	}
+
+	.product-card-tabs h2 {
+		font-size: 1.3333rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.product-card-char {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 20px;
+	}
+
+	.product-card-char-item-black {
+		margin-right: 10px;
+	}
+
+	.product-card-about {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.product-card-about img {
+		width: 100%;
+		display: block;
+	}
+
+	.product-card-about iframe {
+		float: none;
+		width: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		margin-right: 0;
+	}
+
+	.product-card-about-content-right {
+		float: none;
+		max-width: 100%;
+		margin-right: 0;
+	}
+
+	.product-card-tabs-two-cols-right {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* товар в карусели */
+	.product-card-view-carousel {
+		padding-top: 30px;
+	}
+
+	/* отзывы */
+	.product-card-feedback-head-sum {
+		display: none;
+	}
+
+	.product-card-feedback-head-button {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.product-card-feedback-head-button .btn {
+		width: 100%;
+	}
+
+	.product-card-feedback-head {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 30px;
+	}
+
+	.product-card-feedback-item {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.product-card-feedback-item:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.product-card-feedback-item-user {
+		margin-right: 10px;
+	}
+
+	.product-card-feedback-item-rating .icon-icon-star {
+		font-size: 0.8667rem;
+	}
+
+	.product-card-feedback-item-text-gallery {
+		display: none;
+	}
+
+	.product-card-tabs .recipe-feedback-button {
+		display: none!important;
+	}
+
+	.product-card-tabs .product-card-feedback {
+		display: block!important;
+		margin-top: 0!important;
+      	padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.product-card-tabs-two-cols-left {
+		margin-bottom: 0;
+	}
+
+	.product-card-view-carousel .fotorama__dot {
+		width: 9px;
+		height: 9px;
+		border: none!important;
+		background-color: #D2D2D2;
+	}
+
+	.product-card-view-carousel  .fotorama__active .fotorama__dot {
+		width: 9px;
+		height: 9px;
+		border: none!important;
+		background-color: #CF1A3A;
+	}
+
+	.product-card-view-carousel {
+		margin-bottom: 20px;
+	}
+
+	/* наборы во вкладке описание */
+	.product-card-set {
+		margin-top: 30px;
+	}
+
+	.product-card-set-title {
+		font-size: 1.3333rem;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+
+	/* новый лайоут только во вкладке описание */
+	.product-card-tabs-two-cols-inner {
+		flex-direction: column;
+	}
+
+	.product-card-tabs-two-cols-inner .product-card-tabs-two-cols-left {
+		max-width: 100%;
+	}
+
+	/* тултип восклицательного знака */
+/*	.product-card-teaser-param-storage-tooltips:hover span {
+		margin-left: 0!important;
+		left: auto!important;
+		right: -20px!important;
+	}	
+
+	.product-card-teaser-param-storage-tooltips span::after {
+		left: auto!important;
+		right: 18px!important;
+	}	
+
+	.product-card-teaser-param-storage-tooltips span::before {
+		left: auto!important;
+		right: 17px!important;
+	}*/
+
+	/* товара нет в наличии */
+	.product-card-teaser-form {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+    .product-card-teaser-max-remnants{
+      position: static;
+      width: 100%;
+      text-align: center;
+    }
+}

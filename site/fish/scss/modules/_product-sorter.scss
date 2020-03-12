@@ -1,0 +1,275 @@
+.product-sorter-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	border-top: 1px solid #E6E6E6;
+	padding-top: 10px;
+}
+
+.product-sorter {
+	display: flex;
+	align-items: center;
+}
+
+.product-sorter-category {
+	position: relative;
+}
+
+.product-sorter-category .product-sorter-text {
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.product-sorter-category .product-sorter-text::after {
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	content: '';
+	display: block;
+	pointer-events: none;
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	-webkit-transform-origin: 66% 66%;
+	    -ms-transform-origin: 66% 66%;
+	        transform-origin: 66% 66%;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	width: 8px;
+	height: 8px;
+	margin-top: -5px;
+}
+
+.product-sorter-category--active .product-sorter-text::after {
+	transform: rotate(-135deg);
+}
+
+.product-sorter-text {
+	margin-right: 10px;
+	font-size: 1rem;
+}
+
+.product-sorter-sum-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.product-sorter-sum {
+	font-size: 0.75rem;
+	line-height: 12px;
+	font-family: "ProximaNova-Regular";
+	color: #808080;
+}
+
+/* блок сортировки на странице поиска */
+.product-sorter-wrapper-inner {
+	border-top: none;
+	padding-top: 0;
+}
+
+/* модальное окно сортера */
+
+
+.modal-sorter.active {
+	display: block;
+}
+
+.product-sorter-link-js {
+	margin-right: 0;
+	display: none;
+	text-align: center;
+}
+
+/* блок сортировки на странице рецептов */
+.product-sorter-recipes {
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+	align-items: flex-end;
+	margin-bottom: 20px;
+	margin-left: -15px;
+}
+
+.product-sorter-recipes .product-sorter-category {
+	display: flex;
+}
+
+.product-sorter-recipes .checkbox-item .icon-icon-fire {
+	color: #CF1A3A;
+	margin-right: 4px;
+}
+
+.product-sorter-recipes .checkbox-item {
+	margin-bottom: 0;
+}
+
+.product-sorter-recipes .icon-icon-param {
+	color: #AEAEAE;
+	font-size: 0.8667rem;
+	margin-right: 5px;
+}
+
+.product-sorter-recipes .icon-icon-cook {
+	color: #AEAEAE;
+	font-size: 1.0667rem;
+	margin-right: 5px;
+}
+
+.product-sorter-recipes .icon-icon-clock {
+	color: #AEAEAE;
+	font-size: 1.0667rem;
+	margin-right: 5px;
+}
+
+.product-sorter-recipes .checkbox-item input[type="checkbox"] + label {
+	padding-left: 30px;
+	font-family: "ProximaNova-Regular";
+}
+
+.product-sorter-recipes .product-sorter-category {
+	margin-left: 15px;
+}
+
+.product-sorter-recipes .dropdown-checkbox-item {
+	white-space: nowrap;
+	padding: 10px 50px 10px 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+.product-sorter-recipes .dropdown-checkbox-item--active::before {
+	content: '';
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -5px;
+	width: 14px;
+	height: 10px;
+	background: url(../img/icon-tic.svg) no-repeat;
+}
+
+.product-sorter-recipes .dropdown-checkbox {
+	padding: 0;
+}
+
+.product-sorter-recipes .product-sorter-first {
+	margin-right: 0;
+}
+
+.product-sorter-recipes .product-sorter-last {
+	margin-right: 0;
+}
+
+@media screen and (min-width: 960px) {
+	.product-sorter-category {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	.product-sorter-wrapper {
+		flex-flow: wrap;
+	}
+
+	.product-sorter {
+		margin-right: 15px;
+	}
+
+	.product-sorter-recipes {
+		justify-content: space-between;
+	}
+
+	.product-sorter-recipes .product-sorter-category {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.product-sorter-sum-wrapper {
+		border-top: 1px solid #E6E6E6;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 15px;
+	}
+
+	.product-sorter-sum-wrapper.main-title-h1 {
+		font-size: 1rem;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+
+	.product-sorter-sum {
+		font-size: 0.75rem;
+		line-height: 12px;
+		margin-top: 5px;
+	}
+
+	.product-sorter-wrapper {
+		margin: 0;
+		border-top: none;
+		padding: 0;
+		border-bottom: 2px solid #E6E6E6;
+		width: 100%;
+	}
+
+	.product-sorter {
+		background: #fff;
+		border-left: 1px solid #E6E6E6;
+		text-align: center;
+	}
+
+	.product-sorter-first {
+		width: 40%;
+	}
+	.product-sorter-last {
+		width: 28%;
+	}
+
+	.product-sorter-text--hidden {
+		display: none;
+	}
+
+	.product-sorter-text {
+		display: none;
+	}
+
+	.product-sorter-link-js {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		padding: 15px 18px;
+	}
+
+	.product-sorter-link-js a {
+		display: block;
+		text-decoration: none;
+		color: #1A1A1A;
+	}
+
+	.product-sorter-category {
+		display: none;
+	}
+
+	/* блок сортировки на странице рецептов */
+	.product-sorter-recipes .checkbox-item {
+		display: none;
+	}
+
+	.product-sorter-recipes .category-product-title {
+		width: 49.9%!important;
+	}	
+
+	.product-sorter-recipes .product-sorter-first {
+		display: none;
+	}	
+
+	.product-sorter-recipes .product-sorter-last {
+		width: 49.9%!important;
+	}
+}

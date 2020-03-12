@@ -1,0 +1,139 @@
+.responsive-table {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.responsive-table th {
+  display: none;
+  font-family: "ProximaNova-Semibold";
+  font-weight: normal;
+  padding-bottom: 7px;
+}
+
+.responsive-table td {
+  display: block;
+  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.responsive-table--red {
+  color: #CF1A3A;
+}
+
+.responsive-table td a {
+  color: #1A1A1A;
+}
+
+.responsive-table td::before {
+  content: attr(data-th)": "; 
+  display: inline-block;
+}
+
+.responsive-table-visible {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .responsive-table-hidden {
+    display: none!important;
+  }
+
+  .responsive-table-visible {
+    display: inline-block!important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-table td::before {
+    display: none;
+  }
+}
+
+
+.responsive-table td, .responsive-table th {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-table td, .responsive-table th {
+    display: table-cell;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .responsive-table td {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    padding-left: 80px;
+  }
+
+  .responsive-table td::before {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: #808080;
+    font-size: 0.8rem;
+  }
+
+  .responsive-table, .responsive-table tbody {
+    display: block;
+  }
+
+  .responsive-table {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: auto;
+  }
+
+  .responsive-table tr {
+    display: block;
+    border-bottom: 1px solid #E6E6E6;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .responsive-table tr:last-child {
+    border-bottom: none;
+  }
+}
+
+.responsive-table-col1 {
+  width: 18%;
+}
+.responsive-table-col2 {
+  width: 20%;
+}
+.responsive-table-col3 {
+  width: 27%;
+}
+.responsive-table-col4 {
+  width: 20%;
+}
+.responsive-table-col5 {
+  width: 15%
+}
+
+@media screen and (max-width: 959px) {
+  .responsive-table th {
+    font-size: 0.8rem;
+    color: #808080;
+    font-family: "ProximaNova-Regular";
+    font-weight: normal;
+  }
+
+  .responsive-table-col1 {
+    width: 44%;
+  }
+  .responsive-table-col3 {
+    width: 17%;
+  }
+  .responsive-table-col4 {
+    width: 21%;
+  }
+  .responsive-table-col5 {
+    width: 18%
+  }
+}

@@ -1,0 +1,1049 @@
+.catalog {
+	margin-bottom: 30px;
+}
+
+/* список товаров слева в колонке */
+.catalog-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.catalog-list li {
+	margin-bottom: 10px;
+}
+
+.catalog-list-item {
+	font-size: 1rem;
+	line-height: 25px;
+	font-family: "ProximaNova-Semibold";
+	color: #1A1A1A;
+	text-decoration: none;
+	display: block;
+}
+
+.catalog-list-item--active {
+	color: #CF1A3A;
+}
+
+.catalog-list-item--modified {
+	font-size: 1rem;
+	line-height: 25px;
+	color: #00B4AD;
+	text-transform: uppercase;
+	font-family: "ProximaNova-Semibold";
+}
+
+.catalog-list-item-popular {
+	margin-bottom: 15px;
+}
+
+/* товары плиткой */
+.catalog-cards {
+	margin-left: -15px;
+	margin-bottom: 15px;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.catalog-cards-item {
+	display: inline-block;
+	width: 210px;
+	height: 200px;
+	background: #fff;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	vertical-align: top;
+	position: relative;
+	transition: .3s ease-in-out;
+}
+
+.catalog-cards-item:hover {
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.10);
+}
+
+.catalog-cards-item--lg {
+	width: 435px;
+	height: 415px;
+}
+
+.catalog-cards-item--md {
+	width: 210px;
+	height: 415px;
+}
+
+/* плитка товара */
+.catalog-cards-item > a {
+	text-decoration: none;
+	display: block;
+	padding: 20px 20px 10px 20px;
+	height: 100%;
+}
+
+.catalog-cards-image {
+	text-align: center;
+	height: 85px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.catalog-cards-image img {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+	max-height: 85px;
+}
+
+.catalog-cards-teaser {
+	position: relative;
+}
+
+.catalog-cards-comment {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+}
+
+.catalog-cards-ratio {
+	margin-left: 10px;
+}
+
+.catalog-cards-ratio .icon-icon-star {
+	font-size: 0.8667rem;
+	color: #FAC917;
+}
+
+.catalog-cards-comment-fire {
+	margin-right: 5px;
+}
+
+.catalog-cards-comment-fire .icon-icon-fire {
+	color: #CF1A3A;
+	font-size: 0.8rem;
+}
+
+.catalog-cards-comment-counter {
+	font-size: 0.7333rem;
+	line-height: 12px;
+	color: #AEAEAE;
+	padding-left: 17px;
+	background: url("../img/icon-comment.svg") no-repeat;
+}
+
+.catalog-cards-title {
+	font-size: 1rem;
+	line-height: 16px;
+	color: #1A1A1A;
+	margin-bottom: 4px;
+	height: 32px;
+	overflow: hidden;
+}
+
+.catalog-cards-weight {
+	font-size: 0.7333rem;
+	line-height: 12px;
+	color: #848484;
+	margin-bottom: 6px;
+}
+
+.catalog-cards-cost {
+	font-size: 1rem;
+	line-height: 15px;
+	font-family: "ProximaNova-Bold";
+	color: #1A1A1A;
+	display: inline-block;
+}
+
+.catalog-cards-cost span {
+	font-size: 0.8rem;
+}
+
+.catalog-cards-cost-old {
+	color: #979797;
+	text-decoration: line-through;
+	margin-right: 5px;
+	font-size: 0.8rem;
+}
+
+.catalog-cards-label-list {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	padding-left: 10px;
+	padding-right: 30px;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+}
+
+.catalog-cards-label {
+	font-size: 0.6667rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Bold";
+	background-color: #66CBC5;
+	padding: 2px 10px 2px 10px;
+	color: #fff;
+	letter-spacing: 0.5px;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.catalog-cards-label-new {
+	background-color: #3A6390;
+}
+
+.catalog-cards-label-favorite {
+	background: none;
+	padding: 0;
+	border-radius: none;
+	margin-right: 0;
+	text-transform: none; 
+	margin-left: auto;
+	visibility: hidden;
+	transition: .2s ease-in-out;
+	opacity: 0;
+	z-index: 10;
+	transform: translateZ(0px);
+	position: absolute;
+	right: 10px;
+}
+
+.catalog-cards-item:hover .catalog-cards-label-favorite {
+	visibility: visible;
+	opacity: 1;
+}
+
+@-webkit-keyframes pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.catalog-cards-label-favorite:hover {
+	animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-name: pop;
+    animation-timing-function: linear;
+}
+
+.catalog-cards-label-favorite {
+	color: #AEAEAE;
+	font-size: 1.0667rem;
+}
+
+.catalog-cards-label-favorite--active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.catalog-cards-label-favorite--active {
+	color: #CF1A3A;
+}
+
+.catalog-cards-button-wrapper {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 20;
+}
+
+.catalog-cards-button-buy {
+	display: flex;
+	align-items: center;
+	background-color: #CF1A3A;
+	padding: 6px 13px;
+	border-radius: 5px;
+	transition: .2s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	text-decoration: none;
+	position: relative;
+}
+
+.catalog-cards-button-buy:hover {
+	background-color: #BA1935;
+}
+
+.catalog-cards-button-buy-counter {
+	font-size: 0.7333rem;
+	color: #fff;
+	font-family: "ProximaNova-Bold";
+	margin-left: 6px;
+}
+
+/* tooltip */
+.catalog-cards-button__tooltip {
+	background: #1A1A1A;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-size: 0.8rem;
+	color: #fff;
+	padding: 7px 15px;
+	white-space: nowrap;
+	z-index: 200;
+	margin-top: 20px;
+	display: none;
+}
+
+.catalog-cards-button__tooltip br {
+	display: none;
+}
+
+.catalog-cards-button__tooltip_show {
+	display: block;
+}
+
+.catalog-cards-button-buy-active:hover + .catalog-cards-button__tooltip {
+	display: block;
+}
+
+.catalog-cards-item:hover .catalog-cards-button-buy {
+	visibility: visible;
+	opacity: 1;
+}
+
+.catalog-cards-button-buy {
+	color: #fff;
+	font-size: 1.0667rem;
+}
+
+.catalog-cards-button-buy svg {
+	width: 18px;
+}
+
+/* когда пользователь нажал на кнопку купить */
+.catalog-cards-button-buy-active {
+	visibility: visible;
+	opacity: 1;
+	padding: 6px;
+}
+
+/* товар плиткой lg size */
+.catalog-cards-item--lg > a {
+	padding: 50px 30px 30px 30px;
+}
+
+.catalog-cards-item--lg .catalog-cards-image {
+	height: 240px;
+	margin-bottom: 25px;
+}
+
+.catalog-cards-item--lg .catalog-cards-image img {
+	max-height: 240px;
+}
+
+.catalog-cards-item--lg .catalog-cards-label-list {
+	top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	flex-flow: wrap;
+}
+
+.catalog-cards-item--lg .catalog-cards-label-list .catalog-cards-label-favorite {
+	position: absolute;
+	right: 30px;
+}
+
+.catalog-cards-item--lg .catalog-cards-label-list .catalog-cards-label {
+	margin-bottom: 5px;
+}
+
+.catalog-cards-item--lg .catalog-cards-comment {
+	margin-bottom: 15px;
+}
+
+.catalog-cards-item--lg .catalog-cards-cost {
+	font-size: 1.3333rem;
+	line-height: 20px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+
+.catalog-cards-item--lg .catalog-cards-cost span {
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.catalog-cards-item--lg .catalog-cards-title {
+	font-size: 1.3333rem;
+	line-height: 20px;
+	padding-right: 120px;
+	max-height: 40px;
+	height: auto;
+}
+
+.catalog-cards-item--lg .catalog-cards-weight {
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.catalog-cards-item--lg .catalog-cards-button-wrapper {
+	right: 30px;
+}
+
+.catalog-cards-item--lg .catalog-cards-button__tooltip {
+	top: 50%;
+	left: auto;
+	right: 100%;
+	margin-top: 0;
+	transform: translate(0, -50%);
+	margin-right: 10px;
+
+}
+
+/* товар плиткой lg size для карусели без тени по ховеру */
+.catalog-item-cards--modified {
+	margin-left: 0;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.catalog-item-cards--modified .catalog-cards-image img {
+	width: auto;
+}
+
+.catalog-item-cards--modified:hover {
+	box-shadow: none;
+}
+
+.catalog-item-cards--modified .catalog-cards-cost {
+	top: 31px;
+}
+
+/* отдельно тень для блока карусели */
+.catalog-cards-item--shadow:hover .owl-stage-outer {
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.10);
+}
+
+/* dots сверху для карусели товаров */
+.catalog-cards-item-carousel-js .owl-dots {
+	position: absolute;
+	top: -35px;
+	right: 25px;
+}
+
+/* товар плиткой md size */
+.catalog-cards-item--md > a {
+	padding-top: 90px;
+}
+
+.catalog-cards-item--md .catalog-cards-image {
+	height: 160px;
+	margin-bottom: 45px;
+}
+
+.catalog-cards-item--md .catalog-cards-image img {
+	max-height: 160px;
+}
+
+.catalog-cards-item--md .catalog-cards-comment {
+	margin-bottom: 7px;
+}
+
+.catalog-cards-item--md .catalog-cards-weight {
+	margin-bottom: 15px;
+}
+
+/* блок в стекстом и bg в плитках товаров */
+.catalog-cards-item-inner > a {
+	padding-bottom: 20px;
+}
+
+.catalog-cards-item-inner--green {
+	background-color: #00B4AD;
+}
+
+.catalog-cards-item-inner--red {
+	background-color: #CF1A3A;
+}
+
+.catalog-cards-item-inner .catalog-cards-info-icon {
+	margin-bottom: 18px;
+	display: inline-block;
+}
+
+.catalog-cards-item-inner .catalog-cards-info-text {
+	font-size: 1.3333rem;
+	line-height: 25px;
+	color: #fff;
+	display: inline-block;
+}
+
+.catalog-cards-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: flex-end;
+}
+
+
+.catalog-link-mobile {
+	display: none;
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-family: "ProximaNova-Bold";
+	text-decoration: none;
+}
+
+.catalog-link-mobile .icon-icon-corner {
+	font-size: 0.6667rem;
+	margin-left: 10px;
+}
+
+/* плитка товара в слайдере */
+.catalog-cards-wrapper-js {
+	margin-bottom: 30px;
+	margin-left: 0;
+}
+
+.catalog-cards-wrapper-js .owl-stage-outer {
+	padding-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.catalog-cards-wrapper-js .catalog-cards-item {
+	width: 100%;
+}
+
+.catalog-cards-item-slider {
+	margin: 0;
+}
+
+.catalog-cards-item-slider .catalog-cards-image img {
+	width: auto!important;
+}
+
+/* плитка товара в слайдере на странице рецепта */
+
+.catalog-cards-one-col-center-js {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.catalog-cards-one-col-center-js .catalog-cards-item-slider {
+	width: 100%;
+}
+
+.catalog-cards-one-col-center-js .owl-stage-outer {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* -------------- медиa запросы для catalog -------------- */
+@media screen and (max-width: 1439px) {
+	/* товар плиткой */
+	.catalog-cards-item {
+		float: left;
+	}
+
+	/* товар плиткой md size */
+	.catalog-cards-item--md {
+		height: 200px;
+	}	
+
+	.catalog-cards-item--md > a {
+		padding: 20px 20px 10px;
+	}
+
+	.catalog-cards-item--md .catalog-cards-image {
+	    height: 85px;
+	    margin: 0 auto;
+	    position: relative;
+	    text-align: center;
+	}
+
+	.catalog-cards-item--md .catalog-cards-image img {
+	    bottom: 0;
+	    display: block;
+	    left: 0;
+	    margin: auto;
+	    max-height: 85px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+
+	.catalog-cards-item--md .catalog-cards-weight {
+    	margin-bottom: 6px;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	/* товар плиткой */
+	.catalog-cards {
+		margin-left: -10px;
+		font-size: 0;
+	}
+
+	.catalog-cards-item {
+		margin-left: 10px;
+	}
+
+	.catalog-cards-wrapper-js {
+		margin-left: 0;
+	}
+	
+	.catalog-cards-item-slider {
+		margin-left: 0;
+		width: 210px;
+	}
+
+	/* товар плиткой lg size */ 
+	.catalog-cards-item--lg {
+		width: 430px;
+	}
+
+	/* товар плиткой lg size для карусели без тени по ховеру */
+	.catalog-item-cards--modified {
+		margin: 0;
+		width: 100%;
+	}
+
+	/* карусель товаров на странице корзина */
+	.catalog-cards-cart-page {
+		display: none;
+	}
+	
+	/* карусель товаров на странице рецепта */
+	.catalog-cards-one-col-center-js {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.catalog {
+		margin-bottom: 20px;
+	}
+
+	/* товар плиткой */
+	.catalog-cards {
+		margin-left: -19px;
+	}
+
+	.catalog-cards-item {
+		margin-left: 19px;
+		margin-bottom: 19px;
+		width: 230px;
+		height: 210px;
+	}
+
+	/* список товаров слева в колонке */
+	.catalog-list {
+		margin-left: -15px;
+		margin-bottom: 20px;
+	}
+
+	.catalog-list li {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 15px;
+	}
+
+	/* товар плиткой lg size */ 
+	.catalog-cards-item--lg {
+		width: 230px;
+		height: 210px;
+	}
+
+	.catalog-cards-item--lg > a {
+		padding: 20px 20px 10px;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-image {
+	    height: 85px;
+	    margin: 0 auto;
+	    position: relative;
+	    text-align: center;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-image img {
+	    bottom: 0;
+	    display: block;
+	    left: 0;
+	    margin: auto;
+	    max-height: 85px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-label-list .catalog-cards-label-favorite {
+		right: 10px;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-weight {
+    	margin-bottom: 6px;
+	}	
+
+	.catalog-cards-item--lg .catalog-cards-comment {
+    	margin-bottom: 4px;
+	}	
+
+	.catalog-cards-item--lg .catalog-cards-title {
+	    font-size: 1rem;
+	    height: 32px;
+	    line-height: 16px;
+	    margin-bottom: 4px;
+	    overflow: hidden;
+	    padding: 0;
+	}	
+
+	.catalog-cards-item--lg .catalog-cards-weight {
+	    color: #848484;
+	    font-size: 0.7333rem;
+	    line-height: 12px;
+	    margin-bottom: 6px;
+	}	
+
+	.catalog-cards-item--lg .catalog-cards-cost {
+	    color: #1a1a1a;
+	    display: inline-block;
+	    font-family: "ProximaNova-Bold";
+	    font-size: 1rem;
+	    line-height: 15px;
+	    position: relative;
+	    right: auto;
+	    top: auto;
+	}	
+
+	.catalog-cards-item--lg .catalog-cards-label-list {
+		padding-left: 10px;
+		padding-right: 30px;
+		top: 10px;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-button-wrapper {
+		right: 10px;
+	}
+
+	/* товар плиткой lg size для карусели без тени по ховеру */
+	.catalog-item-cards--modified {
+		margin: 0;
+		height: 410px;
+	}
+
+	.catalog-item-cards--modified > a {
+		padding-top: 90px;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-image {
+	    height: 160px;
+	    margin-bottom: 45px;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-image img {
+	    max-height: 160px;
+	    width: 100%;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-comment {
+	    margin-bottom: 7px;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-weight {
+	    margin-bottom: 15px;
+	}
+
+	/* dots сверху для карусели товаров */
+	.catalog-cards-item-carousel-js .owl-dots {
+		top: -30px;
+		right: auto;
+		left: 0;
+	}
+
+	.catalog-cards-item-carousel-js {
+		margin-top: 40px;
+	}
+
+	.catalog-cards-wrapper-js {
+		margin-left: 0;
+	}
+
+	.catalog-cards-item-slider {
+		width: 230px;
+		margin: 0;
+	}
+
+	/* карусель товаров на странице рецепта */
+	.catalog-cards-one-col-center-js {
+		margin-left: 0;
+	}
+
+	.catalog-cards-button-buy {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.catalog-cards {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* ссылка на каталог */
+	.catalog-link-mobile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* список товаров слева в колонке */
+	.catalog-list {
+		display: none;
+	}
+
+	.catalog-cards {
+		display: flex;
+		flex-flow: wrap;
+		margin-bottom: 30px;
+	}
+
+	.catalog-cards-item {
+		margin: 0;
+		width: 49.9%;
+		border-bottom: 1px solid #F3F3F3;
+		height: auto;
+	}
+
+	.catalog-cards-item > a {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 51px;
+	}
+
+	.catalog-cards-item {
+		border-right: 1px solid #F3F3F3;
+	}
+
+	.catalog-cards-item:hover {
+		box-shadow: none;
+	}
+
+	.catalog-cards-item-inner {
+		display: none;
+	}
+
+	.catalog-cards-label {
+		font-size: 0.5333rem;
+		padding: 2px 5px;
+		line-height: 12px;
+	}
+
+	.catalog-cards-label-list {
+		padding-right: 30px;
+	}
+
+	.catalog-cards-image {
+		height: 90px;
+		margin-bottom: 15px;
+	}
+
+	.catalog-cards-image img {
+		max-height: 90px;
+	}
+
+	.catalog-cards-comment {
+		margin-bottom: 10px;
+	}
+
+	.catalog-cards-label-favorite {
+		padding: 0;
+		opacity: 1;
+		visibility: visible;
+		font-size: 1.0667rem;
+	}
+
+	.catalog-cards-button-wrapper {
+		bottom: 10px;
+		right: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+	}	
+
+	.catalog-cards-button-buy {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	/* отдельно тень для блока карусели */
+	.catalog-cards-item--shadow:hover .owl-stage-outer {
+		box-shadow: none;
+	}
+
+	/* товар плиткой lg size для карусели без тени по ховеру */
+	.catalog-item-cards--modified > a {
+		display: flex;
+		padding: 20px;
+		padding-bottom: 40px;
+	}
+
+	.catalog-item-cards--modified {
+		width: 100%;
+		height: 100%;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-image {
+		height: 90px;
+		width: 90px;
+		margin: 0;
+		margin-right: 20px;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-image img {
+		max-width: 90px;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-label-list {
+		padding-left: 20px;
+		padding-right: 20px;
+		top: 20px;
+		width: 100%;
+		display: flex;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-label {
+		display: block;
+		text-align: center;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-title {
+		font-size: 0.8rem;
+		line-height: 15px;
+		height: auto;
+		max-height: 100%;
+		visibility: visible;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-weight {
+		margin-bottom: 10px;
+	}
+
+	.catalog-item-cards--modified .catalog-cards-teaser {
+		width: calc(100% - 110px);
+	}
+
+	.catalog-item-cards--modified .catalog-cards-button-wrapper {
+		right: auto;
+		left: 130px;
+		padding: 0;
+	}
+
+	/* dots сверху для карусели товаров */
+	.catalog-cards-item-carousel-js {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.catalog-cards-item-carousel-js .owl-dots {
+		position: relative;
+		top: auto;
+		right: auto;
+		margin-top: 10px;
+	}
+
+	.catalog-cards-item-slider {
+		width: 100%;
+	}
+
+	.catalog-cards-wrapper-js .owl-nav {
+		right: 10px;
+	}
+
+	.catalog-cards-wrapper-js .owl-stage-outer {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/* карусель товаров на странице рецепта */
+	.catalog-cards-one-col-center-js {
+		margin: 0;
+		padding: 0;
+	}
+
+	.catalog-cards-one-col-center-js .owl-nav {
+		right: 10px;
+	}
+
+	.catalog-cards-one-col-center-js .owl-stage-outer {
+		margin: 0;
+		padding: 0;
+	}
+
+	.catalog-cards-button-buy-active + .catalog-cards-button__tooltip {
+		background: none;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		background: none;
+		color: #000;
+		left: 0;
+		display: block;
+		width: 100%;
+		transform: translate(0, 0);
+		position: relative;
+		white-space: normal;
+	}
+
+	.catalog-cards-button__tooltip br {
+		display: block;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-button-wrapper {
+		padding-right: 0;
+		width: auto;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.catalog-cards-item--lg .catalog-cards-button__tooltip {
+		margin-left: 10px;
+	}
+}

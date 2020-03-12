@@ -1,0 +1,86 @@
+.dropzone {
+	padding: 0;
+	min-height: auto;
+	border: 1px dashed #BFBFBF;
+	border-radius: 5px;
+}
+
+.dropzone .dz-message {
+	margin: 10px;
+}
+
+.file-errors {
+	margin: 10px;
+}
+
+.dropzone.dz-started .dz-message {
+	display: block;
+}
+
+.dropzone .dz-message .dz-message-btn {
+  padding: 5px 10px 3px 10px;
+  border: 1px solid #AEAEAE;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 1;
+  background: #fff;
+  color: #1A1A1A;
+  font-family: "ProximaNova-Bold";
+  width: auto;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.dz-message-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.dropzone .dz-message-helper {
+	color: #AEAEAE;
+	font-size: 0.75rem;
+	display: block;
+	margin-top: 3px;
+}
+
+.dropzone .dz-preview,
+.dz-preview {
+	display: none;
+}
+
+.remove-uploaded-file {
+	color: #111;
+	text-decoration: none !important;
+	font-size: 1rem;
+	right: 0;
+	position: absolute;
+	padding: 5px;
+	line-height: 0.6;
+	top: 3px;
+	cursor: pointer;
+}
+
+
+.dropzone .dz-preview ,
+.uploaded-file-item {
+	width: calc(100% - 20px);
+	height: auto;
+	min-height: auto;
+	padding: 3px;
+	margin: 0 10px 10px 10px;
+	background: #F3F3F3!important;
+	position: relative;
+}
+
+.uploaded-file-item__name {
+	font-size: 0.92rem;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.dropzone {
+		border: none;
+	}
+}

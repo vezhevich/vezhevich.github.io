@@ -1,0 +1,198 @@
+.btn {
+	background: #033868;
+	border-radius: 4px;
+	font-family: "ProximaNova-Bold";
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	padding: 10px 20px 9px 20px;
+	text-decoration: none;
+	border: none;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* кнопка с бордером */
+.btn-bordered {
+	background-color: #f3f3f3;
+	border: 2px solid #00B4AD;
+	border-radius: 5px;
+	color: #00B4AD;
+	letter-spacing: 0.3px;
+	line-height: 20px;
+	padding-top: 11px;
+}
+
+/*  */
+
+.btn-bordered--transparent {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+	letter-spacing: 0.6px;
+}
+
+/* серая кнопка с бордером с серым текстом */
+.btn-bordered--grey {
+	border-color: #BFBFBF;
+	color: #484848;
+	border-width: 1px;
+}
+
+.btn-bordered--grey:hover {
+	border-color: #1A1A1A;
+}
+
+.btn-bordered--green:hover  {
+	background-color: #00B4AD;
+	color: #fff;
+}
+
+.btn-bordered--white:hover {
+	background-color: #fff;
+	color: #00B4AD;
+}
+
+/* кнопка с красным задником и красным бордером )) */
+.btn--red {
+	background-color: #CF1A3A;
+	color: #fff;
+	border: 1px solid #CF1A3A;
+}
+
+.btn--red:hover {
+	background-color: #BA1935;
+	color: #fff;
+	border: 1px solid #BA1935;
+}
+
+/* кнопка на всю ширину средняя по высоте */
+.btn--middle-full-width {
+	padding: 15px 20px 13px 20px;
+	display: block;
+	line-height: 1;
+}
+
+/* просто средняя кнопка по высоте */
+.btn--middle {
+	padding: 15px 20px 13px 20px;
+	line-height: 1;
+}
+
+/* просто маленькая кнопка по высоте */
+.btn--small {
+	padding: 5px 14px 3px 14px;
+}
+
+/* кнопка с прозрачным задником */
+.btn-transparent {
+	background-color: transparent;
+}
+
+/* кнопка + - в карточке товара */
+.product-card-teaser-qnt-button {
+	border: none;
+	background-color: #F0F0F0;
+	border-radius: 4px;
+	padding: 0;
+	width: 43px;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+.product-card-teaser-qnt-button:hover {
+	background-color: #d8d8d8;
+}
+
+.product-card-teaser-qnt-button svg {
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* кнопка купить в карточке товара */
+.product-card-teaser-qnt-button-buy {
+	border: none;
+	width: 155px;
+	height: 50px;
+	background-color: #CF1A3A;
+	border-radius: 4px;
+	letter-spacing: 0.8px;
+	font-size: 1rem;
+	line-height: 50px;
+	color: #fff;
+	cursor: pointer;
+	font-family: "ProximaNova-Bold";
+	text-transform: uppercase;
+}
+
+/* кнопка применить в модальном окне фильтров */
+.modal-sorter-button {
+	background: rgba(255,255,255,0.3);
+	border-radius: 4px;
+	font-family: "ProximaNova-Bold";
+	font-size: 15px;
+	color: #FFFFFF;
+	line-height: 15px;
+	border: none;
+	display: block;
+	padding: 13px 0 14px 0;
+	width: 194px;
+	margin-left: 20px;
+	margin-top: 10px;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* кнопка оформления заказа */
+.cart-info-order-btn {
+	font-family: "ProximaNova-Bold";
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 15px 35px 13px 35px;
+}
+.cart-info-order-btn.disabled,
+.btn.disabled, .btn:disabled,
+.cabinet-personal-info-form-btn-save:disabled {
+  background-color: #ccc;
+  opacity: 0.5;
+  border:0 none;
+  cursor: default;
+}
+
+
+
+/* кнопки в личном кабинете */
+.btn-default-action {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	border: 1px solid #AEAEAE;
+	border-radius: 4px;
+	font-family: "ProximaNova-Bold";
+	font-size: 0.6667rem;
+	color: #1A1A1A;
+	line-height: 12px;
+	text-transform: uppercase;
+	padding: 9px 10px 7px 10px;
+}
+
+.btn-default-action:hover {
+	border-color: #1A1A1A;
+}
+
+button {
+	outline: none!important;
+}

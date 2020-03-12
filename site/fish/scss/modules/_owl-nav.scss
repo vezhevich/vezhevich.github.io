@@ -1,0 +1,39 @@
+/* глобальные стили для навигации карусели */
+.owl-nav {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	display: flex;
+}
+
+.owl-nav > div {
+	display: inline-block;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+
+.owl-nav > div:hover {
+	background-color: #fff;
+}
+
+.owl-nav .disabled {
+	opacity: 0.5;
+}
+
+.owl-nav .disabled:hover {
+	background-color: transparent;
+}
+
+.owl-nav .owl-next {
+	width: 25px;
+	height: 25px;
+	font-size: 0;
+	background: url(../img/nav-next.svg) no-repeat;
+}
+
+.owl-nav .owl-prev {
+	width: 25px;
+	height: 25px;
+	font-size: 0;
+	background: url(../img/nav-prev.svg) no-repeat;
+}

@@ -1,0 +1,149 @@
+/* модальное окно списка каталога */
+@media screen and (min-width: 960px) {
+	.modal-catalog-list {
+		display: block!important;
+	}
+}
+
+/* тот случай когда надо скрывать этот список каталога в левой колонка всегда */
+.modal-catalog-list-inner {
+	display: none;
+}
+
+.modal-search-category-list .modal-sorter-button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-catalog-list-inner.showed {
+	display: block;
+}
+
+.modal-sorter .modal-sorter-button {
+	position: relative;
+}
+
+.product-sorter1 #modal-catalog-list {
+	margin: 0;
+	text-align: left;
+	width: 100%;
+	padding: 45px 0 20px 0;
+	background: none;
+	vertical-align: top!important;
+}
+
+.product-sorter1 #modal-catalog-list .catalog-list {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.product-sorter1 #modal-catalog-list li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.product-sorter1 #modal-catalog-list .catalog-list-item {
+	color: #fff;
+	padding: 7px 20px;
+	font-size: 1.25rem;
+	line-height: 25px;
+}
+
+.product-sorter1 #modal-catalog-list .fancybox-close-small {
+	outline: none;
+	background: url(../img/icon-close-bold-white.svg) no-repeat center center;
+	background-size: 15px;
+	width: 60px;
+	height: 60px;
+}
+
+.product-sorter1 #modal-catalog-list .fancybox-close-small::after {
+	display: none;
+}
+
+.product-sorter1 .product-card-bonus {
+	display: none;
+}
+
+.modal-sorter-head {
+	color: #E78C9C;
+	font-size: 1.25rem;
+	line-height: 25px;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 25px;
+	padding: 0 30px;
+	margin-top: 20px;
+}
+
+.modal-sorter {
+	background: none!important;
+	width: 100%!important;
+	padding: 0!important;
+	margin: 0!important;
+	vertical-align: top!important;
+	padding-bottom: 20px!important;
+}
+
+.modal-sorter-title {
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 25px;
+	font-family: "ProximaNova-Semibold";
+	display: block;
+	padding: 10px 30px 7px 30px;
+	text-decoration: none;
+}
+
+.modal-sorter-list-item {
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 25px;
+	font-family: "ProximaNova-Semibold";
+	display: block;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+.modal-sorter-list-inner .modal-sorter-list-item {
+	font-size: 1rem;
+	line-height: 25px;
+	color: #fff;
+	font-family: "ProximaNova-Regular";
+	padding: 7px 20px 7px 55px;
+}
+
+.modal-sorter .fancybox-close-small {
+	outline: none;
+	background: url(../img/icon-close-bold-white.svg) no-repeat center center;
+	background-size: 15px;
+	width: 60px;
+	height: 60px;
+}
+
+.modal-sorter .fancybox-close-small::after {
+	display: none;
+}
+
+.modal-sorter .modal-sorter-button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-sorter-list-item--active {
+	background-color: #E08797;
+}
+
+/* сортер на странице рецептов */
+.modal-sorter-recipes .checkbox-item {
+	padding-left: 30px;
+}	
+
+.modal-sorter-recipes .checkbox-item input[type="checkbox"] + label {
+	color: #fff;
+}
+
+.modal-sorter-recipes .checkbox-item .icon-icon-fire {
+	display: none;
+}

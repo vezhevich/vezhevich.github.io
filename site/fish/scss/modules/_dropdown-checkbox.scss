@@ -1,0 +1,35 @@
+.dropdown-checkbox {
+	position: absolute;
+	transform: scale(0.75) translateY(-21px);
+	top: 100%;
+	left: 0;
+	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+	background: #fff;
+	z-index: 50;
+	opacity: 0;
+	visibility: hidden;
+	border: 1px solid #F3F3F3;
+	box-shadow: 0 10px 10px 0 rgba(26,26,26,0.10);
+	padding: 5px 20px 20px 20px;
+}
+
+.product-sorter-category--active .dropdown-checkbox {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1) translateY(0);
+	-ms-transform: scale(1) translateY(0);
+	transform: scale(1) translateY(0);
+	margin-top: 4px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+.dropdown-checkbox-item {
+	padding: 10px 0;
+	margin-bottom: 0;
+}
+
+.dropdown-checkbox-button {
+	width: 100%;
+	margin-top: 10px;
+}

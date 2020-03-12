@@ -1,0 +1,11 @@
+
+.feedback__ok-message,
+.feedback__error-message{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 4px 0;
+}
+
+.feedback__error-message {
+    color: #d9534f;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-4.0%" y="-4.0%" width="108.0%" height="108.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Item+" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WILD_FISH_item_reviews_1440" transform="translate(-141.000000, -1470.000000)">
+            <g id="Group-3" transform="translate(141.000000, 1470.000000)">
+                <g id="Combined-Shape">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="#F3F3F3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M33.85955,22.9859544 C36.4416339,24.7615077 37.8134877,26.5578501 37.8134877,26.5578501 C37.8134877,26.5578501 37.4166304,24.463659 35.8170383,22.6968683 C38.7616762,22.42095 43.5721914,22.6708248 46.2375563,26.5711583 C46.2375563,26.5711583 41.3910073,28.6977087 41.3910073,33.3983425 C41.3910073,39.7989876 47.0595069,45.4315553 55.3241867,45.4315553 C57.4914778,45.4315553 59.5107867,45.1499269 61.0305906,44.8554972 C60.7325491,45.6875811 56.4488519,50.1680327 47.0164103,50.1680327 C39.6603936,50.1680327 30.4320118,48.2739538 24.213122,41.8902064 C13.655496,31.0516099 14.0013072,22.133207 14.0013072,22.133207 L15.8622491,22.133207 L15.8186332,20.5120516 C15.8186332,20.5120516 18.2850043,20 20.7513754,20 C28.3670102,20 33.2997524,23.1148099 33.2997524,23.1148099 C33.2997524,23.1148099 33.5020871,23.0595998 33.85955,22.9859544 Z M22.6572089,22.8366731 C22.6572089,22.4495402 22.3414527,22.1353453 21.952396,22.1353453 C21.5633394,22.1353453 21.2475832,22.4495402 21.2475832,22.8366731 C21.2475832,23.2238061 21.5633394,23.5380009 21.952396,23.5380009 C22.3414527,23.5380009 22.6572089,23.2238061 22.6572089,22.8366731 Z M21.2475832,33.1916074 C21.2475832,33.1916074 24.8252108,32.9139204 26.7990744,29.7205199 C28.1536382,27.5290141 28.5671626,25.9717454 28.4852473,23.2409715 C26.2231997,29.9521109 21.2475832,33.1916074 21.2475832,33.1916074 Z" fill="#AEAEAE" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

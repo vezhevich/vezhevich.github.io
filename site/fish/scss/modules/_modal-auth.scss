@@ -1,0 +1,309 @@
+.modal-auth {
+	min-height: 470px;
+}
+
+.modal-auth .modal-wrapper-wave {
+	min-height: 470px;
+}
+
+.modal-auth .modal-title {
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 30px;
+}
+
+.modal-auth .modal-title span {
+	display: block;
+	font-size: 0.8rem;
+	letter-spacing: 0.4px;
+	line-height: 15px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.input-default	{
+	background: #FFFFFF;
+	border-radius: 4px;
+	color: #1A1A1A;
+	outline: none!important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #BFBFBF;
+	padding: 12px 12px 10px 12px;
+	font-size: 1.3333rem;
+	font-family: "ProximaNova-Semibold";
+	width: 100%;
+	transition: .2s ease-in-out;
+}
+
+.input-default:focus {
+	border-color: #000;
+}
+
+.input-default-error {
+	border-color: #CF1A3A !important;
+}
+.input-default-success{
+  border-color: green !important;
+}
+.lebel-default {
+	font-size: 1rem;
+	line-height: 18px;
+	color: #1A1A1A;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.lebel-default--hidden {
+	display: none;
+}
+
+.modal-auth-form-item {
+	margin-bottom: 15px;
+}
+
+.input-error-default {
+	font-size: 0.8rem;
+	color: #CF1A3A;
+	margin-top: 5px;
+	display: none;
+}
+
+.modal-auth-social {
+	margin-top: 30px;
+	border-top: 1px solid #F0F0F0;
+}
+
+.modal-auth-social-wrapper {
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+.modal-auth-social-title {
+	font-family: "ProximaNova-Semibold";
+	font-size: 1.3333rem;
+	text-align: center;
+}
+
+.modal-auth-form-btn-enter {
+	width: 180px;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+}
+
+.modal-auth-form-btn-enter-inner {
+	width: 230px;
+}
+
+.modal-auth-form-link-reg {
+	color: #1A1A1A;
+	font-size: 1rem;
+}
+
+.modal-auth-form-link {
+	color: #1A1A1A;
+	font-size: 1rem;
+}
+
+.modal-auth-form-item-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.modal-auth-form-item-group--align-top{
+  align-items: flex-start;
+}
+.lebel-default-group {
+	display: flex;
+}
+
+.lebel-default-group a {
+	margin-left: auto;
+	color: #1A1A1A;
+	font-size: 1rem;
+}
+
+.modal-auth-social .order-contact-info-social {
+	justify-content: center;
+}
+
+.modal-auth-form-message {
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 15px;
+	color: #808080;
+}
+
+.modal-auth-form-item-hidden {
+	display: none;
+}
+
+.modal-auth-form-item-hidden--show {
+	display: block;
+}
+
+.modal-auth .checkbox-item input[type="checkbox"] + label {
+	font-family: "ProximaNova-Regular";
+}
+
+.modal-auth-form-helper {
+	color: #808080;
+	font-size: 1rem;
+	line-height: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.modal-auth-form-helper a {
+	color: #1A1A1A;
+}
+
+.modal-auth-form-wrapper {
+	width: 100%;
+}
+
+.modal-auth-form-wrapper--width-sm {
+	max-width: 115px;
+	margin-left: 20px;
+	display: none;
+}
+
+.modal-auth-form-item-sms-code {
+	margin-top: -15px;
+	display: none;
+}
+
+.modal-auth-form-wrapper--text {
+	display: none;
+	max-width: 115px;
+}
+
+/*появляется поле ввода кода смс*/
+.modal-auth--sms-code-send .modal-auth-form-wrapper--width-sm {
+	display: inline-block;
+}
+
+.modal-auth-form-wrapper--width-sm .input-default {
+	height: 48px;
+}
+
+.modal-auth--sms-code-send .modal-auth-form-item-sms-code {
+	display: inline-block;
+}
+
+.modal-auth--sms-code-send .lebel-default--visible {
+	display: none;
+}
+
+.modal-auth--sms-code-send .lebel-default--hidden {
+	display: block;
+}
+
+/* когда телефон подтвержден */
+.modal-auth--sms-code-check .modal-auth-form-wrapper--text {
+	display: inline-block;
+}
+
+/* отправили код из смс */
+.modal-auth--sms-code .modal-auth-form-wrapper--width-sm {
+	display: inline-block;
+}
+
+.modal-auth--sms-code .lebel-default--visible {
+	display: none;
+}
+
+.modal-auth--sms-code .lebel-default--hidden {
+	display: block;
+}
+
+/* сброс пароля */
+.modal-reset-password-text {
+	text-align: center;
+	color: #808080;
+	font-size: 1rem;
+	line-height: 20px;
+	margin-bottom: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.modal-reset-password {
+	min-height: auto!important;
+}
+
+.modal-reset-password .modal-wrapper-wave {
+	min-height: auto!important;
+}
+
+@media screen and (max-width: 767px) {
+	.modal-auth .modal-wrapper-wave {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.modal-auth .modal-title {
+		font-size: 1.6667rem;
+		line-height: 20px;
+		margin-bottom: 15px;
+	}
+
+	.modal-auth .modal-title .modal-sub-title {
+		margin-top: 10px;
+	}
+
+	.modal-auth-form-item-group {
+		flex-direction: column;
+	}
+
+	.modal-auth-form-wrapper {
+		width: 100%;
+	}
+
+	.modal-auth--sms-code-send .modal-auth-form-wrapper--width-sm {
+		display: block;
+		max-width: none;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.modal-auth-form-message {
+		margin-left: 0;
+		margin-top: 5px;
+	}
+
+	.modal-auth-form-item-group--left {
+		align-items: flex-start;
+		margin-top: 0;
+	}
+
+	.modal-auth-form-link-reg {
+		margin-top: 20px;
+	}
+
+	.modal-auth-form-btn-enter {
+		width: 280px;
+	}
+
+	.modal-auth-social {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	/* сброс пароля */
+	.modal-auth-form-link {
+		margin-top: 20px;
+	}
+
+	.modal-reset-password-text {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: left;
+	}
+}

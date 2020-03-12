@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+</head>
+<body>
+	<section class="sticky-footer-wrapper sticky-footer-wrapper-unfix-header">
+		<header class="header header-inner">
+			<div class="container-full-width header-flex">
+				<div class="header-hamburger hamburger hamburger--spin js-hamburger">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+				<a href="/" class="header-logo-mobile"><img src="./img/logo-mobile.svg" alt=""></a>
+				<div class="header-logo">
+					<a href="/">
+						<img src="./img/logo.svg" alt="">
+						<span>Казань. Доставка продуктов</span>
+					</a>
+				</div>
+				<div class="header-info">
+					<a href="tel:+89153498877" class="header-info-item header-phone">+7 915 349 88 77 <br> <span>с 9:00 до 20:00</span></a>
+				</div>
+			</div>
+		</header>
+			<a href="#" class="progress-cart-back progress-cart-back-xs">Вернуться к покупкам<span class="progress-cart-back-xs-point">→</span></a>
+		<div class="progress-cart-wrapper progress-cart-wrapper-js">
+			<div class="container-main progress-cart progress-cart-steps-second">
+				<a href="#" class="progress-cart-back"><span class="icon-icon-corner"></span>вернуться к покупкам</a>
+				<div class="progress-cart-steps">
+					<div class="progress-cart-steps-item progress-cart-steps-item--active">1<span class="progress-cart-item-dot">.</span> <span>Корзина</span> <img src="./img/icon-tic.svg" alt=""></div>
+					<div class="progress-cart-steps-item progress-cart-steps-item--current progress-cart-steps-item--active">2<span class="progress-cart-item-dot">.</span> <span>Оформление <span class="progress-cart-item-text-hidden">заказа</span></span></div>
+					<div class="progress-cart-steps-item">3<span class="progress-cart-item-dot">.</span> <span>Заказ оформлен</span></div>
+				</div>
+				<div class="header-shopping-cart-wrapper">
+					<span class="icon-icon-shopping-cart"></span>
+					<span class="header-shopping-cart-summ">3 567р</span>
+					<span class="header-shopping-cart-in">3</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-main container-main-stickytop container-main-default">
+			<h1 class="main-title-h1 main-cart-title">Оформление заказа</h1>
+			<div class="cart-helper-text">Укажите контактную информацию</div>
+			<div class="layout-cart">
+				<div class="layout-cart-left">
+					<div class="order-white-wrapper order-contact-info">
+						<div class="order-contact-info-left">
+							<div class="cart-info-input-group">
+								<div class="cart-info-input-group-item">
+									<div class="cart-info-input-group-item-wrapper">
+										<label for="#" class="cart-info-label">Представьтесь</label>
+										<input type="text" class="cart-info-input" placeholder="Ваше имя">
+									</div>
+								</div>								
+								<div class="cart-info-input-group-item">
+									<div class="cart-info-input-group-item-wrapper">
+										<label for="#" class="cart-info-label">Номер телефона</label>
+										<input id="input-tel" type="tel" class="cart-info-input" placeholder="+7 (999) 999 99 99">
+									</div>
+								</div>								
+								<div class="cart-info-input-group-item">
+									<div class="cart-info-input-group-item-wrapper">
+										<label for="#" class="cart-info-label">Email</label>
+										<input type="email" class="cart-info-input" placeholder="dubova@yandex.ru">
+									</div>
+								</div>
+								<div class="checkbox-item js-checkbox-item-person">
+									<input id="person" type="checkbox" name="params" />
+									<label for="person">Юридическое лицо</label>
+								</div>								
+							</div>
+						</div>
+						<div class="order-contact-info-right">
+							<div class="order-contact-info-text">Войдите в свою учетную запись, и мы сохраним всю информацию по заказу и автоматически заполним ваши контактные данные</div>
+							<div class="order-contact-info-social">
+								<a href="#" class="order-contact-info-social-auth">Войти</a>
+								<div class="order-contact-info-social-group">
+									<a href="#" class="order-contact-info-social-group-item">
+										<img src="./img/icon-vk.svg" alt="">
+									</a>
+									<a href="#" class="order-contact-info-social-group-item">
+										<img src="./img/icon-fb.svg" alt="">
+									</a>
+									<a href="#" class="order-contact-info-social-group-item">
+										<img src="./img/icon-ok.svg" alt="">
+									</a>
+									<a href="#" class="order-contact-info-social-group-item">
+										<img src="./img/icon-tw.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart-helper-text">Выберите удобный способ получения заказа</div>
+					<div class="order-white-wrapper">
+						<div class="order-tabs">
+							<input class="order-tabs-input" id="order-tab-one" type="radio" name="grp" checked="checked"autocomplete="off"/>
+							<label class="order-tab" for="order-tab-one">
+								<strong>Самовывоз</strong>
+								сегодня, 250р
+							</label>
+							<div class="order-tab-content order-map">
+								<div class="order-map-switch">
+									<a class="order-map-switch-item order-map-switch-location order-map-switch-item--active" href="javascript:;"><img src="./img/icon-location.svg" alt="">На карте</a>
+									<a class="order-map-switch-item order-map-switch-list" href="javascript:;"><img src="./img/icon-list.svg" alt="">Списком</a>
+								</div>
+								<div class="order-map-location">
+									<div id="YMapsID"></div>
+									<div class="order-map-balloon">
+										<a href="javascript:;" class="order-map-balloon-close"><span class="icon-icon-close"></span></a>
+										<div class="order-map-balloon-head">
+											<div class="cart-helper-text">Выбранный пункт самовывоза</div>
+											<div class="order-map-balloon-head-title">г. Казань, ул. Верхние Поля, д. 51, ТЦ Ривьера</div>
+											<!-- при выборе адреса добавлять к кнопке класс active -->
+											<button class="btn btn--middle"><span>ДА,</span> ВЫБРАТЬ ЭТОТ ПУНКТ</button>
+										</div>
+										<div class="order-map-balloon-content">
+											<div>
+												<div class="order-map-balloon-content-item">
+													<div class="order-map-balloon-content-title">Режим работы</div>
+													<div class="order-map-balloon-content-text">Пн-Вс (09:00-22:00)</div>
+												</div>
+												<div class="order-map-balloon-content-item">
+													<div class="order-map-balloon-content-title">Как нас найти</div>
+													<div class="order-map-balloon-content-text">Станция метро «Рязанский проспект», выход на улицу 1-я Новокузьминская. Магазин расположен слева от метро. Станция метро «Рязанский проспект», выход на улицу 1-я Новокузьминская. Магазин расположен слева от метро.</div>
+												</div>
+												<div class="order-map-balloon-content-item">
+													<div class="order-map-balloon-content-title">Режим работы</div>
+													<div class="order-map-balloon-content-gallery popup-gallery">
+														<a href="./img/feedback-gallery.jpg"><img src="./img/feedback-gallery.jpg" alt=""></a>
+														<a href="./img/feedback-gallery.jpg"><img src="./img/feedback-gallery.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="order-map-list">
+									<div class="order-map-list-search-wrapper">
+										<div class="order-map-list-search">
+											<input id="order-map-list-search-input" type="text" class="order-map-list-search-input" placeholder="">
+											<button class="order-map-list-search-button" type="button"></button>
+										</div>
+									</div>
+									<div class="order-map-list-location scroll-pane">
+										<div>
+											<div class="order-map-list-location-item order-map-list-location-item-js">
+												<div class="order-map-list-location-address">г. Казань, ул. Верхние Поля, д. 51, ТЦ Ривьера</div>
+												<div class="order-map-list-location-work-time">
+													<div class="order-map-list-helper">Режим работы</div>
+													<div class="order-map-list-text">Пн-Вс (09:00-22:00)</div>
+												</div>
+												<div class="order-map-list-location-teaser">
+													<div class="order-map-list-helper">Как нас найти</div>
+													<div class="order-map-list-text">
+														Станция метро «Рязанский проспект», выход на улицу 1-я Новокузьминская. Магазин расположен слева от метро.
+													</div>
+												</div>
+												<a href="#" class="order-map-list-location-button btn btn--red btn--middle">Выбрать</a>
+											</div>
+											<div class="order-map-list-location-item order-map-list-location-item-js">
+												<div class="order-map-list-location-address">г. Казань, ул. Верхние Поля, д. 51, ТЦ Ривьера</div>
+												<div class="order-map-list-location-work-time">
+													<div class="order-map-list-helper">Режим работы</div>
+													<div class="order-map-list-text">Пн-Вс (09:00-22:00)</div>
+												</div>
+												<div class="order-map-list-location-teaser">
+													<div class="order-map-list-helper">Как нас найти</div>
+													<div class="order-map-list-text">
+														Станция метро «Рязанский проспект», выход на улицу 1-я Новокузьминская. Магазин расположен слева от метро.
+													</div>
+												</div>
+												<a href="#" class="order-map-list-location-button btn btn--red btn--middle">Выбрать</a>
+											</div>
+											<div class="order-map-list-location-item order-map-list-location-item-js">
+												<div class="order-map-list-location-address">г. Казань, ул. Верхние Поля, д. 51, ТЦ Ривьера</div>
+												<div class="order-map-list-location-work-time">
+													<div class="order-map-list-helper">Режим работы</div>
+													<div class="order-map-list-text">Пн-Вс (09:00-22:00)</div>
+												</div>
+												<div class="order-map-list-location-teaser">
+													<div class="order-map-list-helper">Как нас найти</div>
+													<div class="order-map-list-text">
+														Станция метро «Рязанский проспект», выход на улицу 1-я Новокузьминская. Магазин расположен слева от метро.
+													</div>
+												</div>
+												<a href="#" class="order-map-list-location-button btn btn--red btn--middle">Выбрать</a>
+											</div>
+											<div class="order-map-list-location-item order-map-list-location-item-js">
+												<div class="order-map-list-location-address">г. Казань, ул. Верхние Поля, д. 51, ТЦ Ривьера</div>
+												<div class="order-map-list-location-work-time">
+													<div class="order-map-list-helper">Режим работы</div>
+													<div class="order-map-list-text">Пн-Вс (09:00-22:00)</div>
+												</div>
+												<div class="order-map-list-location-teaser">
+													<div class="order-map-list-helper">Как нас найти</div>
+													<div class="order-map-list-text">
+														Станция метро «Рязанский проспект», выход на улицу 1-я Новокузьминская. Магазин расположен слева от метро.
+													</div>
+												</div>
+												<a href="#" class="order-map-list-location-button btn btn--red btn--middle">Выбрать</a>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+
+							<input class="order-tabs-input" id="order-tab-two" type="radio" name="grp" autocomplete="off"/>
+							<label class="order-tab order-tab-two" for="order-tab-two">
+								<strong>Доставка домой или в офис </strong>
+								<strong class="order-tab-text-hidden">Доставка курьером</strong>
+								завтра, бесплатно
+							</label>
+							<div class="order-tab-content order-form-delivery-tab">
+								<!-- если пользователь новый то класс order-form-delivery--new-user  -->
+							  <div class="order-form-delivery">
+							  	<div class="order-form-delivery-item-group order-form-delivery-address-wrapper">
+							  		<div class="order-form-delivery-address-item order-form-delivery-address js-order-form-delivery-address">г. Казань, ул. Ленина, д. 56, квартира 69</div>
+							  		<div class="order-form-delivery-address-item order-form-delivery-address js-order-form-delivery-address">г. Казань, ул. Космонавтики, д. 105, подъезд 12, квартира 69</div>
+							  		<div class="order-form-delivery-address-item order-form-delivery-address-link-add order-form-delivery-address-item--full-width order-form-delivery-address-item--center-text">
+							  			<a class="js-order-form-delivery-address-add cabinet-personal-info-address-item-add" href="javascript:;"><img src="./img/icon-plus-inner.svg" alt="">Добавить новый адрес</a>
+							  		</div>
+							  	</div>
+							  	<div class="order-form-delivery-item-group order-form-delivery-address-new-line order-form-delivery-address-new-line--hide">
+							  		<div class="order-form-delivery-item order-form-delivery-lg">
+							  			<div class="order-form-delivery-label">Адрес</div>
+							  			<input type="text" class="order-form-delivery-input">
+							  			<div class="order-form-delivery-helper">Начните вводить адрес и вам будут предложены варианты</div>
+							  		</div>
+							  		<div class="order-form-delivery-item order-form-delivery-md">
+							  			<div class="order-form-delivery-label">Квартира, этаж, домофон</div>
+							  			<input type="text" class="order-form-delivery-input">
+							  			<div class="order-form-delivery-helper">Например, кв. 12, этаж 2, домофон 12В1234</div>
+							  		</div>
+							  	</div>
+							  	<div class="order-form-delivery-item-group order-form-delivery-address--new-user">
+								  	<div class="order-form-delivery-item order-form-delivery-lg">
+								  		<div class="order-form-delivery-label">Адрес</div>
+								  		<input type="text" class="order-form-delivery-input">
+								  		<div class="order-form-delivery-helper">Начните вводить адрес и вам будут предложены варианты</div>
+								  	</div>
+								  	<div class="order-form-delivery-item order-form-delivery-md">
+								  		<div class="order-form-delivery-label">Квартира, этаж, домофон</div>
+								  		<input type="text" class="order-form-delivery-input">
+								  		<div class="order-form-delivery-helper">Например, кв. 12, этаж 2, домофон 12В1234</div>
+								  	</div>
+							  	</div>
+							  	<div class="order-form-delivery-item order-form-delivery-item--modified">
+								  	<div class="checkbox-item checkbox-item--light-text js-checkbox-item-person-inner">
+								  		<input id="person-inner" type="checkbox" name="params" />
+								  		<label for="person-inner">Получатель не я</label>
+								  	</div>	
+							  	</div>
+							  	<div class="order-form-delivery-item-group order-form-delivery-item-group--modified order-form-delivery-item-group--hide">
+							  		<div class="order-form-delivery-md">
+							  			<div class="order-form-delivery-label">Имя получателя</div>
+							  			<input type="text" class="order-form-delivery-input">
+							  		</div>							  		
+							  		<div class="order-form-delivery-md">
+							  			<div class="order-form-delivery-label">Номер телефона получателя</div>
+							  			<input type="tel" class="order-form-delivery-input js-input-tel">
+							  		</div>
+							  	</div>
+							  	<div class="order-form-delivery-item order-form-delivery-item-group">
+							  		<div class="order-form-delivery-wrapper order-form-delivery-sm-1">
+							  			<div class="order-form-delivery-label">Выберите дату доставки</div>
+							  			<select class="select-custom" name="" id="">
+							  				<option value="">Завтра</option>
+							  				<option value="">Понедельник, 16 октября</option>
+							  				<option value="">Вторник, 17 октября</option>
+							  				<option value="">Среда, 18 октября</option>
+							  				<option value="">Четверг, 19 октября</option>
+							  				<option value="">Пятница, 20 октября</option>
+							  			</select>
+							  		</div>							  		
+							  		<div class="order-form-delivery-wrapper order-form-delivery-sm-2">
+							  			<div class="order-form-delivery-label">Выберите двремя доставки</div>
+							  			<select class="select-custom" name="" id="">
+							  				<option value="">11:00 - 17:00</option>
+							  				<option value="">12:00 - 17:00</option>
+							  				<option value="">13:00 - 17:00</option>
+							  				<option value="">13:00 - 17:00</option>
+							  			</select>
+							  		</div>							  		
+							  		<div class="order-form-delivery-wrapper order-form-delivery-sm-3">
+										<div class="order-form-delivery-text order-form-delivery-summ">Стоимость доставки: 100 р.</div>
+							  		</div>
+							  	</div>
+							  </div>
+							</div>
+						</div>
+					</div>					
+					<div class="cart-helper-text">Выберите удобный способ оплаты</div>
+					<div class="order-white-wrapper order-payment">
+						<div class="order-payment-item order-payment-item--active">
+							<div class="order-payment-item-wrapper">
+								<div class="order-payment-item-title">Оплата заказа в магазине</div>
+								<div class="order-payment-item-text">При получении заказа в магазине оплатите его наличными, банковской картой </div>
+							</div>
+						</div>
+						<div class="order-payment-item">
+							<div class="order-payment-item-wrapper">
+								<div class="order-payment-item-title">Онлайн-оплата банковской картой <img src="./img/visa.png" alt=""><img src="./img/mastercard.png" alt=""></div>
+								<div class="order-payment-item-text">Безопасная оплата заказа картой онлайн. Форма оплаты появится после клика «Оформить заказ».</div>
+							</div>
+						</div>
+						<div class="order-payment-item">
+							<div class="order-payment-item-wrapper">
+								<div class="order-payment-item-title">Оплата Яндекс-деньгами или Web Money <img src="./img/yandexmoney.png" alt=""><img src="./img/webmoney.png" alt=""></div>
+								<div class="order-payment-item-text">При получении заказа в магазине оплатите его наличными, банковской картой </div>
+							</div>
+						</div>
+						<div class="order-payment-item-comment">
+							<div class="order-form-delivery-label">Оставьте комментарий</div>
+							<textarea name="" id="" cols="30" rows="10" class="cart-info-textarea" placeholder="На что нам обратить внимание при выполнении вашего заказа"></textarea>
+						</div>
+						<div class="order-payment-item-text order-payment-item-text--black order-payment-item-text--hidden">После оформления заказа в будние дни счет будет выставлен в течение часа в рабочее время (московское). Если заказ оформлен в вечернее время или выходной день, счет будет выставлен до 12:00 (по московскому времени) в ближайший рабочий день. После оплаты счета с Вами свяжется наш специалист для уточнения деталей и даты доставки. Обращаем Ваше внимание: при безналичном способе оплаты начисление плюсов на карту «Дикая рыба» не осуществляется. Правила оформления документов читайте здесь.</div>
+					</div>
+				</div>
+				<div class="layout-cart-right">
+					<div class="cart-info cart-info-inner">
+						<div class="cart-info-top-wrapper">
+							<div class="cart-info-top">
+								<div class="cart-info-title">Заказ</div>
+								<div class="cart-info-text">5 товаров стоимостью 1945 р</div>
+							</div>	
+							<div class="cart-info-middle">
+								<div class="cart-info-text-wrapper">
+									<div class="cart-info-title">Доставка и оплата</div>
+									<div class="cart-info-text">Самовывоз, бесплатно</div>
+									<div class="cart-info-text--gray">г. Казань, ул. Верхние Поля, д. 51, ТЦ Ривьера</div>
+								</div>
+								<div class="cart-info-text-wrapper">
+									<div class="cart-info-text">Оплата</div>
+									<div class="cart-info-text--gray">Оплата заказа на месте</div>
+								</div>
+							</div>	
+						</div>
+						<div class="cart-info-bottom-wrapper">
+							<div class="cart-info-text">
+								<a class="cart-info-text--red cart-info-pay-bonuses-link" href="javascript:;">Списать бонусы</a>
+								<div class="cart-info-middle-inner cart-info-text--hidden">
+									<div class="cart-info-title">Оплата бонусами</div>
+									<div class="cart-info-text">Списано 100 бонусов</div>
+								</div>
+								<div class="cart-info-pay-bonuses">
+									<a href="javascript:;" class="cart-info-pay-bonuses-close">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6.976 6L10.8 2.178c.267-.27.267-.707 0-.976-.27-.27-.71-.27-.977 0L6 5.024 2.178 1.202c-.27-.27-.707-.27-.976 0-.27.27-.27.707 0 .976L5.024 6 1.202 9.823c-.27.268-.27.707 0 .976.27.267.707.267.976 0L6 6.975 9.823 10.8c.268.267.707.267.976 0 .267-.27.267-.71 0-.977L6.975 6z"/></svg>
+									</a>
+									<div class="cart-info-input-group-item">
+										<div class="cart-info-input-group-item-wrapper">
+											<input type="text" class="cart-info-input cart-info-input--modified" placeholder="Сколько списать?">
+											<button class="cart-info-input-button cart-info-input-button--js">Применить</button>
+										</div>
+									</div>	
+									<div class="cart-info-input-group-helper">Доступно: <b>135 бонусов</b></div>
+								</div>
+							</div>
+							<div class="cart-info-bottom">
+								<div class="cart-info-summ">Итого: 1 945 р</div>
+								<a href="#" class="btn btn--red btn--middle cart-info-order-btn">оформить заказ</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-footer-push sticky-footer-push-inner"></div>
+	</section>
+	<footer class="footer footer-inner js-site-footer">
+		<div class="container-full-width footer-flex">
+			<div class="footer-copy">«Дикая Рыба» 2002-2017. Все права защищены.</div>		
+			<a href="tel:+79153498877" class="footer-phone">+7 915 349 88 77</a>
+		</div>
+	</footer>
+	<!-- мобильное меню -->
+	<div class="mobile-menu">
+		<div class="mobile-menu-wrapper">
+			<div class="mobile-menu-wrapper-scroll">
+				<div class="mobile-menu-list">
+					<div class="mobile-menu-list-head mobile-menu-list-item">
+						<a href="#" class="mobile-menu-favorite"><span class="icon-icon-favorite"></span>избранное</a>
+						<a href="#" class="mobile-menu-account"><span class="icon-icon-user"></span>кабинет</a>
+					</div>
+					<div href="#" class="mobile-menu-list-item mobile-menu-list-item-dropdown">
+						Каталог
+						<div class="mobile-menu-dropdown-list">
+							<a href="#" class="mobile-menu-dropdown-list-item">Молочная продукция</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Овощи и фруткы</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Сыры</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Хлеб</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Икра</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Рыба</a>
+						</div>
+					</div>
+					<a href="#" class="mobile-menu-list-item">Акции</a>
+					<a href="#" class="mobile-menu-list-item">Рецепты</a>
+					<a href="#" class="mobile-menu-list-item">Отзывы</a>
+					<a href="#" class="mobile-menu-list-item">Доставка</a>
+					<a href="#" class="mobile-menu-list-item">Гарантия</a>
+					<a href="#" class="mobile-menu-list-item">Контакты</a>
+				</div>
+				<a href="#" class="mobile-menu-phone">+7 915 349 88 77 <span>с 9:00 до 20:00</span></a>
+				<div class="mobile-menu-app">
+					<span>Скачивайте приложения</span>
+					<a href="#"><img src="./img/appstore.svg" alt=""></a>
+					<a href="#"><img src="./img/google-play.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-menu-overlay"></div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		ymaps.ready(function () {
+		    var myMap = new ymaps.Map('YMapsID', {
+		        center: [55.733835, 37.588227],
+		        zoom: 12,
+		        // Обратите внимание, что в API 2.1 по умолчанию карта создается с элементами управления.
+		        // Если вам не нужно их добавлять на карту, в ее параметрах передайте пустой массив в поле controls.
+		        controls: []
+		    });
+
+		    var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+		        balloonContentBody: [
+		            '<address>',
+		            '<strong>Офис Яндекса в Москве</strong>',
+		            '<br/>',
+		            'Адрес: 119021, Москва, ул. Льва Толстого, 16',
+		            '<br/>',
+		            'Подробнее: <a href="https://company.yandex.ru/">https://company.yandex.ru</a>',
+		            '</address>'
+		        ].join('')
+		    }, {
+		        preset: 'islands#redDotIcon'
+		    });
+
+		    myMap.geoObjects.add(myPlacemark);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1081 @@
+.header {
+	background: #FFFFFF;
+	box-shadow: 0 1px 10px 0 rgba(26,26,26,0.20);
+	height: 80px;
+	z-index: 200;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header-flex {
+	display: flex;
+}
+
+/* разделитель на разрешенияю от 1159px и ниже */
+.header-separator {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	left: 0;
+	height: 1px;
+	background-color: #F3F3F3;
+	z-index: 50;
+	display: none;
+}
+
+/* логотип */
+.header-logo {
+	margin-top: 32px;
+	margin-right: 25px;
+}
+
+.header-logo img {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.header-logo a {
+	display: block;
+	text-decoration: none;
+	color: #033868;
+	font-size: 0.8rem;
+	letter-spacing: -0.5;
+	line-height: 12px;
+}
+
+.header-logo-mobile {
+	display: none;
+}
+
+/* навигация */
+.header-navi {
+	font-size: 0;
+	margin-left: -30px;
+	margin-top: 34px;
+	padding-right: 40px;
+}
+
+.header-navi-item {
+	font-size: 0.8rem;
+	line-height: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: "ProximaNova-Bold";
+	color: #1A1A1A;
+	margin-left: 30px;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+}
+
+.header-navi-item:hover {
+	border-bottom: 1px solid #1A1A1A;
+}
+
+.header-navi-item--round::before {
+	content: '';
+	background-color: #CF1A3A;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	border-radius: 50%;
+}
+
+/* блок с поиском */
+.header-wrapper-search {
+	display: flex;
+	position: relative;
+}
+
+.header-search {
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 80px;
+	width: 18px;
+	background: #fff;
+	transition: width 0.3s;
+}
+
+.header-search-wrapper {
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.header-search span {
+	font-size: 1.3333rem;
+	color: #1A1A1A;
+	display: block;
+	line-height: 1;
+}
+
+.header-search .icon-icon-close {
+	position: relative;
+	z-index: 10;
+	font-size: 1rem;
+}
+
+.header-search-input {
+	z-index: 1;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 0;
+	font-size: 2.6667rem;
+	font-family: "ProximaNova-Bold";
+	padding: 0;
+}
+
+.header-search-input::-ms-clear {
+	width : 0;
+	height: 0;
+}
+
+.header-search-input::-webkit-input-placeholder {
+	color: #E6E6E6;
+	font-size: 1.3333rem;
+	line-height: 60px;
+	opacity: 1;
+	font-family: "ProximaNova-Semibold";
+}
+
+.header-search-input:-moz-placeholder {
+	color: #E6E6E6;
+	font-size: 1.3333rem;
+	line-height: 60px;
+	opacity: 1;
+	font-family: "ProximaNova-Semibold";
+}
+
+.header-search-input::-moz-placeholder {
+	color: #E6E6E6;
+	font-size: 1.3333rem;
+	line-height: 60px;
+	opacity: 1;
+	font-family: "ProximaNova-Semibold";
+}
+
+.header-search-button {
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.header-search-button .icon-icon-search {
+	font-size: 1.3333rem;
+}
+
+.header-search-button-close {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	transition: opacity .3s ease-in-out;
+}
+
+.header-search-result {
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	width: calc(100% - 40px);
+	background: #fff;
+	display: none;
+	box-shadow: 0 10px 10px 0 rgba(26,26,26,0.1);
+}
+
+.header-search-result--active {
+	display: block!important;
+}
+
+.header-search-result-item {
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.header-search-result-item-image {
+	width: 60px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.header-search-result-item-image img {
+	max-width: 60px;
+}
+
+.header-search-result-item-title {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Regular";
+	max-width: 250px;
+}
+
+.header-search-result-item:hover .header-search-result-item-title {
+	text-decoration: underline;
+}
+
+.header-search-result-item-cost {
+	margin-left: auto;
+	font-size: 1rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Bold";
+	color: #1A1A1A;
+}
+
+.header-search-result-bottom {
+	border-top: 1px solid #F3F3F3;
+	display: block;
+	text-decoration: none;
+	font-size: 0.8rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Semibold";
+	color: #1A1A1A;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
+
+.header-search-helper {
+	opacity: 0;
+	visibility: hidden;
+	font-size: 0;
+	transition: .2s ease-in-out;
+}
+
+/* полсле того как нажали на кнопку поиск */
+.header-search--active {
+	position: absolute;
+	width: calc(100% - 180px);
+	height: 80px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+.header-search--active .header-search-input {
+	width: calc(100% - 38px);
+	border-bottom: 1px solid #C7C7C7;
+	margin-left: 20px;
+	padding-right: 20px;
+	margin-top: -10px;
+}
+
+
+.header-search--active .header-search-button-close {
+	visibility: visible;
+	opacity: 1;
+}
+
+.header-search--active .header-search-helper {
+	visibility: visible;
+	opacity: 1;
+	position: absolute;
+	right: 30px;
+	top: 10px;
+	z-index: 10;
+	color: #808080;
+	font-size: 1rem;
+}
+
+.header-search--active .header-search-helper a {
+	color: #808080;
+}
+
+/* блок с номером телефона */
+.header-phone {
+	color: #1A1A1A;
+	text-align: right;
+	flex-direction: column;
+	font-size: 1.3333rem;
+	padding-right: 20px;
+}
+
+.header-phone:hover {
+	background: none!important;
+}
+
+.header-phone::before {
+	display: none!important;
+}
+
+.header-phone span {
+	display: block;
+	font-size: 0.8rem;
+	line-height: 12px;
+}
+
+/* блок авторизации */
+.header-auth {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header-auth .icon-icon-user {
+	font-size: 1.4667rem;
+}
+
+/* блок избранное */
+.header-favorite {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header-favorite .icon-icon-favorite {
+	font-size: 1.1333rem;
+}
+
+.header-favorite-wrapper {
+	position: relative;
+	display: flex;
+}
+
+.header-favorite-in {
+	position: absolute;
+	top: -16px;
+	left: -10px;
+	background-color: #CF1A3A;
+	color: #fff;
+	font-size: 0.8rem;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	padding: 3px 0;
+	font-family: "ProximaNova-Bold";
+}
+
+.header-favorite .header-dropdown-wrapper {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.header-favorite .header-dropdown-title {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* блок корзина */
+.header-shopping-cart {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.header-shopping-cart-summ {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #CF1A3A;
+	font-family: "ProximaNova-Bold";
+	margin-left: 10px;
+}
+
+.header-shopping-cart .icon-icon-shopping-cart {
+	font-size: 1.2667rem;
+	color: #000;
+}
+
+.header-shopping-cart-wrapper {
+	position: relative;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	text-decoration: none;
+}
+
+.header-shopping-cart-in {
+	position: absolute;
+	top: 14px;
+	left: -5px;
+	background-color: #CF1A3A;
+	color: #fff;
+	font-size: 0.8rem;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	padding: 3px 0;
+	font-family: "ProximaNova-Bold";
+}
+
+/* блок с информацией справа */
+.header-info {
+	margin-left: auto;
+	height: 80px;
+	display: table;
+}
+
+.header-info-item {
+	display: table-cell;
+	height: 100%;
+	background: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+	color: #1A1A1A;
+	position: relative;
+	cursor: pointer;
+}
+
+.header-info-item:hover {
+	background-color: #F3F3F3;
+}
+
+.header-info-item::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 1px;
+	height: 30px;
+	background-color: #F0F0F0;
+	margin-top: -15px;
+}
+
+/* выпадающее меню в header */
+.header-dropdown {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #fff;
+	box-shadow: 0 10px 20px -5px rgba(26, 26, 26, 0.2);
+	font-size: 1rem;
+	line-height: 18px;
+	visibility: hidden;
+	cursor: auto;
+}
+
+.header-info-item:hover .header-dropdown {
+	visibility: visible;
+}
+
+.header-dropdown-title {
+	font-size: 1.3333rem;
+	line-height: 12px;
+	font-family: "ProximaNova-Bold";
+	margin-bottom: 25px;
+}
+
+.header-dropdown-bottom {
+	display: block;
+	font-size: 0.8rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Semibold";
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #F3F3F3;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+.header-dropdown-wrapper {
+	padding: 10px 25px 20px 25px;
+}
+
+/* выпадающее меню для авторизации */
+.header-dropdown-auth {
+	width: 240px;
+}
+
+.header-dropdown-auth .btn {
+	margin-bottom: 14px;
+	transition: none;
+}
+
+.header-auth .header-dropdown-auth-registered {
+	display: none;
+}
+
+.header-auth .header-dropdown-auth-registered .header-dropdown-wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* не залогинен пользователь */
+.header-auth-user .icon-icon-user {
+	font-size: 1.3333rem;
+}
+
+/* когда пользователь авторизировался */
+.header-auth-user {
+	width: 35px;
+	height: 35px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 50%;
+	overflow: hidden;
+	display: none;
+}
+
+.header-auth-active .icon-icon-user {
+	display: none;
+}
+
+.header-auth-active .header-auth-user {
+	display: block;
+}
+
+.header-auth-active .header-dropdown-auth-unregistered {
+	display: none!important;
+}
+
+.header-auth-active .header-dropdown-auth-registered {
+	display: block;
+}
+
+.header-dropdown-auth-registered-info-name {
+	font-size: 1.3333rem;
+	line-height: 24px;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 7px;
+}
+
+.header-dropdown-auth-registered-info {
+	border-bottom: 1px solid #F3F3F3;
+	padding: 15px 20px 10px 20px;
+}
+
+.header-dropdown-auth-registered-info-status {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #FAC917;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.header-dropdown-auth-registered-info-status svg, .header-dropdown-auth-registered-info-status svg g, .header-dropdown-auth-registered-info-status svg path {
+	fill: #FAC917;
+}
+
+.header-dropdown-auth-registered-info-status svg {
+	max-height: 15px;
+	margin-right: 5px;
+}
+
+.header-dropdown-auth-registered-info-status span {
+	display: flex;
+}
+
+.header-dropdown-auth-registered-info-status img {
+	margin-right: 8px;
+	display: inline-block;
+}
+
+.header-dropdown-auth-registered-info-bonus {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #808080;
+}
+
+.header-dropdown-auth-registered-navi {
+	padding: 10px 20px 15px 20px;
+}
+
+.header-dropdown-auth-registered-navi ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-dropdown-auth-registered-navi li {
+	margin-bottom: 10px;
+}
+
+.header-dropdown-auth-registered-navi li:last-child {
+	margin-bottom: 0;
+}
+
+.header-dropdown-auth-registered-navi-item {
+	text-decoration: none;
+	color: #1A1A1A;
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.header-dropdown-auth-registered-bottom {
+	margin: 0 20px;
+	padding: 10px 0;
+	border-top: 1px solid #F3F3F3;
+}
+
+.header-dropdown-auth-registered-bottom .header-dropdown-auth-registered-bottom-link {
+	display: block;
+	text-decoration: none;
+	color: #1A1A1A;
+}
+
+.header-dropdown-auth-registered-bottom img {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* выпадающее меню для корзины */
+.header-dropdown-shopping-cart {
+	width: 510px;
+}
+
+.header-dropdown-shopping-cart .header-dropdown-title {
+	padding-top: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 15px;
+}
+
+/* гамбургер */
+.header-hamburger {
+	display: none;
+	text-decoration: none;
+}
+
+.header-hamburger .hamburger-box {
+	width: 18px;
+	height: 14px;
+}
+
+.hamburger--spin .hamburger-inner {
+	width: 18px;
+	height: 2px;
+}
+
+.hamburger--spin .hamburger-inner::before {
+	width: 18px;
+	height: 2px;
+	top: -5px;
+}
+
+.hamburger--spin .hamburger-inner::after {
+	width: 18px;
+	height: 2px;
+	bottom: -5px;
+}
+
+/* header не фиксированный на странице корзины */
+.header-inner {
+	position: relative;
+	box-shadow: none;
+	border-bottom: 1px solid #E6E6E6;
+	height: 80px!important;
+}
+
+.header-inner .header-info {
+	height: auto;
+	background: none;
+	display: block;
+}
+
+.header-inner .header-logo {
+	margin: 0;
+}
+
+.header-inner .header-logo a {
+	display: flex;
+	align-items: center;
+}
+
+.header-inner .header-logo span {
+	font-size: 1rem;
+	margin-left: 10px;
+}
+
+.header-inner .header-logo img {
+	margin-bottom: 0;
+}
+
+.header-inner .header-flex {
+	height: 100%;
+	align-items: center;
+}
+
+/* -------------- медиa запросы для header -------------- */
+@media screen and (max-width: 1439px) {
+	/* логотип */
+	.header-logo {
+		margin-right: 0;
+	}
+
+	.header-logo span {
+		white-space: nowrap;
+	}
+
+	/* навигация */
+	.header-navi {
+		margin-left: 0;
+	}
+
+	.header-navi-item {
+		margin-left: 12px;
+	}
+
+	/* поиск */
+	.header-search--active {
+		width: calc(100% - 165px);
+	}
+
+	.header-search-result {
+		top: 60px;
+	}
+
+	.header-phone {
+		padding-right: 12px;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.header {
+		height: 90px;
+	}
+
+	.header-flex {
+		height: 90px;
+	}
+
+	/* логотип */
+	.header-logo {
+		margin: 0;
+		position: absolute;
+		left: 0;
+		top: 7px;
+	}
+
+	.header-logo img {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 0;
+	}
+
+	.header-logo span {
+		display: inline-block;
+		vertical-align: bottom;
+	}
+
+	/* навигация */
+	.header-navi {
+		margin-left: -12px;
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	/* номер телефона в шапке */
+	.header-phone {
+		position: absolute;
+		right: 40px;
+		top: 7px;
+		height: auto;
+		z-index: 10;
+		font-size: 1rem;
+	}
+
+	.header-phone br {
+		display: none;
+	}
+
+	.header-phone span {
+		display: inline-block;
+		font-size: 0.6667rem;
+		color: #484848;
+		margin-left: 25px;
+	}
+
+	/* поиск */
+	.header-search {
+		height: 59px;
+		margin-top: 31px;
+	}
+
+	.header-search-helper {
+		display: none;
+	}
+
+	.header-search--active {
+		width: 100%;
+	}
+
+	/* блок с информацией справа */
+	.header-info {
+		height: 60px;
+		margin-top: 30px;
+	}
+
+	/* разделитель на разрешенияю от 1159px и ниже */
+	.header-separator {
+		display: block;
+	}
+
+	/* header не фиксированный на странице корзины */
+	.header-inner .header-logo {
+		position: relative;
+		left: auto;
+		top: auto;
+		margin: 0;
+	}
+
+	.header-inner .header-flex {
+		align-items: center;
+	}
+
+	.header-inner .header-info {
+		height: auto;
+		margin-top: 0;
+	}
+
+	.header-inner .header-phone {
+		position: relative;
+		right: auto;
+		top: auto;
+		padding-right: 0;
+		font-size: 1.3333rem;
+	}
+
+	.header-inner .header-phone span {
+		display: block;
+		font-size: 0.8rem;
+		margin-left: 0;
+	}
+
+	.header-shopping-cart-in {
+		top: 4px;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	/* номер телефона в шапке */
+	.header-phone {
+		right: 20px;
+	}
+
+	/* навигация */
+	.header-navi-item {
+		font-size: 0.7333rem;
+	}
+
+	/* блок авторизации */
+	.header-auth {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		height: 50px;
+	}
+
+	.header-flex {
+		height: 50px;
+		align-items: center;
+	}
+
+	/* логотип */
+	.header-logo {
+		display: none;
+	}
+
+	.header-logo-mobile {
+		display: block;
+		margin-left: auto;
+	}
+
+	/* номер телефона в шапке */
+	.header-phone {
+		display: none;
+	}
+
+	/* навигация в шапке */
+	.header-navi {
+		display: none;
+	}
+
+	/* разделитель первого и второго этажа в шапке */
+	.header-separator {
+		display: none;
+	}
+
+	/* поиск */
+	.header-search {
+		position: relative;
+		margin-top: 0;
+		height: 50px;
+		transition: none;
+	}
+
+	.header-search-wrapper {
+		height: 50px;
+		width: 100%;
+	}
+
+	.header-wrapper-search {
+		margin-left: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 40px;
+	}
+
+	.header-search-button-close {
+		top: 0;
+		transition: none;
+	}
+
+	.header-search-input::-webkit-input-placeholder {
+		font-size: 1rem;
+		line-height: 20px;
+		font-family: "ProximaNova-Semibold";
+	}
+
+	.header-search-input:-moz-placeholder {
+		font-size: 1rem;
+		line-height: 20px;
+		font-family: "ProximaNova-Semibold";
+	}
+
+	.header-search-input::-moz-placeholder {
+		font-size: 1rem;
+		line-height: 20px;
+		font-family: "ProximaNova-Semibold";
+	}
+
+	.header-search-input {
+		font-size: 1rem;
+		line-height: 15px;
+		font-family: "ProximaNova-Semibold";
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.header-search--active .header-search-input {
+		border-bottom: none;
+		padding-right: 35px;
+		margin-top: 0;
+	}
+
+	.header-search--active .header-search-button-close {
+		padding: 18px 16px 16px 16px;
+	}
+
+	.header-wrapper-search--active {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.header-wrapper-search--active .header-search-button {
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+
+	.header-search-result {
+		top: 50px;
+		width: 100%;
+		left: 0;
+	}
+
+	.header-search-result-item {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.header-search-result-item-image {
+		margin-right: 10px;
+	}
+
+	.header-search-result-item-cost {
+		white-space: nowrap;
+	}
+
+	/* блок информации справа */
+	.header-info {
+		margin-top: 0;
+		height: 50px;
+		margin-left: 0;
+	}
+
+	/* блок корзина */
+	.header-shopping-cart {
+		padding-right: 0;
+	}
+
+	.header-shopping-cart-summ {
+		display: none;
+	}
+
+	.header-shopping-cart-in {
+		top: 2px;
+	}
+
+	/* блок авторизации */
+	.header-auth {
+		display: none;
+	}
+
+
+	/* избранное */
+	.header-favorite {
+		display: none;
+	}
+
+	.header-info-item:hover .header-dropdown {
+		display: none;
+	}
+
+	.header-info-item:hover {
+		background: #fff;
+	}
+
+	/* dropdow по ховеру в шапке */
+	.header-dropdown {
+		display: none;
+	}
+
+	/* гамбургер */
+	.header-hamburger {
+		display: flex;
+		margin-left: -20px;
+		padding: 17px 10px;
+	}
+
+	.header-hamburger .icon-icon-fish {
+		display: none;
+	}
+
+	/* header не фиксированный на странице корзины */
+	.header-inner {
+		height: 50px!important;
+	}
+
+	.header-inner .header-info {
+		margin-left: auto;
+	}
+
+	.header-inner .header-phone {
+		display: block;
+		font-size: 1rem;
+	}
+
+	.header-inner .header-phone span {
+		display: none;
+	}
+}

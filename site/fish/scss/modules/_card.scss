@@ -1,0 +1,299 @@
+.card-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+	position: relative;
+	max-width: 1110px;
+}
+
+.card {
+	width: 210px;
+	height: 227px;
+	background-color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	transition: .2s ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.10);
+	transform: translateY(-10px);
+}
+
+.card-image {
+	height: 118px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card-text {
+	padding: 10px 15px;
+}
+
+.card-text-title {
+	font-size: 1rem;
+	line-height: 17px;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 10px;
+	color: #1A1A1A;
+	height: 34px;
+	overflow: hidden;
+}
+
+.card-text-info {
+	display: flex;
+}
+
+.card-text-info .catalog-cards-ratio {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.card-text-info .catalog-cards-comment {
+	margin-bottom: 0;
+}
+
+.card-bottom {
+	border-top: 1px solid #F3F3F3;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 28px;
+	align-items: center;
+}
+
+.card-bottom-text {
+	font-size: 0.8rem;
+	line-height: 20px;
+	color: #808080;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.card-bottom .icon-icon-clock {
+	vertical-align: middle;
+	margin-right: 4px;
+	color: #BFBFBF;
+	font-size: 0.9333rem;
+}
+
+.card-bottom .icon-icon-param {
+	vertical-align: middle;
+	margin-right: 4px;
+	color: #BFBFBF;
+	font-size: 0.7333rem;
+}
+
+.card-wrapper .owl-stage-outer {
+	padding: 20px 15px;
+	margin: -20px -15px 0 -15px;
+}
+
+/* карточка в горизонтальном исполнении */
+.card-horizontal {
+	width: 100%;
+	height: 155px;
+	margin-bottom: 20px;
+}
+
+.card-horizontal .card-image img {
+	display: none;
+	border: none;
+	width: 0;
+	height: 0;
+}
+
+.card-horizontal:hover {
+	box-shadow: none;
+	transform: none;
+}
+
+.card-horizontal .card-image {
+	width: 220px;
+	height: 155px;
+	background-size: cover;
+	float: left;
+}
+
+.card-horizontal .catalog-cards-ratio {
+	line-height: 1;
+}
+
+.card-horizontal .catalog-cards-ratio .icon-icon-star {
+	color: #A4A4A4;
+}
+
+.card-horizontal .catalog-cards-ratio .icon-icon-star--active {
+	color: #FAC917;
+}
+
+.card-horizontal .card-text {
+	padding: 20px 20px 15px 20px;
+}
+
+.card-horizontal .card-text-wrapper {
+	border: 1px solid #E6E6E6;
+	border-left: none;
+	height: 100%;
+	overflow: hidden;
+}
+
+.card-horizontal .card-text-title {
+	font-size: 1.3333rem;
+	line-height: 25px;
+	max-height: 50px;
+	height: auto;
+	font-family: "Lora-Regular";
+	margin-bottom: 7px;
+}
+
+.card-horizontal .card-bottom {
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: none;
+	justify-content: flex-start;
+}
+
+.card-horizontal .card-bottom-left {
+	margin-right: 30px;
+}
+
+.card-horizontal .card-text-info .icon-icon-fire {
+	color: #CF1A3A;
+	font-size: 1rem;
+	margin-left: 8px;
+}
+
+.card-horizontal .card-text-info {
+	align-items: flex-end;
+}
+
+.card-horizontal .catalog-cards-comment {
+	margin-bottom: 1px;
+}
+
+.card-horizontal .recipe-head-item {
+	margin-left: 0;
+	color: #1A1A1A;
+	text-transform: none;
+}
+
+.card-horizontal .recipe-head-item > span {
+	color: #AEAEAE;
+}
+
+.card-horizontal .recipe-head-item:last-child {
+	margin-right: 0;
+}
+
+.card-horizontal .recipe-head-item .icon-icon-clock {
+	font-size: 1.0667rem;
+}
+
+.card-horizontal .recipe-head-item .icon-icon-tableware {
+	font-size: 1rem;
+}
+
+.card-horizontal .recipe-head-item .icon-icon-param {
+	font-size: 0.8rem;
+}
+
+.card-horizontal:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 959px) {
+	.card {
+		width: 230px;
+	}
+
+	.card-wrapper {
+		margin-bottom: 50px;
+	}
+
+	.card-horizontal {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.card {
+		height: 232px;
+		width: 210px;
+	}
+	.card:hover {
+		box-shadow: none;
+		transform: none;
+	}
+
+	.card-wrapper {
+		margin-bottom: 60px;
+		padding-left: 10px;
+		margin-top: 20px;
+	}
+
+	.card-wrapper .owl-stage-outer {
+		margin: 0;
+		padding: 0;
+	}
+
+	.card-wrapper .owl-nav {
+		top: -60px;
+		right: 10px;
+	}
+
+	.card-horizontal {
+		height: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		width: calc(100% - 40px);
+	}
+
+	.card-horizontal:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.card-horizontal .card-image img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		opacity: 0;
+	}
+
+	.card-horizontal .card-image {
+		height: 100%;
+		width: 100%;
+		float: none;
+	}
+
+	.card-horizontal .card-text {
+		padding: 0;
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 10px;
+	}
+
+	.card-horizontal .card-text-title {
+		font-size: 1.3333rem;
+		line-height: 25px;
+		margin-bottom: 0;
+	}
+
+	.card-horizontal .card-text-wrapper {
+		border: none;
+	}
+
+	.card-horizontal .card-bottom {
+		display: none;
+	}	
+
+	.card-horizontal .card-text-info {
+		margin-bottom: 5px;
+	}
+}

@@ -1,0 +1,137 @@
+.tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 50;
+}
+
+.tabs label {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: block;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 10;
+  font-family: "ProximaNova-Bold";
+  text-transform: uppercase;
+}
+
+.tabs .tab {
+  -webkit-box-ordinal-group: 100;
+  -webkit-order: 99;
+  -ms-flex-order: 99;
+  order: 99;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 30px 0 0 0;
+}
+
+.tabs input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.tabs input[type="radio"]:checked + label {
+  border: 1px solid #E6E6E6;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.tabs-border-full-width {
+  position: relative;
+}
+
+.tabs-border-full-width::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #E6E6E6;
+  display: block;
+  left: 0;
+  top: 42px;
+  position: absolute;
+}
+
+@media screen and (max-width: 1439px) {
+  .tabs .tab {
+    padding-left: 20px;
+  }
+}
+
+ @media screen and (max-width: 767px) {
+  .tabs {
+    border-top: 1px solid #E6E6E6;
+  }
+
+  .tabs .tab {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .tabs input[type="radio"]:checked + label + .tab {
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  .tabs input[type="radio"]:checked + label {
+    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  .tabs .tab,  .tabs label {
+    -webkit-box-ordinal-group: NaN;
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    border-bottom: 1px solid #E6E6E6!important;
+    position: relative;
+  }
+
+  .tabs label::before {
+    content: '\e805';
+    font-family: "fontello";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -8px;
+    color: #808080;
+    font-size: 0.8667rem;
+    transform: rotate(90deg);
+    transition: .2s ease-in-out;
+  }
+
+  .tabs input[type="radio"]:checked + label::before {
+    transform: rotate(-90deg);
+  }
+
+  .tabs input[type="radio"]:checked + label {
+    border-bottom: none!important;
+  }
+
+  .tabs-border-full-width::before {
+    display: none;
+  }
+}

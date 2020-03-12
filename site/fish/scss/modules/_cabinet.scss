@@ -1,0 +1,2076 @@
+.cabinet {
+	background-color: #fff;
+	display: flex;
+}
+
+
+/* левая колонка */
+.cabinet-aside {
+	width: 230px;
+	height: 100%;
+	border-right: 1px solid #E6E6E6;
+}
+
+.cabinet-aside-head {
+	border-bottom: 1px solid #E6E6E6;
+	padding: 18px 30px;
+	position: relative;
+}
+
+.cabinet-aside-head-link-edit {
+	position: absolute;
+	right: 10px;
+	top: 25px;
+	display: none;
+}
+
+.cabinet-aside-head-link-edit::before {
+	content: '\e820';
+	font-family: "fontello";
+	width: 32px;
+	height: 32px;
+	border: 1px solid #AEAEAE;
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -8px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1rem;
+	color: #808080;
+}
+
+.cabinet-aside-head:hover .cabinet-aside-head-link-edit {
+	display: block;
+}
+
+.cabinet-aside-head-group-button {
+	display: none;
+	width: 154px;
+	margin-left: 20px;
+}
+
+.cabinet-aside-head-group-button button {
+	width: 154px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.cabinet-aside-head-group-button button:last-child {
+	margin-bottom: 0;
+}
+
+.cabinet-aside-head-image {
+	width: 110px;
+	height: 110px;
+	overflow: hidden;
+	border-radius: 50%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 5px solid #fff;
+	margin-top: -35px;
+	margin-bottom: 10px;
+}
+
+.cabinet-aside-head-image.dz-drag-hover::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: block;
+}
+
+.cabinet-aside-head-image a {
+	display: none;
+}
+
+.cabinet-aside-head-name {
+	font-size: 1.3333rem;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 5px;
+}
+
+.cabinet-aside-head-status {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #CF1A3A;
+	font-family: "ProximaNova-Semibold";
+	margin-bottom: 7px;
+	color: #CF1A3A;
+	display: flex;
+	align-items: center;
+}
+
+.cabinet-aside-head-status svg, .cabinet-aside-head-status svg g, .cabinet-aside-head-status svg path {
+	fill: #CF1A3A;
+}
+
+.cabinet-aside-head-status svg {
+	max-height: 20px;
+}
+
+.cabinet-aside-head-status span {
+	display: flex;
+}
+
+.cabinet-aside-head-bonus {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+}
+
+.cabinet-aside-head-bonus-card {
+	display: flex;
+	font-size: 0.8rem;
+	line-height: 20px;
+	color: #808080;
+	font-family: "ProximaNova-Semibold";
+	margin-top: 5px;
+}
+
+.cabinet-aside-head-bonus-card img {
+	margin-right: 5px;
+}
+
+.cabinet-aside-navi-item {
+	display: block;
+	padding: 12px 30px;
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-aside-navi-item-last {
+	border-top: 1px solid #E6E6E6;
+	color: #808080;
+	text-decoration: underline;
+}
+
+.cabinet-aside-navi-item-last span {
+	margin-right: 13px;
+	font-size: 1rem;
+	color: #1A1A1A;
+}
+
+.cabinet-aside-navi-item--active {
+	background-color: #FCFAFA;
+	color: #AEAEAE;
+}
+
+.cabinet-aside-head-status .icon-icon-beginner {
+	font-size: 0.7333rem;
+}
+
+.cabinet-aside-head-status span {
+	margin-right: 5px;
+}
+
+
+/* блок со списком заказов */
+.cabinet-center {
+	width: calc(100% - 230px);
+}
+
+.cabinet-orders {
+	padding: 40px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.cabinet-orders-title {
+	font-size: 1.6667rem;
+	margin-bottom: 20px;
+}
+
+.cabinet-orders p {
+	margin-bottom: 0;
+}
+
+.cabinet-orders p a {
+	color: #1A1A1A;
+}
+
+/* информационный блок бонус */
+.cabinet-bonus {
+	padding: 30px 40px;
+	width: 100%;
+}
+
+.cabinet-bonus-text {
+	max-width: 460px;
+	width: 100%;
+}
+
+.cabinet-bonus-title {
+	color: #033868;
+	font-size: 1.3333rem;
+	line-height: 25px;
+	text-transform: uppercase;
+	font-family: "ProximaNova-Bold";
+	margin-bottom: 6px;
+}
+
+.cabinet-bonus p {
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.cabinet-bonus p:last-child {
+	margin-bottom: 0;
+}
+
+.cabinet-bonus p a {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus {
+	display: flex;
+	align-items: center;
+}
+
+.cabinet-bonus-activator-input {
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+	font-size: 1rem;
+	line-height: 18px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Semibold";
+	padding: 13px 12px 12px 12px;
+	width: 240px;
+}
+
+.cabinet-bonus-activator-text {
+	font-size: 1rem;
+	color: #808080;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.cabinet-bonus-activator-text a {
+	color: #000;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.cabinet-bonus-activator-text a:hover {
+	text-decoration: none;
+}
+
+
+.cabinet-bonus-activator {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.cabinet-bonus-activator-label {
+	width: 100%;
+	font-size: 1rem;
+	line-height: 18px;
+	color: #1A1A1A;
+	margin-bottom: 5px;
+}
+
+.cabinet-bonus-activator-wrapper {
+	margin-right: 40px;
+}
+
+/* -------------- если пользователь посещает кабинет в первый раз -------------- */
+.cabinet-first-visit .cabinet-bonus-activator-card {
+	display: none;
+}
+
+.cabinet-first-visit .cabinet-orders-list {
+	display: none;
+}
+
+.cabinet-first-visit .cabinet-aside-head-bonus-card {
+	display: none;
+}
+
+/* -------------- если пользователь уже посещал кабинет и сделал покупку в первый раз -------------- */
+.cabinet-second-visit .cabinet-bonus-activator-card {
+	display: flex;
+}
+
+.cabinet-second-visit .cabinet-bonus-first-card {
+	display: none;
+}
+
+.cabinet-second-visit .cabinet-orders-helper {
+	display: none;
+}
+
+/* селект с меню в блоке aside на мобилах */
+.cabinet-aside-navi-mobile {
+	display: none;
+	position: relative;
+}
+
+.cabinet-aside-navi-mobile-item {
+	display: block;
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Semibold";
+	padding: 14px 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+.cabinet-aside-navi-mobile-item-last span {
+	margin-right: 15px;
+	color: #1A1A1A;
+}
+
+.cabinet-aside-navi-mobile-item-last {
+	color: #808080;
+	border-top: 1px solid #E6E6E6;
+}
+
+.cabinet-aside-navi-mobile-item-current::before {
+	content: '\e805';
+	font-family: "fontello";
+	transform: rotate(90deg);
+	transition: .2s ease-in-out;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -10px;
+	font-size: 0.6667rem;
+}
+
+.cabinet-aside-navi-mobile-item-current--active::before {
+	transform: rotate(-90deg);
+}
+
+.cabinet-aside-navi-mobile-dropdown {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 10;
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.10);
+	transform: scale(0.75) translateY(-20px);
+	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+}
+
+.cabinet-aside-navi-mobile-dropdown--active {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1) translateY(0);
+}
+
+
+/* -------------- если у пользователя есть заказ в обработке -------------- */
+.cabinet-order-proces .cabinet-bonus {
+	display: none;
+}
+
+.cabinet-order-proces .cabinet-orders-helper {
+	display: none;
+}
+
+.cabinet-order-proces .cabinet-orders-list {
+	display: none;
+}
+
+.cabinet-order-proces .cabinet-orders-proces-table {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.cabinet-order-proces .cabinet-orders {
+	border-bottom: none;
+}
+
+.cabinet-orders-proces-table {
+	display: none;
+}
+
+.cabinet-orders-archive {
+	display: none;
+	margin-top: 40px;
+}
+
+.cabinet-order-proces .cabinet-orders-archive {
+	display: block;
+}
+
+.cabinet-orders-archive-title {
+	font-size: 1.3333rem;
+	color: #1A1A1A;
+	margin-bottom: 10px;
+}
+
+/* таблица для ордера который в процессе */
+.cabinet-orders-proces-table-wrapper {
+	display: flex;
+	width: 100%;
+	border: 1px solid #E6E6E6;
+}
+
+.cabinet-orders-proces-table-left {
+	background-color: #FCFAFA;
+	width: 190px;
+	padding: 20px;
+}
+
+.cabinet-orders-proces-table-right {
+	width: calc(100% - 190px);
+	padding: 20px;
+}
+
+.cabinet-orders-proces-table-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cabinet-orders-proces-table-info-top {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-orders-proces-table-info-top a {
+	color: #1A1A1A;
+}
+
+.cabinet-orders-proces-table-info-bottom {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+}
+
+.cabinet-orders-proces-table-list {
+	width: 100%;
+}
+
+.cabinet-orders-proces-table-list tr td:first-child {
+	color: #808080;
+	width: 210px;
+}
+
+.cabinet-orders-proces-table-list td {
+	padding: 0;
+	font-size: 1rem;
+	line-height: 25px;
+	vertical-align: top;
+}
+
+.cabinet-orders-proces-table-list td a {
+	color: #1A1A1A;
+}
+
+.cabinet-orders-proces-table-list tr:last-child td {
+	padding-bottom: 0;
+}
+
+/* кабинет в три колонки */
+.cabinet-three-cols .cabinet-center {
+	width: calc(100% - 460px);
+}
+
+.cabinet-three-cols .cabinet-right {
+	width: 230px;
+	border-left: 1px solid #E6E6E6;
+}
+
+
+/* красная плашка с информацией о количестве начисленных бонусов */
+.cabinet-bonus-informer {
+	background-color: #CF1A3A;
+	padding: 35px 20px 20px 20px;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.cabinet-bonus-informer-visible-sm {
+	display: none;
+}
+
+.cabinet-bonus-informer-big {
+	font-size: 2.6667rem;
+	line-height: 30px;
+	font-family: "ProximaNova-Bold";
+	display: block;
+}
+
+.cabinet-bonus-informer-medium {
+	font-size: 1.3333rem;
+	line-height: 30px;
+	font-family: "ProximaNova-Semibold";
+}
+
+/* менеджеры в кабинете */
+.cabinet-manager {
+	padding: 20px;
+}
+
+.cabinet-manager-visible-sm {
+	display: none;
+}
+
+.cabinet-manager-title {
+	font-size: 0.8rem;
+	line-height: 20px;
+	color: #808080;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.cabinet-manager-image {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cabinet-manager-text span, .cabinet-manager-text a {
+	display: block;
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+}
+
+.cabinet-manager-wrapper {
+	margin-bottom: 25px;
+}
+
+/* детализация заказа */
+.cabinet-oder-detail {
+	padding: 40px 40px 20px 40px;
+}
+
+.cabinet-order-detail-link-back {
+	font-size: 1.6667rem;
+	color: #1A1A1A;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.cabinet-order-detail-link-back .icon-icon-corner {
+	font-size: 0.8667rem;
+	transform: rotate(180deg);
+	position: relative;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.cabinet-order-detail-link-back .cabinet-order-detail-link-back-small {
+	margin-left: 10px;
+}
+
+.cabinet-order-detail-title {
+	font-size: 1.3333rem;
+	margin-bottom: 15px;
+}
+
+.cabinet-order-detail-title .btn {
+	padding-bottom: 5px;
+	padding-top: 7px;
+	margin-left: 20px;
+}
+
+.cabinet-order-detail-table {
+	border-collapse: collapse;
+	font-size: 1rem;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+.cabinet-order-detail-table td {
+	padding: 0;
+	padding-bottom: 15px;
+	vertical-align: top;
+}
+
+.cabinet-order-detail-table tr td:first-child {
+	color: #808080;
+	width: 200px;
+}
+
+.cabinet-order-detail-table tr:last-child td {
+	padding-bottom: 0;
+}
+
+.cabinet-order-detail-link {
+	color: #1A1A1A;
+	font-size: 1rem;
+	line-height: 18px;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.cabinet-order-detail-table--modified {
+	margin-bottom: 40px;
+}
+
+/* список заказов */
+.cabinet-cart-list .cart-list-item {
+	padding: 10px 20px 10px 0;
+	align-items: center;
+}
+
+.cabinet-cart-list .cart-list-item:hover {
+	box-shadow: none;
+}
+
+.cabinet-cart-list .cart-list-item-image {
+	width: 40px;
+	margin-right: 20px;
+}
+
+.cabinet-cart-list .cart-list-item-image img {
+	max-width: 40px;
+}
+
+.cabinet-cart-list .cart-list-item-teaser {
+	max-width: 260px;
+	width: 100%;
+	margin-right: 0;
+	padding-right: 10px;
+}
+
+.cabinet-cart-list .cart-list-item-teaser-title {
+	margin-bottom: 0;
+}
+
+.cabinet-cart-list .cart-list-item-qnt {
+	width: 100px;
+	color: #AEAEAE;
+}
+
+.cabinet-cart-list .cart-list-item-qnt .shopping-cart-item-qnt {
+	justify-content: flex-start;
+}
+
+.cabinet-cart-list .cart-list-item-set .cart-list-item-teaser-title {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #1A1A1A;
+	font-family: "ProximaNova-Bold";
+}
+
+.cabinet-cart-list .shopping-cart-item-qnt-in {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.cabinet-cart-list .cart-list-item-set .cart-list-item-teaser {
+	max-width: 320px;
+	width: 100%
+}
+
+.cabinet-cart-list .cart-list-item-cost {
+	width: 130px;
+}
+
+.cabinet-cart-list .cart-list-item-cost-wrapper {
+	margin-bottom: 0;
+}
+
+.cabinet-cart-list .cart-list-item-set-prod {
+	width: 120px;
+}
+
+.cabinet-cart-list .cabinet-cart-list-summ {
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.cabinet-cart-list .cabinet-cart-list-summ-item {
+	font-size: 1rem;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.cabinet-cart-list .cabinet-cart-list-summ-item span {
+	width: 90px;
+	display: inline-block;
+	text-align: right;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-cart-list .cabinet-cart-list-summ-item b {
+	font-weight: normal;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-cart-list .cabinet-cart-list-summ-bonus .cabinet-cart-list-summ-item {
+	margin-bottom: 0;
+	color: #CF1A3A;
+}
+
+.cabinet-cart-list .cabinet-cart-list-summ-bonus {
+	border-bottom: none;
+}
+
+/* -------------- страница персональных данных -------------- */
+.cabinet-personal-info-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cabinet-personal-info {
+	padding: 30px 40px;
+}
+
+.cabinet-personal-info-title {
+	font-size: 1.6667rem;
+	margin-bottom: 30px;
+}
+
+.cabinet-personal-info-form {
+	width: 280px;
+}
+
+.cabinet-personal-info-form-label {
+	font-size: 1rem;
+	line-height: 18px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.cabinet-personal-info-form-input {
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+	width: 100%;
+	padding: 12px;
+	font-size: 1rem;
+	font-family: "ProximaNova-Semibold";
+	transition: .2s ease-in-out;
+}
+
+.cabinet-personal-info-form-input:focus {
+	border-color: #000;
+}
+
+.cabinet-personal-info-form-input--error {
+	border-color: #CF1A3A;
+}
+
+.cabinet-personal-info-form-item {
+	margin-bottom: 15px;
+}
+
+.cabinet-personal-info-form-link {
+	color: #808080;
+}
+
+.cabinet-personal-info-form-input-group {
+	margin-bottom: 10px;
+}
+
+.cabinet-personal-info-form-hidden-inner--active .cabinet-personal-info-form-input-group {
+	margin-top: 10px;
+}
+
+.cabinet-personal-info-form-hidden {
+	display: none;
+}
+
+.cabinet-personal-info-form-hidden--active {
+	display: block;
+}
+
+.cabinet-personal-info-form-hidden-inner {
+	display: none;
+}
+
+.cabinet-personal-info-form-hidden-inner--active {
+	display: block;
+}
+
+.cabinet-personal-info-form-link-js--active {
+	display: none!important;
+}
+
+.cabinet-personal-info-form-input-group-btn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cabinet-personal-info-form-input-group-btn button {
+	background: #CF1A3A;
+	border-radius: 4px;
+	font-family: "ProximaNova-Bold";
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	line-height: 12px;
+	border: none;
+	cursor: pointer;
+	height: 30px;
+	text-transform: uppercase;
+	padding-top: 2px;
+}
+
+.cabinet-personal-info-form-input-group-btn .cabinet-personal-info-form-btn-save {
+	width: 140px;
+	border: 1px solid #CF1A3A;
+}
+
+.cabinet-personal-info-form-input-group-btn .cabinet-personal-info-form-btn-cancel {
+	width: 130px;
+	border: 1px solid #AEAEAE;
+	background: #fff;
+	color: #1A1A1A;
+}
+
+.cabinet-personal-info-sub-title {
+	font-size: 1.3333rem;
+	margin-bottom: 15px;
+}
+
+.cabinet-personal-info .checkbox-item input[type="checkbox"] + label {
+	font-family: "ProximaNova-Regular";
+}
+
+.cabinet-personal-info-form-item-inner {
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+
+.cabinet-personal-info-address-item {
+	font-size: 1rem;
+	margin-top: 25px;
+	position: relative;
+}
+
+.cabinet-personal-info-address-item span {
+	padding-right: 52px;
+	display: inline-block;
+}
+
+.cabinet-personal-info-address-item .suggestions-wrapper span {
+	padding-right: 0;
+	display: inline;
+}
+
+.cabinet-personal-info-address-item-edit::before {
+	content: '\e820';
+	font-family: "fontello";
+	width: 32px;
+	height: 32px;
+	border: 1px solid #AEAEAE;
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -8px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1rem;
+	color: #808080;
+}
+
+.cabinet-personal-info-address-item:first-child {
+	margin: 0;
+}
+
+.cabinet-personal-info-address-item:last-child {
+	margin-top: 15px;
+}
+
+.cabinet-personal-info-address-item-add {
+	color: #808080;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.cabinet-personal-info-address-item-add img,
+.cabinet-personal-info-address-item-add .circle-minus {
+	margin-right: 10px;
+}
+
+.cabinet-personal-info-address-item-add .circle-minus {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	font-size: 0;
+	border: 1px solid #AEAEAE;
+	border-radius: 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+.cabinet-personal-info-address-item-add .circle-minus:before {
+	content: '';
+	width: 8px;
+	height: 3px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -4px;
+	margin-top: -1px;
+	background: #000;
+}
+
+.cabinet-personal-info-address .cabinet-personal-info-form-hidden--active {
+	margin-top: 20px;
+}
+
+.cabinet-personal-info-delete {
+	color: #808080;
+}
+
+.cabinet-personal-info-social {
+	width: 200px;
+	color: #808080;
+	font-size: 1rem;
+	line-height: 20px;
+	margin-right: 20px;
+	margin-top: 110px;
+}
+
+.cabinet-personal-info-social-inner {
+	display: none;
+}
+
+.cabinet-personal-info-social .order-contact-info-social-group {
+	flex-flow: wrap;
+	margin-left: -10px;
+}
+
+.cabinet-personal-info-social .order-contact-info-social-group-item {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.cabinet-personal-info-social .order-contact-info-social {
+	margin-top: 10px;
+}
+
+/* по ховеру на фотографию пользователя */
+.cabinet-inner .cabinet-aside-head-image {
+	position: relative;
+	transition: .2s ease-in-out;
+	cursor: pointer;
+	background-size: cover!important;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+}
+
+.cabinet-inner .cabinet-aside-head-image:hover::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.4);
+	display: block;
+}
+
+.cabinet-inner .cabinet-aside-head-image a {
+	display: none;
+	width: 100%;
+	height: 50%;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.6667rem;
+	justify-content: center;
+	position: relative;
+	z-index: 100;
+	font-family: "ProximaNova-Bold";
+}
+
+.cabinet-inner .cabinet-aside-head-image:hover a {
+	display: flex;
+}
+
+.cabinet-inner .cabinet-aside-head-image a:first-child {
+	align-items: flex-end;
+	padding-bottom: 7px;
+}
+
+.cabinet-inner .cabinet-aside-head-image a:last-child {
+	padding-top: 7px;
+}
+
+.cabinet-inner .cabinet-aside-head-image a span {
+	border-bottom: 1px solid transparent;
+}
+
+.cabinet-inner .cabinet-aside-head-image a:hover span {
+	border-bottom: 1px solid #fff;
+}
+
+
+/* бонусная программа */
+.cabinet-bonus-program {
+	padding: 30px 40px;
+}
+
+.cabinet-bonus-prorgam-title {
+	font-size: 1.6667rem;
+	margin-bottom: 20px;
+}
+
+.cabinet-bonus-program-flex {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.cabinet-bonus-program-helper {
+	padding: 10px 20px 20px 20px;
+	border: 1px solid #E6E6E6;
+	width: 270px;
+	margin-top: -20px;
+}
+
+.cabinet-bonus-program-helper-head {
+	font-size: 3.3333rem;
+	color: #CF1A3A;
+	font-family: "ProximaNova-Bold";
+}
+
+.cabinet-bonus-program-helper-head span {
+	font-size: 1rem;
+}
+
+.cabinet-bonus-program-helper-text {
+	font-size: 1rem;
+	line-height: 18px;
+}
+
+.cabinet-bonus-program-helper-text a {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-left {
+	max-width: 410px;
+}
+
+.cabinet-bonus-program .cabinet-bonus-activator {
+	justify-content: space-between;
+	display: none;
+}
+
+.cabinet-bonus-program .cabinet-bonus-activator-wrapper {
+	margin-right: 0;
+}
+
+/* если карта еще не активирована на странице бонусной программы */
+.cabinet-bonus-program .cabinet-bonus-activator {
+	display: none;
+}
+
+.cabinet-bonus-program.cabinet-bonus-program-card .cabinet-bonus-activator {
+	display: flex;
+}
+
+/* если карта активирована */
+.cabinet-bonus-program-info {
+	display: none;
+}
+
+.cabinet-bonus-program-stat .cabinet-bonus-program-info {
+	display: block;
+}
+
+.cabinet-bonus-program-info-item {
+	font-size: 1rem;
+	color: #1A1A1A;
+	margin-bottom: 15px;
+	line-height: 18px;
+}
+
+.cabinet-bonus-program-info-item-hidden {
+	display: none;
+}
+
+.cabinet-bonus-program-info-item span {
+	color: #808080;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.cabinet-bonus-program-bar {
+	width: 100%;
+	font-size: 0;
+}
+
+.cabinet-bonus-program-bar-step {
+	width: 16.6666666%;
+	display: inline-block;
+	font-size: 1rem;
+	color: #808080;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.cabinet-bonus-program-bar-step--current {
+	color: #CF1A3A!important;
+}
+
+.cabinet-bonus-program-bar-step--current span svg, .cabinet-bonus-program-bar-step--current span svg g, .cabinet-bonus-program-bar-step--current span svg path {
+	fill: #CF1A3A!important;
+}
+
+.cabinet-bonus-program-bar-step span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+.cabinet-bonus-program-bar-step:first-child {
+	text-align: left;
+}
+
+.cabinet-bonus-program-bar-step:first-child span {
+	justify-content: flex-start;
+}
+
+.cabinet-bonus-program-bar-step:first-child .icon-icon-beginner {
+	margin-left: 10px;
+}
+
+.cabinet-bonus-program-bar-step:last-child {
+	text-align: right;
+}
+
+.cabinet-bonus-program-bar-step:last-child span {
+	justify-content: flex-end;
+}
+
+.cabinet-bonus-program-bar-step:last-child .icon-icon-craftsman {
+	margin-right: 10px;
+}
+
+.cabinet-bonus-program-bar-step-1 .icon-icon-beginner {
+	font-size: 1rem;
+}
+
+.cabinet-bonus-program-bar-step-2 .icon-icon-fan {
+	font-size: 1.5625rem;
+}
+
+.cabinet-bonus-program-bar-step-3 .icon-icon-guru-inner {
+	font-size: 1.25rem;
+}
+
+.cabinet-bonus-program-bar-step-4 .icon-icon-master {
+	font-size: 1.25rem;
+}
+
+.cabinet-bonus-program-bar-step-5 .icon-icon-skillful {
+	font-size: 1.25rem;
+}
+
+.cabinet-bonus-program-bar-step-6 .icon-icon-craftsman {
+	font-size: 1.25rem;
+}
+
+.cabinet-bonus-program-bar-wrapper {
+	border-radius: 50px;
+	width: 100%;
+	height: 15px;
+	background: #FFFFFF;
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.20);
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+
+.cabinet-bonus-program-bar-progress {
+	height: 100%;
+	background-color: #E6E6E6;
+	position: relative;
+	z-index: 1;
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-progress {
+	width: 0;
+}
+
+.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1 {
+	color: #CF1A3A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1 svg path, .cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1 svg g, .cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1 svg {
+	fill: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-progress {
+	width: calc(33.3333333% - 8.33333334%);
+}
+
+.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2 {
+	color: #CF1A3A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2 svg path, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2 svg g, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2 svg {
+	fill: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-1 {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-1 svg path, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-1 svg g, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-1 svg {
+	fill: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-progress {
+	width: calc(50% - 8.33333334%);
+}
+
+.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3 {
+	font-family: "ProximaNova-Semibold";
+	color: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3 svg path, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3 svg g, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3 svg {
+	fill: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-1, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-2 {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-1 svg path, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-1 svg g, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-1 svg, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-2 svg path, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-2 svg g, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-2 svg {
+	fill: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-progress {
+	width: calc(66.6666666% - 8.33333334%);
+}
+
+.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4 {
+	color: #CF1A3A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4 svg path, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4 svg g, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4 svg {
+	fill: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-1, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-2, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-3 {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-1 svg path, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-1 svg g, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-1 svg, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-2 svg path, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-2 svg g, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-2 svg, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-3 svg path, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-3 svg g, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-3 svg {
+	fill: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-progress {
+	width: calc(83.3333333% - 8.33333334%);
+}
+
+.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5 {
+	color: #CF1A3A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5 svg path, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5 svg g, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5 svg {
+	fill: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-1, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-2, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-3, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-4 {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-1 svg path, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-1 svg g, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-1 svg, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-2 svg path, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-2 svg g, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-2 svg, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-3 svg path, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-3 svg g, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-3 svg, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-4 svg path, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-4 svg g, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-4 svg {
+	fill: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-progress {
+	width: 100%;
+}
+
+.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 {
+	color: #CF1A3A;
+	font-family: "ProximaNova-Semibold";
+}
+
+.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 svg path, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 svg g, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 svg {
+	fill: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-1, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-2, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-3, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-4, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-5 {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-1 svg path, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-1 svg g, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-1 svg, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-2 svg path, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-2 svg g, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-2 svg, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-3 svg path, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-3 svg g, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-3 svg, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-4 svg path, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-4 svg g, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-4 svg, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-5 svg path, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-5 svg g, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-5 svg {
+	fill: #1A1A1A;
+}
+
+.cabinet-bonus-program-bar-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.cabinet-bonus-program-bar-rating {
+	font-size: 0.8rem;
+	color: #808080;
+	text-align: center;
+}
+
+.cabinet-bonus-program-bar-rating span {
+	font-size: 0.8rem;
+	color: #1A1A1A;
+	text-transform: uppercase;
+	font-family: "ProximaNova-Bold";
+	display: block;
+	margin-bottom: 3px;
+}
+
+/* Прогресс на странице бонусная программа */
+.cabinet-bonus-program-bar-inner {
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.cabinet-bonus-program-bar-inner__title {
+	font-size: 1.6667rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.cabinet-bonus-program-bar-rating__round {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 1px solid #E6E6E6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px auto;
+	font-size: 2rem;
+	font-family: "ProximaNova-Semibold";
+	color: #AEAEAE;
+	background-color: #fff;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-rating__round-1, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-rating__round-1, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-rating__round-1, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-rating__round-2, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-rating__round-3 {
+	color: #CF1A3A;
+}
+
+.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-rating__round-1 {
+	color: #AEAEAE;
+}
+
+/* Достижения */
+.cabinet-bonus-program-progress {
+	margin-top: 50px;
+}
+
+.cabinet-bonus-program-progress__wrapper {
+	display: flex;
+	flex-flow: wrap;
+	margin-left: -12px;
+}
+
+.cabinet-bonus-program-progress__item {
+	width: 150px;
+	margin-left: 12px;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #808080;
+	text-decoration: none;
+}
+
+.cabinet-bonus-program-progress__item:last-child {
+	margin-bottom: 0;
+}
+
+.cabinet-bonus-program-progress__item_opened {
+	color: #1A1A1A;
+}
+
+.cabinet-bonus-program-progress__img {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.cabinet-bonus-program-progress__img img {
+	display: block;
+}
+
+.cabinet-bonus-program-progress__text {
+	font-size: 1rem;
+	line-height: 17px;
+}
+
+.cabinet-bonus-program-progress__text span {
+	display: block;
+	font-family: "ProximaNova-Semibold";
+	margin-top: 5px;
+}
+
+@media screen and (max-width: 1439px) {
+	.cabinet-cart-list .cart-list-item-set-list  {
+		width: 100%;
+	}
+
+	.cabinet-cart-list .cart-list-item-set-prod  {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.cabinet-bonus-activator-wrapper {
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.cabinet-bonus-activator-input {
+		max-width: 190px;
+	}
+
+	.cabinet-bonus-activator .btn {
+		width: 190px;
+		display: block;
+	}
+
+	.cabinet-bonus-activator-card {
+		align-items: flex-start;
+	}
+
+	.cabinet-orders-proces-table-list tr td:first-child {
+		font-size: 0.8rem;
+		width: 150px;
+	}
+
+	.cabinet-orders-proces-table-list td {
+		line-height: 15px;
+		padding-bottom: 10px;
+	}
+
+	.cabinet-three-cols .cabinet-right {
+		display: none;
+	}
+
+	.cabinet-three-cols .cabinet-center {
+		width: calc(100% - 230px);
+	}
+
+	/* красная плашка с информацией о количестве начисленных бонусов */
+	.cabinet-bonus-informer-visible-sm {
+		display: block;
+	}
+
+	.cabinet-bonus-informer-inner {
+		margin-left: -40px;
+		margin-right: -40px;
+		padding: 10px 15px 7px 15px;
+	}
+
+	.cabinet-bonus-informer-inner .cabinet-bonus-informer-big {
+		font-size: 2rem;
+		display: inline-block;
+	}
+
+	.cabinet-bonus-informer-inner .cabinet-bonus-informer-medium {
+		font-size: 1.3333rem;
+	}
+
+	.cabinet-order-detail-link-back {
+		margin-bottom: 20px;
+	}
+
+	.cabinet-manager-visible-sm {
+		display: block;
+	}
+
+	.cabinet-manager-inner {
+		padding: 0;
+		display: flex;
+	}
+
+	.cabinet-manager-inner .cabinet-manager-wrapper {
+		width: 49.9%;
+		display: flex;
+		flex-flow: wrap;
+	}
+
+	.cabinet-manager-inner .cabinet-manager-title {
+		width: 100%;
+	}
+
+	.cabinet-manager-inner .cabinet-manager-item {
+		display: flex;
+		align-items: center;
+	}
+
+	.cabinet-manager-inner .cabinet-manager-image {
+		margin-right: 8px;
+	}
+
+	.cabinet-order-detail-link {
+		margin-bottom: 30px;
+	}
+
+	.cabinet-bonus-program-bar-inner {
+		padding: 70px 50px;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.cabinet-orders, .cabinet-bonus {
+		padding: 20px;
+	}
+
+	.cabinet-aside {
+		width: 195px;
+	}
+
+	.cabinet-center {
+		width: calc(100% - 195px);
+	}
+
+	.cabinet-bonus-card img {
+		max-width: 200px;
+	}
+
+	.cabinet-aside-head {
+		padding: 20px;
+	}
+
+	.cabinet-aside-navi-item {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.cabinet-orders-proces-table-left {
+		width: 135px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cabinet-orders-proces-table-right {
+		width: calc(100% - 135px);
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cabinet-three-cols .cabinet-center {
+		width: calc(100% - 195px);
+	}
+
+	.cabinet-oder-detail {
+		padding: 20px;
+	}
+
+	.cabinet-cart-list .cart-list-item-teaser {
+		max-width: 230px;
+	}
+
+	.cabinet-cart-list .cart-list-item {
+		padding-right: 0;
+	}
+
+	.cabinet-cart-list .cart-list-item-set .cart-list-item-teaser {
+		max-width: 290px;
+	}
+
+	.cabinet-bonus-informer-inner {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.cabinet-bonus-program {
+		padding: 20px;
+	}
+
+	.cabinet-bonus-program-flex {
+		flex-direction: column;
+	}
+
+	.cabinet-bonus-program-helper {
+		display: flex;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.cabinet-bonus-program-helper-head {
+		white-space: nowrap;
+		margin-right: 35px;
+	}
+
+	.cabinet-bonus-program-bar-step {
+		font-size: 0;
+	}	
+
+	.cabinet-bonus-program-bar-step span {
+		display: none;
+	}
+
+	.cabinet-bonus-program-bar-step--current span {
+		display: flex;
+	}
+
+	.cabinet-bonus-program-bar-step--current {
+		font-size: 1rem;
+	}
+
+	.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1 span, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2 span, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3 span, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4 span, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5 span, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 span {
+		display: flex;
+	}
+
+	.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1, .cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2, .cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3, .cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4, .cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5, .cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 {
+		font-size: 1rem;
+	}
+
+	.cabinet-bonus-program-bar-inner .cabinet-bonus-program-bar-step span {
+		display: block;
+	}
+
+	.cabinet-bonus-program-bar-inner .cabinet-bonus-program-bar-step br {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.cabinet-title-h1 {
+		font-size: 1.6667rem;
+		line-height: 25px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cabinet {
+		flex-direction: column;
+		background: none;
+	}
+
+	.cabinet-left, .cabinet-center {
+		width: 100%;
+		background: #fff;
+	}
+
+	.cabinet-left {
+		margin-bottom: 10px;
+	}
+
+	.cabinet-aside {
+		width: 100%;
+	}
+
+	.cabinet-aside-head {
+		display: none;
+	}
+
+	.cabinet-first-visit .cabinet-orders-title {
+		display: none;
+	}
+
+	.cabinet-first-visit .cabinet-orders {
+		padding: 40px 10px;
+	}
+
+	.cabinet-bonus-first-card {
+		padding: 30px 10px;
+	}
+
+	.cabinet-bonus-card {
+		display: none;
+	}
+
+	.cabinet-bonus-title {
+		margin-bottom: 12px;
+	}
+
+	.cabinet-aside-navi {
+		display: none;
+	}
+
+	/* селект с меню в блоке aside на мобилах */
+	.cabinet-aside-navi-mobile {
+		display: block;
+	}
+
+	/* блок активации бонусов */
+	.cabinet-bonus-activator-card {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cabinet-bonus-activator-input {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.cabinet-bonus-activator .btn {
+		width: 100%;
+	}
+
+	.cabinet-bonus-activator-card {
+		justify-content: center;
+	}
+
+	/* мои заказы */
+	.cabinet-second-visit .cabinet-orders {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cabinet-orders-title {
+		font-size: 1rem;
+		margin-bottom: 10px;
+		font-family: "ProximaNova-Semibold";
+	}
+
+	/* заказ в обработке */
+	.cabinet-orders-proces-table-right {
+		display: none;
+	}
+
+	.cabinet-orders-proces-table-left {
+		width: 100%;
+	}
+
+	.cabinet-orders-proces-table-wrapper {
+		border: none;
+	}
+
+	.cabinet-order-proces .cabinet-orders {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.cabinet-order-proces .cabinet-orders-title {
+		display: none;
+	}
+
+	.cabinet-orders-archive-title {
+		font-size: 1rem;
+		margin-bottom: 10px;
+		font-family: "ProximaNova-Semibold";
+	}
+
+	.cabinet-three-cols .cabinet-center {
+		width: 100%;
+	}
+
+	.cabinet-order-detail-link-back {
+		font-size: 	1.3333rem;
+		line-height: 20px;
+		display: block;
+	}
+
+	.cabinet-order-detail-link-back .icon-icon-corner {
+		display: none;
+	}
+
+	.cabinet-order-detail-link-back .cabinet-order-detail-link-back-small {
+		margin-left: 5px;
+		font-size: 1rem;
+	}
+
+	.cabinet-order-detail-link-back span {
+		display: inline-block;
+	}
+
+	.cabinet-bonus-informer-inner .cabinet-bonus-informer-big {
+		display: block;
+	}
+
+	.cabinet-bonus-informer-inner {
+		padding: 20px;
+	}
+
+	.cabinet-order-detail-link {
+		display: none;
+	}
+
+	.cabinet-order-detail-table {
+		margin-bottom: 30px;
+	}
+
+	.cabinet-order-detail-table tr td:first-child {
+		width: 150px;
+		text-align: left;
+	}
+
+	.cabinet-order-detail-table td {
+		text-align: right;
+	}
+
+	.cabinet-manager-inner {
+		flex-direction: column;
+	}
+
+	.cabinet-manager-inner .cabinet-manager-wrapper {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.cabinet-manager-inner .cabinet-manager-wrapper:last-child {
+		margin-bottom: 30px;
+	}
+
+	.cabinet-order-detail-table--modified, .cabinet-order-detail-table--modified tbody, .cabinet-order-detail-table--modified tr, .cabinet-order-detail-table--modified td {
+		display: block;
+		width: 100%;
+	}
+
+	.cabinet-order-detail-table--modified tr td:first-child {
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.cabinet-order-detail-table--modified td {
+		text-align: left;
+	}
+
+	.cabinet-cart-list .cart-list-item {
+		align-items: flex-start;
+	}
+
+	.cabinet-cart-list .cart-list-item-teaser {
+		padding-right: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.cabinet-cart-list .cart-list-item-teaser-title {
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.cabinet-cart-list .cart-list-item-text {
+		flex-direction: column;
+		flex-flow: wrap;
+	}
+
+	.cabinet-cart-list .cart-list-item-qnt, .cabinet-cart-list .cart-list-item-cost {
+		width: 49.9%;
+		margin-top: 0;
+	}
+
+	.cabinet-cart-list .cart-list-item-cost {
+		text-align: right;
+	}
+
+	.cabinet-cart-list .cart-list-item-set-prod {
+		width: 100%;
+		border-bottom: none;
+		margin-bottom: 20px;
+	}
+
+	.cabinet-cart-list .cart-list-item-set-prod:last-child {
+		margin-bottom: 0;
+	}
+
+	.cabinet-cart-list .cart-list-item-set-list {
+		padding-bottom: 0;
+	}
+
+	.cabinet-cart-list .cart-list-item-set-prod-img {
+		height: auto;
+	}
+
+	.cabinet-cart-list-summ .cabinet-cart-list-summ-item {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.cabinet-cart-list .cabinet-cart-list-summ-item span {
+		width: 80px;
+	}
+
+	.cabinet-cart-list .cart-list-item-set .cart-list-item-teaser {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/* -------------- страница персональных данных -------------- */
+
+	.cabinet-personal-info {
+		padding: 20px;
+	}
+
+	.cabinet-personal-info-social {
+		display: none;
+	}
+
+	/* убираем отступ снизу у левой колонки */
+	.cabinet-inner .cabinet-left {
+		margin-bottom: 0;
+	}
+
+	.cabinet-inner .cabinet-aside {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.cabinet-inner .cabinet-aside-head {
+		display: flex;
+		padding-bottom: 0;
+		border-bottom: none;
+		align-items: center;
+	}
+
+	.cabinet-inner .cabinet-aside-head-image {
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 100px;
+		height: 100px;
+		border: none;
+	}
+
+	.cabinet-inner .cabinet-aside-navi-mobile {
+		border-bottom: 10px solid #f3f3f3;
+	}
+
+	.cabinet-inner .cabinet-aside-head-name, .cabinet-inner .cabinet-aside-head-status, .cabinet-inner .cabinet-aside-head-bonus, .cabinet-inner .cabinet-aside-head-bonus-card {
+		display: none;
+	}
+
+	.cabinet-inner .cabinet-personal-info-title {
+		display: none;
+	}
+
+	.cabinet-aside-head-group-button {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.cabinet-personal-info-social-inner {
+		display: block;
+		margin: 0;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.cabinet-personal-info-sub-title {
+		font-size: 1rem;
+		font-family: "ProximaNova-Bold";
+	}
+
+	.cabinet-inner .cabinet-aside-head-image:hover::before {
+		display: none;
+	}
+
+	.cabinet-inner .cabinet-aside-head-image:hover a {
+		display: none;
+	}
+
+	.cabinet-bonus-program {
+		padding: 20px;
+	}
+
+	.cabinet-bonus-program-helper {
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	.cabinet-bonus-program-bar {
+		display: none;
+	}
+
+	.cabinet-bonus-program-flex {
+		margin-bottom: 20px;
+	}
+
+	.cabinet-bonus-program-info-item-hidden {
+		display: block;
+		color: #CF1A3A;
+		font-family: "ProximaNova-Semibold";
+	}
+
+	.cabinet-bonus-program-info-item-hidden span {
+		font-family: "ProximaNova-Regular";
+	}
+
+	/* Достижения */
+	.cabinet-bonus-program-progress__wrapper {
+		margin-left: 0;
+	}
+
+	.cabinet-bonus-program-progress__item {
+		width: 100%;
+		text-align: left;
+		margin-left: 0;
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	.cabinet-bonus-program-progress__text {
+		width: calc(100% - 65px);
+		margin-top: 7px;
+	}
+
+	.cabinet-bonus-program-progress__text br {
+		display: none;
+	}
+
+	.cabinet-bonus-program-progress__img {
+		margin: 0;
+		width: 50px;
+		height: 50px;
+		margin-right: 15px;
+	}
+
+	.cabinet-bonus-program-progress__img img {
+		max-width: 50px;
+	}
+
+	.cabinet-bonus-program-bar-inner {
+		display: block;
+		padding: 0 20px;
+	}
+
+	.cabinet-bonus-program-bar-inner .cabinet-bonus-program-bar-step span {
+		display: none;
+	}
+
+	.cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1 span, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2 span, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3 span, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4 span, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5 span, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 span {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-1 .cabinet-bonus-program-bar-step-1, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-2 .cabinet-bonus-program-bar-step-2, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-3 .cabinet-bonus-program-bar-step-3, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-4 .cabinet-bonus-program-bar-step-4, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-5 .cabinet-bonus-program-bar-step-5, .cabinet-bonus-program-bar-inner.cabinet-bonus-program-bar-step-6 .cabinet-bonus-program-bar-step-6 {
+		width: 100%;
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	.cabinet-bonus-program-bar-inner .cabinet-bonus-program-bar-step {
+		margin-top: 0;
+	}
+}

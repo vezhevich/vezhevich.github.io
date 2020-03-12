@@ -1,0 +1,505 @@
+/* контейнер который используется на всю ширину экрана */
+.container-full-width {
+	min-width: 320px; 
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+}
+
+@media screen and (max-width: 1439px) {
+	.container-full-width {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.container-full-width {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.container-full-width {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* основоной контейнер  */
+.container-main {
+	min-width: 320px; 
+	max-width: 1190px;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* основной контейнер при фиксирующемся блоке progress-cart на странице корзины */
+.container-main-stickytop--active {
+	padding-top: 80px!important;
+}
+
+/* основной контейнер с отсупом сверху */
+.container-main-default {
+	padding-top: 15px;
+}
+
+@media screen and (max-width: 1439px) {
+	.container-main {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.container-main {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 950px;
+	}
+
+	.container-main--fluid {
+		max-width: 950px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.container-main {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 768px;
+	}
+
+	.container-main--fluid {
+		max-width: 768px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container-main {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.container-main--fluid {
+		max-width: 100%;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	/* основной контейнер при фиксирующемся блоке progress-cart на странице корзины */
+	.container-main-stickytop--active {
+		padding-top: 60px!important;
+	}
+}
+
+/* layout каталога на главной */
+.layout-catalog {
+	display: flex;
+	justify-content: space-between;
+}
+
+.layout-catalog-left {
+	width: 210px;
+}
+
+.layout-catalog-right {
+	width: calc(100% - 225px);
+}
+
+@media screen and (max-width: 1439px) {
+	.layout-catalog-right {
+		width: calc(100% - 220px);
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.layout-catalog {
+		flex-direction: column;
+	}
+
+	.layout-catalog-left {
+		width: 100%;
+	}
+
+	.layout-catalog-right {
+		width: 100%;
+	}
+
+	/* layout каталога на странице Категории */
+	.layout-catalog-inner .layout-catalog-left {
+		display: none;
+	}
+}
+
+/* layout на главной с 3 колонками. В двух колонках карусели, в третьей текст */
+.layout-three-cols-lg {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.layout-three-cols-lg-item {
+	width: 436px;
+}
+
+.layout-three-cols-lg-item-inner {
+	width: 210px;
+}
+
+@media screen and (max-width: 1439px) {
+	.layout-three-cols-lg {
+		flex-flow: wrap;
+	}
+	.layout-three-cols-lg-item {
+		/*width: 49.1379311%;*/
+		width: 49.2655367%;
+	}
+	.layout-three-cols-lg-item-inner {
+		width: 100%;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.layout-three-cols-lg-item {
+		width: 230px;
+	}
+
+	.layout-three-cols-lg-item-inner {
+		display: inline-block;
+		width: 230px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.layout-three-cols-lg {
+		margin-bottom: 30px;
+	}
+
+	.layout-three-cols-lg-item {
+		width: 100%;
+	}
+	.layout-three-cols-lg-item-inner {
+		width: 100%;
+	}
+}
+
+/* layout обертка для отступа справа для блока live  */
+.layout-wrapper-live {
+	width: calc(100% - 235px);
+}
+
+.layout-wrapper-live--modified {
+	width: 100%;
+}
+
+@media screen and (max-width: 1159px) {
+	.layout-wrapper-live {
+		width: 100%;
+	}
+}
+
+/* на странице карточки товара белый фон */
+.layout-wrapper-white {
+	background-color: #fff;
+	padding-bottom: 30px;
+}
+
+.layout-wrapper-white-last {
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+	.layout-wrapper-white-last {
+		padding-bottom: 0;
+	}
+
+	.layout-wrapper-white-last_inner {
+		margin-bottom: 0;
+		padding-bottom: 50px;
+		border-bottom: 1px solid #F3F3F3;
+	}
+
+	/* белый фон без отступов снизу */
+	.layout-wrapper-white-last--modified {
+		margin-bottom: 0;
+	}
+}
+
+/* layout страницы корзины в две колонки */
+.layout-cart {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.layout-cart-left {
+	width: 790px;
+}
+
+.layout-cart-right {
+	width: 295px;
+}
+
+@media screen and (max-width: 1439px) {
+	.layout-cart-left {
+		width: calc(100% - 295px - 35px);
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.layout-cart {
+		flex-direction: column;
+	}
+
+	.layout-cart-left {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.layout-cart-right {
+		width: 100%;
+	}
+
+	/* layout страницы корзины в две колонки на странице оформления заказа шаг спасибо за заказ */
+	.layout-cart-inner {
+		flex-direction: column-reverse;
+	}
+
+	.layout-cart-inner .layout-cart-right {
+		margin-bottom: 20px;
+	}
+
+	.layout-cart-inner .layout-cart-left {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.layout-cart {
+		margin-bottom: 30px;
+	}
+
+	.layout-cart-inner .layout-cart-right {
+		margin-bottom: 0;
+	}
+}
+
+/* layout в одну колонку и центрирован на странице рецепта */
+.layout-one-col-center {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+/* layout в одну колрнку и центрирован но больше по размеру */
+.layout-one-col-center--inner {
+	max-width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.layout-one-col-center--white {
+	background: #fff;
+}
+
+.layout-one-col-center-wrapper-sm {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.layout-one-col-center-wrapper-lg {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+@media screen and (max-width: 959px) {
+	.layout-one-col-center-wrapper-lg {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.layout-one-col-center--inner {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.layout-one-col-center {
+		margin-bottom: 0;
+	}
+
+	.layout-one-col-center--white {
+		margin-bottom: 30px;
+	}
+	
+	.layout-one-col-center-wrapper-sm {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.layout-one-col-center-wrapper-lg {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.layout-one-col-center--inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* layout страницы отзывов о магазине */
+.layout-feedback-page {
+	display: flex;
+}
+
+.layout-feedback-page-left {
+	max-width: 810px;
+	width: 100%;
+	margin-right: 60px;
+}
+
+@media screen and (max-width: 959px) {
+	.layout-feedback-page-left {
+		margin-right: 20px;
+	}	
+}
+
+@media screen and (max-width: 767px) {
+	.layout-feedback-page {
+		flex-direction: column-reverse;
+	}
+
+	.layout-feedback-page-left {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.layout-feedback-page-right {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+/* layout светло-серый на странице бонусная программа */
+.layout-wrapper-gray {
+	background-color: #FCFAFA;
+	padding-bottom: 50px;
+}
+
+.layout-wrapper-gray-last {
+	margin-bottom: 50px;
+}
+
+/* layout две колонки страницах бонусная программа и о компании */
+.layout-two-cols-content {
+	display: flex;
+}
+
+.layout-two-cols-content-right-wrapper {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.layout-two-cols-content-right-wrapper:last-child {
+	margin-bottom: 0;
+}
+
+.layout-two-cols-content-left {
+	width: 345px;
+}
+
+.layout-two-cols-content-right {
+	width: calc(100% - 345px);
+}
+
+.layout-two-cols-content-right__left, .layout-two-cols-content-right__right {
+	width: 49.9%;
+}
+
+.layout-two-cols-content-right__left {
+	padding-right: 90px;
+}
+
+.layout-two-cols-content-right__right {
+	display: flex;
+	align-items: center;
+}
+
+.layout-two-cols-content-right-wrapper-reverse {
+	flex-direction: row-reverse;
+}
+
+.layout-two-cols-content_inner .layout-two-cols-content-right__left {
+	padding-right: 60px;
+}
+
+@media screen and (max-width: 1439px) {
+	.layout-two-cols-content-right__left {
+		padding-right: 20px;
+	}
+
+	.layout-two-cols-content_inner .layout-two-cols-content-right__left {
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.layout-two-cols-content-right__left, .layout-two-cols-content-right__right {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.layout-two-cols-content-right__right {
+		margin-bottom: 0;
+	}
+
+	.layout-two-cols-content-right-wrapper {
+		margin-bottom: 60px;
+		flex-direction: column;
+	}
+
+	.layout-two-cols-content-right__left {
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.layout-two-cols-content {
+		flex-direction: column;
+	}
+
+	.layout-two-cols-content-left, .layout-two-cols-content-right {
+		width: 100%;
+	}
+
+	.layout-two-cols-content_inner .layout-two-cols-content-right__left {
+		margin-bottom: 20px;
+		padding-right: 0;
+	}
+
+	.layout-two-cols-content-right__right {
+		justify-content: center;
+	}
+
+	.layout-two-cols-content-right-wrapper {
+		margin-bottom: 40px;
+	}
+}

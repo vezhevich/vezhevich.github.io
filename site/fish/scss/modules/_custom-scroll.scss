@@ -1,0 +1,27 @@
+.mCSB_container {
+	margin-right: 20px!important;
+}
+
+.mCSB_scrollTools {
+	width: 6px!important;
+	opacity: 1!important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	width: 100%;
+	background: none;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 100%;
+	background-color: #E6E6E6;
+	opacity: 1!important;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background-color: #E6E6E6;
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background-color: #E6E6E6;
+}

@@ -1,0 +1,102 @@
+.feedback-page .product-card-feedback-item {
+	border: none;
+	padding: 20px 50px 20px 40px;
+}
+
+.feedback-page-answer .product-card-feedback-item-user {
+	border-radius: 0;
+	height: 45px;
+	width: 45px;
+	margin-right: 9px;
+	background-size: contain;
+	border-radius: 0;
+}
+
+.feedback-page .product-card-feedback-item-user img {
+	max-width: 45px;
+}
+
+.feedback-page-answer {
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.feedback-page-answer .product-card-feedback-item-info-name {
+	font-size: 1rem;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: #033868;
+	font-family: "ProximaNova-Bold";
+}
+
+.feedback-page-answer .product-card-feedback-item-text {
+	background-color: #F3F3F3;
+	border-radius: 5px;
+	padding: 12px 25px;
+}
+
+.feedback-page-answer .product-card-feedback-item-head {
+	margin-bottom: 13px;
+}
+
+.feedback-page-aside {
+	margin-top: 40px;
+	width: 190px;
+}
+
+.feedback-page-aside .activity-rating-live span i {
+	background-image: url(../img/icon-star.svg);
+}
+
+.feedback-page-aside .activity-rating-live span {
+	background-image: url(../img/icon-star-grey.svg);
+}
+
+.feedback-page-aside .activity-feedback-helper {
+	color: #1A1A1A;
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.feedback-page-aside .btn {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.feedback-page-aside-helper {
+	font-size: 1rem;
+	line-height: 20px;
+	color: #808080;
+}
+
+.feedback-page-aside-helper a {
+	color: #808080;
+}
+
+@media screen and (max-width: 767px) {
+	.feedback-page-aside {
+		margin-top: 0;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.feedback-page .product-card-feedback-item {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.feedback-page-answer {
+		margin-left: 0;
+	}
+
+	.feedback-title-h1 {
+		font-size: 1.6667rem;
+		line-height: 30px;
+		font-family: "ProximaNova-Semibold";
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+	<script src="//yastatic.net/share2/share.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header-separator"></div>
+		<div class="container-full-width header-flex">
+			<div class="header-hamburger hamburger hamburger--spin js-hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+			<a href="#" class="header-logo-mobile"><img src="./img/logo-mobile.svg" alt=""></a>
+			<div class="header-wrapper-search">
+				<div class="header-logo">
+					<a href="/">
+						<img src="./img/logo.svg" alt="">
+						<span>Казань. Доставка продуктов</span>
+					</a>
+				</div>
+				<div class="header-navi">
+					<a class="header-navi-item" href="#">Каталог</a>
+					<a class="header-navi-item" href="#">Акции</a>
+					<a class="header-navi-item" href="#">Рецепты</a>
+					<a class="header-navi-item header-navi-item--round" href="#">Отзывы</a>
+					<a class="header-navi-item js-modal-delivery js-modal" href="#modal-info">Доставка</a>
+					<a class="header-navi-item js-modal-warranty js-modal" href="#modal-info">Гарантии</a>
+					<a class="header-navi-item" href="#">Контакты</a>
+				</div>
+				<div class="header-search">
+					<div class="header-search-wrapper">
+						<button class="header-search-button">
+							<span class="icon-icon-search-inner"></span>			
+						</button>
+						<input id="inputSearch" class="header-search-input" type="text" placeholder="Искать товары">
+						<a href="#" class="header-search-button-close">
+							<span class="icon-icon-close"></span>
+						</a>
+						<div class="header-search-helper">Например, сладкая <a href="#">выпечка</a></div>
+					</div>
+					<!-- добавляем header-search-result--active что бы выводить результаты поиска -->
+					<div class="header-search-result">
+						<a href="#" class="header-search-result-item">
+							<div class="header-search-result-item-image"><img src="./img/search-result1.jpg" alt=""></div>
+							<div class="header-search-result-item-title">Вомер охлажденный тушка</div>
+							<div class="header-search-result-item-cost">320 р/шт</div>
+						</a>						
+						<a href="#" class="header-search-result-item">
+							<div class="header-search-result-item-image"><img src="./img/search-result2.jpg" alt=""></div>
+							<div class="header-search-result-item-title">Зубатка пестрая охлажденная</div>
+							<div class="header-search-result-item-cost">450 р/шт</div>
+						</a>						
+						<a href="#" class="header-search-result-item">
+							<div class="header-search-result-item-image"><img src="./img/search-result3.jpg" alt=""></div>
+							<div class="header-search-result-item-title">Форель радужная из Карелии</div>
+							<div class="header-search-result-item-cost">720 р/шт</div>
+						</a>
+						<a href="#" class="header-search-result-bottom">Перейти к результатам поиска</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-info">
+				<a href="tel:+89153498877" class="header-info-item header-phone">+7 915 349 88 77 <br> <span>с 9:00 до 20:00</span></a>
+				<!-- когда пользователь авторизовался добавляем класс header-auth-active -->
+				<div class="header-info-item header-auth">
+					<span class="icon-icon-user"></span>
+					<div class="header-auth-user" style="background: url(./img/user.jpg);"></div>
+					<div class="header-dropdown header-dropdown-auth header-dropdown-auth-unregistered">
+						<div class="header-dropdown-wrapper">
+							<a href="#modal-reg" class="btn btn--red btn--middle-full-width js-modal">зарегистрироваться</a>				
+							<a href="#modal-auth" class="btn btn-bordered btn-bordered--grey btn--middle-full-width btn-transparent js-modal">войти</a>
+							<div>Зарегистрированным пользователям доступна  бонусная система</div>
+						</div>
+					</div>					
+					<div class="header-dropdown header-dropdown-auth header-dropdown-auth-registered">
+						<div class="header-dropdown-auth-registered-info">
+							<div class="header-dropdown-auth-registered-info-name">Жанна Дубова</div>
+							<div class="header-dropdown-auth-registered-info-status"><img src="./img/icon-guru.svg" alt="">Гуру покупок</div>
+							<div class="header-dropdown-auth-registered-info-bonus">На вашем счете 456 бонусов</div>
+						</div>
+						<div class="header-dropdown-auth-registered-navi">
+							<ul>
+								<li>
+									<a class="header-dropdown-auth-registered-navi-item" href="#">Профиль</a>
+								</li>
+								<li>
+									<a class="header-dropdown-auth-registered-navi-item" href="#">Список Заказов</a>
+								</li>
+								<li>
+									<a class="header-dropdown-auth-registered-navi-item" href="#">Система Бонусов</a>
+								</li>
+							</ul>
+						</div>
+						<div class="header-dropdown-auth-registered-bottom">
+							<a class="header-dropdown-auth-registered-bottom-link" href="#"><img src="./img/icon-exit.svg" alt="">Выйти</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-info-item header-favorite">
+					<div class="header-favorite-wrapper">
+						<span class="icon-icon-favorite"></span>
+						<div class="header-favorite-in">2</div>
+					</div>
+					<div class="header-dropdown favorite-dropdown">
+						<div class="header-dropdown-wrapper">
+							<div class="header-dropdown-title">Избранное</div>
+							<a href="#" class="favorite-dropdown-item">
+								<div class="favorite-dropdown-item-img">
+									<img src="./img/favorite-item.jpg" alt="">
+								</div>
+								<div class="favorite-dropdown-item-text">
+									<div class="favorite-dropdown-item-text-title">Икра красная горбуши</div>
+									<div class="favorite-dropdown-item-text-cost">320 р/шт</div>
+								</div>
+							</a>							
+							<a href="#" class="favorite-dropdown-item">
+								<div class="favorite-dropdown-item-img">
+									<img src="./img/favorite-item2.jpg" alt="">
+								</div>
+								<div class="favorite-dropdown-item-text">
+									<div class="favorite-dropdown-item-text-title">Икра красная горбуши</div>
+									<div class="favorite-dropdown-item-text-cost">320 р/шт</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="header-dropdown-bottom">Перейти в избранное</a>
+					</div>
+				</div>
+				<div class="header-info-item header-shopping-cart">
+					<div class="header-shopping-cart-wrapper">
+						<span class="icon-icon-shopping-cart"></span>
+						<span class="header-shopping-cart-summ">3 567р</span>
+						<span class="header-shopping-cart-in">3</span>
+					</div>
+					<div class="header-dropdown header-dropdown-shopping-cart">
+						<div class="header-dropdown-title">Корзина</div>
+						<div class="shopping-cart-item">
+							<div class="shopping-cart-item-img">
+								<img src="./img/shopping-cart1.jpg" alt="">
+							</div>
+							<div class="shopping-cart-item-title">Сыр Моцарелла, Россия</div>
+							<div class="shopping-cart-item-qnt">
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 10</title><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+								</button>
+								<input name="" class="shopping-cart-item-qnt-numer" value="10" type="text">
+								<span class="shopping-cart-item-qnt-in">шт</span>
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><title>Group 15</title><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+								</button>
+							</div>
+							<div class="shopping-cart-item-cost">10 320 р/шт</div>
+						</div>
+						<div class="shopping-cart-item">
+							<div class="shopping-cart-item-img">
+								<img src="./img/shopping-cart2.jpg" alt="">
+							</div>
+							<div class="shopping-cart-item-title">Тунец филе кусочки</div>
+							<div class="shopping-cart-item-qnt">
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 10</title><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+								</button>
+								<input name="" class="shopping-cart-item-qnt-numer" value="10" type="text">
+								<span class="shopping-cart-item-qnt-in">шт</span>
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><title>Group 15</title><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+								</button>
+							</div>
+							<div class="shopping-cart-item-cost">320 р/шт</div>
+						</div>
+						<div class="shopping-cart-item">
+							<div class="shopping-cart-item-img">
+								<img src="./img/shopping-cart3.jpg" alt="">
+							</div>
+							<div class="shopping-cart-item-title">Лисички свежие</div>
+							<div class="shopping-cart-item-qnt">
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 10</title><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+								</button>
+								<input name="" class="shopping-cart-item-qnt-numer" value="10" type="text">
+								<span class="shopping-cart-item-qnt-in">шт</span>
+								<button type="button" class="shopping-cart-item-qnt-button">
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><title>Group 15</title><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+								</button>
+							</div>
+							<div class="shopping-cart-item-cost">1 320 р/шт</div>
+						</div>
+						<div class="shopping-cart-bottom">
+							<div class="shopping-cart-bottom-text">В корзине 3 товара на <span>760 р</span></div>
+							<button class="btn btn--red btn--middle" type="button">Оформить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="sticky-footer-wrapper layout-wrapper-live sticky-footer-wrapper-inner-page">
+		<section class="layout-wrapper-white">
+			<section class="container-main">
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs-item">Каталог<span class="breadcrumbs-point">→</span></a>
+					<a href="#" class="breadcrumbs-item">Грибы свежие<span class="breadcrumbs-point">→</span></a>
+					<a href="#" class="breadcrumbs-item">Лисички свежие <span class="breadcrumbs-point">→</span></a>
+				</div>
+				<div class="product-card">
+					<div class="product-card-wrapper">
+						<div class="visible-xs">
+							<div class="product-card-teaser-title">
+								<div class="product-card-teaser-title-sale">товар учавствует в <a class="tooltips product-card-teaser-title-sale-tooltips" href="#">акции<span><b>Акция</b></br>Свежая домашняя выпечка по будням</span></a></div>
+								Слива Чернослив 
+							</div>
+							<!-- добавляем класс если товара нет в наличии product-card-teaser-param-not-available -->
+							<div class="product-card-teaser-param product-card-teaser-param-not-available">
+								<div class="product-card-teaser-param-article">Артикул 004165</div>
+								<div class="product-card-teaser-param-storage">Товар в наличии на складе <a class="tooltips product-card-teaser-param-storage-tooltips" href="#">!<span><b>Этот товар быстро раскупают</b></br>У вас есть шанс успеть, не затягивайте.</span></a></div>
+								<div class="product-card-teaser-param-storage product-card-teaser-param-storage--modified">Товара нет в наличии</div>
+							</div>
+						</div>
+						<div class="product-card-view">
+							<div class="catalog-cards-label-list product-card-view-label-list">
+								<div class="product-card-view-list-wrapper">
+									<span class="product-card-view-label catalog-cards-label catalog-cards-label-bestseller">хит</span>
+									<span class="product-card-view-label catalog-cards-label catalog-cards-label-new">новинка</span>
+								</div>
+								<div class="catalog-cards-ratio product-card-view-ratio">
+									<span class="catalog-cards-ratio-item">
+										<span class="icon-icon-star"></span>
+									</span>										
+									<span class="catalog-cards-ratio-item">
+										<span class="icon-icon-star"></span>
+									</span>										
+									<span class="catalog-cards-ratio-item">
+										<span class="icon-icon-star"></span>
+									</span>									
+									<span class="catalog-cards-ratio-item">
+										<span class="icon-icon-star"></span>
+									</span>										
+									<span class="catalog-cards-ratio-item">
+										<span class="icon-icon-star"></span>
+									</span>
+								</div>
+							</div>
+							<div class="product-card-view-alert-wrapper">
+								<div class="product-card-view-alert product-card-view-alert-first">
+									<a class="product-card-view-alert-close" href="#">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6.976 6L10.8 2.178c.267-.27.267-.707 0-.976-.27-.27-.71-.27-.977 0L6 5.024 2.178 1.202c-.27-.27-.707-.27-.976 0-.27.27-.27.707 0 .976L5.024 6 1.202 9.823c-.27.268-.27.707 0 .976.27.267.707.267.976 0L6 6.975 9.823 10.8c.268.267.707.267.976 0 .267-.27.267-.71 0-.977L6.975 6z" fill-rule="nonzero" stroke="gray" fill="gray"/></svg>
+									</a>
+									Сегодня этот товар купили <b>5 человек</b>
+								</div>								
+								<div class="product-card-view-alert product-card-view-alert-second">
+									<a class="product-card-view-alert-close" href="#">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6.976 6L10.8 2.178c.267-.27.267-.707 0-.976-.27-.27-.71-.27-.977 0L6 5.024 2.178 1.202c-.27-.27-.707-.27-.976 0-.27.27-.27.707 0 .976L5.024 6 1.202 9.823c-.27.268-.27.707 0 .976.27.267.707.267.976 0L6 6.975 9.823 10.8c.268.267.707.267.976 0 .267-.27.267-.71 0-.977L6.975 6z" fill-rule="nonzero" stroke="gray" fill="gray"/></svg>
+									</a>
+									<span>+77 бонусов</span> на счет с этой покупки.
+								</div>							
+							</div>
+							<div class="product-card-view-carousel fotorama">
+								<img src="./img/product-card.jpg" alt="">
+								<img src="./img/product-card2.jpg" alt="">
+								<img src="./img/product-card.jpg" alt="">
+							</div>
+						</div>
+						<!-- добавляем этот класс если товара нет в наличии product-card-teaser-not-available -->
+						<div class="product-card-teaser product-card-teaser-not-available">
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+							<h1 class="product-card-teaser-title hidden-xs">
+								<div class="product-card-teaser-title-sale">товар учавствует в <a class="tooltips product-card-teaser-title-sale-tooltips" href="#">акции<span><b>Акция</b></br>Свежая домашняя выпечка по будням</span></a></div>
+								Слива Чернослив 
+							</h1>
+							<div class="product-card-teaser-param product-card-teaser-param-not-available hidden-xs">
+								<div class="product-card-teaser-param-article">Артикул 004165</div>
+								<div class="product-card-teaser-param-storage">Товар в наличии на складе <a class="tooltips product-card-teaser-param-storage-tooltips" href="#">!<span><b>Этот товар быстро раскупают</b></br>У вас есть шанс успеть, не затягивайте.</span></a></div>
+								<div class="product-card-teaser-param-storage product-card-teaser-param-storage--modified">Товара нет в наличии</div>
+							</div>
+							<div class="product-card-teaser-form">
+								<div class="product-card-teaser-form__label">ожидается поставка</div>
+								<!-- product-card-teaser-form__input-error для ошибки -->
+								<input type="text" class="product-card-teaser-form__input" placeholder="E-mail или телефон">
+								<span class="product-card-teaser-form__input-text-error">Ошибочка вышла</span>
+								<button class="btn btn--red btn--middle" type="submit">подписаться</button>
+							</div>
+							<div class="product-card-teaser-cost">
+								<div class="product-card-teaser-cost-normal">180 р/кг</div>
+								<div class="product-card-teaser-cost-old">250 р/кг</div>
+							</div>
+							<div class="product-card-teaser-qnt-wrapper">
+								<div class="product-card-teaser-qnt-helper">
+									Точная стоимость весового товара будет известна в момент получения заказа. Пересчет производится после сборки заказа.
+								</div>
+								<div class="product-card-teaser-qnt">
+									<button type="button" class="product-card-teaser-qnt-button product-card-teaser-qnt-minus">
+										<svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(90 18.1 3.5)" x="15" y="10" width="2.2" height="11" rx="1.1" fill="#1A1A1A" fill-rule="evenodd"/></svg>
+									</button>
+									<input class="product-card-teaser-qnt-input" type="text" value="1">
+									<span class="product-card-teaser-qnt-in">кг</span>
+									<input class="product-card-teaser-qnt-input" type="text" value="200">
+									<span class="product-card-teaser-qnt-in">г</span>
+									<button type="button" class="product-card-teaser-qnt-button product-card-teaser-qnt-plus">
+										<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g fill="#1A1A1A" fill-rule="evenodd"><rect x="4.4" width="2.2" height="11" rx="1.1"/><rect transform="rotate(90 5.5 5.5)" x="4.4" width="2.2" height="11" rx="1.1"/></g></svg>
+									</button>
+									<span class="product-card-teaser-qnt-qounter">+1</span>
+									<button class="product-card-teaser-qnt-button-buy" type="button">купить</button>
+									<button class="product-card-teaser-add-favorite btn-bordered btn btn-transparent btn-bordered--grey" type="button">добавить в избранное</button>
+								</div>
+							</div>
+							<div class="product-card-teaser-rating">
+								<a href="#" class="product-card-teaser-rating-item">
+									<div class="product-card-teaser-rating-item-counter">75</div>
+									<div class="product-card-teaser-rating-item-text">Отзывов <span class="tooltips" href="#"><i class="icon-icon-fire"></i><span><b>В отзывах пожар</b></br>Этот товар очень активно обсуждается пользователями</span></span></div>
+								</a>									
+								<a href="#" class="product-card-teaser-rating-item">
+									<div class="product-card-teaser-rating-item-counter">134</div>
+									<div class="product-card-teaser-rating-item-text">Рецепта</div>
+								</a>
+							</div>
+							<div class="product-card-teaser-delivery">
+								<div class="product-card-teaser-delivery-item">
+									<div class="product-card-teaser-delivery-item-title"><a href="#">Доставим завтра курьером по Казани</a></div>
+									Стоимость доставки - 290 р. 
+								</div>								
+								<div class="product-card-teaser-delivery-item">
+									<div class="product-card-teaser-delivery-item-title"><a href="#">Самовывоз из магазинов – 49 пунктов в Казани</a></div>
+									Завтра можно забрать заказ – 150 р. Бесплатно при оплате заказа на сайте.
+								</div>
+							</div>
+							<div class="product-card-teaser-share">
+								<div class="product-card-teaser-share-title">Поделись с друзьями и получи 50 бонусов</div>
+								<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir" data-counter="" data-limit="3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section class="layout-wrapper-white layout-wrapper-white-last">
+			<div class="tabs-border-full-width">
+				<div class="container-main">
+					<div class="tabs product-card-tabs" id="tabs">
+						<input type="radio" name="tabs" class="tabe-js" id="tabone" checked="checked" >
+						<label for="tabone">Описание</label>
+						<div class="tab tabone">
+							<div class="product-card-tabs-two-cols product-card-tabs-two-cols-inner">
+								<div class="product-card-tabs-two-cols-left">
+									<div class="product-card-char">
+										<h2>Характеристики</h2>
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Производитель</span>
+											<span class="product-card-char-item-grey"><a href="#">Баренцово море</a></span>
+										</div>									
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Страна</span>
+											<span class="product-card-char-item-grey">Россия</span>
+										</div>									
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Упаковка</span>
+											<span class="product-card-char-item-grey">Пакет с охлажд. элементами</span>
+										</div>									
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Срок годности</span>
+											<span class="product-card-char-item-grey">20.08.17</span>
+										</div>									
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Страна</span>
+											<span class="product-card-char-item-grey">Россия</span>
+										</div>									
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Упаковка</span>
+											<span class="product-card-char-item-grey">Пакет с охлажд. элементами</span>
+										</div>									
+										<div class="product-card-char-item">
+											<span class="product-card-char-item-black">Срок годности</span>
+											<span class="product-card-char-item-grey">20.08.17</span>
+										</div>
+									</div>
+									<div class="product-card-about">
+										<h2>О товаре</h2>
+										<div class="product-card-about-content-right">
+											<img src="./img/about.jpg" alt="">
+										</div>
+										Свежие грибы лисички очень популярны в нашей стране и в Европе. Лисичка отличается от остальных грибов тем, что не требует колоссальных затрат времени на предварительную обработку и варку. Кроме того, вы не  или больную лисичку. Гриб не подвергается воздействию никаких вредных воздействий. Из этого на Западе делают антигельминтные средства. А еще лисички не накапливают радиацию, наоборот способствуют быстрому выведению радионуклидов из организма. Они очень полезны за счет высокого содержания витаминов и минералов. 
+									</div>
+								</div>
+								<div class="product-card-tabs-two-cols-right">
+									<div class="product-card-set">
+										<div class="product-card-set-title">в наборе дешевле</div>
+										<div class="product-card-set-helper">Скидка 5% на продукты в наборе</div>
+										<div class="product-card-set-wrapper">
+											<div class="product-card-set-list">
+												<a href="#" class="product-card-set-list-item">
+													<div class="product-card-set-list-img"><img src="./img/product-card-set-img1.jpg" alt=""></div>
+													<div class="product-card-set-list-text">Слива Чернослив </div>
+												</a>											
+												<a href="#" class="product-card-set-list-item">
+													<div class="product-card-set-list-img"><img src="./img/product-card-set-img2.jpg" alt=""></div>
+													<div class="product-card-set-list-text">Помидоры розовые Пинг Парадайз </div>
+												</a>												
+												<a href="#" class="product-card-set-list-item">
+													<div class="product-card-set-list-img"><img src="./img/product-card-set-img3.jpg" alt=""></div>
+													<div class="product-card-set-list-text">Яблоки Слава </div>
+												</a>											
+												<a href="#" class="product-card-set-list-item">
+													<div class="product-card-set-list-img"><img src="./img/product-card-set-img4.jpg" alt=""></div>
+													<div class="product-card-set-list-text">Виноград Кишмиш белый </div>
+												</a>
+											</div>
+											<div class="product-card-set-bottom">
+												<div class="product-card-set-summ"><span>=</span>180<span>р/кг</span></div>
+												<a href="#" class="btn btn--red">в корзину</a>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="product-card-bonus">
+										<span class="icon-icon-email"></span>
+										Что такое бонусы, и зачем они мне
+									</a>
+								</div>
+							</div>
+						</div>
+						<input type="radio" name="tabs" class="tabe-js" id="tabtwo">
+						<label for="tabtwo">Отзывы <span class="product-card-tabs-sup">25</span></label>
+						<div class="tab tabtwo">
+							<div class="product-card-tabs-content">
+								<div class="product-card-feedback">
+									<div class="product-card-feedback-head">
+										<div class="product-card-feedback-head-sum">
+											5 отзывов
+											<div class="product-card-feedback-head-rating">
+												<span class="icon-icon-star"></span>
+												<span class="icon-icon-star"></span>
+												<span class="icon-icon-star"></span>
+												<span class="icon-icon-star"></span>
+												<span class="icon-icon-star"></span>
+											</div>
+										</div>
+										<div class="product-card-feedback-head-button">
+											<a href="#modal" class="btn btn-bordered btn-transparent btn-bordered--grey btn--small js-modal">Оставить отзыв</a>
+										</div>
+									</div>
+									<div class="product-card-feedback-item">
+										<div class="product-card-feedback-item-head">
+											<div class="product-card-feedback-item-user">
+												<img src="./img/user.jpg" alt="">
+											</div>
+											<div class="product-card-feedback-item-info">
+												<div class="product-card-feedback-item-info-date">
+													<span>8 сентября 2017 13:59 </span>
+													<div class="product-card-feedback-item-rating">
+														<span class="icon-icon-star icon-icon-star--active"></span>
+														<span class="icon-icon-star"></span>
+														<span class="icon-icon-star"></span>
+														<span class="icon-icon-star"></span>
+														<span class="icon-icon-star"></span>
+													</div>
+												</div>
+												<div class="product-card-feedback-item-info-name">Жанна Дубова</div>
+											</div>
+										</div>
+										<div class="product-card-feedback-item-text">
+											Только что привезли пять килограм сливы: Двух уже нет. Пекли пирог, делали варенье, а дети и вовсе просто так кушали. Сливы замечательные! Сочные и спелые, за такую цену они почти в подарок.  Прелесть, нежная , вкусная, икринки нежные, в меру соленая, буду заказывать ещё и рекомендовать своим знакомым. Спасибо Дикой рыбе , так держать!!!
+											<div class="product-card-feedback-item-text-gallery popup-gallery">
+												<a href="./img/feedback-gallery.jpg"><img src="./img/feedback-gallery.jpg" alt=""></a>
+												<a href="./img/feedback-gallery.jpg"><img src="./img/feedback-gallery.jpg" alt=""></a>
+												<a href="./img/feedback-gallery.jpg"><img src="./img/feedback-gallery.jpg" alt=""></a>
+												<a href="./img/feedback-gallery.jpg"><img src="./img/feedback-gallery.jpg" alt=""></a>
+											</div>
+										</div>
+									</div>								
+									<div class="product-card-feedback-item">
+										<div class="product-card-feedback-item-head">
+											<div class="product-card-feedback-item-user">
+												<img src="./img/icon-default-user.svg" alt="">
+											</div>
+											<div class="product-card-feedback-item-info">
+												<div class="product-card-feedback-item-info-date">
+													<span>8 сентября 2017 13:59 </span>
+													<div class="product-card-feedback-item-rating">
+														<span class="icon-icon-star icon-icon-star--active"></span>
+														<span class="icon-icon-star icon-icon-star--active"></span>
+														<span class="icon-icon-star icon-icon-star--active"></span>
+														<span class="icon-icon-star"></span>
+														<span class="icon-icon-star"></span>
+													</div>
+												</div>
+												<div class="product-card-feedback-item-info-name">Жанна Дубова</div>
+											</div>
+										</div>
+										<div class="product-card-feedback-item-text">
+											Только что привезли пять килограм сливы: Двух уже нет. Пекли пирог, делали варенье, а дети и вовсе просто так кушали. Сливы замечательные! Сочные и спелые, за такую цену они почти в подарок.  Прелесть, нежная , вкусная, икринки нежные, в меру соленая, буду заказывать ещё и рекомендовать своим знакомым. Спасибо Дикой рыбе , так держать!!!
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input type="radio" name="tabs" class="tabe-js" id="tabthree">
+						<label for="tabthree">Рецепты <span class="product-card-tabs-sup">2</span></label>
+						<div class="tab tabthree">
+							<div class="product-card-tabs-two-cols">
+								<div class="product-card-tabs-two-cols-left">
+									<a href="#" class="card card-horizontal">
+										<div class="card-image" style="background-image: url(./img/card2.jpg);">
+											<img src="./img/card2.jpg" alt="">
+										</div>
+										<div class="card-text-wrapper">
+											<div class="card-text">
+												<div class="card-text-title">Варенье из слив дольками</div>
+												<div class="card-text-info">
+													<div class="catalog-cards-ratio">
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star icon-icon-star--active"></span>
+														</span>										
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star"></span>
+														</span>										
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star"></span>
+														</span>														
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star"></span>
+														</span>										
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star"></span>
+														</span>
+													</div>
+													<div class="catalog-cards-comment">
+														<span class="catalog-cards-comment-counter">42</span>
+													</div>
+												</div>
+											</div>
+											<div class="card-bottom">
+												<div class="recipe-head">
+													<div class="recipe-head-item"><span class="recipe-head-icon icon-icon-clock"></span>40 минут</div>
+													<div class="recipe-head-item"><span class="recipe-head-icon icon-icon-tableware"></span>4 порции </div>
+													<div class="recipe-head-item"><span class="recipe-head-icon icon-icon-param"></span>Сложность: простой</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="card card-horizontal">
+										<div class="card-image" style="background-image: url(./img/card2.jpg);">
+											<img src="./img/card2.jpg" alt="">
+										</div>
+										<div class="card-text-wrapper">
+											<div class="card-text">
+												<div class="card-text-title">Сливовый пирог по рецепту «New York Times»</div>
+												<div class="card-text-info">
+													<div class="catalog-cards-ratio">
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star icon-icon-star--active"></span>
+														</span>										
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star icon-icon-star--active"></span>
+														</span>										
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star icon-icon-star--active"></span>
+														</span>														
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star icon-icon-star--active"></span>
+														</span>										
+														<span class="catalog-cards-ratio-item">
+															<span class="icon-icon-star icon-icon-star--active"></span>
+														</span>
+													</div>
+													<div class="catalog-cards-comment">
+														<span class="catalog-cards-comment-counter">42</span>
+													</div>
+													<div class="icon-icon-fire"></div>
+												</div>
+											</div>
+											<div class="card-bottom">
+												<div class="recipe-head">
+													<div class="recipe-head-item"><span class="recipe-head-icon icon-icon-clock"></span>40 минут</div>
+													<div class="recipe-head-item"><span class="recipe-head-icon icon-icon-tableware"></span>4 порции </div>
+													<div class="recipe-head-item"><span class="recipe-head-icon icon-icon-param"></span>Сложность: простой</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="product-card-tabs-two-cols-right">
+									<a href="#" class="product-card-bonus">
+										<span class="icon-icon-email"></span>
+										Что такое бонусы, и зачем они мне
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-main">
+			<h2 class="main-title-carousel">рекомендуем попробовать</h2>
+			<div class="catalog-cards-wrapper-js catalog-cards owl-carousel">
+				<div class="catalog-cards-item catalog-cards-item-slider">
+					<a href="#">
+						<div class="catalog-cards-image">
+							<img src="./img/product1.jpg" alt="">
+						</div>
+						<div class="catalog-cards-teaser">
+							<div class="catalog-cards-comment">
+								<span class="catalog-cards-comment-fire">
+									<span class="icon-icon-fire"></span>
+								</span>
+								<span class="catalog-cards-comment-counter">42</span>
+							</div>
+							<div class="catalog-cards-title">Омуль горячего копчения </div>
+							<div class="catalog-cards-weight">500 г</div>
+							<div class="catalog-cards-cost">230 <span>р/шт</span></div>
+						</div>
+						<div class="catalog-cards-label-list">
+							<span class="catalog-cards-label catalog-cards-label-bestseller">хит</span>
+							<span class="catalog-cards-label catalog-cards-label-new">новинка</span>
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+						</div>
+						<div class="catalog-cards-button-wrapper">
+							<a href="#" class="catalog-cards-button-buy">
+								<span class="icon-icon-shopping-cart-inner"></span>
+							</a>
+						</div>
+					</a>
+				</div>				
+				<div class="catalog-cards-item catalog-cards-item-slider">
+					<a href="#">
+						<div class="catalog-cards-image">
+							<img src="./img/product1.jpg" alt="">
+						</div>
+						<div class="catalog-cards-teaser">
+							<div class="catalog-cards-comment">
+								<span class="catalog-cards-comment-fire">
+									<span class="icon-icon-fire"></span>
+								</span>
+								<span class="catalog-cards-comment-counter">42</span>
+							</div>
+							<div class="catalog-cards-title">Омуль горячего копчения </div>
+							<div class="catalog-cards-weight">500 г</div>
+							<div class="catalog-cards-cost">230 <span>р/шт</span></div>
+						</div>
+						<div class="catalog-cards-label-list">
+							<span class="catalog-cards-label catalog-cards-label-bestseller">хит</span>
+							<span class="catalog-cards-label catalog-cards-label-new">новинка</span>
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+						</div>
+						<div class="catalog-cards-button-wrapper">
+							<a href="#" class="catalog-cards-button-buy">
+								<span class="icon-icon-shopping-cart-inner"></span>
+							</a>
+						</div>
+					</a>
+				</div>				
+				<div class="catalog-cards-item catalog-cards-item-slider">
+					<a href="#">
+						<div class="catalog-cards-image">
+							<img src="./img/product1.jpg" alt="">
+						</div>
+						<div class="catalog-cards-teaser">
+							<div class="catalog-cards-comment">
+								<span class="catalog-cards-comment-fire">
+									<span class="icon-icon-fire"></span>
+								</span>
+								<span class="catalog-cards-comment-counter">42</span>
+							</div>
+							<div class="catalog-cards-title">Омуль горячего копчения </div>
+							<div class="catalog-cards-weight">500 г</div>
+							<div class="catalog-cards-cost">230 <span>р/шт</span></div>
+						</div>
+						<div class="catalog-cards-label-list">
+							<span class="catalog-cards-label catalog-cards-label-bestseller">хит</span>
+							<span class="catalog-cards-label catalog-cards-label-new">новинка</span>
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+						</div>
+						<div class="catalog-cards-button-wrapper">
+							<a href="#" class="catalog-cards-button-buy">
+								<span class="icon-icon-shopping-cart-inner"></span>
+							</a>
+						</div>
+					</a>
+				</div>				
+				<div class="catalog-cards-item catalog-cards-item-slider">
+					<a href="#">
+						<div class="catalog-cards-image">
+							<img src="./img/product1.jpg" alt="">
+						</div>
+						<div class="catalog-cards-teaser">
+							<div class="catalog-cards-comment">
+								<span class="catalog-cards-comment-fire">
+									<span class="icon-icon-fire"></span>
+								</span>
+								<span class="catalog-cards-comment-counter">42</span>
+							</div>
+							<div class="catalog-cards-title">Омуль горячего копчения </div>
+							<div class="catalog-cards-weight">500 г</div>
+							<div class="catalog-cards-cost">230 <span>р/шт</span></div>
+						</div>
+						<div class="catalog-cards-label-list">
+							<span class="catalog-cards-label catalog-cards-label-bestseller">хит</span>
+							<span class="catalog-cards-label catalog-cards-label-new">новинка</span>
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+						</div>
+						<div class="catalog-cards-button-wrapper">
+							<a href="#" class="catalog-cards-button-buy">
+								<span class="icon-icon-shopping-cart-inner"></span>
+							</a>
+						</div>
+					</a>
+				</div>				
+				<div class="catalog-cards-item catalog-cards-item-slider">
+					<a href="#">
+						<div class="catalog-cards-image">
+							<img src="./img/product1.jpg" alt="">
+						</div>
+						<div class="catalog-cards-teaser">
+							<div class="catalog-cards-comment">
+								<span class="catalog-cards-comment-fire">
+									<span class="icon-icon-fire"></span>
+								</span>
+								<span class="catalog-cards-comment-counter">42</span>
+							</div>
+							<div class="catalog-cards-title">Омуль горячего копчения </div>
+							<div class="catalog-cards-weight">500 г</div>
+							<div class="catalog-cards-cost">230 <span>р/шт</span></div>
+						</div>
+						<div class="catalog-cards-label-list">
+							<span class="catalog-cards-label catalog-cards-label-bestseller">хит</span>
+							<span class="catalog-cards-label catalog-cards-label-new">новинка</span>
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+						</div>
+						<div class="catalog-cards-button-wrapper">
+							<a href="#" class="catalog-cards-button-buy">
+								<span class="icon-icon-shopping-cart-inner"></span>
+							</a>
+						</div>
+					</a>
+				</div>				
+				<div class="catalog-cards-item catalog-cards-item-slider">
+					<a href="#">
+						<div class="catalog-cards-image">
+							<img src="./img/product1.jpg" alt="">
+						</div>
+						<div class="catalog-cards-teaser">
+							<div class="catalog-cards-comment">
+								<span class="catalog-cards-comment-fire">
+									<span class="icon-icon-fire"></span>
+								</span>
+								<span class="catalog-cards-comment-counter">42</span>
+							</div>
+							<div class="catalog-cards-title">Омуль горячего копчения </div>
+							<div class="catalog-cards-weight">500 г</div>
+							<div class="catalog-cards-cost">230 <span>р/шт</span></div>
+						</div>
+						<div class="catalog-cards-label-list">
+							<span class="catalog-cards-label catalog-cards-label-bestseller">хит</span>
+							<span class="catalog-cards-label catalog-cards-label-new">новинка</span>
+							<span class="catalog-cards-label catalog-cards-label-favorite">
+								<span class="icon-icon-favorite"></span>
+							</span>
+						</div>
+						<div class="catalog-cards-button-wrapper">
+							<a href="#" class="catalog-cards-button-buy">
+								<span class="icon-icon-shopping-cart-inner"></span>
+							</a>
+						</div>
+					</a>
+				</div>
+			</div>
+			<h2 class="main-title-carousel">Рецепты<a class="main-title-link" href="#">Все рецепты</a></h2>
+			<div class="owl-carousel recipes-carousel recipes-carousel-main-js">
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes1.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+							<span class="catalog-cards-comment-fire">
+								<span class="icon-icon-fire"></span>
+							</span>
+						</div>
+						<div class="recipes-item-text-title">Бургер с жареным сулугуни</div>
+					</div>
+				</a>						
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes2.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+							<span class="catalog-cards-comment-fire">
+								<span class="icon-icon-fire"></span>
+							</span>
+						</div>
+						<div class="recipes-item-text-title">Картофель по-деревенски с тимьяном</div>
+					</div>
+				</a>						
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes3.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+						</div>
+						<div class="recipes-item-text-title">Салат с манго и моцареллой</div>
+					</div>
+				</a>						
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes4.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+							<span class="catalog-cards-comment-fire">
+								<span class="icon-icon-fire"></span>
+							</span>
+						</div>
+						<div class="recipes-item-text-title">Бургер с треской на гриле</div>
+					</div>
+				</a>
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes4.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+							<span class="catalog-cards-comment-fire">
+								<span class="icon-icon-fire"></span>
+							</span>
+						</div>
+						<div class="recipes-item-text-title">Бургер с треской на гриле</div>
+					</div>
+				</a>
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes1.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+							<span class="catalog-cards-comment-fire">
+								<span class="icon-icon-fire"></span>
+							</span>
+						</div>
+						<div class="recipes-item-text-title">Бургер с жареным сулугуни</div>
+					</div>
+				</a>						
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes2.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+							<span class="catalog-cards-comment-fire">
+								<span class="icon-icon-fire"></span>
+							</span>
+						</div>
+						<div class="recipes-item-text-title">Картофель по-деревенски с тимьяном</div>
+					</div>
+				</a>						
+				<a href="#" class="recipes-item">
+					<div class="recipes-item-image" style="background-image: url(./img/recipes3.jpg)"></div>
+					<div class="recipes-item-text">
+						<div class="catalog-cards-comment">
+							<div class="product-card-feedback-item-rating">
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star icon-icon-star--active"></span>
+								<span class="icon-icon-star"></span>
+								<span class="icon-icon-star"></span>
+							</div>
+							<span class="catalog-cards-comment-counter">42</span>
+						</div>
+						<div class="recipes-item-text-title">Салат с манго и моцареллой</div>
+					</div>
+				</a>
+			</div>
+		</section>
+		<div class="sticky-footer-push"></div>
+	</section>
+	<section id="live" class="live live-inner">
+		<a href="#" class="live-button-feedback">оставить отзыв</a>
+		<div class="live-head">
+			<div class="live-head-text">Активность</div>
+			<a href="#" class="live-head-button">
+				<span class="icon-icon-corner"></span>
+			</a>
+		</div>
+		<a href="#" class="live-button-show"><img src="./img/logo-live-button.svg" alt=""></a>
+		<div class="live-wrap">
+			<div class="live-scroll">
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/live-img.jpg" alt=""></div>
+					<div class="live-item-text">
+						Иван Кореньков только что купил 3 кг <a href="#">лисички свежие</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/live-img2.jpg" alt=""></div>
+					<div class="live-item-text">
+						Виктор Т. добавил фото к рецепту <a href="#">Тилапия в панировке с пармезаном</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-hot">
+					<span class="icon-icon-fire"></span>
+					<div class="live-item-img"><img src="./img/live-img.jpg" alt=""></div>
+					<div class="live-item-text">
+						Иван Кореньков только что купил 3 кг <a href="#">лисички свежие</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/live-img3.svg" alt=""></div>
+					<div class="live-item-text">
+						Жанна Д. получила <a href="#">новое достижение</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-progress">
+					<div class="live-item-img"><div class="icon-icon-guru-inner"></div></div>
+					<div class="live-item-text">
+						Жанна Д. достигла ранга <a href="#">Гуру рыбалки</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-bonus">
+					<div class="live-item-img">+100</div>
+					<div class="live-item-text">
+						Ольга З. получила <a href="#">бонусные баллы</a> за привязку социальных сетей 
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>
+				<div class="live-item">
+					<div class="live-item-img"><img src="./img/activity-fb.svg" alt=""></div>
+					<div class="live-item-text">
+						3 988 подписчиков в нашей группе <a href="#">в Одноклассниках</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>			
+				<div class="live-item live-item-feedback">
+					<div class="live-item-img-wrapper">
+						<div class="live-item-img-small"><img src="./img/activity-fb.svg" alt=""></div>
+						<div class="live-item-img">
+							<img src="./img/cabinet-image.jpg" alt="">
+						</div>
+					</div>
+					<div class="live-item-text">
+						Жанна Дубова оставила отзыв о магазине на нашей <a href="#">странице Facebook</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>
+				<div class="live-item live-item-comment">
+					<div class="live-item-img"><div class="icon-icon-comment"></div></div>
+					<div class="live-item-text">
+						Виктор Ж. оставил <a href="#">отзыв о магазине</a>
+						<span class="live-item-text-time">минуту назад</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer js-site-footer">
+		<div class="container-full-width clearfix">
+			<div class="footer-navi-wrapper">
+				<div class="footer-title">О магазине</div>			
+				<ul class="footer-navi">
+					<li class="footer-navi-item"><a href="#">Доставка</a></li>
+					<li class="footer-navi-item"><a href="#">Оплата</a></li>
+					<li class="footer-navi-item"><a href="#">Контактная информация</a></li>
+					<li class="footer-navi-item"><a href="#">Наши новости</a></li>
+					<li class="footer-navi-item"><a href="#">Ваши отзывы</a></li>
+				</ul>
+			</div>			
+			<div class="footer-navi-wrapper">
+				<div class="footer-title">Покупателям</div>			
+				<ul class="footer-navi">
+					<li class="footer-navi-item"><a href="#">Каталог</a></li>
+					<li class="footer-navi-item"><a href="#">Рецепты</a></li>
+					<li class="footer-navi-item"><a href="#">Отзывы</a></li>
+					<li class="footer-navi-item"><a href="#">Действующие акции</a></li>
+					<li class="footer-navi-item"><a href="#">Система бонусов</a></li>
+				</ul>
+			</div>
+			<div class="footer-contacts">
+				<div class="footer-title">Контактная информация</div>
+				<div class="footer-cantacts-address">109429, г. Казань,  </br>ул. Верхние Поля, д.51А, стр.2</br>ООО «Дикая рыба»</div>
+				<div class="footer-contacts-phone">
+					<a href="tel:+74956409640">+7 495 640-9-640</a>
+				</div>
+				<div class="footer-kr">Сделано в <a href="https://kr.digital/">kr.digital</a></div>
+			</div>
+			<div class="footer-mobile-app">
+				<div class="footer-title">Скачивайте приложения</div>	
+				<a href="#"><img src="./img/appstore.svg" alt=""></a>
+				</br>
+				<a href="#"><img src="./img/google-play.svg" alt=""></a>
+			</div>
+			<div class="footer-social">
+				<div class="footer-title">Мы в социальных сетях</div>	
+				<div class="footer-social-wrapper">
+					<a href="#" class="footer-social-item">
+						<span class="icon-icon-vk"></span>
+					</a>
+					<a href="#" class="footer-social-item">
+						<span class="icon-icon-fb"></span>
+					</a>
+					<a href="#" class="footer-social-item">
+						<span class="icon-icon-ok"></span>
+					</a>
+					<a href="#" class="footer-social-item">
+						<span class="icon-icon-tw"></span>
+					</a>
+				</div>
+			</div>		
+		</div>
+	</footer>
+	<!-- модальное окно добавить отзыв -->
+	<div id="modal" class="modal mfp-hide">
+		<div class="modal-wrapper-wave">
+			<div class="modal-wrapper">
+				<h2 class="modal-title">Оставьте отзыв</h2>
+				<form class="form-feedback" action="">
+					<div class="form-feedback-item clearfix">
+						<div class="form-feedback-title">Оцените товар</div>
+						<div class="form-feedback-rating" id="reviewStars-input">
+						    <input id="star-4" type="radio" name="reviewStars"/>
+						    <label title="gorgeous" for="star-4"><span class="icon-icon-star"></span></label>
+
+						    <input id="star-3" type="radio" name="reviewStars"/>
+						    <label title="good" for="star-3"><span class="icon-icon-star"></span></label>
+
+						    <input id="star-2" type="radio" name="reviewStars"/>
+						    <label title="regular" for="star-2"><span class="icon-icon-star"></span></label>
+
+						    <input id="star-1" type="radio" name="reviewStars"/>
+						    <label title="poor" for="star-1"><span class="icon-icon-star"></span></label>
+
+						    <input id="star-0" type="radio" name="reviewStars"/>
+						    <label title="bad" for="star-0"><span class="icon-icon-star"></span></label>
+						</div>
+					</div>				
+					<div class="form-feedback-item">
+						<div class="form-feedback-title">Комментарий</div>
+						<textarea name="" id="" cols="30" rows="10" class="form-feedback-textarea"></textarea>
+					</div>				
+					<div class="form-feedback-item">
+						<div class="form-feedback-title">Представьтесь</div>
+						<input type="text" class="form-feedback-input">
+					</div>				
+					<div class="form-feedback-item">
+						  <input name='uploads[]' type="file" multiple>
+					</div>
+					<button type="submit" class="btn btn--red btn--middle">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<img class="modal-wave" src="./img/modal-wave.png" alt="">
+	</div>
+	<!-- модальное окно зарегистрироваться -->
+		<!-- код из смс modal-auth--sms-code -->
+		<!-- код из смс отправили modal-auth--sms-code-send -->
+		<!-- подтвержденный телефон modal-auth--sms-code-check -->
+	<div id="modal-reg" class="modal modal-auth mfp-hide">
+		<div class="modal-wrapper-wave">
+			<div class="modal-wrapper">
+				<h2 class="modal-title">Зарегистрируйтесь<span class="modal-sub-title">чтобы копить бонусы с покупок</span></h2>
+				<form action="">
+					<div class="modal-auth-form-item">
+						<label for="" class="lebel-default">Представьтесь</label>
+						<input type="text" class="input-default">
+					</div>				
+					<div class="modal-auth-form-item modal-auth-form-item-group">
+						<div class="modal-auth-form-wrapper">
+							<label for="" class="lebel-default">Номер телефона</label>
+							<input type="text" class="input-default">
+						</div>						
+						<div class="modal-auth-form-wrapper modal-auth-form-wrapper--width-sm">
+							<label for="" class="lebel-default">Код из СМС</label>
+							<input type="text" class="input-default">
+						</div>						
+						<div class="modal-auth-form-wrapper modal-auth-form-wrapper--text">
+							<span class="modal-auth-form-message">Телефон подтвержден</span>
+						</div>
+					</div>	
+					<div class="modal-auth-form-item modal-auth-form-item-sms-code">
+						<span class="modal-auth-form-helper">Мы отправили СМС с кодом на указанный номер</span>
+						<span class="modal-auth-form-helper"><a href="#">Повторить</a> через  32с</span>
+					</div>					
+					<div class="modal-auth-form-item modal-auth-form-item--toggle-text">
+						<label for="" class="lebel-default"><span class="lebel-default--visible">Придумайте пароль</span><span class="lebel-default--hidden">Пароль</span></label>
+						<input type="text" class="input-default">
+					</div>				
+					<div class="checkbox-item">
+						<input id="person2" type="checkbox" name="params" />
+						<label for="person2">Зарегистрироваться как юридическое лицо</label>
+					</div>
+					<div class="modal-auth-form-item modal-auth-form-item-hidden">
+						<label for="" class="lebel-default">ИНН</label>
+						<input type="text" class="input-default">
+					</div>
+					<div class="modal-auth-form-item-group">
+						<button class="btn btn--red btn--middle  modal-auth-form-btn-enter modal-auth-form-btn-enter-inner">Зарегистрироваться</button>
+						<a class="modal-auth-form-link-reg js-modal" href="#modal-auth">Войти</a>
+					</div>	
+				</form>
+			</div>
+			<div class="modal-auth-social">
+				<div class="modal-auth-social-wrapper">
+					<div class="modal-auth-social-title">Войти через социальную сеть</div>
+					<div class="order-contact-info-social">
+						<div class="order-contact-info-social-group">
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-vk.svg" alt="">
+							</a>
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-fb.svg" alt="">
+							</a>
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-ok.svg" alt="">
+							</a>
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-tw.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="modal-wave" src="./img/modal-wave.png" alt="">
+	</div>
+	<!-- модальное окно восстановление пароля -->
+	<div id="modal-auth-reset-password" class="modal modal-auth modal-reset-password mfp-hide">
+		<div class="modal-wrapper-wave">
+			<h2 class="modal-title">Забыли пароль?</h2>
+			<div class="modal-reset-password-text">Пожалуйста, укажите адрес электронной почты или ноемер телефона, который Вы использовали для создания Вашей учетной записи, и мы пришлем Вам ссылку для восстановления Вашего пароля.</div>
+			<div class="modal-wrapper">
+				<form action="">
+					<div class="modal-auth-form-item">
+						<label for="" class="lebel-default">Номер телефона или email</label>
+						<input type="text" class="input-default">
+					</div>	
+					<div class="modal-auth-form-item-group">
+						<button class="btn btn--red btn--middle modal-auth-form-btn-enter">Отправить</button>
+						<a class="modal-auth-form-link js-modal" href="#modal-auth">Я вспомнил пароль</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- модальное окно авторизации -->
+	<div id="modal-auth" class="modal modal-auth mfp-hide">
+		<div class="modal-wrapper-wave">
+			<div class="modal-wrapper">
+				<h2 class="modal-title">Войти</h2>
+				<form class="modal-auth-form" action="">
+					<div class="modal-auth-form-item">
+						<label for="" class="lebel-default">Номер телефона или email</label>
+						<input type="text" class="input-default">
+					</div>											
+					<div class="modal-auth-form-item">
+						<div class="modal-auth-form-wrapper">
+							<label for="" class="lebel-default lebel-default-group">Пароль 
+								<a href="#modal-auth-reset-password" class="js-modal">Забыл пароль</a>
+							</label>
+							<input type="password" class="input-default">
+						</div>
+						<div class="input-error-default">Неверный пароль</div>
+					</div>
+					<div class="modal-auth-form-item-group">
+						<button class="btn btn--red btn--middle modal-auth-form-btn-enter">Войти</button>
+						<a class="modal-auth-form-link-reg js-modal" href="#modal-reg">Зарегистрироваться</a>
+					</div>
+				</form>
+			</div>
+			<div class="modal-auth-social">
+				<div class="modal-auth-social-wrapper">
+					<div class="modal-auth-social-title">Войти через социальную сеть</div>
+					<div class="order-contact-info-social">
+						<div class="order-contact-info-social-group">
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-vk.svg" alt="">
+							</a>
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-fb.svg" alt="">
+							</a>
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-ok.svg" alt="">
+							</a>
+							<a href="#" class="order-contact-info-social-group-item">
+								<img src="./img/icon-tw.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="modal-wave" src="./img/modal-wave.png" alt="">
+	</div>
+	<!-- модальное окно инфостраниц доставка/оплата/гарантии -->
+	<div id="modal-info" class="modal modal-info mfp-hide">
+		<ul class="modal-info-navi">
+			<li class="modal-info-navi-item-delivery modal-info-navi-item modal-info-navi-item--active">
+				<a href="#">доставка</a>
+			</li>			
+			<li class="modal-info-navi-item-payment modal-info-navi-item">
+				<a href="#">оплата</a>
+			</li>			
+			<li class="modal-info-navi-item-warranty modal-info-navi-item">
+				<a href="#">гарантии</a>
+			</li>
+		</ul>
+		<div class="modal-info-tab modal-info-tab-delivery">
+			<div class="modal-info-wrapper">
+				<h2 class="modal-title">Доставка по Казани</h2>
+				<div class="modal-info-helper">Минимальная сумма заказа 1000 р.</div>
+			</div>
+			<div class="modal-info-cols-wrapper">
+				<div class="modal-info-two-cols">
+					<div class="modal-info-cols-img">
+						<img src="./img/icon-delivery.svg" alt="">
+					</div>
+					<div class="modal-info-cols-text">
+						<div class="modal-info-cols-text-title">Доставка курьерской службой  — 149 р.</div>
+						<div class="modal-info-cols-text-teaser">
+							<span>9:00-12:00</span>
+							<span>12:00-16:00</span>
+							<span>16:00-20:00</span>
+						</div>
+					</div>
+				</div>
+				<div class="modal-info-two-cols">
+					<div class="modal-info-cols-img">
+						<img src="./img/icon-magazine.svg" alt="">
+					</div>
+					<div class="modal-info-cols-text">
+						<div class="modal-info-cols-text-title">Самовывоз из пункта выдачи заказов — 49-99 р. </div>
+						<div class="modal-info-cols-text-link">
+							<a href="#">Список пунктов самовывоза</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-info-content modal-info-wrapper">
+				<h2 class="modal-info-title">Ваш первый заказ мы доставим бесплатно</h2>
+				<p><strong>Прием заказов день-вдень</strong> до 12:00 с понедельника по пятницу, прием заказов на доставку на завтра ежедневно до 20:00</p>
+				<p><strong>Отмена и перенос заказа:</strong> Вы можете отменить или перенести доставку, если сообщите нам об этом заранее: до 12:00 в день доставки для вечерних интервалов и до 20:00 в день, предшествующий доставке, для утренних  и дневных интервалов. Если Вы сообщаете об отмене или переносе заказа позже указанного времени, стомость доставки будет увеличена на 99 руб.</p>
+				<blockquote> 
+					<span>Пожалуйста, не задерживайте курьера более чем на 15 минут.</span>
+					<span>Его ждут другие клиенты, которые хотят получить свой заказ вовремя.</span>
+				</blockquote>
+				<p>На любом этапе оформления, сборки и доставки заказа вы проинформированы о его статусе с помощью электронных писем и смс-сообщений. Также вам высылаются личные данные и контакты водителя, который доставляет ваши продукты. За 15 минут до вручения заказа курьер непременно созвониться с вами.</p>
+				<p>Заказ не покидает холодильника даже в пути. Все продукты доставляются в специальных автомобилях, оборудованных современными холодильниками. Температура (от-18 до +4) подбирается к каждой группе продуктов индивидуально. Вы получаете свежемороженные и охлажденные, а не перемороженные и растаявшие продукты.</p>
+			</div>
+		</div>
+		<div class="modal-info-tab modal-info-tab-payment">
+			<div class="modal-info-wrapper">
+				<h2 class="modal-title">Способы оплаты товара</h2>
+				<div class="modal-info-helper">Минимальная сумма заказа 1000 р.</div>
+			</div>
+			<div class="modal-info-cols-wrapper modal-info-cols-wrapper-inner">
+				<div class="modal-info-three-cols">
+					<div class="modal-info-cols-img">
+						<img src="./img/icon-payment.svg" alt="">
+					</div>
+					<div class="modal-info-cols-text">
+						<div class="modal-info-cols-text-title">Курьеру наличными при получении заказа</div>
+					</div>
+				</div>
+				<div class="modal-info-three-cols">
+					<div class="modal-info-cols-img">
+						<img src="./img/icon-card-inner.svg" alt="">
+					</div>
+					<div class="modal-info-cols-text">
+						<div class="modal-info-cols-text-title">Банковской картой при получении заказа</div>
+					</div>
+				</div>
+				<div class="modal-info-three-cols">
+					<div class="modal-info-cols-img">
+						<img src="./img/icon-desktop.svg" alt="">
+					</div>
+					<div class="modal-info-cols-text">
+						<div class="modal-info-cols-text-title">Банковской картой при оформлении заказа на сайте</div>
+					</div>
+				</div>
+				<div class="modal-info-helper">Скоро добавятся Яндекс.Деньги и WebMoney и другие удобные сервисы.</div>
+			</div>
+			<div class="modal-info-content modal-info-wrapper">
+				<p>Если в вашем заказе присутствует весовой товар, окончательную сумму можно узнать при получении заказа или в личном кабинете в день доставки.</p>
+			</div>
+		</div>
+		<div class="modal-info-tab modal-info-tab-warranty">
+			<div class="modal-info-content-inner modal-info-wrapper">
+				<h2 class="modal-title">Возврат без проблем</h2>
+				<p>Мы стремимся доставлять вам только свежие и качественные продукты. Однако, если у вас есть претензии по качеству доставленной продукции, мы безоговорочно обменяем или вернем деньги.</p>
+				<p>Сроки в которые принимаются претензии:</p>
+				<ul>
+					<li>3 дня с момента доставки продуктов, срок годности которых меньше 30 суток</li>
+					<li>15 дней с момента доставки для продуктов с длительным сроком годности </li>
+				</ul>
+			</div>
+			<div class="modal-info-content modal-info-wrapper modal-info-content-bottom">
+				<p>Вы можете сообщить о проблеме: по электронной почте <a href="mailto:service@wildfish.club">service@wildfish.club</a></br> или по телефону <a href="tel:+78432454371">8 (843) 245-43-71</a>, а также написав нам сообщение.</p>
+				<p>Напоминаем что в любой момент оформления, доставки и получения заказа, вы можете без объяснений отказаться от всего заказа или его части.</p>
+			</div>
+		</div>
+	</div>
+	<!-- мобильное меню -->
+	<div class="mobile-menu">
+		<div class="mobile-menu-wrapper">
+			<div class="mobile-menu-wrapper-scroll">
+				<div class="mobile-menu-list">
+					<div class="mobile-menu-list-head mobile-menu-list-item">
+						<a href="#" class="mobile-menu-favorite"><span class="icon-icon-favorite"></span>избранное</a>
+						<a href="#" class="mobile-menu-account"><span class="icon-icon-user"></span>кабинет</a>
+					</div>
+					<div href="#" class="mobile-menu-list-item mobile-menu-list-item-dropdown">
+						Каталог
+						<div class="mobile-menu-dropdown-list">
+							<a href="#" class="mobile-menu-dropdown-list-item">Молочная продукция</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Овощи и фруткы</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Сыры</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Хлеб</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Икра</a>
+							<a href="#" class="mobile-menu-dropdown-list-item">Рыба</a>
+						</div>
+					</div>
+					<a href="#" class="mobile-menu-list-item">Акции</a>
+					<a href="#" class="mobile-menu-list-item">Рецепты</a>
+					<a href="#" class="mobile-menu-list-item">Отзывы</a>
+					<a href="#" class="mobile-menu-list-item">Доставка</a>
+					<a href="#" class="mobile-menu-list-item">Гарантия</a>
+					<a href="#" class="mobile-menu-list-item">Контакты</a>
+				</div>
+				<a href="#" class="mobile-menu-phone">+7 915 349 88 77 <span>с 9:00 до 20:00</span></a>
+				<div class="mobile-menu-app">
+					<span>Скачивайте приложения</span>
+					<a href="#"><img src="./img/appstore.svg" alt=""></a>
+					<a href="#"><img src="./img/google-play.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-menu-overlay"></div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
