@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="https://rawgit.com/DataTables/DataTables/master/media/css/dataTables.bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid  ">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>DataTable MultiSelect</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <select id="maintable-quick-filter-0" multiple class="form-control" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Name"></select>
+            <select id="maintable-quick-filter-1" multiple class="form-control" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Position"></select>
+            <select id="maintable-quick-filter-2" multiple class="form-control" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Office"></select>
+            <select id="maintable-quick-filter-3" multiple class="form-control" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Extn."></select>
+            <select id="maintable-quick-filter-4" multiple class="form-control" size="1" data-enable-filtering="false" data-button-class="btn btn-sm btn-default" data-placeholder="Start date"></select>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <table id="maintable" class="display" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+	<script src="js/scripts.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="https://rawgit.com/DataTables/DataTables/master/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="https://rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"></script>
+	<script src="https://rawgit.com/omarcho/dataTables.multiSelect/master/dist/js/dataTables.multiSelect.min.js"></script>
+
+
+
+	<script src="js/common.js"></script>
+<script>
+    $('#maintable').DataTable( {
+        ajax: '../data.json',
+        ordering:true,
+        scrollY:'100%',
+        scrollX: true,
+        scrollCollapse:true,
+        stateSave:true
+    });
+
+
+
+</script>
+
+</body>
+</html>

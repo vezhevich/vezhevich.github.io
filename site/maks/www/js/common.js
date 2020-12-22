@@ -1,7 +1,10 @@
 $(function() {
-	
-	$(document).ready(function() {
-        $('#example').DataTable( {
+
+
+    $(document).ready(function() {
+        $('#maintable').DataTable( {
+            ajax: '../data.json',
+            ordering: true,
             dom: 'Bfrtip',
             buttons: [
                 // 'searchPanes',
@@ -11,9 +14,10 @@ $(function() {
                     collectionLayout: 'one-column',
                 },
             ],
+            scrollCollapse:true,
+            stateSave:true,
             colReorder: true,
             scrollY: '60vh',
-            scrollCollapse: true,
             scrollX: true,
             paging: false,
             language: {
