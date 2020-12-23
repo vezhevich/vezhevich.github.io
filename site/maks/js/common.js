@@ -3,7 +3,7 @@ $(function() {
 
     $(document).ready(function() {
         $('#maintable').DataTable( {
-            ajax: '../data.json',
+            ajax: 'data.json',
             ordering: true,
             dom: 'Bfrtip',
             buttons: [
