@@ -3,7 +3,7 @@ $(function() {
 
     $(document).ready(function() {
         $('#maintable').DataTable( {
-            ajax: 'data.json',
+            ajax: '../data.json',
             ordering: true,
             dom: 'Bfrtip',
             buttons: [
@@ -172,7 +172,7 @@ $(function() {
         theme: 'tooltipster-shadow b-tooltip',
         contentAsHTML: true,
         interactive: true,
-        distance: 0,
+        distance: 5,
         arrow: false,
         maxWidth: '200',
         minWidth: '200',
