@@ -21,8 +21,6 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-	<link rel="stylesheet" href="https://cdn.datatables.net/searchpanes/1.2.1/css/searchPanes.dataTables.min.css">
-	<link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -38,6 +36,10 @@
 
 <body>
     <div class="b-screener">
+        <a href="https://jsfiddle.net/41vgefnf/10/" target="_blank">Другой пример использования api</a>
+        <br>
+        <br>
+        <span style="color: #fff">Другой пример использования, рабочий</span>
         <div class="b-screener-group-select">
             <select id="maintable-quick-filter-0" multiple class="form-control b-screener__select" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Name"></select>
             <select id="maintable-quick-filter-1" multiple class="form-control b-screener__select" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Position"></select>
@@ -45,7 +47,6 @@
             <select id="maintable-quick-filter-3" multiple class="form-control b-screener__select" size="1" data-enable-filtering="true" data-button-class="btn btn-sm btn-default" data-placeholder="Extn."></select>
             <select id="maintable-quick-filter-4" multiple class="form-contro b-screener__selectl" size="1" data-enable-filtering="false" data-button-class="btn btn-sm btn-default" data-placeholder="Start date"></select>
             <select id="maintable-quick-filter-5" multiple class="form-control b-screener__select" size="1" data-enable-filtering="false" data-button-class="btn btn-sm btn-default" data-placeholder="Salary"></select>
-
         </div>
 
         <table id="maintable" class="display" style="width:100%">
@@ -53,32 +54,34 @@
             <tr>
                 <th>
                     <div class="b-screener-head__wrap">
-                        Name
+                        <span class="b-screener-head__text">Name</span>
+                        <span class="b-screener-head__tooltip js-tooltip" data-tooltip-content="#tooltip-filter"></span>
                     </div>
                 </th>
                 <th>
                     <div class="b-screener-head__wrap">
-                        Position
+                        <span class="b-screener-head__text">Position</span>
+                        <span class="b-screener-head__tooltip js-tooltip" data-tooltip-content="#tooltip-filter2"></span>
                     </div>
                 </th>
                 <th>
                     <div class="b-screener-head__wrap">
-                        Office
+                        <span class="b-screener-head__text">Office</span>
                     </div>
                 </th>
                 <th>
                     <div class="b-screener-head__wrap">
-                        Extn.
+                        <span class="b-screener-head__text">Extn.</span>
                     </div>
                 </th>
                 <th>
                     <div class="b-screener-head__wrap">
-                        Start date
+                        <span class="b-screener-head__text">Start date</span>
                     </div>
                 </th>
                 <th>
                     <div class="b-screener-head__wrap">
-                        Salary
+                        <span class="b-screener-head__text">Salary</span>
                     </div>
                 </th>
             </tr>
@@ -86,16 +89,32 @@
         </table>
     </div>
 
+    <div style="display: none">
+        <div id="tooltip-filter">
+            <select name="" id="" multiple class="b-screener__select" data-placeholder="Name">
+                <option value="Airi Satou">Airi Satou</option>
+                <option value="Angelica Ramos">Angelica Ramos</option>
+                <option value="Junior Technical Author">Junior Technical Author</option>
+                <option value="Software Engineer">Software Engineer</option>
+            </select>
+        </div>
+        <div id="tooltip-filter2">
+            <select name="" id="" multiple class="b-screener__select" data-placeholder="Position">
+                <option value="Airi Satou">Accountant</option>
+                <option value="Angelica Ramos">Chief Executive Officer (CEO)</option>
+                <option value="Junior Technical Author">Junior Technical Author</option>
+                <option value="Software Engineer">Software Engineer</option>
+            </select>
+        </div>
+    </div>
+
 	<script src="js/scripts.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
 	<script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.colVis.min.js"></script>
 	<script src="https://cdn.datatables.net/colreorder/1.5.3/js/dataTables.colReorder.min.js"></script>
-	<script src="https://cdn.datatables.net/searchpanes/1.2.1/js/dataTables.searchPanes.min.js"></script>
-	<script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>-->
     <script src="https://rawgit.com/DataTables/DataTables/master/media/js/dataTables.bootstrap.min.js"></script>
     <script src="https://rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"></script>
     <script src="https://rawgit.com/omarcho/dataTables.multiSelect/master/dist/js/dataTables.multiSelect.min.js"></script>

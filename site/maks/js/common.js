@@ -165,4 +165,34 @@ $(function() {
         } );
     } );
 
+    $('.js-tooltip').tooltipster({
+        contentCloning: true,
+        animation: 'fade',
+        delay: 0,
+        theme: 'tooltipster-shadow b-tooltip',
+        contentAsHTML: true,
+        interactive: true,
+        distance: 0,
+        arrow: false,
+        maxWidth: '200',
+        minWidth: '200',
+        trigger: 'click',
+        side:  ['bottom', 'top'],
+    });
+
+    $('.js-tooltip').on('click', function() {
+        $('.b-screener__select').multiselect({
+            maxHeight: 200,
+            enableFiltering: true,
+            filterBehavior: 'value',
+            numberDisplayed: 1,
+            allSelectedText: 'Выбраны все',
+            nSelectedText: ' Выбрано',
+            filterPlaceholder: 'Поиск'
+        });
+    });
+
+
+
+
 });
