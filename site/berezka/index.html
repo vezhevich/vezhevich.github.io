@@ -1,0 +1,1291 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Березка</title>
+	<meta name="description" content="Description text">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+
+
+<div class="l-wrapper-for-footer-bottom">
+    <header class="b-header">
+        <div class="l-container">
+            <div class="b-header__wrapper">
+                <a href="#" class="b-header__logo">
+                    <img class="hidden-mobile" src="./images/dist/logo.png" alt="">
+                    <img class="visible-mobile" src="./images/dist/logo-mobile.png" alt="">
+                </a>
+                <select class="b-header__select js-select-custom">
+                    <option value="">Микрозаймы</option>
+                    <option value="">Макрозайм</option>
+                    <option value="">Мегазаймы</option>
+                </select>
+                <a href="#" class="b-header__auth">
+                    <svg class="icon">
+                        <use xlink:href="#auth"></use>
+                    </svg>
+                    Войти
+                </a>
+                <div class="b-header__hamb">
+                    <svg class="icon">
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="b-promo">
+        <div class="l-container">
+            <div class="b-promo__wrapper">
+                <div class="b-promo__title hidden-mobile">Бери займ и получи кэшбэк</div>
+                <div class="b-promo__title visible-mobile">Кешбек до <span>1000 руб</span> <br> с каждого займа!</div>
+                <div class="main-block__wrapper">
+                    <div class="main-block__content-block">
+                        <div class="main-block__calculator-block">
+                            <div class="main-block__calculator-option">
+                                <div class="main-block__calculator-heading">
+                                    <span class="main-block__calculator-title">Выберите сумму</span>
+                                    <span class="main-block__calculator-result"><i id="calculator_sum" class="calculator_sum">25000</i> ₽</span>
+                                </div>
+                                <div class="main-block__calculator-wrapper">
+                                    <input type="text" class="js-range-sum">
+                                </div>
+                            </div>
+
+                            <div class="main-block__calculator-option">
+                                <div class="main-block__calculator-heading">
+                                    <span class="main-block__calculator-title">Выберите срок</span>
+                                    <span class="main-block__calculator-result"><i id="calculator_date">10</i> <span id="totalWeeks" data-weeks="">дней</span></span>
+                                </div>
+                                <div class="main-block__calculator-wrapper">
+                                    <input type="text" class="js-range-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-block__group">
+                            <a href="#" class="main-block__button">показать (75)</a>
+                            <select class="b-sorter-select js-select-custom">
+                                <option value="">Сортировка</option>
+                                <option value="">по популярности</option>
+                                <option value="">по сумме</option>
+                                <option value="">по сроку</option>
+                                <option value="">по ставке</option>
+                                <option value="">по времени решения</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="l-container l-main-content">
+        <div class="b-tabs js-tabs">
+            <a href="#" class="b-tabs__item">На карту</a>
+            <a href="#" class="b-tabs__item">Онлайн</a>
+            <a href="#" class="b-tabs__item">Под ПТС</a>
+            <a href="#" class="b-tabs__item">Без процентов</a>
+            <a href="#" class="b-tabs__item">На Киви</a>
+            <a href="#" class="b-tabs__item">Без проверок</a>
+            <a href="#" class="b-tabs__item">Без отказа</a>
+            <a href="#" class="b-tabs__item">С плохой историей</a>
+            <a href="#" class="b-tabs__item">Новые МФО</a>
+            <a href="#" class="b-tabs__item">0% первый раз</a>
+        </div>
+        <div class="b-sort js-sort hidden-mobile">
+            <span>Сортировка:</span>
+            <a href="#">по популярности</a>
+            <a class="active" href="#">по сумме</a>
+            <a href="#">по сроку</a>
+            <a href="#">по ставке</a>
+            <a href="#">по времени решения</a>
+        </div>
+        <div class="b-card">
+            <div class="b-card__item">
+                <div class="b-card__label">new</div>
+                <div class="b-card__img">
+                    <img src="./images/dist/card1.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card" class="b-card__button button visible-mobile js-modal">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card" class="b-card_hidden mfp-hide">
+                  <div class="b-card__wrapper">
+                      <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                      <div class="b-card__close js-close-card">
+                          <svg class="icon">
+                              <use xlink:href="#close-inner"></use>
+                          </svg>
+                      </div>
+                      <div class="b-card__img">
+                          <img src="./images/dist/card1.jpg" alt="">
+                      </div>
+                      <div class="b-card__param">
+                          <div class="b-card__param-row">
+                              <div class="b-card__param-col b-card__param-col_left">
+                                  <svg class="icon">
+                                      <use xlink:href="#money"></use>
+                                  </svg>
+                                  Сумма:
+                              </div>
+                              <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                          </div>
+                          <div class="b-card__param-row">
+                              <div class="b-card__param-col b-card__param-col_left">
+                                  <svg class="icon">
+                                      <use xlink:href="#percent"></use>
+                                  </svg>
+                                  Ставка:
+                              </div>
+                              <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                          </div>
+                          <div class="b-card__param-row">
+                              <div class="b-card__param-col b-card__param-col_left">
+                                  <svg class="icon">
+                                      <use xlink:href="#calendar"></use>
+                                  </svg>
+                                  Срок:
+                              </div>
+                              <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                          </div>
+                      </div>
+                      <div class="b-card__cashback">
+                          <div class="b-card__cashback__left">
+                              <svg class="icon">
+                                  <use xlink:href="#pig"></use>
+                              </svg>
+                              Бери займ – получай кэшбэк
+                          </div>
+                          <div class="b-card__cashback__right">
+                              <div class="b-card__cashback-ribbon">
+                                  1000 <span>₽</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="b-card__form">
+                          <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                          <!--b-card__form-input_error для ошибки-->
+                          <div class="b-card__form-input">
+                              <svg class="icon">
+                                  <use xlink:href="#phone"></use>
+                              </svg>
+                              <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                              <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                          </div>
+                          <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                          <div class="b-card__form-checkbox b-checkbox">
+                              <div class="b-checkbox__item">
+                                  <input id="param" type="checkbox" checked>
+                                  <label for="param">Я согласен с условиями оферты</label>
+                              </div>
+                          </div>
+                          <div class="b-card__form-group-buttons">
+                              <a class="button" href="#">Получить деньги</a>
+                              <a class="button button_gray" href="#">перейти без привязки номера</a>
+                          </div>
+                          <div class="b-card__helper">
+                              * Без привязки номера кешбек не будет начислен
+                          </div>
+                          <div class="b-card__bottom">
+                              <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__img">
+                    <img src="./images/dist/card2.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card2" class="b-card__button button visible-mobile js-modal">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card2" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card2.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param2" type="checkbox" checked>
+                                    <label for="param2">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__img">
+                    <img src="./images/dist/card3.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card3" class="b-card__button button js-modal visible-mobile">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card3" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card3.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param3" type="checkbox" checked>
+                                    <label for="param3">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__img">
+                    <img src="./images/dist/card4.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card4" class="b-card__button button js-modal visible-mobile">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card4" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card4.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param4" type="checkbox" checked>
+                                    <label for="param4">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__label">new</div>
+                <div class="b-card__img">
+                    <img src="./images/dist/card1.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card5" class="b-card__button button js-modal visible-mobile">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card5" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card1.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param5" type="checkbox" checked>
+                                    <label for="param5">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__label">new</div>
+                <div class="b-card__img">
+                    <img src="./images/dist/card1.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card6" class="b-card__button button js-modal visible-mobile">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card6" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card1.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param6" type="checkbox" checked>
+                                    <label for="param6">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__label">new</div>
+                <div class="b-card__img">
+                    <img src="./images/dist/card1.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card7" class="b-card__button button js-modal visible-mobile">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card7" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card1.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param7" type="checkbox" checked>
+                                    <label for="param7">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-card__item">
+                <div class="b-card__label">new</div>
+                <div class="b-card__img">
+                    <img src="./images/dist/card1.jpg" alt="">
+                </div>
+                <div class="b-card__param">
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            Сумма:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#percent"></use>
+                            </svg>
+                            Ставка:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                    </div>
+                    <div class="b-card__param-row">
+                        <div class="b-card__param-col b-card__param-col_left">
+                            <svg class="icon">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            Срок:
+                        </div>
+                        <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                    </div>
+                </div>
+                <div class="b-card__cashback">
+                    <div class="b-card__cashback__left">
+                        <svg class="icon">
+                            <use xlink:href="#pig"></use>
+                        </svg>
+                        Бери займ – получай кэшбэк
+                    </div>
+                    <div class="b-card__cashback__right">
+                        <div class="b-card__cashback-ribbon">
+                            1000 <span>₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card__bottom">
+                    <a href="#" class="b-card__button button js-show-card hidden-mobile">Получить деньги</a>
+                    <a href="#modal-card8" class="b-card__button button js-modal visible-mobile">Получить деньги</a>
+                    <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                </div>
+                <div id="modal-card8" class="b-card_hidden mfp-hide">
+                    <div class="b-card__wrapper">
+                        <button class="b-modal__close mfp-close visible-mobile" type="button"></button>
+                        <div class="b-card__close js-close-card">
+                            <svg class="icon">
+                                <use xlink:href="#close-inner"></use>
+                            </svg>
+                        </div>
+                        <div class="b-card__img">
+                            <img src="./images/dist/card1.jpg" alt="">
+                        </div>
+                        <div class="b-card__param">
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#money"></use>
+                                    </svg>
+                                    Сумма:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right b-card__param-col_mod">до 1 000 000 ₽</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#percent"></use>
+                                    </svg>
+                                    Ставка:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">0% в день</div>
+                            </div>
+                            <div class="b-card__param-row">
+                                <div class="b-card__param-col b-card__param-col_left">
+                                    <svg class="icon">
+                                        <use xlink:href="#calendar"></use>
+                                    </svg>
+                                    Срок:
+                                </div>
+                                <div class="b-card__param-col b-card__param-col_right">5-126 дней</div>
+                            </div>
+                        </div>
+                        <div class="b-card__cashback">
+                            <div class="b-card__cashback__left">
+                                <svg class="icon">
+                                    <use xlink:href="#pig"></use>
+                                </svg>
+                                Бери займ – получай кэшбэк
+                            </div>
+                            <div class="b-card__cashback__right">
+                                <div class="b-card__cashback-ribbon">
+                                    1000 <span>₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card__form">
+                            <div class="b-card__form-title">Для получения кешбека введите свой номер телефона:</div>
+                            <!--b-card__form-input_error для ошибки-->
+                            <div class="b-card__form-input">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                                <input class="input" type="tel" placeholder="+7 (___) ___ __ __">
+                                <div class="b-card__form-input-error-text">Пожалуйста, укажите телефон</div>
+                            </div>
+                            <div class="b-card__form-input-helper">На указанный номер телефона вы получите уведомление о зачислении денег</div>
+                            <div class="b-card__form-checkbox b-checkbox">
+                                <div class="b-checkbox__item">
+                                    <input id="param8" type="checkbox" checked>
+                                    <label for="param8">Я согласен с условиями оферты</label>
+                                </div>
+                            </div>
+                            <div class="b-card__form-group-buttons">
+                                <a class="button" href="#">Получить деньги</a>
+                                <a class="button button_gray" href="#">перейти без привязки номера</a>
+                            </div>
+                            <div class="b-card__helper">
+                                * Без привязки номера кешбек не будет начислен
+                            </div>
+                            <div class="b-card__bottom">
+                                <a href="#modal" class="b-card__link js-modal">Условия получения кэшбэка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-alert">
+        <div class="b-alert__wrapper">
+            <div class="b-alert__close js-close-alert">
+                <svg class="icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+            <img src="./images/dist/card1.jpg" alt="">
+            <div class="b-alert__text">
+                <div class="b-alert__title">Займ за 5 минут!</div>
+                <ul>
+                    <li>до 30 000 <span>₽</span> онлайн</li>
+                    <li>решение автоматически</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="b-footer">
+        <div class="l-container">
+            <div class="b-footer__wrapper">Березка © 2021</div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+    <div class="mfp-hide">
+        <div id="modal" class="b-modal">
+            <button class="b-modal__close mfp-close" type="button"></button>
+            <div class="b-modal__title">Условия получения кэшбэка</div>
+            <p>Пример текста. Кэшбэк начисляется сразу за весь расчетный период — раз в месяц, в день выписки.</p>
+            <p>Расчетный день индивидуален для каждого клиента. Его можно изменить, написав в чат поддержки.</p>
+            <p>Например, банк формирует выписку каждый месяц 15 числа, следующая должна прийти 15 апреля.</p>
+        </div>
+    </div>
+
+
+    <script src="js/app.min.js"></script>
+    <script src="js/libs/powerange/powerange.js"></script>
+	<script src="js/common.js"></script>
+
+    <svg width="0" height="0" style="display: none;">
+        <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="auth">
+            <path d="M20.485 3.515A11.922 11.922 0 0012 0a11.922 11.922 0 00-8.485 3.515A11.922 11.922 0 000 12c0 3.205 1.248 6.219 3.515 8.485A11.922 11.922 0 0012 24c3.205 0 6.219-1.248 8.485-3.515A11.921 11.921 0 0024 12c0-3.205-1.248-6.219-3.515-8.485zM5.208 20.123c.396-3.41 3.328-6.042 6.792-6.042 1.826 0 3.544.712 4.835 2.004a6.832 6.832 0 011.957 4.038A10.546 10.546 0 0112 22.593a10.54 10.54 0 01-6.792-2.47zM12 12.633a3.649 3.649 0 01-3.645-3.645A3.649 3.649 0 0112 5.344a3.649 3.649 0 013.645 3.644A3.649 3.649 0 0112 12.633zm8.002 6.301a8.244 8.244 0 00-2.172-3.844 8.218 8.218 0 00-3.002-1.918 5.05 5.05 0 002.223-4.184A5.057 5.057 0 0012 3.938a5.057 5.057 0 00-5.051 5.05 5.05 5.05 0 002.225 4.185 8.226 8.226 0 00-2.792 1.713 8.219 8.219 0 00-2.385 4.047A10.549 10.549 0 011.407 12C1.406 6.159 6.158 1.406 12 1.406S22.594 6.16 22.594 12c0 2.65-.978 5.075-2.592 6.934z" fill=""></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="money">
+            <g clip-path="url(#clip0)" fill="#ADADAD">
+                <path d="M23.414 16.326c0-1.278-1.005-2.32-2.239-2.32-.054 0-.106.01-.158.014a4.757 4.757 0 00.343-1.812c0-1.549-1.911-5.101-3.16-6.276a9.968 9.968 0 01-2.164.235 9.946 9.946 0 01-2.226-.25c-1.232 1.032-3.39 4.694-3.39 6.292 0 .27.023.526.066.77a16.113 16.113 0 00-1.137-.041c-.999 0-1.96.112-2.87.318-.027-.343-.046-.552-.046-.552H.503s-.26 2.25-.26 5.023c0 2.773.26 5.021.26 5.021h5.93s.052-.587.108-1.42c.883-.154 1.787.088 2.83.76a8.42 8.42 0 004.72 1.425c1.79 0 3.328-.547 4.606-1.466l.001.002a.55.55 0 00.05-.041 8.595 8.595 0 001.024-.876c.25-.266.59-.605 1.099-1.121 1.71-1.74 1.92-2.085 1.92-2.085h-.006a2.33 2.33 0 00.63-1.6zm-8.812-6.036a1.213 1.213 0 01.585-.635c.136-.072.283-.118.443-.143v-.403h.824v.464c.122.036.231.085.33.145v-.181h.825v1.278h-.83a2.823 2.823 0 00-.195-.203 1.006 1.006 0 00-.2-.146 1 1 0 00-.231-.088 1.282 1.282 0 00-.297-.03c-.165 0-.29.04-.38.12-.087.083-.132.17-.132.263 0 .264.274.438.826.525.34.052.612.14.814.258.2.12.354.25.462.39.105.14.173.279.203.415.03.137.045.246.045.33a1.137 1.137 0 01-.353.822 1.3 1.3 0 01-.39.258 1.534 1.534 0 01-.493.115v.384h-.824v-.5c-.045-.02-.084-.04-.128-.058-.042-.016-.08-.037-.12-.057v.188h-.824v-1.28h.824c.072.082.14.151.21.211a.992.992 0 00.452.231c.089.017.19.026.304.026.149 0 .272-.03.37-.094.1-.063.148-.144.148-.247a.356.356 0 00-.077-.223.687.687 0 00-.196-.161 1.179 1.179 0 00-.264-.106 3.209 3.209 0 00-.286-.065 2.498 2.498 0 01-.8-.244c-.2-.11-.353-.229-.462-.36a1.02 1.02 0 01-.212-.4 1.499 1.499 0 01-.05-.36 1.11 1.11 0 01.08-.439zm7.451 6.945c-.3.307-1.567 1.661-1.911 2.01-.89.904-1.305 1.328-1.499 1.562l-.005-.004c-.136.127-.279.24-.424.351a7.179 7.179 0 01-4.123 1.285 7.171 7.171 0 01-4.154-1.303H9.93c-.998-.629-2.166-1.016-3.321-.898.046-.827.083-1.732.083-2.51 0-1.082-.073-2.408-.139-3.427.879-.205 1.818-.32 2.794-.32 2.98 0 5.62 1.021 7.235 2.62.19.22.31.51.31.827 0 .686-.538 1.244-1.2 1.244-.024 0-.047-.008-.075-.01l-.003.014c-.618-.021-1.584-.29-3.216-.937l-.371 1.008c1.725.68 2.862.987 3.668 1.008v-.008c1.01-.001 1.863-.7 2.14-1.65v.001c.35-.6 1.656-1.852 2.399-2.536v.002l.02-.022c.137-.126.257-.234.342-.31.157-.103.319-.146.578-.146.66 0 1.2.558 1.2 1.243 0 .342-.146.664-.32.906zm-7.96-12.079s1.007.247 1.993.247c.986 0 1.634-.145 1.634-.145.573-.291 1.86-3.367 1.106-4.452-.845-1.21-2.256 1.42-2.908 1.15-.649-.27-2.033-1.672-2.947-1.1-.793.497.498 3.819 1.122 4.3z"></path>
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <path fill="#fff" transform="translate(.241)" d="M0 0h23.172v24H0z"></path>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" id="percent">
+            <g clip-path="url(#clip0)" fill="#ADADAD">
+                <path d="M13.673.614a1.022 1.022 0 00-1.397.472L4.547 16.83c-.26.53-.056 1.178.456 1.447.15.08.311.117.47.117.379 0 .744-.215.927-.588L14.13 2.06c.26-.53.056-1.177-.456-1.447zM8.124 5.799c0-2.251-1.768-4.082-3.941-4.082S.24 3.548.24 5.799c0 2.25 1.769 4.082 3.942 4.082s3.94-1.831 3.94-4.082zm-3.941 1.93c-1.027 0-1.863-.866-1.863-1.93s.836-1.93 1.863-1.93c1.027 0 1.863.866 1.863 1.93s-.836 1.93-1.863 1.93zM14.54 9.01c-2.173 0-3.94 1.832-3.94 4.083 0 2.25 1.767 4.082 3.94 4.082 2.174 0 3.942-1.832 3.942-4.082 0-2.251-1.768-4.082-3.942-4.082zm0 6.012c-1.027 0-1.862-.866-1.862-1.93 0-1.063.835-1.929 1.862-1.929 1.028 0 1.863.866 1.863 1.93 0 1.063-.835 1.929-1.863 1.929z"></path>
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <path fill="#fff" transform="translate(.241)" d="M0 0h18.24v18.891H0z"></path>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" id="calendar">
+            <path d="M16.827 2.166h-.603V1.51c0-.833-.657-1.51-1.464-1.51-.809 0-1.465.677-1.465 1.509v.657H11.79v-.657C11.79.677 11.134 0 10.325 0 9.517 0 8.86.677 8.86 1.509v.657H7.356v-.657C7.356.677 6.7 0 5.891 0c-.808 0-1.465.677-1.465 1.509v.657h-.77a2.335 2.335 0 00-2.331 2.332v13.17A2.335 2.335 0 003.657 20h13.17a2.335 2.335 0 002.332-2.332V4.498a2.335 2.335 0 00-2.332-2.332zm-2.71-.657c0-.378.288-.686.642-.686.354 0 .642.308.642.686v2.687c0 .378-.287.686-.642.686-.354 0-.642-.308-.642-.686V1.509zm-4.434 0c0-.378.288-.686.642-.686.354 0 .642.308.642.686v2.687c0 .378-.288.686-.642.686-.354 0-.642-.308-.642-.686V1.509zm-4.434 0c0-.378.288-.686.642-.686.354 0 .642.308.642.686v2.687c0 .378-.288.686-.642.686-.354 0-.642-.308-.642-.686V1.509zm12.538 16.16a.96.96 0 01-.96.96H3.657a.96.96 0 01-.96-.96V5.595h15.09v12.072z" fill="#ADADAD"></path>
+            <path d="M6.453 8.026H3.93v2.244h2.522V8.026zm3.366 0H7.297v2.244h2.522V8.026zm3.367 0h-2.521v2.244h2.521V8.026zm3.366 0H14.03v2.244h2.522V8.026zM6.453 11.021H3.93v2.242h2.522v-2.242zm3.366 0H7.297v2.242h2.522v-2.242zm3.367 0h-2.521v2.242h2.521v-2.242zm3.366 0H14.03v2.242h2.522v-2.242zM6.453 14.015H3.93v2.242h2.522v-2.242zm3.366 0H7.297v2.242h2.522v-2.242zm3.367 0h-2.521v2.242h2.521v-2.242zm3.366 0H14.03v2.242h2.522v-2.242z" fill="#ADADAD"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24" id="pig">
+            <path d="M.82 9.95a.82.82 0 01.82.82v1.64c0 .453.369.82.82.82h.876a9.032 9.032 0 013.623-7.218A10.349 10.349 0 019.9 4.495 4.518 4.518 0 0114.383.488a4.518 4.518 0 014.485 4.026c.763.245 1.434.521 2.091.902 1.22-1.19 2.906-1.71 4.753-1.177a.82.82 0 01.55 1.048L24.779 9.74c.142.336.263.68.363 1.03h1.492c.754 0 1.367.613 1.367 1.367v3.008c0 .753-.613 1.367-1.367 1.367H24.86c-.756 1.871-2.198 3.339-4.299 4.372v1.807a.82.82 0 01-.82.82H16.46a.82.82 0 01-.82-.82v-.82h-2.46v.82a.82.82 0 01-.82.82H9.077a.82.82 0 01-.82-.82v-1.813c-2.122-1.098-4.155-3.233-4.749-6.007H2.461A2.464 2.464 0 010 12.411V10.77a.82.82 0 01.82-.82zm13.563-7.821A2.874 2.874 0 0011.512 5a2.874 2.874 0 002.87 2.871A2.874 2.874 0 0017.255 5a2.874 2.874 0 00-2.871-2.871zM9.408 19.61a.82.82 0 01.49.75v1.51h1.641v-.82a.82.82 0 01.82-.82h4.102a.82.82 0 01.82.82v.82h1.64v-1.51a.82.82 0 01.49-.75c2.167-.953 3.505-2.316 4.091-4.167a.82.82 0 01.783-.573h2.074v-2.46H24.5a.82.82 0 01-.804-.656 7.328 7.328 0 00-.539-1.626.82.82 0 01-.035-.606l1.283-3.849c-1.648-.06-2.547 1.179-2.61 1.269a.81.81 0 01-1.147.216c-.65-.45-1.24-.718-1.916-.959a4.503 4.503 0 01-.918 1.726h.671a.82.82 0 010 1.64h-8.203a.82.82 0 010-1.64h.671a4.506 4.506 0 01-.92-1.736 8.518 8.518 0 00-2.087 1.134 7.43 7.43 0 00-2.968 5.906c0 3.061 2.225 5.41 4.431 6.38z" fill="#1C9D40"></path>
+            <path d="M20.563 12.41a.82.82 0 110-1.64.82.82 0 010 1.64z" fill="#1C9D40"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 35" id="close">
+            <circle cx="18.5" cy="17.917" r="14.5" fill="#fff"></circle>
+            <path d="M18 0a17.417 17.417 0 1017.417 17.417A17.437 17.437 0 0018 0zm6.716 21.896a1.583 1.583 0 11-2.238 2.239L18 19.655l-4.478 4.48a1.583 1.583 0 01-2.239-2.24l4.478-4.478-4.477-4.48a1.584 1.584 0 112.238-2.238L18 15.178l4.478-4.48a1.583 1.583 0 112.238 2.24l-4.477 4.479 4.477 4.479z" fill="#27BF52"></path>
+        </symbol>
+        <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="phone">
+            <path d="M20.869 15.525c-.059-.047-4.338-3.13-5.512-2.91-.56.1-.881.482-1.525 1.248-.103.123-.352.42-.545.63A9.847 9.847 0 017.074 8.28c.211-.194.507-.443.634-.55.762-.639 1.145-.96 1.244-1.521C9.155 5.044 6.073.736 6.042.697A1.645 1.645 0 004.815 0C3.566 0 0 4.627 0 5.406c0 .045.065 4.648 5.741 10.422 5.768 5.67 10.37 5.735 10.416 5.735.78 0 5.405-3.567 5.405-4.816a1.642 1.642 0 00-.693-1.222z" fill=""></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="close-inner">
+            <path d="M3 19L19 3M3 3l16 16" stroke="#CDCDCD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 27" id="menu">
+            <path d="M30 27H2c-1.105 0-2-1.007-2-2.25s.895-2.25 2-2.25h28c1.105 0 2 1.007 2 2.25S31.105 27 30 27zm0-11.25H2c-1.105 0-2-1.007-2-2.25s.895-2.25 2-2.25h28c1.105 0 2 1.007 2 2.25s-.895 2.25-2 2.25zM30 4.5H2c-1.105 0-2-1.007-2-2.25S.895 0 2 0h28c1.105 0 2 1.007 2 2.25s-.895 2.25-2 2.25z" fill="#777"></path>
+        </symbol>
+    </svg>
+
+</body>
+</html>
