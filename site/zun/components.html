@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jarallax.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+</head>
+
+<body>
+
+    <div class="m-devider-global"></div>
+
+    <div id="search-modal" class="search-modal">
+        <div class="wrap">
+            <div class="search-modal__inner">
+                <form class="search-form">
+                    <div class="search-form__inner">
+                        <input type="text" placeholder="Поиск" class="search-input">
+                        <input type="submit" value="искать" class="btn btn-orange btn-search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="card-modal" class="card-modal modal-box">
+        <div class="modal-box__close btn-icon"><span class="icon-x"></span></div>
+        <div class="wrap">
+            <div class="card-modal__inner">
+                <div class="card-modal__image"><img src="img/modal.jpg" alt=""></div>
+                <div class="card-modal__content">
+                    <div class="card-modal__title">
+                        <h3>Константинопольский Константин Константинович</h3>
+                        <div class="caption">Заместитель директора по внешним связям</div>
+                        <p>В настоящее время, помимо членства в совете директоров ПАО «Полюс», он является независимым директором в советах директоров ПАО «ФСК ЕЭС» и ПАО «РусГидро». Ранее Павел Грачев также входил в советы директоров ОАО «Уралкалий», ОАО «Группа компаний ПИК» (в качестве Председателя) и ОАО «Полиметалл».</p>
+                        <p>Г-н Грачев окончил Санкт-Петербургский Государственный Университет и Университет Триеста (Италия) по специальности «юриспруденция».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="card-modal modal-box mb-dark">
+        <div class="modal-box__close btn-icon"><span class="icon-x"></span></div>
+        <div class="wrap">
+            <div class="card-modal__inner">
+                <div class="card-modal__image"><img src="img/modal.jpg" alt=""></div>
+                <div class="card-modal__content">
+                    <div class="form-block">
+                        <div class="form__title">Обратная связь</div>
+                        <div class="form__content">
+                            <form class="form">
+                                <div class="form__field">
+                                    <input type="email" class="inputbox">
+                                    <label>Ваш email</label>
+                                </div>
+                                <div class="form__field">
+                                    <input type="text" class="inputbox">
+                                    <label>Ваше имя</label>
+                                </div>
+                                <div class="form__field">
+                                    <textarea class="messagebox"></textarea>
+                                    <label>Сообщение</label>
+                                </div>
+                                <div class="form__field form__submit">
+                                    <input type="submit" class="btn btn-grey" value="Отправить">
+                                </div>
+                                <div class="form__field caption">Нажимая кнопку я соглашаюсь с политикой обработки персональных данных</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div id="feedback-modal" class="feedback-modal modal-box mb-dark">
+        <div class="modal-box__close btn-icon bi-dark"><span class="icon-x"></span></div>
+        <div class="wrap wide-sm">
+            <div class="form-block">
+                <div class="form__title">Обратная связь</div>
+                <div class="form__content">
+                    <form class="form">
+                        <div class="form__field">
+                            <input type="email" class="inputbox">
+                            <label>Ваш email</label>
+                        </div>
+                        <div class="form__field">
+                            <input type="text" class="inputbox">
+                            <label>Ваше имя</label>
+                        </div>
+                        <div class="form__field">
+                            <textarea class="messagebox"></textarea>
+                            <label>Сообщение</label>
+                        </div>
+                        <div class="form__field form__submit">
+                            <input type="submit" class="btn btn-grey" value="Отправить">
+                        </div>
+                        <div class="form__field caption">Нажимая кнопку я соглашаюсь с политикой обработки персональных данных</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__inner">
+                <div class="hamburger"><span class="icon-menu"></span></div>
+                <div class="logo"><a href="index.html"><img src="img/svg/logo.svg" alt=""></a></div>
+                <nav class="menu-main">
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="security.html">Промышленная безопасность</a></li>
+                        <li><a href="media.html">Медиа</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <div class="menu-main__search" data-modal="search-modal"><span class="icon-font icon-search"></span></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<main>
+
+    <section class="block-cover bc-big jarallax" style="min-height: 560px;">
+        <img class="jarallax-img" src="img/banner-top.jpg" alt="">
+        <div class="wrap">
+            <div class="block-cover__inner">
+                <h1 class="textillate">Заголовок 1 уровня</h1>
+                <div class="subtitle wide-sm">
+                    <div class="wow fadeInUp" data-wow-delay="1s">Заголовок 1 уровня</div>
+                </div>
+                <div class="button">
+                    <div class="wow fadeInUp" data-wow-delay="1.5s"><a href="#" class="btn btn-orange">Подробнее <span class="icon-arrow-right"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumbs">
+        <div class="wrap">
+            <div class="breadcrumbs__inner">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li>О компании</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-0">
+
+    <nav class="menu-nav">
+        <ul>
+            <li><a href="#">Активы</a></li>
+            <li><a href="#">Стратегия</a></li>
+            <li><a href="#">Бизнес-модель</a></li>
+        </ul>
+    </nav>
+
+    <hr class="hr-0">
+
+    <section class="menus">
+        <div class="wrap">
+            <div class="menus__inner">
+                <div class="menu-block">
+                    <div class="menu-block__btn btn btn-dark">Меню <span class="icon-chevron-down"></span></div>
+                    <div class="menu-block__dropdown">
+                        <ul>
+                            <li><a href="#">Меню 1</a></li>
+                            <li><a href="#">Меню 2</a></li>
+                            <li><a href="#">Меню 3</a></li>
+                            <li><a href="#">Меню 4</a></li>
+                            <li><a href="#">Меню 5</a></li>
+                            <li><a href="#">Меню 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-block">
+                    <div class="menu-block__btn btn btn-dark active">Меню <span class="icon-chevron-down"></span></div>
+                    <div class="menu-block__dropdown">
+                        <ul>
+                            <li><a href="#">Меню 1</a></li>
+                            <li><a href="#">Меню 2</a></li>
+                            <li><a href="#">Меню 3</a></li>
+                            <li><a href="#">Меню 4</a></li>
+                            <li><a href="#">Меню 5</a></li>
+                            <li><a href="#">Меню 6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="accordions">
+        <div class="accordion">
+            <div class="accordion__title">
+                <h3>Стратегия</h3> <span class="icon-chevron-down"></span>
+            </div>
+            <div class="accordion__content">
+                <h4>Список ненумерованный</h4>
+                <p>В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте Общества в информационно-телекоммуникационной сети Интернет.</p>
+                <p>Сведения о котором раскрыты Обществом в порядке, установленном нормативными актами Банка России для раскрытия сообщений о существенных фактах в соответствующем разделе, предусмотренном для уведомлений/сообщений как на русском, так и на английском языке.</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__title">
+                <h3>Стратегия</h3> <span class="icon-chevron-down"></span>
+            </div>
+            <div class="accordion__content">
+                <h4>Список ненумерованный</h4>
+                <p>В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте Общества в информационно-телекоммуникационной сети Интернет.</p>
+                <p>Сведения о котором раскрыты Обществом в порядке, установленном нормативными актами Банка России для раскрытия сообщений о существенных фактах в соответствующем разделе, предусмотренном для уведомлений/сообщений как на русском, так и на английском языке.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="block-cover bc-light">
+        <div class="wrap">
+            <div class="block-cover__inner">
+                <h2>
+                    <div class="wow fadeInUp">Строго соблюдаем требования промышленной безопасности</div>
+                </h2>
+                <div class="subtitle wide-md">
+                    <div class="wow fadeInUp">Нацелен на внедрение лучших практик в области устойчивого развития и стремится к статусу эталона ответственного майнинга</div>
+                </div>
+                <div class="button">
+                    <div class="wow fadeInUp"><a href="#" class="btn btn-resize">Подробнее <span class="icon-arrow-right"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block-cover bc-have-bg jarallax">
+        <img class="jarallax-img" src="img/banner1.jpg" alt="">
+        <div class="wrap">
+            <div class="block-cover__inner">
+                <h2>
+                    <div class="wow fadeInUp">Строго соблюдаем требования промышленной безопасности</div>
+                </h2>
+                <div class="subtitle wide-md">
+                    <div class="wow fadeInUp">Нацелен на внедрение лучших практик в области устойчивого развития и стремится к статусу эталона ответственного майнинга</div>
+                </div>
+                <div class="button">
+                    <div class="wow fadeInUp"><a href="#" class="btn btn-resize">Подробнее <span class="icon-arrow-right"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block-cover bc-dark">
+        <div class="wrap">
+            <div class="block-cover__inner">
+                <h2>
+                    <div class="wow fadeInUp">Строго соблюдаем требования промышленной безопасности</div>
+                </h2>
+                <div class="subtitle wide-md">
+                    <div class="wow fadeInUp">Нацелен на внедрение лучших практик в области устойчивого развития и стремится к статусу эталона ответственного майнинга</div>
+                </div>
+                <div class="button">
+                    <div class="wow fadeInUp"><a href="#" class="btn btn-resize">Подробнее <span class="icon-arrow-right"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="compose-cards">
+        <div class="wrap">
+            <div class="compose-cards__inner">
+                <div class="compose-card compose-flex compose-reversed">
+                    <div class="compose-card__image"><a href="#"><img src="img/compose-card-1.jpg" alt=""></a></div>
+                    <div class="compose-card__info">
+                        <div class="compose-card__title"><a href="#">Оценка запасов на 31 декабря 2020</a></div>
+                        <div class="compose-card__desc">
+                            <p>В настоящее время, помимо членства в совете директоров ПАО «Полюс», он является независимым директором в советах директоров ПАО «ФСК ЕЭС» и ПАО «РусГидро». Ранее Павел Грачев также входил в советы директоров ОАО «Уралкалий», ОАО «Группа компаний ПИК» (в качестве Председателя) и ОАО «Полиметалл».</p>
+                            <p>Г-н Грачев окончил Санкт-Петербургский Государственный Университет и Университет Триеста (Италия) по специальности «юриспруденция».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="compose-card compose-flex">
+                    <div class="compose-card__image"><a href="#"><img src="img/compose-card-2.jpg" alt=""></a></div>
+                    <div class="compose-card__info">
+                        <div class="compose-card__title"><a href="#">Оценка запасов на 31 декабря 2020</a></div>
+                        <div class="compose-card__desc">
+                            <p>В настоящее время, помимо членства в совете директоров ПАО «Полюс», он является независимым директором в советах директоров ПАО «ФСК ЕЭС» и ПАО «РусГидро». Ранее Павел Грачев также входил в советы директоров ОАО «Уралкалий», ОАО «Группа компаний ПИК» (в качестве Председателя) и ОАО «Полиметалл».</p>
+                            <p>Г-н Грачев окончил Санкт-Петербургский Государственный Университет и Университет Триеста (Италия) по специальности «юриспруденция».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-lg">
+
+    <section class="block-cards">
+        <div class="wrap">
+            <div class="cards grid nowrap">
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-lg">
+
+    <section class="block-cards">
+        <div class="wrap">
+            <div class="cards grid nowrap">
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-lg">
+
+    <section class="block-cards">
+        <div class="wrap">
+            <div class="cards grid nowrap">
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text ct-cover grid-item jarallax wide-md">
+                    <img class="jarallax-img" src="img/banner-top-main.jpg" alt="">
+                    <div class="card__title">Карточка крупная с фото на фоне</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-white btn-resize">Подробнее <span class="icon-arrow-right"></span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-lg">
+
+    <section class="block-cards">
+        <div class="wrap">
+            <div class="cards grid nowrap">
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+                <div class="card card-text grid-item">
+                    <div class="card__title">Карточка текстовая</div>
+                    <div class="card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                    <div class="button"><a href="#" class="btn btn-resize">Подробнее</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-lg">
+
+    <div class="compose-cards">
+        <div class="wrap">
+            <div class="compose-cards__inner">
+                <div class="compose-card">
+                    <div class="compose-card__date">2 июня 2021 г.</div>
+                    <div class="compose-card__title"><a href="#">Студенты МГУ окунулись в реальную экономику Костромской области</a></div>
+                    <div class="compose-card__desc">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr-lg">
+
+    <section class="directors">
+        <div class="wrap">
+            <div class="cards grid">
+                <div class="card grid-item col-4">
+                    <div class="card__image">
+                        <a href="#" data-modal="card-modal">
+                            <span class="overlay wow slideOutUpCustom" data-wow-delay="0.5s"></span>
+                            <img src="img/men1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card__title">
+                        <a href="#" data-modal="card-modal">Константинопольский<br> Константин Константинович</a>
+                    </div>
+                    <div class="card__desc">Заместитель директора по внешним связям</div>
+                    <div class="card__contacts"><a href="mailto:manager@zunholba.ru" class="colored">manager@zunholba.ru</a></div>
+                </div>
+                <div class="card grid-item col-4">
+                    <div class="card__image">
+                        <a href="#" data-modal="card-modal">
+                            <span class="overlay wow slideOutUpCustom" data-wow-delay="1s"></span>
+                            <img src="img/men2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card__title"><a href="#" data-modal="card-modal">Алексеев<br> Андрей Викторович</a></div>
+                    <div class="card__desc">Заместитель директора по внешним связям</div>
+                    <div class="card__contacts"><a href="mailto:manager@zunholba.ru" class="colored">manager@zunholba.ru</a></div>
+                </div>
+                <div class="card grid-item col-4">
+                    <div class="card__image">
+                        <a href="#" data-modal="card-modal">
+                            <span class="overlay wow slideOutUpCustom" data-wow-delay="1.5s"></span>
+                            <img src="img/men3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card__title"><a href="#" data-modal="card-modal">Иванов<br> Михаил Васильевич</a></div>
+                    <div class="card__desc">Заместитель директора по внешним связям</div>
+                    <div class="card__contacts"><a href="mailto:manager@zunholba.ru" class="colored">manager@zunholba.ru</a></div>
+                </div>
+                <div class="card grid-item col-4">
+                    <div class="card__image">
+                        <a href="#" data-modal="card-modal">
+                            <span class="overlay wow slideOutUpCustom" data-wow-delay="2s"></span>
+                            <img src="img/men3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="card__title"><a href="#" data-modal="card-modal">Иванов<br> Михаил Васильевич</a></div>
+                    <div class="card__desc">Заместитель директора по внешним связям</div>
+                    <div class="card__contacts"><a href="mailto:manager@zunholba.ru" class="colored">manager@zunholba.ru</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-block form-dark mb-40">
+        <div class="form__title">Обратная связь</div>
+        <div class="form__content">
+            <form class="form">
+                <div class="form__field">
+                    <input type="email" class="inputbox">
+                    <label>Ваш email</label>
+                </div>
+                <div class="form__field">
+                    <input type="text" class="inputbox">
+                    <label>Ваше имя</label>
+                </div>
+                <div class="form__field">
+                    <textarea class="messagebox"></textarea>
+                    <label>Сообщение</label>
+                </div>
+                <div class="form__field form__submit">
+                    <input type="submit" class="btn btn-grey" value="Отправить">
+                </div>
+                <div class="form__field caption">Нажимая кнопку я соглашаюсь с политикой обработки персональных данных</div>
+            </form>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="wrap">
+            <div class="content__inner">
+                <p class="mb-40">В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте Общества в информационно-телекоммуникационной сети Интернет, сведения о котором раскрыты Обществом в порядке, установленном нормативными актами Банка России для раскрытия сообщений о существенных фактах в соответствующем разделе, предусмотренном для уведомлений/сообщений как на русском, так и на английском языке.</p>
+
+                <div class="accordions accordions-sm mb-40">
+                    <div class="accordion">
+                        <div class="accordion__title">
+                            <h4>Раскрывающийся список</h4> <span class="icon-chevron-down"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте Общества в информационно-телекоммуникационной сети Интернет, сведения о котором раскрыты Обществом в порядке, установленном нормативными актами Банка России для раскрытия сообщений о существенных фактах в соответствующем разделе, предусмотренном для уведомлений/сообщений как на русском, так и на английском языке.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__title">
+                            <h4>Раскрывающийся список</h4> <span class="icon-chevron-down"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <p>В соответствии с положениями Устава компании, сообщение о проведении Общего собрания акционеров размещается не менее чем за 30 дней до даты его проведения на сайте Общества в информационно-телекоммуникационной сети Интернет, сведения о котором раскрыты Обществом в порядке, установленном нормативными актами Банка России для раскрытия сообщений о существенных фактах в соответствующем разделе, предусмотренном для уведомлений/сообщений как на русском, так и на английском языке.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Список ненумерованный</h4>
+
+                <ul class="list">
+                    <li><strong>Стабильность.</strong> Надежный курс развития даже в условиях изменчивой внешней среды.</li>
+                    <li><strong>Сотрудничество.</strong> Конструктивное взаимодействие для достижения поставленных целей.</li>
+                    <li><strong>Эффективность.</strong> Умение достигать поставленных целей в срок при оптимальных затратах.</li>
+                    <li><strong>Профессионализм.</strong> Действенность и эффективное выполнение работы с высоким результатом.</li>
+                    <li><strong>Профессионализм.</strong> Действенность и эффективное выполнение работы с высоким результатом.</li>
+                    <li><strong>Развитие.</strong><br> Непрерывное совершенствование профессиональных знаний и навыков. Инициативность и новаторство. Высокая мотивация достижений и творчества для успеха в деятельности.</li>
+                </ul>
+
+                <hr class="hr-lg-2">
+
+                <h4>Список нумерованный</h4>
+
+                <ol class="list">
+                    <li>Надежный курс развития даже в условиях изменчивой внешней среды.</li>
+                    <li>Надежный курс развития даже в условиях изменчивой внешней среды.</li>
+                    <li>Надежный курс развития даже в условиях изменчивой внешней среды.</li>
+                    <li>Надежный курс развития даже в условиях изменчивой внешней среды.</li>
+                    <li>Предприятия комплекса осуществляют полный цикл от добычи стройсырья и проектирования до продажи готового жилья. Строительство жилья осуществляется в Кемеровской области, Новосибирске и в Красноярске.</li>
+                    <li>Надежный курс развития даже в условиях изменчивой внешней среды.</li>
+                </ol>
+
+                <hr class="hr-lg-2">
+
+                <h4>Таблица №1</h4>
+
+                <table>
+                    <tr>
+                        <th>Параметр</th>
+                        <th>Олимпиада</th>
+                        <th>Благодатное</th>
+                        <th>Наталка</th>
+                        <th>Наталка</th>
+                    </tr>
+                    <tr>
+                        <td>Объем горной массы, тыс. т</td>
+                        <td>6,3</td>
+                        <td>2,9</td>
+                        <td>2,0</td>
+                        <td>2,0</td>
+                    </tr>
+                    <tr>
+                        <td>Коэффициент вскрыши, т/т</td>
+                        <td>6,3</td>
+                        <td>2,9</td>
+                        <td>2,0</td>
+                        <td>2,0</td>
+                    </tr>
+                    <tr>
+                        <td>Объем добытой руды, тыс. т</td>
+                        <td>16 273</td>
+                        <td>16 701</td>
+                        <td>24 531</td>
+                        <td>2,0</td>
+                    </tr>
+                    <tr>
+                        <td>Содержание золота в добытой руде, г/т</td>
+                        <td>16 273</td>
+                        <td>16 701</td>
+                        <td>24 531</td>
+                        <td>2,0</td>
+                    </tr>
+                </table>
+
+                <hr class="hr-lg-2">
+
+                <blockquote>
+                    <h3>Понимая ответственность перед обществом за рациональное использование природных ресурсов и экологическую безопасность производств, придерживаемся не только требований российского законодательства, но и международных стандартов.</h3>
+                    <cite>— Совет директоров компании, 20.03.2021</cite>
+                </blockquote>
+
+                <hr class="hr-lg-2">
+
+                <h4>Файлы для скачивания</h4>
+
+                <div class="files">
+                    <div class="file">
+                        <div class="file__desc">Изменения и дополнения № 3 в Правила определения стоимости чистых активов Закрытого паевого инвестиционного фонда комбинированного «АКЦЕНТ ФОНД I – РЕНТНАЯ ЛОГИСТИЧЕСКАЯ НЕДВИЖИМОСТЬ» до истечения трех календарных лет, следующих за днем прекращения действия</div>
+                        <div class="file__btn"><a href="#"><span class="icon-download"></span>PDF, 25 Мб</a></div>
+                        <div class="file__date">25.06.2021</div>
+                    </div>
+                    <div class="file">
+                        <div class="file__desc">Изменения и дополнения № 3 в Правила определения стоимости чистых активов Закрытого паевого инвестиционного фонда комбинированного «АКЦЕНТ ФОНД I – РЕНТНАЯ ЛОГИСТИЧЕСКАЯ НЕДВИЖИМОСТЬ» до истечения трех календарных лет, следующих за днем прекращения действия</div>
+                        <div class="file__btn"><a href="#"><span class="icon-download"></span>PDF, 25 Мб</a></div>
+                        <div class="file__date">25.06.2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="wrap">
+            <h4>Ключевые показатели</h4>
+
+            <div class="stats__inner grid nowrap">
+                <div class="stats-item grid-item">
+                    <div class="stats-item__title">title</div>
+                    <div class="stats-item__count counter" data-value="1.5">1.5</div>
+                    <div class="stats-item__desc">млн кв. м комфортного жилья</div>
+                </div>
+                <div class="stats-item grid-item">
+                    <div class="stats-item__title">title</div>
+                    <div class="stats-item__count counter" data-value="30.5">30.5</div>
+                    <div class="stats-item__desc">млрд ₽ инвестиции в строительство</div>
+                </div>
+                <div class="stats-item grid-item">
+                    <div class="stats-item__title">title</div>
+                    <div class="stats-item__count counter" data-value="21800">21800</div>
+                    <div class="stats-item__desc">человек работников</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-lg-2">
+
+    <section class="stats">
+        <div class="wrap">
+            <h4>Ключевые показатели</h4>
+
+            <div class="stats__inner grid nowrap">
+                <div class="stats-item grid-item">
+                    <div class="stats-item__title">Доля энергии из возобновляемых источников в объёме произведённого электричества</div>
+                    <div class="stats-item__years">
+                        <div class="stats-item__year"><span><i style="height: 40%"></i></span><small>2017</small></div>
+                        <div class="stats-item__year"><span><i style="height: 45%"></i></span><small>2010</small></div>
+                        <div class="stats-item__year"><span><i style="height: 50%"></i></span><small>2019</small></div>
+                        <div class="stats-item__year"><span><i style="height: 70%"></i></span><small>2020</small></div>
+                        <div class="stats-item__year"><span><i style="height: 100%"></i></span><small>2021</small></div>
+                    </div>
+                </div>
+                <div class="stats-item grid-item">
+                    <div class="stats-item__title">Выбросы парниковых газов, млн т эквивалента CO₂</div>
+                    <div class="stats-item__years">
+                        <div class="stats-item__year"><span><i style="height: 40%"></i></span><small>2017</small></div>
+                        <div class="stats-item__year"><span><i style="height: 45%"></i></span><small>2010</small></div>
+                        <div class="stats-item__year"><span><i style="height: 50%"></i></span><small>2019</small></div>
+                        <div class="stats-item__year"><span><i style="height: 70%"></i></span><small>2020</small></div>
+                        <div class="stats-item__year"><span><i style="height: 100%"></i></span><small>2021</small></div>
+                    </div>
+                </div>
+                <div class="stats-item grid-item">
+                    <div class="stats-item__title">Удельные выбросы парниковых газов, тонн CO₂-эквивалента на 1 тонну переработанной руды</div>
+                    <div class="stats-item__years">
+                        <div class="stats-item__year"><span><i style="height: 40%"></i></span><small>2017</small></div>
+                        <div class="stats-item__year"><span><i style="height: 45%"></i></span><small>2010</small></div>
+                        <div class="stats-item__year"><span><i style="height: 50%"></i></span><small>2019</small></div>
+                        <div class="stats-item__year"><span><i style="height: 70%"></i></span><small>2020</small></div>
+                        <div class="stats-item__year"><span><i style="height: 100%"></i></span><small>2021</small></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="wrap">
+            <div class="slider__inner slider__js">
+                <div class="slide"><a href="img/slide.jpg" class="fancybox" data-fancybox="slider"><img src="img/slide.jpg" alt=""></a></div>
+                <div class="slide"><a href="img/slide.jpg" class="fancybox" data-fancybox="slider"><img src="img/slide.jpg" alt=""></a></div>
+                <div class="slide"><a href="img/slide.jpg" class="fancybox" data-fancybox="slider"><img src="img/slide.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagination">
+        <div class="wrap">
+            <div class="pagination__inner">
+                <ul>
+                    <li><a href="#" class="pagination__prev"><i class="icon-arrow-left"></i>Назад</a></li>
+                    <li><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="pagination__next">Вперед<i class="icon-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-example">
+        <div class="wrap">
+            <div class="form-block">
+                <form class="form">
+                    <div class="form__field">
+                        <input type="text" class="inputbox">
+                        <label>Поле ввода</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" class="inputbox">
+                        <label>Поле ввода</label>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" class="inputbox">
+                        <label>Поле ввода</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="btns-example">
+        <div class="wrap">
+            <div class="btns">
+                <div class="btn btn-orange">Кнопка <span class="icon-arrow-right"></span></div>
+                <div class="btn btn-orange btn-icon-l"><span class="icon-arrow-left"></span> Кнопка</div>
+                <div class="btn btn-orange">Кнопка</div>
+            </div>
+            <div class="btns">
+                <div class="btn btn-grey">Кнопка <span class="icon-arrow-right"></span></div>
+                <div class="btn btn-grey btn-icon-l"><span class="icon-arrow-left"></span> Кнопка</div>
+                <div class="btn btn-grey">Кнопка</div>
+            </div>
+            <div class="btns">
+                <div class="btn btn-resize">Кнопка <span class="icon-arrow-right"></span></div>
+                <div class="btn btn-resize btn-icon-l"><span class="icon-arrow-left"></span> Кнопка</div>
+                <div class="btn btn-resize">Кнопка</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__nav">
+        <div class="wrap">
+            <nav class="menu-main">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Промышленная безопасность</a></li>
+                    <li><a href="#">Медиа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="menu-main__search" data-modal="search-modal"><span class="icon-font icon-search"></span></div>
+            </nav>
+        </div>
+    </div>
+    <div class="footer__info">
+        <div class="wrap">
+            <div class="footer__info__inner">
+                <div class="footer__info__l">
+                    <div class="caption">© 2021 ООО «Зун-Холба»</div>
+                    <div class="caption"><a href="#">Политика обработки персональных данных</a></div>
+                    <div class="social">
+                        <a href="#" target="_blank"><i data-svg="img/svg/icons/tg.svg"></i></a>
+                        <a href="#" target="_blank"><i data-svg="img/svg/icons/vk.svg"></i></a>
+                        <a href="#" target="_blank"><i data-svg="img/svg/icons/inst.svg"></i></a>
+                    </div>
+                </div>
+                <div class="footer__info__r">
+                    <div class="webmaster caption"><a href="#">Разработка сайта — Realist</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/smoothscroll.min.js"></script>
+<script src="js/jarallax.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/init.js"></script>
+
+</html>

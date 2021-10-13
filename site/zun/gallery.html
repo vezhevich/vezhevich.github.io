@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jarallax.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+</head>
+
+<body>
+
+    <div class="m-devider-global"></div>
+
+    <div id="search-modal" class="search-modal">
+        <div class="wrap">
+            <div class="search-modal__inner">
+                <form class="search-form">
+                    <div class="search-form__inner">
+                        <input type="text" placeholder="Поиск" class="search-input">
+                        <input type="submit" value="искать" class="btn btn-orange btn-search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="card-modal" class="card-modal modal-box">
+        <div class="modal-box__close btn-icon"><span class="icon-x"></span></div>
+        <div class="wrap">
+            <div class="card-modal__inner">
+                <div class="card-modal__image"><img src="img/modal.jpg" alt=""></div>
+                <div class="card-modal__content">
+                    <div class="card-modal__title">
+                        <h3>Константинопольский Константин Константинович</h3>
+                        <div class="caption">Заместитель директора по внешним связям</div>
+                        <p>В настоящее время, помимо членства в совете директоров ПАО «Полюс», он является независимым директором в советах директоров ПАО «ФСК ЕЭС» и ПАО «РусГидро». Ранее Павел Грачев также входил в советы директоров ОАО «Уралкалий», ОАО «Группа компаний ПИК» (в качестве Председателя) и ОАО «Полиметалл».</p>
+                        <p>Г-н Грачев окончил Санкт-Петербургский Государственный Университет и Университет Триеста (Италия) по специальности «юриспруденция».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="card-modal modal-box mb-dark">
+        <div class="modal-box__close btn-icon"><span class="icon-x"></span></div>
+        <div class="wrap">
+            <div class="card-modal__inner">
+                <div class="card-modal__image"><img src="img/modal.jpg" alt=""></div>
+                <div class="card-modal__content">
+                    <div class="form-block">
+                        <div class="form__title">Обратная связь</div>
+                        <div class="form__content">
+                            <form class="form">
+                                <div class="form__field">
+                                    <input type="email" class="inputbox">
+                                    <label>Ваш email</label>
+                                </div>
+                                <div class="form__field">
+                                    <input type="text" class="inputbox">
+                                    <label>Ваше имя</label>
+                                </div>
+                                <div class="form__field">
+                                    <textarea class="messagebox"></textarea>
+                                    <label>Сообщение</label>
+                                </div>
+                                <div class="form__field form__submit">
+                                    <input type="submit" class="btn btn-grey" value="Отправить">
+                                </div>
+                                <div class="form__field caption">Нажимая кнопку я соглашаюсь с политикой обработки персональных данных</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div id="feedback-modal" class="feedback-modal modal-box mb-dark">
+        <div class="modal-box__close btn-icon bi-dark"><span class="icon-x"></span></div>
+        <div class="wrap wide-sm">
+            <div class="form-block">
+                <div class="form__title">Обратная связь</div>
+                <div class="form__content">
+                    <form class="form">
+                        <div class="form__field">
+                            <input type="email" class="inputbox">
+                            <label>Ваш email</label>
+                        </div>
+                        <div class="form__field">
+                            <input type="text" class="inputbox">
+                            <label>Ваше имя</label>
+                        </div>
+                        <div class="form__field">
+                            <textarea class="messagebox"></textarea>
+                            <label>Сообщение</label>
+                        </div>
+                        <div class="form__field form__submit">
+                            <input type="submit" class="btn btn-grey" value="Отправить">
+                        </div>
+                        <div class="form__field caption">Нажимая кнопку я соглашаюсь с политикой обработки персональных данных</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__inner">
+                <div class="hamburger"><span class="icon-menu"></span></div>
+                <div class="logo"><a href="index.html"><img src="img/svg/logo.svg" alt=""></a></div>
+                <nav class="menu-main">
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="security.html">Промышленная безопасность</a></li>
+                        <li><a href="media.html">Медиа</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <div class="menu-main__search" data-modal="search-modal"><span class="icon-font icon-search"></span></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<main>
+
+    <section class="block-cover bc-big bc-white">
+        <div class="wrap">
+            <div class="block-cover__inner">
+                <h1 class="textillate">Оценка запасов на 31 декабря 2020</h1>
+                <div class="subtitle wide-sm">
+                    <div class="wow fadeInUp" data-wow-delay="1s">Нацелен на внедрение лучших практик в области устойчивого развития и стремится к статусу эталона ответственного майнинга</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section class="page-title">
+        <div class="wrap">
+            <div class="page-title__inner">
+                <h1 class="textillate">Оценка запасов на 31 декабря 2020</h1>
+                <div class="subtitle wide-sm">
+                    <div class="wow fadeInUp" data-wow-delay="1s">Нацелен на внедрение лучших практик в области устойчивого развития и стремится к статусу эталона ответственного майнинга</div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <section class="gallery">
+        <div class="wrap">
+            <div class="gallery__inner grid">
+                <a href="img/gallery1.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery1.jpg" alt=""></a>
+                <a href="img/gallery2.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery2.jpg" alt=""></a>
+                <a href="img/gallery3.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery3.jpg" alt=""></a>
+                <a href="img/gallery4.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery4.jpg" alt=""></a>
+                <a href="img/gallery5.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery5.jpg" alt=""></a>
+                <a href="img/gallery6.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery6.jpg" alt=""></a>
+                <a href="img/gallery7.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery7.jpg" alt=""></a>
+                <a href="img/gallery8.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery8.jpg" alt=""></a>
+                <a href="img/gallery9.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery9.jpg" alt=""></a>
+                <a href="img/gallery10.jpg" class="gallery-item grid-item col-4 fancybox" data-fancybox="gallery"><img class="lazyload" src="img/gallery10.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__nav">
+        <div class="wrap">
+            <nav class="menu-main">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Промышленная безопасность</a></li>
+                    <li><a href="#">Медиа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="menu-main__search" data-modal="search-modal"><span class="icon-font icon-search"></span></div>
+            </nav>
+        </div>
+    </div>
+    <div class="footer__info">
+        <div class="wrap">
+            <div class="footer__info__inner">
+                <div class="footer__info__l">
+                    <div class="caption">© 2021 ООО «Зун-Холба»</div>
+                    <div class="caption"><a href="#">Политика обработки персональных данных</a></div>
+                    <div class="social">
+                        <a href="#" target="_blank"><i data-svg="img/svg/icons/tg.svg"></i></a>
+                        <a href="#" target="_blank"><i data-svg="img/svg/icons/vk.svg"></i></a>
+                        <a href="#" target="_blank"><i data-svg="img/svg/icons/inst.svg"></i></a>
+                    </div>
+                </div>
+                <div class="footer__info__r">
+                    <div class="webmaster caption"><a href="#">Разработка сайта — Realist</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/smoothscroll.min.js"></script>
+<script src="js/jarallax.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/init.js"></script>
+</html>
