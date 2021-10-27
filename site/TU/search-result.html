@@ -1,0 +1,1636 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Главная страница</title>
+	<meta name="description" content="Description text">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="images/favicon-16x16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="images/favicon-32x32.png">
+    <link type="image/png" sizes="48x48" rel="icon" href="images/favicon-48x48.png">
+
+    <!--это скролл таблицы-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/4.0.0/css/fixedColumns.dataTables.min.css"/>
+    <!--это скролл таблицы-->
+
+    <!--yandex maps-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=35f138e0-a1d2-4eca-abd0-e2d57163fc0f" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<main class="l-footer-push">
+    <header class="b-header b-header_inner-page">
+        <div class="b-header__top-line">
+            <div class="l-container">
+                <div class="b-header__hamb js-modal" data-mfp-src="#modal-menu">
+                    <svg class="icon">
+                        <use xlink:href="#icon-hamb"></use>
+                    </svg>
+                </div>
+                <div class="b-header__logo">
+                    <a href="/"><img src="./images/svg/logo.svg" alt=""></a>
+                </div>
+                <nav class="b-header__nav">
+                    <ul class="list_unstyle">
+                        <li class="b-header__nav-item"><a href="about.html">О компании</a></li>
+                        <li class="b-header__nav-item"><a href="how-to-get.html">Как заказать</a></li>
+                        <li class="b-header__nav-item"><a href="how-to-pay.html">Как оплатить</a></li>
+                        <li class="b-header__nav-item"><a href="how-to-get.html">Как получить</a></li>
+                        <li class="b-header__nav-item"><a href="contacts.html">Контакты</a></li>
+                        <li class="b-header__nav-item b-header__nav-item_modified">
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-dots"></use>
+                                </svg>
+                            </a>
+                            <ul class="b-header__nav-dropdown list_unstyle">
+                                <li class="b-header__nav-dropdown-item"><a href="#">Пункт меню</a></li>
+                                <li class="b-header__nav-dropdown-item"><a href="#">Пункт меню</a></li>
+                                <li class="b-header__nav-dropdown-item b-header__nav-dropdown-item_active"><a href="#">Пункт меню</a></li>
+                                <li class="b-header__nav-dropdown-item"><a href="#">Пункт меню</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="b-header__message">
+                    <a class="js-modal" href="#modal-call">
+                        <svg class="icon">
+                            <use xlink:href="#icon-message"></use>
+                        </svg>
+                        Оставить запрос
+                    </a>
+                </div>
+                <div class="b-header__search-icon js-modal-full-width" data-mfp-src="#modal-search">
+                    <svg class="icon">
+                        <use xlink:href="#icon-search"></use>
+                    </svg>
+                </div>
+                <div class="b-header__phone">
+                    <a href="tel:88003332222">
+                        <svg class="icon">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                        8 800 333-22-22
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="b-header__bottom-line">
+            <div class="l-container">
+                <div class="b-header__catalog">
+                    <a href="catalog.html">
+                        <svg class="icon">
+                            <use xlink:href="#icon-hamb"></use>
+                        </svg>
+                        Каталог
+                    </a>
+                    <div class="b-header__catalog-dropdown">
+                        <div class="b-header__catalog-dropdown-wrapper">
+                            <ul class="b-header__catalog-dropdown-nav list_unstyle">
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="catalog.html">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog1"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Каталоги</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog2"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Ходовая часть</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog3"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Двигатели</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog4"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Комплекты для ТО</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog5"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Гидравлика</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog6"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Пальцы и втулки</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog7"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Смазочные материалы</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog8"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Трансмиссия</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog9"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Электрооборудование</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog10"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Навесное оборудование</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog11"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Ремкомплекты</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog12"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Запчасти</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="b-header__catalog-dropdown-nav-item">
+                                    <a href="#">
+                                        <span class="b-header__catalog-dropdown-nav-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-main-catalog13"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="b-header__catalog-dropdown-nav-text">Комплекты уплотнений</span>
+                                        <span class="b-header__catalog-dropdown-nav-arrow">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <ul class="list_unstyle b-header__catalog-dropdown-nav_lv2">
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Оригинальные каталоги</span></a></li>
+                                        <li class="b-header__catalog-dropdown-nav-item"><a href="#"><span class="b-header__catalog-dropdown-nav-text">Неоригинальные каталоги</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-header__search">
+                    <form class="b-header__search-form" action="">
+                        <div class="b-header__search-wrapper">
+                            <div class="input-remove">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </div>
+                            <!--input_error для ошибки-->
+                            <input class="b-header__search-input input js-valid-input-header" type="text" placeholder="Введите VIN, артикул или наименование товара">
+                            <span class="input_error-text">не верно заполнено поле</span>
+                        </div>
+                        <button class="b-header__search-button button button_yellow" type="submit">
+                            Найти
+                            <svg class="icon">
+                                <use xlink:href="#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="b-header__location b-header__group-link">
+                    <a class="js-modal" href="#modal-location">
+                        <svg class="icon">
+                            <use xlink:href="#icon-loc"></use>
+                        </svg>
+                        Санкт-Петербург
+                    </a>
+                </div>
+                <div class="b-header__cart b-header__group-link">
+                    <a href="shopping-cart.html">
+                        <svg class="icon">
+                            <use xlink:href="#icon-cart"></use>
+                        </svg>
+                        Корзина
+                    </a>
+                </div>
+            </div>
+            <div class="b-header__search-result">
+                <div class="l-container">
+                    <div class="l-two-cols">
+                        <div class="l-two-cols__left">
+                            <div class="b-header__search-result-aside">
+                                <div class="b-header__search-result-aside-item">
+                                    <div class="b-header__search-result-aside-helper">В категории Ходовая часть</div>
+                                    <div class="b-header__search-result-aside-list">
+                                        <ul class="list_unstyle">
+                                            <li><a href="#"><span>ITR</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="b-header__search-result-aside-item">
+                                    <div class="b-header__search-result-aside-helper">Часто ищут</div>
+                                    <div class="b-header__search-result-aside-list">
+                                        <ul class="list_unstyle">
+                                            <li><a href="#"><span>ITR</span></a></li>
+                                            <li><a href="#"><span>ITR</span> 12345678</a></li>
+                                            <li><a href="#"><span>ITR</span> башмак</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-two-cols__right">
+                            <div class="b-product-card-list b-product-card-list_modified b-product-card-list_search-result">
+                                <div class="b-product-card b-product-card_modified b-product-card_modified-list b-product-card_search-result">
+                                    <div class="b-product-card__wrapper">
+                                        <div class="b-product-card__img">
+                                            <img src="./images/dist/product1.jpg" alt="">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <div class="b-product-card__info-wrapper">
+                                                <div class="b-product-card__code">
+                                                    <img src="./images/svg/logo-code.svg" alt="">
+                                                    UV202c5m560g
+                                                </div>
+                                                <div class="b-product-card__title">
+                                                    <a href="product.html">Башмак мастер 560 мм Башмак мастер 560 мм Башмак мастер 560 мм</a>
+                                                </div>
+                                            </div>
+                                            <div class="b-product-card__cost">
+                                                5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-card__pay">
+                                            <div class="b-product-card__pay-qnt">
+                                                <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                                <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                                <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                            </div>
+                                            <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-product-card b-product-card_modified b-product-card_modified-list b-product-card_search-result">
+                                    <div class="b-product-card__wrapper">
+                                        <div class="b-product-card__img">
+                                            <img src="./images/dist/product1.jpg" alt="">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <div class="b-product-card__info-wrapper">
+                                                <div class="b-product-card__code">
+                                                    <img src="./images/svg/logo-code.svg" alt="">
+                                                    UV202c5m560g
+                                                </div>
+                                                <div class="b-product-card__title">
+                                                    <a href="product.html">Башмак мастер 560 мм</a>
+                                                </div>
+                                            </div>
+                                            <div class="b-product-card__cost">
+                                                5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-card__pay">
+                                            <div class="b-product-card__pay-qnt">
+                                                <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                                <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                                <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                            </div>
+                                            <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-product-card b-product-card_modified b-product-card_modified-list b-product-card_search-result">
+                                    <div class="b-product-card__wrapper">
+                                        <div class="b-product-card__img">
+                                            <img src="./images/dist/product1.jpg" alt="">
+                                        </div>
+                                        <div class="b-product-card__info">
+                                            <div class="b-product-card__info-wrapper">
+                                                <div class="b-product-card__code">
+                                                    <img src="./images/svg/logo-code.svg" alt="">
+                                                    UV202c5m560g
+                                                </div>
+                                                <div class="b-product-card__title">
+                                                    <a href="product.html">Башмак мастер 560 мм</a>
+                                                </div>
+                                            </div>
+                                            <div class="b-product-card__cost">
+                                                5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-card__pay">
+                                            <div class="b-product-card__pay-qnt">
+                                                <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                                <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                                <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                            </div>
+                                            <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="b-header__search-result-link"><a href="#">Все результаты</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="l-content l-content_without-bg">
+        <div class="l-container">
+            <h1 class="title-page-h1">Результаты поиска</h1>
+            <div class="b-search-result-info">
+                <div class="b-search-result-info-text">Найдено <span>74</span> товара</div>
+            </div>
+            <div class="l-two-cols">
+                <div class="l-two-cols__left">
+                    <div class="b-filters-aside b-filters-aside_search-result">
+                        <div class="b-filters-aside__head">
+                            <div class="b-filters-aside__head-icon js-close-filters">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-arrow-left"></use>
+                                </svg>
+                            </div>
+                            Фильтр
+                        </div>
+                        <form action="">
+                            <div class="b-filters-aside__item">
+                                <div class="b-filters-aside__title js-filters-aside-slidedown active">
+                                    Ходовая часть
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-filters-aside__ctn">
+                                    <ul class="list_unstyle">
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active"><a href="#">Башмаки</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Болты и гайки</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Гусеницы в сборе</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Звездочка и сегменты</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Катки опорные</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Катки поддерживающие</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Цепи гусеничные</a></li>
+                                        <li class="b-filters-aside__ctn-item"><a href="#">Механизм натяжения</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="b-filters-aside__item">
+                                <div class="b-filters-aside__title js-filters-aside-slidedown active">
+                                    Производитель
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-filters-aside__ctn">
+                                    <ul class="list_unstyle b-checkbox">
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="manufact1" type="checkbox" name="manufacturer"/>
+                                            <label for="manufact1">ITM</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="manufact2" type="checkbox" name="manufacturer" checked/>
+                                            <label for="manufact2">CAT</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="manufact3" type="checkbox" name="manufacturer"/>
+                                            <label for="manufact3">Optimal</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="manufact4" type="checkbox" name="manufacturer"/>
+                                            <label for="manufact4">Delphi</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="manufact5" type="checkbox" name="manufacturer"/>
+                                            <label for="manufact5">CTR</label>
+                                        </li>
+                                    </ul>
+                                    <div class="b-filters-aside__link-show-all">
+                                        <a href="#">Показать все</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-filters-aside__item">
+                                <div class="b-filters-aside__title js-filters-aside-slidedown active">
+                                    Бренд
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-filters-aside__ctn">
+                                    <ul class="list_unstyle b-checkbox">
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="brand1" type="checkbox" name="brand"/>
+                                            <label for="brand1">DOOSAN</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="brand2" type="checkbox" name="brand" checked/>
+                                            <label for="brand2">CATERPILLAR</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="brand3" type="checkbox" name="brand"/>
+                                            <label for="brand3">JCB</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="brand4" type="checkbox" name="brand"/>
+                                            <label for="brand4">HITACHI</label>
+                                        </li>
+                                        <li class="b-filters-aside__ctn-item b-filters-aside__ctn-item_active">
+                                            <input class="input" id="brand5" type="checkbox" name="brand"/>
+                                            <label for="brand5">VOLVO</label>
+                                        </li>
+                                    </ul>
+                                    <div class="b-filters-aside__link-show-all">
+                                        <a href="#">Показать все</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-filters-aside__item b-filters-aside__item_last">
+                                <div class="b-filters-aside__title js-filters-aside-slidedown active">
+                                    Размер
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="b-filters-aside__ctn">
+                                    <div class="b-range-slider">
+                                        <input type="text" class="js-range-slider" value="" />
+                                    </div>
+                                    <div class="b-range-controls">
+                                        <div class="b-range-controls__item">
+                                            <input type="text" class="js-input-from input" value="0" />
+                                        </div>
+                                        <div class="b-range-controls__item">
+                                            <input type="text" class="js-input-to input" value="0" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button_yellow button_full-width" type="submit">Применить</button>
+                            <button class="button b-filters-aside__button-reset" type="button">Сбросить фильтр</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="l-two-cols__right">
+                    <div class="b-filters-group">
+                        <div class="b-filters-group__show-filters-btn js-show-filters">
+                            <span>Фильтр</span>
+                            <svg class="icon">
+                                <use xlink:href="#icon-filter"></use>
+                            </svg>
+                        </div>
+                        <div class="b-filters-group__search">
+                            <form class="" action="">
+                                <div class="b-filters-group__search-wrapper">
+                                    <div class="input-remove">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </div>
+                                    <!--input_error для ошибки-->
+                                    <input class="b-filters-group__search-input input js-valid-input" type="text" placeholder="Поиск по артикулу">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-filters-group__select">
+                            <select name="" id="filter-select" class="js-custom-select b-select b-select_white wide">
+                                <option data-display="По популярности">По популярности</option>
+                                <option value="1">По популярности</option>
+                                <option value="2">По цене</option>
+                                <option value="3">По актуальности</option>
+                                <option value="4">По порядку</option>
+                            </select>
+                        </div>
+                        <div class="b-filters-group__buttons">
+                            <a class="b-filters-group__button b-filters-group__button_square" href="search-result-inner.html">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-square"></use>
+                                </svg>
+                            </a>
+                            <a class="b-filters-group__button b-filters-group__button_list b-filters-group__button_active" href="search-result.html">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-list"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="b-filters-label">
+                        <div class="b-filters-label__item">
+                            Бренды: <span>ITM</span>
+                            <div class="b-filters-label__item-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="b-filters-label__item b-filters-label__item_reset">Сбросить все</div>
+                    </div>
+                    <div class="b-product-card-list b-product-card-list_modified">
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм Башмак мастер 560 мм Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-card b-product-card_modified b-product-card_modified-list">
+                            <div class="b-product-card__wrapper">
+                                <div class="b-product-card__img">
+                                    <img src="./images/dist/product1.jpg" alt="">
+                                </div>
+                                <div class="b-product-card__info">
+                                    <div class="b-product-card__info-wrapper">
+                                        <div class="b-product-card__code">
+                                            <img src="./images/svg/logo-code.svg" alt="">
+                                            UV202c5m560g
+                                        </div>
+                                        <div class="b-product-card__title">
+                                            <a href="product.html">Башмак мастер 560 мм</a>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-card__cost">
+                                        5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                                    </div>
+                                </div>
+                                <div class="b-product-card__pay">
+                                    <div class="b-product-card__pay-qnt">
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                                        <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                                        <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                                    </div>
+                                    <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-centered-button">
+                        <a class="button button_yellow-border" href="#">Показать еще 10</a>
+                    </div>
+                    <div class="b-pagination-wrapper">
+                        <div class="b-pagination-select">
+                            <div class="b-pagination-select__text">Показывать по</div>
+                            <select name="" id="select-page" class="js-custom-select b-select b-select_white wide">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="b-pagination">
+                            <ul class="list_unstyle">
+                                <li class="b-pagination__item">
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="b-pagination__item"><a href="#">1</a></li>
+                                <li class="b-pagination__item b-pagination__item_active"><a href="#">2</a></li>
+                                <li class="b-pagination__item"><a href="#">3</a></li>
+                                <li class="b-pagination__item"><a href="#">...</a></li>
+                                <li class="b-pagination__item"><a href="#">48</a></li>
+                                <li class="b-pagination__item">
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-info-page hidden-tablet">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="b-footer b-footer_modified">
+        <div class="l-container">
+            <div class="b-footer__top">
+                <div class="b-footer__item">
+                    <div class="b-footer__logo">
+                        <a href="/"><img src="./images/svg/logo-footer.svg" alt=""></a>
+                    </div>
+                    <div class="b-footer__seo">Мультибрендовый интернет-магазин запчастей для строительной спецтехники</div>
+                </div>
+                <div class="b-footer__item b-footer__item_flex">
+                    <div class="b-footer__nav">
+                        <div class="b-footer__title js-slidedown-footer-nav">
+                            О компании
+                            <span>
+                                <svg class="icon">
+                                  <use xlink:href="#icon-arrow-right"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <ul class="list_unstyle">
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="#">Филиалы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="b-footer__nav">
+                        <div class="b-footer__title js-slidedown-footer-nav">
+                            Клиентам
+                            <span>
+                                <svg class="icon">
+                                  <use xlink:href="#icon-arrow-right"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <ul class="list_unstyle">
+                            <li><a href="how-to-get.html">Как заказать</a></li>
+                            <li><a href="how-to-pay.html">Как оплатить</a></li>
+                            <li><a href="how-to-get.html">Как получить</a></li>
+                        </ul>
+                    </div>
+                    <div class="b-footer__nav">
+                        <div class="b-footer__title js-slidedown-footer-nav">
+                            Товары
+                            <span>
+                                <svg class="icon">
+                                  <use xlink:href="#icon-arrow-right"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <ul class="list_unstyle">
+                            <li><a href="catalog.html">Каталог запчастей</a></li>
+                            <li><a href="#">Запчасти для ТО</a></li>
+                            <li><a href="#">Навесное оборудование</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-footer__item">
+                    <div class="b-footer__contacts">
+                        <div class="b-footer__title">Адрес компании</div>
+                        <div class="b-footer__teaser">350059, Краснодарский край, г. Краснодар, ул. Новороссийская, д.236/1, Литер А, офис 205/2</div>
+                        <div class="b-footer__contacts-group">
+                            <div class="b-footer__contacts-phone">
+                                <a href="tel:88003332222">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-phone"></use>
+                                    </svg>
+                                    8 800 333-22-22
+                                </a>
+                            </div>
+                            <div class="b-footer__contacts__mail">
+                                <a href="mailto:market@track-unit.ru">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-mail"></use>
+                                    </svg>
+                                    market@track-unit.ru
+                                </a>
+                            </div>
+                            <div class="b-footer__contacts-social">
+                                <a href="#" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-insta"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-vk"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-footer__bottom">
+                <div class="b-footer__copy">
+                    (с) ООО ТРАК ЮНИТ 2021 Все права защищены
+                </div>
+                <div class="b-footer__group-links">
+                    <a href="#">Реквизиты компании</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+<svg width="0" height="0" style="display: none">
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 10" id="icon-close">
+        <path clip-rule="evenodd" d="M1.029.529a.667.667 0 0 1 .942 0l3.53 3.529L9.028.528a.667.667 0 1 1 .943.944L6.443 5l3.529 3.53a.667.667 0 0 1-.943.942L5.5 5.943 1.971 9.472a.667.667 0 0 1-.942-.943L4.558 5l-3.53-3.528a.667.667 0 0 1 0-.943Z" ></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 4" id="icon-dots">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.636 2A1.167 1.167 0 1 1 .303 2a1.167 1.167 0 0 1 2.333 0Zm9.334 0a1.167 1.167 0 1 1-2.333 0 1.167 1.167 0 0 1 2.333 0ZM6.136 3.167a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.333Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" id="icon-message">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.887 14.8c.388.265.88.549 1.457.767 1.119.424 1.955.45 2.342.427.862-.049.978-.595.515-1.273-.528-.774-1.037-1.649-.987-2.618a7.334 7.334 0 1 0-3.327 2.697ZM8.136 2a6 6 0 1 0 2.55 11.433.666.666 0 0 1 .69.074c.348.268.843.587 1.44.814.26.098.498.17.71.22-.221-.404-.446-.886-.549-1.34-.106-.468-.266-1.282.044-1.717A6 6 0 0 0 8.136 2Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-phone">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.275 8.862c1.545 1.546 2.98 2.407 4.049 2.886.933.418 2.033.09 2.891-.768l.196-.197-2.357-1.5c-.448.654-1.296 1.037-2.142.68a7.097 7.097 0 0 1-2.246-1.491 7.093 7.093 0 0 1-1.491-2.247c-.357-.846.025-1.693.68-2.141l-1.5-2.358-.197.196c-.859.858-1.186 1.959-.769 2.892.48 1.068 1.34 2.503 2.886 4.048Zm3.504 4.103c-1.21-.542-2.781-1.494-4.447-3.16-1.665-1.665-2.617-3.237-3.16-4.447C.455 3.758 1.11 2.085 2.215.98L2.41.783a1.333 1.333 0 0 1 2.068.226l1.887 2.967a.667.667 0 0 1-.264.954l-.422.211c-.288.144-.347.398-.277.565.226.536.604 1.221 1.205 1.823.602.601 1.288.98 1.823 1.205.167.071.421.012.565-.276l.212-.422a.667.667 0 0 1 .953-.265l2.967 1.888a1.333 1.333 0 0 1 .227 2.068l-.197.196c-1.105 1.105-2.778 1.76-4.379 1.042Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" id="icon-hamb">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2H1ZM0 7a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" id="icon-arrow-right">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.291.294a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414-1.414L7.584 8 1.291 1.708a1 1 0 0 1 0-1.414Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" id="icon-loc">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M.96 6.654a.667.667 0 0 1 .591-.41l12.816-.47a.667.667 0 0 1 .59 1.02L8.14 17.659a.666.666 0 0 1-1.2-.154l-1.802-5.722-4.055-4.42a.667.667 0 0 1-.123-.708Zm5.567 5.097 1.251 3.976L12.4 8.36l-5.873 3.39Zm5.206-4.546L5.86 10.596 3.043 7.524l8.69-.319Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14" id="icon-cart">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.333.333a.667.667 0 1 0 0 1.334h.314a.667.667 0 0 1 .644.491l.277 1.018L4 8.422v1.245c0 .463.156.888.42 1.227a1.666 1.666 0 1 0 2.88.773h2.066a1.666 1.666 0 1 0 3.181-.286.668.668 0 0 0-.547-1.047H6a.667.667 0 0 1-.666-.667V9h6.824a1.333 1.333 0 0 0 1.287-.982l1.09-4a1.335 1.335 0 0 0-1.288-1.685H3.72l-.144-.526A2 2 0 0 0 1.647.333h-.314ZM11 11.667a.333.333 0 1 0 0 .667.333.333 0 0 0 0-.667Zm1.157-4H5.176l-1.092-4h9.163l-1.09 4Zm-6.49 4a.333.333 0 1 0 0 .667.333.333 0 0 0 0-.667Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 7" id="icon-arrow-down">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M.361 1.029a.667.667 0 0 1 .943 0l4.195 4.196 4.196-4.196a.667.667 0 1 1 .943.943L5.97 6.639a.667.667 0 0 1-.943 0L.361 1.972a.667.667 0 0 1 0-.943Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-point-right">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.196.862a.667.667 0 0 1 .942 0l4.667 4.667a.667.667 0 0 1 0 .943l-4.667 4.667a.667.667 0 0 1-.942-.943l3.528-3.529H.667a.667.667 0 1 1 0-1.333h9.057l-3.528-3.53a.667.667 0 0 1 0-.942Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 12" id="icon-mail">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.196 1.445A1.851 1.851 0 0 1 2.7.667h9.6c.625 0 1.17.313 1.505.778.229.32.363.712.363 1.133v6.845c0 1.032-.814 1.91-1.867 1.91H2.7c-1.054 0-1.868-.878-1.868-1.91V2.578c0-.421.134-.814.363-1.133ZM2.79 2l4.218 4.644a.667.667 0 0 0 .987 0L12.212 2H2.79ZM12.834 3.3 8.981 7.54a2 2 0 0 1-2.96 0L2.166 3.3v6.124c0 .342.261.578.533.578h9.6c.273 0 .534-.236.534-.578V3.299Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 17" id="icon-arrow-left">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.706.793a1 1 0 0 1 0 1.414L2.413 8.5l6.293 6.293a1 1 0 1 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414l7-7a1 1 0 0 1 1.414 0Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog1">
+        <path d="m23.356 17.182-5.368-5.369a6.246 6.246 0 0 0-1.293-6.929 6.229 6.229 0 0 0-8.816 0 6.243 6.243 0 0 0 0 8.817 6.234 6.234 0 0 0 7.021 1.255l5.34 5.341a2.201 2.201 0 0 0 3.116 0 2.206 2.206 0 0 0 0-3.115ZM8.874 12.707a4.835 4.835 0 0 1 0-6.828 4.823 4.823 0 0 1 6.826 0 4.835 4.835 0 0 1 0 6.828 4.823 4.823 0 0 1-6.826 0Zm13.487 6.596a.796.796 0 0 1-1.126 0L16.133 14.2c.42-.33.793-.71 1.118-1.136l5.11 5.112c.31.31.31.816 0 1.127ZM.703 11.482h2.999a.703.703 0 0 0 0-1.406H.703a.703.703 0 0 0 0 1.406ZM.703 14.483h4.123a.703.703 0 1 0 0-1.407H.703a.703.703 0 0 0 0 1.407ZM.703 17.483h7.121a.703.703 0 0 0 0-1.407H.704a.703.703 0 1 0 0 1.407ZM16.07 19.076H.703a.703.703 0 0 0 0 1.407H16.07a.703.703 0 1 0 0-1.407Z"></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog2">
+        <path d="M9.377 14h-.754c-.609 0-1.104-.496-1.104-1.105v-.255a4.84 4.84 0 0 1-.753-.312l-.18.18a1.105 1.105 0 0 1-1.563 0l-.532-.532a1.105 1.105 0 0 1 0-1.562l.18-.18a4.843 4.843 0 0 1-.312-.753h-.254C3.495 9.481 3 8.986 3 8.377v-.754c0-.609.496-1.104 1.105-1.104h.254c.083-.26.188-.51.313-.753l-.18-.18a1.105 1.105 0 0 1 0-1.563l.532-.532a1.105 1.105 0 0 1 1.562 0l.18.18c.242-.124.494-.229.753-.312v-.254c0-.61.495-1.105 1.104-1.105h.754c.609 0 1.104.496 1.104 1.105v.254c.26.083.51.188.752.313l.181-.18a1.105 1.105 0 0 1 1.563 0l.532.532a1.105 1.105 0 0 1 0 1.562l-.18.18c.124.242.229.494.311.753h.255c.61 0 1.105.495 1.105 1.104v.754c0 .609-.496 1.104-1.105 1.104h-.255c-.082.26-.187.51-.312.752l.18.181a1.105 1.105 0 0 1 0 1.563l-.532.532a1.105 1.105 0 0 1-1.562 0l-.18-.18a4.85 4.85 0 0 1-.753.312v.254c0 .61-.495 1.105-1.104 1.105Zm-2.493-2.41c.336.199.697.348 1.074.446.155.04.264.18.264.34v.52c0 .22.18.4.401.4h.754c.221 0 .401-.18.401-.4v-.52c0-.16.109-.3.264-.34a4.145 4.145 0 0 0 1.074-.446.352.352 0 0 1 .428.054l.367.368a.401.401 0 0 0 .568 0l.533-.533a.401.401 0 0 0 0-.568l-.368-.367a.352.352 0 0 1-.054-.428 4.14 4.14 0 0 0 .446-1.074.352.352 0 0 1 .34-.264h.52c.22 0 .4-.18.4-.401v-.754a.402.402 0 0 0-.4-.401h-.52c-.16 0-.3-.109-.34-.264a4.143 4.143 0 0 0-.446-1.074.352.352 0 0 1 .054-.428l.368-.367a.401.401 0 0 0 0-.568l-.533-.533a.401.401 0 0 0-.567 0l-.368.368a.351.351 0 0 1-.428.054 4.144 4.144 0 0 0-1.074-.446.352.352 0 0 1-.264-.34v-.52a.402.402 0 0 0-.401-.4h-.754a.402.402 0 0 0-.401.4v.52c0 .16-.109.3-.264.34a4.144 4.144 0 0 0-1.074.446.352.352 0 0 1-.428-.054l-.367-.368a.401.401 0 0 0-.568 0l-.533.533a.401.401 0 0 0 0 .568l.368.367c.114.114.136.29.054.428a4.143 4.143 0 0 0-.446 1.074.352.352 0 0 1-.34.264h-.52a.402.402 0 0 0-.4.401v.754c0 .221.18.401.4.401h.52c.16 0 .3.109.34.264.097.377.247.738.446 1.074a.352.352 0 0 1-.054.428l-.368.367a.401.401 0 0 0 0 .568l.533.533c.154.154.409.159.568 0l.367-.368a.353.353 0 0 1 .428-.054ZM17.782 22h-.564a.83.83 0 0 1-.829-.828v-.192a3.641 3.641 0 0 1-.564-.234l-.136.136a.828.828 0 0 1-1.171 0l-.4-.4a.828.828 0 0 1 0-1.171l.136-.136a3.633 3.633 0 0 1-.234-.564h-.191a.83.83 0 0 1-.829-.829v-.564a.83.83 0 0 1 .829-.829h.19c.063-.194.141-.383.235-.564l-.136-.135a.829.829 0 0 1 0-1.172l.4-.4a.828.828 0 0 1 1.172 0l.135.136c.181-.094.37-.172.564-.234v-.191a.83.83 0 0 1 .829-.829h.564a.83.83 0 0 1 .829.829v.19c.194.063.383.141.564.235l.136-.136a.828.828 0 0 1 1.171 0l.4.4a.828.828 0 0 1 0 1.171l-.136.136c.094.181.172.37.234.564h.192a.83.83 0 0 1 .828.829v.564a.83.83 0 0 1-.828.829h-.192c-.062.194-.14.383-.234.564l.136.136a.828.828 0 0 1 0 1.171l-.4.4a.828.828 0 0 1-1.172 0l-.135-.136c-.181.094-.37.172-.564.234v.192a.83.83 0 0 1-.829.828Zm-1.869-1.808c.252.15.523.262.806.335.116.03.197.135.197.255v.39c0 .166.136.3.302.3h.564a.302.302 0 0 0 .302-.3v-.39c0-.12.081-.225.197-.255.283-.073.554-.186.806-.335a.264.264 0 0 1 .32.041l.276.276c.12.119.31.116.426 0l.4-.4a.301.301 0 0 0 0-.425l-.276-.276a.264.264 0 0 1-.04-.321 3.11 3.11 0 0 0 .334-.806.264.264 0 0 1 .255-.197h.39a.302.302 0 0 0 .3-.302v-.564a.302.302 0 0 0-.3-.302h-.39a.264.264 0 0 1-.255-.197 3.11 3.11 0 0 0-.335-.806.264.264 0 0 1 .041-.32l.276-.276a.301.301 0 0 0 0-.426l-.4-.4a.301.301 0 0 0-.425 0l-.276.276a.264.264 0 0 1-.321.04 3.107 3.107 0 0 0-.806-.334.264.264 0 0 1-.197-.255v-.39a.302.302 0 0 0-.302-.3h-.564a.302.302 0 0 0-.302.3v.39c0 .12-.08.225-.197.255a3.108 3.108 0 0 0-.806.335.264.264 0 0 1-.32-.041l-.276-.276a.301.301 0 0 0-.426 0l-.4.4a.301.301 0 0 0 0 .425l.276.276a.264.264 0 0 1 .04.321 3.103 3.103 0 0 0-.334.806.264.264 0 0 1-.255.197h-.39a.302.302 0 0 0-.3.302v.564c0 .166.134.302.3.302h.39c.12 0 .225.08.255.197.073.283.186.554.334.806a.264.264 0 0 1-.04.32l-.276.276a.301.301 0 0 0 0 .426l.4.4c.115.116.306.12.425 0l.276-.276a.265.265 0 0 1 .321-.04Z" fill=""></path>
+        <path d="M9 11c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3Zm0-5.192A2.195 2.195 0 0 0 6.808 8c0 1.209.983 2.192 2.192 2.192A2.195 2.195 0 0 0 11.192 8 2.195 2.195 0 0 0 9 5.808ZM17.5 20a2.503 2.503 0 0 1-2.5-2.5c0-1.378 1.122-2.5 2.5-2.5s2.5 1.122 2.5 2.5-1.122 2.5-2.5 2.5Zm0-4.327c-1.007 0-1.827.82-1.827 1.827 0 1.007.82 1.827 1.827 1.827 1.007 0 1.827-.82 1.827-1.827 0-1.007-.82-1.827-1.827-1.827Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog3">
+        <path d="m23.883 11.317-.8-.8a.4.4 0 0 0-.283-.117h-1.2a.4.4 0 0 0-.4.4v2h-.8V10a.4.4 0 0 0-.4-.4h-2.586l-1.48-2.222A.4.4 0 0 0 15.6 7.2h-2.4v-.8H16a.4.4 0 0 0 .4-.4V4.4A.4.4 0 0 0 16 4H8a.4.4 0 0 0-.4.4V6c0 .22.18.4.4.4h2.8v.8H8.4a.4.4 0 0 0-.333.178L6.586 9.6H4.4a.4.4 0 0 0-.4.4v2.4h-.8V10a.4.4 0 0 0-.4-.4H1.2a.4.4 0 0 0-.333.178l-.8 1.2A.403.403 0 0 0 0 11.2v1.2c0 .079.024.156.067.222L.8 13.72v3.48c0 .22.18.4.4.4h1.6a.4.4 0 0 0 .4-.4v-2.4H4v2.4c0 .22.18.4.4.4h2.186l1.48 2.222A.4.4 0 0 0 8.4 20H20a.4.4 0 0 0 .4-.4V16h.8v2.8c0 .22.18.4.4.4h1.2a.4.4 0 0 0 .283-.117l.8-.8A.4.4 0 0 0 24 18v-6.4a.4.4 0 0 0-.117-.283ZM2.4 12.8v4h-.8v-3.2a.403.403 0 0 0-.067-.222L.8 12.28v-.96l.614-.92H2.4v2.4ZM4 14h-.8v-.8H4v.8Zm4.4-8.4v-.8h7.2v.8H8.4Zm4 .8v.8h-.8v-.8h.8ZM18 19.2H8.614l-1.48-2.222A.4.4 0 0 0 6.8 16.8h-2v-6.4h2a.4.4 0 0 0 .333-.178L8.614 8h6.772l1.48 2.222a.4.4 0 0 0 .334.178h.8v8.8Zm1.6-6v6h-.8v-8.8h.8v2.8Zm1.6 2h-.8v-1.6h.8v1.6Zm2 2.634-.566.566H22v-7.2h.634l.566.566v6.068Z" fill=""></path>
+        <path d="M15.495 12.93a.4.4 0 0 0-.295-.13h-1.9l.69-3.113a.4.4 0 0 0-.66-.382l-4.8 4.4a.4.4 0 0 0 .27.695h1.902l-.692 3.113a.4.4 0 0 0 .66.382l4.8-4.4a.4.4 0 0 0 .025-.565Zm-4.429 3.517.525-2.36a.4.4 0 0 0-.39-.487H9.828l3.105-2.847-.524 2.36a.4.4 0 0 0 .39.487h1.372l-3.106 2.847ZM6.4 12.8h-.8V16h.8v-3.2ZM6.4 11.2h-.8v.8h.8v-.8Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog4">
+        <path d="M10.998 7.353a3.322 3.322 0 1 0-2.511 3.971l.008-.002a3.3 3.3 0 0 0 2.512-3.932l-.009-.037Zm-3.257 3.122a2.387 2.387 0 0 1-.526-4.718c.174-.04.352-.06.53-.06a2.387 2.387 0 0 1 .526 4.7c-.168.038-.34.058-.512.06l-.018.018Z" fill=""></path>
+        <path d="M23.017 3.026a.465.465 0 0 0-.396.19L21.1 5.279a1.098 1.098 0 0 1-1.503.228 1.08 1.08 0 0 1-.228-1.508l1.433-1.945a.465.465 0 0 0-.303-.749 4.085 4.085 0 0 0-4.61 4.872l-.55.55-.344-1.518a.465.465 0 0 0-.558-.349l-1.327.303a6.02 6.02 0 0 0-.833-1.173l.726-1.15a.466.466 0 0 0-.144-.641l-2-1.261a.465.465 0 0 0-.643.144L9.49 2.235a6.03 6.03 0 0 0-1.396-.247L7.796.662A.465.465 0 0 0 7.24.313L4.911.84a.465.465 0 0 0-.363.554L4.86 2.7a6.01 6.01 0 0 0-1.172.833l-1.15-.726a.466.466 0 0 0-.642.144L.636 4.952a.465.465 0 0 0 .144.642l1.149.726c-.137.454-.22.923-.247 1.396l-1.321.335a.465.465 0 0 0-.349.558l.521 2.327c.058.25.308.407.558.349l1.327-.298c.23.423.51.816.832 1.173l-.725 1.15a.465.465 0 0 0 .162.623l2.001 1.26c.074.047.16.07.247.07h.08a.464.464 0 0 0 .288-.204l.725-1.15c.454.137.923.22 1.396.247l.089.39-1.08 1.08a4.09 4.09 0 0 0-4.341 6.09.465.465 0 0 0 .772.038l1.596-2.163c.36-.47 1.026-.57 1.508-.228.474.344.586 1.003.251 1.484l-1.521 2.066a.465.465 0 0 0 .316.726 4.058 4.058 0 0 0 3.532-1.145 4.104 4.104 0 0 0 1.112-3.722l9.408-9.404a4.09 4.09 0 0 0 4.327-6.119.464.464 0 0 0-.376-.223ZM5.996 12.904a.466.466 0 0 0-.554.191l-.67 1.066-1.214-.759.67-1.065a.465.465 0 0 0-.07-.582 5.119 5.119 0 0 1-1.07-1.508.465.465 0 0 0-.526-.26l-1.224.28-.316-1.397 1.223-.28a.465.465 0 0 0 .363-.464c-.006-.623.101-1.241.317-1.824a.466.466 0 0 0-.191-.554l-1.06-.675.762-1.214 1.066.67a.465.465 0 0 0 .581-.065 5.116 5.116 0 0 1 1.508-1.07.465.465 0 0 0 .256-.526l-.28-1.224 1.397-.317.279 1.224a.465.465 0 0 0 .465.363 5.2 5.2 0 0 1 1.824.317.466.466 0 0 0 .554-.191l.67-1.066 1.214.763-.67 1.066a.466.466 0 0 0 .07.581c.452.434.821.946 1.089 1.513a.465.465 0 0 0 .526.256l1.224-.28.372 1.638-6.263 6.245-.047-.172a.465.465 0 0 0-.465-.363 5.132 5.132 0 0 1-1.81-.317Zm16.132-5.309a3.137 3.137 0 0 1-3.085.814.464.464 0 0 0-.465.121l-9.772 9.772c-.124.12-.17.3-.12.465a3.174 3.174 0 0 1-.81 3.085c-.51.512-1.18.833-1.899.907l.996-1.349a2.005 2.005 0 1 0-3.23-2.382l-1.12 1.521a3.16 3.16 0 0 1 3.866-3.973c.166.049.345.002.465-.121l9.772-9.795c.123-.12.17-.3.12-.465a3.168 3.168 0 0 1 .81-3.085 3.131 3.131 0 0 1 1.862-.903l-.899 1.238a2.007 2.007 0 0 0 3.23 2.382L22.9 4.398a3.15 3.15 0 0 1-.772 3.197Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog5">
+        <path d="M7.583 4.404a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Zm0-2.4a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6ZM7.583 20.399a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Zm0 1.6a.4.4 0 1 1 0-.8.4.4 0 0 1 0 .8Z"></path>
+        <path d="M9.183 5.203h-.165a2.8 2.8 0 1 0-2.869 0h-.165a2.002 2.002 0 0 0-2 2V12.8c0 .221.18.4.4.4h.425l.352 5.648a.8.8 0 0 0 .8.75h.3a2.4 2.4 0 1 0 2.648 0h.3a.8.8 0 0 0 .8-.75l.35-5.648h.424a.4.4 0 0 0 .4-.4V7.203a2.002 2.002 0 0 0-2-2ZM5.584 2.804a2 2 0 1 1 3.999 0 2 2 0 0 1-3.999 0Zm2 20.394a1.6 1.6 0 1 1 0-3.199 1.6 1.6 0 0 1 0 3.2ZM9.206 19.2v-.4.4Zm0-.4H5.96l-.35-5.598h3.948l-.35 5.598Zm1.176-6.398H4.784V7.203a1.2 1.2 0 0 1 1.2-1.2h3.199a1.2 1.2 0 0 1 1.2 1.2V12.4ZM16.38 4.404a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Zm0-2.4a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6ZM16.38 20.399a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Zm0 1.6a.4.4 0 1 1 0-.8.4.4 0 0 1 0 .8Z"></path>
+        <path d="M17.98 5.203h-.165a2.8 2.8 0 1 0-2.869 0h-.165a2.002 2.002 0 0 0-2 2V12.8c0 .221.18.4.4.4h.425l.353 5.648a.8.8 0 0 0 .8.75h.3a2.4 2.4 0 1 0 2.647 0h.3a.8.8 0 0 0 .8-.75l.35-5.648h.424a.4.4 0 0 0 .4-.4V7.203a2.002 2.002 0 0 0-2-2Zm-3.599-2.399a2 2 0 1 1 3.999 0 2 2 0 0 1-3.999 0Zm2 20.394a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Zm1.624-3.999v-.4.4Zm0-.4h-3.248l-.35-5.598h3.948l-.35 5.598Zm1.175-6.398h-5.598V7.203a1.2 1.2 0 0 1 1.2-1.2h3.198a1.2 1.2 0 0 1 1.2 1.2V12.4Z"></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog6">
+        <path d="M9.203 18.042a.555.555 0 0 0-.628-.47 15.96 15.96 0 0 0-2.626.586.555.555 0 1 0 .342 1.055c.708-.23 1.53-.412 2.442-.543a.555.555 0 0 0 .47-.628ZM18.05 18.158a15.96 15.96 0 0 0-2.625-.586.555.555 0 1 0-.158 1.098 14.85 14.85 0 0 1 2.442.543.554.554 0 1 0 .342-1.055ZM13.327 17.371a26.26 26.26 0 0 0-2.654 0 .555.555 0 1 0 .057 1.108 25.186 25.186 0 0 1 2.57 0 .555.555 0 0 0 .027-1.108Z" fill=""></path>
+        <path d="M18.114.841C16.473.3 14.302 0 12 0 9.7 0 7.527.299 5.886.841c-2.348.776-2.841 1.783-2.841 2.49V20.67c0 .707.493 1.713 2.841 2.49C7.527 23.7 9.699 24 12 24c2.302 0 4.473-.299 6.114-.841 2.348-.776 2.841-1.783 2.841-2.49V3.33c0-.707-.493-1.714-2.84-2.49ZM6.234 1.895c1.532-.507 3.58-.786 5.766-.786 2.187 0 4.234.28 5.766.786 1.535.507 2.08 1.09 2.08 1.436 0 .346-.545.93-2.08 1.437-1.532.507-3.58.785-5.766.785s-4.234-.278-5.766-.785c-1.535-.507-2.08-1.09-2.08-1.437 0-.345.545-.929 2.08-1.436Zm13.612 17.14a.554.554 0 0 0-.46.98c.21.162.46.406.46.654 0 .345-.545.929-2.08 1.436-1.532.507-3.58.786-5.766.786s-4.234-.28-5.766-.785c-1.535-.508-2.08-1.092-2.08-1.437 0-.248.25-.492.46-.654a.555.555 0 0 0-.46-.98V5.02c.417.28.978.552 1.732.801 1.641.543 3.813.842 6.114.842 2.302 0 4.473-.3 6.114-.842.754-.249 1.316-.521 1.732-.8v14.014Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog7">
+        <path d="M3.6 22.6A1.4 1.4 0 0 0 5 24h14a1.4 1.4 0 0 0 .2-2.786v-2.028a1.4 1.4 0 0 0 0-2.772V9.586a1.4 1.4 0 0 0 0-2.772V4.786A1.4 1.4 0 0 0 19 2h-8.6v-.8A1.2 1.2 0 0 0 9.2 0H6.8a1.2 1.2 0 0 0-1.2 1.2V2H5a1.4 1.4 0 0 0-.2 2.786v2.028a1.4 1.4 0 0 0 0 2.772v6.828a1.4 1.4 0 0 0 0 2.772v2.028A1.4 1.4 0 0 0 3.6 22.6ZM6.4 1.2c0-.22.18-.4.4-.4h2.4c.221 0 .4.18.4.4V2H6.4v-.8ZM5 22h.2a.4.4 0 0 0 .4-.4v-2.4h1.2a.4.4 0 0 0 0-.8H5a.6.6 0 1 1 0-1.2h3.8a.4.4 0 0 0 0-.8H5.6V9.6h3.2a.4.4 0 0 0 0-.8H5a.6.6 0 0 1 0-1.2h10.2a.4.4 0 0 0 0-.8H5.6v-2h9.2a.4.4 0 0 0 0-.8H5a.6.6 0 0 1 0-1.2h14A.6.6 0 1 1 19 4h-.2a.4.4 0 0 0-.4.4v2.4h-1.2a.4.4 0 0 0 0 .8H19a.6.6 0 1 1 0 1.2h-3.8a.4.4 0 0 0 0 .8h3.2v6.8h-3.2a.4.4 0 0 0 0 .8H19a.6.6 0 1 1 0 1.2H8.8a.4.4 0 0 0 0 .8h9.6v2H9.2a.4.4 0 0 0 0 .8H19a.6.6 0 1 1 0 1.2H5A.6.6 0 1 1 5 22Z"></path>
+        <path d="M11.673 16.782A2.8 2.8 0 0 0 14.8 14c0-2.009-1.537-3.77-2.197-4.525a.8.8 0 0 0-1.203-.003l-.03.035c-.647.74-1.993 2.28-2.154 4.134a2.88 2.88 0 0 0 2.457 3.14Zm.299-6.748.032-.029C12.6 10.69 14 12.292 14 14a2 2 0 0 1-2.236 1.986 2.074 2.074 0 0 1-1.751-2.276c.138-1.594 1.368-3 1.959-3.676Z"></path>
+
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog8">
+        <path d="M8.038 24a7.996 7.996 0 0 0 6.84-3.873l6.523-5.737c.402-.02.795-.129 1.15-.318a2.85 2.85 0 0 0 1.368-1.677v-.013c.08-.253.12-.517.12-.783a2.79 2.79 0 0 0-1.145-2.251l-1.717-4.67a3.997 3.997 0 0 0-7.636-2.2L5.62 8.377A8 8 0 0 0 8.037 24ZM17.238 8c.836 0 1.65-.264 2.327-.753l.64 1.752a2.789 2.789 0 0 0-1.187 4.297l-2.983 2.624a8.008 8.008 0 0 0-6.183-7.705l3.673-2.735a4.003 4.003 0 0 0 3.714 2.52Zm-1.277 9.05 3.63-3.192c.23.17.485.303.756.394l-4.663 4.103c.129-.426.222-.862.277-1.304Zm7.194-4.885c-.152.517-.507.951-.983 1.204a2.005 2.005 0 0 1-2.933-1.769 2.005 2.005 0 0 1 1.574-1.953 1.997 1.997 0 0 1 2.342 2.519Zm-1.287-3.29a2.818 2.818 0 0 0-.877-.061l-.785-2.142a4.01 4.01 0 0 0 .56-.79l1.102 2.993ZM17.238.798a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Zm-3.984 2.89a3.932 3.932 0 0 0-.016.31c.002.219.021.437.058.652L8.753 8.035A7.97 7.97 0 0 0 8.038 8a7.97 7.97 0 0 0-.616.031l5.832-4.342ZM5.93 9.115A7.2 7.2 0 1 1 .838 16 7.173 7.173 0 0 1 5.93 9.115Z"></path>
+        <path d="M8.038 21.6a5.6 5.6 0 1 0 0-11.2 5.6 5.6 0 0 0 0 11.2Zm0-10.401a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Z"></path>
+        <path d="M8.038 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM17.238 6.399a2.4 2.4 0 1 0 0-4.8 2.4 2.4 0 0 0 0 4.8Zm0-4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2ZM21.238 10.399a1.195 1.195 0 0 0-.734 2.143l.016.013c.034.024.067.047.103.069l.016.009c.182.108.389.165.6.166a1.2 1.2 0 1 0 0-2.4Zm0 1.6a.4.4 0 1 1 .001-.8.4.4 0 0 1 0 .8Z"></path>
+        <path d="M17.638 3.999a.4.4 0 1 1-.8 0 .4.4 0 0 1 .8 0ZM8.438 12.8a.4.4 0 1 1-.8 0 .4.4 0 0 1 .8 0ZM8.438 19.2a.4.4 0 1 1-.8 0 .4.4 0 0 1 .8 0ZM11.638 16a.4.4 0 1 1-.8 0 .4.4 0 0 1 .8 0ZM5.238 16a.4.4 0 1 1-.8 0 .4.4 0 0 1 .8 0ZM10.583 14.02a.4.4 0 1 0-.565-.567.4.4 0 0 0 .565.566ZM6.057 18.545a.4.4 0 1 0-.565-.566.4.4 0 0 0 .565.566ZM10.018 17.98a.4.4 0 1 0 .565.565.4.4 0 0 0-.565-.565ZM6.057 14.02a.4.4 0 1 0-.565-.567.4.4 0 0 0 .565.566Z"></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog9">
+        <path d="M5.99 18.51a.502.502 0 0 1-.354-.146A8.945 8.945 0 0 1 3 12c0-2.404.937-4.664 2.637-6.363a.5.5 0 0 1 .707.707A7.946 7.946 0 0 0 4 12c0 2.137.833 4.145 2.344 5.656a.5.5 0 0 1-.354.854Z"></path>
+        <path d="M3.87 20.63a.502.502 0 0 1-.354-.146A11.924 11.924 0 0 1 0 12c0-3.203 1.249-6.216 3.517-8.483a.5.5 0 0 1 .707.707A10.924 10.924 0 0 0 1 12c0 2.936 1.145 5.698 3.224 7.776a.5.5 0 0 1-.354.854ZM20.13 20.63a.5.5 0 0 1-.354-.853A10.928 10.928 0 0 0 23 12c0-2.936-1.145-5.698-3.224-7.776a.5.5 0 0 1 .707-.707A11.917 11.917 0 0 1 24 12c0 3.203-1.249 6.216-3.517 8.483a.495.495 0 0 1-.353.147Z"></path>
+        <path d="M18.01 18.51a.5.5 0 0 1-.354-.853A7.95 7.95 0 0 0 20 12a7.946 7.946 0 0 0-2.344-5.656.5.5 0 0 1 .707-.707A8.938 8.938 0 0 1 21 12a8.938 8.938 0 0 1-2.637 6.363.495.495 0 0 1-.353.147ZM9.573 20a.501.501 0 0 1-.482-.633L10.844 13H7.5a.5.5 0 0 1-.4-.799l5.983-8a.5.5 0 0 1 .894.38L13.089 10h3.41a.501.501 0 0 1 .396.805l-6.926 9a.5.5 0 0 1-.396.195Zm-1.074-8h3a.502.502 0 0 1 .483.633l-1.25 4.542L15.484 11H12.5a.499.499 0 0 1-.494-.581l.653-3.982L8.499 12Z"></path>
+
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog10">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.235 3.576a.5.5 0 0 1 .416-.052L22 6.806a.5.5 0 0 1 .371.444l1.123 6.537a.5.5 0 0 1-.144.443l-7.334 7.129a.5.5 0 0 1-.485.122l-9.59-2.742a.5.5 0 0 1-.312-.262L.55 8.057a.5.5 0 0 1 .61-.692l2.595.883 7.48-4.672ZM3.676 9.277a.496.496 0 0 1-.017-.006l-1.684-.573 4.454 9.14 9.097 2.602 6.937-6.744-.944-5.498-7.802 6.068a.5.5 0 0 1-.752-.166l-1.035-2.015-8.254-2.808Zm15.633-2.275-7.74-2.455-5.733 3.58L19.31 7.003ZM6.251 9.097l6.192 2.107a.5.5 0 0 1 .284.244l.852 1.658 6.658-5.178L6.25 9.097Z" fill=""></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79 10.546a.5.5 0 0 1 .664.244l2.222 4.8a.5.5 0 0 1-.908.42l-2.222-4.8a.5.5 0 0 1 .244-.664ZM20 10.5a.5.5 0 0 1 .5.5v1.8a.5.5 0 1 1-1 0V11a.5.5 0 0 1 .5-.5ZM8.1 12.358a.5.5 0 0 1 .675.208l2.223 4.2a.5.5 0 1 1-.884.468l-2.223-4.2a.5.5 0 0 1 .208-.676Zm9.678 1.142a.5.5 0 0 1 .5.5v1.2a.5.5 0 1 1-1 0V14a.5.5 0 0 1 .5-.5Zm-2.222 1.8a.5.5 0 0 1 .5.5V17a.5.5 0 1 1-1 0v-1.2a.5.5 0 0 1 .5-.5ZM11.35 3.523a.5.5 0 0 1 .627.328l2.083 6.654 2.06.51a.5.5 0 0 1-.24.97l-2.123-.525-1.486.96-.542-.84 1.347-.87-2.053-6.56a.5.5 0 0 1 .328-.627Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog11">
+        <path d="m21.828 7.21-1.25-1.25a.586.586 0 0 0-.414-.17h-1.64v-.665a.586.586 0 0 0-.587-.586h-1.914v-.781A1.76 1.76 0 0 0 14.266 2H9.734a1.76 1.76 0 0 0-1.757 1.758v.781H6.062a.586.586 0 0 0-.585.586v.664H3.836a.586.586 0 0 0-.414.172l-1.25 1.25A.586.586 0 0 0 2 7.625v12.54c0 .155.062.303.172.413l1.25 1.25c.11.11.259.172.414.172h16.328a.586.586 0 0 0 .414-.172l1.25-1.25a.586.586 0 0 0 .172-.414V7.625a.586.586 0 0 0-.172-.414Zm-4.476-1.5v1.33h-1.329V5.71h1.329ZM9.148 3.759c0-.323.263-.586.586-.586h4.532c.323 0 .586.263.586.586v2.031H9.148V3.758Zm-2.5 1.953h1.329v1.328H6.648V5.711Zm14.18 14.21-.907.907H4.08l-.907-.907V7.868l.907-.907h1.398v.664c0 .324.262.586.585.586h2.5a.586.586 0 0 0 .586-.586v-.664h5.704v.664c0 .324.262.586.585.586h2.5a.586.586 0 0 0 .586-.586v-.664h1.398l.907.907V19.92Z" fill=""></path>
+        <path d="M18.895 13.21a.586.586 0 0 0 .525-.846c-1.183-2.38-4.495-2.53-5.905-.325h-7.14a1.838 1.838 0 0 0-1.836 1.836c0 1.012.824 1.836 1.836 1.836h7.14c1.41 2.204 4.721 2.057 5.905-.325a.586.586 0 0 0-.525-.847h-1.29l-.498-.664.498-.664h1.29Zm-2.051-.937-.938 1.25a.586.586 0 0 0 0 .704l.938 1.25c.11.147.284.234.468.234h.327a2.229 2.229 0 0 1-3.259-.847.586.586 0 0 0-.524-.325H6.375a.665.665 0 0 1 0-1.328h7.48a.586.586 0 0 0 .525-.325 2.23 2.23 0 0 1 3.259-.847h-.326a.586.586 0 0 0-.47.234Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog12">
+        <path d="M17.995 1.743H6.005L0 12l6.005 10.257h11.99L24 12 17.995 1.743Zm-.74 19.216H6.751L1.506 12l5.245-8.959h10.504L22.5 12l-5.245 8.959Z" fill=""></path>
+        <path d="M12.003 7.053a4.668 4.668 0 1 0 4.668 4.668v-.007a4.671 4.671 0 0 0-4.668-4.66Zm0 8.037a3.366 3.366 0 0 1-3.37-3.37 3.366 3.366 0 0 1 3.37-3.368 3.366 3.366 0 0 1 3.37 3.369 3.375 3.375 0 0 1-3.37 3.369Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-main-catalog13">
+        <path d="M1 9.563c-.643.93-1 1.958-1 3.037v3.2c0 4.19 5.383 7.6 12 7.6s12-3.41 12-7.6v-3.2c0-1.55-.737-2.994-2-4.197V9.54c.767.92 1.2 1.96 1.2 3.061v3.2c0 3.75-5.024 6.8-11.2 6.8-4.908 0-9.09-1.927-10.599-4.6L1 17.083A4.245 4.245 0 0 1 .8 15.8v-3.2c0-.438.069-.867.2-1.283V9.563Z" fill=""></path>
+        <path d="M3 6c-.774.359-2 1-2 2.918v2.987C1 15.817 5.71 19 11.5 19S22 15.817 22 11.905V8.918c0-1.281-.31-1.7-1.147-2.559 0-.13-.282.791 0 1.141.366.454.447.605.447 1.418v2.987c0 3.5-4.396 6.348-9.8 6.348-4.295 0-7.953-1.799-9.274-4.294l-.351-.856a4.207 4.207 0 0 1-.175-1.198V8.918C1.7 7.74 2.5 7 3 7V6Z" fill=""></path>
+        <path d="M12.13 0C7.096 0 3 2.594 3 5.783v2.434C3 11.406 7.096 14 12.13 14c5.035 0 9.13-2.594 9.13-5.783V5.783C21.26 2.594 17.166 0 12.13 0Zm8.522 8.217c0 2.853-3.823 5.174-8.522 5.174S3.61 11.071 3.61 8.217V5.783C3.609 2.93 7.43.609 12.13.609c4.7 0 8.522 2.32 8.522 5.174v2.434Z" fill=""></path>
+        <path d="M12.13 2.615c-3.242 0-5.782 1.391-5.782 3.168 0 1.776 2.54 3.167 5.782 3.167 3.243 0 5.783-1.391 5.783-3.167 0-1.777-2.54-3.168-5.783-3.168Zm0 5.727c-1.992 0-3.76-.593-4.62-1.433.884-.875 2.653-1.43 4.62-1.43s3.737.555 4.62 1.43c-.86.84-2.628 1.433-4.62 1.433Zm4.993-1.914C16.108 5.473 14.21 4.87 12.13 4.87c-2.08 0-3.977.603-4.993 1.558a1.34 1.34 0 0 1-.18-.645c0-1.387 2.369-2.56 5.173-2.56 2.805 0 5.174 1.173 5.174 2.56a1.34 1.34 0 0 1-.18.645Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" id="icon-search">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.998 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-7 5a7 7 0 1 1 12.606 4.192l5.101 5.1a1 1 0 1 1-1.414 1.415l-5.1-5.1A7 7 0 0 1 .998 7Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-insta">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0ZM7.801 4.699c.57-.026.751-.032 2.2-.032h-.002c1.449 0 1.63.006 2.199.032.567.026.955.116 1.295.248.351.136.648.318.945.615.296.296.479.594.615.944.131.34.221.727.248 1.295.026.569.032.75.032 2.2 0 1.447-.006 1.629-.032 2.198-.027.567-.117.955-.248 1.294-.136.35-.319.648-.615.945a2.61 2.61 0 0 1-.944.615c-.34.132-.728.222-1.296.248-.568.026-.75.032-2.198.032-1.449 0-1.63-.006-2.2-.032-.567-.026-.954-.116-1.294-.248a2.612 2.612 0 0 1-.944-.615 2.614 2.614 0 0 1-.615-.945c-.132-.339-.222-.727-.248-1.294-.026-.57-.032-.75-.032-2.199 0-1.448.006-1.63.032-2.2.025-.567.115-.954.248-1.294.136-.35.318-.648.615-.944.297-.297.594-.48.945-.615.339-.132.727-.222 1.294-.248Z" fill=""></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.522 5.628h.479c1.424 0 1.593.005 2.155.03.52.024.802.111.99.184.249.097.426.212.613.399.187.187.302.364.4.613.072.188.16.47.183.99.025.563.03.731.03 2.155 0 1.423-.005 1.592-.03 2.154-.024.52-.11.803-.184.99a1.65 1.65 0 0 1-.4.613 1.648 1.648 0 0 1-.612.399c-.188.073-.47.16-.99.184-.562.025-.731.03-2.155.03s-1.593-.005-2.155-.03c-.52-.024-.803-.111-.99-.184a1.652 1.652 0 0 1-.614-.4 1.653 1.653 0 0 1-.4-.612c-.072-.188-.16-.47-.183-.99-.025-.562-.03-.731-.03-2.155 0-1.425.005-1.593.03-2.155.024-.52.11-.802.184-.99.096-.25.212-.427.399-.614.187-.186.364-.302.613-.399.188-.073.47-.16.99-.184.493-.022.683-.028 1.677-.03v.002Zm3.326.885a.64.64 0 1 0 0 1.28.64.64 0 0 0 0-1.28ZM7.262 10a2.739 2.739 0 1 1 5.478 0 2.739 2.739 0 0 1-5.478 0Z" fill=""></path>
+        <path d="M10 8.222a1.778 1.778 0 1 1 0 3.556 1.778 1.778 0 0 1 0-3.556Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-facebook">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0Zm1.042 10.44v5.44h-2.25v-5.44H7.666V8.565H8.79V7.439c0-1.53.635-2.439 2.44-2.439h1.502v1.875h-.94c-.702 0-.748.262-.748.751l-.003.938h1.701l-.199 1.875h-1.502Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-vk">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0Zm.814 13.157c-.098.104-.29.125-.29.125h-.638s-1.407.083-2.646-1.183c-1.351-1.381-2.544-4.122-2.544-4.122s-.07-.18.005-.266c.084-.098.313-.104.313-.104l1.524-.01s.144.023.247.098a.469.469 0 0 1 .132.175s.246.612.572 1.165c.637 1.08.934 1.316 1.15 1.2.315-.168.22-1.526.22-1.526s.006-.493-.158-.713c-.128-.17-.367-.22-.473-.233-.086-.012.054-.207.237-.295.274-.131.759-.139 1.33-.133.447.004.575.031.75.073.404.096.391.403.364 1.065-.008.198-.018.428-.018.694l-.003.189c-.01.34-.02.728.207.873.117.073.403.01 1.117-1.18.338-.564.592-1.227.592-1.227s.056-.119.142-.17c.088-.051.207-.035.207-.035l1.604-.01s.482-.057.56.157c.082.224-.18.747-.836 1.605-.621.813-.924 1.113-.896 1.377.02.194.217.369.594.713.788.717.999 1.095 1.05 1.186a.588.588 0 0 0 .01.017c.352.575-.393.62-.393.62l-1.424.02s-.306.059-.709-.213c-.21-.142-.417-.374-.613-.595-.3-.337-.577-.65-.814-.575-.397.123-.385.963-.385.963s.004.18-.087.275Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" id="icon-star">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.853 1.131c.435-1.003 1.859-1.003 2.294 0l1.98 4.566 4.954.472c1.088.103 1.528 1.457.708 2.181l-3.73 3.294 1.082 4.857c.238 1.068-.914 1.904-1.856 1.348L10 15.32l-4.285 2.53c-.942.556-2.094-.28-1.856-1.348l1.082-4.857-3.73-3.294C.39 7.627.83 6.273 1.92 6.17l4.953-.472 1.98-4.566v-.001ZM10 3.514l-1.527 3.52-.234.542-.588.056-3.82.364 2.876 2.54.443.39-.128.576-.835 3.746 3.305-1.951.508-.3.508.3 3.305 1.95-.835-3.745-.128-.576.443-.39 2.876-2.54-3.82-.364-.588-.056-.234-.542L10 3.514Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 20" id="icon-like">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.173 2.944c-.2 1.013-.536 2.533-1.766 3.763-.112.112-.235.23-.365.356C3.9 8.164 2.2 9.804 2.2 12.5c0 1.463.63 2.85 1.6 3.875C4.779 17.406 6.03 18 7.2 18h5c.352 0 .646-.09.82-.207.145-.096.18-.18.18-.293 0-.112-.035-.197-.18-.293-.174-.116-.468-.207-.82-.207h-1a1 1 0 0 1 0-2h1.5c.352 0 .646-.09.82-.207.145-.096.18-.18.18-.293 0-.112-.035-.197-.18-.293-.174-.116-.468-.207-.82-.207h-1a1 1 0 0 1 0-2h1.5c.352 0 .646-.09.82-.207.145-.096.18-.18.18-.293 0-.112-.035-.197-.18-.293-.174-.116-.468-.207-.82-.207h-1a1 1 0 0 1 0-2h1c.352 0 .646-.09.82-.207.145-.096.18-.18.18-.293 0-.112-.035-.197-.18-.293-.174-.116-.468-.207-.82-.207H8.7a1 1 0 0 1-.947-1.322v-.001l.004-.01.013-.04.053-.17c.044-.15.105-.367.168-.628a9.866 9.866 0 0 0 .278-1.866c.026-.685-.065-1.21-.248-1.53-.108-.19-.271-.361-.65-.415a9.028 9.028 0 0 0-.156.716l-.042.21ZM10.003 6c.122-.558.238-1.253.265-1.963.03-.815-.05-1.79-.51-2.595C9.248.546 8.346 0 7.1 0c-.382 0-.74.126-1.03.38a1.94 1.94 0 0 0-.506.746c-.148.367-.24.843-.317 1.245l-.036.185c-.194.987-.448 1.967-1.218 2.737-.088.088-.195.19-.317.305C2.553 6.662.2 8.893.2 12.5c0 2.037.87 3.9 2.149 5.25C3.622 19.094 5.37 20 7.2 20h5c.648 0 1.354-.16 1.93-.543.605-.404 1.07-1.07 1.07-1.957 0-.469-.13-.875-.34-1.215.489-.41.84-1.013.84-1.785 0-.469-.13-.876-.34-1.214.489-.41.84-1.014.84-1.786 0-.609-.218-1.113-.551-1.5.332-.387.551-.891.551-1.5 0-.888-.465-1.553-1.07-1.957C14.554 6.159 13.848 6 13.2 6h-3.197Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14" id="icon-list">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 2a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM6 1a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H6Zm0 5a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H6Zm0 5a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2H6ZM2 8.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm0 5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-square">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6ZM5 7a1 1 0 0 1 1-1h3v12H6a1 1 0 0 1-1-1V7Zm6 11h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-7v12Z" fill=""></path>
+        <path fill="" d="M4 11h16v2H4z"></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12" id="icon-filter">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1Zm3 5a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm3 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-info">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15ZM.833 10a9.167 9.167 0 1 1 18.334 0A9.167 9.167 0 0 1 .833 10Zm10.209-3.958a1.041 1.041 0 1 1-2.083 0 1.041 1.041 0 0 1 2.083 0ZM9.167 8.333a.833.833 0 1 0 0 1.667v4.167a.833.833 0 0 0 1.666 0v-5A.833.833 0 0 0 10 8.333h-.833Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="icon-point-left">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.707.794a1 1 0 0 1 0 1.414L3.414 7.5H17a1 1 0 1 1 0 2H3.414l5.293 5.293a1 1 0 0 1-1.414 1.413l-7-7a1 1 0 0 1 0-1.413l7-7a1 1 0 0 1 1.414 0Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-full-screen">
+        <path d="M17.182 11.455a.818.818 0 0 0-.818.818v2.934l-5.149-5.149a.818.818 0 0 0-1.157 1.157l5.148 5.149h-2.933a.818.818 0 0 0 0 1.636h4.909a.818.818 0 0 0 .818-.818v-4.91a.818.818 0 0 0-.818-.817ZM.818 6.545a.818.818 0 0 0 .818-.818V2.794l5.149 5.148a.816.816 0 0 0 1.157 0 .818.818 0 0 0 0-1.157L2.794 1.637h2.933a.818.818 0 1 0 0-1.637H.818A.818.818 0 0 0 0 .82v4.908c0 .452.366.818.818.818ZM6.785 10.058l-5.148 5.149v-2.934a.818.818 0 1 0-1.637 0v4.909c0 .452.367.818.819.818h4.908a.818.818 0 0 0 0-1.636H2.794l5.148-5.149a.818.818 0 0 0-1.157-1.157ZM10.636 8.182c.21 0 .42-.08.579-.24l5.148-5.149v2.934a.818.818 0 1 0 1.637 0V.818A.818.818 0 0 0 17.18 0h-4.908a.818.818 0 0 0 0 1.636h2.933l-5.148 5.149a.818.818 0 0 0 .578 1.397Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" id="icon-print">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v6a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3V1Zm0 8a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9Zm2-7v8h10V2H5Zm2 3a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 11" id="icon-cloud">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.333 4.167a2.667 2.667 0 1 1 5.334 0v.667h.667a2.333 2.333 0 0 1 0 4.667h-.067a.667.667 0 0 0 0 1.333h.067a3.667 3.667 0 0 0 .62-7.282 4 4 0 0 0-7.907 0 3.668 3.668 0 0 0 .62 7.282h.066a.667.667 0 0 0 0-1.333h-.066a2.333 2.333 0 1 1 0-4.667h.666v-.667Zm3.334.667a.667.667 0 1 0-1.333 0v3.724l-.862-.862a.667.667 0 0 0-.943.943l2 2a.667.667 0 0 0 .943 0l2-2a.667.667 0 0 0-.943-.943l-.862.862V4.834Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="icon-chat">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="m24.133 18.37.001.002c.33.43.488 1.86-1.775 1.605-.93-.09-1.843-.302-2.717-.63a10.333 10.333 0 0 1-1.95-.996c-.908.366-1.87.58-2.848.634A7.489 7.489 0 0 1 8.833 22c-.788 0-1.57-.123-2.32-.366-.44.255-.94.504-1.492.713-1.12.424-2.049.583-2.717.63-.5.037-.853.01-1.027-.009-.382-.044-.724-.262-.872-.628a1 1 0 0 1 .124-.967c.252-.345.484-.706.704-1.072.428-.714.848-1.484.954-2.322a7.5 7.5 0 0 1 3.437-10.26 9 9 0 1 1 16.848 6.126c-.19 1.724.677 3.175 1.66 4.525h.001ZM7.333 10a7 7 0 1 1 13.272 3.111.998.998 0 0 0-.095.307c-.219 1.575.15 3.011.905 4.39a8.597 8.597 0 0 1-3.03-1.405 1 1 0 0 0-1.02-.092A7 7 0 0 1 7.333 10Zm-1.996.254a9.003 9.003 0 0 0 6.963 8.515A5.477 5.477 0 0 1 8.833 20c-.73 0-1.423-.14-2.057-.397a1.001 1.001 0 0 0-.916.086c-.439.283-.96.565-1.548.788a8.884 8.884 0 0 1-1.065.331c.333-.607.67-1.33.824-2.01.077-.337.12-.664.138-.97a1 1 0 0 0-.134-.566 5.47 5.47 0 0 1-.742-2.762c0-1.71.78-3.237 2.004-4.245Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="icon-rocket">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.724 7.452 6.29 6.194A17.999 17.999 0 0 0 4.403 9.37L2.724 7.452Zm-2.477.207 3.303 3.773-.478 1.196a1 1 0 0 0 .22 1.078l.315.314C1.903 15.94.963 17.95.051 20.683a1 1 0 0 0 1.265 1.265c2.734-.912 4.743-1.852 6.663-3.556l.314.314a1 1 0 0 0 1.078.221l1.196-.478 3.774 3.303a1 1 0 0 0 1.602-.42l2.986-8.46A13 13 0 0 0 22 4.48V1a1 1 0 0 0-1-1h-3.48a13 13 0 0 0-8.392 3.07L.668 6.057a1 1 0 0 0-.42 1.6v.002Zm2.438 11.655c.628-1.516 1.332-2.722 2.34-3.877l1.537 1.538c-1.155 1.007-2.36 1.711-3.877 2.34Zm6.556-2.488-.534-.534-3-3-.534-.534.71-1.774a15.999 15.999 0 0 1 2.708-4.47l.576-.673A11 11 0 0 1 17.52 2H20v2.48a11 11 0 0 1-3.84 8.352l-.674.576a16.004 16.004 0 0 1-4.47 2.708l-1.775.71Zm5.307 2.45-1.918-1.679a17.992 17.992 0 0 0 3.176-1.887l-1.258 3.565ZM14 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm1-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 23" id="icon-round-check">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 11.998a9 9 0 1 1 17.998 0 9 9 0 0 1-17.998 0Zm9-11c-6.075 0-11 4.926-11 11 0 6.075 4.925 11 11 11s11-4.925 11-11c0-6.074-4.925-11-11-11Zm4.8 7.6a1 1 0 1 0-1.6-1.2l-5.308 7.078-2.185-2.185a1 1 0 0 0-1.414 1.414l3 3a.998.998 0 0 0 1.507-.107l6-8Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" id="icon-flag">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.625 6.219c-1.583-1.267-3.442-1.228-4.769-.95-.808.17-1.63.45-2.352.86A1 1 0 0 0 5 7v14a1 1 0 1 0 2 0v-5.37c1.376-.58 3.124-.85 4.375.15 1.583 1.267 3.442 1.228 4.768.949a9.004 9.004 0 0 0 2.152-.754c.392-.198.705-.502.705-.975v-8a1 1 0 0 0-1.495-.87c-1.439.787-3.504 1.19-4.88.089ZM7 7.629v5.869c1.881-.602 4.021-.563 5.625.72.917.734 2.058.773 3.107.553A7.061 7.061 0 0 0 17 14.369v-5.87c-.282.09-.568.166-.857.228-1.326.279-3.185.318-4.768-.948-1.251-1-2.999-.731-4.375-.151Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" id="icon-settings">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.999a1 1 0 0 0-1 1V5.58c-.69.28-1.337.653-1.924 1.112L5.706 5.9a1 1 0 0 0-1.367.366l-2 3.464a1 1 0 0 0 .366 1.366l1.37.79a8.062 8.062 0 0 0 0 2.223l-1.37.79a.999.999 0 0 0-.366 1.367l2 3.464a1 1 0 0 0 1.366.366l1.371-.792c.581.455 1.228.83 1.923 1.112v1.582a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.582a7.997 7.997 0 0 0 1.923-1.112l1.372.792a1 1 0 0 0 1.366-.366l2-3.464a1 1 0 0 0-.366-1.366l-1.37-.791a8.067 8.067 0 0 0 0-2.222l1.37-.79a1.002 1.002 0 0 0 .366-1.367l-2-3.464a1 1 0 0 0-1.366-.366l-1.372.792A7.993 7.993 0 0 0 15 5.58V3.999a1 1 0 0 0-1-1h-4Zm1 3.29v-1.29h2v1.29a1 1 0 0 0 .714.958c.9.269 1.725.745 2.408 1.392a1 1 0 0 0 1.188.14l1.117-.646 1 1.732-1.116.645a1 1 0 0 0-.474 1.097 6.02 6.02 0 0 1 0 2.784 1 1 0 0 0 .474 1.097l1.116.645-1 1.732-1.119-.646a1 1 0 0 0-1.186.14 5.992 5.992 0 0 1-2.408 1.392 1 1 0 0 0-.715.958v1.29h-2v-1.29a1 1 0 0 0-.715-.958 5.993 5.993 0 0 1-2.407-1.392 1 1 0 0 0-1.188-.14l-1.118.646-1-1.732 1.117-.645a1 1 0 0 0 .473-1.097 6.02 6.02 0 0 1 0-2.784 1 1 0 0 0-.473-1.097l-1.117-.645 1-1.732 1.118.646a1 1 0 0 0 1.188-.14 5.993 5.993 0 0 1 2.407-1.392A1 1 0 0 0 11 6.289Zm-1 6.71a2 2 0 1 1 3.999 0 2 2 0 0 1-4 0Zm2-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" id="icon-peoples">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 8.654 3.413 8.095 8.095 0 0 1 4.172 3.12 1 1 0 0 1-1.652 1.126C21.198 11.227 19.42 10 17 10c-3.834 0-6 3.074-6 5a1 1 0 1 1-2 0c0-.692.159-1.43.46-2.157a1.005 1.005 0 0 1-.21-.183C8.429 11.726 7.155 11 5.5 11c-1.653 0-2.927.726-3.748 1.66A1 1 0 0 1 .25 11.34a6.872 6.872 0 0 1 2.108-1.62 4.5 4.5 0 1 1 6.286 0 6.87 6.87 0 0 1 1.864 1.358 8.1 8.1 0 0 1 2.484-2.083A4.992 4.992 0 0 1 11.002 5ZM3 6.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Z" fill=""></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-security">
+        <path d="M22.059 6.18c-.013-.648-.024-1.26-.024-1.853a.84.84 0 0 0-.84-.84c-3.593 0-6.329-1.032-8.609-3.25a.84.84 0 0 0-1.17 0c-2.28 2.218-5.016 3.25-8.608 3.25a.84.84 0 0 0-.84.84c0 .593-.012 1.205-.024 1.853-.115 6.03-.273 14.289 9.782 17.774a.84.84 0 0 0 .55 0C22.33 20.468 22.174 12.21 22.059 6.18ZM12 22.269c-8.623-3.133-8.493-9.995-8.377-16.057l.018-1.062c3.365-.142 6.056-1.162 8.359-3.168 2.303 2.006 4.995 3.026 8.36 3.168.004.346.01.698.018 1.061.115 6.063.246 12.925-8.378 16.057Z"></path>
+        <path d="m14.895 9.082-4.055 4.054-1.73-1.73a.84.84 0 0 0-1.188 1.188l2.324 2.324a.838.838 0 0 0 1.188 0l4.648-4.648a.84.84 0 1 0-1.187-1.188Z"></path>
+    </symbol>
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-box">
+        <path d="M23.357 5.108a.751.751 0 0 0-.466-.695L12.286.056a.75.75 0 0 0-.57 0L1.11 4.413a.75.75 0 0 0-.465.695v13.784a.75.75 0 0 0 .465.695l10.605 4.357c.181.074.385.076.57 0 .01-.003-.392.161 10.606-4.357a.75.75 0 0 0 .466-.695V5.108ZM12 8.716 8.093 7.11l8.445-3.684 4.169 1.712L12 8.716ZM2.146 6.29l3.372 1.385v3.908a.75.75 0 0 0 1.501 0V8.293l4.23 1.738v12.098l-9.103-3.74V6.291Zm9.855-4.728 2.603 1.069-8.445 3.684-2.864-1.177L12 1.563Zm.75 8.468 9.104-3.74v12.098l-9.103 3.74V10.03Z" fill=""></path>
+    </symbol>
+</svg>
+<div id="modal-location" class="mfp-hide b-modal-ctn b-modal-ctn_large">
+    <button type="button" class="mfp-close btn"></button>
+    <div class="b-modal__title">Ваш город: <span>Санкт-Петербург</span></div>
+    <div class="b-modal__helper">
+        <p>Выберите свой город из списка или воспользуйтесь поиском.</p>
+        <p>Если вы не можете найти свой город или населенный пункт -- выберите ближайший найденный</p>
+    </div>
+    <div class="b-form-location">
+        <form action="">
+            <div class="b-form-location__wrapper-input">
+                <div class="input-remove">
+                    <svg class="icon">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </div>
+                <!--input_error для ошибки-->
+                <input type="text" class="b-form-location__input js-valid-input input" placeholder="Ваш город">
+                <span class="input_error-text">не верно заполнено поле</span>
+            </div>
+            <ul class="b-form-location__list list_unstyle">
+                <li class="b-form-location__list-item">
+                    <a href="#">Москва</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Санкт-Петербург</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Краснодар</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Алеметьевск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Барнаул</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Белгород</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Березники</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Брянск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Владимир</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Волгоград</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Воронеж</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Екатеринбург</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Иваново</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Ижевск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Йошкар-Ола</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Казань</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Калуга</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Каменск-Уральский</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Киров</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Когалым</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Курган</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Липецк</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Мангитогорск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Миасс</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Набережный Челны</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Нефтеюганск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Нижневартовск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Нижний Новгород</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Нижний Тагил</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Новосибирск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Омск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Оренбург</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Пенза</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Пермь</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Ростов-на-Дону</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Рязань</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Самара</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Саранск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Стерлитамак</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Сургут</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Сыктывкар</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Таганрог</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Тамбов</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Тверь</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Тольятти</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Тюмень</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Ульяновск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Уфа</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Ханты-Мансийск</a>
+                </li>
+                <li class="b-form-location__list-item">
+                    <a href="#">Чебоксары </a>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div id="modal-call" class="mfp-hide b-modal-ctn b-modal-ctn_small">
+    <button type="button" class="mfp-close btn"></button>
+    <div class="b-form-call">
+        <div class="b-form-call__icon">
+            <img src="./images/svg/icon-round-phone.svg" alt="">
+        </div>
+        <div class="b-form-call__title">Заявка на обратный звонок</div>
+        <div class="b-form-call__helper">Наши специалисты помогут вам с выбором</div>
+        <form action="">
+            <div class="b-form-call__item">
+                <!--input_error для ошибки-->
+                <input type="text" class="input" placeholder="Ваше имя">
+                <span class="input_error-text">не верно заполнено поле</span>
+            </div>
+            <div class="b-form-call__item">
+                <!--input_error для ошибки-->
+                <input type="tel" class="input" placeholder="Номер телефона">
+                <span class="input_error-text">не верно заполнено поле</span>
+            </div>
+            <div class="b-form-call__item">
+                <button class="button button_yellow button_full-width" type="button">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="modal-menu" class="mfp-hide b-modal-menu">
+    <button type="button" class="mfp-close btn"></button>
+    <div class="b-modal-menu__location">
+        <a class="js-modal" href="#modal-location">
+            <span>Санкт-Петербург</span>
+            <svg class="icon">
+                <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="b-modal-menu__nav">
+        <ul class="list_unstyle">
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li><a href="shopping-cart.html">Корзина</a></li>
+            <li><a href="how-to-get.html">Как заказать</a></li>
+            <li><a href="how-to-pay.html">Как оплатить</a></li>
+            <li><a href="how-to-get">Как получить</a></li>
+        </ul>
+        <ul class="list_unstyle">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="#">Филиалы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="b-modal-menu__contacts">
+        <div class="b-modal-menu__contacts-phone">
+            <a href="tel:88003332222">
+                <svg class="icon">
+                    <use xlink:href="#icon-phone"></use>
+                </svg>
+                8 800 333-22-22
+            </a>
+        </div>
+        <div class="b-modal-menu__contacts__mail">
+            <a href="mailto:market@track-unit.ru">
+                <svg class="icon">
+                    <use xlink:href="#icon-mail"></use>
+                </svg>
+                market@track-unit.ru
+            </a>
+        </div>
+        <div class="b-modal-menu__social">
+            <a href="#" target="_blank">
+                <svg class="icon">
+                    <use xlink:href="#icon-insta"></use>
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg class="icon">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg class="icon">
+                    <use xlink:href="#icon-vk"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="modal-add-basket" class="mfp-hide b-modal-add-basket b-modal-ctn b-modal-ctn_small">
+    <button type="button" class="mfp-close btn"></button>
+    <div class="b-modal-add-basket__icon">
+        <img src="./images/svg/icon-round-like.svg" alt="">
+    </div>
+    <div class="b-modal-add-basket__title">Башмак мастер 560 мм</div>
+    <div class="b-modal-add-basket__helper">добавлен в корзину</div>
+    <a class="button button_yellow-border" href="#">Перейти в коризну</a>
+    <a class="button button_transparent" href="#">Продожить покупки</a>
+</div>
+
+<div id="modal-search" class="mfp-hide b-modal-search b-modal-ctn b-modal-ctn_full-width">
+    <div class="b-modal-search__head">
+        <form class="b-modal-search__head-form" action="">
+            <div class="b-modal-search__head-wrapper">
+                <!--input_error для ошибки-->
+                <input id="b-modal-search__head-input" class="b-modal-search__head-input input js-valid-input-search-modal" type="text" placeholder="Поиск товара">
+            </div>
+        </form>
+        <button type="button" class="mfp-close btn"></button>
+    </div>
+    <div class="b-modal-search__wrap">
+        <div class="b-product-card-list b-product-card-list_modified b-product-card-list_search-result">
+            <div class="b-product-card b-product-card_modified b-product-card_modified-list b-product-card_search-result">
+                <div class="b-product-card__wrapper">
+                    <div class="b-product-card__img">
+                        <img src="./images/dist/product1.jpg" alt="">
+                    </div>
+                    <div class="b-product-card__info">
+                        <div class="b-product-card__info-wrapper">
+                            <div class="b-product-card__code">
+                                <img src="./images/svg/logo-code.svg" alt="">
+                                UV202c5m560g
+                            </div>
+                            <div class="b-product-card__title">
+                                <a href="product.html">Башмак мастер 560 мм Башмак мастер 560 мм Башмак мастер 560 мм</a>
+                            </div>
+                        </div>
+                        <div class="b-product-card__cost">
+                            5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                        </div>
+                    </div>
+                    <div class="b-product-card__pay">
+                        <div class="b-product-card__pay-qnt">
+                            <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                            <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                            <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                        </div>
+                        <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                    </div>
+                </div>
+            </div>
+            <div class="b-product-card b-product-card_modified b-product-card_modified-list b-product-card_search-result">
+                <div class="b-product-card__wrapper">
+                    <div class="b-product-card__img">
+                        <img src="./images/dist/product1.jpg" alt="">
+                    </div>
+                    <div class="b-product-card__info">
+                        <div class="b-product-card__info-wrapper">
+                            <div class="b-product-card__code">
+                                <img src="./images/svg/logo-code.svg" alt="">
+                                UV202c5m560g
+                            </div>
+                            <div class="b-product-card__title">
+                                <a href="product.html">Башмак мастер 560 мм</a>
+                            </div>
+                        </div>
+                        <div class="b-product-card__cost">
+                            5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                        </div>
+                    </div>
+                    <div class="b-product-card__pay">
+                        <div class="b-product-card__pay-qnt">
+                            <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                            <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                            <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                        </div>
+                        <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                    </div>
+                </div>
+            </div>
+            <div class="b-product-card b-product-card_modified b-product-card_modified-list b-product-card_search-result">
+                <div class="b-product-card__wrapper">
+                    <div class="b-product-card__img">
+                        <img src="./images/dist/product1.jpg" alt="">
+                    </div>
+                    <div class="b-product-card__info">
+                        <div class="b-product-card__info-wrapper">
+                            <div class="b-product-card__code">
+                                <img src="./images/svg/logo-code.svg" alt="">
+                                UV202c5m560g
+                            </div>
+                            <div class="b-product-card__title">
+                                <a href="product.html">Башмак мастер 560 мм</a>
+                            </div>
+                        </div>
+                        <div class="b-product-card__cost">
+                            5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                        </div>
+                    </div>
+                    <div class="b-product-card__pay">
+                        <div class="b-product-card__pay-qnt">
+                            <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-down js-value-button-down">-</div>
+                            <input type="text" class="number b-product-card__pay-qnt-input" value="1" />
+                            <div class="b-product-card__pay-qnt-button b-product-card__pay-qnt-button-up js-value-button-up">+</div>
+                        </div>
+                        <a href="#" class="b-product-card__pay-button button button_yellow">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-header__search-result-link"><a href="#">Все результаты</a></div>
+    </div>
+</div>
+
+<!-- тултип -->
+<div class="tooltip_templates" style="display: none;">
+    <div id="tooltip-info">
+        За этот товар мы начислим 445 бонусных рублей. Их можно использовать при оплате до 30% стоимости следующих покупок. 1 бонусный рубль = 1 рубль
+    </div>
+</div>
+
+
+
+    <div class="b-overlay"></div>
+
+    <script src="js/app.min.js"></script>
+
+    <!--это скролл таблицы-->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/4.0.0/js/dataTables.fixedColumns.min.js"></script>
+    <!--это скролл таблицы-->
+
+    <script src="js/common.js"></script>
+</body>
+</html>
