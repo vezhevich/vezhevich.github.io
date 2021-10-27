@@ -182,7 +182,7 @@ $(window).on('load ready resize', function () {
 });
 
 //дропдаун категорий каталога
-$(window).on('load ready resize', function () {
+$(function() {
     if ($(window).width() < '768') {
         $('.js-slidedown-catalog-list').click(function (e) {
             e.preventDefault();
@@ -193,7 +193,7 @@ $(window).on('load ready resize', function () {
 });
 
 //дропдаун меню в подвале
-$(window).on('load ready resize', function () {
+$(function() {
     if ($(window).width() < '768') {
         $('.js-slidedown-footer-nav').click(function (e) {
             e.preventDefault();
