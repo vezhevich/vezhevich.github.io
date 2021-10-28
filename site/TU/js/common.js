@@ -668,3 +668,10 @@ $(function() {
     });
 });
 
+// показываем/скрывем список каталога на главной
+$(function() {
+    $('.js-alphabet-show-all').click(function () {
+        $(this).toggleClass('active');
+        $(this).parent().find('.b-alphabet-wrap').toggleClass('show');
+    });
+});
