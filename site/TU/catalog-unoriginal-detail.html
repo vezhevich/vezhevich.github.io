@@ -31,7 +31,7 @@
     <header class="b-header b-header_inner-page">
         <div class="b-header__top-line">
             <div class="l-container">
-                <div class="b-header__hamb js-modal" data-mfp-src="#modal-menu">
+                <div class="b-header__hamb js-mobile-menu" data-mfp-src="#modal-menu">
                     <svg class="icon">
                         <use xlink:href="#icon-hamb"></use>
                     </svg>
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="b-header__bottom-line">
+        <div class="b-header__bottom-line js-sticky">
             <div class="l-container">
                 <div class="b-header__catalog">
                     <a href="catalog.html">
@@ -1124,9 +1124,49 @@
                 <span class="input_error-text">не верно заполнено поле</span>
             </div>
             <div class="b-form-call__item">
-                <button class="button button_yellow button_full-width" type="button">Отправить заявку</button>
+                <button class="button button_yellow button_full-width js-modal" type="button" data-mfp-src="#modal-call-thanks">Отправить заявку</button>
             </div>
         </form>
+    </div>
+</div>
+
+<div id="modal-order-one-click" class="mfp-hide b-modal-ctn b-modal-ctn_small">
+    <button type="button" class="mfp-close btn"></button>
+    <div class="b-form-call">
+        <div class="b-form-call__icon">
+            <img src="./images/svg/icon-round-like.svg" alt="">
+        </div>
+        <div class="b-form-call__title">Заказ в один клик</div>
+        <div class="b-form-call__helper">Наши специалисты помогут вам с выбором</div>
+        <form action="URL">
+            <div class="b-form-call__item">
+                <!--input_error для ошибки-->
+                <input type="text" class="input" placeholder="Ваше имя">
+                <span class="input_error-text">не верно заполнено поле</span>
+            </div>
+            <div class="b-form-call__item">
+                <!--input_error для ошибки-->
+                <input type="tel" class="input" placeholder="Номер телефона">
+                <span class="input_error-text">не верно заполнено поле</span>
+            </div>
+            <div class="b-form-call__item">
+                <textarea name="comment-order-one-click" id="comment-order-one-click" cols="30" rows="10" class="textarea" placeholder="Комментарий"></textarea>
+            </div>
+            <div class="b-form-call__item">
+                <button class="button button_yellow button_full-width js-modal" type="button" data-mfp-src="#modal-call-thanks">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="modal-call-thanks" class="mfp-hide b-modal-ctn b-modal-ctn_small">
+    <button type="button" class="mfp-close btn"></button>
+    <div class="b-form-call">
+        <div class="b-form-call__icon">
+            <img src="./images/svg/icon-round-like.svg" alt="">
+        </div>
+        <div class="b-form-call__title">Ваша заявка принята</div>
+        <div class="b-form-call__helper">Наши специалисты свяжутся с Вами!</div>
     </div>
 </div>
 
@@ -1230,7 +1270,10 @@
                             </div>
                         </div>
                         <div class="b-product-card__cost">
-                            5 900 <span class="b-product-card__cost-unit">₽/шт</span>
+                            3 936 <span class="b-product-card__cost-unit">₽/шт</span>
+                            <div class="b-product-card__cost_old">
+                                4 936 <span class="b-product-card__cost-unit">₽/шт</span>
+                            </div>
                         </div>
                     </div>
                     <div class="b-product-card__pay">

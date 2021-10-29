@@ -132,6 +132,35 @@ $(function() {
     });
 });
 
+// взрываем мобильное меню
+$(function() {
+    var startWindowScroll = 0;
+    $('.js-mobile-menu').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        mainClass: 'b-modal b-modal-mobile-menu mfp-fade',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        callbacks: {
+            beforeOpen: function () {
+                startWindowScroll = $(window).scrollTop();
+            },
+            open: function () {
+                if ($('.mfp-content').height() < $(window).height()) {
+                    $('body').on('touchmove', function (e) {
+                        e.preventDefault();
+                    });
+                }
+            },
+            close: function () {
+                $(window).scrollTop(startWindowScroll);
+                $('body').off('touchmove');
+            }
+        }
+    });
+});
+
 // маска номера телефона
 $(function() {
     $('[type="tel"]').inputmask({
@@ -675,3 +704,26 @@ $(function() {
         $(this).parent().find('.b-alphabet-wrap').toggleClass('show');
     });
 });
+
+// выбор юр лица в оформлении заказа
+$(function() {
+    $(document).on('click', '.js-select-entity', function() {
+        var inputCheck = $('#entity').prop("checked");
+
+        if (inputCheck == false) {
+            $(this).parents('.b-order__form-group').find('.b-order__form-item-wrap').addClass('b-order__form-item-wrap_hide');
+        } else if (inputCheck == true) {
+            $(this).parents('.b-order__form-group').find('.b-order__form-item-wrap').removeClass('b-order__form-item-wrap_hide');
+        }
+    });
+});
+
+//липкий блок в шапке
+$(window).on('load ready resize', function () {
+    if ($(window).width() > '1157') {
+        $(".js-sticky").stick_in_parent();
+    } else {
+        $(".js-sticky").trigger("sticky_kit:detach");
+    }
+});
+
