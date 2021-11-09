@@ -604,7 +604,7 @@ $(function() {
             myMap = new ymaps.Map('map', {
                 center: [59.889670, 30.478032],
                 zoom: 10,
-                controls: ['zoomControl']
+                controls: ['zoomControl'],
             }, {
                 searchControlProvider: 'yandex#search'
             }),
@@ -628,6 +628,8 @@ $(function() {
                     // её "ножки" (точки привязки).
                     iconImageOffset: [-5, -38]
                 }),
+
+                myMap.behaviors.disable('drag');
 
                 myMap.geoObjects
                     .add(myPlacemark);
