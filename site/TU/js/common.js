@@ -731,41 +731,42 @@ $(window).on('load ready resize', function () {
 
 //скролим хлбеные крошки
 $(function() {
-    var swiper = undefined;
-
-    function initSwiper() {
-        var screenWidth = $(window).width();
-        if(screenWidth < 767 && swiper == undefined) {
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 'auto',
-                freeMode: true,
-            });
-
-            swiper.slideTo(getSlideIndexByClass('slideTo'));
-
-            function getSlideIndexByClass(className) {
-                var index = 0;
-                $.each($('.swiper-wrapper').children(), function(i, item) {
-                    if ($(item).hasClass(className)) {
-                        index = i;
-                        return false;
-                    }
+    if ( $('.b-breadcrumbs').length > 0 ) {
+        var swiper = undefined;
+        function initSwiper() {
+            var screenWidth = $(window).width();
+            if(screenWidth < 767 && swiper == undefined) {
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
                 });
-                return index;
+
+                swiper.slideTo(getSlideIndexByClass('slideTo'));
+
+                function getSlideIndexByClass(className) {
+                    var index = 0;
+                    $.each($('.swiper-wrapper').children(), function(i, item) {
+                        if ($(item).hasClass(className)) {
+                            index = i;
+                            return false;
+                        }
+                    });
+                    return index;
+                }
+            } else if (screenWidth > 768 && swiper != undefined) {
+                swiper.destroy();
+                swiper = undefined;
+                jQuery('.swiper-wrapper').removeAttr('style');
+                jQuery('.swiper-slide').removeAttr('style');
             }
-        } else if (screenWidth > 768 && swiper != undefined) {
-            swiper.destroy();
-            swiper = undefined;
-            jQuery('.swiper-wrapper').removeAttr('style');
-            jQuery('.swiper-slide').removeAttr('style');
         }
-    }
 
-    initSwiper();
-
-    $(window).on('resize', function(){
         initSwiper();
-    });
+
+        $(window).on('resize', function(){
+            initSwiper();
+        });
+    }
 });
 
 
