@@ -731,7 +731,7 @@ $(window).on('load ready resize', function () {
 
 //скролим хлбеные крошки
 $(function() {
-    if ( $('.b-breadcrumbs').length > 0 ) {
+    if ( $('.js-breadcrumbs').length > 0 ) {
         var swiper = undefined;
         function initSwiper() {
             var screenWidth = $(window).width();
