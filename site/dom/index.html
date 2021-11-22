@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body class="bg-white">
+<div class="l-footer-wrapper">
+    <div class="l-content">
+        <!--b-header-->
+        <div class="b-header b-header_modified-bottom">
+            <div class="container-xl">
+                <div class="b-header__left">
+                    <div class="b-header__logo">
+                        <a class="b-header__logo-text" href="/">домда</a>
+                        <a class="b-header__logo-link" href="#">Москва и МО</a>
+                    </div>
+                </div>
+                <div class="b-header__right">
+                    <nav class="b-header__navi">
+                        <ul>
+                            <li><a href="#">Поиск</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                            <li><a class="js-modal" href="#modal-auth-bank">Услуги</a></li>
+                            <li><a class="js-modal" href="#modal-feedback">Партнеры</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- добавляем b-header__auth_in если
+                         пользователь авторизован
+                         добавляем b-header__auth_online если
+                         пользователь online -->
+                    <div class="b-header__auth">
+                        <a class="b-header__auth-link js-modal" href="#modal-auth">Войти</a>
+                        <div href="#" class="b-header__auth-avatar" style="background-image: url('./img/content/avatar.jpg')">
+                            <a class="b-header__auth-modal js-modal-menu" href="#modal-menu-auth"></a>
+                            <div class="b-header__auth-menu">
+                                <ul>
+                                    <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+                                    <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- добавляем класс b-header__favorite_added
+                         когда есть избранное -->
+                    <div class="b-header__favorite">
+                        <a href="#">
+                            <span class="icon-icon-star"></span><span class="b-header__favorite-count">6</span>
+                        </a>
+                    </div>
+                    <div class="b-header__button">
+                        <a href="new-object.html" class="button-default button-shadow">Разместить объявление</a>
+                    </div>
+                    <div class="b-header__burger">
+                        <a class="js-modal-menu" href="#modal-menu"><span class="icon-icon-burger"></span></a>
+                        <a class="js-modal-menu-close" href="#"><span class="icon-icon-close"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end b-header-->
+        <div class="b-promo" style="background-image: url('./img/content/promo.jpg')">
+            <div class="b-promo__wrapper">
+                <div class="b-filter-main">
+                    <!--компонент bootstrap-->
+                    <ul class="b-nav-tabs b-nav-tabs_inner nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="loc1-tab" data-toggle="tab" href="#loc1" role="tab" aria-controls="loc1" aria-selected="true">Жилье</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="loc2-tab" data-toggle="tab" href="#loc2" role="tab" aria-controls="loc2" aria-selected="false">Коммерческая</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="loc3-tab" data-toggle="tab" href="#loc3" role="tab" aria-controls="loc3" aria-selected="false">Гаражи</a>
+                        </li>
+                    </ul>
+                    <div class="b-tab-content b-tab-content_inner tab-content">
+                        <div class="tab-pane fade show active" id="loc1" role="tabpanel" aria-labelledby="auth-tab">
+                            <form action="">
+                                <div class="b-filter-main__top">
+                                    <div class="b-filter-main__item b-filter-main__item_lg">
+                                        <div class="b-filter-main__label">Адрес, район или ЖК</div>
+                                        <select class="b-dropdown-search b-dropdown-search-main">
+                                            <option value="Moscow">Москва и МО</option>
+                                            <option value="Sp">Санкт-Петербург</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_md">
+                                        <div class="b-filter-main__label">Тип недвижимости</div>
+                                        <select class="b-select-form b-select-form-inner" data-placeholder="Выберите…">
+                                            <option></option>
+                                            <option selected value="1">Квартира (Вторичка)</option>
+                                            <option value="2">Квартира (новостройка)</option>
+                                            <option value="3">Дом</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_sm">
+                                        <div class="b-filter-main__wrapper-input">
+                                            <div class="b-filter-main__wrapper-input-left">
+                                                <div>
+                                                    <input type="text" class="input" placeholder="Цена от" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <span class="b-filter-main__wrapper-input-separator">–</span>
+                                                <div>
+                                                    <input type="text" class="input input-last input-last-inner" placeholder="до" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <span class="b-filter-main__wrapper-input-unit">₽</span>
+                                            </div>
+                                            <div class="b-filter-main__wrapper-input-right">
+                                                <div class="b-filter-main__switch">
+                                                    <span class="active js-filter-switch">всё</span>
+                                                    <span class="js-filter-switch">м<sup>2</sup></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-filter-main__label-group">
+                                            <div class="b-filter-main__label">Площадь от</div>
+                                            <div class="b-filter-main__label">Площадь до</div>
+                                        </div>
+                                        <div class="b-slider-range__input">
+                                            <input id="area-slider-from" type="text" class="input" value="0" readonly>
+                                            <input id="area-slider-to" type="text" class="input" value="0" readonly>
+                                        </div>
+                                        <div class="b-slider-range-duo">
+                                            <input id="area-slider" type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_sm">
+                                        <div class="b-filter-main__wrapper-input">
+                                            <div class="b-filter-main__wrapper-input-left">
+                                                <div><input type="text" class="input" placeholder="Площадь от" pattern="[0-9]*" autocorrect="off" autocomplete="off"></div>
+                                                <span class="b-filter-main__wrapper-input-separator">–</span>
+                                                <div><input type="text" class="input input-last" placeholder="до" pattern="[0-9]*" autocorrect="off" autocomplete="off"></div>
+                                            </div>
+                                            <div class="b-filter-main__wrapper-input-right b-filter-main__wrapper-input-right_modified">
+                                                <span class="b-filter-main__wrapper-input-unit">м<sup>2</sup></span>
+                                            </div>
+                                        </div>
+                                        <div class="b-filter-main__label-group">
+                                            <div class="b-filter-main__label">Цена от</div>
+                                            <div class="b-filter-main__label">Цена до</div>
+                                        </div>
+                                        <div class="b-slider-range__input">
+                                            <input id="cost-slider-from" type="text" class="input" value="0" readonly>
+                                            <input id="cost-slider-to" type="text" class="input" value="0" readonly>
+                                        </div>
+                                        <div class="b-slider-range-duo">
+                                            <input id="cost-slider" type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_sm visible-xs">
+                                        <select class="b-multiseleсt" multiple="multiple">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option selected value="6">Студия</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_md hidden-xs">
+                                        <div class="b-filter-main__label b-filter-main__label_modified-bottom">Количество Комнат</div>
+                                        <div class="b-checkbox-group-button">
+                                            <div class="b-checkbox-group-button__item">
+                                                <input id="unit1" type="checkbox">
+                                                <label for="unit1"><span>1</span></label>
+                                            </div>
+                                            <div class="b-checkbox-group-button__item">
+                                                <input id="unit2" type="checkbox" checked>
+                                                <label for="unit2"><span>2</span></label>
+                                            </div>
+                                            <div class="b-checkbox-group-button__item">
+                                                <input id="unit3" type="checkbox" checked>
+                                                <label for="unit3"><span>3</span></label>
+                                            </div>
+                                            <div class="b-checkbox-group-button__item">
+                                                <input id="unit4" type="checkbox">
+                                                <label for="unit4"><span>4</span></label>
+                                            </div>
+                                            <div class="b-checkbox-group-button__item">
+                                                <input id="unit5" type="checkbox">
+                                                <label for="unit5"><span>5+</span></label>
+                                            </div>
+                                            <div class="b-checkbox-group-button__item b-checkbox-group-button__item_size">
+                                                <input id="unit6" type="checkbox">
+                                                <label for="unit6"><span>Студия</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="visible-xs b-filter-main__more">
+                                        <span class="b-filter-main__more-text">Найдено 15 518 предложений <br> жилья в новостройках</span>
+                                        <a class="b-filter-main__more-link" href="#">Больше параметров <span class="icon-icon-arrow-down"></span></a>
+                                    </div>
+                                    <div class="b-filter-main__bottom-right">
+                                        <a href="#" class="b-filter-main__link"><span class="icon-icon-location"></span> На карте</a>
+                                        <button class="button-blue button-default">Показать <span>1 267</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="loc2" role="tabpanel" aria-labelledby="reg-tab">
+                            <form action="">
+                                <div class="b-filter-main__top">
+                                    <div class="b-filter-main__item b-filter-main__item_lg">
+                                        <div class="b-filter-main__label">Адрес, район или ЖК</div>
+                                        <select class="b-dropdown-search b-dropdown-search-main">
+                                            <option value="Moscow">Москва и МО</option>
+                                            <option value="Sp">Санкт-Петербург</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_md">
+                                        <div class="b-filter-main__label">Тип недвижимости</div>
+                                        <select class="b-select-form b-select-form-inner" data-placeholder="Выберите…">
+                                            <option></option>
+                                            <option selected value="1">Офис</option>
+                                            <option value="2">Квартира</option>
+                                            <option value="3">Дом</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_sm">
+                                        <div class="b-filter-main__wrapper-input">
+                                            <div class="b-filter-main__wrapper-input-left">
+                                                <div>
+                                                    <input type="text" class="input" placeholder="Цена от" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <span class="b-filter-main__wrapper-input-separator">–</span>
+                                                <div>
+                                                    <input type="text" class="input input-last input-last-inner" placeholder="до" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <span class="b-filter-main__wrapper-input-unit">₽</span>
+                                            </div>
+                                            <div class="b-filter-main__wrapper-input-right">
+                                                <div class="b-filter-main__switch">
+                                                    <span class="active js-filter-switch">всё</span>
+                                                    <span class="js-filter-switch">м<sup>2</sup></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-filter-main__label-group">
+                                            <div class="b-filter-main__label">Площадь от</div>
+                                            <div class="b-filter-main__label">Площадь до</div>
+                                        </div>
+                                        <div class="b-slider-range__input">
+                                            <input id="area-slider-from2" type="text" class="input" value="0" readonly>
+                                            <input id="area-slider-to2" type="text" class="input" value="0" readonly>
+                                        </div>
+                                        <div class="b-slider-range-duo">
+                                            <input id="area-slider2" type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_sm">
+                                        <div class="b-filter-main__wrapper-input">
+                                            <div class="b-filter-main__wrapper-input-left">
+                                                <div><input type="text" class="input" placeholder="Площадь от" pattern="[0-9]*" autocorrect="off" autocomplete="off"></div>
+                                                <span class="b-filter-main__wrapper-input-separator">–</span>
+                                                <div><input type="text" class="input input-last" placeholder="до" pattern="[0-9]*" autocorrect="off" autocomplete="off"></div>
+                                            </div>
+                                            <div class="b-filter-main__wrapper-input-right b-filter-main__wrapper-input-right_modified">
+                                                <span class="b-filter-main__wrapper-input-unit">м<sup>2</sup></span>
+                                            </div>
+                                        </div>
+                                        <div class="b-filter-main__label-group">
+                                            <div class="b-filter-main__label">Цена от</div>
+                                            <div class="b-filter-main__label">Цена до</div>
+                                        </div>
+                                        <div class="b-slider-range__input">
+                                            <input id="cost-slider-from2" type="text" class="input" value="0" readonly>
+                                            <input id="cost-slider-to2" type="text" class="input" value="0" readonly>
+                                        </div>
+                                        <div class="b-slider-range-duo">
+                                            <input id="cost-slider2" type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="visible-xs b-filter-main__more b-filter-main__more_modified-top">
+                                        <span class="b-filter-main__more-text">Найдено 15 518 предложений <br> торговых помещений</span>
+                                        <a class="b-filter-main__more-link" href="#">Больше параметров <span class="icon-icon-arrow-down"></span></a>
+                                    </div>
+                                    <div class="b-filter-main__bottom-right">
+                                        <a href="#" class="b-filter-main__link"><span class="icon-icon-location"></span> На карте</a>
+                                        <button class="button-blue button-default">Показать <span>1 267</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="loc3" role="tabpanel" aria-labelledby="reg-tab">
+                            <form action="">
+                                <div class="b-filter-main__top">
+                                    <div class="b-filter-main__item b-filter-main__item_lg">
+                                        <div class="b-filter-main__label">Адрес, район или ЖК</div>
+                                        <select class="b-dropdown-search b-dropdown-search-main">
+                                            <option value="Moscow">Москва и МО</option>
+                                            <option value="Sp">Санкт-Петербург</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_md">
+                                        <div class="b-filter-main__label">Тип недвижимости</div>
+                                        <select class="b-select-form b-select-form-inner" data-placeholder="Выберите…">
+                                            <option></option>
+                                            <option selected value="1">Гараж</option>
+                                            <option value="2">Машиноместо</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-filter-main__item b-filter-main__item_lg">
+                                        <div class="b-filter-main__wrapper-input">
+                                            <div class="b-filter-main__wrapper-input-left">
+                                                <div>
+                                                    <input type="text" class="input" placeholder="Цена от" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <span class="b-filter-main__wrapper-input-separator">–</span>
+                                                <div>
+                                                    <input type="text" class="input input-last input-last-inner" placeholder="до" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <span class="b-filter-main__wrapper-input-unit">₽</span>
+                                            </div>
+                                            <div class="b-filter-main__wrapper-input-right">
+                                                <div class="b-filter-main__switch">
+                                                    <span class="active js-filter-switch">всё</span>
+                                                    <span class="js-filter-switch">м<sup>2</sup></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-filter-main__label-group">
+                                            <div class="b-filter-main__label">Площадь от</div>
+                                            <div class="b-filter-main__label">Площадь до</div>
+                                        </div>
+                                        <div class="b-slider-range__input">
+                                            <input id="area-slider-from3" type="text" class="input" value="0" readonly>
+                                            <input id="area-slider-to3" type="text" class="input" value="0" readonly>
+                                        </div>
+                                        <div class="b-slider-range-duo">
+                                            <input id="area-slider3" type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="visible-xs b-filter-main__more">
+                                        <span class="b-filter-main__more-text">Найдено 15 518 предложений гаражей</span>
+                                        <a class="b-filter-main__more-link" href="#">Больше параметров <span class="icon-icon-arrow-down"></span></a>
+                                    </div>
+                                    <div class="b-filter-main__bottom-right">
+                                        <a href="#" class="b-filter-main__link"><span class="icon-icon-location"></span> На карте</a>
+                                        <button class="button-blue button-default">Показать <span>1 267</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-promo__slider">
+                <div class="b-promo__slider-ctn swiper-container js-promo__slider">
+                    <div class="b-promo__slider-wrapper swiper-wrapper">
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Басманный <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Академический <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Красносельский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Мещанский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Пресненский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Таганский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Тверской <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Басманный <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Академический <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Красносельский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Мещанский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Пресненский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Таганский <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                        <a href="#" class="b-promo__slider-item swiper-slide">
+                            <div class="b-promo__slider-title">Тверской <br> район</div>
+                            <div class="b-promo__slider-link"><span>243 квартиры</span></div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="b-promo__slider-item_fixed">
+                    <div class="b-promo__slider-title">12 458 <br> квартир</div>
+                    <div class="b-promo__slider-link"><span>все районы</span></div>
+                </a>
+            </div>
+        </div>
+        <div class="b-media b-media-carousel-full-width">
+            <div class="container-xl">
+                <div class="b-media-carousel-full-width__wrapper">
+                    <div class="swiper-container js-media-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры с большой кухней</div>
+                                        <div class="b-media__helper">283 квартиры</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media2.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Таунхаусы</div>
+                                        <div class="b-media__helper">18 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media3.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры рядом с парком</div>
+                                        <div class="b-media__helper">15 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media4.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры с новым ремонтом</div>
+                                        <div class="b-media__helper">119 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media2.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Таунхаусы</div>
+                                        <div class="b-media__helper">18 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media3.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры рядом с парком</div>
+                                        <div class="b-media__helper">15 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media4.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры с новым ремонтом</div>
+                                        <div class="b-media__helper">119 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="b-media-control swiper-button-next"><span class="icon-icon-arrow-inner-left"></span></div>
+                    <div class="b-media-control swiper-button-prev"><span class="icon-icon-arrow-inner-left"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="l-section-gray">
+            <div class="container-xl">
+                <div class="b-list-wrapper b-list-wrapper_modified-lg">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-1 order-md-1 order-xl-1 order-sm-1">
+                            <div class="b-list">
+                                <div class="b-list__title">Купить квартиру</div>
+                                <ul>
+                                    <li><a href="#"><span>Студии</span> <span class="b-list__helper">5 052</span></a></li>
+                                    <li><a href="#"><span>1-комнатные</span> <span class="b-list__helper">34 795</span></a></li>
+                                    <li><a href="#"><span>2-комнатные</span> <span class="b-list__helper">46 176</span></a></li>
+                                    <li><a href="#"><span>3-комнатные</span> <span class="b-list__helper">34 805</span></a></li>
+                                    <li><a href="#"><span>Без посредников</span> <span class="b-list__helper">7 639</span></a></li>
+                                    <li><a href="#"><span>Комнаты в квартире</span> <span class="b-list__helper">4 209</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-3 order-md-3 order-xl-2 order-sm-2">
+                            <div class="b-list">
+                                <div class="b-list__title">В новостройках</div>
+                                <ul>
+                                    <li><a href="#"><span>С чистовой отделкой</span> <span class="b-list__helper">145</span></a></li>
+                                    <li><a href="#"><span>С отделкой под ключ</span> <span class="b-list__helper">212</span></a></li>
+                                    <li><a href="#"><span>Рядом с метро </span> <span class="b-list__helper">154</span></a></li>
+                                    <li><a href="#"><span>Эконом-класс</span> <span class="b-list__helper">177</span></a></li>
+                                    <li><a href="#"><span>До 4 квартала 2020</span> <span class="b-list__helper">583</span></a></li>
+                                    <li><a href="#"><span>Со скидками</span> <span class="b-list__helper">242</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-4 order-md-4 order-xl-3 order-sm-4">
+                            <div class="b-list">
+                                <div class="b-list__title">Снять квартиру</div>
+                                <ul>
+                                    <li><a href="#"><span>На длительный срок</span> <span class="b-list__helper">20 678</span></a></li>
+                                    <li><a href="#"><span>Студии</span> <span class="b-list__helper">1 356</span></a></li>
+                                    <li><a href="#"><span>1-комнатные</span> <span class="b-list__helper">10 212</span></a></li>
+                                    <li><a href="#"><span>2-комнатные</span> <span class="b-list__helper">8 897</span></a></li>
+                                    <li><a href="#"><span>Без посредников</span> <span class="b-list__helper">2 116</span></a></li>
+                                    <li><a href="#"><span>Комнаты на длительный срок</span> <span class="b-list__helper">2 293</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-8 col-md-8 order-lg-2 order-md-2 order-xl-4 order-sm-3">
+                            <div class="b-media b-media-inner b-media-carousel-inner">
+                                <div class="swiper-container js-media-slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="b-media__item">
+                                                <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                                <div class="b-media__text">
+                                                    <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                                    <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                                    <div class="b-media__helper"><span class="icon-icon-subway red"></span>Румянцево</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="b-media__item">
+                                                <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                                <div class="b-media__text">
+                                                    <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                                    <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                                    <div class="b-media__helper"><span class="icon-icon-subway yellow"></span>Новокосино</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="b-media__item">
+                                                <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                                <div class="b-media__text">
+                                                    <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                                    <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                                    <div class="b-media__helper"><span class="icon-icon-subway yellow"></span>Новокосино</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="b-media__item">
+                                                <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                                <div class="b-media__text">
+                                                    <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                                    <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                                    <div class="b-media__helper"><span class="icon-icon-subway yellow"></span>Новокосино</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="b-media__item">
+                                                <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                                <div class="b-media__text">
+                                                    <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                                    <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                                    <div class="b-media__helper"><span class="icon-icon-subway yellow"></span>Новокосино</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="b-media-inner-control swiper-button-next"><span class="icon-icon-arrow-inner-left"></span></div>
+                                <div class="b-media-inner-control swiper-button-prev"><span class="icon-icon-arrow-inner-left"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-5 order-md-5 order-xl-4 order-sm-5">
+                            <div class="b-list">
+                                <div class="b-list__title">Снять посуточно</div>
+                                <ul>
+                                    <li><a href="#"><span>Снять посуточно</span> <span class="b-list__helper">5 691</span></a></li>
+                                    <li><a href="#"><span>Комнаты</span> <span class="b-list__helper">262</span></a></li>
+                                    <li><a href="#"><span>Дома</span> <span class="b-list__helper">2 646</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-6 order-md-6 order-xl-6 order-sm-6">
+                            <div class="b-list">
+                                <div class="b-list__title">За городом</div>
+                                <ul>
+                                    <li><a href="#"><span>Купить дом</span> <span class="b-list__helper">5 691</span></a></li>
+                                    <li><a href="#"><span>Купить таунхаус</span> <span class="b-list__helper">262</span></a></li>
+                                    <li><a href="#"><span>Купить участок</span> <span class="b-list__helper">2 646</span></a></li>
+                                    <li><a href="#"><span>Снять дом надолго</span> <span class="b-list__helper">2 646</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-7 order-md-7 order-xl-7 order-sm-7">
+                            <div class="b-list">
+                                <div class="b-list__title">Для бизнеса</div>
+                                <ul>
+                                    <li><a href="#"><span>Купить офис</span> <span class="b-list__helper">5 691</span></a></li>
+                                    <li><a href="#"><span>Купить помещение</span> <span class="b-list__helper">262</span></a></li>
+                                    <li><a href="#"><span>Аренда офиса</span> <span class="b-list__helper">262</span></a></li>
+                                    <li><a href="#"><span>Аренда помещения</span> <span class="b-list__helper">262</span></a></li>
+                                    <li><a href="#"><span>Аренда склада</span> <span class="b-list__helper">262</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 order-lg-8 order-md-8 order-xl-8 order-sm-8">
+                            <div class="b-list">
+                                <div class="b-list__title">Гаражи</div>
+                                <ul>
+                                    <li><a href="#"><span>Купить гараж</span> <span class="b-list__helper">5 691</span></a></li>
+                                    <li><a href="#"><span>Снять гараж</span> <span class="b-list__helper">5 691</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-useful swiper-container js-useful-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="b-useful__item">
+                                <div class="b-useful__text">
+                                    <div class="b-useful__title">Калькулятор ипотеки</div>
+                                    <div class="b-useful__teaser">Получите решение по кредиту в течение дня без визита в банк</div>
+                                    <div class="b-useful__link">Подробнее <span class="icon-icon-point-right"></span></div>
+                                </div>
+                                <div class="b-useful__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="b-useful__item">
+                                <div class="b-useful__text">
+                                    <div class="b-useful__title">Оценка квартиры</div>
+                                    <div class="b-useful__teaser">Узнайте справедливую цену — сэкономьте свое время и деньги</div>
+                                    <div class="b-useful__link">Заказать <span class="icon-icon-point-right"></span></div>
+                                </div>
+                                <div class="b-useful__img" style="background-image: url('./img/content/media2.jpg')"></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="b-useful__item">
+                                <div class="b-useful__text">
+                                    <div class="b-useful__title">Разместить объявление</div>
+                                    <div class="b-useful__teaser">Получайте больше звонков от клиентов</div>
+                                    <div class="b-useful__link">Личный кабинет <span class="icon-icon-point-right"></span></div>
+                                </div>
+                                <div class="b-useful__img" style="background-image: url('./img/content/media3.jpg')"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-media b-media-carousel-full-width">
+            <div class="container-xl">
+                <div class="b-media__head">
+                    <div class="b-media__head-left">
+                        <div class="b-media__head-title"><span class="icon-icon-loc-star"></span>Хорошая инфраструктура</div>
+                    </div>
+                    <div class="b-media__head-right">
+                        <a href="#" class="button-default button-bordered">Все <span>районы</span></a>
+                    </div>
+                </div>
+                <div class="b-media-carousel-full-width__wrapper">
+                    <div class="swiper-container js-media-slider3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры с большой кухней</div>
+                                        <div class="b-media__helper">283 квартиры</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media2.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Таунхаусы</div>
+                                        <div class="b-media__helper">18 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media3.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры рядом с парком</div>
+                                        <div class="b-media__helper">15 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media4.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры с новым ремонтом</div>
+                                        <div class="b-media__helper">119 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media2.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Таунхаусы</div>
+                                        <div class="b-media__helper">18 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media3.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры рядом с парком</div>
+                                        <div class="b-media__helper">15 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media4.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">Квартиры с новым ремонтом</div>
+                                        <div class="b-media__helper">119 квартир</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="b-media-control2 swiper-button-next"><span class="icon-icon-arrow-inner-left"></span></div>
+                    <div class="b-media-control2 swiper-button-prev"><span class="icon-icon-arrow-inner-left"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="l-section-gray l-section-gray_modified">
+            <div class="container-xl">
+                <div class="b-list-wrapper b-list-wrapper-inner">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="b-list b-list-inner">
+                                <div class="b-list__title">Оценочные организации <a href="#">все<span class="icon-icon-point-right"></span></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/incom.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Студии</span>
+                                                    <span class="b-list__text">Сеть офисов недвижимости</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">1 558 оценок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/egsn.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>ЕГСН</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">991 оценок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/etalon.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Группа «Эталон»</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">842 оценки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/mr.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>MR GROUP</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">210 оценок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/pik.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Группа ПИК</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">197 оценок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/101.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>ГК «А101»</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">112 оценок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/miel.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>МИЭЛЬ</span>
+                                                    <span class="b-list__text">Сеть офисов недвижимости</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">112 оценок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/book.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Азбука Жилья</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">112 оценок</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="b-list b-list-inner">
+                                <div class="b-list__title">Агентства недвижимости <a href="#">все<span class="icon-icon-point-right"></span></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/incom.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Студии</span>
+                                                    <span class="b-list__text">Сеть офисов недвижимости</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">558 сделок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/egsn.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>ЕГСН</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">542 сделки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/etalon.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Группа «Эталон»</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">519 сделок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/mr.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>MR GROUP</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">358 сделок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/pik.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Группа ПИК</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">247 сделок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/101.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>ГК «А101»</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">198 сделок</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/miel.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>МИЭЛЬ</span>
+                                                    <span class="b-list__text">Сеть офисов недвижимости</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">171 сделка</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/book.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Азбука Жилья</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">112 сделок</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="b-list b-list-inner">
+                                <div class="b-list__title">Застройщики <a href="#">все<span class="icon-icon-point-right"></span></a></div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/incom.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Студии</span>
+                                                    <span class="b-list__text">Сеть офисов недвижимости</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 3,5 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/egsn.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>ЕГСН</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 4,2 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/etalon.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Группа «Эталон»</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 6,6 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/mr.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>MR GROUP</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 5,4 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/pik.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Группа ПИК</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 4,2 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/101.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>ГК «А101»</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 6,2 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/miel.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>МИЭЛЬ</span>
+                                                    <span class="b-list__text">Сеть офисов недвижимости</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 6 млн ₽</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="b-list__right">
+                                                <div class="b-list__img" style="background-image: url('./img/content/book.jpg')"></div>
+                                                <div class="b-list__wrapper">
+                                                    <span>Азбука Жилья</span>
+                                                </div>
+                                            </div>
+                                            <span class="b-list__helper">от 3,6 млн ₽</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-media b-media-carousel-full-width b-media-inner b-media-inner_modified-bottom">
+            <div class="container-xl">
+                <div class="b-media__head">
+                    <div class="b-media__head-left">
+                        <div class="b-media__head-title"><span class="icon-icon-medal"></span>Аккредитованные объекты</div>
+                    </div>
+                    <div class="b-media__head-right">
+                        <a href="#" class="button-default button-bordered">Все <span>объекты</span></a>
+                    </div>
+                </div>
+                <div class="b-media-carousel-full-width__wrapper">
+                    <div class="swiper-container js-media-slider4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway red"></span>Румянцево</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway yellow"></span>Новокосино</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway orange"></span>Бабушкинская</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway green"></span>Баррикадная</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway red"></span>Румянцево</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway yellow"></span>Новокосино</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway orange"></span>Бабушкинская</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="b-media__item">
+                                    <div class="b-media__img" style="background-image: url('./img/content/media1.jpg')"></div>
+                                    <div class="b-media__text">
+                                        <div class="b-media__title">ЖК «Румянцево-Парк»</div>
+                                        <div class="b-media__teaser">от 4,21 млн ₽</div>
+                                        <div class="b-media__helper"><span class="icon-icon-subway green"></span>Баррикадная</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="b-media-control3 swiper-button-next"><span class="icon-icon-arrow-inner-left"></span></div>
+                    <div class="b-media-control3 swiper-button-prev"><span class="icon-icon-arrow-inner-left"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-map" style="background-image: url('./img/content/map-inner.jpg')"></div>
+    </div>
+
+    <!--b-footer-->
+    <div class="b-footer b-footer_modified-top">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-4 b-footer__left">
+                    <div class="b-footer__logo">
+                        <a href="#">домда</a>
+                    </div>
+                    <div class="b-footer__copy">
+                        © ООО «ДомДа», 2020
+                        <br>
+                        Все права на материалы сайта защищены законодательством Российской Федерации.
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__center">
+                    <div class="b-footer__wrapper">
+                        <div class="b-footer__wrapper-left">
+                            <nav class="b-footer__navi">
+                                <ul>
+                                    <li><a href="#">О проекте</a></li>
+                                    <li><a href="#">Партнерам</a></li>
+                                    <li><a href="#">Карьера</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="b-footer__wrapper-right">
+                            <div class="b-footer__support">
+                                <a href="tel:+88006459999">8 800 645-99-99</a>
+                                <span>Служба поддержки</span>
+                            </div>
+                            <div class="b-footer__helper">
+                                <a href="#">Условия использования</a>
+                                <br>
+                                <a href="#">Политика о данных пользователей</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__right">
+                    <div class="b-footer_centered">
+                        <div class="b-footer__group">
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/appstore.svg" alt=""></a>
+                            </div>
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/googleplay.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="b-footer__social">
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-fb"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-vk"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-ok"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-yt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end b-footer-->
+</div>
+
+
+<script src="./js/scripts.min.js"></script>
+<script src="./js/common.js"></script>
+
+<!--модальное окно-->
+<div id="modal-auth" class="mfp-hide b-modal-auth">
+    <button type="button" class="mfp-close">Закрыть</button>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="auth-tab" data-toggle="tab" href="#auth" role="tab" aria-controls="auth" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="reg-tab" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade show active" id="auth" role="tabpanel" aria-labelledby="auth-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass">Восстановить пароль</button>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-form__error-info">
+                <p>Обязательные поля не заполнены:</p>
+                <ul>
+                    <li>Ваше имя</li>
+                    <li>Email</li>
+                    <li>Сообщение</li>
+                </ul>
+            </div>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="reg-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Как вас зовут?</div>
+                    <input type="text" class="input">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-auth-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <div class="b-modal__title">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</div>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="auth-tab-inner" data-toggle="tab" href="#auth-inner" role="tab" aria-controls="auth-inner" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reg-tab-inner" data-toggle="tab" href="#reg-inner" role="tab" aria-controls="reg-inner" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade" id="auth-inner" role="tabpanel" aria-labelledby="auth-tab-inner">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email или Телефон</div>
+                    <!--input_error если ошибка-->
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass-inner">Восстановить пароль</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade show active" id="reg-inner" role="tabpanel" aria-labelledby="reg-tab-inner">
+            <p>Для регистрации заполните все поля и укажите типа вашей организации</p>
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">ФИО Руководителя</div>
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Телефон</div>
+                    <input type="tel" class="input js-mask-tel" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified-inner">
+                    <div class="b-radio">
+                        <div class="b-radio__item">
+                            <input id="param1" type="radio" name="param"/>
+                            <label for="param1">Риэлтор, Агентство</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param2" type="radio" name="param" checked/>
+                            <label for="param2">Застройщик</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param3" type="radio" name="param"/>
+                            <label for="param3">Риэлтор, Агентство</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth-inner" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu" class="mfp-hide">
+    <ul>
+        <li><a href="#">Поиск</a></li>
+        <li><a href="#">Ипотека</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Партнеры</a></li>
+    </ul>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu-auth" class="mfp-hide b-modal-menu-auth">
+    <div class="b-header__auth-menu b-header__auth-menu_inner">
+        <ul>
+            <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+            <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+            <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+            <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-info" class="mfp-hide b-modal-info">
+    <div class="b-modal-info__head">
+        <div class="b-modal-info__title">Заявка отправлена</div>
+        <button type="button" class="mfp-close"></button>
+    </div>
+    <div class="b-modal-info__text">
+        Менеджер свяжется с Вами в ближайшее время, чтобы подтвердить информацию в анкете.
+        После подтверждения аккаунта мы предоставим доступ к Личному кабинету. Пароль будет отправлен на указанный email.
+    </div>
+    <div class="b-form__item_modified-inner">
+        <button type="button" class="button-default button-full-width button-text-bold mfp-close">OK</button>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-feedback" class="mfp-hide b-modal-feedback">
+    <button type="button" class="mfp-close">Закрыть</button>
+    <div class="b-modal__title">Форма обратной связи</div>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Как к вам обратиться?</div>
+            <!--input_error если ошибка-->
+            <input type="text" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item">
+            <div class="label-default">Сообщение</div>
+            <textarea name="" id="" cols="30" rows="5" class="textarea" placeholder="Задайте вопрос или опишите пробелему…"></textarea>
+        </div>
+        <div class="b-form__item">
+            <div class="b-checkbox">
+                <input id="personal-info" type="checkbox" checked>
+                <label for="personal-info">Я согласен на <a href="#">обработку персональных данных</a></label>
+            </div>
+        </div>
+        <div class="b-form__item">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info-inner">Отправить</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-info-inner" class="mfp-hide b-modal-info b-modal-info_inner">
+    <div class="b-modal__title">Мы получили ваше сообщение</div>
+    <div class="b-modal-info__text">
+        Менеджер позвонит вам в ближайшее время и поможет решить ваш вопрос.
+    </div>
+    <div class="b-form__item_modified-inner">
+        <button type="button" class="button-default button-full-width button-text-bold mfp-close">Закрыть</button>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-auth-bank" class="mfp-hide b-modal-auth b-modal-auth_modified">
+    <button type="button" class="mfp-close">Закрыть</button>
+    <div class="b-modal__title">Доступ в Личный кабинет сотрудника
+        Банка  ОАО «Русланбанк»</div>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item">
+            <div class="label-default">Пароль</div>
+            <!--input_error если ошибка-->
+            <input type="password" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold" data-mfp-src="#modal-info-inner">Вход</button>
+            <button type="button" class="button-default button-grey button-full-width" data-mfp-src="#modal-info-inner">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

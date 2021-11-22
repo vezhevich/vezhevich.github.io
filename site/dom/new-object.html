@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+<div class="l-footer-wrapper">
+    <div class="l-content">
+
+        <!--b-header-->
+        <div class="b-header">
+            <div class="container-xl">
+                <div class="b-header__left">
+                    <div class="b-header__logo">
+                        <a class="b-header__logo-text" href="/">домда</a>
+                        <a class="b-header__logo-link" href="#">Москва и МО</a>
+                    </div>
+                </div>
+                <div class="b-header__right">
+                    <nav class="b-header__navi">
+                        <ul>
+                            <li><a href="#">Поиск</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- добавляем b-header__auth_in если
+                         пользователь авторизован
+                         добавляем b-header__auth_online если
+                         пользователь online -->
+                    <div class="b-header__auth">
+                        <a class="b-header__auth-link js-modal" href="#modal-auth">Войти</a>
+                        <div href="#" class="b-header__auth-avatar" style="background-image: url('./img/content/avatar.jpg')">
+                            <a class="b-header__auth-modal js-modal-menu" href="#modal-menu-auth"></a>
+                            <div class="b-header__auth-menu">
+                                <ul>
+                                    <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+                                    <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- добавляем класс b-header__favorite_added
+                         когда есть избранное -->
+                    <div class="b-header__favorite">
+                        <a href="#">
+                            <span class="icon-icon-star"></span><span class="b-header__favorite-count">6</span>
+                        </a>
+                    </div>
+                    <div class="b-header__button">
+                        <a href="new-object.html" class="button-default button-shadow">Разместить объявление</a>
+                    </div>
+                    <div class="b-header__burger">
+                        <a class="js-modal-menu" href="#modal-menu"><span class="icon-icon-burger"></span></a>
+                        <a class="js-modal-menu-close" href="#"><span class="icon-icon-close"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end b-header-->
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-12">
+                    <nav class="b-nav-sidebar swiper-container swiper-box">
+                        <ul class="js-slider-nav-sidebar swiper-wrapper">
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="profile.html">Профиль</a></li>
+                            <li class="b-nav-sidebar__item b-nav-sidebar__item_active swiper-slide"><a href="adlist.html">Мои объявления</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="my-search.html">Мой поиск</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="favorites.html">Избранное</a></li>
+                            <li class="b-nav-sidebar__item b-nav-sidebar__item_round swiper-slide"><a href="chats.html">Сообщения <span>2</span></a></li>
+                            <li class="b-nav-sidebar__item b-nav-sidebar__item_round swiper-slide"><a href="notifications.html">Уведомления <span>4</span></a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="wallet.html">Кошелек</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="#">Ипотека</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-10 col-md-9 col-sm-12">
+                    <div class="l-wrapper-left-side">
+                        <div class="b-card">
+                            <div class="b-card__head b-card__head_flex">Новое объявление <span class="b-card__head-sub">№ 34802384092380</span></div>
+                            <div class="b-card__ctn">
+                                <div class="b-form-params">
+                                    <form action="">
+                                        <div class="alert b-alert b-alert_yellow fade show" role="alert">
+                                            <span class="icon-icon-info"></span>Как разместить объявление? &nbsp; <a href="#">Подробые инструкции</a>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span class="icon-icon-close"></span>
+                                            </button>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Вид недвижимости</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Жилая</option>
+                                                        <option value="2">Коммерческая</option>
+                                                        <option value="3">Гараж</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="param-view1" type="radio" checked name="param-view"/>
+                                                        <label for="param-view1">Жилая</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="param-view2" type="radio" name="param-view"/>
+                                                        <label for="param-view2">Коммерческая</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="param-view3" type="radio" name="param-view"/>
+                                                        <label for="param-view3">Гараж</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Тип недвижимости</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Вторичный</option>
+                                                        <option value="2">Новостройка</option>
+                                                        <option value="3">Комната</option>
+                                                        <option value="4">Дом</option>
+                                                        <option value="5">Участок</option>
+                                                        <option value="6">Таунхаус</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="type1" type="radio" checked name="param-type"/>
+                                                        <label for="type1">Комната</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="type2" type="radio" name="param-type"/>
+                                                        <label for="type2">Дом</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Рынок</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Вторичный</option>
+                                                        <option value="2">Новостройка</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                        <input id="market1" type="radio" checked name="param-type-market"/>
+                                                        <label for="market1">Вторичный</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                        <input id="market2" type="radio" name="param-type-market"/>
+                                                        <label for="market2">Новостройка</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Адрес объекта</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <input type="text" class="input" value="г. Москва, ул Солянка, д. 52" autocorrect="off" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__map">
+                                                <img src="./img/content/map.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Номер квартиры</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <input type="text" class="input" name="quantity" value="31" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Кадастровый номер</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <input type="text" class="input js-mask-cadastr" placeholder="XX : XXXX : XXXXXX : XXX" autocorrect="off" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="alert b-alert b-alert_yellow fade show" role="alert">
+                                            <span class="icon-icon-info"></span>Получите скидку при покупке квартиры в ипотеку. &nbsp; <a href="#">Узнать больше</a>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span class="icon-icon-close"></span>
+                                            </button>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div id="image-upload" class="b-upload-drop-file dropzone">
+                                                <div class="b-upload-drop-file__text">
+                                                    <div class="b-upload-drop-file__text-title">Загрузите фотографии объекта</div>
+                                                    <div class="b-upload-drop-file__text-teaser">в хорошем качестве в формате JPG, JPEG, PNG</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div id="image-upload-inner" class="b-upload-drop-file dropzone">
+                                                <div class="b-upload-drop-file__text">
+                                                    <div class="b-upload-drop-file__text-title">Загрузите планировку объекта</div>
+                                                    <div class="b-upload-drop-file__text-teaser">в хорошем качестве в формате JPG, JPEG, PNG</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Ссыла на видео</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <input type="text" class="input" placeholder="https://" autocorrect="off" autocomplete="off">
+                                                <div class="b-form-params__helper">Вы можете указать ссылку на видео ролик об объекте с  Youtube, Vimeo</div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Описание объекта</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <textarea name="" id="" cols="30" rows="10" class="textarea textarea-autosize" placeholder="Расскажите про главные преимущества…"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Стоимость, ₽</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <input type="text" class="input" placeholder="" value="3 500 000" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item b-form-params__item_mod-bottom">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label b-form-params__label_mod-top">Изменение стоимости</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-form-params__cost-info">
+                                                    <div class="b-form-params__cost-info-item">
+                                                        <div class="b-form-params__cost-info-date">18 апреля 2020 г.</div>
+                                                        <div class="b-form-params__cost-info-param">
+                                                            <span class="triangle-bottom"></span>
+                                                            3 600 000 ₽
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-form-params__cost-info-item">
+                                                        <div class="b-form-params__cost-info-date">22 апреля 2020 г.</div>
+                                                        <div class="b-form-params__cost-info-param">
+                                                            <span class="triangle-top"></span>
+                                                            3 600 000 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item checkbox">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Торг</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <label class="b-switch">
+                                                        <input type="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="sale1" type="radio" checked name="sale"/>
+                                                        <label for="sale1">Да</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="sale2" type="radio" name="sale"/>
+                                                        <label for="sale2">Нет</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Комиссия</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Нет</option>
+                                                        <option value="2">% со сделки</option>
+                                                        <option value="3">Фикс.</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input class="js-disabled" id="comm1" type="radio" checked name="comm"/>
+                                                        <label for="comm1">Нет</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input class="js-entity" id="comm2" type="radio" name="comm"/>
+                                                        <label for="comm2">% со сделки</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input class="js-entity"  id="comm3" type="radio" name="comm"/>
+                                                        <label for="comm3">Фикс.</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_lg">
+                                                        <!--убивать этот класс input-wrapper_opacity
+                                                        когда выбран нужный параметр % или фикс
+                                                        и readonly тоже убиваем у input-->
+                                                        <!--сделано на десктопе TO DO на мобиле в select-->
+                                                        <div class="input-wrapper input-wrapper_opacity">
+                                                            <span class="input-info input-info_left input-info_gray"> % или ₽</span>
+                                                            <input id="input-comm" type="text" readonly="readonly" class="input input-text-right" placeholder="0" autocorrect="off" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Количество комнат</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4+</option>
+                                                        <option value="5">Студия</option>
+                                                        <option value="6">Апартаменты</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="room-count1" type="radio" name="room-count"/>
+                                                        <label for="room-count1">1</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="room-count2" type="radio" name="room-count"/>
+                                                        <label for="room-count2">2</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="room-count3" type="radio" name="room-count"/>
+                                                        <label for="room-count3">3</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="room-count4" type="radio" name="room-count"/>
+                                                        <label for="room-count4">4+</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="room-count5" type="radio" name="room-count"/>
+                                                        <label for="room-count5">Студия</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="room-count6" type="radio" name="room-count"/>
+                                                        <label for="room-count6">Апартаменты</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Площадь квартиры</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-slider-range">
+                                                    <div class="b-slider-range__left">
+                                                        <div class="b-form-params__unit-xs b-form-params__unit-xs_param1">
+                                                            <input id="apartment-area-input" class="b-slider-range__input input" type="text" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                            <span>м²</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-slider-range__right">
+                                                        <input id="apartment-area-slider" class="b-slider-range__slider" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Площадь кухни</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-slider-range">
+                                                    <div class="b-slider-range__left">
+                                                        <div class="b-form-params__unit-xs b-form-params__unit-xs_param1">
+                                                            <input id="kitchen-area-input" class="b-slider-range__input input" type="text" value="30" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                            <span>м²</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-slider-range__right">
+                                                        <input id="kitchen-area-slider" class="b-slider-range__slider" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Жилая площадь</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-slider-range">
+                                                    <div class="b-slider-range__left">
+                                                        <div class="b-form-params__unit-xs b-form-params__unit-xs_mute b-form-params__unit-xs_param1">
+                                                            <input id="living-space-input" class="b-slider-range__input input" type="text" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                            <span>м²</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-slider-range__right">
+                                                        <input id="living-space-slider" class="b-slider-range__slider" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Этаж</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-slider-range">
+                                                    <div class="b-slider-range__left">
+                                                        <div class="b-form-params__unit-xs b-form-params__unit-xs_mute b-form-params__unit-xs_param2">
+                                                            <input id="floor-input" class="b-slider-range__input input" type="text" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                            <span>этаж</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-slider-range__right">
+                                                        <input id="floor-slider" class="b-slider-range__slider" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Этажей в доме</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-slider-range">
+                                                    <div class="b-slider-range__left">
+                                                        <div class="b-form-params__unit-xs b-form-params__unit-xs_mute b-form-params__unit-xs_param3">
+                                                            <input id="floor-house-input" class="b-slider-range__input input" type="text" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                            <span>этажей</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-slider-range__right">
+                                                        <input id="floor-house-slider" class="b-slider-range__slider" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Высота потолка</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="b-slider-range">
+                                                    <div class="b-slider-range__left">
+                                                        <div class="b-form-params__unit-xs b-form-params__unit-xs_param4">
+                                                            <input id="height-floor-input" class="b-slider-range__input input" type="text" autocorrect="off" autocomplete="off">
+                                                            <span>м</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-slider-range__right">
+                                                        <input id="height-floor-slider" class="b-slider-range__slider" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Сан узел</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Совмещенный</option>
+                                                        <option value="2">Раздельный</option>
+                                                        <option value="3">Более одного</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="bathroom1" type="radio" name="bathroom"/>
+                                                        <label for="bathroom1">Совмещенный</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="bathroom2" type="radio" name="bathroom"/>
+                                                        <label for="bathroom2">Раздельный</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="bathroom3" type="radio" name="bathroom"/>
+                                                        <label for="bathroom3">Более одного</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Балкон / лоджия</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Отсутствует</option>
+                                                        <option value="2">1</option>
+                                                        <option value="3">2</option>
+                                                        <option value="3">3+</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="balcony1" type="radio" name="balcony"/>
+                                                        <label for="balcony1">Отсутствует</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="balcony2" type="radio" name="balcony"/>
+                                                        <label for="balcony2">1</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="balcony3" type="radio" name="balcony"/>
+                                                        <label for="balcony3">2</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="balcony4" type="radio" name="balcony"/>
+                                                        <label for="balcony4">3+</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Ремонт</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">Без ремонта</option>
+                                                        <option value="2">Чистовой</option>
+                                                        <option value="3">Евроремонт</option>
+                                                        <option value="4">Дизайнерский</option>
+                                                        <option value="5">Косметич.</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="repairs1" type="radio" name="repairs"/>
+                                                        <label for="repairs1">Без ремонта</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="repairs2" type="radio" name="repairs"/>
+                                                        <label for="repairs2">Чистовой</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="repairs3" type="radio" name="repairs"/>
+                                                        <label for="repairs3">Евроремонт</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="repairs4" type="radio" name="repairs"/>
+                                                        <label for="repairs4">Дизайнерский</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="repairs5" type="radio" name="repairs"/>
+                                                        <label for="repairs5">Косметич.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-form-params__item">
+                                            <div class="b-form-params__item-left">
+                                                <div class="b-form-params__label">Вид из окна</div>
+                                            </div>
+                                            <div class="b-form-params__item-right">
+                                                <div class="visible-xs">
+                                                    <select class="b-select-form" data-placeholder="Выберите…">
+                                                        <option></option>
+                                                        <option value="1">любой</option>
+                                                        <option value="2">Двор</option>
+                                                        <option value="3">Парк</option>
+                                                        <option value="4">Водоем</option>
+                                                        <option value="5">Лес</option>
+                                                        <option value="6">Улица</option>
+                                                    </select>
+                                                </div>
+                                                <div class="b-group-buttons">
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="view1" type="radio" name="view"/>
+                                                        <label for="view1">любой</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="view2" type="radio" name="view"/>
+                                                        <label for="view2">Двор</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="view3" type="radio" name="view"/>
+                                                        <label for="view3">Парк</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="view4" type="radio" name="view"/>
+                                                        <label for="view4">Водоем</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="view5" type="radio" name="view"/>
+                                                        <label for="view5">Лес</label>
+                                                    </div>
+                                                    <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                        <input id="view6" type="radio" name="view"/>
+                                                        <label for="view6">Улица</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card">
+                            <div class="b-card__head">Дом</div>
+                            <div class="b-card__ctn">
+                                <div class="b-form-params">
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Тип дома</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Монолитный</option>
+                                                    <option value="2">Кирпично-монолитный</option>
+                                                    <option value="3">Кирпичный</option>
+                                                    <option value="4">Панельный</option>
+                                                    <option value="5">Блочный</option>
+                                                    <option value="6">Газобетонный блок</option>
+                                                    <option value="7">Пенобетонный блок</option>
+                                                    <option value="8">Деревянный</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="house-type1" type="radio" checked name="house-type"/>
+                                                    <label for="house-type1">Монолитный</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="house-type2" type="radio" name="house-type"/>
+                                                    <label for="house-type2">Кирпично-монолитный</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="house-type3" type="radio" name="house-type"/>
+                                                    <label for="house-type3">Кирпичный</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="house-type4" type="radio" name="house-type"/>
+                                                    <label for="house-type4">Панельный</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="house-type5" type="radio" name="house-type"/>
+                                                    <label for="house-type5">Блочный</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="house-type6" type="radio" name="house-type"/>
+                                                    <label for="house-type6">Газобетонный блок</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="house-type7" type="radio" name="house-type"/>
+                                                    <label for="house-type7">Пенобетонный блок</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="house-type8" type="radio" name="house-type"/>
+                                                    <label for="house-type8">Деревянный</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Год постройки</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="b-slider-range">
+                                                <div class="b-slider-range__left">
+                                                    <input id="build-year-input" class="b-slider-range__input input" type="text" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                </div>
+                                                <div class="b-slider-range__right">
+                                                    <input id="build-year-slider" class="b-slider-range__slider" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Лифт</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3+</option>
+                                                    <option value="4">Грузовой</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="elevator1" type="radio" name="elevator"/>
+                                                    <label for="elevator1">1</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="elevator2" type="radio" name="elevator"/>
+                                                    <label for="elevator2">2</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="elevator3" type="radio" name="elevator"/>
+                                                    <label for="elevator3">3+</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="elevator4" type="radio" name="elevator"/>
+                                                    <label for="elevator4">Грузовой</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Газ</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Да</option>
+                                                    <option value="2">Нет</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="gas1" type="radio" name="gas"/>
+                                                    <label for="gas1">Да</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="gas2" type="radio" name="gas"/>
+                                                    <label for="gas2">Нет</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Мусоропровод</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Да</option>
+                                                    <option value="2">Нет</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="trash1" type="radio" name="trash"/>
+                                                    <label for="trash1">Да</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="trash2" type="radio" name="trash"/>
+                                                    <label for="trash2">Нет</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card">
+                            <div class="b-card__head">Дополнительная информация</div>
+                            <div class="b-card__ctn">
+                                <div class="b-form-params">
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Безопасность</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Домофон</option>
+                                                    <option value="2">Консъерж</option>
+                                                    <option value="3">Закрытая дверь</option>
+                                                    <option value="4">Кодовый замок</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="security1" type="radio" name="security"/>
+                                                    <label for="security1">Домофон</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="security2" type="radio" name="security"/>
+                                                    <label for="security2">Консъерж</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="security3" type="radio" name="security"/>
+                                                    <label for="security3">Закрытая дверь</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="security4" type="radio" name="security"/>
+                                                    <label for="security4">Кодовый замок</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Парковка</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Закрытая</option>
+                                                    <option value="2">Открытая</option>
+                                                    <option value="3">Подземная</option>
+                                                    <option value="4">Во дворе</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="parking1" type="radio" name="parking"/>
+                                                    <label for="parking1">Закрытая</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="parking2" type="radio" name="parking"/>
+                                                    <label for="parking2">Открытая</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="parking3" type="radio" name="parking"/>
+                                                    <label for="parking3">Подземная</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="parking4" type="radio" name="parking"/>
+                                                    <label for="parking4">Во дворе</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Благоустройство</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <!--мултиселект если нужен-->
+                                                <!--<select class="b-multiseleсt" multiple="multiple">-->
+                                                    <!--<option value="1">Жилая</option>-->
+                                                    <!--<option value="2">Коммерческая</option>-->
+                                                    <!--<option value="3">Гараж</option>-->
+                                                <!--</select>-->
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Детская площадка</option>
+                                                    <option value="2">Спортивная площадка</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="beauti1" type="radio" name="beauti"/>
+                                                    <label for="beauti1">Детская площадка</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="beauti2" type="radio" name="beauti"/>
+                                                    <label for="beauti2">Спортивная площадка</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Инфраструктура</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Школа</option>
+                                                    <option value="2">Детский сад</option>
+                                                    <option value="3">Парк</option>
+                                                    <option value="4">Фитнес</option>
+                                                    <option value="5">Торговый центр</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="infrastructure1" type="radio" name="infrastructure"/>
+                                                    <label for="infrastructure1">Школа</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="infrastructure2" type="radio" name="infrastructure"/>
+                                                    <label for="infrastructure2">Детский сад</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="infrastructure3" type="radio" name="infrastructure"/>
+                                                    <label for="infrastructure3">Парк</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="infrastructure4" type="radio" name="infrastructure"/>
+                                                    <label for="infrastructure4">Фитнес</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="infrastructure5" type="radio" name="infrastructure"/>
+                                                    <label for="infrastructure5">Торговый центр</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Тип продажи</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Свободная продажа</option>
+                                                    <option value="2">Альтернатива</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="type-sale1" type="radio" name="type-sale"/>
+                                                    <label for="type-sale1">Свободная продажа</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md">
+                                                    <input id="type-sale2" type="radio" name="type-sale"/>
+                                                    <label for="type-sale2">Альтернатива</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Лет в собственности</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Меньше 3</option>
+                                                    <option value="2">3–5 лет</option>
+                                                    <option value="3">Больше 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="time-ownership1" type="radio" name="time-ownership"/>
+                                                    <label for="time-ownership1">Меньше 3</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="time-ownership2" type="radio" name="time-ownership"/>
+                                                    <label for="time-ownership2">3–5 лет</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="time-ownership3" type="radio" name="time-ownership"/>
+                                                    <label for="time-ownership3">Больше 5</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Кол-во собственников</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3+</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="number-owners1" type="radio" name="number-owners"/>
+                                                    <label for="number-owners1">1</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="number-owners2" type="radio" name="number-owners"/>
+                                                    <label for="number-owners2">2</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="number-owners3" type="radio" name="number-owners"/>
+                                                    <label for="number-owners3">3+</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_lg b-group-buttons__item_flex-align b-group-buttons__item-switch">
+                                                    <div class="b-switch-list">
+                                                        <div class="b-switch-list__item">
+                                                            <label class="b-switch">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </label>
+                                                            <div class="b-switch-list__text">
+                                                                <div class="b-switch-list__title">Есть несовершеннолетние</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Кол-во прописанных</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3+</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="number-in-owners1" type="radio" name="number-in-owners"/>
+                                                    <label for="number-in-owners1">1</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="number-in-owners2" type="radio" name="number-in-owners"/>
+                                                    <label for="number-in-owners2">2</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="number-in-owners3" type="radio" name="number-in-owners"/>
+                                                    <label for="number-in-owners3">3+</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_lg b-group-buttons__item_flex-align b-group-buttons__item-switch">
+                                                    <div class="b-switch-list">
+                                                        <div class="b-switch-list__item">
+                                                            <label class="b-switch">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </label>
+                                                            <div class="b-switch-list__text">
+                                                                <div class="b-switch-list__title">Есть несовершеннолетние</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card">
+                            <div class="b-card__head">Контакты</div>
+                            <div class="b-card__ctn">
+                                <div class="b-form-params">
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Безопасность</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_xlg">
+                                                    <div class="input-wrapper">
+                                                        <input type="tel" class="input js-mask-tel" placeholder="+7 (123) 456-78-90" value="7 (123) 456-78-90" autocorrect="off" autocomplete="off">
+                                                        <span class="input-info input-info_blue">Повторить код</span>
+                                                    </div>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_show-xs">
+                                                    <div class="input-wrapper">
+                                                        <span class="input-info input-info_left input-info_gray">Код из смс</span>
+                                                        <input type="text" class="input input-text-right" placeholder="••••" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Как вас зовут</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_xlg">
+                                                    <div class="input-wrapper">
+                                                        <input type="text" class="input" placeholder="Иванов Сергей Васильевич" autocorrect="off" autocomplete="off">
+                                                        <div class="b-form-params__helper">Укажите, что вы собственник, если хотите скрыть информацию о себе</div>
+                                                    </div>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_modified-top b-group-buttons__item-switch">
+                                                    <div class="b-switch-list">
+                                                        <div class="b-switch-list__item">
+                                                            <label class="b-switch">
+                                                                <input type="checkbox">
+                                                                <span></span>
+                                                            </label>
+                                                            <div class="b-switch-list__text">
+                                                                <div class="b-switch-list__title">Собственник</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left b-group-buttons__item_flex-align">
+                                            <div class="b-form-params__label b-form-params__label_mod-top">Подменный номер</div>
+                                            <div class="b-form-params__sub-label">Мы скроем ваш номер</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Да</option>
+                                                    <option value="2">Нет</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="copy-phone1" type="radio" name="copy-phone"/>
+                                                    <label for="copy-phone1">Да</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="copy-phone2" type="radio" name="copy-phone"/>
+                                                    <label for="copy-phone2">Нет</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Дни приема звонков</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Понедельник</option>
+                                                    <option value="2">Вторник</option>
+                                                    <option value="3">Среда</option>
+                                                    <option value="4">Четверг</option>
+                                                    <option value="5">Пятница</option>
+                                                    <option value="6">Выходные</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-days1" type="radio" name="call-days"/>
+                                                    <label for="call-days1">Пн</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-days2" type="radio" name="call-days"/>
+                                                    <label for="call-days2">Вт</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-days3" type="radio" name="call-days"/>
+                                                    <label for="call-days3">Ср</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-days4" type="radio" name="call-days"/>
+                                                    <label for="call-days4">Чт</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-days5" type="radio" name="call-days"/>
+                                                    <label for="call-days5">Пт</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-days6" type="radio" name="call-days"/>
+                                                    <label for="call-days6">Выходные</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Время приема звонков</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-md">
+                                                <div class="input-wrapper-two-cols">
+                                                    <div class="input-wrapper">
+                                                        <span class="input-info input-info_left input-info_gray">с</span>
+                                                        <input type="text" class="input js-mask-time input-text-right" placeholder="" autocorrect="off" autocomplete="off">
+                                                    </div>
+                                                    <div class="input-wrapper">
+                                                        <span class="input-info input-info_left input-info_gray">по</span>
+                                                        <input type="text" class="input js-mask-time input-text-right" placeholder="" autocorrect="off" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b-group-buttons hidden-md">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="time-slider-from" readonly type="text" class="input" placeholder="c">
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                                    <div class="b-slider-range-duo">
+                                                        <input id="time-slider" type="text" class="input">
+                                                    </div>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="time-slider-to" type="text" readonly class="input" placeholder="до">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Звонки от агентов</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Да</option>
+                                                    <option value="2">Нет</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-agent1" type="radio" name="call-agent"/>
+                                                    <label for="call-agent1">Да</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="call-agent2" type="radio" name="call-agent"/>
+                                                    <label for="call-agent2">Нет</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-form-params__item">
+                                        <div class="b-form-params__item-left">
+                                            <div class="b-form-params__label">Удобный способ связи</div>
+                                        </div>
+                                        <div class="b-form-params__item-right">
+                                            <div class="visible-xs">
+                                                <select class="b-select-form" data-placeholder="Выберите…">
+                                                    <option></option>
+                                                    <option value="1">Телефон</option>
+                                                    <option value="2">Чат</option>
+                                                </select>
+                                            </div>
+                                            <div class="b-group-buttons">
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="type-comm1" type="radio" name="type-comm"/>
+                                                    <label for="type-comm1">Телефон</label>
+                                                </div>
+                                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                                    <input id="type-comm2" type="radio" name="type-comm"/>
+                                                    <label for="type-comm2">Чат</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card">
+                            <div class="b-card__head">Продвижение</div>
+                            <div class="b-card__ctn">
+                                <div class="row b-card-switch-list">
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="b-card-switch">
+                                            <div class="b-card-switch__wrapper">
+                                                <div class="b-card-switch__title">9 999 ₽</div>
+                                                <div class="b-card-switch__teaser">за 10 000 показов объявлений на гавной странице сайта</div>
+                                                <div class="b-card-switch__text">Ваше объявление будет показано на главной странице сайта в вашем регионе</div>
+                                            </div>
+                                            <label class="b-switch">
+                                                <input type="checkbox" checked>
+                                                <span></span>
+                                                <label for=""></label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="b-card-switch">
+                                            <div class="b-card-switch__wrapper">
+                                                <div class="b-card-switch__title">3 499 ₽</div>
+                                                <div class="b-card-switch__teaser">за 5 000 показов объявлений
+                                                    вверху поиска</div>
+                                                <div class="b-card-switch__text">Ваше объявление будет показано на главной странице сайта в вашем регионе</div>
+                                            </div>
+                                            <label class="b-switch">
+                                                <input type="checkbox">
+                                                <span></span>
+                                                <label for=""></label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="b-card-switch">
+                                            <div class="b-card-switch__wrapper">
+                                                <div class="b-card-switch__title">1 499 ₽</div>
+                                                <div class="b-card-switch__teaser">за 5 000 показов объявлений
+                                                    внизу поиска</div>
+                                                <div class="b-card-switch__text">Ваше объявление будет показано на главной странице сайта в вашем регионе</div>
+                                            </div>
+                                            <label class="b-switch">
+                                                <input type="checkbox">
+                                                <span></span>
+                                                <label for=""></label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card">
+                            <div class="b-card__ctn">
+                                <div class="b-card-object__group-button b-card-object__group-button_modified">
+                                    <button type="button" class="button-default button-delete button-white"><span class="icon-icon-delete"></span>Удалить</button>
+                                    <button type="button" class="button-default button-sm button-text-medium button-grey">Сохранить черновик</button>
+                                    <button type="button" class="button-default button-sm button-text-bold button-green">Отправить на модерацию</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--b-footer-->
+    <div class="b-footer">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-4 b-footer__left">
+                    <div class="b-footer__logo">
+                        <a href="#">домда</a>
+                    </div>
+                    <div class="b-footer__copy">
+                        © ООО «ДомДа», 2020
+                        <br>
+                        Все права на материалы сайта защищены законодательством Российской Федерации.
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__center">
+                    <div class="b-footer__wrapper">
+                        <div class="b-footer__wrapper-left">
+                            <nav class="b-footer__navi">
+                                <ul>
+                                    <li><a href="#">О проекте</a></li>
+                                    <li><a href="#">Партнерам</a></li>
+                                    <li><a href="#">Карьера</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="b-footer__wrapper-right">
+                            <div class="b-footer__support">
+                                <a href="tel:+88006459999">8 800 645-99-99</a>
+                                <span>Служба поддержки</span>
+                            </div>
+                            <div class="b-footer__helper">
+                                <a href="#">Условия использования</a>
+                                <br>
+                                <a href="#">Политика о данных пользователей</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__right">
+                    <div class="b-footer_centered">
+                        <div class="b-footer__group">
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/appstore.svg" alt=""></a>
+                            </div>
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/googleplay.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="b-footer__social">
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-fb"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-vk"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-ok"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-yt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end b-footer-->
+</div>
+
+
+<script src="./js/scripts.min.js"></script>
+<script src="./js/common.js"></script>
+
+<!--модальное окно-->
+<div id="modal-auth" class="mfp-hide b-modal-auth">
+    <button type="button" class="mfp-close">Закрыть</button>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="auth-tab" data-toggle="tab" href="#auth" role="tab" aria-controls="auth" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="reg-tab" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade show active" id="auth" role="tabpanel" aria-labelledby="auth-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass">Восстановить пароль</button>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="reg-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Как вас зовут?</div>
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-auth-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <div class="b-modal__title">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</div>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="auth-tab-inner" data-toggle="tab" href="#auth-inner" role="tab" aria-controls="auth-inner" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reg-tab-inner" data-toggle="tab" href="#reg-inner" role="tab" aria-controls="reg-inner" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade" id="auth-inner" role="tabpanel" aria-labelledby="auth-tab-inner">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email или Телефон</div>
+                    <!--input_error если ошибка-->
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass-inner">Восстановить пароль</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade show active" id="reg-inner" role="tabpanel" aria-labelledby="reg-tab-inner">
+            <p>Для регистрации заполните все поля и укажите типа вашей организации</p>
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">ФИО Руководителя</div>
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Телефон</div>
+                    <input type="tel" class="input js-mask-tel" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified-inner">
+                    <div class="b-radio">
+                        <div class="b-radio__item">
+                            <input id="param1" type="radio" name="param"/>
+                            <label for="param1">Риэлтор, Агентство</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param2" type="radio" name="param" checked/>
+                            <label for="param2">Застройщик</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param3" type="radio" name="param"/>
+                            <label for="param3">Риэлтор, Агентство</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth-inner" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu" class="mfp-hide">
+    <ul>
+        <li><a href="#">Поиск</a></li>
+        <li><a href="#">Ипотека</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Партнеры</a></li>
+    </ul>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu-auth" class="mfp-hide b-modal-menu-auth">
+    <div class="b-header__auth-menu b-header__auth-menu_inner">
+        <ul>
+            <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+            <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+            <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+            <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-info" class="mfp-hide b-modal-info">
+    <div class="b-modal-info__head">
+        <div class="b-modal-info__title">Заявка отправлена</div>
+        <button type="button" class="mfp-close"></button>
+    </div>
+    <div class="b-modal-info__text">
+        Менеджер свяжется с Вами в ближайшее время, чтобы подтвердить информацию в анкете.
+        После подтверждения аккаунта мы предоставим доступ к Личному кабинету. Пароль будет отправлен на указанный email.
+    </div>
+    <div class="b-form__item_modified-inner">
+        <button type="button" class="button-default button-full-width button-text-bold mfp-close">OK</button>
+    </div>
+</div>
+
+</body>
+</html>

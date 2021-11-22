@@ -1,0 +1,2899 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body class="bg-white">
+<div class="l-footer-wrapper">
+    <div class="l-content">
+        <!--b-header-->
+        <div class="b-header b-header_modified-bottom">
+            <div class="container-xl">
+                <div class="b-header__left">
+                    <div class="b-header__logo">
+                        <a class="b-header__logo-text" href="/">домда</a>
+                        <a class="b-header__logo-link" href="#">Москва и МО</a>
+                    </div>
+                </div>
+                <div class="b-header__right">
+                    <nav class="b-header__navi">
+                        <ul>
+                            <li><a href="#">Поиск</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- добавляем b-header__auth_in если
+                         пользователь авторизован
+                         добавляем b-header__auth_online если
+                         пользователь online -->
+                    <div class="b-header__auth">
+                        <a class="b-header__auth-link js-modal" href="#modal-auth">Войти</a>
+                        <div href="#" class="b-header__auth-avatar" style="background-image: url('./img/content/avatar.jpg')">
+                            <a class="b-header__auth-modal js-modal-menu" href="#modal-menu-auth"></a>
+                            <div class="b-header__auth-menu">
+                                <ul>
+                                    <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+                                    <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- добавляем класс b-header__favorite_added
+                         когда есть избранное -->
+                    <div class="b-header__favorite">
+                        <a href="#">
+                            <span class="icon-icon-star"></span><span class="b-header__favorite-count">6</span>
+                        </a>
+                    </div>
+                    <div class="b-header__button">
+                        <a href="new-object.html" class="button-default button-shadow">Разместить объявление</a>
+                    </div>
+                    <div class="b-header__burger">
+                        <a class="js-modal-menu" href="#modal-menu"><span class="icon-icon-burger"></span></a>
+                        <a class="js-modal-menu-close" href="#"><span class="icon-icon-close"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end b-header-->
+       <div class="l-section-gray l-section-gray_modified-padding">
+           <div class="container-xl">
+               <div class="b-breadcrumbs">
+                   <a href="#" class="b-breadcrumbs__item">Жилье в Москве</a>
+                   <a href="#" class="b-breadcrumbs__item">Новостройки</a>
+                   <a href="#" class="b-breadcrumbs__item">Тверской район</a>
+                   <a href="#" class="b-breadcrumbs__item">Продажа</a>
+               </div>
+               <div class="b-object__head">
+                   <div class="b-object__head-left">
+                       <div class="b-object__head-title">3-х комнатная квартира, 120 метров, 3/12 этаж</div>
+                       <div class="b-object__head-group">
+                           <div class="b-object__head-teaser">Московская область, Москва, Апрелевка, улица Горького, 34</div>
+                           <div class="b-object__head-links">
+                               <a href="#"><span class="icon-icon-map-pin"></span>На карте</a>
+                               <a href="#"><span class="icon-icon-list"></span> Все объявления в этом доме</a>
+                           </div>
+                           <div class="b-object__head-text">
+                               <div class="icon-icon-subway orange"></div>
+                               Китай-город
+                               <span class="b-object__head-helper">400м</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="b-object__head-right">
+                        <div class="b-object__head-group-action">
+                            <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner visible-lg"></span></a>
+                            <a href="#"><span class="icon-icon-slash"></span> Пожаловаться</a>
+                            <a href="#"><span class="icon-icon-eye-off"></span>Скрыть</a>
+                            <a href="#"><span class="icon-icon-printer"></span>Распечатать</a>
+                        </div>
+                       <div class="b-object__head-group-text">
+                           <span>№ 34802384092380</span>
+                           <span>12 февраля 2020 г. <span class="b-object__head-group-text-block">(обновлено 16 апреля)</span></span>
+                           <span>1 200 просмотров</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        <div class="container-xl">
+            <div class="b-object__wrapper">
+                <div class="b-object__left">
+                    <div class="b-object__gallery">
+                        <div class="b-object__gallery-top-wrapper">
+                            <a href="#modal-gallery" class="b-card-object-detail__slider-full-width-link js-modal-gallery">
+                                <span class="icon-icon-full-width"></span>
+                            </a>
+                            <div class="swiper-container gallery-top b-object__gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    <div class="swiper-slide b-object__gallery-top-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next swiper-button-white"><span class="icon-icon-arrow-right-bold"></span></div>
+                                <div class="swiper-button-prev swiper-button-white"><span class="icon-icon-arrow-left-bold"></span></div>
+                            </div>
+                        </div>
+                        <div class="b-object__gallery-thumbs-wrapper">
+                            <a href="#modal-gallery" class="b-object__gallery-thumbs-info js-modal-gallery">
+                                <span class="icon-icon-photo"></span>
+                                <span>23 фото</span>
+                            </a>
+                            <div class="swiper-container gallery-thumbs b-object__gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="b-object__gallery-thumbs-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-object__right b-object-panel">
+                        <div class="b-object-panel__top">
+                            <div class="b-object-panel__wrapper">
+                                <div class="b-card-object__cost">
+                                    <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                    <div class="b-card-object__cost-info">
+                                        <!--
+                                        triangle-bottom
+                                        triangle-top
+                                        -->
+                                        <span class="triangle-bottom"></span>
+                                        170 542 ₽/м²
+                                    </div>
+                                </div>
+                                <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                            </div>
+                            <div class="b-card-object__media b-card-object__media_inner b-card-object__media_button">
+                                <div class="b-card-object__media-img">
+                                    <img src="./img/svg/icon-percent.svg" alt="">
+                                </div>
+                                <div class="b-card-object__media-text">
+                                    <div class="b-card-object__media-text-title">Льготная ипотека <span class="b-card-object__media-text-teaser">от 50 748 ₽/мес</span></div>
+                                </div>
+                                <a href="#" class="b-card-object__media-link">Рассчитать</a>
+                            </div>
+                        </div>
+                        <div class="b-card-object-detail__group-buttons">
+                            <div class="b-card-object-detail__group-buttons-wrapper">
+                                <a href="#modal-call" class="b-card-object-detail__group-buttons-item js-modal-call">
+                                    <span class="b-card-object-detail__group-buttons-round">
+                                        <span class="icon-icon-phone-out"></span>
+                                    </span>
+                                    <span>Позвонить <br>продавцу</span>
+                                </a>
+                                <a href="#" class="b-card-object-detail__group-buttons-item">
+                                    <span class="b-card-object-detail__group-buttons-round">
+                                        <span class="icon-icon-message"></span>
+                                    </span>
+                                    <span>Отправить <br>сообщение</span>
+                                </a>
+                                <a href="#" class="b-card-object-detail__group-buttons-item">
+                                    <span class="b-card-object-detail__group-buttons-round">
+                                        <span class="icon-icon-phone-in"></span>
+                                    </span>
+                                    <span>Обратный <br>звонок</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="b-card-object__media b-card-object__media_lg">
+                            <div class="b-card-object__media-img" style="background-image: url('./img/content/logo-fly.jpg')"></div>
+                            <div class="b-card-object__media-text">
+                                <div class="b-card-object__media-text-title">Александр Иванович Петров</div>
+                                <div class="b-card-object__media-text-teaser">Группа компаний «Самолет»</div>
+                                <div class="b-card-object__media-text-link"><a href="#">212 объявлений <span class="icon-icon-point-right"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-object__teaser">
+                        Продается 1-комнатная квартира на 1 этаже 9 этажного дома, кухня 7.8, комната 18.2, коридор 4.5. Высокий цоколь, все окна в квартире пластиковые, выходят во двор на южную сторону. Натяжные потолки, санузел
+                        в современном кафеле,хорошие межкомнатные двери подъезд расположен внутри двора, не у дороги.
+                        Во дворе большая детская площадка. Рядом с домом находиться супермаркеты и две школы 27 и 11, Сбербанк, амбулатория. Хорошее транспортное сообщение с любым районом города.
+                    </div>
+                    <div class="b-object__info">
+                        <div class="b-object__info-item">
+                            <span class="b-object__info-big-text">39 м²</span>
+                            <span class="b-object__info-small-text">Общая площадь</span>
+                        </div>
+                        <div class="b-object__info-item">
+                            <span class="b-object__info-big-text">18 м²</span>
+                            <span class="b-object__info-small-text">Жилая площадь</span>
+                        </div>
+                        <div class="b-object__info-item">
+                            <span class="b-object__info-big-text">11 м²</span>
+                            <span class="b-object__info-small-text">Кухня</span>
+                        </div>
+                        <div class="b-object__info-item">
+                            <span class="b-object__info-big-text">8 этаж</span>
+                            <span class="b-object__info-small-text">из 25</span>
+                        </div>
+                        <div class="b-object__info-item">
+                            <span class="b-object__info-big-text">2012</span>
+                            <span class="b-object__info-small-text">Год постройки</span>
+                        </div>
+                    </div>
+                    <div class="b-object__map" style="background-image: url('./img/content/map.jpg')"></div>
+                    <div class="b-object__params">
+                        <div class="b-object__params-item">
+                            <div class="b-object__params-title">Информация об объекте</div>
+                            <ul class="b-object__params-list">
+                                <li class="b-object__params-list-item">
+                                    <span>Количество комнат</span>
+                                    <span>3</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Высота потолка</span>
+                                    <span>2.85 м</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Площадь</span>
+                                    <span>120 м2</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Санузел</span>
+                                    <span>Да</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Площадь кухни</span>
+                                    <span>33</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Балкон/Лоджия</span>
+                                    <span>2</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Жилая площадь</span>
+                                    <span>43</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Ремонт</span>
+                                    <span>Косметический</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Этаж</span>
+                                    <span>8 из 25</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Вид из окон</span>
+                                    <span>На улицу</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="b-object__params-item">
+                            <div class="b-object__params-title">Информация о доме</div>
+                            <ul class="b-object__params-list">
+                                <li class="b-object__params-list-item">
+                                    <span>Год постройки</span>
+                                    <span>2001</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Безопасность</span>
+                                    <span>Консьерж</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Тип дома</span>
+                                    <span>Кирпичный</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Парковка</span>
+                                    <span>Во дворе</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Лифт</span>
+                                    <span>1</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Благоустройство двора</span>
+                                    <span>Детская площадка</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Газ</span>
+                                    <span>Да</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Инфраструктура</span>
+                                    <span>Школа, детский сад</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Мусоропровод</span>
+                                    <span>Да</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="b-object__params-item">
+                            <div class="b-object__params-title">Сделка</div>
+                            <ul class="b-object__params-list">
+                                <li class="b-object__params-list-item">
+                                    <span>Тип продажи</span>
+                                    <span>Альтернатива</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Количество собственников</span>
+                                    <span>1</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Лет в собственности</span>
+                                    <span>3</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Количество прописанных</span>
+                                    <span>1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="b-object__params-item">
+                            <div class="b-object__params-title">Рейтинг дома по отзывам</div>
+                            <ul class="b-object__params-list">
+                                <li class="b-object__params-list-item">
+                                    <span>Тип продажи</span>
+                                    <span>Альтернатива</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Количество собственников</span>
+                                    <span>1</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Лет в собственности</span>
+                                    <span>3</span>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Количество прописанных</span>
+                                    <span>1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="b-object__params-item b-object__params-item_modified">
+                            <div class="b-object__params-title">Рейтинг дома по отзывам <a class="b-object__params-title-link" href="#">Оставить отзыв <span class="icon-icon-edit"></span></a></div>
+                            <ul class="b-object__params-list">
+                                <li class="b-object__params-list-item">
+                                    <span>Чистота в подъезде</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Дружелюбность соседей</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Благоустройство двора</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Доступность школ и детских садов</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Доступность парковочных мест</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Детские площадки</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Доступность общественного транспорта</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Качество работы управляющей компании</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Доступность магазинов</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Качество водопроводной воды</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Парки поблизости</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Цены за услуги ЖКХ</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                                <li class="b-object__params-list-item">
+                                    <span>Безопасность района</span>
+                                    <div class="b-object__params-group">
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                        <span class="icon-icon-star"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>158 похожих предложений</h3>
+            <div class="b-card-object-favorite__list">
+                <div class="b-card-object b-card-object-favorite b-card-object-favorite-full-width">
+                    <div class="b-card-object__left">
+                        <div class="b-card-object__slider-counter">+22 фото</div>
+                        <div class="b-card-object__slider js-card-object__slider">
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                        </div>
+                    </div>
+                    <div class="b-card-object__right">
+                        <div class="b-card-object__top">
+                            <div class="b-card-object__teaser">
+                                <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                <div class="b-card-object__teaser-text b-card-object__teaser-text_sm">Ярославское шоссе 18,40 км</div>
+                            </div>
+                            <div class="b-card-object__cost">
+                                <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                <div class="b-card-object__cost-info">
+                                    <!--
+                                    triangle-bottom
+                                    triangle-top
+                                    -->
+                                    <span class="triangle-bottom"></span>
+                                    170 542 ₽/м²
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__middle">
+                            <div class="b-card-object__middle-left">
+                                <div class="b-card-object__media">
+                                    <div class="b-card-object__media-img" style="background-image: url('./img/content/incom.jpg')"></div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Александр Иванович Петров</div>
+                                        <div class="b-card-object__media-text-teaser">Инком Недвижимость</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__middle-right">
+                                <div class="b-card-object__media b-card-object__media_inner">
+                                    <div class="b-card-object__media-img">
+                                        <img src="./img/svg/icon-percent.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Льготная ипотека <span class="b-card-object__media-text-teaser">от 50 748 ₽/мес</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__middle-bottom">
+                                <div class="b-card-object__information">
+                                    Продается 1-комнатная квартира на 1 этаже 9 этажного дома, кухня 7.8, комната 18.2, коридор 4.5. Высокий цоколь, все окна в квартире пластиковые, выходят во двор на южную сторону.
+                                </div>
+                                <div class="b-card-object__group-actions-wrapper">
+                                    <a href="#">
+                                        <span class="icon-icon-slash"></span>
+                                        <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-icon-eye-off"></span>
+                                        <span class="b-card-object__group-actions-text">Скрыть</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__bottom">
+                            <button type="button" class="button-default button-text-bold button-green button-icon button-icon_size"><span class="icon-icon-phone-in"></span> Позвонить</button>
+                            <div class="b-card-object__group-actions">
+                                <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                                <div class="b-card-object__menu-wrapper">
+                                    <div class="b-card-object__menu js-card-object__menu">
+                                        <img src="./img/svg/icon-dots.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__group-actions-wrapper">
+                                        <a href="#">
+                                            <span class="icon-icon-slash"></span>
+                                            <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon-icon-eye-off"></span>
+                                            <span class="b-card-object__group-actions-text">Скрыть</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__bottom-right">
+                                <div class="b-card-object__date">
+                                    <span class="hidden-md">12 февраля 2020 г.</span>
+                                    <span class="visible-md">12.02.2020</span>
+                                </div>
+                                <div class="b-card-object__date b-card-object__date_dark">
+                                    <span class="hidden-md">обновлено 16 апреля</span>
+                                    <span class="visible-md">обн. 16.04</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card-object b-card-object-favorite b-card-object-favorite-full-width">
+                    <div class="b-card-object__left">
+                        <div class="b-card-object__label b-card-object__label_abs b-card-object__label_sm b-card-object__label_yellow">Торг, возможен обмен</div>
+                        <div class="b-card-object__slider-counter">+16 фото</div>
+                        <div class="b-card-object__slider js-card-object__slider">
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                        </div>
+                    </div>
+                    <div class="b-card-object__right">
+                        <div class="b-card-object__top">
+                            <div class="b-card-object__teaser">
+                                <div class="b-card-object__teaser-title"><a href="#">3-комн. квартира, 39 м², 3 этаж</a></div>
+                                <div class="b-card-object__teaser-text">Московская область, Наро-Фоминский городской округ
+                                    с. Апрелевка, улица Горького, 34</div>
+                            </div>
+                            <div class="b-card-object__cost">
+                                <div class="b-card-object__cost-normal">2 300 000 ₽</div>
+                                <div class="b-card-object__cost-info">
+                                    <!--
+                                    triangle-bottom
+                                    triangle-top
+                                    -->
+                                    <span class="triangle-top"></span>
+                                    170 542 ₽/м²
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__middle">
+                            <div class="b-card-object__middle-left">
+                                <div class="b-card-object__media">
+                                    <div class="b-card-object__media-img" style="background-image: url('./img/content/avatar2.jpg')"></div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Вера Петровна Иванова</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__middle-right">
+                                <div class="b-card-object__label b-card-object__label_yellow">Торг, возможен обмен</div>
+                            </div>
+                            <div class="b-card-object__middle-bottom">
+                                <div class="b-card-object__information">
+                                    Продается 1-комнатная квартира на 1 этаже 9 этажного дома, кухня 7.8, комната 18.2, коридор 4.5. Высокий цоколь, все окна в квартире пластиковые, выходят во двор на южную сторону.
+                                </div>
+                                <div class="b-card-object__group-actions-wrapper">
+                                    <a href="#">
+                                        <span class="icon-icon-slash"></span>
+                                        <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-icon-eye-off"></span>
+                                        <span class="b-card-object__group-actions-text">Скрыть</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__bottom">
+                            <button type="button" class="button-default button-sm button-text-bold button-green button-icon button-icon_size"><span class="icon-icon-message"></span> Написать</button>
+                            <div class="b-card-object__group-actions">
+                                <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                                <div class="b-card-object__menu-wrapper">
+                                    <div class="b-card-object__menu js-card-object__menu">
+                                        <img src="./img/svg/icon-dots.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__group-actions-wrapper">
+                                        <a href="#">
+                                            <span class="icon-icon-slash"></span>
+                                            <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon-icon-eye-off"></span>
+                                            <span class="b-card-object__group-actions-text">Скрыть</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__bottom-right">
+                                <div class="b-card-object__date">
+                                    <span class="hidden-md">12 февраля 2020 г.</span>
+                                    <span class="visible-md">12.02.2020</span>
+                                </div>
+                                <div class="b-card-object__date b-card-object__date_dark">
+                                    <span class="hidden-md">обновлено 16 апреля</span>
+                                    <span class="visible-md">обн. 16.04</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card-object b-card-object-favorite b-card-object-favorite-full-width">
+                    <div class="b-card-object__left">
+                        <div class="b-card-object__label b-card-object__label_abs b-card-object__label_sm b-card-object__label_pink">Реклама</div>
+                        <div class="b-card-object__slider-counter">+8 фото</div>
+                        <div class="b-card-object__slider js-card-object__slider">
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                        </div>
+                    </div>
+                    <div class="b-card-object__right">
+                        <div class="b-card-object__top">
+                            <div class="b-card-object__teaser">
+                                <div class="b-card-object__teaser-title"><a href="#">120 м², 3-комнатная, этаж 4/18</a></div>
+                                <div class="b-card-object__teaser-text">Москва, Апрелевка, улица Горького, 34</div>
+                                <div class="b-card-object__teaser-text b-card-object__teaser-text_sm b-card-object__teaser-text_visible">
+                                    <span class="icon-icon-subway orange"></span> Китай город
+                                    <div class="b-card-object-dropdown dropleft">
+                                        <a class="btn dropdown-toggle dropleft" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="./img/svg/icon-round-dots.svg" alt="">
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway orange"></span> Китай город, 20 мин</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway orange"></span> Одинцово, 20 мин</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway orange"></span> Кропоткинская, 3 мин</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__cost">
+                                <div class="b-card-object__cost-normal">8 200 000 ₽</div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__middle">
+                            <div class="b-card-object__middle-left">
+                                <div class="b-card-object__media">
+                                    <div class="b-card-object__media-img" style="background-image: url('./img/content/pik.jpg')"></div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Группа ПИК</div>
+                                        <div class="b-card-object__media-text-teaser">5 777 квартир</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__middle-right">
+                                <div class="b-card-object__media b-card-object__media_inner">
+                                    <div class="b-card-object__media-img">
+                                        <img src="./img/svg/icon-percent.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Льготная ипотека <span class="b-card-object__media-text-teaser">от 50 748 ₽/мес</span></div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__label b-card-object__label_pink">Реклама</div>
+                            </div>
+                            <div class="b-card-object__middle-bottom">
+                                <div class="b-card-object__information">
+                                    Продается 1-комнатная квартира на 1 этаже 9 этажного дома, кухня 7.8, комната 18.2, коридор 4.5. Высокий цоколь, все окна в квартире пластиковые, выходят во двор на южную сторону.
+                                </div>
+                                <div class="b-card-object__group-actions-wrapper">
+                                    <a href="#">
+                                        <span class="icon-icon-slash"></span>
+                                        <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-icon-eye-off"></span>
+                                        <span class="b-card-object__group-actions-text">Скрыть</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__bottom">
+                            <button type="button" class="button-default button-sm button-text-bold button-green button-icon button-icon_reverse button-icon_size"><span class="icon-icon-link"></span> Перейти</button>
+                            <div class="b-card-object__group-actions">
+                                <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                                <div class="b-card-object__menu-wrapper">
+                                    <div class="b-card-object__menu js-card-object__menu">
+                                        <img src="./img/svg/icon-dots.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__group-actions-wrapper">
+                                        <a href="#">
+                                            <span class="icon-icon-slash"></span>
+                                            <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon-icon-eye-off"></span>
+                                            <span class="b-card-object__group-actions-text">Скрыть</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__bottom-right">
+                                <div class="b-card-object__date b-card-object__date_dark">
+                                    <span class="hidden-md">4 апреля 2020 г.</span>
+                                    <span class="visible-md">16.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card-object b-card-object-favorite b-card-object-favorite-full-width">
+                    <div class="b-card-object__left">
+                        <div class="b-card-object__label b-card-object__label_abs b-card-object__label_sm b-card-object__label_yellow">Торг, возможен обмен</div>
+                        <div class="b-card-object__slider-counter">+2 фото</div>
+                        <div class="b-card-object__slider js-card-object__slider">
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                        </div>
+                    </div>
+                    <div class="b-card-object__right">
+                        <div class="b-card-object__top">
+                            <div class="b-card-object__teaser">
+                                <div class="b-card-object__teaser-title"><a href="#">Студия 38.4 м², 8 этаж</a></div>
+                                <div class="b-card-object__teaser-text">Одинцово, Каштановая улица, 6</div>
+                                <div class="b-card-object__teaser-text b-card-object__teaser-text_sm b-card-object__teaser-text_visible">
+                                    <span class="icon-icon-subway orange"></span> Китай город
+                                    <div class="b-card-object-dropdown dropleft">
+                                        <a class="btn dropdown-toggle dropleft" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="./img/svg/icon-round-dots.svg" alt="">
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway orange"></span> Китай город, 20 мин</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway orange"></span> Одинцово, 20 мин</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway orange"></span> Кропоткинская, 3 мин</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__cost">
+                                <div class="b-card-object__cost-normal">1 950 000 ₽</div>
+                                <div class="b-card-object__cost-info">
+                                    <!--
+                                    triangle-bottom
+                                    triangle-top
+                                    -->
+                                    <span class="triangle-bottom"></span>
+                                    170 542 ₽/м²
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="b-card-object__middle">
+                            <div class="b-card-object__middle-left">
+                                <div class="b-card-object__media">
+                                    <div class="b-card-object__media-img" style="background-image: url('./img/content/avatar2.jpg')"></div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Констанин Константинович Константиновский</div>
+                                        <div class="b-card-object__media-text-teaser">Риэлтор</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__middle-right">
+                                <div class="b-card-object__media b-card-object__media_inner">
+                                    <div class="b-card-object__media-img">
+                                        <img src="./img/svg/icon-percent.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Льготная ипотека <span class="b-card-object__media-text-teaser">от 50 748 ₽/мес</span></div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__label b-card-object__label_yellow">Торг, возможен обмен</div>
+                            </div>
+                            <div class="b-card-object__middle-bottom">
+                                <div class="b-card-object__information">
+                                    Продается отличная квартира - студия. Одно из последних предложений, с 2мя окнами! Лучшее предложение, по отличной цене!
+                                </div>
+                                <div class="b-card-object__group-actions-wrapper">
+                                    <a href="#">
+                                        <span class="icon-icon-slash"></span>
+                                        <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-icon-eye-off"></span>
+                                        <span class="b-card-object__group-actions-text">Скрыть</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__bottom">
+                            <button type="button" class="button-default button-sm button-text-bold button-green button-icon button-icon_size"><span class="icon-icon-phone-in"></span> Позвонить</button>
+                            <div class="b-card-object__group-actions">
+                                <a class="b-card-object-favorite__button-add active js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                                <div class="b-card-object__menu-wrapper">
+                                    <div class="b-card-object__menu js-card-object__menu">
+                                        <img src="./img/svg/icon-dots.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__group-actions-wrapper">
+                                        <a href="#">
+                                            <span class="icon-icon-slash"></span>
+                                            <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon-icon-eye-off"></span>
+                                            <span class="b-card-object__group-actions-text">Скрыть</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__bottom-right">
+                                <div class="b-card-object__date">
+                                    <span class="hidden-md">12 февраля 2020 г.</span>
+                                    <span class="visible-md">12.02.2020</span>
+                                </div>
+                                <div class="b-card-object__date b-card-object__date_dark">
+                                    <span class="hidden-md">4 апреля 2020 г.</span>
+                                    <span class="visible-md">16.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card-object b-card-object-favorite b-card-object-favorite-full-width">
+                    <div class="b-card-object__left">
+                        <div class="b-card-object__slider-counter">+12 фото</div>
+                        <div class="b-card-object__slider js-card-object__slider">
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                            <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                        </div>
+                    </div>
+                    <div class="b-card-object__right">
+                        <div class="b-card-object__top">
+                            <div class="b-card-object__teaser">
+                                <div class="b-card-object__teaser-title"><a href="#">215 м², 6-комнатная, этаж 2/6</a></div>
+                                <div class="b-card-object__teaser-text">Москва, улица Остоженка, 3/14</div>
+                                <div class="b-card-object__teaser-text b-card-object__teaser-text_sm b-card-object__teaser-text_visible">
+                                    <span class="icon-icon-subway red"></span>Кропоткинская, 3 мин
+                                    <div class="b-card-object-dropdown dropleft">
+                                        <a class="btn dropdown-toggle dropleft" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="./img/svg/icon-round-dots.svg" alt="">
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway red"></span> Китай город, 20 мин</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway red"></span> Одинцово, 20 мин</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon-subway red"></span> Кропоткинская, 3 мин</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__cost">
+                                <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__middle">
+                            <div class="b-card-object__middle-left">
+                                <div class="b-card-object__media">
+                                    <div class="b-card-object__media-img" style="background-image: url('./img/svg/icon-avatar.svg')"></div>
+                                    <div class="b-card-object__media-text">
+                                        <div class="b-card-object__media-text-title">Найт Фрэнк (Night Frank)</div>
+                                        <div class="b-card-object__media-text-teaser">Агентство</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__middle-right"></div>
+                            <div class="b-card-object__middle-bottom">
+                                <div class="b-card-object__information">
+                                    Тишина и приватность. Расположение в районе «Золотой мили». Просторная терраса. Квартира двухуровневая, располагается на 3-4 этажах. Площадь составляет 165, 3 кв м. Высота потолков 3 м. На первом уровне
+                                </div>
+                                <div class="b-card-object__group-actions-wrapper">
+                                    <a href="#">
+                                        <span class="icon-icon-slash"></span>
+                                        <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-icon-eye-off"></span>
+                                        <span class="b-card-object__group-actions-text">Скрыть</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object__bottom">
+                            <button type="button" class="button-default button-text-bold button-green button-icon button-icon_size"><span class="icon-icon-phone-in"></span> Позвонить</button>
+                            <div class="b-card-object__group-actions">
+                                <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                                <div class="b-card-object__menu-wrapper">
+                                    <div class="b-card-object__menu js-card-object__menu">
+                                        <img src="./img/svg/icon-dots.svg" alt="">
+                                    </div>
+                                    <div class="b-card-object__group-actions-wrapper">
+                                        <a href="#">
+                                            <span class="icon-icon-slash"></span>
+                                            <span class="b-card-object__group-actions-text">Пожаловаться</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon-icon-eye-off"></span>
+                                            <span class="b-card-object__group-actions-text">Скрыть</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-card-object__bottom-right">
+                                <div class="b-card-object__date b-card-object__date_dark">
+                                    <span class="hidden-md">4 апреля 2020 г.</span>
+                                    <span class="visible-md">16.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-paginator b-paginator_modified">
+                <div class="b-paginator__left">
+                    <div class="b-paginator__show">
+                        <span class="b-paginator__show-text">Показывать по </span>
+                        <select name="" class="b-select b-select-page">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="b-paginator__center">
+                    <div class="b-paginator__nav">
+                        <a class="b-paginator__nav-point" href="#"><span class="icon-icon-point-left"></span></a>
+                        <a href="#">1</a>
+                        <a href="#">
+                            <div class="b-paginator__nav-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a class="b-paginator__nav_active" href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">
+                            <div class="b-paginator__nav-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="#">56</a>
+                        <a class="b-paginator__nav-point" href="#"><span class="icon-icon-point-right"></span></a>
+                    </div>
+                </div>
+                <div class="b-paginator__right">
+                    <div class="b-paginator__select-page">
+                        <span class="b-paginator__select-page-text js-paginator-page-focus">Страница</span>
+                        <input id="b-paginator-input" class="b-paginator__select-page-input" type="text" value="8" autocorrect="off" autocomplete="off">
+                        <span class="b-paginator__select-page-text_bold">из 56</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--b-footer-->
+    <div class="b-footer">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-4 b-footer__left">
+                    <div class="b-footer__logo">
+                        <a href="#">домда</a>
+                    </div>
+                    <div class="b-footer__copy">
+                        © ООО «ДомДа», 2020
+                        <br>
+                        Все права на материалы сайта защищены законодательством Российской Федерации.
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__center">
+                    <div class="b-footer__wrapper">
+                        <div class="b-footer__wrapper-left">
+                            <nav class="b-footer__navi">
+                                <ul>
+                                    <li><a href="#">О проекте</a></li>
+                                    <li><a href="#">Партнерам</a></li>
+                                    <li><a href="#">Карьера</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="b-footer__wrapper-right">
+                            <div class="b-footer__support">
+                                <a href="tel:+88006459999">8 800 645-99-99</a>
+                                <span>Служба поддержки</span>
+                            </div>
+                            <div class="b-footer__helper">
+                                <a href="#">Условия использования</a>
+                                <br>
+                                <a href="#">Политика о данных пользователей</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__right">
+                    <div class="b-footer_centered">
+                        <div class="b-footer__group">
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/appstore.svg" alt=""></a>
+                            </div>
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/googleplay.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="b-footer__social">
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-fb"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-vk"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-ok"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-yt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end b-footer-->
+</div>
+
+
+<script src="./js/scripts.min.js"></script>
+<script src="./js/common.js"></script>
+
+<!--модальное окно-->
+<div id="modal-auth" class="mfp-hide b-modal-auth">
+    <button type="button" class="mfp-close">Закрыть</button>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="auth-tab" data-toggle="tab" href="#auth" role="tab" aria-controls="auth" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="reg-tab" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade show active" id="auth" role="tabpanel" aria-labelledby="auth-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass">Восстановить пароль</button>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-form__error-info">
+                <p>Обязательные поля не заполнены:</p>
+                <ul>
+                    <li>Ваше имя</li>
+                    <li>Email</li>
+                    <li>Сообщение</li>
+                </ul>
+            </div>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="reg-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Как вас зовут?</div>
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-auth-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <div class="b-modal__title">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</div>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="auth-tab-inner" data-toggle="tab" href="#auth-inner" role="tab" aria-controls="auth-inner" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reg-tab-inner" data-toggle="tab" href="#reg-inner" role="tab" aria-controls="reg-inner" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade" id="auth-inner" role="tabpanel" aria-labelledby="auth-tab-inner">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email или Телефон</div>
+                    <!--input_error если ошибка-->
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass-inner">Восстановить пароль</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade show active" id="reg-inner" role="tabpanel" aria-labelledby="reg-tab-inner">
+            <p>Для регистрации заполните все поля и укажите типа вашей организации</p>
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">ФИО Руководителя</div>
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Телефон</div>
+                    <input type="tel" class="input js-mask-tel" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified-inner">
+                    <div class="b-radio">
+                        <div class="b-radio__item">
+                            <input id="param1" type="radio" name="param"/>
+                            <label for="param1">Риэлтор, Агентство</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param2" type="radio" name="param" checked/>
+                            <label for="param2">Застройщик</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param3" type="radio" name="param"/>
+                            <label for="param3">Риэлтор, Агентство</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth-inner" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input" autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu" class="mfp-hide">
+    <ul>
+        <li><a href="#">Поиск</a></li>
+        <li><a href="#">Ипотека</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Партнеры</a></li>
+    </ul>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu-auth" class="mfp-hide b-modal-menu-auth">
+    <div class="b-header__auth-menu b-header__auth-menu_inner">
+        <ul>
+            <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+            <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+            <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+            <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-info" class="mfp-hide b-modal-info">
+    <div class="b-modal-info__head">
+        <div class="b-modal-info__title">Заявка отправлена</div>
+        <button type="button" class="mfp-close"></button>
+    </div>
+    <div class="b-modal-info__text">
+        Менеджер свяжется с Вами в ближайшее время, чтобы подтвердить информацию в анкете.
+        После подтверждения аккаунта мы предоставим доступ к Личному кабинету. Пароль будет отправлен на указанный email.
+    </div>
+    <div class="b-form__item_modified-inner">
+        <button type="button" class="button-default button-full-width button-text-bold mfp-close">OK</button>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-params" class="mfp-hide b-modal-filter">
+    <button type="button" class="mfp-close">Закрыть</button>
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="b-modal-filter-loc1" data-toggle="tab" href="#b-modal-filter-tab1" role="tab" aria-controls="auth" aria-selected="true">Жилая</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="b-modal-filter-loc2" data-toggle="tab" href="#b-modal-filter-tab2" role="tab" aria-controls="b-modal-filter-tab2" aria-selected="false">Гаражи</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="b-modal-filter-loc3" data-toggle="tab" href="#b-modal-filter-tab3" role="tab" aria-controls="b-modal-filter-tab3" aria-selected="false">Коммерческая</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade show active" id="b-modal-filter-tab1" role="tabpanel" aria-labelledby="b-modal-filter-loc1">
+            <div class="b-form-params">
+                <form action="">
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Тип недвижимости</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Квартира</option>
+                                    <option value="2">Комната</option>
+                                    <option value="3">Дом</option>
+                                    <option value="4">Участок</option>
+                                    <option value="5">Таунхаус</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type1" type="checkbox" checked="" name="param-type">
+                                    <label for="type1">Квартира</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type2" type="checkbox" name="param-type">
+                                    <label for="type2">Комната</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type3" type="checkbox" name="param-type">
+                                    <label for="type3">Дом</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type4" type="checkbox" name="param-type">
+                                    <label for="type4">Участок</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type5" type="checkbox" name="param-type">
+                                    <label for="type5">Таунхаус</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Рынок</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Вторичный</option>
+                                    <option value="2">Новостройка</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="market1" type="radio" checked="" name="param-market">
+                                    <label for="market1">Вторичный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="market2" type="radio" name="param-market">
+                                    <label for="market2">Новостройка</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Этаж</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_lg input-text-right" value="5" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">этаж</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_lg input-text-right" value="10" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">этаж</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="floor-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="floor-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="floor-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Общая площадь</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="75" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="100" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="all-area-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="all-area-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="all-area-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Площадь кухни</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-right_sm input-text-right" value="" placeholder="" autocorrect="off" pattern="[0-9]*" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-right_sm input-text-right" value="" placeholder="" autocorrect="off" pattern="[0-9]*" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="kitchen-area-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="kitchen-area-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="kitchen-area-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Жилая площадь</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-right_sm input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-right_sm input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="living-area-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="living-area-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="living-area-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Ремонт</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Без ремонта</option>
+                                    <option value="2">Чистовой</option>
+                                    <option value="3">Евроремонт</option>
+                                    <option value="4">Дизайнерский</option>
+                                    <option value="5">Косметич.</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="repairs1" type="radio" name="repairs">
+                                    <label for="repairs1">Без ремонта</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="repairs2" type="radio" name="repairs">
+                                    <label for="repairs2">Чистовой</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="repairs3" type="radio" name="repairs">
+                                    <label for="repairs3">Евроремонт</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="repairs4" type="radio" name="repairs">
+                                    <label for="repairs4">Дизайнерский</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="repairs5" type="radio" name="repairs">
+                                    <label for="repairs5">Косметич.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Балкон / лоджия</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Неважно</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="4">3+</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="balcony1" type="radio" name="balcony">
+                                    <label for="balcony1">Неважно</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="balcony2" type="radio" name="balcony">
+                                    <label for="balcony2">1</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="balcony3" type="radio" name="balcony">
+                                    <label for="balcony3">2</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="balcony4" type="radio" name="balcony">
+                                    <label for="balcony4">3+</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Сан узел</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Любой</option>
+                                    <option value="2">Совмещенный</option>
+                                    <option value="3">Раздельный</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="bathroom1" type="radio" name="bathroom">
+                                    <label for="bathroom1">Любой</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="bathroom2" type="radio" name="bathroom">
+                                    <label for="bathroom2">Совмещенный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="bathroom3" type="radio" name="bathroom">
+                                    <label for="bathroom3">Раздельный</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Высота потолка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Любая</option>
+                                    <option value="2">от 2.5 м</option>
+                                    <option value="3">от 2.7 м</option>
+                                    <option value="4">от 3 м</option>
+                                    <option value="5">от 4+ м</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="heightfloor1" type="radio" name="heightfloor">
+                                    <label for="heightfloor1">Любая</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="heightfloor2" type="radio" name="heightfloor">
+                                    <label for="heightfloor2">от 2.5 м</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="heightfloor3" type="radio" name="heightfloor">
+                                    <label for="heightfloor3">от 2.7 м</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="heightfloor4" type="radio" name="heightfloor">
+                                    <label for="heightfloor4">от 3 м</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="heightfloor5" type="radio" name="heightfloor">
+                                    <label for="heightfloor5">от 4+ м</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Вид из окна</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Любой</option>
+                                    <option value="2">Двор</option>
+                                    <option value="3">Парк</option>
+                                    <option value="4">Водоем</option>
+                                    <option value="5">Лес</option>
+                                    <option value="6">Улица</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="view1" type="radio" name="view">
+                                    <label for="view1">Любой</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="view2" type="radio" name="view">
+                                    <label for="view2">Двор</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="view3" type="radio" name="view">
+                                    <label for="view3">Парк</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="view4" type="radio" name="view">
+                                    <label for="view4">Водоем</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="view5" type="radio" name="view">
+                                    <label for="view5">Лес</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="view6" type="radio" name="view">
+                                    <label for="view6">Улица</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Лифт</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Грузовой</option>
+                                    <option value="2">Пассажирский</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="elevator1" type="radio" name="elevator">
+                                    <label for="elevator1">Грузовой</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="elevator2" type="radio" name="elevator">
+                                    <label for="elevator2">Пассажирский</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Тип дома</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Монолитный</option>
+                                    <option value="2">Кирпично-монолитный</option>
+                                    <option value="3">Кирпичный</option>
+                                    <option value="4">Панельный</option>
+                                    <option value="5">Блочный</option>
+                                    <option value="6">Газобетонный блок</option>
+                                    <option value="7">Пенобетонный блок</option>
+                                    <option value="8">Деревянный</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="house-type1" type="radio" checked name="house-type"/>
+                                    <label for="house-type1">Монолитный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto">
+                                    <input id="house-type2" type="radio" name="house-type"/>
+                                    <label for="house-type2">Кирпично-монолитный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="house-type3" type="radio" name="house-type"/>
+                                    <label for="house-type3">Кирпичный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="house-type4" type="radio" name="house-type"/>
+                                    <label for="house-type4">Панельный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="house-type5" type="radio" name="house-type"/>
+                                    <label for="house-type5">Блочный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto">
+                                    <input id="house-type6" type="radio" name="house-type"/>
+                                    <label for="house-type6">Газобетонный блок</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto">
+                                    <input id="house-type7" type="radio" name="house-type"/>
+                                    <label for="house-type7">Пенобетонный блок</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="house-type8" type="radio" name="house-type"/>
+                                    <label for="house-type8">Деревянный</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Год постройки дома</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-right_md input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">год</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-right_md input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">год</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="building-time-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="год">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="building-time-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="building-time-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="год">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Этажность дома</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-right_lg input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">этаж</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-right_дп input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">этаж</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="all-floor-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="all-floor-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="all-floor-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Расстояние до МКАД</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-right_mds input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">км</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-right_mds input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">км</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="radius-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="км">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="radius-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="radius-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="км">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Коммуникации</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option value="1">Газ</option>
+                                    <option value="2">Отопление</option>
+                                    <option value="3">Канализация</option>
+                                    <option value="4">Электричество</option>
+                                    <option value="5">Водоснабжение</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm1" type="radio" name="comm">
+                                    <label for="comm1">Газ</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm2" type="radio" name="comm">
+                                    <label for="comm2">Отопление</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm3" type="radio" name="comm">
+                                    <label for="comm3">Канализация</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm4" type="radio" name="comm">
+                                    <label for="comm4">Электричество</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm5" type="radio" name="comm">
+                                    <label for="comm5">Водоснабжение</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Парковка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option value="1">Закрытая</option>
+                                    <option value="2">Открытая</option>
+                                    <option value="3">Подземная</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="parking1" type="radio" name="parking">
+                                    <label for="parking1">Закрытая</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="parking2" type="radio" name="parking">
+                                    <label for="parking2">Открытая</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="parking3" type="radio" name="parking">
+                                    <label for="parking3">Подземная</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Площадь участка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-right_sm input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-right_sm input-text-right" value="" placeholder="" pattern="[0-9]*" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="land-area-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="сот">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="land-area-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="land-area-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="сот">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Статус участка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option value="1">ИЖС</option>
+                                    <option value="2">Садовый</option>
+                                    <option value="3">Фермерский</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="status-area1" type="radio" name="status-area">
+                                    <label for="status-area1">ИЖС</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="status-area2" type="radio" name="status-area">
+                                    <label for="status-area2">Садовый</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="status-area3" type="radio" name="status-area">
+                                    <label for="status-area3">Фермерский</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Тип продажи</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Свободный</option>
+                                    <option value="2">Альтернатива</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type-sale1" type="radio" name="type-sale"/>
+                                    <label for="type-sale1">Свободный</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type-sale2" type="radio" name="type-sale"/>
+                                    <label for="type-sale2">Альтернатива</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Дополнительно</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Только с фото</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="more1" type="radio" name="param-more"/>
+                                    <label for="more1">Только с фото</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="b-modal-filter-tab2" role="tabpanel" aria-labelledby="b-modal-filter-loc2">
+            <div class="b-form-params">
+                <form action="">
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Тип недвижимости</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Гараж</option>
+                                    <option value="2">Бокс</option>
+                                    <option value="3">Машиноместо</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type-inner1" type="checkbox" name="param-type-inner">
+                                    <label for="type-inner1">Гараж</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type-inner2" type="checkbox" name="param-type-inner">
+                                    <label for="type-inner2">Бокс</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="type-inner3" type="checkbox" checked="" name="param-type-inner">
+                                    <label for="type-inner3">Машиноместо</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Площадь</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="75" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="100" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="all-area-inner-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="all-area-inner-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="all-area-inner-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Статус участка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Собственность</option>
+                                    <option value="2">Кооператив</option>
+                                    <option value="3">По доверенности</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto">
+                                    <input id="status-inner-area1" type="radio" name="status-inner-area">
+                                    <label for="status-inner-area1">Собственность</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto">
+                                    <input id="status-inner-area2" type="radio" name="status-inner-area">
+                                    <label for="status-inner-area2">Кооператив</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto">
+                                    <input id="status-inner-area3" type="radio" name="status-inner-area">
+                                    <label for="status-inner-area3">По доверенности</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Парковка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Наземная</option>
+                                    <option value="2">Подземная</option>
+                                    <option value="3">Многоуровневая</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="parking-inner1" type="radio" name="parking-inner">
+                                    <label for="parking-inner1">Наземная</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="parking-inner2" type="radio" name="parking-inner">
+                                    <label for="parking-inner2">Подземная</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="parking-inner3" type="radio" name="parking-inner">
+                                    <label for="parking-inner3">Многоуровневая</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Коммуникации</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Охрана</option>
+                                    <option value="2">Электричество</option>
+                                    <option value="3">Отопление</option>
+                                    <option value="4">Водопровод</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm-inner1" type="radio" name="comm-inner">
+                                    <label for="comm-inner1">Охрана</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm-inner2" type="radio" name="comm-inner">
+                                    <label for="comm-inner2">Электричество</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm-inner3" type="radio" name="comm-inner">
+                                    <label for="comm-inner3">Отопление</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="comm-inner4" type="radio" name="comm-inner">
+                                    <label for="comm-inner4">Водопровод</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Инфраструктура</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Автомойка</option>
+                                    <option value="2">Автосервис</option>
+                                    <option value="3">Шиномонтаж</option>
+                                    <option value="4">Вентиляция</option>
+                                    <option value="5">Пожаротушение</option>
+                                    <option value="6">Подъемник</option>
+                                    <option value="7">Смотровая яма</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure1" type="radio" name="infrastructure">
+                                    <label for="infrastructure1">Автомойка</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure2" type="radio" name="infrastructure">
+                                    <label for="infrastructure2">Автосервис</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure3" type="radio" name="infrastructure">
+                                    <label for="infrastructure3">Шиномонтаж</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure4" type="radio" name="infrastructure">
+                                    <label for="infrastructure4">Вентиляция</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure5" type="radio" name="infrastructure">
+                                    <label for="infrastructure5">Пожаротушение</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure6" type="radio" name="infrastructure">
+                                    <label for="infrastructure6">Подъемник</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="infrastructure7" type="radio" name="infrastructure">
+                                    <label for="infrastructure7">Смотровая яма</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="b-modal-filter-tab3" role="tabpanel" aria-labelledby="b-modal-filter-loc3">
+            <div class="b-form-params">
+                <form action="">
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Общая площадь</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="75" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="100" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="all-area-commercial-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="all-area-commercial-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="all-area-commercial-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Площадь участка</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="75" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="100" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="land-area-commercial-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="land-area-commercial-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="land-area-commercial-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="м²">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Класс</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">А</option>
+                                    <option value="2">А+</option>
+                                    <option value="3">B</option>
+                                    <option value="4">B+</option>
+                                    <option value="5">C</option>
+                                    <option value="6">C+</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="class1" type="radio" name="class">
+                                    <label for="class1">А</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="class2" type="radio" name="class">
+                                    <label for="class2">А+</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="class3" type="radio" name="class">
+                                    <label for="class3">B</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="class4" type="radio" name="class">
+                                    <label for="class4">B+</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="class5" type="radio" name="class">
+                                    <label for="class5">C</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="class6" type="radio" name="class">
+                                    <label for="class6">C+</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Ремонт</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Типовой ремонт</option>
+                                    <option value="2">Дизайнерский ремонт</option>
+                                    <option value="3">Под чистовую отделку</option>
+                                    <option value="4">Требуется косметический ремонт</option>
+                                    <option value="5">Требуется капитальный ремонт</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto b-group-buttons__item_auto-size">
+                                    <input id="repairs-inner1" type="radio" name="repairs-inner">
+                                    <label for="repairs-inner1">Типовой ремонт</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto b-group-buttons__item_auto-size">
+                                    <input id="repairs-inner2" type="radio" name="repairs-inner">
+                                    <label for="repairs-inner2">Дизайнерский ремонт</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto b-group-buttons__item_auto-size">
+                                    <input id="repairs-inner3" type="radio" name="repairs-inner">
+                                    <label for="repairs-inner3">Под чистовую отделку</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto b-group-buttons__item_auto-size ">
+                                    <input id="repairs-inner4" type="radio" name="repairs-inner">
+                                    <label for="repairs-inner4">Требуется косметический ремонт</label>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_md b-group-buttons__item_auto b-group-buttons__item_auto-size">
+                                    <input id="repairs-inner5" type="radio" name="repairs-inner">
+                                    <label for="repairs-inner5">Требуется капитальный ремонт</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Этаж</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="75" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="100" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="floor-inner-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="floor-inner-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="floor-inner-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Этажность дома</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-md">
+                                <div class="input-wrapper-two-cols">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="75" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input type="text" class="input input-text-valid input-text-right_sm input-text-right" value="100" pattern="[0-9]*" placeholder="" autocorrect="off" autocomplete="off">
+                                        <span class="input-info input-info_right input-info_gray">м²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-group-buttons hidden-md">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">от</span>
+                                        <input id="floor-inner-house-slider-duo-from" readonly type="text" class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_xlg-percent">
+                                    <div class="b-slider-range-duo">
+                                        <input id="floor-inner-house-slider-duo" type="text" class="input">
+                                    </div>
+                                </div>
+                                <div class="b-group-buttons__item b-group-buttons__item_sm">
+                                    <div class="input-wrapper">
+                                        <span class="input-info input-info_left input-info_gray">до</span>
+                                        <input id="floor-inner-house-slider-duo-to" type="text" readonly class="input input-text-right input-text-valid" placeholder="этажа">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form-params__item">
+                        <div class="b-form-params__item-left">
+                            <div class="b-form-params__label">Дополнительно</div>
+                        </div>
+                        <div class="b-form-params__item-right">
+                            <div class="visible-xs">
+                                <select class="b-select-form" data-placeholder="Выберите…">
+                                    <option></option>
+                                    <option selected value="1">Только с фото</option>
+                                </select>
+                            </div>
+                            <div class="b-group-buttons">
+                                <div class="b-group-buttons__item b-group-buttons__item_sm b-group-buttons__item_auto">
+                                    <input id="more-inner1" type="radio" name="param-more-inner"/>
+                                    <label for="more-inner1">Только с фото</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="b-modal-filter__bottom">
+        <div class="b-modal-filter__bottom-left">
+            <a href="#" class="b-modal-filter__reset">
+                Сбросить параметры <span class="hidden-md">&nbsp;поиска</span> <span class="b-modal-filter__reset-count">4</span>
+            </a>
+        </div>
+        <div class="b-modal-filter__bottom-right">
+                <a href="#" class="b-filter-main__link"><span class="icon-icon-location"></span> На карте</a>
+            <button class="button-blue button-default">Показать <span>1 267</span></button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-gallery" class="mfp-hide b-modal-gallery-ctn">
+    <button type="button" class="mfp-close">Закрыть</button>
+    <div class="b-modal-gallery__wrapper">
+        <div class="b-modal-gallery__left">
+            <div class="swiper-container gallery-top b-modal-gallery__slider-for">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    <div class="swiper-slide b-modal-gallery__slider-for-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"><span class="icon-icon-arrow-right-bold"></span></div>
+                <div class="swiper-button-prev swiper-button-white"><span class="icon-icon-arrow-left-bold"></span></div>
+            </div>
+            <div class="swiper-container gallery-thumbs b-modal-gallery__slider-nav">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/slider-big.jpg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="b-modal-gallery__slider-nav-item" style="background-image:url('./img/content/promo.jpg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-modal-gallery__right">
+            <div class="b-card-object-detail b-card-object-detail-inner">
+                <div class="b-card-object-detail__head">
+                    <div class="b-card-object-detail__head-left">
+                        <div class="b-card-object-detail__title">3-х комнатная квартира, 120 метров, 3/12 этаж</div>
+                        <div class="b-card-object-detail__teaser">Московская область, Москва,
+                            Апрелевка, улица Горького, 34</div>
+                        <div class="b-card-object-detail__text">
+                            <span class="icon-icon-subway orange"></span> Китай-город <span class="b-card-object-detail__helper">400 м</span>
+                        </div>
+                    </div>
+                    <div class="b-card-object-detail__head-bottom">
+                        <div class="b-card-object-detail__head-bottom-left">
+                            <div class="visible-xs">
+                                <div class="b-card-object-detail__head-bottom-group">
+                                    <a class="b-map-full-width__link-map" href="#"><span class="icon-icon-map-pin"></span>На карте</a>
+                                    <a class="b-map-full-width__link-list js-hide-detail-page" href="#"><span class="icon-icon-list"></span>Все объявления в этом доме</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-map-full-width__wrapper">
+                    <div class="b-card-object__media b-card-object__media_inner">
+                        <div class="b-card-object__media-img">
+                            <img src="./img/svg/icon-percent.svg" alt="">
+                        </div>
+                        <div class="b-card-object__media-text">
+                            <div class="b-card-object__media-text-title">Льготная ипотека <span class="b-card-object__media-text-teaser">от 50 748 ₽/мес</span></div>
+                        </div>
+                    </div>
+                    <div class="b-map-full-width__wrapper-flex">
+                        <div class="b-card-object__cost">
+                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                            <div class="b-card-object__cost-info">
+                                <!--
+                                triangle-bottom
+                                triangle-top
+                                -->
+                                <span class="triangle-bottom"></span>
+                                170 542 ₽/м²
+                            </div>
+                        </div>
+                        <div class="b-card-object__media">
+                            <div class="b-card-object__media-img" style="background-image: url('./img/content/incom.jpg')"></div>
+                            <div class="b-card-object__media-text">
+                                <div class="b-card-object__media-text-title">Александр Иванович Петров</div>
+                                <div class="b-card-object__media-text-teaser">Инком Недвижимость</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-card-object-detail__group-buttons">
+                        <div class="b-card-object-detail__group-buttons-wrapper">
+                            <a href="#" class="b-card-object-detail__group-buttons-item">
+                                            <span class="b-card-object-detail__group-buttons-round">
+                                                <span class="icon-icon-phone-out"></span>
+                                            </span>
+                                <span>Позвонить <br>продавцу</span>
+                            </a>
+                            <a href="#" class="b-card-object-detail__group-buttons-item">
+                                            <span class="b-card-object-detail__group-buttons-round">
+                                                <span class="icon-icon-message"></span>
+                                            </span>
+                                <span>Отправить <br>сообщение</span>
+                            </a>
+                            <a href="#" class="b-card-object-detail__group-buttons-item">
+                                            <span class="b-card-object-detail__group-buttons-round">
+                                                <span class="icon-icon-phone-in"></span>
+                                            </span>
+                                <span>Обратный <br>звонок</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-call" class="mfp-hide b-modal-call">
+    <button type="button" class="mfp-close"></button>
+    <div class="b-modal-call__ctn">
+        <div class="b-card-object__media b-card-object__media_lg">
+            <div class="b-card-object__media-img" style="background-image: url('./img/content/logo-fly.jpg')"></div>
+            <div class="b-card-object__media-text">
+                <div class="b-card-object__media-text-title">Александр Иванович Петров</div>
+                <div class="b-card-object__media-text-teaser">Группа компаний «Самолет»</div>
+                <div class="b-card-object__media-text-link"><a href="#">212 объявлений <span class="icon-icon-point-right"></span></a></div>
+            </div>
+        </div>
+        <div class="b-modal-call__phone">
+            <a href="tel:+79038621618">+7 903 862-16-18</a>
+            <span>Скажите Александру, что нашли это объявлние на ДомДа, пожалуйста!</span>
+        </div>
+        <div class="b-card-object b-card-object-favorite b-card-object-favorite-compact">
+            <div class="b-card-object__left">
+                <div class="b-card-object__slider js-card-object-slider-compact">
+                    <a href="#" class="b-card-object__slider-item js-show-detail-page" style="background-image: url('./img/content/object.jpg')"></a>
+                    <a href="#" class="b-card-object__slider-item js-show-detail-page" style="background-image: url('./img/content/object2.jpg')"></a>
+                    <a href="#" class="b-card-object__slider-item js-show-detail-page" style="background-image: url('./img/content/object3.jpg')"></a>
+                </div>
+            </div>
+            <div class="b-card-object__right">
+                <div class="b-card-object__top">
+                    <div class="b-card-object__teaser">
+                        <div class="b-card-object__teaser-title"><a class="js-show-detail-page" href="#">60.4 м², 2-комнатная</a></div>
+                        <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                    </div>
+                    <div class="b-card-object__cost">
+                        <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                        <div class="b-card-object__cost-info">
+                            <!--
+                            triangle-bottom
+                            triangle-top
+                            -->
+                            <span class="triangle-bottom"></span>
+                            170 542 ₽/м²
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card-object__middle">
+                    <div class="b-card-object__media b-card-object__media_inner">
+                        <div class="b-card-object__media-img">
+                            <img src="./img/svg/icon-percent.svg" alt="">
+                        </div>
+                        <div class="b-card-object__media-text">
+                            <div class="b-card-object__media-text-title">Льготная ипотека <span class="b-card-object__media-text-teaser">от 50 748 ₽/мес</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-card-object__bottom">
+                    <a class="b-card-object-favorite__button-add js-add-favorite-button" href="#"><span class="icon-icon-star-inner"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

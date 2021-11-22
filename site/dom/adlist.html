@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+<div class="l-footer-wrapper">
+    <div class="l-content">
+
+        <!--b-header-->
+        <div class="b-header">
+            <div class="container-xl">
+                <div class="b-header__left">
+                    <div class="b-header__logo">
+                        <a class="b-header__logo-text" href="/">домда</a>
+                        <a class="b-header__logo-link" href="#">Москва и МО</a>
+                    </div>
+                </div>
+                <div class="b-header__right">
+                    <nav class="b-header__navi">
+                        <ul>
+                            <li><a href="#">Поиск</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- добавляем b-header__auth_in если
+                         пользователь авторизован
+                         добавляем b-header__auth_online если
+                         пользователь online -->
+                    <div class="b-header__auth">
+                        <a class="b-header__auth-link js-modal" href="#modal-auth">Войти</a>
+                        <div href="#" class="b-header__auth-avatar" style="background-image: url('./img/content/avatar.jpg')">
+                            <a class="b-header__auth-modal js-modal-menu" href="#modal-menu-auth"></a>
+                            <div class="b-header__auth-menu">
+                                <ul>
+                                    <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+                                    <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+                                    <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+                                    <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- добавляем класс b-header__favorite_added
+                         когда есть избранное -->
+                    <div class="b-header__favorite">
+                        <a href="#">
+                            <span class="icon-icon-star"></span><span class="b-header__favorite-count">6</span>
+                        </a>
+                    </div>
+                    <div class="b-header__button">
+                        <a href="new-object.html" class="button-default button-shadow">Разместить объявление</a>
+                    </div>
+                    <div class="b-header__burger">
+                        <a class="js-modal-menu" href="#modal-menu"><span class="icon-icon-burger"></span></a>
+                        <a class="js-modal-menu-close" href="#"><span class="icon-icon-close"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end b-header-->
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-12">
+                    <nav class="b-nav-sidebar swiper-container swiper-box">
+                        <ul class="js-slider-nav-sidebar swiper-wrapper">
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="profile.html">Профиль</a></li>
+                            <li class="b-nav-sidebar__item b-nav-sidebar__item_active swiper-slide"><a href="adlist.html">Мои объявления</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="my-search.html">Мой поиск</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="favorites.html">Избранное</a></li>
+                            <li class="b-nav-sidebar__item b-nav-sidebar__item_round swiper-slide"><a href="chats.html">Сообщения <span>2</span></a></li>
+                            <li class="b-nav-sidebar__item b-nav-sidebar__item_round swiper-slide"><a href="notifications.html">Уведомления <span>4</span></a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="wallet.html">Кошелек</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+                            <li class="b-nav-sidebar__item swiper-slide"><a href="#">Ипотека</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-10 col-md-9 col-sm-12">
+                    <div class="l-wrapper-left-side">
+                        <div class="b-sorter">
+                            <div class="b-sorter__left">
+                                <div class="b-sorter__title">Мои объявления</div>
+                            </div>
+                            <div class="b-sorter__right">
+                                <div class="b-sorter__item">
+                                    <div class="b-sorter__label">Статус:</div>
+                                    <select name="" class="b-select">
+                                        <option value="inner">любой</option>
+                                        <option value="status1">статус 1</option>
+                                        <option value="status2">статус 2</option>
+                                    </select>
+                                </div>
+                                <div class="b-sorter__item">
+                                    <div class="b-sorter__label">Сортировка:</div>
+                                    <select name="" class="b-select">
+                                        <option value="new">сначала новые</option>
+                                        <option value="old">сначала старые</option>
+                                        <option value="old">льготная ипотека</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <div class="b-card-object__slider js-card-object__slider">
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                                </div>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_green">
+                                        <span class="hidden-md">Опубликовано 12 февраля 2020 г.</span>
+                                        <span class="visible-md">Опубликовано 12.04.2020 г.</span>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                            <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                        </div>
+                                        <div class="b-card-object__cost">
+                                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                            <div class="b-card-object__cost-info">
+                                                <!--
+                                                triangle-bottom
+                                                triangle-top
+                                                -->
+                                                <span class="triangle-bottom"></span>
+                                                170 542 ₽/м²
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-card-object__middle-right">
+                                        <div class="b-card-object__date">
+                                            <span class="hidden-md">обновлено 16 апреля</span>
+                                            <span class="visible-md">обн. 16.04</span>
+                                        </div>
+                                        <div class="b-card-object__stat">
+                                            <div>1 200 просмотров</div>
+                                            <div>300 звонков</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-bold button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-sm button-text-medium button-grey">Снять <span class="hidden-md">с публикации</span></button>
+                                        <button type="button" class="button-default button-sm button-text-medium button-grey">Продано</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <a href="#" class="b-card-object__img" style="background-image: url('./img/content/furnitures.svg')"></a>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_dark">Черновик</div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">Квартира</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-medium button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <div class="b-card-object__slider js-card-object__slider">
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                                </div>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_yellow">На модераци с 14.03.2020 г.</div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                            <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                        </div>
+                                        <div class="b-card-object__cost">
+                                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-bold button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <div class="b-card-object__slider js-card-object__slider">
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                                </div>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_red">Отклонено 15.04.2020 г.</div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                            <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                        </div>
+                                        <div class="b-card-object__cost">
+                                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-bold button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <div class="b-card-object__slider js-card-object__slider">
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                                </div>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_gray">
+                                        <span class="hidden-md">Снято с публикации 12 февраля 2020 г.</span>
+                                        <span class="visible-md">Снято 12.02.2020 г.</span>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                            <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                        </div>
+                                        <div class="b-card-object__cost">
+                                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                            <div class="b-card-object__cost-info">
+                                                <!--
+                                                triangle-bottom
+                                                triangle-top
+                                                -->
+                                                <span class="triangle-bottom"></span>
+                                                170 542 ₽/м²
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-card-object__middle-right">
+                                        <div class="b-card-object__date">
+                                            <span class="hidden-md">обновлено 16 апреля</span>
+                                            <span class="visible-md">обн. 16.04</span>
+                                        </div>
+                                        <div class="b-card-object__stat">
+                                            <div>1 200 просмотров</div>
+                                            <div>300 звонков</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-bold button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <div class="b-card-object__slider js-card-object__slider">
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                                </div>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_white">
+                                        <span class="hidden-md">Истекло размещение 02 апреля 2020 г.</span>
+                                        <span class="visible-md">Истекло 02.04.2020 г.</span>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                            <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                        </div>
+                                        <div class="b-card-object__cost">
+                                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                            <div class="b-card-object__cost-info">
+                                                <!--
+                                                triangle-bottom
+                                                triangle-top
+                                                -->
+                                                <span class="triangle-bottom"></span>
+                                                170 542 ₽/м²
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-card-object__middle-right">
+                                        <div class="b-card-object__date">
+                                            <span class="hidden-md">обновлено 16 апреля</span>
+                                            <span class="visible-md">обн. 16.04</span>
+                                        </div>
+                                        <div class="b-card-object__stat">
+                                            <div>1 200 просмотров</div>
+                                            <div>300 звонков</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-bold button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-card-object">
+                            <div class="b-card-object__left">
+                                <div class="b-card-object__slider js-card-object__slider">
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object.jpg')"></a>
+                                    <a href="#" class="b-card-object__slider-item" style="background-image: url('./img/content/object2.jpg')"></a>
+                                    <a  class="b-card-object__slider-item" style="background-image: url('./img/content/object3.jpg')"></a>
+                                </div>
+                            </div>
+                            <div class="b-card-object__right">
+                                <div class="b-card-object__top">
+                                    <div class="b-card-object__number">№ 34802384092380</div>
+                                    <!--
+                                    b-card-object__label_green
+                                    b-card-object__label_yellow
+                                    b-card-object__label_red
+                                    b-card-object__label_gray
+                                    b-card-object__label_blue
+                                    b-card-object__label_white
+                                    b-card-object__label_dark
+                                    b-card-object__label_pink
+                                    -->
+                                    <div class="b-card-object__label b-card-object__label_blue">Продано <span class="hidden-md"> 02 апреля 2020 г.</span> <span class="visible-md_inline-block">02.04.2020 г.</span></div>
+                                </div>
+                                <div class="b-card-object__middle">
+                                    <div class="b-card-object__middle-left">
+                                        <div class="b-card-object__teaser">
+                                            <div class="b-card-object__teaser-title"><a href="#">60.4 м², 2-комнатная</a></div>
+                                            <div class="b-card-object__teaser-text">Ивантеевка, улица Дзержинского, 8к1</div>
+                                        </div>
+                                        <div class="b-card-object__cost">
+                                            <div class="b-card-object__cost-normal">7 650 000 ₽</div>
+                                            <div class="b-card-object__cost-info">
+                                                <!--
+                                                triangle-bottom
+                                                triangle-top
+                                                -->
+                                                <span class="triangle-bottom"></span>
+                                                170 542 ₽/м²
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-card-object__middle-right">
+                                        <div class="b-card-object__date">
+                                            <span class="hidden-md">обновлено 16 апреля</span>
+                                            <span class="visible-md">обн. 16.04</span>
+                                        </div>
+                                        <div class="b-card-object__stat">
+                                            <div>1 200 просмотров</div>
+                                            <div>300 звонков</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-card-object__bottom">
+                                    <div class="b-card-object__group-button">
+                                        <button type="button" class="button-default button-sm button-text-bold button-green">Редактировать</button>
+                                        <button type="button" class="button-default button-delete button-text-medium button-grey"><span class="icon-icon-delete"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-paginator">
+                            <div class="b-paginator__left">
+                                <div class="b-paginator__show">
+                                    <span class="b-paginator__show-text">Показывать по </span>
+                                    <select name="" class="b-select b-select-page">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="b-paginator__center">
+                                <div class="b-paginator__nav">
+                                    <a class="b-paginator__nav-point" href="#"><span class="icon-icon-point-left"></span></a>
+                                    <a href="#">1</a>
+                                    <a href="#">
+                                        <div class="b-paginator__nav-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </a>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a class="b-paginator__nav_active" href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a href="#">10</a>
+                                    <a href="#">
+                                        <div class="b-paginator__nav-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </a>
+                                    <a href="#">56</a>
+                                    <a class="b-paginator__nav-point" href="#"><span class="icon-icon-point-right"></span></a>
+                                </div>
+                            </div>
+                            <div class="b-paginator__right">
+                                <div class="b-paginator__select-page">
+                                    <span class="b-paginator__select-page-text js-paginator-page-focus">Страница</span>
+                                    <input id="b-paginator-input" class="b-paginator__select-page-input" type="text" value="8"  autocorrect="off" autocomplete="off">
+                                    <span class="b-paginator__select-page-text_bold">из 56</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--b-footer-->
+    <div class="b-footer">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-4 b-footer__left">
+                    <div class="b-footer__logo">
+                        <a href="#">домда</a>
+                    </div>
+                    <div class="b-footer__copy">
+                        © ООО «ДомДа», 2020
+                        <br>
+                        Все права на материалы сайта защищены законодательством Российской Федерации.
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__center">
+                    <div class="b-footer__wrapper">
+                        <div class="b-footer__wrapper-left">
+                            <nav class="b-footer__navi">
+                                <ul>
+                                    <li><a href="#">О проекте</a></li>
+                                    <li><a href="#">Партнерам</a></li>
+                                    <li><a href="#">Карьера</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="b-footer__wrapper-right">
+                            <div class="b-footer__support">
+                                <a href="tel:+88006459999">8 800 645-99-99</a>
+                                <span>Служба поддержки</span>
+                            </div>
+                            <div class="b-footer__helper">
+                                <a href="#">Условия использования</a>
+                                <br>
+                                <a href="#">Политика о данных пользователей</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 b-footer__right">
+                    <div class="b-footer_centered">
+                        <div class="b-footer__group">
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/appstore.svg" alt=""></a>
+                            </div>
+                            <div class="b-footer__group-item">
+                                <a href="#"><img src="./img/content/googleplay.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="b-footer__social">
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-fb"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-vk"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-ok"></span></a>
+                            </div>
+                            <div class="b-footer__social-item">
+                                <a href="#"><span class="icon-icon-yt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end b-footer-->
+</div>
+
+
+<script src="./js/scripts.min.js"></script>
+<script src="./js/common.js"></script>
+
+<!--модальное окно-->
+<div id="modal-auth" class="mfp-hide b-modal-auth">
+    <button type="button" class="mfp-close">Закрыть</button>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="auth-tab" data-toggle="tab" href="#auth" role="tab" aria-controls="auth" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="reg-tab" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade show active" id="auth" role="tabpanel" aria-labelledby="auth-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input"  autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input"  autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass">Восстановить пароль</button>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="reg-tab">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Как вас зовут?</div>
+                    <input type="text" class="input"  autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error"  autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input"  autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                    <button type="button" class="button-default button-full-width button-text-bold">Авторизация через Госуслуги</button>
+                </div>
+            </form>
+            <div class="b-modal-auth__link">
+                <a class="js-modal" href="#modal-auth-inner">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-auth-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <div class="b-modal__title">Доступ для риэлторов, агентств, застройщиков и оценочных компаний</div>
+
+    <!--компонент bootstrap-->
+    <ul class="b-nav-tabs nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="auth-tab-inner" data-toggle="tab" href="#auth-inner" role="tab" aria-controls="auth-inner" aria-selected="true">Войти</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reg-tab-inner" data-toggle="tab" href="#reg-inner" role="tab" aria-controls="reg-inner" aria-selected="false">Зарегистрироваться</a>
+        </li>
+    </ul>
+    <div class="b-tab-content tab-content">
+        <div class="tab-pane fade" id="auth-inner" role="tabpanel" aria-labelledby="auth-tab-inner">
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">Email или Телефон</div>
+                    <!--input_error если ошибка-->
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Пароль</div>
+                    <!--input_error если ошибка-->
+                    <input type="password" class="input" autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Войти</button>
+                    <button type="button" class="button-default button-grey button-full-width js-modal" data-mfp-src="#modal-recovery-pass-inner">Восстановить пароль</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade show active" id="reg-inner" role="tabpanel" aria-labelledby="reg-tab-inner">
+            <p>Для регистрации заполните все поля и укажите типа вашей организации</p>
+            <form class="b-form" action="">
+                <div class="b-form__item">
+                    <div class="label-default">ФИО Руководителя</div>
+                    <input type="text" class="input" autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Телефон</div>
+                    <input type="tel" class="input js-mask-tel"  autocorrect="off" autocomplete="off">
+                </div>
+                <div class="b-form__item">
+                    <div class="label-default">Email</div>
+                    <!--input_error если ошибка-->
+                    <input type="email" class="input input_error"  autocorrect="off" autocomplete="off">
+                    <!--input_error-text текст ошибки-->
+                    <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+                </div>
+                <div class="b-form__item b-form__item_modified-inner">
+                    <div class="b-radio">
+                        <div class="b-radio__item">
+                            <input id="param1" type="radio" name="param"/>
+                            <label for="param1">Риэлтор, Агентство</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param2" type="radio" name="param" checked/>
+                            <label for="param2">Застройщик</label>
+                        </div>
+                        <div class="b-radio__item">
+                            <input id="param3" type="radio" name="param"/>
+                            <label for="param3">Риэлтор, Агентство</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form__item b-form__item_modified">
+                    <button type="button" class="button-default button-full-width button-text-bold">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input"  autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-recovery-pass-inner" class="mfp-hide b-modal-auth">
+    <div class="b-modal-auth__group-link">
+        <a href="#modal-auth-inner" class="js-modal"><span class="icon-icon-arrow-left"></span>Назад</a>
+        <button type="button" class="mfp-close">Закрыть</button>
+    </div>
+    <p>Для восстановления доступа укажите Ваш электронный адрес</p>
+    <div class="b-form">
+        <div class="b-form__item">
+            <div class="label-default">Email</div>
+            <!--input_error если ошибка-->
+            <input type="email" class="input"  autocorrect="off" autocomplete="off">
+            <!--input_error-text текст ошибки-->
+            <div class="input_error-text">Проверьте данные, пользователь уже зарегистрирован</div>
+        </div>
+        <div class="b-form__item_modified">
+            <button type="button" class="button-default button-full-width button-text-bold js-modal" data-mfp-src="#modal-info">Восстановить пароль</button>
+        </div>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu" class="mfp-hide">
+    <ul>
+        <li><a href="#">Поиск</a></li>
+        <li><a href="#">Ипотека</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Партнеры</a></li>
+    </ul>
+</div>
+
+<!--модальное окно-->
+<div id="modal-menu-auth" class="mfp-hide b-modal-menu-auth">
+    <div class="b-header__auth-menu b-header__auth-menu_inner">
+        <ul>
+            <li class="b-header__auth-menu-item"><a href="profile.html">Профиль</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_active"><a href="adlist.html">Мои объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="my-search.html">Мой поиск</a></li>
+            <li class="b-header__auth-menu-item"><a href="favorites.html">Избранное</a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="chats.html">Сообщения <span>2</span></a></li>
+            <li class="b-header__auth-menu-item b-header__auth-menu-item_round"><a href="notifications.html">Уведомления <span>4</span></a></li>
+            <li class="b-header__auth-menu-item"><a href="wallet.html">Кошелек</a></li>
+            <li class="b-header__auth-menu-item"><a href="adlist-hidden.html">Скрытые объявления</a></li>
+            <li class="b-header__auth-menu-item"><a href="#">Ипотека</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--модальное окно-->
+<div id="modal-info" class="mfp-hide b-modal-info">
+    <div class="b-modal-info__head">
+        <div class="b-modal-info__title">Заявка отправлена</div>
+        <button type="button" class="mfp-close"></button>
+    </div>
+    <div class="b-modal-info__text">
+        Менеджер свяжется с Вами в ближайшее время, чтобы подтвердить информацию в анкете.
+        После подтверждения аккаунта мы предоставим доступ к Личному кабинету. Пароль будет отправлен на указанный email.
+    </div>
+    <div class="b-form__item_modified-inner">
+        <button type="button" class="button-default button-full-width button-text-bold mfp-close">OK</button>
+    </div>
+</div>
+
+</body>
+</html>
