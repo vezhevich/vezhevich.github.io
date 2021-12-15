@@ -772,12 +772,12 @@ $(function() {
 
 //ховер кнопки меню каталога
 $(function() {
-    $('.b-header__catalog-dropdown-nav-item').mouseover(
+    $('.js-show-dropdown').mouseover(
         function(){
             $('.b-header__catalog-dropdown').addClass('b-header__catalog-dropdown_visible');
         }
     );
-    $('.b-header__catalog-dropdown-nav-item').mouseleave(
+    $('.js-show-dropdown').mouseleave(
         function(){
             $('.b-header__catalog-dropdown').removeClass('b-header__catalog-dropdown_visible');
         }
