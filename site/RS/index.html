@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>Главная страница</title>
     <meta name="description" content="Description text">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/x-icon" rel="shortcut icon" href="images/favicon.png">
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -2903,6 +2903,34 @@
             <li><a href="shopping-cart.html">Корзина</a></li>
             <li><a href="thanks.html">Спасибо за заказ!</a></li>
         </ol>
+    </div>
+</div>
+
+<!--отзыв со страницы контактов-->
+<div id="modal-feedback-inner" class="mfp-hide b-modal b-modal-feedback">
+    <div class="b-modal__wrapper">
+        <button type="button" class="b-modal__close mfp-close btn"></button>
+        <div class="b-modal__title">Обратная связь</div>
+        <div class="b-modal__sub-title">Напишите нам и мы свяжемся с вами!</div>
+        <form action="url">
+            <div class="b-form__item">
+                <div class="b-form__input-wrapper">
+                    <!--input_error для ошибки-->
+                    <input type="text" class="b-form__input input" placeholder=" ">
+                    <label class="b-form__label">Имя</label>
+                </div>
+                <!--input_error-text текст ошибки-->
+                <div style="display: none" class="input_error-text">Обязательное поле</div>
+            </div>
+            <div class="b-form__item">
+                <!--input_error для ошибки-->
+                <input type="tel" class="b-form__input input" placeholder="+7 (___) ___-__-__">
+                <!--input_error-text текст ошибки-->
+                <div style="display: none" class="input_error-text">Обязательное поле</div>
+            </div>
+            <textarea class="b-modal-feedback__textarea textarea" name="feedbackText" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            <button class="button button-primary button-primary_bg js-modal" data-mfp-src="#modal-app-message" type="submit">Отправить обращение</button>
+        </form>
     </div>
 </div>
 
