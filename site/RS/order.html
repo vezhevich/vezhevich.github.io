@@ -139,55 +139,13 @@
                         <div class="b-order__step-number">2</div>
                         <div class="b-order__step-title">Контактные данные</div>
                         <div class="b-order__helper">Уже зарегистрированы? <a href="authorization.html">Войдите</a> и вам не придётся заполнять форму снова, а заказ сохранится в личном кабинете</div>
-                        <div class="b-form-two-cols">
-                            <div class="b-form__item">
-                                <div class="b-form__input-wrapper">
-                                    <!--input_error для ошибки-->
-                                    <input type="text" class="b-form__input input" placeholder=" ">
-                                    <label class="b-form__label" >Имя</label>
-                                </div>
-                                <!--input_error-text текст ошибки-->
-                                <div style="display: none" class="input_error-text">Обязательное поле</div>
-                            </div>
-                            <div class="b-form__item">
-                                <div class="b-form__input-wrapper">
-                                    <!--input_error для ошибки-->
-                                    <input type="text" class="b-form__input input" placeholder=" ">
-                                    <label class="b-form__label">Фамилия</label>
-                                </div>
-                                <!--input_error-text текст ошибки-->
-                                <div style="display: none" class="input_error-text">Обязательное поле</div>
-                            </div>
-                            <div class="b-form__item">
-                                <div class="b-form__input-wrapper">
-                                    <!--input_error для ошибки-->
-                                    <input type="email" class="b-form__input input" placeholder=" ">
-                                    <label class="b-form__label">E-mail</label>
-                                </div>
-                                <!--input_error-text текст ошибки-->
-                                <div style="display: none" class="input_error-text">Обязательное поле</div>
-                            </div>
-                            <div class="b-form__item">
-                                <div class="b-form__input-wrapper">
-                                    <!--input_error для ошибки-->
-                                    <input type="tel" class="b-form__input input" placeholder=" ">
-                                    <label class="b-form__label">Телефон</label>
-                                </div>
-                                <!--input_error-text текст ошибки-->
-                                <div style="display: none" class="input_error-text">Обязательное поле</div>
-                            </div>
-                            <div class="b-form__item b-form__item_full-width">
-                                <div class="b-checkbox">
-                                    <input class="input js-select-entity" type="checkbox" id="entityInner" name="entityInner">
-                                    <label for="entityInner">Я представляю юридическое лицо</label>
-                                </div>
-                            </div>
-                            <div class="b-form__item-wrapper">
+                        <form class="b-form" action="url">
+                            <div class="b-form-two-cols">
                                 <div class="b-form__item">
                                     <div class="b-form__input-wrapper">
                                         <!--input_error для ошибки-->
                                         <input type="text" class="b-form__input input" placeholder=" ">
-                                        <label class="b-form__label" >Название компании</label>
+                                        <label class="b-form__label" >Имя</label>
                                     </div>
                                     <!--input_error-text текст ошибки-->
                                     <div style="display: none" class="input_error-text">Обязательное поле</div>
@@ -196,13 +154,57 @@
                                     <div class="b-form__input-wrapper">
                                         <!--input_error для ошибки-->
                                         <input type="text" class="b-form__input input" placeholder=" ">
-                                        <label class="b-form__label" >ИНН</label>
+                                        <label class="b-form__label">Фамилия</label>
                                     </div>
                                     <!--input_error-text текст ошибки-->
                                     <div style="display: none" class="input_error-text">Обязательное поле</div>
                                 </div>
+                                <div class="b-form__item">
+                                    <div class="b-form__input-wrapper">
+                                        <!--input_error для ошибки-->
+                                        <input type="email" class="b-form__input input" placeholder=" ">
+                                        <label class="b-form__label">E-mail</label>
+                                    </div>
+                                    <!--input_error-text текст ошибки-->
+                                    <div style="display: none" class="input_error-text">Обязательное поле</div>
+                                </div>
+                                <div class="b-form__item">
+                                    <div class="b-form__input-wrapper">
+                                        <!--input_error для ошибки-->
+                                        <input type="tel" class="b-form__input input" placeholder=" ">
+                                        <label class="b-form__label">Телефон</label>
+                                    </div>
+                                    <!--input_error-text текст ошибки-->
+                                    <div style="display: none" class="input_error-text">Обязательное поле</div>
+                                </div>
+                                <div class="b-form__item b-form__item_full-width">
+                                    <div class="b-checkbox">
+                                        <input class="input js-select-entity" type="checkbox" id="entityInner" name="entityInner">
+                                        <label for="entityInner">Я представляю юридическое лицо</label>
+                                    </div>
+                                    <div class="b-form__item-wrapper">
+                                        <div class="b-form__item">
+                                            <div class="b-form__input-wrapper">
+                                                <!--input_error для ошибки-->
+                                                <input type="text" class="b-form__input input" placeholder=" ">
+                                                <label class="b-form__label" >Название компании</label>
+                                            </div>
+                                            <!--input_error-text текст ошибки-->
+                                            <div style="display: none" class="input_error-text">Обязательное поле</div>
+                                        </div>
+                                        <div class="b-form__item">
+                                            <div class="b-form__input-wrapper">
+                                                <!--input_error для ошибки-->
+                                                <input type="text" class="b-form__input input" placeholder=" ">
+                                                <label class="b-form__label" >ИНН</label>
+                                            </div>
+                                            <!--input_error-text текст ошибки-->
+                                            <div style="display: none" class="input_error-text">Обязательное поле</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="b-order__step">
                         <div class="b-order__step-number">3</div>
@@ -232,8 +234,8 @@
                                     <div class="b-accordion__ctn">
                                        <div class="b-order__delivery-two-cols">
                                            <div class="b-order__delivery-two-col">
-                                               <div class="b-order__delivery-list-scroll swiper js-delivery-scroll">
-                                                   <div class="b-order__delivery-list swiper-wrapper">
+                                               <div class="b-order__delivery-list-scroll">
+                                                   <div class="b-order__delivery-list" data-simplebar data-simplebar-auto-hide="false">
                                                        <div class="b-order__delivery-list-item swiper-slide">
                                                            <div class="b-radio">
                                                                <input class="input" type="radio" id="loc1" name="location" value="" checked>
@@ -299,7 +301,6 @@
                                                            </div>
                                                        </div>
                                                    </div>
-                                                   <div class="js-delivery-scrollbar b-order__delivery-scrollbar swiper-scrollbar"></div>
                                                </div>
                                            </div>
                                            <div class="b-order__delivery-two-col">
@@ -389,9 +390,9 @@
                                 </div>
                                 <div class="b-accordion__body js-accordion-body">
                                     <div class="b-accordion__ctn">
-                                        <div class="b-order__delivery-list-scroll b-order__delivery-list-scroll-inner swiper js-delivery-scroll2">
-                                            <div class="b-order__delivery-list swiper-wrapper">
-                                                <div class="b-order__delivery-list-item swiper-slide">
+                                        <div class="b-order__delivery-list-scroll b-order__delivery-list-scroll-inner">
+                                            <div class="b-order__delivery-list" data-simplebar data-simplebar-auto-hide="false">
+                                                <div class="b-order__delivery-list-item">
                                                     <div class="b-radio">
                                                         <input class="input" type="radio" id="loc5" name="location" value="" checked>
                                                         <label for="loc5">
@@ -400,7 +401,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="b-order__delivery-list-item swiper-slide">
+                                                <div class="b-order__delivery-list-item">
                                                     <div class="b-radio">
                                                         <input class="input" type="radio" id="loc6" name="location" value="">
                                                         <label for="loc6">
@@ -409,7 +410,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="b-order__delivery-list-item swiper-slide">
+                                                <div class="b-order__delivery-list-item">
                                                     <div class="b-radio">
                                                         <input class="input" type="radio" id="loc7" name="location" value="" checked>
                                                         <label for="loc7">
@@ -418,7 +419,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="b-order__delivery-list-item swiper-slide">
+                                                <div class="b-order__delivery-list-item">
                                                     <div class="b-radio">
                                                         <input class="input" type="radio" id="loc8" name="location" value="">
                                                         <label for="loc8">
@@ -428,7 +429,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="js-delivery-scrollbar2 b-order__delivery-scrollbar swiper-scrollbar"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -787,25 +787,25 @@
                         <input class="input js-select-entity" type="checkbox" id="entity" name="entity">
                         <label for="entity">Я представляю юридическое лицо</label>
                     </div>
-                </div>
-                <div class="b-form__item-wrapper">
-                    <div class="b-form__item">
-                        <div class="b-form__input-wrapper">
-                            <!--input_error для ошибки-->
-                            <input type="email" class="b-form__input input" placeholder=" ">
-                            <label class="b-form__label">Название компании</label>
+                    <div class="b-form__item-wrapper">
+                        <div class="b-form__item">
+                            <div class="b-form__input-wrapper">
+                                <!--input_error для ошибки-->
+                                <input type="email" class="b-form__input input" placeholder=" ">
+                                <label class="b-form__label">Название компании</label>
+                            </div>
+                            <!--input_error-text текст ошибки-->
+                            <div style="display: none" class="input_error-text">Обязательное поле</div>
                         </div>
-                        <!--input_error-text текст ошибки-->
-                        <div style="display: none" class="input_error-text">Обязательное поле</div>
-                    </div>
-                    <div class="b-form__item">
-                        <div class="b-form__input-wrapper">
-                            <!--input_error для ошибки-->
-                            <input type="email" class="b-form__input input" placeholder=" ">
-                            <label class="b-form__label">ИНН</label>
+                        <div class="b-form__item">
+                            <div class="b-form__input-wrapper">
+                                <!--input_error для ошибки-->
+                                <input type="email" class="b-form__input input" placeholder=" ">
+                                <label class="b-form__label">ИНН</label>
+                            </div>
+                            <!--input_error-text текст ошибки-->
+                            <div style="display: none" class="input_error-text">Обязательное поле</div>
                         </div>
-                        <!--input_error-text текст ошибки-->
-                        <div style="display: none" class="input_error-text">Обязательное поле</div>
                     </div>
                 </div>
                 <div class="b-form__item">
