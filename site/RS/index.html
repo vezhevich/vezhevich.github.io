@@ -47,7 +47,7 @@
                             Услуги
                         </li>
                         <li class="b-header__nav-item">
-                            <a class="b-header__nav-link" href="#">Для бизнеса</a>
+                            <a class="b-header__nav-link b-header__nav-item_modified" href="#">Для бизнеса</a>
                         </li>
                         <li class="b-header__nav-item">
                             <a class="b-header__nav-link" href="#">Контакты</a>
@@ -377,6 +377,9 @@
                                                     <a href="#" class="b-product-hor-card__title-link">Стальной канат DURAhoist 35 (35x7) 11,0 zZ Galv., 1960 N/mm2</a>
                                                 </div>
                                                 <div class="b-product-hor-card__col">
+                                                    <div class="b-product-hor-card__cost-old">
+                                                        <span>11 297</span> руб/м
+                                                    </div>
                                                     <div class="b-product-hor-card__cost">
                                                         <span>11 297</span> руб/м
                                                     </div>
@@ -877,7 +880,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="b-catalog-nav">
+            <nav id="b-catalog-nav" class="b-catalog-nav">
                 <div class="l-container">
                     <div class="b-catalog-nav__wrapper">
                         <div class="b-catalog-nav__item">
@@ -2090,16 +2093,25 @@
             <div class="l-container">
                 <div class="b-main-subscribe">
                     <div class="b-main-subscribe__wrapper">
-                        <div class="h2">Узнавайте первыми о лучших скидках и Акцииях!</div>
-                        <form action="url" class="b-main-subscribe__form">
-                            <div class="b-form__input-wrapper">
-                                <!--input_error для ошибки-->
-                                <input type="email" class="b-form__input input" placeholder=" ">
-                                <label class="b-form__label">Введите email</label>
+                        <div class="b-main-subscribe__wrapper-before-sub">
+                            <div class="h2">Узнавайте первыми о лучших скидках и Акцииях!</div>
+                            <form action="url" class="b-main-subscribe__form">
+                                <div class="b-form__input-wrapper">
+                                    <!--input_error для ошибки-->
+                                    <input type="email" class="b-form__input input" placeholder=" ">
+                                    <label class="b-form__label">Введите email</label>
+                                </div>
+                                <span class="b-main-subscribe__form-helper">Нажимая «Подписаться», вы подтверждаете <a
+                                        href="#">«Согласие на обработку персональных данных»</a></span>
+                                <button class="b-main-subscribe__form-button button button-primary button-primary_bg js-sub" type="button">Подписаться</button>
+                            </form>
+                        </div>
+                        <div class="b-main-subscribe__wrapper-after-sub">
+                            <div class="h2">Поздравляем!</div>
+                            <div class="b-main-subscribe__text">
+                                Вы успешно подписались на нашу рассылку и теперь будете первыми узнавать об интересных предложениях и акциях
                             </div>
-                            <span class="b-main-subscribe__form-helper">Нажимая «Подписаться», вы подтверждаете «Согласие на обработку персональных данных»</span>
-                            <button class="b-main-subscribe__form-button button button-primary button-primary_bg" type="button">Подписаться</button>
-                        </form>
+                        </div>
                     </div>
                     <div class="b-main-subscribe__image" style="background-image: url('./images/dist/track.jpg')"></div>
                 </div>
@@ -2117,19 +2129,29 @@
                 <div class="b-brands-swiper swiper js-brands-swiper">
                     <div class="b-brands swiper-wrapper">
                         <div class="b-brand swiper-slide">
-                            <img src="./images/dist/brand1.jpg" alt="">
+                            <a href="#">
+                                <img src="./images/dist/brand1.jpg" alt="">
+                            </a>
                         </div>
                         <div class="b-brand swiper-slide">
-                            <img src="./images/dist/brand2.jpg" alt="">
+                            <a href="#">
+                                <img src="./images/dist/brand2.jpg" alt="">
+                            </a>
                         </div>
                         <div class="b-brand swiper-slide">
-                            <img src="./images/dist/brand3.jpg" alt="">
+                            <a href="#">
+                                <img src="./images/dist/brand3.jpg" alt="">
+                            </a>
                         </div>
                         <div class="b-brand swiper-slide">
-                            <img src="./images/dist/brand4.jpg" alt="">
+                            <a href="#">
+                                <img src="./images/dist/brand4.jpg" alt="">
+                            </a>
                         </div>
                         <div class="b-brand swiper-slide">
-                            <img src="./images/dist/brand5.jpg" alt="">
+                            <a href="#">
+                                <img src="./images/dist/brand5.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="b-brand__swiper-pagination swiper-pagination"></div>
