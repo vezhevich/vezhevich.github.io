@@ -118,7 +118,7 @@
     <main class="l-content">
         <div class="l-container">
             <h1>Оформление заказа</h1>
-            <div class="b-order">
+            <div class="b-order" data-sticky-container>
                 <div class="b-order__left">
                     <div class="b-order__step">
                         <div class="b-order__step-number">1</div>
@@ -466,7 +466,7 @@
                     </div>
                 </div>
                 <div class="b-order__right">
-                    <div class="b-shopping-cart__order b-shopping-cart__order_modified js-sticky-inner">
+                    <div class="b-shopping-cart__order b-shopping-cart__order_modified js-sticky-order" data-sticky-class="is-fixed" data-margin-top="20">
                         <div class="b-shopping-cart__order-title">Ваш заказ</div>
                         <div class="b-shopping-cart__order-list">
                             <div class="b-shopping-cart__order-list-item">
@@ -480,6 +480,10 @@
                             <div class="b-shopping-cart__order-list-item">
                                 <span class="b-shopping-cart__order-list-text">Общая скидка:</span>
                                 <span class="b-shopping-cart__order-list-text">23 ₽</span>
+                            </div>
+                            <div class="b-shopping-cart__order-list-item">
+                                <span class="b-shopping-cart__order-list-text">Стоимость доставки:</span>
+                                <span class="b-shopping-cart__order-list-text">123 ₽</span>
                             </div>
                         </div>
                         <div class="b-shopping-cart__order-sum">
