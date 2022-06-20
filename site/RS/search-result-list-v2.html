@@ -5,15 +5,15 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Категория</title>
     <meta name="description" content="Description text">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" rel="shortcut icon" href="images/favicon.png">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
-<body>
+<body class="l-wrapper-gray">
 
 <div class="l-footer-push">
     <div class="b-informer">
@@ -1003,334 +1003,774 @@
                             <span>Главная</span>
                         </a>
                     </li>
+                    <li class="b-breadcrumbs__item">
+                        <a class="b-breadcrumbs__item-link" href="catalog.html">
+                            <span>Каталог</span>
+                        </a>
+                    </li>
                     <li class="b-breadcrumbs__item b-breadcrumbs__item_last">
-                        <span>Каталог</span>
+                        <span>Канаты и тросы</span>
                     </li>
                 </ul>
             </nav>
-            <h1>Каталог</h1>
-            <div class="b-catalog b-catalog_page">
-                <div class="b-catalog__list">
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini1.png')">
-                                <span class="b-catalog-mini-card__title">Импортные канаты</span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты ГОСТ
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
+            <h1>Канаты и тросы</h1>
+            <div class="b-head-page-info b-head-page-info_search-result">
+                <div class="b-head-page-info__text">По запросу «стропы» найдено 8 товаров</div>
+            </div>
+            <div class="l-two-cols">
+                <div class="l-two-cols__left">
+                    <div id="modal-filters" class="b-modal-filters">
+                        <div class="b-modal-filters__title">Фильтры</div>
+                        <nav class="b-nav-aside">
+                            <ul class="list-unstyled b-nav-aside__lv1">
+                                <li class="b-nav-aside__item">
+                                    <a class="b-nav-aside__link" href="#">Канаты ГОСТ</a>
+                                </li>
+                                <li class="b-nav-aside__item">
+                                    <span class="b-nav-aside__link b-nav-aside__link_active">Канаты и тросы</span>
+                                    <ul class="list-unstyled b-nav-aside__lv2">
+                                        <li class="b-nav-aside__item">
+                                            <a class="b-nav-aside__link" href="#">Канаты ГОСТ</a>
+                                        </li>
+                                        <li class="b-nav-aside__item">
+                                            <a class="b-nav-aside__link" href="#">Канаты EN 12385</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="b-filters">
+                            <form class="b-filters__form" action="url">
+                                <div class="b-filters__item">
+                                    <div class="b-filters__title js-show-filters-ctn">
+                                        Цена
+                                        <svg class="icon icon-arrow-right">
                                             <use xlink:href="#icon-arrow-right"></use>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="b-filters__wrapper">
+                                        <div class="b-filters__range">
+                                            <div class="b-filters__range-group-input">
+                                                <span>от</span>
+                                                <input id="rangeCostInputFrom" class="input b-filters__range-input" type="text">
+                                                <span>до</span>
+                                                <input id="rangeCostInputTo" class="input b-filters__range-input" type="text">
+                                                <span>₽</span>
+                                            </div>
+                                            <input type="text" id="rangeCost">
+                                        </div>
+                                    </div>
+                                    <!--класс show покажет эту плашку-->
+                                    <div class="b-filters__result">
+                                        <span class="b-filters__result-text">Выбрано 87 товаров</span>
+                                        <button type="button" class="button button-primary button-primary_bg">Показать</button>
+                                    </div>
                                 </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(17)</span>
-                                        <svg class="icon">
+                                <div class="b-filters__item">
+                                    <div class="b-filters__title js-show-filters-ctn">
+                                        Производитель
+                                        <svg class="icon icon-arrow-right">
                                             <use xlink:href="#icon-arrow-right"></use>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="b-filters__wrapper">
+                                        <div class="b-checkbox-list">
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="manufacturer1" name="manufacturer1">
+                                                    <label for="manufacturer1">БМК <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="manufacturer2" name="manufacturer2">
+                                                    <label for="manufacturer2">Young Wire Young WireYoung WireYoung Wire <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="manufacturer3" name="manufacturer3" disabled>
+                                                    <label for="manufacturer3">БМК <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="manufacturer4" name="manufacturer4">
+                                                    <label for="manufacturer4">Young Wire Young WireYoung WireYoung Wire <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="manufacturer5" name="manufacturer5">
+                                                    <label for="manufacturer5">БМК <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="manufacturer6" name="manufacturer6">
+                                                    <label for="manufacturer6">Young Wire Young WireYoung WireYoung Wire <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-filters__show-all js-show-filters-all">
+                                            Показать все
+                                        </div>
+                                    </div>
+                                    <!--класс show покажет эту плашку-->
+                                    <div class="b-filters__result">
+                                        <span class="b-filters__result-text">Выбрано 87 товаров</span>
+                                        <button type="button" class="button button-primary button-primary_bg">Показать</button>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="b-filters__item">
+                                    <div class="b-filters__title js-show-filters-ctn">
+                                        Вид покрытия
+                                        <span class="js-tooltip b-tooltip" data-tooltip-content="#tooltip-help">
+                                        <svg class="icon icon-question">
+                                            <use xlink:href="#icon-question"></use>
+                                        </svg>
+                                    </span>
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="#icon-arrow-right"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="b-filters__wrapper">
+                                        <div class="b-radio-list">
+                                            <div class="b-radio-list__item">
+                                                <div class="b-radio">
+                                                    <input class="input" type="radio" id="coating1" name="coating" value="" checked>
+                                                    <label for="coating1">Оцинкованный <span class="b-radio__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-radio-list__item">
+                                                <div class="b-radio">
+                                                    <input class="input" type="radio" id="coating2" name="coating" value="" disabled>
+                                                    <label for="coating2">Стальной <span class="b-radio__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-radio-list__item">
+                                                <div class="b-radio">
+                                                    <input class="input" type="radio" id="coating3" name="coating" value="">
+                                                    <label for="coating3">Неоцинкованный <span class="b-radio__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--класс show покажет эту плашку-->
+                                    <div class="b-filters__result">
+                                        <span class="b-filters__result-text">Выбрано 87 товаров</span>
+                                        <button type="button" class="button button-primary button-primary_bg">Показать</button>
+                                    </div>
+                                </div>
+                                <div class="b-filters__item">
+                                    <div class="b-filters__title js-show-filters-ctn">
+                                        Страна производитель
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="#icon-arrow-right"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="b-filters__wrapper">
+                                        <div class="b-filters__search">
+                                            <input type="text" class="b-filters__search-input input" placeholder="Найти">
+                                            <button class="b-filters__search-button button" type="submit">
+                                                <svg class="icon">
+                                                    <use xlink:href="#icon-search"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="b-checkbox-list">
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="country1" name="country1">
+                                                    <label for="country1">Россия <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="country2" name="country2">
+                                                    <label for="country2">Китай <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="country3" name="country3" disabled>
+                                                    <label for="country3">Италия <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="country4" name="country4">
+                                                    <label for="country4">Испания <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="country5" name="country5">
+                                                    <label for="country5">Германия <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="b-checkbox-list__item">
+                                                <div class="b-checkbox">
+                                                    <input class="input" type="checkbox" id="country6" name="country6">
+                                                    <label for="country6">Ю. Корея <span class="b-checkbox__helper">(20)</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-filters__show-all js-show-filters-all">
+                                            Показать все
+                                        </div>
+                                    </div>
+                                    <!--класс show покажет эту плашку-->
+                                    <div class="b-filters__result">
+                                        <span class="b-filters__result-text">Выбрано 87 товаров</span>
+                                        <button type="button" class="button button-primary button-primary_bg">Показать</button>
+                                    </div>
+                                </div>
+                                <div class="b-filters__group-buttons">
+                                    <button class="button button-primary button-primary_bg button_full-width" type="submit">Применить</button>
+                                    <button class="button button-primary button_full-width" type="button">Сбросить</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini2.png')">
-                                <span class="b-catalog-mini-card__title">Такелажные скобы </span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(3677)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(17)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini3.png')">
-                                <span class="b-catalog-mini-card__title">Текстильные стропы </span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Текстильные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Стропы текстильные EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini4.png')">
-                                <span class="b-catalog-mini-card__title">Рым-болты</span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(17)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="b-catalog__category-more js-show-category-more">
-                                <span>Все подкатегории</span>
+                </div>
+                <div class="l-two-cols__right">
+                    <div class="b-fast-filters">
+                        <div class="b-fast-filters__item">
+                            Производитель: Python
+                            <div class="b-fast-filters__button js-remove-fast-filter">
                                 <svg class="icon">
-                                    <use xlink:href="#icon-arrow-right"></use>
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="b-fast-filters__item">
+                            Направление свивки: Правая
+                            <div class="b-fast-filters__button js-remove-fast-filter">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="b-fast-filters__item">
+                            Доставка: сегодня
+                            <div class="b-fast-filters__button js-remove-fast-filter">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="b-fast-filters__item b-fast-filters__item_modified">
+                            Очистить всё
+                            <div class="b-fast-filters__button js-remove-all-fast-filter">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-close"></use>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini4.png')">
-                                <span class="b-catalog-mini-card__title">Рым-болты металлические</span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(17)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                    <div class="b-catalog-controls">
+                        <div class="b-catalog-controls__left">
+                            <div class="b-select-wrapper">
+                                <span class="b-select-title">Сортировать по:</span>
+                                <select class="b-select" name="sort" id="sort1">
+                                    <option value="1">популярности</option>
+                                    <option value="2">увеличению цены</option>
+                                    <option value="3">уменьшению цены</option>
+                                    <option value="4">по названию А-Я</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini1.png')">
-                                <span class="b-catalog-mini-card__title">Импортные канаты</span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты ГОСТ
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
+                        <div class="b-catalog-controls__right">
+                            <div class="b-select-wrapper hidden-sm">
+                                <span class="b-select-title">Вывыодить по:</span>
+                                <select class="b-select" name="sort" id="sort2">
+                                    <option value="1">40</option>
+                                    <option value="2">60</option>
+                                    <option value="3">80</option>
+                                    <option value="4">100</option>
+                                </select>
+                            </div>
+                            <div class="b-select-wrapper hidden-sm">
+                                <span class="b-select-title">Вид:</span>
+                                <div class="b-select-group-buttons">
+                                    <div class="b-select-group-button">
+                                        <span class="b-select-group-button-link b-select-group-button-link_active">
+                                            <svg class="icon icon-list">
+                                                <use xlink:href="#icon-list"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="b-select-group-button">
+                                        <a href="search-result-v2.html" class="b-select-group-button-link">
+                                            <svg class="icon icon-square">
+                                                <use xlink:href="#icon-square"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini2.png')">
-                                <span class="b-catalog-mini-card__title">Такелажные скобы </span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(3677)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini3.png')">
-                                <span class="b-catalog-mini-card__title">Текстильные стропы </span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Текстильные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Стропы текстильные EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card" >
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini4.png')">
-                                <span class="b-catalog-mini-card__title">Рым-болты</span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="b-catalog__category-more js-show-category-more">
-                                Все подкатегории
+                            <div class="b-filters__button js-modal-filters" data-mfp-src="#modal-filters">
                                 <svg class="icon">
-                                    <use xlink:href="#icon-arrow-right"></use>
+                                    <use xlink:href="#icon-filters"></use>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="b-catalog__card">
-                        <div class="b-catalog-mini-card">
-                            <a href="#" class="b-catalog-mini-card__link" style="background-image: url('./images/dist/catalog-mini4.png')">
-                                <span class="b-catalog-mini-card__title">Рым-болты металлические</span>
-                            </a>
-                            <div class="b-catalog__card-counter">237</div>
-                        </div>
-                        <div class="b-catalog__category">
-                            <div class="b-catalog__category-wrapper">
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канатные
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
-                                        </svg>
-                                    </a>
+                    <div class="b-product-mini-card-wrapper b-product-mini-card-wrapper_list">
+                        <div class="b-product-mini-card b-product-mini-card_list">
+                            <div class="b-product-mini-card__wrap-left">
+                                <div class="b-product-mini-card__rating">
+                                    <div class="b-product-mini-card__rating-list">
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-mini-card__rating-counter">3</div>
                                 </div>
-                                <div class="b-catalog__category-item">
-                                    <a href="#" class="b-catalog__category-link">Канаты EN 12385
-                                        <span class="b-catalog__category-counter">(5)</span>
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-arrow-right"></use>
+                                <div class="b-product-mini-card__labels">
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-cert.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-sale.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-new.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__icons">
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-favorite">
+                                            <use xlink:href="#icon-favorite"></use>
                                         </svg>
-                                    </a>
+                                    </div>
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-compare">
+                                            <use xlink:href="#icon-compare"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__image">
+                                    <img src="./images/dist/mini-card-list.jpg" alt="Стальной канат DURAhoist 35">
+                                </div>
+                            </div>
+                            <div class="b-product-mini-card__wrap-right">
+                                <div class="b-product-mini-card__desc">
+                                    <div class="b-product-mini-card__title">
+                                        <a class="b-product-mini-card__title-link" href="#">Стальной канат DURAhoist 35 (35x7) 11,0 zZ Galv., 1960 N/mm2</a>
+                                    </div>
+                                    <div class="b-product-mini-card__desc-list">
+                                        <div class="b-product-mini-card__desc-item">
+                                            Маркировочная группа, N/mm2:<span>1960</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Общее количество проволок:<span>245</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__info">
+                                    <div class="b-product-mini-card__cost-old">297 руб/м</div>
+                                    <div class="b-product-mini-card__cost"><span>297</span> руб/м</div>
+                                    <div class="b-product-mini-card__bottom-right">
+                                        <a href="#" class="b-product-mini-card__button button js-add-shopping-cart-inner">
+                                            <span>В корзину</span>
+                                            <svg class="icon icon-check-inner">
+                                                <use xlink:href="#icon-check-inner"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="b-product-mini-card__delivery">
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-track.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Самовывоз: <span>Сегодня</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-box-inner.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Курьером: <span>Завтра</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-mini-card b-product-mini-card_list">
+                            <div class="b-product-mini-card__wrap-left">
+                                <div class="b-product-mini-card__rating">
+                                    <div class="b-product-mini-card__rating-list">
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-mini-card__rating-counter">3</div>
+                                </div>
+                                <div class="b-product-mini-card__labels">
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-cert.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-sale.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-new.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__icons">
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-favorite">
+                                            <use xlink:href="#icon-favorite"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-compare">
+                                            <use xlink:href="#icon-compare"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__image">
+                                    <img src="./images/dist/mini-card-list.jpg" alt="Стальной канат DURAhoist 35">
+                                </div>
+                            </div>
+                            <div class="b-product-mini-card__wrap-right">
+                                <div class="b-product-mini-card__desc">
+                                    <div class="b-product-mini-card__title">
+                                        <a class="b-product-mini-card__title-link" href="#">Стальной канат DURAhoist 35 (35x7) 11,0 zZ Galv., 1960 N/mm2</a>
+                                    </div>
+                                    <div class="b-product-mini-card__desc-list">
+                                        <div class="b-product-mini-card__desc-item">
+                                            Маркировочная группа, N/mm2:<span>1960</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Общее количество проволок:<span>245</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__info">
+                                    <div class="b-product-mini-card__cost-old">297 руб/м</div>
+                                    <div class="b-product-mini-card__cost"><span>297</span> руб/м</div>
+                                    <div class="b-product-mini-card__bottom-right">
+                                        <a href="#" class="b-product-mini-card__button button js-add-shopping-cart-inner">
+                                            <span>В корзину</span>
+                                            <svg class="icon icon-check-inner">
+                                                <use xlink:href="#icon-check-inner"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="b-product-mini-card__delivery">
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-track.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Самовывоз: <span>Сегодня</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-box-inner.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Курьером: <span>Завтра</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-mini-card b-product-mini-card_list">
+                            <div class="b-product-mini-card__wrap-left">
+                                <div class="b-product-mini-card__rating">
+                                    <div class="b-product-mini-card__rating-list">
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-mini-card__rating-counter">3</div>
+                                </div>
+                                <div class="b-product-mini-card__labels">
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-cert.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-sale.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-new.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__icons">
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-favorite">
+                                            <use xlink:href="#icon-favorite"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-compare">
+                                            <use xlink:href="#icon-compare"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__image">
+                                    <img src="./images/dist/mini-card-list.jpg" alt="Стальной канат DURAhoist 35">
+                                </div>
+                            </div>
+                            <div class="b-product-mini-card__wrap-right">
+                                <div class="b-product-mini-card__desc">
+                                    <div class="b-product-mini-card__title">
+                                        <a class="b-product-mini-card__title-link" href="#">Стальной канат DURAhoist 35 (35x7) 11,0 zZ Galv., 1960 N/mm2</a>
+                                    </div>
+                                    <div class="b-product-mini-card__desc-list">
+                                        <div class="b-product-mini-card__desc-item">
+                                            Маркировочная группа, N/mm2:<span>1960</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Общее количество проволок:<span>245</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__info">
+                                    <div class="b-product-mini-card__cost-old">297 руб/м</div>
+                                    <div class="b-product-mini-card__cost"><span>297</span> руб/м</div>
+                                    <div class="b-product-mini-card__bottom-right">
+                                        <a href="#" class="b-product-mini-card__button button js-add-shopping-cart-inner">
+                                            <span>В корзину</span>
+                                            <svg class="icon icon-check-inner">
+                                                <use xlink:href="#icon-check-inner"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="b-product-mini-card__delivery">
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-track.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Самовывоз: <span>Сегодня</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-box-inner.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Курьером: <span>Завтра</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-product-mini-card b-product-mini-card_list">
+                            <div class="b-product-mini-card__wrap-left">
+                                <div class="b-product-mini-card__rating">
+                                    <div class="b-product-mini-card__rating-list">
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item b-product-mini-card__rating-list-item_active">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="b-product-mini-card__rating-list-item">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="b-product-mini-card__rating-counter">3</div>
+                                </div>
+                                <div class="b-product-mini-card__labels">
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-cert.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-sale.svg" alt="">
+                                    </div>
+                                    <div class="b-product-mini-card__labels-item">
+                                        <img src="./images/svg/icon-new.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__icons">
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-favorite">
+                                            <use xlink:href="#icon-favorite"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="js-add-active b-product-mini-card__icons-item active">
+                                        <svg class="icon icon-compare">
+                                            <use xlink:href="#icon-compare"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__image">
+                                    <img src="./images/dist/mini-card-list.jpg" alt="Стальной канат DURAhoist 35">
+                                </div>
+                            </div>
+                            <div class="b-product-mini-card__wrap-right">
+                                <div class="b-product-mini-card__desc">
+                                    <div class="b-product-mini-card__title">
+                                        <a class="b-product-mini-card__title-link" href="#">Стальной канат DURAhoist 35 (35x7) 11,0 zZ Galv., 1960 N/mm2</a>
+                                    </div>
+                                    <div class="b-product-mini-card__desc-list">
+                                        <div class="b-product-mini-card__desc-item">
+                                            Маркировочная группа, N/mm2:<span>1960</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Общее количество проволок:<span>245</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                        <div class="b-product-mini-card__desc-item">
+                                            Вес, кг/м:<span>0,55</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-product-mini-card__info">
+                                    <div class="b-product-mini-card__cost-old">297 руб/м</div>
+                                    <div class="b-product-mini-card__cost"><span>297</span> руб/м</div>
+                                    <div class="b-product-mini-card__bottom-right">
+                                        <a href="#" class="b-product-mini-card__button button js-add-shopping-cart-inner">
+                                            <span>В корзину</span>
+                                            <svg class="icon icon-check-inner">
+                                                <use xlink:href="#icon-check-inner"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="b-product-mini-card__delivery">
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-track.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Самовывоз: <span>Сегодня</span>
+                                            </div>
+                                        </div>
+                                        <div class="b-product-mini-card__delivery-item">
+                                            <div class="b-product-mini-card__delivery-icon">
+                                                <img src="./images/svg/icon-box-inner.svg" alt="">
+                                            </div>
+                                            <div class="b-product-mini-card__delivery-text">
+                                                Курьером: <span>Завтра</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1340,13 +1780,13 @@
         </div>
     </main>
 
-    <footer class="b-footer">
+    <footer class="b-footer b-footer_mod-top">
     <div class="l-wrapper-gray l-wrapper-default">
         <div class="l-container">
             <div class="b-footer__top">
                 <div class="b-footer__left">
                     <div class="b-footer__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="./images/svg/logo.svg" alt="">
                         </a>
                     </div>
@@ -1592,6 +2032,11 @@
         <path d="M14.12 11.12a2.998 2.998 0 0 1-5.194-2.098A3 3 0 0 1 9.88 6.88m8.06 8.06A10.07 10.07 0 0 1 12 17C5 17 1 9 1 9a18.45 18.45 0 0 1 5.06-5.94l11.88 11.88ZM9.9 1.24A9.12 9.12 0 0 1 12 1c7 0 11 8 11 8a18.495 18.495 0 0 1-2.16 3.19L9.9 1.24Z" stroke="" stroke-width="" stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
 </svg>
+<div style="display: none">
+    <div id="tooltip-help" class="b-tooltip__ctn">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, blanditiis ducimus facilis fugit libero quis quos sapiente! Accusamus animi iusto quos voluptatibus! Architecto deserunt dolor nemo nisi quae qui tenetur?
+    </div>
+</div>
 <!--авторизация-->
 <div id="modal-auth" class="mfp-hide b-modal ">
     <div class="b-modal__wrapper">
