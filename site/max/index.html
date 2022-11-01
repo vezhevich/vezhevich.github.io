@@ -39,7 +39,7 @@
 					</h1>
 				</div>
 				<div class="b-promo__video">
-					<video autoplay preload="auto" playsinline no-controls muted loop id="myVideo">
+					<video autoplay preload="auto" playsinline no-controls muted loop id="autoplay">
 					  <source src="video.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -202,5 +202,8 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/smooth-scroll.polyfills.min.js"></script>
 		<script src="js/common.js"></script>
+		<script>
+			document.getElementById('autoplay').play();
+		</script>
 	</div>
 </body>
