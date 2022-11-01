@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Главная страница</title>
+	<meta name="description" content="Description text">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="bootstrap-reboot.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="l-container">
+		<header class="b-header">
+			<div class="l-content">
+				<div class="b-header__logo">nodesUp</div>
+				<nav class="b-header__nav">
+					<ul class="b-header__nav-list">
+						<li class="b-header__nav-item"><a class="b-header__nav-link anchor" data-scroll href="#what-we-do">What we do</a></li>
+						<li class="b-header__nav-item"><a class="b-header__nav-link anchor" data-scroll href="#how-we-do">How we do</a></li>
+						<li class="b-header__nav-item"><a class="b-header__nav-link anchor" data-scroll href="#portfolio">Portfolio</a></li>
+						<li class="b-header__nav-item"><a class="b-header__nav-link anchor" data-scroll href="#team">Team</a></li>
+						<li class="b-header__nav-item"><a class="b-header__nav-link anchor" data-scroll href="#contacts">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="section b-promo">
+			<div class="l-content">
+				<div class="b-promo__ctn animate__animated animate__fadeInUp">
+					<h1>
+						nodesUP is a professional team
+						<br>
+						on working with blockchain technologies
+					</h1>
+				</div>
+				<div class="b-promo__video">
+					<video autoplay muted loop id="myVideo">
+					  <source src="video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</section>
+		<section class="section section_inverse" id="what-we-do" style="background-color: #fefefe; background-image: url(images/pattern-dark.png);">
+			<h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".2s">What we do</h2>
+			<div class="l-content">
+				<div class="l-two-cols b-desc">
+					<div class="l-two-col wow animate__animated animate__fadeInUp b-desc__item" data-wow-delay="0.3s">blockchain nodes install <br> and maximizing uptime</div>
+					<div class="l-two-col wow animate__animated animate__fadeInUp b-desc__item" data-wow-delay="0.3s">providing access to indexed <br> archive data of blockchains via API</div>
+					<div class="l-two-col wow animate__animated animate__fadeInUp b-desc__item" data-wow-delay=".5s">technological and functional <br> testing of networks and products</div>
+					<div class="l-two-col wow animate__animated animate__fadeInUp b-desc__item" data-wow-delay=".5s">activity in the community life,<br> following and adoption of crypto</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="how-we-do" style="background-color: #eee; background-image: url(images/pattern-light.png);">
+			<h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".2s">How we do</h2>
+			<div class="l-content">
+				<div class="l-two-cols b-desc">
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay=".3s">we design a distributed architecture <br> from cloud and local server machines</div>
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay=".3s">community activity: calls, events <br> workshops. Create own NFT-gallery</div>
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay=".5s">developing a monitoring and <br> notification system</div>
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay=".5s">provide information security,<br> compliance and KYC</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section_align-top section_inverse" id="portfolio" style="background-color: #fefefe; background-image: url(images/pattern-dark.png);">
+			<h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".2s">Portfolio</h2>
+			<div class="l-content">	
+				<div class="b-cards-wrapper wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+					<!-- Rounded switch -->
+					<label class="switch">
+					  <input id="entity" type="checkbox" class="js-select-entity"> 
+					  <span class="slider round"></span>
+					  <span class="switch-text">Active</span>
+					  <span class="switch-text">Archive</span>
+					</label>
+
+					<div class="b-cards-ctn b-cards-ctn_show show">
+						<div class="b-cards">
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/Aleo.png" alt="">
+								</div>
+								<a href="#">Aleo</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/Arbitrum.png" alt="">
+								</div>
+								<a href="#">Arbitrum</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/Ethereum.png" alt="">
+								</div>
+								<a href="#">Ethereum</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/GnosisChain.png" alt="">
+								</div>
+								<a href="#">Gnosis Chain</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/TheGraph.png" alt="">
+								</div>
+								<a href="#">The Graph</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/ZeekaNetwork.png" alt="">
+								</div>
+								<a href="#">Zeeka Network</a>
+							</div>
+						</div>
+					</div>
+					<div class="b-cards-ctn b-cards-ctn_hidden hidden">
+						<div class="b-cards">
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/Bitcoin.png" alt="">
+								</div>
+								<a href="#">Bitcoin</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/NYM.png" alt="">
+								</div>
+								<a href="#">NYM</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/Aptos.png" alt="">
+								</div>
+								<a href="#">Aptos</a>
+							</div>
+							<div class="b-cards__item">
+								<div class="b-cards__item-image">
+									<img src="./images/projects/SUI.png" alt="">
+								</div>
+								<a href="#">SUI</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="team" style="background-color: #eee; background-image: url(images/pattern-light.png);">
+			<h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".2s">Team</h2>
+			<div class="l-content">
+				<div class="l-two-cols b-desc">
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">distributed team of 8 people with <br> unique experience and network <br> around the world</div>
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">10+ years of experience in FinTech, <br> IT product development and <br> project management</div>
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay=".5s">20+ years of experience in <br> telecom: work with networks,<br> network and cloud equipment</div>
+					<div class="l-two-col b-desc__item wow animate__animated animate__fadeInUp" data-wow-delay=".5s">10+ years of experience in <br> information security, crypto and <br> blockchain</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section_contacts" id="contacts" style="background-image: url(images/world.svg), url(images/pattern-light.png);">
+			<h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".2s">Contacts</h2>
+			<div class="l-content wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+				<div class="b-contacts">
+					<div class="b-contacts__title">based in</div>
+					<div class="b-contacts__list">
+						<div class="b-contacts__list-item">
+							<img src="./images/icon-location.svg" alt="">
+							<a href="#">Dubai</a>
+						</div>
+						<div class="b-contacts__list-item">
+							<img src="./images/icon-location.svg" alt="">
+							<a href="#">Bangkok</a>
+						</div>
+						<div class="b-contacts__list-item">
+							<img src="./images/icon-location.svg" alt="">
+							<a href="#">Istanbul</a>
+						</div>
+						<div class="b-contacts__list-item">
+							<img src="./images/icon-location.svg" alt="">
+							<a href="#">Ulan-Bator</a>
+						</div>
+					</div>
+					<div class="b-social__list">
+						<div class="b-social__list-item">
+							<a class="b-social__discord" target="_blank" href="#"><img src="images/discord.svg" alt=""></a>
+						</div>
+						<div class="b-social__list-item">
+							<a class="b-social__telegram" target="_blank" href="#"><img src="images/telegram.svg" alt=""></a>
+						</div>
+						<div class="b-social__list-item">
+							<a class="b-social__mail" target="_blank" href="#"><img src="images/mail.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/smooth-scroll.polyfills.min.js"></script>
+		<script src="js/common.js"></script>
+	</div>
+</body>
