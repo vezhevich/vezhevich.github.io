@@ -80,6 +80,11 @@ h2 {
 	transition: all .3s;
 }
 
+.b-header__logo {
+	font-size: 20px;
+	line-height: 24px;
+}
+
 .b-header .l-content {
 	display: flex;
 	align-items: center;
@@ -449,7 +454,7 @@ h2 {
 		margin-left: 0;
 	}
 
-	.b-header__nav-link {
+	.b-header__nav-link, .b-header__logo {
 		font-size: 16px;
 		line-height: 20px;
 	}
