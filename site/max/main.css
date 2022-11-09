@@ -468,6 +468,10 @@ h2 {
 		min-height: 100%;
 	}
 
+	.b-desc__item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
 	.b-desc_inner {
 		margin-top: 40px;
 	}
