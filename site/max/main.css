@@ -208,7 +208,7 @@ h2 {
 	min-height: 150px;
 }
 
-.b-desc__item:not(:last-child) {
+.b-desc_inner .b-desc__item:not(:last-child) {
 	margin-bottom: 40px;
 }
 
