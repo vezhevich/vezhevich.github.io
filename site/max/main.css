@@ -435,9 +435,13 @@ h2 {
 		align-items: center;
 	}
 
+	.b-header {
+		border-bottom-color: #111;
+	}	
+
 	.b-header__logo {
 		margin-top: 10px;
-		margin-bottom: 10px
+		margin-bottom: 10px;
 	}
 
 	.b-header__nav {
@@ -452,6 +456,19 @@ h2 {
 	.b-promo {
 		padding-top: 100px;
 		height: 100%;
+		background-position: left;
+	}
+
+	.b-promo::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		opacity: 0.3;
 	}
 
 	.b-promo p {
