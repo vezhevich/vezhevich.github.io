@@ -460,7 +460,7 @@ h2 {
 		background-attachment: scroll;
 	}
 
-/*	.b-promo::before {
+	.b-promo::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -470,7 +470,7 @@ h2 {
 		height: 100%;
 		background-color: #fff;
 		opacity: 0.3;
-	}*/
+	}
 
 	.b-promo p {
 		font-size: 20px;
