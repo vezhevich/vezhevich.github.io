@@ -155,7 +155,6 @@ h2 {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
-	background-attachment: fixed;
 	position: relative;
 	overflow: hidden;
 	color: #000;
@@ -457,7 +456,6 @@ h2 {
 		padding-top: 100px;
 		height: 100%;
 		background-position: left;
-		background-attachment: scroll;
 	}
 
 	.b-promo::before {
