@@ -457,6 +457,7 @@ h2 {
 		padding-top: 100px;
 		height: 100%;
 		background-position: left;
+		background-attachment: scroll;
 	}
 
 /*	.b-promo::before {
