@@ -426,6 +426,10 @@ h2 {
 		width: 100%;
 	}
 
+	.section-head {
+		justify-content: center;
+	}
+
 	.b-header .l-content {
 		flex-direction: column;
 		align-items: center;
