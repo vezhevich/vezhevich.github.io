@@ -75,7 +75,7 @@
 	<div class="l-main">
         <div class="l-main__sidebar l-main__sidebar_pushed">
 <!--sidebar-nav-->
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav" data-simplebar>
                 <ul class="list-unstyled sidebar-nav__list">
                     <li class="sidebar-nav__item">
                         <a class="sidebar-nav__link show js-show-submenu" href="#">
@@ -346,7 +346,155 @@
             </svg>
         </button>
         <h4 class="modal__title">Назначить курс</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad blanditiis dicta expedita, explicabo ipsam iste magni maxime, nisi perferendis provident, quae quaerat quia sed voluptatibus. Accusantium dolores totam vitae.</p>
+        <div class="user-card">
+            <div class="user-card__img">
+                <img src="./images/dist/user.jpg" alt="">
+            </div>
+            <div class="user-card__text">
+                <div class="user-card__title">Ивану Ивановичу Иванову</div>
+                <div class="user-card__teaser">Руководитель отдела продаж</div>
+            </div>
+        </div>
+        <form class="modal__form modal__form_modified-top" action="url">
+            <div class="modal__form-item">
+                <label class="label-default">Выберите один или несколько курсов</label>
+                <select class="select select_multiply js-choice2" name="" id="select-courses" multiple>
+                    <option value="1">Урок 1. Если нет времени на изучение</option>
+                    <option value="2">Урок 2. Если нет времени на изучение</option>
+                    <option value="3">Урок 3. Если нет времени на изучение, если нет времени на изучение</option>
+                </select>
+            </div>
+            <div class="modal__form-item">
+                <label class="label-default">Выберите один или несколько курсов</label>
+                <div class="dropdown">
+                    <div class="dropdown__button">
+                        Список курсов
+                        <svg class="icon">
+                            <use xlink:href="#icon-corner-inner"></use>
+                        </svg>
+                    </div>
+                    <div class="dropdown__ctn">
+                        <div class="checkbox-list checkbox-list_courses" data-simplebar>
+                            <div class="checkbox-list__item">
+                                <input class="input" id="course1" type="checkbox" name="courses"/>
+                                <label for="course1">
+                                    <span class="checkbox-list__teaser">Урок 1</span>
+                                    <span class="checkbox-list__title">Если нет времени на изучение</span>
+                                    <div class="badges">
+                                        <div class="badges__item">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-time"></use>
+                                            </svg>
+                                            Не пройден
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="checkbox-list__item">
+                                <input class="input" id="course2" type="checkbox" name="courses" checked/>
+                                <label for="course2">
+                                    <span class="checkbox-list__teaser">Урок 2</span>
+                                    <span class="checkbox-list__title">Контент-менеджер. Элементы управления</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-list__item">
+                                <input class="input" id="course3" type="checkbox" name="courses"/>
+                                <label for="course3">
+                                    <span class="checkbox-list__teaser">Урок 3</span>
+                                    <span class="checkbox-list__title">Если нет времени на изучение</span>
+                                    <div class="badges">
+                                        <div class="badges__item">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-time"></use>
+                                            </svg>
+                                            Не пройден
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="checkbox-list__item">
+                                <input class="input" id="course4" type="checkbox" name="courses"/>
+                                <label for="course4">
+                                    <span class="checkbox-list__teaser">Урок 4</span>
+                                    <span class="checkbox-list__title">Контент-менеджер. Элементы управления</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__form-item">
+                <label for="select-date" class="label-default">Назначить дату прохождения</label>
+                <div class="modal__form-input-wrapper">
+                    <input id="select-date" class="datepicker input input-default input_with-icon" type="text" placeholder="дд.мм.гггг">
+                    <svg class="icon">
+                        <use xlink:href="#icon-calendar"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal__form-item">
+                <button class="button button_orange button_set" type="submit">
+                    <svg class="icon">
+                        <use xlink:href="#icon-list-white"></use>
+                    </svg>
+                    Назначить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--назначить курс повторно-->
+<div id="modal-courses-return" class="mfp-hide modal__ctn">
+    <div class="modal__wrapper">
+        <button type="button" class="modal__close mfp-close btn">
+            <svg class="icon-close js-clear-input">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button>
+        <h4 class="modal__title">
+            Назначить курс повторно
+        </h4>
+        <div class="user-card">
+            <div class="user-card__img">
+                <img src="./images/dist/user.jpg" alt="">
+            </div>
+            <div class="user-card__text">
+                <div class="user-card__title">Ивану Ивановичу Иванову</div>
+                <div class="user-card__teaser">Руководитель отдела продаж</div>
+            </div>
+        </div>
+        <div class="course-mini-card">
+            <div class="badges">
+                <div class="badges__item badges__item_red">
+                    <svg class="icon">
+                        <use xlink:href="#icon-round-close"></use>
+                    </svg>
+                    Не пройден
+                </div>
+            </div>
+            <div class="course-mini-card__teaser">Урок 4</div>
+            <div class="course-mini-card__title">Если нет времени на изучение</div>
+        </div>
+        <form class="modal__form modal__form_modified-top" action="url">
+            <div class="modal__form-item">
+                <label for="select-date-return" class="label-default">Назначить дату прохождения</label>
+                <div class="modal__form-input-wrapper">
+                    <input id="select-date-return" class="datepicker input input-default input_with-icon" type="text" placeholder="дд.мм.гггг">
+                    <svg class="icon">
+                        <use xlink:href="#icon-calendar"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal__form-item">
+                <button class="button button_orange button_set" type="submit">
+                    <svg class="icon">
+                        <use xlink:href="#icon-list-white"></use>
+                    </svg>
+                    Назначить
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 
@@ -487,6 +635,15 @@
     </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15" id="icon-notif">
         <path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.153 13.5a1.333 1.333 0 0 1-2.306 0M11 4.833a4 4 0 1 0-8 0c0 4.667-2 6-2 6h12s-2-1.333-2-6Z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 16" id="icon-calendar">
+        <path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.667 1.333V4M4.333 1.333V4M1 6.667h12M2.333 2.5h9.334c.736 0 1.333.597 1.333 1.333v9.334c0 .736-.597 1.333-1.333 1.333H2.333A1.333 1.333 0 0 1 1 13.167V3.833C1 3.097 1.597 2.5 2.333 2.5Z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="icon-round-close">
+        <path stroke="#464A4D" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m10 6-4 4m0-4 4 4m4.667-2A6.667 6.667 0 1 1 1.334 8a6.667 6.667 0 0 1 13.333 0Z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="icon-time">
+        <path stroke="#464A4D" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 4v4l2.667 1.333m4-1.333A6.667 6.667 0 1 1 1.334 8a6.667 6.667 0 0 1 13.333 0Z"></path>
     </symbol>
 </svg>
 <script src="js/app.min.js"></script>
