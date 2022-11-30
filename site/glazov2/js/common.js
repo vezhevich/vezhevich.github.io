@@ -1,3 +1,8 @@
+// loader
+$(document).ready(function(){
+    $('body').removeClass('loading');
+});
+
 // скрыть/показать сайдбар
 $(function() {
     if ($('.js-show-sidebar-button').length > 0) {
@@ -10,8 +15,18 @@ $(function() {
             sidebar.classList.toggle('l-main__sidebar_pushed')
             button.classList.toggle('opened')
         }
+
+        let screenWidth = $(window).width();
+        if(screenWidth < 767) {
+            $('.l-main__wrapper-content').removeClass('l-main__wrapper-content_pushed')
+            $('.l-main__sidebar').removeClass('l-main__sidebar_pushed')
+            $('.js-show-sidebar-button').removeClass('opened')
+        }
+
     };
 });
+
+
 
 // подменю в сайдбаре
 $(function() {
@@ -195,31 +210,33 @@ $(function() {
 
 // dropdown
 $(function() {
-    const btnMenu = document.querySelector(".dropdown__button");
-    const menu = document.querySelector(".dropdown__ctn");
-    const toggleMenu = function () {
-        menu.classList.toggle("open");
-    }
-
-    const togglebtn = function () {
-        btnMenu.classList.toggle("open");
-    }
-
-    btnMenu.addEventListener("click", function (e) {
-        e.stopPropagation();
-        toggleMenu();
-        togglebtn();
-    });
-
-    document.addEventListener("click", function (e) {
-        const target = e.target;
-        const its_menu = target == menu || menu.contains(target);
-        const its_btnMenu = target == btnMenu;
-        const menu_is_active = menu.classList.contains("open");
-
-        if (!its_menu && !its_btnMenu && menu_is_active) {
-            toggleMenu();
-            togglebtn();
+    if ($('.dropdown__button').length > 0) {
+        const btnMenu = document.querySelector(".dropdown__button");
+        const menu = document.querySelector(".dropdown__ctn");
+        const toggleMenu = function () {
+            menu.classList.toggle("open");
         }
-    });
+
+        const toggleBtn = function () {
+            btnMenu.classList.toggle("open");
+        }
+
+        btnMenu.addEventListener("click", function (e) {
+            e.stopPropagation();
+            toggleMenu();
+            toggleBtn();
+        });
+
+        document.addEventListener("click", function (e) {
+            const target = e.target;
+            const its_menu = target == menu || menu.contains(target);
+            const its_btnMenu = target == btnMenu;
+            const menu_is_active = menu.classList.contains("open");
+
+            if (!its_menu && !its_btnMenu && menu_is_active) {
+                toggleMenu();
+                toggleBtn();
+            }
+        });
+    }
 });
