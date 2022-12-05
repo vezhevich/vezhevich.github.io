@@ -376,8 +376,8 @@
         <form class="modal__form modal__form_modified-top" action="url">
             <div class="modal__form-item">
                 <label class="label-default">Выберите один или несколько курсов</label>
-                <select class="select select_multiply js-choice2" name="" id="select-courses" multiple>
-                    <option placeholder value="">Выберите курс</option>
+                <select class="select select_multiply js-choice2" name="select-courses" id="select-courses" multiple>
+                    <option placeholder>Выберите курс</option>
                     <option value="1">Урок 1. Если нет времени на изучение</option>
                     <option value="2">Урок 2. Если нет времени на изучение</option>
                     <option value="3">Урок 3. Если нет времени на изучение, если нет времени на изучение</option>
@@ -399,14 +399,14 @@
                                 <label for="course1">
                                     <span class="checkbox-list__teaser">Урок 1</span>
                                     <span class="checkbox-list__title">Если нет времени на изучение</span>
-                                    <div class="badges">
-                                        <div class="badges__item">
+                                    <span class="badges">
+                                        <span class="badges__item">
                                             <svg class="icon">
                                                 <use xlink:href="#icon-time"></use>
                                             </svg>
                                             Не пройден
-                                        </div>
-                                    </div>
+                                        </span>
+                                    </span>
                                 </label>
                             </div>
                             <div class="checkbox-list__item">
@@ -421,14 +421,14 @@
                                 <label for="course3">
                                     <span class="checkbox-list__teaser">Урок 3</span>
                                     <span class="checkbox-list__title">Если нет времени на изучение</span>
-                                    <div class="badges">
-                                        <div class="badges__item">
+                                    <span class="badges">
+                                        <span class="badges__item">
                                             <svg class="icon">
                                                 <use xlink:href="#icon-time"></use>
                                             </svg>
                                             Не пройден
-                                        </div>
-                                    </div>
+                                        </span>
+                                    </span>
                                 </label>
                             </div>
                             <div class="checkbox-list__item">
@@ -484,14 +484,14 @@
             </div>
         </div>
         <div class="course-mini-card">
-            <div class="badges">
-                <div class="badges__item badges__item_red">
+            <span class="badges">
+                <span class="badges__item badges__item_red">
                     <svg class="icon">
                         <use xlink:href="#icon-round-close"></use>
                     </svg>
                     Не пройден
-                </div>
-            </div>
+                </span>
+            </span>
             <div class="course-mini-card__teaser">Урок 4</div>
             <div class="course-mini-card__title">
                 <a href="#" class="course-mini-card__title-link">Если нет времени на изучение</a>
@@ -532,7 +532,7 @@
         <form class="modal__form modal__form_modified-top" action="url">
             <div class="modal__form-item">
                 <label for="message-support" class="label-default">Сообщение</label>
-                <textarea class="textarea" name="" id="message-support" cols="30" rows="10"></textarea>
+                <textarea class="textarea" name="message-support" id="message-support" cols="30" rows="10"></textarea>
             </div>
             <div class="modal__form-item">
                 <button class="button button_orange button_send" type="submit">
@@ -582,7 +582,7 @@
         <form class="modal__form modal__form_modified-top" action="url">
             <div class="modal__form-item">
                 <label for="message" class="label-default">Сообщение</label>
-                <textarea class="textarea" name="" id="message" cols="30" rows="10"></textarea>
+                <textarea class="textarea" name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <div class="modal__form-item">
                 <button class="button button_orange button_send" type="submit">
