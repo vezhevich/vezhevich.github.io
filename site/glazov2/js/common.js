@@ -240,3 +240,11 @@ $(function() {
         });
     }
 });
+
+// активное состояние тэгов
+$(function() {
+    $('.js-add-active').click(function(){
+        $('.tags__link').removeClass('tags__link_active');
+        $(this).addClass('tags__link_active');
+    });
+});
