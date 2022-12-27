@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="styles/jquery.fancybox.css?ver=23123123123" type="text/css" />-->
+    <link rel="stylesheet" href="styles/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="styles/slick.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/fonts.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/jarallax.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/animate.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/style.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/responsive.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/pickmeup.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/simplebar.css" type="text/css" />
+    <link rel="stylesheet" href="styles/custom.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div id="search-modal" class="search-modal">
+    <div class="wrap">
+        <div class="search-modal__inner">
+            <form>
+                <input type="search" placeholder="Что искать?">
+                <button class="search-submit"><i class="icon" data-svg="images/svg/icons/search.svg"></i></button>
+                <button class="search-close js-close-modal"><i class="icon" data-svg="images/svg/icons/close.svg"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div id="menu-modal" class="menu-modal">
+        <div class="wrap">
+            <div class="menu-modal__top">
+                <a href="#" class="close menu-modal__btn"><i class="icon" data-svg="images/svg/icons/close.svg"></i></a>
+                <a href="#" class="menu-modal__logo"><img src="images/svg/logo.svg" alt=""></a>
+                <a data-mfp-src="#search-modal" class="search menu-modal__btn js-modal-top"><i class="icon" data-svg="images/svg/icons/search.svg"></i></a>
+            </div>
+
+            <div class="menu-modal__inner">
+                <div class="menu-modal__list">
+                    <ul>
+                        <li class="active"><a href="#">Поздравления</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О Бурятии</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Планы</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-modal__list">
+                    <ul>
+                        <li><a href="#">Медиа</a></li>
+                        <li><a href="#">Конкурсы</a></li>
+                        <li><a href="#">Тесты</a></li>
+                        <li><a href="#">Опросы</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-modal__list2">
+                    <ul>
+                        <li><a href="#">О сайте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Официальная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-feedback" class="mfp-hide modal__ctn">
+        <div class="modal__wrapper">
+            <button type="button" class="modal__close mfp-close btn">
+                <i class="icon" data-svg="images/svg/icons/close.svg"></i>
+            </button>
+            <h2 class="modal__title">Обратная связь</h2>
+            <form class="modal__form" action="url">
+                <div class="modal__form-item">
+                    <!--modal__form-input_error-->
+                    <input class="modal__form-input modal__form-input_error" type="email" id="name" placeholder="Ваше имя">
+                    <span class="modal__form_error-text">Error Message</span>
+                </div>
+                <div class="modal__form-item">
+                    <!--modal__form-input_error-->
+                    <input class="modal__form-input" type="email" id="email" placeholder="E-mail">
+                    <span class="modal__form_error-text">Error Message</span>
+                </div>
+                <div class="modal__form-item">
+                    <textarea class="modal__form-textarea" name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="modal__form-item">
+                    <button data-mfp-src="#modal-thanks" class="modal__form-button js-modal">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-thanks" class="mfp-hide modal__ctn modal-tanks">
+        <div class="modal__wrapper">
+            <div class="modal-tanks__message">
+                <img src="images/svg/icon-round-check.svg" alt="">
+                <h3 class="">Ваше сообщение успешно отправлено</h3>
+            </div>
+            <button class="modal__form-button js-close-modal">
+                <i class="icon loaded" data-svg="images/svg/icons/close.svg"></i>
+                Закрыть
+            </button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__inner">
+                <div class="header__top">
+                    <a href="#" class="hamburger header__btn" data-modal="menu-modal" class="wow fadeIn" data-wow-delay="1s"><i class="icon" data-svg="images/svg/icons/menu.svg"></i></a>
+
+                    <a class="header__logo"><img src="images/svg/logo.svg" alt=""></a>
+
+                    <a data-mfp-src="#search-modal" class="search header__btn js-modal-top"><i class="icon" data-svg="images/svg/icons/search.svg"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-menu">
+        <div class="wrap">
+            <div class="main-menu__inner">
+                <ul>
+                    <li><a href="#">Поздравления</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О Бурятии</a></li>
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Планы</a></li>
+                    <li><a href="#">Медиа</a></li>
+                    <li><a href="#">Конкурсы</a></li>
+                    <li><a href="#">Тесты</a></li>
+                    <li><a href="#">Опросы</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<main>
+
+    <section class="page">
+        <div class="wrap">
+            <h1>Карта событий</h1>
+
+            <div class="menu-content">
+                <ul data-simplebar class="custom-scroll">
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Интересные факты</a></li>
+                    <li class="active"><a href="#">Карта событий</a></li>
+                    <li><a href="#">Лица Бурятии</a></li>
+                    <li><a href="#">Культура</a></li>
+                    <li><a href="#">Достопримечательности</a></li>
+                </ul>
+            </div>
+
+            <div class="select-btns">
+                <div class="select-btn select-period"><input type="text" class="period-date" value="Выбрать период"></div>
+                <div class="select-btn" data-modal="select-category">Категория <i class="icon" data-svg="images/svg/icons/arrow-d2.svg"></i>
+                    <span id="modal-category" class="modal modal-category">
+                        <span class="modal__content">
+                            <ul>
+                                <li class="active"><a href="#">Все</a></li>
+                                <li><a href="#">Общество</a></li>
+                                <li><a href="#">Культура</a></li>
+                                <li><a href="#">Политика</a></li>
+                                <li><a href="#">Промышленность</a></li>
+                                <li><a href="#">Экономика</a></li>
+                                <li><a href="#">Строительство</a></li>
+                            </ul>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A93780f80a49fe2ab94268ffa410b1dd2048c221f2f2100926ab86ce3156e7163&amp;source=constructor" width="1019" height="476" frameborder="0"></iframe>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer__inner">
+            <div class="footer-l">
+                <small>Телефон:</small>
+                <span><a href="tel:+7 (4112) 50-84-67">+7 (4112) 50-84-67</a></span>
+            </div>
+            <div class="footer-m">
+                <small>E-mail:</small>
+                <span><a href="mailto:mail@100buryatia.ru">mail@100buryatia.ru</a></span>
+            </div>
+            <div class="footer-r">
+                <div class="footer-btn"><a class="js-modal" data-mfp-src="#modal-feedback">Отправить сообщение <i class="icon" data-svg="images/svg/icons/message-square.svg"></i></a></div>
+            </div>
+        </div>
+
+        <div class="footer__inner">
+            <div class="footer-l">
+                <div class="footer__caption">100 лет Республике Бурятия</div>
+            </div>
+            <div class="footer-m">
+                <div class="footer__caption">Правила использования материалов</div>
+            </div>
+            <div class="footer-r">
+                <div class="footer__caption"><a href="#" target="_blank">Сайт разработан студией Realist</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=32323"></script>
+<!--<script src="scripts/jquery.maskedinput.js?ver=123"></script>-->
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/slick.js?ver=123"></script>
+<script src="scripts/pickmeup.js?ver=123"></script>
+<script src="scripts/jarallax.js?ver=123"></script>
+<script src="scripts/wow.js?ver=123"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="scripts/init.js?ver=123"></script>
+
+</html>

@@ -1,0 +1,164 @@
+/**
+ * @package   PickMeUp
+ * @author    Nazar Mokrynskyi <nazar@mokrynskyi.com>
+ * @author    Stefan Petre <www.eyecon.ro>
+ * @copyright Copyright (c) 2013-2017, Nazar Mokrynskyi
+ * @copyright Copyright (c) 2008-2009, Stefan Petre
+ * @license   MIT License, see license.txt
+ */
+.pickmeup {
+  background: #fff;
+  border-radius: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: inline-block;
+  position: absolute;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  z-index: 200;
+  -webkit-box-shadow: 0px 8px 19px 0px rgba(147, 151, 170, 0.58);
+  -moz-box-shadow: 0px 8px 19px 0px rgba(147, 151, 170, 0.58);
+  box-shadow: 0px 8px 19px 0px rgba(147, 151, 170, 0.58); }
+  .pickmeup * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .pickmeup.pmu-flat {
+    position: relative; }
+  .pickmeup.pmu-hidden {
+    display: none; }
+  .pickmeup .picker-head {
+    color: #9397AA;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 65px;
+    border-bottom: 1px solid #E9EBF2; }
+    .pickmeup .picker-head span {
+      margin-right: 20px; }
+      .pickmeup .picker-head span:before {
+        content: 'today';
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        font-size: 24px; }
+  .pickmeup .pmu-instance {
+    display: block;
+    padding: 24px 20px 30px;
+    text-align: center;
+    width: 320px; }
+    .pickmeup .pmu-instance .pmu-button {
+      cursor: pointer;
+      outline: none;
+      text-decoration: none;
+      border: 1px solid transparent;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .pickmeup .pmu-instance .pmu-button:hover {
+        color: #395bf5; }
+    .pickmeup .pmu-instance .pmu-days .pmu-button:hover {
+      background: #395bf5;
+      border-color: #395bf5;
+      color: #fff; }
+    .pickmeup .pmu-instance .pmu-today {
+      background: #395bf5;
+      color: #fff; }
+    .pickmeup .pmu-instance .pmu-not-in-month {
+      color: #6a6a6a; }
+    .pickmeup .pmu-instance .pmu-disabled,
+    .pickmeup .pmu-instance .pmu-disabled:hover {
+      cursor: default; }
+    .pickmeup .pmu-instance .pmu-selected {
+      border-color: #9d2235 !important;
+      color: #9d2235 !important;
+      background: none !important; }
+    .pickmeup .pmu-instance .pmu-not-in-month.pmu-selected {
+      background: #395bf5; }
+    .pickmeup .pmu-instance nav {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 25px; }
+      .pickmeup .pmu-instance nav .pmu-prev,
+      .pickmeup .pmu-instance nav .pmu-next {
+        display: none;
+        font-size: 0;
+        padding: 0;
+        color: #9397aa;
+        display: block !important; }
+      .pickmeup .pmu-instance nav .pmu-prev:before {
+        content: 'keyboard_arrow_left';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px; }
+      .pickmeup .pmu-instance nav .pmu-next:before {
+        content: 'keyboard_arrow_right';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px; }
+      .pickmeup .pmu-instance nav .pmu-month {
+        width: auto !important;
+        color: #222;
+        font-size: 18px;
+        font-weight: normal; }
+    .pickmeup .pmu-instance .pmu-years *,
+    .pickmeup .pmu-instance .pmu-months * {
+      display: inline-block;
+      line-height: 3.6em;
+      width: 3.5em; }
+    .pickmeup .pmu-instance .pmu-day-of-week {
+      font-size: 14px;
+      color: #cbceda;
+      cursor: default;
+      margin-bottom: 15px !important; }
+    .pickmeup .pmu-instance .pmu-days {
+      font-size: 16px;
+      color: #cbceda; }
+    .pickmeup .pmu-instance .pmu-saturday,
+    .pickmeup .pmu-instance .pmu-sunday {
+      color: #edbac6; }
+    .pickmeup .pmu-instance .pmu-day-of-week *,
+    .pickmeup .pmu-instance .pmu-days * {
+      display: inline-block;
+      text-align: center;
+      line-height: 40px;
+      width: 14.28571428571429%;
+      border-radius: 50%; }
+    .pickmeup .pmu-instance .pmu-day-of-week * {
+      line-height: 1.8em; }
+  .pickmeup .pmu-instance:first-child .pmu-prev,
+  .pickmeup .pmu-instance:last-child .pmu-next {
+    display: block; }
+  .pickmeup .pmu-instance:first-child .pmu-month,
+  .pickmeup .pmu-instance:last-child .pmu-month {
+    width: 13em; }
+  .pickmeup .pmu-instance:first-child:last-child .pmu-month {
+    width: 12em; }
+  .pickmeup:not(.pmu-view-days) .pmu-days,
+  .pickmeup:not(.pmu-view-days) .pmu-day-of-week,
+  .pickmeup:not(.pmu-view-months) .pmu-months,
+  .pickmeup:not(.pmu-view-years) .pmu-years {
+    display: none; }

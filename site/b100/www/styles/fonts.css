@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Bruskovaya';
+    src: url('../fonts/BruskovayaPlain.eot');
+    src: url('../fonts/BruskovayaPlain.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BruskovayaPlain.woff2') format('woff2'),
+        url('../fonts/BruskovayaPlain.woff') format('woff'),
+        url('../fonts/BruskovayaPlain.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

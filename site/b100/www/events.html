@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="styles/jquery.fancybox.css?ver=23123123123" type="text/css" />-->
+    <link rel="stylesheet" href="styles/slick.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/fonts.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/jarallax.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/animate.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/style.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/responsive.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/pickmeup.css?ver=23123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/custom.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div id="search-modal" class="search-modal">
+        <div class="wrap">
+            <div class="search-modal__inner">
+                <form>
+                    <input type="search" placeholder="Что искать?">
+                    <button class="search-submit"><i class="icon" data-svg="images/svg/icons/search.svg"></i></button>
+                    <button class="search-close"><i class="icon" data-svg="images/svg/icons/close.svg"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-modal" class="menu-modal">
+        <div class="wrap">
+            <div class="menu-modal__top">
+                <a href="#" class="close menu-modal__btn"><i class="icon" data-svg="images/svg/icons/close.svg"></i></a>
+                <a href="#" class="menu-modal__logo"><img src="images/svg/logo.svg" alt=""></a>
+                <a href="#" class="search menu-modal__btn" data-modal="search-modal"><i class="icon" data-svg="images/svg/icons/search.svg"></i></a>
+            </div>
+
+            <div class="menu-modal__inner">
+                <div class="menu-modal__list">
+                    <ul>
+                        <li class="active"><a href="#">Поздравления</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О Бурятии</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Планы</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-modal__list">
+                    <ul>
+                        <li><a href="#">Медиа</a></li>
+                        <li><a href="#">Конкурсы</a></li>
+                        <li><a href="#">Тесты</a></li>
+                        <li><a href="#">Опросы</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-modal__list2">
+                    <ul>
+                        <li><a href="#">О сайте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Официальная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__inner">
+                <div class="header__top">
+                    <a href="#" class="hamburger header__btn" data-modal="menu-modal" class="wow fadeIn" data-wow-delay="1s"><i class="icon" data-svg="images/svg/icons/menu.svg"></i></a>
+
+                    <a class="header__logo"><img src="images/svg/logo.svg" alt=""></a>
+
+                    <a href="#" class="search header__btn" data-modal="search-modal"><i class="icon" data-svg="images/svg/icons/search.svg"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-menu">
+        <div class="wrap">
+            <div class="main-menu__inner">
+                <ul>
+                    <li><a href="#">Поздравления</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О Бурятии</a></li>
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Планы</a></li>
+                    <li><a href="#">Медиа</a></li>
+                    <li><a href="#">Конкурсы</a></li>
+                    <li><a href="#">Тесты</a></li>
+                    <li><a href="#">Опросы</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<main>
+
+    <section class="cards">
+        <div class="wrap">
+            <h1>Ближайшие мероприятия</h1>
+
+            <div class="menu-content">
+                <ul>
+                    <li class="active"><a href="#">Ближайшие</a></li>
+                    <li><a href="#">Прошедшие</a></li>
+                    <li><a href="#">Весь список</a></li>
+                </ul>
+            </div>
+
+            <div class="cards__inner cols">
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_1.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Презентация книги «Тамчинский дацан» состоялась в Бурятии</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_2.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Пионеры бурятского бизнеса</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_3.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">История Бурятии через призму комсомола</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_4.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">В Бурятии состоялось открытие выставки «Гунны. Империя степей»</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_5.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">«Сияние бериллового Будды»: в Улан-Удэ открылась главная выставка года</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_6.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Личные вещи и дневники этнографа Матвея Хангалова представили в Улан-Удэ</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_7.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Общаги Улан-Удэ</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_8.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Глава Бурятии вместе с послом Израиля в России почтили память героев ВОВ</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_9.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Андрей Мухраев: «Бурятское кино - история и национальная гордость»</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_10.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Портрет неизвестной: Бурятский гламур в канун Октябрьской революции и его трагическая судьба</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_11.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">Сибирская Вандея</a></span>
+                    </span>
+                </div>
+                <div class="card col">
+                    <div class="card__image">
+                        <a href="#"><img src="images/news_12.jpg" alt=""></a>
+                    </div>
+                    <span class="card__content">
+                        <span class="card__date">20.11.22</span>
+                        <span class="card__title"><a href="#">В Бурятии открылся музей истории Иволгинского дацана</a></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-nav">
+        <div class="wrap">
+            <div class="page-nav__inner">
+                <ul>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+                <div class="page-nav__next"><a href="#" class="btn"><span>Вперед</span><i class="icon" data-svg="images/svg/icons/arrow-r.svg"></i></a></div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer__inner">
+            <div class="footer-l">
+                <small>Телефон:</small>
+                <span><a href="tel:+7 (4112) 50-84-67">+7 (4112) 50-84-67</a></span>
+            </div>
+            <div class="footer-m">
+                <small>E-mail:</small>
+                <span><a href="mailto:mail@100buryatia.ru">mail@100buryatia.ru</a></span>
+            </div>
+            <div class="footer-r">
+                <div class="footer-btn"><a href="#">Отправить сообщение <i class="icon" data-svg="images/svg/icons/message-square.svg"></i></a></div>
+            </div>
+        </div>
+
+        <div class="footer__inner">
+            <div class="footer-l">
+                <div class="footer__caption">100 лет Республике Бурятия</div>
+            </div>
+            <div class="footer-m">
+                <div class="footer__caption">Правила использования материалов</div>
+            </div>
+            <div class="footer-r">
+                <div class="footer__caption"><a href="#" target="_blank">Сайт разработан студией Realist</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=32323"></script>
+<!--<script src="scripts/jquery.maskedinput.js?ver=123"></script>-->
+<script src="scripts/slick.js?ver=123"></script>
+<script src="scripts/pickmeup.js?ver=123"></script>
+<script src="scripts/jarallax.js?ver=123"></script>
+<script src="scripts/wow.js?ver=123"></script>
+<script src="scripts/init.js?ver=123"></script>
+
+</html>

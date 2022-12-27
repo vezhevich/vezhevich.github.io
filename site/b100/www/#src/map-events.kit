@@ -1,0 +1,47 @@
+<!--@import "header-2.html"-->
+
+<main>
+
+    <section class="page">
+        <div class="wrap">
+            <h1>Карта событий</h1>
+
+            <div class="menu-content">
+                <ul>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Интересные факты</a></li>
+                    <li class="active"><a href="#">Карта событий</a></li>
+                    <li><a href="#">Лица Бурятии</a></li>
+                    <li><a href="#">Культура</a></li>
+                    <li><a href="#">Достопримечательности</a></li>
+                </ul>
+            </div>
+
+            <div class="select-btns">
+                <div class="select-btn select-period"><input type="text" class="period-date" value="Выбрать период"></div>
+                <div class="select-btn" data-modal="select-category">Категория <i class="icon" data-svg="images/svg/icons/arrow-d2.svg"></i>
+                    <span id="modal-category" class="modal modal-category">
+                        <span class="modal__content">
+                            <ul>
+                                <li class="active"><a href="#">Все</a></li>
+                                <li><a href="#">Общество</a></li>
+                                <li><a href="#">Культура</a></li>
+                                <li><a href="#">Политика</a></li>
+                                <li><a href="#">Промышленность</a></li>
+                                <li><a href="#">Экономика</a></li>
+                                <li><a href="#">Строительство</a></li>
+                            </ul>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A93780f80a49fe2ab94268ffa410b1dd2048c221f2f2100926ab86ce3156e7163&amp;source=constructor" width="1019" height="476" frameborder="0"></iframe>
+        </div>
+    </section>
+
+</main>
+
+<!--@import "footer.html"-->
