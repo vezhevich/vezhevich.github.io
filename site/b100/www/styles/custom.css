@@ -724,6 +724,10 @@ blockquote {
     border-radius: 0 80px 80px 0;
 }
 
+.aircalendar .datepicker--cell.-current- {
+    color: #2462BA;
+}
+
 @media (max-width: 767px) {
     .air-picker {
         width: 100%;
