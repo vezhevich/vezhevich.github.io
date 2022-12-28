@@ -71,20 +71,6 @@ jQuery(function ($) {
         };
     })
 
-    $('[data-modal="select-category"]').on('click', function (e) {
-        e.preventDefault();
-        $('#modal-category').addClass('active');
-        $("body").addClass('shadow-overlay');
-        if ($('body').hasClass('shadow-overlay')) {
-
-            $('body').css({
-                'margin-right': scrollbarWidth + 'px'
-            });
-        } else {
-            $('body').css('margin-right', '');
-        };
-    })
-
     $(document).mouseup(function (e) { // событие клика по веб-документу
         var div = $(".modal.active"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
@@ -111,51 +97,10 @@ jQuery(function ($) {
     addEventListener('DOMContentLoaded', function () {
         pickmeup('.calendar', {
             flat: true,
+            title_format: 'B',
             prev: '<img src="images/svg/icons/date-prev.svg" alt="">',
             next: '<img src="images/svg/icons/date-next.svg" alt="">',
         });
-    });
-
-    addEventListener('DOMContentLoaded', function () {
-        pickmeup('input.period-date', {
-            //            position: 'bottom',
-            //            hide_on_select: true,
-            mode: 'multiple',
-            prev: '<img src="images/svg/icons/date-prev2.svg" alt="">',
-            next: '<img src="images/svg/icons/date-next2.svg" alt="">',
-            default_date: false
-        });
-    });
-
-    $('input.period-date').on('click', function (e) {
-        e.preventDefault();
-        $('.pickmeup').addClass('pickmeup2 active');
-        $("body").addClass('shadow-overlay1');
-        if ($('body').hasClass('shadow-overlay1')) {
-
-            $('body').css({
-                'margin-right': scrollbarWidth + 'px'
-            });
-        } else {
-            $('body').css('margin-right', '');
-        };
-    })
-
-    $(document).mouseup(function (e) { // событие клика по веб-документу
-        var div = $(".pickmeup.pickmeup2"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            &&
-            div.has(e.target).length === 0) { // и не по его дочерним элементам
-            $("body").removeClass('shadow-overlay1');
-        }
-        if ($('body').hasClass('shadow-overlay1')) {
-
-            $('body').css({
-                'margin-right': scrollbarWidth + 'px'
-            });
-        } else {
-            $('body').css('margin-right', '');
-        };
     });
 
 });
@@ -235,6 +180,28 @@ if ($('.js-modal-top').length > 0) {
 $('.js-close-modal').click(function(){
     $.magnificPopup.close();
 });
+
+// custom select
+if ($('.select-custom').length > 0) {
+    $('.select-custom').niceSelect();
+}
+
+//datepicker period
+if ($('.datepicker-here').length > 0) {
+    $('.datepicker-here').datepicker({
+        language: 'ru',
+        classes: 'aircalendar',
+        navTitles: {
+            days: 'MM yyyy'
+        },
+        prevHtml: '<img src="images/svg/icons/date-prev2.svg" alt="">',
+        nextHtml: '<img src="images/svg/icons/date-next2.svg" alt="">',
+        autoClose: true,
+    })
+}
+
+
+
 
 
 

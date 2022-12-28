@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="styles/responsive.css?ver=23123123123" type="text/css" />
     <link rel="stylesheet" href="styles/pickmeup.css?ver=23123123123" type="text/css" />
     <link rel="stylesheet" href="styles/simplebar.css" type="text/css" />
+    <link rel="stylesheet" href="styles/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.0.0/css/datepicker.min.css" type="text/css" />
     <link rel="stylesheet" href="styles/custom.css" type="text/css" />
 
 </head>
@@ -169,27 +171,30 @@
             </div>
 
             <div class="select-btns">
-                <div class="select-btn select-period"><input type="text" class="period-date" value="Выбрать период"></div>
-                <div class="select-btn" data-modal="select-category">Категория <i class="icon" data-svg="images/svg/icons/arrow-d2.svg"></i>
-                    <span id="modal-category" class="modal modal-category">
-                        <span class="modal__content">
-                            <ul>
-                                <li class="active"><a href="#">Все</a></li>
-                                <li><a href="#">Общество</a></li>
-                                <li><a href="#">Культура</a></li>
-                                <li><a href="#">Политика</a></li>
-                                <li><a href="#">Промышленность</a></li>
-                                <li><a href="#">Экономика</a></li>
-                                <li><a href="#">Строительство</a></li>
-                            </ul>
-                        </span>
-                    </span>
+                <div class="air-picker ">
+                    <input type="text" data-range="true" data-multiple-dates-separator=" - " data-language="ru" class="datepicker-here" placeholder="Выберите дату"
+                    />
                 </div>
+                <select name="select_event" id="select_event" class="select-custom">
+                    <option value="0">Общество</option>
+                    <option value="1">Культура</option>
+                    <option value="2">Политика</option>
+                    <option value="3">Промышленность</option>
+                </select>
             </div>
         </div>
 
         <div class="event-map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A93780f80a49fe2ab94268ffa410b1dd2048c221f2f2100926ab86ce3156e7163&amp;source=constructor" width="1019" height="476" frameborder="0"></iframe>
+        </div>
+        <div class="event-map__popup" >
+            <div class="event-map__popup-wrapper">
+                <div class="event-map__popup-close">
+                    <i class="icon" data-svg="images/svg/icons/close-sbmt.svg"></i>
+                </div>
+                <div class="event-map__popup-text">20.11.22</div>
+                <div class="event-map__popup-title">Личные вещи и дневники этнографа Матвея Хангалова представили в Улан-Удэ</div>
+            </div>
         </div>
     </section>
 
@@ -235,6 +240,8 @@
 <script src="scripts/jarallax.js?ver=123"></script>
 <script src="scripts/wow.js?ver=123"></script>
 <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.0.0/js/datepicker.min.js"></script>
+<script src="scripts/jquery.nice-select.min.js"></script>
 <script src="scripts/init.js?ver=123"></script>
 
 </html>

@@ -476,3 +476,311 @@ blockquote {
     opacity: 0!important;
     display: none!important;
 }
+
+/*calendar*/
+.pmu-not-in-month {
+    display: none!important;
+}
+
+/*select-custom*/
+.select-custom {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    height: 48px;
+    color: #2462BA;
+    border: 1px solid #E3E5E6;
+    border-radius: 4px;
+    padding-right: 64px;
+}
+
+.select-custom::after {
+    border: 0;
+    background-image: url('../images/svg/icons/arrow-d.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 14px;
+    height: 8px;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    right: 20px;
+}
+
+.select-custom.open::after {
+    transform: rotate(0deg);
+}
+
+
+.select-custom:hover {
+    border-color: #1D4885;
+}
+
+.select-custom .list {
+    min-width: 100%;
+}
+
+.select-custom.open .list {
+    overflow: visible;
+}
+
+.select-custom .option, .select-custom .current {
+    position: relative;
+    z-index: 10;
+}
+
+.select-custom.open .list::before {
+    content: '';
+    position: absolute;
+    top: -68px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px + 48px);
+    background: #fff;
+    box-shadow: 0px 8px 24px 8px rgba(20, 20, 20, 0.08);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.select-btns .select-custom {
+    margin-left: 20px;
+}
+
+.select-custom .option.selected {
+    font-weight: normal;
+    border: 1px solid #E3E5E6;
+    background: none;
+}
+
+.select-custom .option {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (max-width: 767px) {
+    .select-custom {
+        width: 100%;
+    }
+
+    .select-btns .select-custom {
+        margin-left: 0;
+    }
+}
+
+.air-picker {
+    display: block;
+    width: auto;
+
+    outline: none;
+    color: #2462BA;
+    padding: 0 40px 0 32px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    background: url(../images/svg/icons/arrow-d2.svg) no-repeat right 16px center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 4px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid #E3E5E6;
+}
+
+.air-picker:hover {
+    border-color: #1D4885;
+}
+
+.air-picker input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    height: 48px;
+    color: #2462BA;
+    border-radius: 4px;
+    height: 48px;
+}
+
+.air-picker input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #2462BA;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.air-picker input:-moz-placeholder {
+    opacity: 1;
+    color: #2462BA;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.air-picker input::-moz-placeholder {
+    opacity: 1;
+    color: #2462BA;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.air-picker input:-ms-input-placeholder {
+    opacity: 1;
+    color: #2462BA;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.aircalendar .datepicker--pointer {
+    display: none;
+}
+
+.aircalendar {
+    width: 320px;
+    height: 380px;
+    box-shadow: 0px 0px 1px rgba(20, 20, 20, 0.03), 0px 2px 8px rgba(20, 20, 20, 0.05);
+    border-radius: 10px;
+    border: 0;
+    margin-left: -32px;
+}
+
+.aircalendar .datepicker--cell-day.-other-month- {
+    display: none;
+}
+
+
+.aircalendar .datepicker--cell-day {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+}
+
+.aircalendar .datepicker--nav {
+    padding: 20px;
+    border-bottom: 0;
+}
+
+.aircalendar .datepicker--content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.aircalendar .datepicker--day-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #7A7E80;
+    width: 40px;
+    height: 40px;
+}
+
+.aircalendar .datepicker--days-names {
+    margin: 0;
+}
+
+.aircalendar .datepicker--nav-action:hover, .aircalendar .datepicker--nav-title:hover {
+    background: none;
+}
+
+.aircalendar .datepicker--nav-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1D4885;
+}
+
+.aircalendar .datepicker--cell.-selected-, .aircalendar .datepicker--cell.-in-range-, .aircalendar .datepicker--cell.-range-from- {
+    background: #1D4885;
+    color: #fff;
+}
+
+.aircalendar .datepicker--cell.-range-from-, .aircalendar .datepicker--cell.-range-to- {
+    border-color: #1D4885;
+    background: #1D4885;
+    color: #fff;
+}
+
+.aircalendar .datepicker--cell.-range-from- {
+    border-radius: 80px 0 0 80px;
+}
+
+.aircalendar .datepicker--cell.-range-to- {
+    border-radius: 0 80px 80px 0;
+}
+
+@media (max-width: 767px) {
+    .air-picker {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 18px;
+    }
+
+    .aircalendar {
+        width: 280px;
+    }
+}
+
+/*event-map*/
+.event-map__popup {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px 8px rgba(20, 20, 20, 0.08);
+    border-radius: 10px;
+    max-width: 380px;
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+}
+
+.event-map__popup-wrapper {
+    position: relative;
+}
+
+.event-map__popup-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #7A7E80;
+}
+
+.event-map__popup-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0E0F0F;
+}
+
+.event-map__popup-close {
+    width: 26px;
+    height: 26px;
+    border: 1.5px solid #B4B6B8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.event-map__popup-close svg {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+}
