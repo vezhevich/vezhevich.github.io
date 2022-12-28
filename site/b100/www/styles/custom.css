@@ -469,12 +469,16 @@ blockquote {
 
 /*custom-scroll*/
 .custom-scroll .simplebar-content {
-    display: flex;
+    display: inline-flex;
 }
 
 .custom-scroll .simplebar-track {
     opacity: 0!important;
     display: none!important;
+}
+
+.custom-scroll .simplebar-content-wrapper {
+    text-align: center;
 }
 
 /*calendar*/
