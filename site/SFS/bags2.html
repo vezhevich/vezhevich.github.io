@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/fonts.css?ver=123123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/style.css?ver=123123123123" type="text/css" />
+    <link rel="stylesheet" href="styles/responsive.css?ver=123123123123" type="text/css" />
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__inner">
+                <div class="header__arrow"><a href="#"><i class="icon" data-svg="images/svg/icons/arrow-back-mob.svg"></i></a></div>
+                <div class="header__hamburger" data-modal="modal-nav"><i class="icon" data-svg="images/svg/icons/burger.svg"></i></div>
+                <div class="header__logo"><a href="#"><i class="icon" data-svg="images/svg/logo.svg"></i></a></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+<section class="layout">
+    <div class="wrap">
+        <div class="layout__inner">
+            <nav class="page-nav">
+                <ul>
+                    <li class="backstep"><a href="#">01</a></li>
+                    <li class="active"><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="content__goback"><a href="#"><i class="icon" data-svg="images/svg/icons/chevron-l.svg"></i>На шаг назад</a></div>
+
+                <div class="steps-mobile">Шаг 2 из 4</div>
+
+                <h1>Выберите модель</h1>
+
+                <form>
+                    <div class="search">
+                        <input type="search" placeholder="Начните вводить название или имя..." class="searchbox">
+                        <button class="searchbtn"><i class="icon" data-svg="images/svg/icons/search.svg"></i></button>
+                    </div>
+
+                    <div class="chose-blocks">
+                        <div class="chose-blocks__inner">
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Не знаю модель
+                                    <i class="tooltip">
+                                        <i class="icon" data-svg="images/svg/icons/question.svg"></i>
+                                        <i class="tooltip__wrapper">
+                                            <i class="tooltip__text">Подробное описание формирования цены к продаже, а также текст <a href="#" target="_blank">Договора комиссии</a> вы можете найти в разделе <a href="#" target="_blank">FAQ</a></i>
+                                        </i>
+                                    </i>
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Винтаж
+                                    <i class="tooltip">
+                                        <i class="icon" data-svg="images/svg/icons/question.svg"></i>
+                                        <i class="tooltip__wrapper">
+                                            <i class="tooltip__text">Подробное описание формирования цены к продаже, а также текст <a href="#" target="_blank">Договора комиссии</a> вы можете найти в разделе <a href="#" target="_blank">FAQ</a></i>
+                                        </i>
+                                    </i>
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Keepall</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>On the Go</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Capuciness</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Lucille PM</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Damier Ebène Keepall</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="brands">
+                                <span>Montaigne MM</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="layout-bg">
+                <div class="layout-bg__image"><img src="images/bags_bg.jpg" alt=""></div>
+                <div class="layout-bg__btn-add"><a href="#" class="btn-add">Добавить новую вещь<i class="icon" data-svg="images/svg/icons/plus-inner.svg"></i></a></div>
+                <div class="layout-bg__btn"><a href="#" class="btn-next active">К состоянию вещи<i class="icon" data-svg="images/svg/icons/arrow-r.svg"></i></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<div id="modal-nav" class="modal-nav">
+    <div class="modal-nav__search">
+        <form>
+            <input type="search">
+            <button type="submit"><i class="icon" data-svg="images/svg/icons/search.svg"></i></button>
+        </form>
+    </div>
+
+    <div class="main-nav__person"><a href="#">Войти</a></div>
+
+    <div class="main-nav__menu">
+        <ul>
+            <li><a href="#">Женское</a></li>
+            <li><a href="#">Мужское</a></li>
+            <li><a href="#">Kids</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Сдать вещи</a></li>
+            <li><a href="#">Лукбуки</a></li>
+            <li><a href="#">Подборки</a></li>
+            <li><a href="#">Дизайнеры</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Заказ и доставка</a></li>
+            <li class="light" data-modal="modal-cart"><a href="#">Корзина</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="modal-cart" class="layout-bg modal-cart">
+    <div class="layout-bg-cart">
+        <div class="layout-bg-cart__item">
+            <div class="layout-bg-cart__del" data-modal="modal-delete"><i class="icon" data-svg="images/svg/icons/close.svg"></i></div>
+            <div class="layout-bg-cart__title">Кроссовки / кеды</div>
+            <div class="layout-bg-cart__price">Цена: 12 000 ₽</div>
+            <div class="layout-bg-cart__info">
+                <div class="layout-bg-cart__fields">
+                    <span>Бренд: Dolce & Gabanna</span>
+                    <span>Год покупки: 2017</span>
+                    <span>Состояние: новое с биркой</span>
+                </div>
+                <div class="layout-bg-cart__image"><img src="images/cart-item.png" alt=""></div>
+            </div>
+            <div class="layout-bg-cart__edit"><a href="#" data-modal="modal-edit"><i class="icon" data-svg="images/svg/icons/pencil.svg"></i>Редактировать</a></div>
+        </div>
+
+        <div class="layout-bg-cart__item">
+            <div class="layout-bg-cart__del" data-modal="modal-delete"><i class="icon" data-svg="images/svg/icons/close.svg"></i></div>
+            <div class="layout-bg-cart__title">Кроссовки / кеды</div>
+            <div class="layout-bg-cart__price">Цена: 12 000 ₽</div>
+            <div class="layout-bg-cart__info">
+                <div class="layout-bg-cart__fields">
+                    <span>Бренд: Dolce & Gabanna</span>
+                    <span>Год покупки: 2017</span>
+                    <span>Состояние: новое с биркой</span>
+                </div>
+                <div class="layout-bg-cart__image"><img src="images/cart-item.png" alt=""></div>
+            </div>
+            <div class="layout-bg-cart__edit back-edit"><a href="#"><i class="icon" data-svg="images/svg/icons/arrow-back.svg" data-modal="modal-edit"></i>Вернуться к заполнению</a></div>
+        </div>
+
+        <div class="layout-bg-cart__item">
+            <div class="layout-bg-cart__del" data-modal="modal-delete"><i class="icon" data-svg="images/svg/icons/close.svg"></i></div>
+            <div class="layout-bg-cart__title">Новая вещь</div>
+        </div>
+    </div>
+
+    <div class="layout-bg__btn"><a href="#" class="btn-plus"><i class="icon" data-svg="images/svg/icons/plus.svg"></i></a><a href="#" class="btn-next active">К оформлению<i class="icon" data-svg="images/svg/icons/arrow-r.svg"></i></a></div>
+</div>
+
+<div class="modal-edit" id="modal-edit">
+    <div class="modal-edit__close"><i class="icon" data-svg="images/svg/icons/close-dark.svg"></i></div>
+    <div class="modal-edit__inner">
+        <div class="modal-edit__title-lg">Внести изменения</div>
+        <form>
+            <div class="modal-edit__form">
+                <div class="modal-edit__block">
+                    <div class="modal-edit__title">Раздел вашей вещи</div>
+                    <div class="modal-edit__chose">
+                        <label>
+                            <input type="radio" name="razdel" checked>
+                            <span>Мужское</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="razdel">
+                            <span>Женское</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="razdel">
+                            <span>Детское</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="razdel">
+                            <span>Сумки</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="razdel">
+                            <span>Парфюм</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-edit__block">
+                    <div class="modal-edit__title">Категория</div>
+                    <div class="modal-edit__row">
+                        <select class="select-css2">
+                            <option>Джинсы и брюки</option>
+                            <option>Джинсы и брюки1</option>
+                            <option>Джинсы и брюки2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-edit__block">
+                    <div class="modal-edit__title">Дизайнер или бренд</div>
+                    <div class="modal-edit__row">
+                        <select class="select-css2">
+                            <option>Gucci</option>
+                            <option>Gucci1</option>
+                            <option>Gucci2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-edit__block">
+                    <div class="modal-edit__title">Год покупки</div>
+                    <div class="modal-edit__chose">
+                        <label>
+                            <input type="radio" name="year-buy" checked>
+                            <span>2022</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="year-buy">
+                            <span>2020-2017</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="year-buy">
+                            <span>2021</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="year-buy">
+                            <span>Ранее</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-edit__block">
+                    <div class="modal-edit__title">Состояние</div>
+                    <div class="chose-blocks">
+                        <div class="chose-blocks__inner full-wdth-row">
+                            <label>
+                                <input type="radio" name="condition" checked>
+                                <span>Новая с биркой <small>Есть бирка и ярлыки с моделью и правилами ухода</small></span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="condition">
+                                <span>В отличном <small>Нет следов носки и дефектов</small></span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="condition">
+                                <span>В хорошем <small>Есть изъяны, которые почти не заметны</small></span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="condition">
+                                <span>С заметными дефектами <small>Есть потёртости и другие недостатки, требуется чистка или реставрация</small></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-edit__block">
+                    <div class="modal-edit__title">Примерная цена</div>
+                    <div class="deal">
+                        <div class="bg-cover-grey">
+                            <div class="deal__price">
+                                <small>Вы получите</small>
+                                <strong>12 000 ₽</strong>
+                            </div>
+                            <div class="deal__sale">
+                                <span>Мы продадим вашу вещь за 14 000 ₽
+                                    <span class="tooltip">
+                                        <i class="icon" data-svg="images/svg/icons/question.svg"></i>
+                                        <span class="tooltip__wrapper">
+                                            <span class="tooltip__text">Подробное описание формирования цены к продаже, а также текст <a href="#" target="_blank">Договора комиссии</a> вы можете найти в разделе <a href="#" target="_blank">FAQ</a></span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <small>Разницу возьмём себе в качестве<br>вознаграждения за наши услуги</small>
+                            </div>
+                        </div>
+
+                        <div class="deal__your-price">
+                            <strong>Если вы считаете, что мы ошиблись,<br> вы можете указать цену самостоятельно</strong>
+                            <input type="text" class="inputbox2" placeholder="Введите вашу цену">
+                            <small>Завышенная цена отпугивает<br> покупателей, а низкая — настораживает</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-btn"><a href="#" class="modal-btn__close">Сохранить изменения<i class="icon" data-svg="images/svg/icons/arrow-r.svg"></i></a></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal-custom" id="modal-delete">
+    <div class="modal-custom__close"><i class="icon" data-svg="images/svg/icons/close-dark.svg"></i></div>
+    <div class="modal-custom__title">Вы уверены, что хотите удалить вещь?</div>
+    <div class="modal-custom__text">После удаления вещь нельзя восстановить и придётся пройти все шаги заново</div>
+    <div class="modal-custom__btns">
+        <a href="#" class="btn btn-light">Отменить</a>
+        <a href="#" class="btn icon-left"><i class="icon" data-svg="images/svg/icons/cart.svg"></i>Удалить</a>
+    </div>
+</div>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=5235235235"></script>
+<script src="scripts/init.js?ver=5235235235"></script>
+<script src="scripts/jquery.maskedinput.js?ver=5235235235"></script>
+
+</html>
+
