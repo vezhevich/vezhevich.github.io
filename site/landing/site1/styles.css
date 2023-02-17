@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5 {
     .promo-bg {
         right: -50px;
         max-width: 400px;
-        top: 115px;
+        top: 50px;
     }
 
     .promo__title, .promo__teaser {
@@ -365,6 +365,12 @@ h1, h2, h3, h4, h5 {
         margin-top: 40px;
         width: calc(33.3% - 20px);
         margin-left: 20px;
+    }
+
+    .tabs {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .tab-content {
