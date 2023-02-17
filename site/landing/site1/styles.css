@@ -201,6 +201,9 @@ h1, h2, h3, h4, h5 {
     width: 64px;
     height: 64px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards__item-image img {
