@@ -370,6 +370,20 @@ h1, h2, h3, h4, h5 {
         margin-left: 20px;
     }
 
+    .cards__item-title, .cards__item-title a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .cards__item-link, .cards__item-link a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .cards__item-image {
+        margin-bottom: 12px;
+    }
+
     .tabs {
         display: flex;
         margin-top: 15px;
@@ -378,6 +392,11 @@ h1, h2, h3, h4, h5 {
 
     .tab-content {
         margin-top: 40px;
+    }
+
+    .tab > label {
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .team {
