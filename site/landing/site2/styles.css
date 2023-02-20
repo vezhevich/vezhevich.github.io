@@ -7,14 +7,15 @@ html{
 
 body{
     height: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     background: #fff;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Inter';
-    font-weight: 700;
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: #252525;
 }
 
 * {
@@ -29,9 +30,9 @@ h1, h2, h3, h4, h5 {
 
 .title-h1 {
     width: 100%;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 32px;
-    line-height: 40px;
+    line-height: 48px;
     color: #252525;
     margin-bottom: 16px;
     margin-top: 0;
@@ -72,6 +73,10 @@ h1, h2, h3, h4, h5 {
 }
 /*end default styles*/
 
+.section_gray {
+    background: #E6E4DF;
+}
+
 .section_top {
     position: relative;
     overflow: hidden;
@@ -85,7 +90,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .section_middle {
-    background: #252525;
     padding-top: 80px;
     padding-bottom: 100px;
 }
@@ -132,6 +136,10 @@ h1, h2, h3, h4, h5 {
 
 .promo__teaser p {
     margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #505050;
 }
 
 .promo__teaser p + p {
@@ -158,12 +166,13 @@ h1, h2, h3, h4, h5 {
     display: block;
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
-    color: #D9D9D9;
-    padding: 8px;
+    line-height: 24px;
+    color: #252525;
+    padding: 8px 16px;
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 8px;
+    border: 1px solid transparent;
 }
 
 .tab-content {
@@ -178,9 +187,9 @@ h1, h2, h3, h4, h5 {
 .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
 .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
 .tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
-    background: #E1FFB1;
     border-radius: 8px;
     color: #252525;
+    border: 1px solid #252525;
 }
 
 .tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
@@ -205,12 +214,21 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid #E6E4DF;
+    border-radius: 16px;
+    height: 187px;
+    padding: 20px;
+    transition: all .3s;
+}
+
+.cards__item:hover {
+    border-color: #252525;
 }
 
 .cards__item-image {
     width: 64px;
     height: 64px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,7 +242,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #252525;
     text-align: center;
 }
 
@@ -256,8 +274,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .cards__item-link a:hover {
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    border-bottom: 1px solid #252525;
+    color: #252525;
 }
 
 .text__list {
@@ -271,8 +289,18 @@ h1, h2, h3, h4, h5 {
     color: #505050;
 }
 
-.text__list-item:not(:last-child) {
-    margin-bottom: 32px;
+.team .text__list, .location .text__list {
+    display: flex;
+    margin-left: -32px;
+}
+
+.team .text__list-item, .location .text__list-item {
+    width: calc(25% - 32px);
+    margin-left: 32px;
+}
+
+.location {
+    margin-top: 80px;
 }
 
 .footer {
@@ -283,7 +311,7 @@ h1, h2, h3, h4, h5 {
 
 .footer .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .footer__copy {
@@ -300,16 +328,6 @@ h1, h2, h3, h4, h5 {
 
 .footer__contacts-list-item {
     margin-left: 16px;
-}
-
-.footer__contacts {
-    color: #505050;
-}
-
-.footer__contacts span {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
 }
 
 @media (max-width: 767px) {
@@ -363,7 +381,7 @@ h1, h2, h3, h4, h5 {
         max-width: 100%;
     }
 
-    .promo__teaser {
+    .promo__teaser, .promo__teaser p {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -440,6 +458,20 @@ h1, h2, h3, h4, h5 {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .team .text__list, .location .text__list {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .team .text__list-item, .location .text__list-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .location {
+        margin-top: 40px;
     }
 }
 
