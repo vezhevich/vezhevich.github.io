@@ -190,13 +190,13 @@ h1, h2, h3, h4, h5 {
     display: flex;
     flex-flow: wrap;
     margin-left: -32px;
-    margin-top: -80px;
+    margin-top: -32px;
 }
 
 .cards__item {
     width: calc(25% - 32px);
     margin-left: 32px;
-    margin-top: 80px;
+    margin-top: 32px;
     border: 1px solid rgba(190, 190, 190, 0.3);
     border-radius: 8px;
     padding: 24px 20px;
