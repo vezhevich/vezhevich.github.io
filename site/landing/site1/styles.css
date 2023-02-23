@@ -105,8 +105,8 @@ h1, h2, h3, h4, h5 {
 
 .promo-bg {
     position: absolute;
-    top: 0px;
-    right: 105px;
+    top: -150px;
+    right: -200px;
     z-index: 1;
 }
 
@@ -354,9 +354,9 @@ h1, h2, h3, h4, h5 {
     }
 
     .promo-bg {
-        right: -50px;
-        max-width: 400px;
-        top: 50px;
+        top: -50px;
+        right: -150px;
+        max-width: 600px;
     }
 
     .promo__title, .promo__teaser {
