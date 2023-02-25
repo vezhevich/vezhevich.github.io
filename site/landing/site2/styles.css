@@ -38,10 +38,6 @@ h1, h2, h3, h4, h5 {
     margin-top: 0;
 }
 
-.title_white {
-    color: #fff;
-}
-
 .title_modified {
     display: inline;
     margin-bottom: 0;
@@ -105,13 +101,6 @@ h1, h2, h3, h4, h5 {
 
 .header__logo {
     max-width: 100%;
-}
-
-.promo-bg {
-    position: absolute;
-    top: 0px;
-    right: 105px;
-    z-index: 1;
 }
 
 .promo {
@@ -304,7 +293,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .footer {
-    background: #F5F5F5;
+    background: #E6E4DF;
     padding-top: 26px;
     padding-bottom: 26px;
 }
@@ -370,12 +359,6 @@ h1, h2, h3, h4, h5 {
         max-width: 80px;
     }
 
-    .promo-bg {
-        right: -50px;
-        max-width: 400px;
-        top: 50px;
-    }
-
     .promo__title, .promo__teaser {
         max-width: 100%;
     }
@@ -395,6 +378,7 @@ h1, h2, h3, h4, h5 {
         margin-top: 40px;
         width: calc(33.3% - 20px);
         margin-left: 20px;
+        height: 137px;
     }
 
     .cards__item-title, .cards__item-title a {
@@ -409,6 +393,8 @@ h1, h2, h3, h4, h5 {
 
     .cards__item-image {
         margin-bottom: 12px;
+        width: 48px;
+        height: 48px;
     }
 
     .tabs {
@@ -424,6 +410,11 @@ h1, h2, h3, h4, h5 {
     .tab > label {
         font-size: 14px;
         line-height: 17px;
+        padding: 8px;
+    }
+
+    .tabs .tab:not(:last-child) {
+        margin-right: 8px;
     }
 
     .team {
