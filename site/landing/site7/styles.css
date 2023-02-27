@@ -351,6 +351,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 767px) {
     .section_top .container {
         min-height: auto;
+        padding-top: 48px;
     }
 
     .section_middle {
@@ -384,6 +385,7 @@ h1, h2, h3, h4, h5 {
 
     .promo {
         padding-top: 0;
+        flex-direction: column;
     }
 
     .promo__image {
@@ -392,8 +394,8 @@ h1, h2, h3, h4, h5 {
     }
 
     .promo__wrapper {
-        padding-left: 20px;
-        padding-top: 10px;
+        padding-left: 0;
+        padding-top: 30px;
         padding-bottom: 0;
     }
 

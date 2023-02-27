@@ -325,6 +325,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .section_top .container {
+        padding-top: 40px;
         min-height: auto;
     }
 

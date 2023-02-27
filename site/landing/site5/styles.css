@@ -342,6 +342,7 @@ h1, h2, h3, h4, h5 {
 
     .section_top .container {
         min-height: auto;
+        padding-top: 48px;
     }
 
     .section_middle, .section_bottom {
