@@ -210,8 +210,7 @@ h2 {
 }
 
 .b-cards__item {
-	width: calc(25% - 20px);
-	height: 200px;
+	width: calc(152px - 20px);
 	margin-left: 20px;
 	margin-top: 40px;
 	display: flex;
@@ -220,7 +219,7 @@ h2 {
 	position: relative;
 }
 
-.b-cards__item a::before {
+.b-cards__item a:first-child::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -231,12 +230,15 @@ h2 {
 }
 
 .b-cards__item a {
-	margin-top: auto;
 	color: #fff;
 }
 
 .b-cards__item a:hover {
 	text-decoration: none;
+}
+
+.b-cards__item-link {
+    font-size: 12px;
 }
 
 .b-cards-ctn.hidden {
@@ -253,8 +255,9 @@ h2 {
 }
 
 .b-cards__item-image {
-	width: 150px;
-	height: 150px;
+	width: 60px;
+	height: 60px;
+    margin-bottom: 20px;
 	border-radius: 50%;
 	/*background-color: #fff;*/
 	display: flex;
@@ -367,7 +370,7 @@ h2 {
 	margin-right: 30px;
 }
 
-.b-social__discord img, .b-social__telegram img {
+.b-social__discord img, .b-social__telegram img, .b-social__github img {
 	max-width: 50px;
 	width: 100%;
 }
@@ -511,4 +514,14 @@ h2 {
 	.b-location__list-item:not(:last-child) {
 		margin-bottom: 20px;
 	}
+
+    .b-social__discord img, .b-social__telegram img, .b-social__github img {
+        max-width: 30px;
+        width: 100%;
+    }
+
+    .b-social__mail img {
+        max-width: 100%;
+        width: 30px;
+    }
 }
