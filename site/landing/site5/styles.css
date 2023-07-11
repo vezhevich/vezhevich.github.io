@@ -223,23 +223,23 @@ h1, h2, h3, h4, h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    float: left;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .cards__item-image img {
     max-width: 100%;
 }
 
-.cards__item-title, .cards__item-title a {
+.cards__item-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     color: #252525;
-}
-
-.cards__item-title {
     margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .cards__item-title a {
@@ -249,6 +249,8 @@ h1, h2, h3, h4, h5 {
 .cards__item-link {
     position: relative;
     z-index: 2;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .cards__item-link, .cards__item-link a {
@@ -268,6 +270,10 @@ h1, h2, h3, h4, h5 {
 .cards__item-link a:hover {
     border-bottom: 1px solid #252525;
     color: #252525;
+}
+
+.cards__item-wrap {
+    overflow: hidden;
 }
 
 .text__list {

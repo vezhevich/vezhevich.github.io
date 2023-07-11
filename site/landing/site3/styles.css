@@ -209,6 +209,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .cards__item-image img {
@@ -224,6 +225,9 @@ h1, h2, h3, h4, h5 {
 
 .cards__item-title {
     margin-bottom: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .cards__item-title a {
@@ -252,6 +256,10 @@ h1, h2, h3, h4, h5 {
 .cards__item-link a:hover {
     border-bottom: 1px solid #252525;
     color: #252525;
+}
+
+.cards__item-wrap {
+    overflow: hidden;
 }
 
 .text__list {

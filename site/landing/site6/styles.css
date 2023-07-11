@@ -217,20 +217,18 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     float: left;
     margin-right: 16px;
+    flex-shrink: 0;
 }
 
 .cards__item-image img {
     max-width: 100%;
 }
 
-.cards__item-title, .cards__item-title a {
+.cards__item-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
-}
-
-.cards__item-title {
     margin-bottom: 4px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -267,6 +265,10 @@ h1, h2, h3, h4, h5 {
 .cards__item-link a:hover {
     border-bottom: 1px solid #fff;
     color: #fff;
+}
+
+.cards__item-wrap {
+    overflow: hidden;
 }
 
 .text__list {
