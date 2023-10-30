@@ -1,0 +1,971 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Главная страница</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<div class="main-wrapper">
+<header class="header">
+	<div class="layout-content header__wrapper">
+		<div class="header__logo">
+			<img src="./images/svg/logo.svg" alt="Baikal Booking">
+		</div>
+		<div class="header__search">
+			<form action="url">
+				<input type="text" class="input header__search-input" placeholder="Поиск">
+				<button class="btn-default header__search-button">
+					<svg class="icon">
+						<use xlink:href="#icon-search"></use>
+					</svg>
+				</button>
+			</form>
+		</div>
+		<nav class="header__nav">
+			<ul class="list_unstyle header__nav-list">
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Обзоры</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Отели</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Туры</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Места</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Направления</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Услуги</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Карта</a></li>
+			</ul>
+		</nav>
+		<button class="btn-default btn-primary" type="button">Сдать жилье</button>
+		<!--header__auth_in если авторизован-->
+		<div class="header__auth header__auth_in">
+			<button class="btn-default btn-auth" type="button">
+				<svg class="icon">
+					<use xlink:href="#icon-auth"></use>
+				</svg>
+			</button>
+			<div class="dropdown-menu-auth-wrapper">
+				<div class="header__auth-user header__auth-user_active js-dropdown-menu-open">
+					<div class="header__auth-user-avatar" style="background-image: url(./images/dist/avatar.jpg)"></div>
+					<div class="header__hamb">
+						<svg class="icon">
+							<use xlink:href="#icon-hamb"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="dropdown-menu-auth">
+					<nav class="dropdown-menu-auth__nav">
+						<ul class="list_unstyle dropdown-menu-auth__nav-list">
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-home"></use>
+										</svg>
+									</span>
+									Мои поездки
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-favorite"></use>
+										</svg>
+									</span>
+									Избранное
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+									</span>
+									Уведомление
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-help"></use>
+										</svg>
+									</span>
+									Помощь
+								</a>
+							</li>
+						</ul>
+						<ul class="list_unstyle dropdown-menu-auth__nav-list">
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-user"></use>
+										</svg>
+									</span>
+									Профиль
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-auth"></use>
+										</svg>
+									</span>
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<div class="main-content">
+			<main class="layout-content layout-content_inner-page">
+				<nav class="breadcrumb">
+					<ul class="list_unstyle breadcrumb__list">
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Направления</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Горячинск</a></li>
+					</ul>
+				</nav>
+				<div class="promo promo-inner-page">
+					<h2 class="promo__title">Гостиницы на Байкале</h2>
+					<p class="promo__teaser">Горячинск расположен на берегу озера Байкал. Здесь удивительная природа, оздоровительный климат и горячие источники</p>
+				</div>
+				
+				<div class="card-view card-view-line l-section-wrapper">
+	<a href="#" class="card-view__item">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/hotel.jpg)">
+			<div class="card-view__control">
+				<button type="button" class="card-view__control-play btn-default">
+					<svg class="icon">
+						<use xlink:href="#icon-play"></use>
+					</svg>
+				</button>
+				<button type="button" class="card-view__control-pause btn-default" style="display: none">
+					<svg class="icon">
+						<use xlink:href="#icon-pause"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="card-view__item-text">
+			<p class="card-view__item-title">Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
+		</div>
+	</a>	
+	<a href="#" class="card-view__item">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/olhon.jpg)">
+			<div class="card-view__control">
+				<button type="button" class="card-view__control-play btn-default" style="display: none">
+					<svg class="icon">
+						<use xlink:href="#icon-play"></use>
+					</svg>
+				</button>
+				<button type="button" class="card-view__control-pause btn-default">
+					<svg class="icon">
+						<use xlink:href="#icon-pause"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="card-view__item-text">
+			<p class="card-view__item-title">Остров Ольхон</p>
+		</div>
+	</a>	
+	<a href="#" class="card-view__item">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/rest.jpg)">
+			<div class="card-view__control">
+				<button type="button" class="card-view__control-play btn-default">
+					<svg class="icon">
+						<use xlink:href="#icon-play"></use>
+					</svg>
+				</button>
+				<button type="button" class="card-view__control-pause btn-default" style="display: none">
+					<svg class="icon">
+						<use xlink:href="#icon-pause"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="card-view__item-text">
+			<p class="card-view__item-title">Ресторан “Ольхон”</p>
+		</div>
+	</a>	
+	<a href="#" class="card-view__item">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/baklan.jpg)">
+			<div class="card-view__control">
+				<button type="button" class="card-view__control-play btn-default">
+					<svg class="icon">
+						<use xlink:href="#icon-play"></use>
+					</svg>
+				</button>
+				<button type="button" class="card-view__control-pause btn-default" style="display: none">
+					<svg class="icon">
+						<use xlink:href="#icon-pause"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="card-view__item-text">
+			<p class="card-view__item-title">Тур на остров Бакланий</p>
+		</div>
+	</a>	
+	<a href="#" class="card-view__item">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/barguzin.jpg)">
+			<div class="card-view__control">
+				<button type="button" class="card-view__control-play btn-default">
+					<svg class="icon">
+						<use xlink:href="#icon-play"></use>
+					</svg>
+				</button>
+				<button type="button" class="card-view__control-pause btn-default" style="display: none">
+					<svg class="icon">
+						<use xlink:href="#icon-pause"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="card-view__item-text">
+			<p class="card-view__item-title">Тур в Баргузинскую долину</p>
+		</div>
+	</a>	
+	<a href="#" class="card-view__item">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/room.jpg)">
+			<div class="card-view__control">
+				<button type="button" class="card-view__control-play btn-default">
+					<svg class="icon">
+						<use xlink:href="#icon-play"></use>
+					</svg>
+				</button>
+				<button type="button" class="card-view__control-pause btn-default" style="display: none">
+					<svg class="icon">
+						<use xlink:href="#icon-pause"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="card-view__item-text">
+			<p class="card-view__item-title">Рум-тур по гостинице "Легенда Байкала" в в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
+		</div>
+	</a>	
+	<a href="#" class="card-view__item card-view__item_modified">
+		<div class="card-view__item-image" style="background-image: url(./images/dist/house.jpg)">
+			<div class="card-view__control">
+				<span class="btn-default btn-light" href="#">Еще</span>
+			</div>
+		</div>
+	</a>
+</div>
+
+				<div class="form-search form-search_modified-bottom">
+	<form action="url">
+		<div class="form-search__wrapper">
+			<div class="form-search__item">
+				<div class="form-search__label">Направление:</div>
+				<div class="form-search__select">
+					<select name="" id="">
+						<option value="1">Усть-Баргузин</option>
+						<option value="2">Максимиха</option>
+						<option value="3">Энхалук</option>
+					</select>
+					<span class="form-search__select-clear">
+						<svg class="icon">
+						<use xlink:href="#icon-close-bold"></use>
+					</svg>
+					</span>
+				</div>
+			</div>
+			<div class="form-search__item">
+				<div class="datepicker">
+					<label for="datepicker" class="datepicker__label">Цены на период</label>
+					<input id="datepicker" type="text" class="input datepicker__input" value="23 мая - 25 июня">
+				</div>
+			</div>
+			<div class="form-search__item">
+				<button class="btn-default form-search__area js-dropdown-open" type="button">
+					<span class="form-search__label">Гости:</span>
+					<span class="form-search__value">2 взрослых, 3 детей</span>
+				</button>
+				<div class="form-search__dropdown dropdown js-dropdown">
+					<div class="form-search__dropdown-item">
+						<div class="form-search__dropdown-text">Взрослых</div>
+						<div class="form-search__dropdown-qnt qnt">
+							<div class="qnt__button qnt__minus js-qnt-minus">
+								<svg class="icon">
+									<use xlink:href="#icon-minus"></use>
+								</svg>
+							</div>
+							<div class="qnt__value js-qnt-value">2</div>
+							<div class="qnt__button qnt__plus js-qnt-plus">
+								<svg class="icon">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="form-search__dropdown-item">
+						<div class="form-search__dropdown-text">Детей</div>
+						<div class="form-search__dropdown-qnt qnt">
+							<div class="qnt__button qnt__minus js-qnt-minus">
+								<svg class="icon">
+									<use xlink:href="#icon-minus"></use>
+								</svg>
+							</div>
+							<div class="qnt__value js-qnt-value">3</div>
+							<div class="qnt__button qnt__plus js-qnt-plus">
+								<svg class="icon">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="form-search__dropdown-item">
+						<div class="form-search__dropdown-text">Младенцев</div>
+						<div class="form-search__dropdown-qnt qnt">
+							<div class="qnt__button qnt__minus js-qnt-minus">
+								<svg class="icon">
+									<use xlink:href="#icon-minus"></use>
+								</svg>
+							</div>
+							<div class="qnt__value js-qnt-value">0</div>
+							<div class="qnt__button qnt__plus js-qnt-plus">
+								<svg class="icon">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="form-search__dropdown-item">
+						<div class="form-search__dropdown-text">Номеров</div>
+						<div class="form-search__dropdown-qnt qnt">
+							<div class="qnt__button qnt__minus js-qnt-minus">
+								<svg class="icon">
+									<use xlink:href="#icon-minus"></use>
+								</svg>
+							</div>
+							<div class="qnt__value js-qnt-value">1</div>
+							<div class="qnt__button qnt__plus js-qnt-plus">
+								<svg class="icon">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="form-search__button btn-default">
+			<svg class="icon">
+				<use xlink:href="#icon-search"></use>
+			</svg>
+			Найти
+		</button>
+	</form>
+</div>
+
+				<!--panel-view-->
+				<div class="panel-view panel-view_modified-bottom">
+					<div class="panel-view__primary-buttons panel-view__map-button">
+						<button class="btn-default btn-primary" type="button">
+							<svg class="icon">
+								<use xlink:href="#icon-map"></use>
+							</svg>
+							На карте
+						</button>
+						<button class="btn-default btn-primary" type="button">
+							<svg class="icon">
+								<use xlink:href="#icon-filters"></use>
+							</svg>
+							Фильтры
+						</button>
+						<div class="btn-group">
+							<button type="button" class="btn-group__item btn-default btn-secondary">лучшие</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">недорого</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">с питанием</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">с детьми</button>
+						</div>
+					</div>
+					<div class="panel-view__right">
+						<div class="panel-view__result-info">
+							12 из 184
+						</div>
+						<select name="sort" id="sortParam" class="select-custom">
+							<option value="1">сначала дешевле</option>
+							<option value="2">сначала дороже</option>
+							<option value="3">новее</option>
+							<option value="4">старее</option>
+						</select>
+					</div>
+				</div>
+
+				<!--card-object-wrapper-list-->
+				<div class="card-object-wrapper card-object-wrapper-list">
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс””</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+					<a href="#" class="card-object">
+						<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+							<div class="swiper-wrapper card-object-inner-slider__wrapper">
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+								<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="card-object__title">3-местный “Люкс”</div>
+						<div class="card-object__list">
+							<div class="card-object__list-item">2 односпальные кровати</div>
+							<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+						</div>
+						<div class="card-object__bottom">
+							<div class="card-object__cost">от 2 500 ₽</div>
+						</div>
+					</a>
+				</div>
+				
+				<button class="btn-default btn-secondary btn-secondary_full-width">Показать еще</button>
+				
+				<!--paginator-->
+				<div class="paginator">
+					<a href="#" class="paginator__prev">
+						<svg class="icon">
+							<use xlink:href="#icon-point-left"></use>
+						</svg>
+						Назад
+					</a>
+					<div class="paginator__pages">
+						<a class="paginator__pages-item paginator__pages-item_active" href="#">1</a>
+						<a class="paginator__pages-item" href="#">2</a>
+						<a class="paginator__pages-item" href="#">3</a>
+						<a class="paginator__pages-item" href="#">...</a>
+						<a class="paginator__pages-item" href="#">8</a>
+						<a class="paginator__pages-item" href="#">9</a>
+						<a class="paginator__pages-item" href="#">10</a>
+					</div>
+					<a href="#" class="paginator__next">
+						Далее
+						<svg class="icon">
+							<use xlink:href="#icon-point-right"></use>
+						</svg>
+					</a>
+				</div>
+
+				<h2 class="title-h2_main-page">Часто задаваемые вопросы</h2>
+
+				<!--accordion-->
+				<div class="accordion js-accordion l-section-wrapper">
+					<div class="accordion__item js-accordion-item active">
+						<div class="accordion-header js-accordion-header">Какие самые бронируемые отели на Байкале?</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">Can I change my plan later?</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">What is your cancellation policy?</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">Can other info be added to an invoice?</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">How does billing work?</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">How do I change my account email?</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--seo-->
+				<div class="seo">
+					<p>Хороший выбор отелей и гостиниц Байкала по доступным ценам 2023. Бронируйте отели онлайн на Байкале с лучшими ценами и отзывами с фото. На сайте всегда есть свободные номера с выгодными условиями. Байкал привлекает внимание туристов c разных уголков света. Этот край не зря называют истинной жемчужиной всей Земли. Загадочные местные пещеры, красивые бухты, высокие горы и вулканы, водопады, крупнейшее скопление пресной воды и глубочайшее знаменитое одноименное озеро с уникальными представителями растительного и животного мира - всё это ежегодно привлекает тысячи путешественников. Отдых в Байкале станет ярчайшим впечатлений в жизни – неважно, летом он пройдет или зимой. Климат здесь мягче, чем в других окрестностях Сибири. Приехав один раз, многие мечтают вернуться сюда снова и снова - каждая поездка открывает что-то новое в этом крае. Экономя свое время для отдыха, необходимо заранее побеспокоиться и забронировать номер в отеле или гостинице, поскольку спрос на жилье здесь очень высокий круглый год. Слева страницы расположены многофункциональные фильтры, благодаря которым Вы сможете без труда выбрать нужный номер исходя из цены, комфорта, списка услуг и расположения.</p>
+				</div>
+				
+				<div class="offer-place">
+	<div class="offer-place__wrapper">
+		<div class="offer-place__title">Предложите свои услуги на Байкалбукинге</div>
+		<div class="offer-place__teaser">Более 500 гостиниц, точек аренды и туристических гидов уже находят клиенты на Байкалбукинге</div>
+		<div class="offer-place__group-buttons">
+			<a href="#" class="btn-default btn-light">Разместить предложение</a>
+			<a href="#" class="btn-default btn-bordered">Подробнее</a>
+		</div>
+	</div>
+</div>
+				
+	</main>
+		</div>
+	<footer class="footer">
+	<div class="layout-content">
+		<div class="footer__top">
+			<div class="footer__top-left">
+				<div class="footer__logo">
+					<img src="./images/svg/logo-footer.svg" alt="">
+				</div>
+				<div class="footer__teaser">
+					Design amazing digital experiences that create more happy in the world.
+				</div>
+			</div>
+			<div class="footer__top-right">
+				<div class="footer__top-right-col footer__top-right-col_lg">
+					<div class="footer__title">Размещение</div>
+					<nav class="footer-nav footer-nav_two-cols">
+						<ul class="footer-nav__list list_unstyle">
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Гостиницы и турбазы</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Статьи</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Туры и экскурсии</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Как добраться</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Места</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Погода на Байкале</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Достопримечательности</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Отзывы</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Аренда</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Помощь</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Карта Байкала</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__top-right-col">
+					<div class="footer__title">Resources</div>
+					<nav class="footer-nav">
+						<ul class="footer-nav__list list_unstyle">
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Newsletter</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Events</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Help centre</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Tutorials</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Support</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__top-right-col">
+					<div class="footer__title">Legal</div>
+					<nav class="footer-nav">
+						<ul class="footer-nav__list list_unstyle">
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Terms</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Privacy</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Cookies</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Licenses</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Settings</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				© 2077 Untitled UI. All rights reserved.
+			</div>
+			<div class="footer__social">
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-twitter.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-in.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-fb.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-git.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-social-hand.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-social-ball.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden" style="display: none">
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-search">
+		<path d="m16.5 16.332-3.625-3.625m1.958-4.709a6.667 6.667 0 1 1-13.333 0 6.667 6.667 0 0 1 13.333 0Z" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-auth">
+		<path d="M6.5 16.332H3.167A1.667 1.667 0 0 1 1.5 14.665V2.998a1.667 1.667 0 0 1 1.667-1.666H6.5m5.833 11.666L16.5 8.832m0 0-4.167-4.167M16.5 8.832h-10" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 11" id="icon-close-bold">
+		<path d="m9 1.663-8 8m0-8 8 8" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" id="icon-map">
+		<path d="M6.667 14.663.833 17.997V4.663L6.667 1.33m0 13.333 6.666 3.334m-6.666-3.334V1.33m6.666 16.667 5.834-3.334V1.33l-5.834 3.333m0 13.334V4.663m0 0L6.667 1.33" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 17" id="icon-play">
+		<path d="m1.167 1.163 11.666 7.5-11.666 7.5v-15Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 16" id="icon-pause">
+		<path d="M4.733.997H1.4V14.33h3.333V.997ZM11.4.997H8.067V14.33H11.4V.997Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15" id="icon-corner">
+		<path d="m1 13.664 6-6-6-6" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12" id="icon-hamb">
+		<path d="M1.5 6h11.667M1.5 1h15m-15 10h15" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" id="icon-filters">
+		<path d="M3.333 16.5v-5.833m0-3.334V1.5M10 16.5V9m0-3.333V1.5m6.667 15v-4.167m0-3.333V1.5M.833 10.667h5m1.667-5h5m1.667 6.666h5" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-point-left">
+		<path d="M12.833 7H1.167m0 0L7 12.833M1.167 7 7 1.167" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-point-right">
+		<path d="M1.167 7h11.666m0 0L7 1.167M12.833 7 7 12.833" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20" id="icon-loc">
+		<path d="M16.5 8.333c0 5.834-7.5 10.834-7.5 10.834s-7.5-5-7.5-10.834a7.5 7.5 0 0 1 15 0Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+		<path d="M9 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-comm">
+		<path d="M16.5 8.583a6.983 6.983 0 0 1-.75 3.167 7.083 7.083 0 0 1-6.333 3.917 6.984 6.984 0 0 1-3.167-.75L1.5 16.5l1.583-4.75a6.984 6.984 0 0 1-.75-3.167A7.083 7.083 0 0 1 6.25 2.25a6.983 6.983 0 0 1 3.167-.75h.416A7.066 7.066 0 0 1 16.5 8.167v.416Z" stroke="#667085" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" id="icon-share">
+		<path d="M1.333 10v6.667A1.667 1.667 0 0 0 3 18.333h10a1.667 1.667 0 0 0 1.667-1.666V10m-3.334-5L8 1.667m0 0L4.667 5M8 1.667V12.5" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" id="icon-favorite">
+		<path d="M17.367 2.842a4.583 4.583 0 0 0-6.484 0L10 3.725l-.883-.883a4.584 4.584 0 1 0-6.484 6.483l.884.883L10 16.692l6.483-6.484.884-.883a4.584 4.584 0 0 0 0-6.483v0Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" id="icon-check">
+		<path d="M10.667 1.5 4.25 7.917 1.333 5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-ok">
+		<path d="M3.5 11H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1h1.5m3.5-1v-2A1.5 1.5 0 0 0 5.5 1l-2 4.5V11h5.64a1 1 0 0 0 1-.85l.69-4.5a1 1 0 0 0-1-1.15H7Z" stroke="#12B76A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-tooltip">
+		<path d="M6.06 6a2 2 0 0 1 3.886.667c0 1.333-2 2-2 2M8 11.333h.006M14.666 8A6.667 6.667 0 1 1 1.333 8a6.667 6.667 0 0 1 13.333 0Z" stroke="#98A2B3" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-minus">
+		<path d="M5 12h14" stroke="#444CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-plus">
+		<path d="M12 5v14m-7-7h14" stroke="#444CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-home">
+		<path d="M7.5 18.333V10h5v8.333M2.5 7.5 10 1.667 17.5 7.5v9.167a1.666 1.666 0 0 1-1.667 1.666H4.167A1.667 1.667 0 0 1 2.5 16.667V7.5Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-help">
+			<path d="m4.108 4.108 3.534 3.534m4.716 4.716 3.534 3.534m0-11.784-3.534 3.534L15.3 4.7M4.108 15.892l3.534-3.534M18.333 10a8.333 8.333 0 1 1-16.666 0 8.333 8.333 0 0 1 16.666 0Zm-5 0a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.666 0Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-user">
+		<path d="M16.667 17.5v-1.667a3.333 3.333 0 0 0-3.334-3.333H6.667a3.333 3.333 0 0 0-3.334 3.333V17.5m10-11.667a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.666 0Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-thumbs-up">
+		<path d="M3.5 11H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1h1.5m3.5-1v-2A1.5 1.5 0 0 0 5.5 1l-2 4.5V11h5.64a1 1 0 0 0 1-.85l.69-4.5a1 1 0 0 0-1-1.15H7Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+</svg>
+<!-- тултип -->
+<div class="tooltip_templates" style="display: none;">
+	<div id="tooltip-form" class="tooltip-ctn">
+		На основе введенных данных вы будете получать рассылки и уведомления, подобранные алгоритмом специально для вас
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/libs/swiper/swiper-bundle.js"></script>
+<script src="js/libs/nice/js/jquery.nice-select.min.js"></script>
+<script src="js/libs/tooltipster/tooltipster.bundle.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

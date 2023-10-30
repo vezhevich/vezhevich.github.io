@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Главная страница</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<div class="main-wrapper">
+<header class="header header_modified">
+	<div class="layout-content header__wrapper">
+		<div class="header__logo">
+			<img src="./images/svg/logo.svg" alt="Baikal Booking">
+		</div>
+		<!--header__auth_in если авторизован-->
+		<div class="header__auth header__auth_in">
+			<button class="btn-default btn-auth" type="button">
+				<svg class="icon">
+					<use xlink:href="#icon-auth"></use>
+				</svg>
+			</button>
+			<div class="dropdown-menu-auth-wrapper">
+				<div class="header__auth-user header__auth-user_active js-dropdown-menu-open">
+					<div class="header__auth-user-avatar" style="background-image: url(./images/dist/avatar.jpg)"></div>
+					<div class="header__hamb">
+						<svg class="icon">
+							<use xlink:href="#icon-hamb"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="dropdown-menu-auth">
+					<nav class="dropdown-menu-auth__nav">
+						<ul class="list_unstyle dropdown-menu-auth__nav-list">
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-home"></use>
+										</svg>
+									</span>
+									Мои поездки
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-favorite"></use>
+										</svg>
+									</span>
+									Избранное
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+									</span>
+									Уведомление
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-help"></use>
+										</svg>
+									</span>
+									Помощь
+								</a>
+							</li>
+						</ul>
+						<ul class="list_unstyle dropdown-menu-auth__nav-list">
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-user"></use>
+										</svg>
+									</span>
+									Профиль
+								</a>
+							</li>
+							<li class="dropdown-menu-auth__nav-item">
+								<a class="dropdown-menu-auth__nav-link" href="#">
+									<span class="dropdown-menu-auth__nav-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-auth"></use>
+										</svg>
+									</span>
+									Выйти
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<div class="main-content main-content_styled">
+			<main class="layout-content layout-content_inner-page">
+				<div class="l-two-cols">
+					<div class="l-two-cols__left">
+						<!--breadcrumb-->
+						<nav class="breadcrumb">
+							<ul class="list_unstyle breadcrumb__list">
+								<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Размещение</a></li>
+								<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Горячинск</a></li>
+								<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Гостиница "Два дракона"</a></li>
+								<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Бронирование</a></li>
+							</ul>
+						</nav>
+						<h2 class="title-h2_main-page">Бронирование</h2>
+						<div class="form-reservation l-section-wrapper">
+							<div class="form-reservation__wrapper">
+								<div class="form-reservation__item">
+									<div class="form-reservation__info">
+										<div class="form-reservation__info-item">
+											<div class="form-reservation__info-label">Цены на период:</div>
+											<div class="form-reservation__info-text">23 мая - 25 июн</div>
+										</div>
+										<div class="form-reservation__info-item">
+											<div class="form-reservation__info-label">Гости:</div>
+											<div class="form-reservation__info-text">2 взрослых, 3 детей</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-reservation__item form-reservation__item_modified">
+									<div class="form-reservation__item-col">
+										<label class="label-for-input">Имя</label>
+										<input type="text" class="input input-default" value="Константин">
+									</div>
+									<div class="form-reservation__item-col">
+										<label class="label-for-input">Фамилия</label>
+										<input type="text" class="input input-default" value="Константинопольский">
+									</div>
+								</div>
+								<div class="form-reservation__item">
+									<label class="label-for-input">Телефон</label>
+									<input type="tel" class="input input-default" value="+ 7 924 123 4567">
+									<span class="js-tooltip tooltip" data-tooltip-content="#tooltip-form">
+										<img src="./images/svg/icon-help-circle.svg" alt="">
+									</span>
+								</div>
+								<div class="form-reservation__item">
+									<label class="label-for-input">Электронная почта</label>
+									<input type="email" class="input input-default" value="k.konstantinopolsky@gmail.com">
+									<span class="js-tooltip tooltip" data-tooltip-content="#tooltip-form">
+										<img src="./images/svg/icon-help-circle.svg" alt="">
+									</span>
+								</div>
+								<div class="form-reservation__item form-reservation__calc">
+									<div class="form-reservation__calc-head">
+										<h5 class="form-reservation__calc-head-title">Стоимость номера</h5>
+										<div class="checkbox">
+											<input id="param1" type="checkbox" name="params" />
+											<label for="param1">оплатить полностью</label>
+										</div>
+									</div>
+									<div class="form-reservation__calc-list">
+										<div class="form-reservation__calc-list-item">
+											<span>за сутки</span>
+											<span>2 500 ₽</span>
+										</div>
+										<div class="form-reservation__calc-list-item">
+											<span>итого за 5 суток</span>
+											<span class="form-reservation__calc-list-text-lg">12 500 ₽</span>
+										</div>
+										<div class="form-reservation__calc-list-item">
+											<span>предоплата</span>
+											<span class="form-reservation__calc-list-text-md">1 875 ₽</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-reservation__item">
+									<button class="btn-default btn-primary btn-primary_lg" type="submit">
+										Перейти к оплате
+										<svg class="icon">
+											<use xlink:href="#icon-corner"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="form-reservation__item form-reservation__group-credit-card">
+									<div class="form-reservation__group-credit-card-item">
+										<img src="./images/svg/icon-visa-logo.svg" alt="">	
+									</div>
+									<div class="form-reservation__group-credit-card-item">
+										<img src="./images/svg/icon-jcb-logo.svg" alt="">
+									</div>
+									<div class="form-reservation__group-credit-card-item">
+										<img src="./images/svg/icon-unionpay-logo.svg" alt="">
+									</div>
+									<div class="form-reservation__group-credit-card-item">
+										<img src="./images/svg/icon-yandex-logo.svg" alt="">
+									</div>
+									<div class="form-reservation__group-credit-card-item">
+										<img src="./images/svg/icon-qiwi-logo.svg" alt="">
+									</div>
+									<div class="form-reservation__group-credit-card-item">
+										<img src="./images/svg/icon-maestro-logo.svg" alt="">
+									</div>
+								</div>
+								<div class="form-reservation__item form-reservation__offer">
+									<p>Нажимая «Оплатить», вы соглашаетесь с пользовательским соглашением, условиями бронирования.</p>
+									<p>Мы подтвердим бронирование и спишем указанную сумму с вашей карты. Оставшаяся часть спишется в ечение суток после заезда.</p>
+								</div>
+							</div>
+						</div>
+						<h2 class="title-h2_main-page">Добавьте услуги и развлечения</h2>
+						<div class="card-object-slider-wrap-button l-section-wrapper">
+							<div class="swiper card-object-slider card-object-wrapper_4-in-row js-card-object-slider4">
+								<div class="card-object-wrapper swiper-wrapper">
+									<a href="#" class="card-object swiper-slide">
+										<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<div class="swiper-wrapper card-object-inner-slider__wrapper">
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<div class="card-object__title">Прокат велосипедов</div>
+										<div class="card-object__teaser">На территории поселка Листвянка Иркутской области</div>
+										<div class="card-object__bottom">
+											<div class="card-object__cost">от 2 500 ₽</div>
+											<div class="card-object__in">за сутки</div>
+										</div>
+									</a>
+									<a href="#" class="card-object swiper-slide">
+										<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<div class="swiper-wrapper card-object-inner-slider__wrapper">
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<div class="card-object__title">Прокат велосипедов</div>
+										<div class="card-object__teaser">На территории поселка Листвянка Иркутской области</div>
+										<div class="card-object__bottom">
+											<div class="card-object__cost">от 2 500 ₽</div>
+											<div class="card-object__in">за сутки</div>
+										</div>
+									</a>
+									<a href="#" class="card-object swiper-slide">
+										<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<div class="swiper-wrapper card-object-inner-slider__wrapper">
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<div class="card-object__title">Тур в Баргузинскую долину</div>
+										<div class="card-object__teaser">На территории поселка Листвянка Иркутской области</div>
+										<div class="card-object__bottom">
+											<div class="card-object__cost">от 2 500 ₽</div>
+											<div class="card-object__in">за сутки</div>
+										</div>
+									</a>
+									<a href="#" class="card-object swiper-slide">
+										<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<div class="swiper-wrapper card-object-inner-slider__wrapper">
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<div class="card-object__title">Тур в Баргузинскую долину</div>
+										<div class="card-object__teaser">На территории поселка Листвянка Иркутской области</div>
+										<div class="card-object__bottom">
+											<div class="card-object__cost">от 2 500 ₽</div>
+											<div class="card-object__in">за сутки</div>
+										</div>
+									</a>
+									<a href="#" class="card-object swiper-slide">
+										<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<div class="swiper-wrapper card-object-inner-slider__wrapper">
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<div class="card-object__title">Мангальная зона</div>
+										<div class="card-object__teaser">На территории поселка Листвянка Иркутской области</div>
+										<div class="card-object__bottom">
+											<div class="card-object__cost">от 2 500 ₽</div>
+											<div class="card-object__in">за сутки</div>
+										</div>
+									</a>
+									<a href="#" class="card-object swiper-slide">
+										<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<div class="swiper-wrapper card-object-inner-slider__wrapper">
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+												<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<div class="card-object__title">Горячий чан</div>
+										<div class="card-object__teaser">На территории поселка Листвянка Иркутской области</div>
+										<div class="card-object__bottom">
+											<div class="card-object__cost">от 2 500 ₽</div>
+											<div class="card-object__in">за сутки</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-button-rounded swiper-button-object-slider4 swiper-button-rounded-prev swiper-button-prev">
+								<svg class="icon">
+									<use xlink:href="#icon-corner"></use>
+								</svg>
+							</div>
+							<div class="swiper-button-rounded swiper-button-object-slider4 swiper-button-rounded-next swiper-button-next">
+								<svg class="icon">
+									<use xlink:href="#icon-corner"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="l-two-cols__right">
+						<div class="card-view card-view_solo">
+							<a href="#" class="card-view__item">
+								<div class="card-view__item-image" style="background-image: url(./images/dist/hotel.jpg)">
+									<div class="card-view__control">
+										<button type="button" class="card-view__control-play btn-default">
+											<svg class="icon">
+												<use xlink:href="#icon-play"></use>
+											</svg>
+										</button>
+										<button type="button" class="card-view__control-pause btn-default" style="display: none">
+											<svg class="icon">
+												<use xlink:href="#icon-pause"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="card-view__item-text">
+									<p class="card-view__item-title">Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+	</main>
+		</div>
+	<footer class="footer footer_modified">
+	<div class="layout-content">
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				© 2077 Untitled UI. All rights reserved.
+			</div>
+			<div class="footer__social">
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-twitter.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-in.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-fb.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-git.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-social-hand.svg" alt="">
+				</a>
+				<a href="#" class="footer__social-item">
+					<img src="./images/svg/icon-social-ball.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden" style="display: none">
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-search">
+		<path d="m16.5 16.332-3.625-3.625m1.958-4.709a6.667 6.667 0 1 1-13.333 0 6.667 6.667 0 0 1 13.333 0Z" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-auth">
+		<path d="M6.5 16.332H3.167A1.667 1.667 0 0 1 1.5 14.665V2.998a1.667 1.667 0 0 1 1.667-1.666H6.5m5.833 11.666L16.5 8.832m0 0-4.167-4.167M16.5 8.832h-10" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 11" id="icon-close-bold">
+		<path d="m9 1.663-8 8m0-8 8 8" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" id="icon-map">
+		<path d="M6.667 14.663.833 17.997V4.663L6.667 1.33m0 13.333 6.666 3.334m-6.666-3.334V1.33m6.666 16.667 5.834-3.334V1.33l-5.834 3.333m0 13.334V4.663m0 0L6.667 1.33" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 17" id="icon-play">
+		<path d="m1.167 1.163 11.666 7.5-11.666 7.5v-15Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 16" id="icon-pause">
+		<path d="M4.733.997H1.4V14.33h3.333V.997ZM11.4.997H8.067V14.33H11.4V.997Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15" id="icon-corner">
+		<path d="m1 13.664 6-6-6-6" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12" id="icon-hamb">
+		<path d="M1.5 6h11.667M1.5 1h15m-15 10h15" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" id="icon-filters">
+		<path d="M3.333 16.5v-5.833m0-3.334V1.5M10 16.5V9m0-3.333V1.5m6.667 15v-4.167m0-3.333V1.5M.833 10.667h5m1.667-5h5m1.667 6.666h5" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-point-left">
+		<path d="M12.833 7H1.167m0 0L7 12.833M1.167 7 7 1.167" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-point-right">
+		<path d="M1.167 7h11.666m0 0L7 1.167M12.833 7 7 12.833" stroke="" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20" id="icon-loc">
+		<path d="M16.5 8.333c0 5.834-7.5 10.834-7.5 10.834s-7.5-5-7.5-10.834a7.5 7.5 0 0 1 15 0Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+		<path d="M9 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="#fff" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-comm">
+		<path d="M16.5 8.583a6.983 6.983 0 0 1-.75 3.167 7.083 7.083 0 0 1-6.333 3.917 6.984 6.984 0 0 1-3.167-.75L1.5 16.5l1.583-4.75a6.984 6.984 0 0 1-.75-3.167A7.083 7.083 0 0 1 6.25 2.25a6.983 6.983 0 0 1 3.167-.75h.416A7.066 7.066 0 0 1 16.5 8.167v.416Z" stroke="#667085" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" id="icon-share">
+		<path d="M1.333 10v6.667A1.667 1.667 0 0 0 3 18.333h10a1.667 1.667 0 0 0 1.667-1.666V10m-3.334-5L8 1.667m0 0L4.667 5M8 1.667V12.5" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" id="icon-favorite">
+		<path d="M17.367 2.842a4.583 4.583 0 0 0-6.484 0L10 3.725l-.883-.883a4.584 4.584 0 1 0-6.484 6.483l.884.883L10 16.692l6.483-6.484.884-.883a4.584 4.584 0 0 0 0-6.483v0Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" id="icon-check">
+		<path d="M10.667 1.5 4.25 7.917 1.333 5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-ok">
+		<path d="M3.5 11H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1h1.5m3.5-1v-2A1.5 1.5 0 0 0 5.5 1l-2 4.5V11h5.64a1 1 0 0 0 1-.85l.69-4.5a1 1 0 0 0-1-1.15H7Z" stroke="#12B76A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-tooltip">
+		<path d="M6.06 6a2 2 0 0 1 3.886.667c0 1.333-2 2-2 2M8 11.333h.006M14.666 8A6.667 6.667 0 1 1 1.333 8a6.667 6.667 0 0 1 13.333 0Z" stroke="#98A2B3" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-minus">
+		<path d="M5 12h14" stroke="#444CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-plus">
+		<path d="M12 5v14m-7-7h14" stroke="#444CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-home">
+		<path d="M7.5 18.333V10h5v8.333M2.5 7.5 10 1.667 17.5 7.5v9.167a1.666 1.666 0 0 1-1.667 1.666H4.167A1.667 1.667 0 0 1 2.5 16.667V7.5Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-help">
+			<path d="m4.108 4.108 3.534 3.534m4.716 4.716 3.534 3.534m0-11.784-3.534 3.534L15.3 4.7M4.108 15.892l3.534-3.534M18.333 10a8.333 8.333 0 1 1-16.666 0 8.333 8.333 0 0 1 16.666 0Zm-5 0a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.666 0Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-user">
+		<path d="M16.667 17.5v-1.667a3.333 3.333 0 0 0-3.334-3.333H6.667a3.333 3.333 0 0 0-3.334 3.333V17.5m10-11.667a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.666 0Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-thumbs-up">
+		<path d="M3.5 11H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1h1.5m3.5-1v-2A1.5 1.5 0 0 0 5.5 1l-2 4.5V11h5.64a1 1 0 0 0 1-.85l.69-4.5a1 1 0 0 0-1-1.15H7Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+</svg>
+<!-- тултип -->
+<div class="tooltip_templates" style="display: none;">
+	<div id="tooltip-form" class="tooltip-ctn">
+		На основе введенных данных вы будете получать рассылки и уведомления, подобранные алгоритмом специально для вас
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/libs/swiper/swiper-bundle.js"></script>
+<script src="js/libs/nice/js/jquery.nice-select.min.js"></script>
+<script src="js/libs/tooltipster/tooltipster.bundle.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
