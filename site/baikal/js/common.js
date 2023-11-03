@@ -1,29 +1,4 @@
 // tabs
-// if ($(document).find('.js-tabs').length) {
-// 	var tabNavs = $(this).find(".tabs__nav-item");
-// 	var tabPanes = $(this).find(".tabs__pane");
-//
-// 	for (var i = 0; i < tabNavs.length; i++) {
-//
-// 		tabNavs[i].addEventListener("click", function (e) {
-// 			e.preventDefault();
-// 			var activeTabAttr = e.target.getAttribute("data-tab");
-//
-// 			for (var j = 0; j < tabNavs.length; j++) {
-// 				var contentAttr = tabPanes[j].getAttribute("data-tab-content");
-//
-// 				if (activeTabAttr === contentAttr) {
-// 					tabNavs[j].classList.add("active");
-// 					tabPanes[j].classList.add("active");
-// 				} else {
-// 					tabNavs[j].classList.remove("active");
-// 					tabPanes[j].classList.remove("active");
-// 				}
-// 			};
-// 		});
-// 	}	
-// }
-
 $('.tab-wrap').each(function(){
 	let tabTabs = $(this).find('.tabs__nav-item');
 	let tabItems = $(this).find('.tabs__pane');
@@ -36,7 +11,6 @@ $('.tab-wrap').each(function(){
 			tabItems.not(tabItems[i]).removeClass('active');
 		});
 	});
-
 });
 
 // slider-tab1
@@ -500,9 +474,9 @@ $(function () {
 });
 
 
-// card-object-inner
+// card-object-inner-slider
 $(function () {
-	var swiper = new Swiper('.js-card-object-inner-slider1', {
+	var swiper = new Swiper('.js-card-object-inner-slider', {
 		slidesPerView: 1,
 		spaceBetween: 16,
 		pagination: {
@@ -662,6 +636,8 @@ $(function () {
 	});
 });
 
+
+// accordion
 $(function () {
 	var accordion = (function(){
 
@@ -717,60 +693,40 @@ $(function () {
 	});
 });
 
-// Оптимизировать и сделать один код для всех дропдаунов
 // dropdown
 $(function () {
 	if ($(document).find('.js-dropdown').length) {
-		const btnMenu = document.querySelector(".js-dropdown-open");
-		const menu = document.querySelector(".js-dropdown");
-		const toggleMenu = function () {
+		const btnMenus = document.querySelectorAll(".js-dropdown-open");
+		const menus = document.querySelectorAll(".js-dropdown");
+
+		const toggleMenu = function (menu) {
 			menu.classList.toggle("open");
 		}
 
-		btnMenu.addEventListener("click", function (e) {
-			e.stopPropagation();
-			toggleMenu();
+		btnMenus.forEach(function (btnMenu) {
+			btnMenu.addEventListener("click", function (e) {
+				e.stopPropagation();
+				const menu = this.nextElementSibling;
+				toggleMenu(menu);
+			});
 		});
 
 		document.addEventListener("click", function (e) {
 			const target = e.target;
-			const its_menu = target == menu || menu.contains(target);
-			const its_btnMenu = target == btnMenu;
-			const menu_is_active = menu.classList.contains("open");
 
-			if (!its_menu && !its_btnMenu && menu_is_active) {
-				toggleMenu();
-			}
-		});	
-	}
-});
-// Оптимизировать и сделать один код для всех дропдаунов
-// header auth menu
-$(function () {
-	if ($(document).find('.dropdown-menu-auth').length) {
-		const btnMenu = document.querySelector(".js-dropdown-menu-open");
-		const menu = document.querySelector(".dropdown-menu-auth");
-		const toggleMenu = function () {
-			menu.classList.toggle("open");
-		}
+			menus.forEach(function (menu) {
+				const its_menu = target == menu || menu.contains(target);
+				const its_btnMenu = target == menu.previousElementSibling;
+				const menu_is_active = menu.classList.contains("open");
 
-		btnMenu.addEventListener("click", function (e) {
-			e.stopPropagation();
-			toggleMenu();
-		});
-
-		document.addEventListener("click", function (e) {
-			const target = e.target;
-			const its_menu = target == menu || menu.contains(target);
-			const its_btnMenu = target == btnMenu;
-			const menu_is_active = menu.classList.contains("open");
-
-			if (!its_menu && !its_btnMenu && menu_is_active) {
-				toggleMenu();
-			}
+				if (!its_menu && !its_btnMenu && menu_is_active) {
+					toggleMenu(menu);
+				}
+			});
 		});
 	}
 });
+
 
 // счетчик
 $(function () {
@@ -833,5 +789,104 @@ $(function () {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		}
+	});
+});
+
+// datepicker
+$(function () {
+	if ($('#datepicker').length > 0) {
+		$('#datepicker').dateRangePicker({
+			autoClose: true,
+			language: 'ru',
+			separator: ' - ',
+			duration: 200,
+			showTopbar: false,
+			startOfWeek: 'monday',
+			format: 'DD.MM',
+			container: 'body',
+			customOpenAnimation: function(cb)
+			{
+				$(this).fadeIn(300, cb);
+			},
+			customCloseAnimation: function(cb)
+			{
+				$(this).fadeOut(300, cb);
+			},
+			getValue: function()
+			{
+				return this.value;
+			},
+			setValue: function(s)
+			{
+				this.value = s;
+			},
+		});	
+	}
+});
+
+// custom select
+$(function () {
+	const optionMenus = document.querySelectorAll(".select-menu");
+
+	optionMenus.forEach(optionMenu => {
+		const selectBtn = optionMenu.querySelector(".select-btn"),
+			options = optionMenu.querySelectorAll(".option"),
+			sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+		selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+		options.forEach(option =>{
+			option.addEventListener("click", ()=>{
+				
+				let selectedOption = option.querySelector(".option-text").innerText;
+				sBtn_text.innerText = selectedOption;
+				optionMenu.classList.remove("active");
+			})
+		})
+	})
+});
+
+// взрываем модальное окно
+$(function() {
+	if ($('.js-modal').length > 0) {
+		var startWindowScroll = 0;
+		$('.js-modal').magnificPopup({
+			type: 'inline',
+			midClick: true,
+			mainClass: 'mfp-fade modal-filters',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+				},
+				open: function () {
+					if ($('.mfp-content').height() < $(window).height()) {
+						$('body').on('touchmove', function (e) {
+							e.preventDefault();
+						});
+					}
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+					$('body').off('touchmove');
+				}
+			}
+		});
+	}
+});
+
+// range-slider
+$(function() {
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		min: 0,
+		max: 10000,
+		from: 0,
+		to: 5000,
+		skin: "big",
+		hide_min_max: true,
+		extra_classes: 'range-slider'
 	});
 });

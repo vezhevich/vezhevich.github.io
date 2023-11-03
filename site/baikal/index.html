@@ -43,7 +43,7 @@
 		<nav class="header__nav">
 			<ul class="list_unstyle header__nav-list">
 				<li class="header__nav-item"><a class="header__nav-link" href="#">Обзоры</a></li>
-				<li class="header__nav-item"><a class="header__nav-link" href="#">Отели</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#">Жилье</a></li>
 				<li class="header__nav-item"><a class="header__nav-link" href="#">Туры</a></li>
 				<li class="header__nav-item"><a class="header__nav-link" href="#">Места</a></li>
 				<li class="header__nav-item"><a class="header__nav-link" href="#">Направления</a></li>
@@ -51,16 +51,24 @@
 				<li class="header__nav-item"><a class="header__nav-link" href="#">Карта</a></li>
 			</ul>
 		</nav>
-		<button class="btn-default btn-primary" type="button">Сдать жилье</button>
+		<button class="btn-default btn-primary header__add-button" type="button">
+			Добавить
+			<svg class="icon">
+				<use xlink:href="#icon-plus"></use>
+			</svg>
+		</button>
 		<!--header__auth_in если авторизован-->
 		<div class="header__auth header__auth_in">
 			<button class="btn-default btn-auth" type="button">
+				<span>
+					<img src="./images/svg/icon-user.svg" alt="">
+				</span>
 				<svg class="icon">
-					<use xlink:href="#icon-auth"></use>
+					<use xlink:href="#icon-hamb"></use>
 				</svg>
 			</button>
 			<div class="dropdown-menu-auth-wrapper">
-				<div class="header__auth-user header__auth-user_active js-dropdown-menu-open">
+				<div class="header__auth-user header__auth-user_active js-dropdown-open">
 					<div class="header__auth-user-avatar" style="background-image: url(./images/dist/avatar.jpg)"></div>
 					<div class="header__hamb">
 						<svg class="icon">
@@ -68,7 +76,7 @@
 						</svg>
 					</div>
 				</div>
-				<div class="dropdown-menu-auth">
+				<div class="dropdown-menu-auth js-dropdown">
 					<nav class="dropdown-menu-auth__nav">
 						<ul class="list_unstyle dropdown-menu-auth__nav-list">
 							<li class="dropdown-menu-auth__nav-item">
@@ -142,22 +150,42 @@
 </header>
 		<div class="main-content">
 			<main class="layout-content layout-content_main-page">
+				<!--promo-->
 				<div class="promo">
 					<h1 class="promo__title">Отдых на Байкале</h1>
 					<h2 class="promo__teaser">Путеводитель по Байкалу с бронированием гостиниц, туров и каталогом достопримечательностей</h2>
 				</div>
 
-				<div class="form-search">
+				<!--form-search-->
+					<div class="form-search">
 	<form action="url">
 		<div class="form-search__wrapper">
 			<div class="form-search__item">
 				<div class="form-search__label">Направление:</div>
 				<div class="form-search__select">
-					<select name="" id="">
-						<option value="1">Усть-Баргузин</option>
-						<option value="2">Максимиха</option>
-						<option value="3">Энхалук</option>
-					</select>
+					<div class="select-menu">
+						<div class="select-btn">
+							<span class="sBtn-text">Выберите направление</span>
+							<svg class="icon">
+								<use xlink:href="#icon-corner"></use>
+							</svg>
+						</div>
+
+						<ul class="options">
+							<li class="option">
+								<span class="option-text">Усть-Баргузин</span>
+							</li>
+							<li class="option">
+								<span class="option-text">Максимиха</span>
+							</li>
+							<li class="option">
+								<span class="option-text">Энхалук</span>
+							</li>
+							<li class="option">
+								<span class="option-text">Новый Энхалук</span>
+							</li>
+						</ul>
+					</div>
 					<span class="form-search__select-clear">
 						<svg class="icon">
 						<use xlink:href="#icon-close-bold"></use>
@@ -168,7 +196,7 @@
 			<div class="form-search__item">
 				<div class="datepicker">
 					<label for="datepicker" class="datepicker__label">Цены на период</label>
-					<input id="datepicker" type="text" class="input datepicker__input" value="23 мая - 25 июня">
+					<input id="datepicker" type="text" class="input datepicker__input" value="10.11 - 10.12" readonly>
 				</div>
 			</div>
 			<div class="form-search__item">
@@ -254,7 +282,6 @@
 </div>
 				
 				<h2 class="title-h2_main-page">Обзоры</h2>
-
 				<!--panel-view-->
 				<div class="panel-view">
 					<div class="panel-view__primary-buttons panel-view__map-button">
@@ -274,8 +301,9 @@
 					</div>
 				</div>
 
-				<div class="card-view">
-	<a href="#" class="card-view__item">
+				<!--card-view-->
+				<div class="card-view l-section-wrapper">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/hotel.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -294,7 +322,7 @@
 			<p class="card-view__item-title">Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/olhon.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default" style="display: none">
@@ -313,7 +341,7 @@
 			<p class="card-view__item-title">Остров Ольхон</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/rest.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -332,7 +360,7 @@
 			<p class="card-view__item-title">Ресторан “Ольхон”</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/baklan.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -351,7 +379,7 @@
 			<p class="card-view__item-title">Тур на остров Бакланий</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/barguzin.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -370,7 +398,7 @@
 			<p class="card-view__item-title">Тур в Баргузинскую долину</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/room.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -389,7 +417,7 @@
 			<p class="card-view__item-title">Рум-тур по гостинице "Легенда Байкала" в в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/house.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -408,7 +436,7 @@
 			<p class="card-view__item-title">Рум-тур по гостинице</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/location.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -427,7 +455,7 @@
 			<p class="card-view__item-title">Тур в Баргузинскую долину</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/etnos.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -446,7 +474,7 @@
 			<p class="card-view__item-title">Тур на остров Бакланий</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/tour.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -465,7 +493,7 @@
 			<p class="card-view__item-title">Тур в Баргузинскую долину</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/legend.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -484,7 +512,7 @@
 			<p class="card-view__item-title">Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
 		</div>
 	</a>		
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/action.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -503,7 +531,7 @@
 			<p class="card-view__item-title">Рум-тур по гостинице</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/animal.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -522,7 +550,7 @@
 			<p class="card-view__item-title">Тур в Баргузинскую долину</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/inter.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -541,7 +569,7 @@
 			<p class="card-view__item-title">Рум-тур по гостинице</p>
 		</div>
 	</a>	
-	<a href="#" class="card-view__item">
+	<a href="##" class="card-view__item">
 		<div class="card-view__item-image" style="background-image: url(./images/dist/meet.jpg)">
 			<div class="card-view__control">
 				<button type="button" class="card-view__control-play btn-default">
@@ -561,11 +589,10 @@
 		</div>
 	</a>
 </div>
-				
 				<button class="btn-default btn-secondary btn-secondary_full-width l-section-wrapper">Показать еще</button>
 				
 				<h2 class="title-h2_main-page">
-					<a href="#">
+					<a href="##">
 						Базы отдыха на Байкале
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
@@ -575,10 +602,10 @@
 				<!--panel-view-->
 				<div class="panel-view panel-view_margin-bottom">
 					<div class="btn-group">
-						<button type="button" class="btn-group__item btn-default btn-secondary">Лучшине</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">Недорого</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">С питанием</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">С детьми</button>
+						<button type="button" class="btn-group__item btn-default btn-secondary">лучшие</button>
+						<button type="button" class="btn-group__item btn-default btn-secondary">недорого</button>
+						<button type="button" class="btn-group__item btn-default btn-secondary">с питанием</button>
+						<button type="button" class="btn-group__item btn-default btn-secondary">с детьми</button>
 					</div>
 				</div>
 				
@@ -598,8 +625,8 @@
 								<div class="card-object-slider-wrap-button">
 									<div class="swiper card-object-slider js-slider-tab1">
 										<div class="card-object-wrapper swiper-wrapper">
-											<a href="#" class="card-object swiper-slide">
-												<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<a href="##" class="card-object swiper-slide">
+												<div class="js-card-object-inner-slider card-object-inner-slider swiper">
 													<div class="swiper-wrapper card-object-inner-slider__wrapper">
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
@@ -617,8 +644,8 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
-												<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<a href="##" class="card-object swiper-slide">
+												<div class="js-card-object-inner-slider card-object-inner-slider swiper">
 													<div class="swiper-wrapper card-object-inner-slider__wrapper">
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
@@ -636,8 +663,8 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
-												<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<a href="##" class="card-object swiper-slide">
+												<div class="js-card-object-inner-slider card-object-inner-slider swiper">
 													<div class="swiper-wrapper card-object-inner-slider__wrapper">
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
@@ -655,8 +682,8 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
-												<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<a href="##" class="card-object swiper-slide">
+												<div class="js-card-object-inner-slider card-object-inner-slider swiper">
 													<div class="swiper-wrapper card-object-inner-slider__wrapper">
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
@@ -674,8 +701,8 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
-												<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<a href="##" class="card-object swiper-slide">
+												<div class="js-card-object-inner-slider card-object-inner-slider swiper">
 													<div class="swiper-wrapper card-object-inner-slider__wrapper">
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
@@ -693,8 +720,8 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
-												<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+											<a href="##" class="card-object swiper-slide">
+												<div class="js-card-object-inner-slider card-object-inner-slider swiper">
 													<div class="swiper-wrapper card-object-inner-slider__wrapper">
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
 														<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
@@ -728,10 +755,10 @@
 							</div>
 							<div class="tabs__pane">
 								<!--slider-tab2-->
-								<div class="card-object-slider-wrap-button">
+								<div class="card-object-slider-wrap-button"#>
 									<div class="swiper card-object-slider js-slider-tab2">
 										<div class="card-object-wrapper swiper-wrapper">
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -743,7 +770,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview2.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -755,7 +782,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview3.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -767,7 +794,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview4.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -779,7 +806,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview5.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -791,7 +818,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -822,7 +849,7 @@
 								<div class="card-object-slider-wrap-button">
 									<div class="swiper card-object-slider js-slider-tab3">
 										<div class="card-object-wrapper swiper-wrapper">
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -834,7 +861,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview2.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -846,7 +873,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview3.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -858,7 +885,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview4.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -870,7 +897,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview5.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -882,7 +909,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -913,7 +940,7 @@
 								<div class="card-object-slider-wrap-button">
 									<div class="swiper card-object-slider js-slider-tab4">
 										<div class="card-object-wrapper swiper-wrapper">
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -925,7 +952,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview2.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -937,7 +964,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview3.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -949,7 +976,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview4.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -961,7 +988,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview5.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -973,7 +1000,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1001,10 +1028,10 @@
 							</div>
 							<div class="tabs__pane">
 								<!--slider-tab5-->
-								<div class="card-object-slider-wrap-button">
+								<div class="card-object-slider-wrap-button"#>
 									<div class="swiper card-object-slider js-slider-tab5">
 										<div class="card-object-wrapper swiper-wrapper">
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1016,7 +1043,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview2.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1028,7 +1055,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview3.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1040,7 +1067,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview4.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1052,7 +1079,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview5.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1064,7 +1091,7 @@
 													<div class="card-object__in">за сутки</div>
 												</div>
 											</a>
-											<a href="#" class="card-object swiper-slide">
+											<a href="##" class="card-object swiper-slide">
 												<div class="card-object__image" style="background-image: url(./images/dist/preview1.jpg)"></div>
 												<div class="card-object__title">Турбаза “Два дракона”</div>
 												<div class="card-object__list">
@@ -1094,13 +1121,8 @@
 					</div>
 				</div>
 
-				<h2 class="title-h2_main-page">Байкал на карте</h2>
-				
-				<!--map-->
-				<div class="map l-section-wrapper" style="background-image: url(./images/dist/map.jpg)"></div>
-
 				<h2 class="title-h2_main-page">
-					<a href="#">
+					<a href="##">
 						Достопримечательности Байкала
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
@@ -1108,10 +1130,11 @@
 					</a>
 				</h2>
 
+				<!--card-object-slider-->
 				<div class="card-object-slider-wrap-button l-section-wrapper">
-					<div class="swiper card-object-slider js-card-object-slider3">
+					<div class="swiper card-object-slider js-card-object-slider2">
 						<div class="card-object-wrapper swiper-wrapper">
-							<a href="#" class="card-object swiper-slide">
+							<a href="##" class="card-object swiper-slide">
 								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
 									<div class="swiper-wrapper card-object-inner-slider__wrapper">
 										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
@@ -1126,18 +1149,18 @@
 										рекомендуем
 									</div>
 								</div>
-								<div class="card-object__title">Камень-черепаха</div>
-								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
+								<div class="card-object__title">Большая Байкальская тропа</div>
+								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает. Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает </div>
 								<div class="card-object__list">
 									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
 									<div class="card-object__list-item">Усть-Баргузин</div>
 								</div>
 								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
+									<div class="card-object__tags-item">природные</div>
+									<div class="card-object__tags-item">исторические</div>
 								</div>
 							</a>
-							<a href="#" class="card-object swiper-slide">
+							<a href="##" class="card-object swiper-slide">
 								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
 									<div class="swiper-wrapper card-object-inner-slider__wrapper">
 										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
@@ -1157,7 +1180,7 @@
 									<div class="card-object__tags-item">экскурсии</div>
 								</div>
 							</a>
-							<a href="#" class="card-object swiper-slide">
+							<a href="##" class="card-object swiper-slide">
 								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
 									<div class="swiper-wrapper card-object-inner-slider__wrapper">
 										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
@@ -1183,7 +1206,7 @@
 									<div class="card-object__tags-item">экскурсии</div>
 								</div>
 							</a>
-							<a href="#" class="card-object swiper-slide">
+							<a href="##" class="card-object swiper-slide">
 								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
 									<div class="swiper-wrapper card-object-inner-slider__wrapper">
 										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
@@ -1203,99 +1226,7 @@
 									<div class="card-object__tags-item">экскурсии</div>
 								</div>
 							</a>
-							<a href="#" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-									<div class="card-object__label label label_recommend">
-										<svg class="icon">
-											<use xlink:href="#icon-thumbs-up"></use>
-										</svg>
-										рекомендуем
-									</div>
-								</div>
-								<div class="card-object__title">Камень-черепаха</div>
-								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
-							</a>
-							<a href="#" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Камень-черепаха</div>
-								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
-							</a>
-							<a href="#" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-									<div class="card-object__label label label_recommend">
-										<svg class="icon">
-											<use xlink:href="#icon-thumbs-up"></use>
-										</svg>
-										рекомендуем
-									</div>
-								</div>
-								<div class="card-object__title">Камень-черепаха</div>
-								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
-							</a>
-							<a href="#" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Камень-черепаха</div>
-								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
-							</a>
-							<a href="#" class="card-object swiper-slide">
+							<a href="##" class="card-object swiper-slide">
 								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
 									<div class="swiper-wrapper card-object-inner-slider__wrapper">
 										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
@@ -1321,7 +1252,99 @@
 									<div class="card-object__tags-item">экскурсии</div>
 								</div>
 							</a>
-							<a href="#" class="card-object swiper-slide">
+							<a href="##" class="card-object swiper-slide">
+								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+									<div class="swiper-wrapper card-object-inner-slider__wrapper">
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="card-object__title">Камень-черепаха</div>
+								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
+								<div class="card-object__list">
+									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
+									<div class="card-object__list-item">Усть-Баргузин</div>
+								</div>
+								<div class="card-object__tags">
+									<div class="card-object__tags-item">пешие</div>
+									<div class="card-object__tags-item">экскурсии</div>
+								</div>
+							</a>
+							<a href="##" class="card-object swiper-slide">
+								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+									<div class="swiper-wrapper card-object-inner-slider__wrapper">
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									</div>
+									<div class="swiper-pagination"></div>
+									<div class="card-object__label label label_recommend">
+										<svg class="icon">
+											<use xlink:href="#icon-thumbs-up"></use>
+										</svg>
+										рекомендуем
+									</div>
+								</div>
+								<div class="card-object__title">Камень-черепаха</div>
+								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
+								<div class="card-object__list">
+									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
+									<div class="card-object__list-item">Усть-Баргузин</div>
+								</div>
+								<div class="card-object__tags">
+									<div class="card-object__tags-item">пешие</div>
+									<div class="card-object__tags-item">экскурсии</div>
+								</div>
+							</a>
+							<a href="##" class="card-object swiper-slide">
+								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+									<div class="swiper-wrapper card-object-inner-slider__wrapper">
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<div class="card-object__title">Камень-черепаха</div>
+								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
+								<div class="card-object__list">
+									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
+									<div class="card-object__list-item">Усть-Баргузин</div>
+								</div>
+								<div class="card-object__tags">
+									<div class="card-object__tags-item">пешие</div>
+									<div class="card-object__tags-item">экскурсии</div>
+								</div>
+							</a>
+							<a href="##" class="card-object swiper-slide">
+								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
+									<div class="swiper-wrapper card-object-inner-slider__wrapper">
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									</div>
+									<div class="swiper-pagination"></div>
+									<div class="card-object__label label label_recommend">
+										<svg class="icon">
+											<use xlink:href="#icon-thumbs-up"></use>
+										</svg>
+										рекомендуем
+									</div>
+								</div>
+								<div class="card-object__title">Камень-черепаха</div>
+								<div class="card-object__teaser">Природная скульптура, напоминающая черепаху с вытянутой шеей, привлекает</div>
+								<div class="card-object__list">
+									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
+									<div class="card-object__list-item">Усть-Баргузин</div>
+								</div>
+								<div class="card-object__tags">
+									<div class="card-object__tags-item">пешие</div>
+									<div class="card-object__tags-item">экскурсии</div>
+								</div>
+							</a>
+							<a href="##" class="card-object swiper-slide">
 								<div class="js-card-object-inner-slider1 card-object-inner-slider swiper">
 									<div class="swiper-wrapper card-object-inner-slider__wrapper">
 										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
@@ -1343,12 +1366,12 @@
 							</a>
 						</div>
 					</div>
-					<div class="swiper-button-rounded swiper-button-object-slider3 swiper-button-rounded-prev swiper-button-prev">
+					<div class="swiper-button-rounded swiper-button-object-slider2 swiper-button-rounded-prev swiper-button-prev">
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
 						</svg>
 					</div>
-					<div class="swiper-button-rounded swiper-button-object-slider3 swiper-button-rounded-next swiper-button-next">
+					<div class="swiper-button-rounded swiper-button-object-slider2 swiper-button-rounded-next swiper-button-next">
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
 						</svg>
@@ -1356,7 +1379,7 @@
 				</div>
 
 				<h2 class="title-h2_main-page">
-					<a href="#">
+					<a href="##">
 						Где отдохнуть на Байкале
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
@@ -1366,9 +1389,9 @@
 				
 				<!--card-view-slider-->
 				<div class="card-view-slider-wrap-button l-section-wrapper">
-					<div class="swiper card-view-slider js-card-view-slider2">
+					<div class="swiper card-view-slider js-card-view-slider">
 						<div class="card-view card-view_modified swiper-wrapper">
-							<a href="#" class="card-view__item swiper-slide">
+							<a href="##" class="card-view__item swiper-slide">
 								<div class="card-view__item-image" style="background-image: url(./images/dist/hotel.jpg)">
 									<div class="card-view__item-text">
 										<p class="card-view__item-title">Горячинск</p>
@@ -1376,7 +1399,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="card-view__item swiper-slide">
+							<a href="##" class="card-view__item swiper-slide">
 								<div class="card-view__item-image" style="background-image: url(./images/dist/olhon.jpg)">
 									<div class="card-view__item-text">
 										<p class="card-view__item-title">Турка</p>
@@ -1384,7 +1407,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="card-view__item swiper-slide">
+							<a href="##" class="card-view__item swiper-slide">
 								<div class="card-view__item-image" style="background-image: url(./images/dist/rest.jpg)">
 									<div class="card-view__item-text">
 										<p class="card-view__item-title">Максимиха</p>
@@ -1392,7 +1415,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="card-view__item swiper-slide">
+							<a href="##" class="card-view__item swiper-slide">
 								<div class="card-view__item-image" style="background-image: url(./images/dist/baklan.jpg)">
 									<div class="card-view__item-text">
 										<p class="card-view__item-title">Усть-Баргузин</p>
@@ -1400,7 +1423,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="card-view__item swiper-slide">
+							<a href="##" class="card-view__item swiper-slide">
 								<div class="card-view__item-image" style="background-image: url(./images/dist/barguzin.jpg)">
 									<div class="card-view__item-text">
 										<p class="card-view__item-title">Усть-Баргузин название в две строки</p>
@@ -1408,7 +1431,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="card-view__item swiper-slide">
+							<a href="##" class="card-view__item swiper-slide">
 								<div class="card-view__item-image" style="background-image: url(./images/dist/room.jpg)">
 									<div class="card-view__item-text">
 										<p class="card-view__item-title">Усть-Баргузин</p>
@@ -1418,12 +1441,12 @@
 							</a>
 						</div>
 					</div>
-					<div class="swiper-button-rounded swiper-button-card-view2 swiper-button-rounded-prev swiper-button-prev">
+					<div class="swiper-button-rounded swiper-button-card-view swiper-button-rounded-prev swiper-button-prev">
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
 						</svg>
 					</div>
-					<div class="swiper-button-rounded swiper-button-card-view2 swiper-button-rounded-next swiper-button-next">
+					<div class="swiper-button-rounded swiper-button-card-view swiper-button-rounded-next swiper-button-next">
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
 						</svg>
@@ -1431,8 +1454,7 @@
 				</div>
 
 				<h2 class="title-h2_main-page">Отдых на Байкале в разное время</h2>
-
-			<!--card-category-->
+				<!--card-category-->
 				<div class="card-category l-section-wrapper">
 					<div class="card-category__item" style="background-image: url(./images/dist/category1.jpg)">
 						<div class="card-category__nav">
@@ -1466,7 +1488,7 @@
 				
 				<div class="l-wrapper-title-control">
 					<h2 class="title-h2_main-page title-h2_modified-bottom">
-						<a href="#">
+						<a href="##">
 							Отзывы
 							<svg class="icon">
 								<use xlink:href="#icon-corner"></use>
@@ -1514,11 +1536,11 @@
 								<div class="card-feedback__text">Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице</div>
 								<div class="card-feedback__media js-card-feedback__media swiper">
 									<div class="card-feedback__media-wrapper swiper-wrapper">
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></a>
 									</div>
 								</div>
 							</div>
@@ -1533,12 +1555,12 @@
 								<div class="card-feedback__text">Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице</div>
 								<div class="card-feedback__media js-card-feedback__media swiper">
 									<div class="card-feedback__media-wrapper swiper-wrapper">
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
+										<a href="##" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
 									</div>
 								</div>
 							</div>
@@ -1553,11 +1575,11 @@
 								<div class="card-feedback__text">Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице</div>
 								<div class="card-feedback__media js-card-feedback__media swiper">
 									<div class="card-feedback__media-wrapper swiper-wrapper">
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></a>
-										<a href="#" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></a>
+										<a href="###" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></a>
+										<a href="###" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></a>
+										<a href="###" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></a>
+										<a href="###" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></a>
+										<a href="###" class="card-feedback__media-item swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></a>
 									</div>
 								</div>
 							</div>
@@ -1609,7 +1631,7 @@
 				</div>
 
 				<h2 class="title-h2_main-page">
-					<a href="#">
+					<a href="##">
 						Погода на Байкале
 						<svg class="icon">
 							<use xlink:href="#icon-corner"></use>
@@ -1619,10 +1641,81 @@
 
 				<!--weather-->
 				<div class="weather l-section-wrapper ">
-					
+					<div class="weather__main weather__wrapper">
+						<div class="weather__text">Вт, 28 июля  06:23</div>
+						<div class="weather__main-current">
+							<img src="./images/svg/icon-cloud-snow.svg" alt="">
+							+15&#176;
+						</div>
+						<div class="weather__text weather__text_lg">Сегодня</div>
+					</div>
+					<div class="weather__separator"></div>
+					<div class="weather__list">
+						<div class="weather__list-item weather__wrapper">
+							<div class="weather__icon">
+								<img src="./images/svg/icon-cloud-lightning.svg" alt="">
+							</div>
+							<div class="weather__temp">
+								<div class="weather__temp-up">+17&#176;</div>
+								<div class="weather__temp-down">+25&#176;</div>
+							</div>
+							<div class="weather__text weather__text_lg">Завтра</div>
+						</div>						
+						<div class="weather__list-item weather__wrapper">
+							<div class="weather__icon">
+								<img src="./images/svg/icon-cloud-drizzle.svg" alt="">
+							</div>
+							<div class="weather__temp">
+								<div class="weather__temp-up">+17&#176;</div>
+								<div class="weather__temp-down">+25&#176;</div>
+							</div>
+							<div class="weather__text weather__text_lg">28 февраля</div>
+						</div>
+						<div class="weather__list-item weather__wrapper">
+							<div class="weather__icon">
+								<img src="./images/svg/icon-sun.svg" alt="">
+							</div>
+							<div class="weather__temp">
+								<div class="weather__temp-up">+17&#176;</div>
+								<div class="weather__temp-down">+25&#176;</div>
+							</div>
+							<div class="weather__text weather__text_lg">1 марта</div>
+						</div>
+						<div class="weather__list-item weather__wrapper">
+							<div class="weather__icon">
+								<img src="./images/svg/icon-cloud.svg" alt="">
+							</div>
+							<div class="weather__temp">
+								<div class="weather__temp-up">+17&#176;</div>
+								<div class="weather__temp-down">+25&#176;</div>
+							</div>
+							<div class="weather__text weather__text_lg">2 марта</div>
+						</div>
+						<div class="weather__list-item weather__wrapper">
+							<div class="weather__icon">
+								<img src="./images/svg/icon-cloud.svg" alt="">
+							</div>
+							<div class="weather__temp">
+								<div class="weather__temp-up">+17&#176;</div>
+								<div class="weather__temp-down">+25&#176;</div>
+							</div>
+							<div class="weather__text weather__text_lg">3 марта</div>
+						</div>
+						<div class="weather__list-item weather__wrapper">
+							<div class="weather__icon">
+								<img src="./images/svg/icon-sun.svg" alt="">
+							</div>
+							<div class="weather__temp">
+								<div class="weather__temp-up">+17&#176;</div>
+								<div class="weather__temp-down">+25&#176;</div>
+							</div>
+							<div class="weather__text weather__text_lg">4 марта</div>
+						</div>
+					</div>
 				</div>
 
 				<h2 class="title-h2_main-page">Байкал - красивые фото</h2>
+				<!--media-main-->
 				<div class="media-main l-section-wrapper">
 						<div class="media-main__nav">
 							<div class="btn-group btn-group_toolbar">
@@ -1637,28 +1730,27 @@
 							</div>
 						</div>
 						<div class="media-main__ctn">
-							<a href="#" class="media-main__item media-main__item1" style="background-image: url(./images/dist/gallery1.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item2 media-main__item_lg" style="background-image: url(./images/dist/gallery2.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item3" style="background-image: url(./images/dist/gallery3.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item4" style="background-image: url(./images/dist/gallery4.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item5" style="background-image: url(./images/dist/gallery5.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item6" style="background-image: url(./images/dist/gallery1.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item7" style="background-image: url(./images/dist/gallery2.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item8" style="background-image: url(./images/dist/gallery3.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item9" style="background-image: url(./images/dist/gallery4.jpg)"></a>
-							<a href="#" class="media-main__item media-main__item10" style="background-image: url(./images/dist/gallery5.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item1" style="background-image: url(./images/dist/gallery1.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item2 media-main__item_lg" style="background-image: url(./images/dist/gallery2.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item3" style="background-image: url(./images/dist/gallery3.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item4" style="background-image: url(./images/dist/gallery4.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item5" style="background-image: url(./images/dist/gallery5.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item6" style="background-image: url(./images/dist/gallery1.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item7" style="background-image: url(./images/dist/gallery2.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item8" style="background-image: url(./images/dist/gallery3.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item9" style="background-image: url(./images/dist/gallery4.jpg)"></a>
+							<a href="##" class="media-main__item media-main__item10" style="background-image: url(./images/dist/gallery5.jpg)"></a>
 						</div>
 				</div>
 				
 				<h2 class="title-h2_main-page">Часто задаваемые вопросы</h2>
-
 				<!--accordion-->
 				<div class="accordion js-accordion l-section-wrapper">
 					<div class="accordion__item js-accordion-item active">
 						<div class="accordion-header js-accordion-header">Какие самые бронируемые отели на Байкале?</div>
 						<div class="accordion-body js-accordion-body">
 							<div class="accordion-body__contents">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+								Самые бронируемые с высоким рейтингом: Два дракона, Радуга, Байкальская нерпа, Горячий ключ
 							</div>
 						</div>
 					</div>
@@ -1705,9 +1797,13 @@
 				</div>
 				
 				<!--seo-->
-				<div class="seo">
+				<div class="seo l-section-wrapper">
 					<p>Хороший выбор отелей и гостиниц Байкала по доступным ценам 2023. Бронируйте отели онлайн на Байкале с лучшими ценами и отзывами с фото. На сайте всегда есть свободные номера с выгодными условиями. Байкал привлекает внимание туристов c разных уголков света. Этот край не зря называют истинной жемчужиной всей Земли. Загадочные местные пещеры, красивые бухты, высокие горы и вулканы, водопады, крупнейшее скопление пресной воды и глубочайшее знаменитое одноименное озеро с уникальными представителями растительного и животного мира - всё это ежегодно привлекает тысячи путешественников. Отдых в Байкале станет ярчайшим впечатлений в жизни – неважно, летом он пройдет или зимой. Климат здесь мягче, чем в других окрестностях Сибири. Приехав один раз, многие мечтают вернуться сюда снова и снова - каждая поездка открывает что-то новое в этом крае. Экономя свое время для отдыха, необходимо заранее побеспокоиться и забронировать номер в отеле или гостинице, поскольку спрос на жилье здесь очень высокий круглый год. Слева страницы расположены многофункциональные фильтры, благодаря которым Вы сможете без труда выбрать нужный номер исходя из цены, комфорта, списка услуг и расположения.</p>
 				</div>
+
+				<h2 class="title-h2_main-page">Байкал на карте</h2>
+				<!--map-->
+				<div class="map l-section-wrapper" style="background-image: url(./images/dist/map.jpg)"></div>
 				
 				<div class="offer-place">
 	<div class="offer-place__wrapper">
@@ -1870,7 +1966,7 @@
 		<path d="M5 12h14" stroke="#444CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 	</symbol>
 	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-plus">
-		<path d="M12 5v14m-7-7h14" stroke="#444CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+		<path d="M12 5v14m-7-7h14" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 	</symbol>
 	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-home">
 		<path d="M7.5 18.333V10h5v8.333M2.5 7.5 10 1.667 17.5 7.5v9.167a1.666 1.666 0 0 1-1.667 1.666H4.167A1.667 1.667 0 0 1 2.5 16.667V7.5Z" stroke="#667085" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1884,6 +1980,9 @@
 	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-thumbs-up">
 		<path d="M3.5 11H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1h1.5m3.5-1v-2A1.5 1.5 0 0 0 5.5 1l-2 4.5V11h5.64a1 1 0 0 0 1-.85l.69-4.5a1 1 0 0 0-1-1.15H7Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="icon-close">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6 6 18M6 6l12 12"></path>
+	</symbol>
 </svg>
 <!-- тултип -->
 <div class="tooltip_templates" style="display: none;">
@@ -1891,11 +1990,224 @@
 		На основе введенных данных вы будете получать рассылки и уведомления, подобранные алгоритмом специально для вас
 	</div>
 </div>
+<!--фильтры-->
+<div id="modal-filters" class="mfp-hide modal">
+    <div class="modal__wrapper layout-content">
+        <button type="button" class="modal__close mfp-close btn">
+            <svg class="icon-close">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button>
+			<div class="filters-wrapper">
+				<div class="filters">
+					<div class="filters__item">
+						<div class="filters__item-title">Цена</div>
+						<input type="text" class="js-range-slider range-slider" name="range" value="" />
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Опции</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input id="options1" type="checkbox" name="options-group" checked />
+								<label for="options1">С бассейном</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="options2" type="checkbox" name="options-group" checked />
+								<label for="options2">С детьми</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="options3" type="checkbox" name="options-group" />
+								<label for="options3">С видом на байкал</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="options4" type="checkbox" name="options-group" />
+								<label for="options4">На берегу</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="options5" type="checkbox" name="options-group" />
+								<label for="options5">Недорого</label>
+							</div>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Тип размещения</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input id="accom1" type="checkbox" name="accom-group" checked />
+								<label for="accom1">Гостиницы/Отели</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="accom2" type="checkbox" name="accom-group" />
+								<label for="accom2">Курорты/санатории</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="accom3" type="checkbox" name="accom-group" checked />
+								<label for="accom3">Турбазы</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="accom4" type="checkbox" name="accom-group" />
+								<label for="accom4">На берегу</label>
+							</div>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Расстояние до берега</div>
+						<div class="radio">
+							<div class="radio__item">
+								<input id="distance1" type="radio" name="distance-group" checked/>
+								<label for="distance1">На берегу</label>
+							</div>
+							<div class="radio__item">
+								<input id="distance2" type="radio" name="distance-group" />
+								<label for="distance2">С видом на Байкал</label>
+							</div>
+							<div class="radio__item">
+								<input id="distance3" type="radio" name="distance-group" />
+								<label for="distance3">Рядом пляж</label>
+							</div>
+							<div class="radio__item">
+								<input id="distance5" type="radio" name="distance-group" />
+								<label for="distance5">10 м.</label>
+							</div>
+							<div class="radio__item">
+								<input id="distance6" type="radio" name="distance-group" />
+								<label for="distance6">150 м.</label>
+							</div>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Услуги</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input id="services1" type="checkbox" name="services-group" checked />
+								<label for="services2">Бесплатный интернет</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="services2" type="checkbox" name="services-group" />
+								<label for="services2">Парковка</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="services3" type="checkbox" name="services-group" checked />
+								<label for="services3">Бассейн</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="services4" type="checkbox" name="services-group" />
+								<label for="services4">Фитнесс</label>
+							</div>
+						</div>
+						<div class="filters__show-all">
+							<span class="filters__show-all-icon">
+								<svg class="icon">
+								<use xlink:href="#icon-corner"></use>
+							</svg>
+							</span>
+							<span class="filters__show-all-text">Показать все</span>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Условия бронирования</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input id="reserved1" type="checkbox" name="reserved-group" checked />
+								<label for="reserved1">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="reserved2" type="checkbox" name="reserved-group" />
+								<label for="reserved2">Оплата на месте</label>
+							</div>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Условия</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input id="inner1" type="checkbox" name="conditions-group" checked />
+								<label for="inner1">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner2" type="checkbox" name="conditions-group" />
+								<label for="inner2">Оплата на месте</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner3" type="checkbox" name="conditions-group" checked />
+								<label for="inner3">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner4" type="checkbox" name="conditions-group" />
+								<label for="inner4">Оплата на месте</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner5" type="checkbox" name="conditions-group" checked />
+								<label for="inner5">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner6" type="checkbox" name="conditions-group" />
+								<label for="inner6">Оплата на месте</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner7" type="checkbox" name="conditions-group" checked />
+								<label for="conditions7">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="inner8" type="checkbox" name="conditions-group" />
+								<label for="inner8">Оплата на месте</label>
+							</div>
+						</div>
+					</div>
+					<div class="filters__item">
+						<div class="filters__item-title">Условия</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input id="conditions1" type="checkbox" name="inner-group" checked />
+								<label for="conditions1">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions2" type="checkbox" name="inner-group" />
+								<label for="conditions2">Оплата на месте</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions3" type="checkbox" name="inner-group" />
+								<label for="conditions3">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions4" type="checkbox" name="inner-group" />
+								<label for="conditions4">Оплата на месте</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions5" type="checkbox" name="inner-group" />
+								<label for="conditions5">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions6" type="checkbox" name="inner-group" />
+								<label for="conditions6">Оплата на месте</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions7" type="checkbox" name="inner-group" />
+								<label for="conditions7">Есть бесплатная отмена</label>
+							</div>
+							<div class="checkbox__item">
+								<input id="conditions8" type="checkbox" name="inner-group" />
+								<label for="conditions8">Оплата на месте</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-group btn-group_centered">
+				<button class="btn-group__item btn-default btn-bordered btn-light-bordered">Показать 34 варианта</button>
+				<button class="btn-group__item btn-default btn-primary btn-primary_md">Показать 34 варианта</button>
+			</div>
+    </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
 <script src="js/libs/swiper/swiper-bundle.js"></script>
 <script src="js/libs/nice/js/jquery.nice-select.min.js"></script>
 <script src="js/libs/tooltipster/tooltipster.bundle.min.js"></script>
+<script src="js/libs/datepicker/jquery.daterangepicker.min.js"></script>
+<script src="js/libs/magnific/jquery.magnific-popup.min.js"></script>
+<script src="js/libs/rangeSlider/ion.rangeSlider.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
