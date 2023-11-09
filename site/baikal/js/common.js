@@ -748,12 +748,6 @@ $(function () {
 	})
 });
 
-
-// select
-$(function () {
-	$('.select-custom').niceSelect();
-});
-
 // tooltip
 $(document).ready(function() {
 	$('.js-tooltip').tooltipster({
@@ -890,3 +884,136 @@ $(function() {
 		extra_classes: 'range-slider'
 	});
 });
+
+
+// modal gallery
+$(function() {
+	if ($('.js-gallery').length > 0) {
+		$('.js-gallery').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile modal-gallery',
+			closeBtnInside: false,
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+				tCounter: '<span class="mfp-counter">%curr% из %total%</span>'
+			}
+		});
+	}
+});
+
+// modal-review
+$(function() {
+	if ($('.js-modal-review').length > 0) {
+		var startWindowScroll = 0;
+		$('.js-modal-review').magnificPopup({
+			type: 'inline',
+			midClick: true,
+			mainClass: 'mfp-fade modal-review',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+				},
+				open: function () {
+					if ($('.mfp-content').height() < $(window).height()) {
+						$('body').on('touchmove', function (e) {
+							e.preventDefault();
+						});
+					}
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+					$('body').off('touchmove');
+				}
+			}
+		});
+	}
+});
+
+//slider review
+$(function () {
+	if ($('.js-review-slider').length > 0) {
+		var swiper = new Swiper('.js-review-slider', {
+			slidesPerView: 1,
+			spaceBetween: 16,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			navigation: {
+				nextEl: '.swiper-button-review.swiper-button-next',
+				prevEl: '.swiper-button-review.swiper-button-prev',
+			},
+		});	
+	}
+});
+
+//show comments in modal
+$(function () {
+	const btnShowCom = document.querySelectorAll(".js-show-comm");
+	const btnHideCom = document.querySelectorAll(".js-hide-comm");
+	const com = document.querySelectorAll(".modal-review__comm");
+	
+	btnShowCom.forEach(function (btn) {
+		btn.addEventListener("click", function (e) {
+			e.stopPropagation();
+			com.forEach(function (item) {
+				item.classList.add('open')
+			})
+		})
+	});	
+	btnHideCom.forEach(function (btn) {
+		btn.addEventListener("click", function (e) {
+			e.stopPropagation();
+			com.forEach(function (item) {
+				item.classList.remove('open')
+			})
+		})
+	})
+})
+
+// модальное окно по центру экрана
+$(function() {
+	if ($('.js-modal-default').length > 0) {
+		var startWindowScroll = 0;
+		$('.js-modal-default').magnificPopup({
+			type: 'inline',
+			midClick: true,
+			mainClass: 'mfp-fade modal-default',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+				},
+				open: function () {
+					if ($('.mfp-content').height() < $(window).height()) {
+						$('body').on('touchmove', function (e) {
+							e.preventDefault();
+						});
+					}
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+					$('body').off('touchmove');
+				}
+			}
+		});
+	}
+});
+
+// feedback modal slider
+$(function () {
+	var swiper = new Swiper('.js-feedback-modal-slider', {
+		slidesPerView: "auto",
+		spaceBetween: 8,
+		freeMode: true,
+	});
+});
+

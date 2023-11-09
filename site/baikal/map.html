@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Статьи</title>
+	<title>Главная страница</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -151,598 +151,356 @@
 	</div>
 </header>
 		<div class="main-content">
-			<main class="layout-content layout-content_inner-page">
-				<nav class="breadcrumb">
-					<ul class="list_unstyle breadcrumb__list">
-						<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Статьи</a></li>
-					</ul>
-				</nav>
-				<div class="promo promo-inner-page">
-					<h2 class="promo__title">Все об отдыхе на Байкале</h2>
-					<p class="promo__teaser">На нашей планете — множество заповедных уголков природы, попадая в которые, чувствуешь прилив сил и просветление мыслей, а иногда — самое настоящее счастье</p>
-				</div>
-
-				<!--panel-view-->
-				<div class="panel-view">
-					<div class="panel-view__search">
-						<form action="url">
-							<input type="text" class="input panel-view__search-input" placeholder="Искать в статьях">
-							<button class="btn-default panel-view__search-button">
+			<div class="map map-inner-page">
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad69c3c8168bda27a68ae1354cf8ed91619d971f429fcd6034621e3da66f11f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+				<div class="modal-objects">
+					<!--nav-line-->
+					<nav class="nav-line l-section-wrapper">
+						<ul class="list_unstyle nav-line__list">
+							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Обзоры</a></li>
+							<li class="nav-line__item nav-line__item-link_active"><a class="nav-line__item-link" href="#">Гостиницы</a></li>
+							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Отели</a></li>
+							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Туры</a></li>
+							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Места</a></li>
+							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Услуги</a></li>
+						</ul>
+					</nav>
+					<!--panel-view-->
+					<div class="panel-view">
+						<div class="panel-view__primary-buttons panel-view__map-button">
+							<button class="btn-default btn-primary js-modal" data-mfp-src="#modal-filters" type="button">
 								<svg class="icon">
-									<use xlink:href="#icon-search"></use>
+									<use xlink:href="#icon-filters"></use>
 								</svg>
+								Фильтры
 							</button>
-						</form>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn-group__item btn-default btn-secondary">лучшие</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">недорого</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">с питанием</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">с детьми</button>
+						</div>
 					</div>
-					<div class="btn-group">
-						<button type="button" class="btn-group__item btn-default btn-secondary">Горячинск</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">Усть-Баргузин</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">Чивыркуйский залив</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">Ольхон</button>
-						<button type="button" class="btn-group__item btn-default btn-secondary">Ушканьи острова</button>
-					</div>
-				</div>
-
-				<div class="card-view">
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/hotel.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске. Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/olhon.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Остров Ольхон</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/rest.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Ресторан “Ольхон”</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/baklan.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур на остров Бакланий</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/barguzin.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур в Баргузинскую долину</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/room.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Рум-тур по гостинице "Легенда Байкала" в в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/house.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Рум-тур по гостинице</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/location.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур в Баргузинскую долину</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/etnos.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур на остров Бакланий</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/tour.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур в Баргузинскую долину</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/legend.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Рум-тур по гостинице "Легенда Байкала" в Горячинске гостинице "Легенда Байкала" в Горячинске.</p>
-		</div>
-	</a>		
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/action.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Рум-тур по гостинице</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/animal.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур в Баргузинскую долину</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/inter.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Рум-тур по гостинице</p>
-		</div>
-	</a>	
-	<a href="##" class="card-view__item">
-		<div class="card-view__item-image" style="background-image: url(./images/dist/meet.jpg)">
-			<div class="card-view__control">
-				<button type="button" class="card-view__control-play btn-default">
-					<svg class="icon">
-						<use xlink:href="#icon-play"></use>
-					</svg>
-				</button>
-				<button type="button" class="card-view__control-pause btn-default" style="display: none">
-					<svg class="icon">
-						<use xlink:href="#icon-pause"></use>
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="card-view__item-text">
-			<p class="card-view__item-title card-view__item-title_modified">Тур в Баргузинскую долину</p>
-		</div>
-	</a>
-</div>
-				
-				<button class="btn-default btn-secondary btn-secondary_full-width">Показать еще</button>
-				
-				<!--paginator-->
-				<div class="paginator">
-					<a href="##" class="paginator__prev">
-						<svg class="icon">
-							<use xlink:href="#icon-point-left"></use>
-						</svg>
-						Назад
-					</a>
-					<div class="paginator__pages">
-						<a class="paginator__pages-item paginator__pages-item_active" href="##">1</a>
-						<a class="paginator__pages-item" href="##">2</a>
-						<a class="paginator__pages-item" href="##">3</a>
-						<a class="paginator__pages-item" href="##">...</a>
-						<a class="paginator__pages-item" href="##">8</a>
-						<a class="paginator__pages-item" href="##">9</a>
-						<a class="paginator__pages-item" href="##">10</a>
-					</div>
-					<a href="##" class="paginator__next">
-						Далее
-						<svg class="icon">
-							<use xlink:href="#icon-point-right"></use>
-						</svg>
-					</a>
-				</div>
-
-				<hr class="hr_modified-bottom">
-				
-				<h2 class="title-h2_main-page">
-					<a href="##">
-						Что посмотреть на Байкале
-						<svg class="icon">
-							<use xlink:href="#icon-corner"></use>
-						</svg>
-					</a>
-				</h2>
-				<div class="card-object-slider-wrap-button">
-					<div class="swiper card-object-slider js-card-object-slider11">
-						<div class="card-object-wrapper swiper-wrapper">
-							<a href="##" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Вокруг Баргузинской долины</div>
-								<div class="card-object__teaser">Баргузинская долина богата достопримечательностями особой красоты. Одни только гольцы долина богата достопримечательностями особой красоты. Одни только гольцы</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">природные</div>
-									<div class="card-object__tags-item">исторические</div>
-								</div>
+					<!--tags-->
+					<div class="tags">
+						<div class="tags__item">Гостиницы/отели
+							<a href="#" class="tags__close">
+								<svg class="icon">
+									<use xlink:href="#icon-close-bold"></use>
+								</svg>
 							</a>
-							<a href="##" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Байкальский мираж</div>
-								<div class="card-object__teaser">Если Вы хотите поймать дзен и у Вас есть для этого пол дня Вам непременно на эту экскурсию.</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
+						</div>
+						<div class="tags__item">Турбазы
+							<a href="#" class="tags__close">
+								<svg class="icon">
+									<use xlink:href="#icon-close-bold"></use>
+								</svg>
 							</a>
-							<a href="##" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Архипелаг Ушканий</div>
-								<div class="card-object__teaser">Архипелаг известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
+						</div>
+						<div class="tags__item">Гостевые дома
+							<a href="#" class="tags__close">
+								<svg class="icon">
+									<use xlink:href="#icon-close-bold"></use>
+								</svg>
 							</a>
-							<a href="##" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Архипелаг Ушканий</div>
-								<div class="card-object__teaser">Архипелаг известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
+						</div>
+						<div class="tags__item">На берегу
+							<a href="#" class="tags__close">
+								<svg class="icon">
+									<use xlink:href="#icon-close-bold"></use>
+								</svg>
 							</a>
-							<a href="##" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Архипелаг Ушканий</div>
-								<div class="card-object__teaser">Архипелаг известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
+						</div>
+						<div class="tags__item">Есть бесплатная отмена
+							<a href="#" class="tags__close">
+								<svg class="icon">
+									<use xlink:href="#icon-close-bold"></use>
+								</svg>
 							</a>
-							<a href="##" class="card-object swiper-slide">
-								<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-									<div class="swiper-wrapper card-object-inner-slider__wrapper">
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-										<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="card-object__title">Архипелаг Ушканий</div>
-								<div class="card-object__teaser">Архипелаг известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова известен своим лежбищем Байкальской нерпы, но мало кто знает, что сами острова</div>
-								<div class="card-object__list">
-									<div class="card-object__list-item">10 туров, 5 экскурсий</div>
-									<div class="card-object__list-item">Усть-Баргузин</div>
-								</div>
-								<div class="card-object__tags">
-									<div class="card-object__tags-item">пешие</div>
-									<div class="card-object__tags-item">экскурсии</div>
-								</div>
+						</div>
+						<div class="tags__item tags__item_last">
+							<a href="#" class="tags__item-clear-all">
+								Очистить
 							</a>
 						</div>
 					</div>
-					<div class="swiper-button-rounded swiper-button-object-slider11 swiper-button-rounded-prev swiper-button-prev">
-						<svg class="icon">
-							<use xlink:href="#icon-corner"></use>
-						</svg>
+					
+					<div class="card-object-wrapper card-object-wrapper-3-in-row card-object-wrapper-list">
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс””</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
+						<a href="##" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза “Два дракона”</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+							</div>
+						</a>
 					</div>
-					<div class="swiper-button-rounded swiper-button-object-slider11 swiper-button-rounded-next swiper-button-next">
-						<svg class="icon">
-							<use xlink:href="#icon-corner"></use>
-						</svg>
-					</div>
-				</div>
-				
-				<div class="offer-place">
-	<div class="offer-place__wrapper">
-		<div class="offer-place__title">Предложите свои услуги на Байкалбукинге</div>
-		<div class="offer-place__teaser">Более 500 гостиниц, точек аренды и туристических гидов уже находят клиенты на Байкалбукинге</div>
-		<div class="offer-place__group-buttons">
-			<a href="#" class="btn-default btn-light">Разместить предложение</a>
-			<a href="#" class="btn-default btn-bordered">Подробнее</a>
-		</div>
-	</div>
-</div>
-				
-	</main>
-		</div>
-	<footer class="footer">
-	<div class="layout-content">
-		<div class="footer__top">
-			<div class="footer__top-left">
-				<div class="footer__logo">
-					<img src="./images/svg/logo-footer.svg" alt="">
-				</div>
-				<div class="footer__teaser">
-					Design amazing digital experiences that create more happy in the world.
-				</div>
-			</div>
-			<div class="footer__top-right">
-				<div class="footer__top-right-col footer__top-right-col_lg">
-					<div class="footer__title">Размещение</div>
-					<nav class="footer-nav footer-nav_two-cols">
-						<ul class="footer-nav__list list_unstyle">
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Гостиницы и турбазы</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Статьи</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Туры и экскурсии</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Как добраться</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Места</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Погода на Байкале</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Достопримечательности</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Отзывы</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Аренда</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Помощь</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Карта Байкала</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__top-right-col">
-					<div class="footer__title">Resources</div>
-					<nav class="footer-nav">
-						<ul class="footer-nav__list list_unstyle">
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Newsletter</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Events</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Help centre</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Tutorials</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Support</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__top-right-col">
-					<div class="footer__title">Legal</div>
-					<nav class="footer-nav">
-						<ul class="footer-nav__list list_unstyle">
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Terms</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Privacy</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Cookies</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Licenses</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Settings</a></li>
-							<li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact</a></li>
-						</ul>
-					</nav>
 				</div>
 			</div>
 		</div>
-		<div class="footer__bottom">
-			<div class="footer__copy">
-				© 2077 Untitled UI. All rights reserved.
-			</div>
-			<div class="footer__social">
-				<a href="#" class="footer__social-item">
-					<img src="./images/svg/icon-twitter.svg" alt="">
-				</a>
-				<a href="#" class="footer__social-item">
-					<img src="./images/svg/icon-in.svg" alt="">
-				</a>
-				<a href="#" class="footer__social-item">
-					<img src="./images/svg/icon-fb.svg" alt="">
-				</a>
-				<a href="#" class="footer__social-item">
-					<img src="./images/svg/icon-git.svg" alt="">
-				</a>
-				<a href="#" class="footer__social-item">
-					<img src="./images/svg/icon-social-hand.svg" alt="">
-				</a>
-				<a href="#" class="footer__social-item">
-					<img src="./images/svg/icon-social-ball.svg" alt="">
-				</a>
-			</div>
-		</div>
-	</div>
-</footer>
 	
 </div>
 
