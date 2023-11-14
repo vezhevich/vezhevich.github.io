@@ -152,28 +152,28 @@
 </header>
 		<div class="main-content">
 			<main class="layout-content layout-content_inner-page">
-				<div class="l-two-cols">
+				<nav class="breadcrumb">
+					<ul class="list_unstyle breadcrumb__list">
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Компании</a></li>
+					</ul>
+				</nav>
+				<div class="l-two-cols l-two-cols_reverse-mobile">
 					<div class="l-two-cols__left">
-						<nav class="breadcrumb">
-							<ul class="list_unstyle breadcrumb__list">
-								<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Компании</a></li>
-							</ul>
-						</nav>
 						<div class="promo promo-inner-page">
-							<h2 class="promo__title">Цырендондок Ширипнимбуев</h2>
+							<h2 class="promo__title promo__title_centered-mobile">Цырендондок Ширипнимбуев</h2>
 							<p class="promo__teaser">Привет! Меня зовут Надналин, можно просто Лин! Мне очень нравится знакомиться с разными людьми из разных стран, я всегда готова помочь с любым вопросом и проблемой! </p>
 							<p class="promo__teaser">Приходите ко мне и вам понравится!</p>
 						</div>
 
-						<nav class="nav-line l-section-wrapper">
-							<ul class="list_unstyle nav-line__list">
-								<li class="nav-line__item"><a class="nav-line__item-link" href="#">О компании</a></li>
-								<li class="nav-line__item nav-line__item-link_active"><a class="nav-line__item-link" href="#">Гостиницы</a></li>
-								<li class="nav-line__item"><a class="nav-line__item-link" href="#">Туры</a></li>
-								<li class="nav-line__item"><a class="nav-line__item-link" href="#">Места</a></li>
-								<li class="nav-line__item"><a class="nav-line__item-link" href="#">Достопримечательности</a></li>
-								<li class="nav-line__item"><a class="nav-line__item-link" href="#">Аренда</a></li>
-								<li class="nav-line__item"><a class="nav-line__item-link" href="#">Отзывы <span class="nav-line__item-counter">2</span></a></li>
+						<nav class="nav-line l-section-wrapper js-nav-line-scroll swiper">
+							<ul class="list_unstyle nav-line__list swiper-wrapper">
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">О компании</a></li>
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link nav-line__item-link_active" href="#">Гостиницы</a></li>
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Туры</a></li>
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Места</a></li>
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Достопримечательности</a></li>
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Аренда</a></li>
+								<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Отзывы <span class="nav-line__item-counter">2</span></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -318,7 +318,7 @@
 				<div class="l-section-wrapper">
 					<h2 class="title-h2_main-page">Туры и экскурсии</h2>
 					<div class="card-object-slider-wrap-button">
-						<div class="swiper card-object-slider js-card-object-slider3">
+						<div class="swiper card-object-slider js-card-object-slider">
 							<div class="card-object-wrapper swiper-wrapper">
 								<a href="##" class="card-object swiper-slide">
 									<div class="js-card-object-inner-slider card-object-inner-slider swiper">
@@ -460,12 +460,12 @@
 								</a>
 							</div>
 						</div>
-						<div class="swiper-button-rounded swiper-button-object-slider3 swiper-button-rounded-prev swiper-button-prev">
+						<div class="swiper-button-rounded swiper-button-object-slider swiper-button-rounded-prev swiper-button-prev">
 							<svg class="icon">
 								<use xlink:href="#icon-corner"></use>
 							</svg>
 						</div>
-						<div class="swiper-button-rounded swiper-button-object-slider3 swiper-button-rounded-next swiper-button-next">
+						<div class="swiper-button-rounded swiper-button-object-slider swiper-button-rounded-next swiper-button-next">
 							<svg class="icon">
 								<use xlink:href="#icon-corner"></use>
 							</svg>
@@ -1244,6 +1244,15 @@
 	</symbol>
 	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="icon-close">
 		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6 6 18M6 6l12 12"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" id="icon-copy">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="M4.833 12.5H4a1.667 1.667 0 0 1-1.667-1.667v-7.5A1.667 1.667 0 0 1 4 1.666h7.5a1.667 1.667 0 0 1 1.666 1.667v.833M9.833 7.5h7.5c.92 0 1.667.746 1.667 1.666v7.5c0 .921-.747 1.667-1.667 1.667h-7.5c-.92 0-1.667-.746-1.667-1.666v-7.5c0-.921.747-1.667 1.667-1.667Z"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="icon-two-pointers">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="M3.333 11.667h5m0 0v5m0-5L2.5 17.5m14.167-9.167h-5m0 0v-5m0 5L17.5 2.5"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" id="icon-list">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="M7.167 5H18M7.167 10H18M7.167 15H18M3 5h.008M3 10h.008M3 15h.008"></path>
 	</symbol>
 </svg>
 <!-- тултип -->

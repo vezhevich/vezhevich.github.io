@@ -155,20 +155,20 @@
 				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad69c3c8168bda27a68ae1354cf8ed91619d971f429fcd6034621e3da66f11f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
 				<div class="modal-objects">
 					<!--nav-line-->
-					<nav class="nav-line l-section-wrapper">
-						<ul class="list_unstyle nav-line__list">
-							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Обзоры</a></li>
-							<li class="nav-line__item nav-line__item-link_active"><a class="nav-line__item-link" href="#">Гостиницы</a></li>
-							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Отели</a></li>
-							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Туры</a></li>
-							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Места</a></li>
-							<li class="nav-line__item"><a class="nav-line__item-link" href="#">Услуги</a></li>
+					<nav class="nav-line l-section-wrapper js-nav-line-scroll swiper">
+						<ul class="list_unstyle nav-line__list swiper-wrapper">
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Обзоры</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link nav-line__item-link_active" href="#">Гостиницы</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Отели</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Туры</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Места</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Услуги</a></li>
 						</ul>
 					</nav>
 					<!--panel-view-->
 					<div class="panel-view">
 						<div class="panel-view__primary-buttons panel-view__map-button">
-							<button class="btn-default btn-primary js-modal" data-mfp-src="#modal-filters" type="button">
+							<button class="btn-default btn-primary js-modal modal-objects__btn-fix" data-mfp-src="#modal-filters" type="button">
 								<svg class="icon">
 									<use xlink:href="#icon-filters"></use>
 								</svg>
@@ -499,6 +499,18 @@
 						</a>
 					</div>
 				</div>
+				<button class="map__show-list btn-default btn-light" type="button">
+					Список
+					<svg class="icon">
+						<use xlink:href="#icon-two-pointers"></use>
+					</svg>
+				</button>
+				<button class="map__show-list-inner btn-default btn-light" type="button">
+					<svg class="icon">
+						<use xlink:href="#icon-list"></use>
+					</svg>
+					56 вариантов
+				</button>
 			</div>
 		</div>
 	
@@ -580,6 +592,15 @@
 	</symbol>
 	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="icon-close">
 		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6 6 18M6 6l12 12"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" id="icon-copy">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="M4.833 12.5H4a1.667 1.667 0 0 1-1.667-1.667v-7.5A1.667 1.667 0 0 1 4 1.666h7.5a1.667 1.667 0 0 1 1.666 1.667v.833M9.833 7.5h7.5c.92 0 1.667.746 1.667 1.666v7.5c0 .921-.747 1.667-1.667 1.667h-7.5c-.92 0-1.667-.746-1.667-1.666v-7.5c0-.921.747-1.667 1.667-1.667Z"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="icon-two-pointers">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="M3.333 11.667h5m0 0v5m0-5L2.5 17.5m14.167-9.167h-5m0 0v-5m0 5L17.5 2.5"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" id="icon-list">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="M7.167 5H18M7.167 10H18M7.167 15H18M3 5h.008M3 10h.008M3 15h.008"></path>
 	</symbol>
 </svg>
 <!-- тултип -->
