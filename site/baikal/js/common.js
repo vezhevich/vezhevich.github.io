@@ -1041,13 +1041,18 @@ $(document).ready(function() {
 // content slider
 $(function () {
 	var swiper = new Swiper('.js-content-slider', {
-		slidesPerView: "auto",
-		spaceBetween: 24,
+		slidesPerView: 'auto',
+		spaceBetween: 16,
 		freeMode: true,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
-		}
+		},
+		breakpoints: {
+			768: {
+				spaceBetween: 24,
+			}
+		},
 	});
 });
 
