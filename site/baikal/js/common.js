@@ -1444,3 +1444,24 @@ $(function () {
 		});	
 	}
 });
+
+// удаляем тэги
+$(function () {
+	const closeButtons = document.querySelectorAll('.tags__close');
+	const clearAllButton = document.querySelector('.tags__item-clear-all');
+	const tagsItems = document.querySelectorAll('.tags__item');
+
+	if ($('.tags').length > 0) {
+		for (var i = 0; i < closeButtons.length; i++) {
+			closeButtons[i].addEventListener('click', function() {
+				this.parentNode.remove();
+			});
+		}
+
+		clearAllButton.addEventListener('click', function() {
+			tagsItems.forEach(function(item) {
+				item.remove();
+			});
+		});	
+	}
+});
