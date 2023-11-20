@@ -24,6 +24,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -43,6 +53,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -62,6 +82,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -81,6 +111,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -100,6 +140,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -119,6 +169,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -138,6 +198,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -157,6 +227,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -176,6 +256,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -195,6 +285,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -214,6 +314,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -233,6 +343,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -252,6 +372,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -271,6 +401,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -290,6 +430,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -309,6 +459,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -328,6 +483,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -347,6 +507,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -366,6 +531,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -385,6 +555,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -404,6 +579,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -423,6 +603,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -442,6 +627,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -461,6 +651,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -480,6 +675,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -499,8 +699,19 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
+				allowTouchMove: false,
 			}
 		},
 	});
@@ -517,8 +728,19 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
+				allowTouchMove: false,
 			}
 		},
 	});
@@ -620,6 +842,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -670,6 +902,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -689,6 +931,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -708,6 +960,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -727,6 +989,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -746,6 +1013,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -765,6 +1037,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -784,6 +1061,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -803,6 +1085,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -822,6 +1109,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -841,6 +1133,11 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -860,6 +1157,16 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 16,
+				allowTouchMove: false,
+			},
+			1240: {
 				slidesPerView: 5,
 				spaceBetween: 16,
 				allowTouchMove: false,
@@ -894,6 +1201,10 @@ $(function () {
 		},
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+			},
+			1024: {
 				slidesPerView: 4,
 				spaceBetween: 16,
 			}
@@ -1312,7 +1623,7 @@ $(function () {
 						swiper: swiperMedia1,
 					},
 				});
-			} else if (screenWidth > 768 && swiperMedia1 != undefined) {
+			} else if (screenWidth > 767 && swiperMedia1 != undefined) {
 				swiperMedia1.destroy();
 				swiperMedia2.destroy();
 				swiperMedia1 = undefined;
@@ -1332,22 +1643,26 @@ $(function () {
 
 //скролл навигации табов на мобиле
 $(function () {
-	if ($('.tabs-wrapper-scroll').length > 0) {
+	if ($('.js-tabs-wrapper-scroll').length > 0) {
 		var swiperHorScroll = undefined;
 
 		function initSwiper() {
 			var screenWidth = $(window).width();
-
+			
 			if(screenWidth < 768 && swiperHorScroll == undefined) {
-				swiperHorScroll = new Swiper('.js-tabs-wrapper-scroll', {
-					slidesPerView: "auto",
-					freeMode: true,
+				$(".js-tabs-wrapper-scroll").each(function(){
+					swiperHorScroll = new Swiper('.js-tabs-wrapper-scroll', {
+						slidesPerView: "auto",
+						freeMode: true,
+					});
+				})
+			} else if (screenWidth > 767 && swiperHorScroll != undefined) {
+				$(".js-tabs-wrapper-scroll").each(function(){
+					this.swiper.destroy();
+					swiperHorScroll = undefined;
+					jQuery('.tabs-wrapper-scroll .swiper-wrapper').removeAttr('style');
+					jQuery('.tabs-wrapper-scroll .swiper-slide').removeAttr('style');
 				});
-			} else if (screenWidth > 768 && swiperHorScroll != undefined) {
-				swiperHorScroll.destroy();
-				swiperHorScroll = undefined;
-				jQuery('.tabs-wrapper-scroll .swiper-wrapper').removeAttr('style');
-				jQuery('.tabs-wrapper-scroll .swiper-slide').removeAttr('style');
 			}
 		}
 
@@ -1372,7 +1687,7 @@ $(function () {
 					slidesPerView: "auto",
 					spaceBetween: 8,
 				});
-			} else if (screenWidth > 768 && swiperViewLineScroll != undefined) {
+			} else if (screenWidth > 767 && swiperViewLineScroll != undefined) {
 				swiperViewLineScroll.destroy();
 				swiperViewLineScroll = undefined;
 				jQuery('.card-view-line-wrapper-scroll .swiper-wrapper').removeAttr('style');
@@ -1400,7 +1715,7 @@ $(function () {
 				swiperTagsScroll = new Swiper('.js-tags-wrapper-scroll', {
 					slidesPerView: "auto",
 				});
-			} else if (screenWidth > 768 && swiperTagsScroll != undefined) {
+			} else if (screenWidth > 767 && swiperTagsScroll != undefined) {
 				swiperTagsScroll.destroy();
 				swiperTagsScroll = undefined;
 				jQuery('.tags-wrapper-scroll .swiper-wrapper').removeAttr('style');
@@ -1429,7 +1744,7 @@ $(function () {
 					slidesPerView: "auto",
 					freeMode: 'true'
 				});
-			} else if (screenWidth > 768 && swiperNavLineScroll != undefined) {
+			} else if (screenWidth > 767 && swiperNavLineScroll != undefined) {
 				swiperNavLineScroll.destroy();
 				swiperNavLineScroll = undefined;
 				jQuery('.nav-line .swiper-wrapper').removeAttr('style');
@@ -1453,15 +1768,19 @@ $(function () {
 
 	if ($('.tags').length > 0) {
 		for (var i = 0; i < closeButtons.length; i++) {
-			closeButtons[i].addEventListener('click', function() {
+			closeButtons[i].addEventListener('click', function () {
 				this.parentNode.remove();
+				if ($('.tags__item').length === 1) {
+					$('.tags').remove();
+				}
 			});
 		}
-
+	}
+	if ($('.tags__item-clear-all').length > 0) {
 		clearAllButton.addEventListener('click', function() {
 			tagsItems.forEach(function(item) {
 				item.remove();
 			});
-		});	
+		});
 	}
 });
