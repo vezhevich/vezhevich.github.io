@@ -153,9 +153,9 @@
 		<div class="main-content">
 			<main class="layout-content layout-content_inner-page">
 				<div class="help">
-					<div class="promo promo-inner-page">
-						<h2 class="promo__title">Чем вам помочь?</h2>
-						<p class="promo__teaser">Нужно найти ответ на вопрос? Здесь вы найдете ответы на самые часто задаваемые вопросы</p>
+					<div class="head head-inner-page">
+						<h1 class="head__title">Чем вам помочь?</h1>
+						<p class="head__sub-title">Нужно найти ответ на вопрос? Здесь вы найдете ответы на самые часто задаваемые вопросы</p>
 					</div>
 					<div class="help__search">
 						<input type="text" class="input input-default help__search-input" placeholder="Опишите ваш вопрос">
@@ -217,11 +217,11 @@
 						</div>
 					</div>
 				</div>
-			<div class="offer-place">
-	<div class="offer-place__wrapper">
-		<div class="offer-place__title">Предложите свои услуги на Байкалбукинге</div>
-		<div class="offer-place__teaser">Более 500 гостиниц, точек аренды и туристических гидов уже находят клиенты на Байкалбукинге</div>
-		<div class="offer-place__group-buttons">
+			<div class="market-place">
+	<div class="market-place__wrapper">
+		<div class="market-place__title">Предложите свои услуги на Байкалбукинге</div>
+		<div class="market-place__sub-title">Более 500 гостиниц, точек аренды и туристических гидов уже находят клиенты на Байкалбукинге</div>
+		<div class="market-place__group-buttons">
 			<a href="#" class="btn-default btn-light">Разместить предложение</a>
 			<a href="#" class="btn-default btn-bordered">Подробнее</a>
 		</div>
@@ -237,7 +237,7 @@
 				<div class="footer__logo">
 					<img src="./images/svg/logo-footer.svg" alt="">
 				</div>
-				<div class="footer__teaser">
+				<div class="footer__text">
 					Design amazing digital experiences that create more happy in the world.
 				</div>
 			</div>
@@ -423,6 +423,10 @@
 				<div class="filters">
 					<div class="filters__item">
 						<div class="filters__item-title">Цена</div>
+						<div class="filters__group-input">
+							<input id="range-from" class="input">
+							<input id="range-to" class="input">
+						</div>
 						<input type="text" class="js-range-slider range-slider" name="range" value="" />
 					</div>
 					<div class="filters__item">
@@ -680,7 +684,7 @@
 										<div class="modal-review__comm-item-info-text">16:42</div>
 									</div>
 								</div>
-								<div class="modal-review__comm-item-teaser">
+								<div class="modal-review__comm-item-text">
 									Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
 								</div>
 							</div>
@@ -695,7 +699,7 @@
 										<div class="modal-review__comm-item-info-text">16:42</div>
 									</div>
 								</div>
-								<div class="modal-review__comm-item-teaser">
+								<div class="modal-review__comm-item-text">
 									Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
 								</div>
 							</div>
@@ -710,7 +714,7 @@
 										<div class="modal-review__comm-item-info-text">16:42</div>
 									</div>
 								</div>
-								<div class="modal-review__comm-item-teaser">
+								<div class="modal-review__comm-item-text">
 									Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
 								</div>
 							</div>
@@ -725,7 +729,7 @@
 										<div class="modal-review__comm-item-info-text">16:42</div>
 									</div>
 								</div>
-								<div class="modal-review__comm-item-teaser">
+								<div class="modal-review__comm-item-text">
 									Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
 								</div>
 							</div>
@@ -740,7 +744,7 @@
 										<div class="modal-review__comm-item-info-text">16:42</div>
 									</div>
 								</div>
-								<div class="modal-review__comm-item-teaser">
+								<div class="modal-review__comm-item-text">
 									Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
 								</div>
 							</div>
@@ -755,7 +759,7 @@
 										<div class="modal-review__comm-item-info-text">16:42</div>
 									</div>
 								</div>
-								<div class="modal-review__comm-item-teaser">
+								<div class="modal-review__comm-item-text">
 									Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
 								</div>
 							</div>
@@ -801,7 +805,7 @@
 						<div class="content-tabs__item">Усть-Баргузин</div>
 					</div>
 					<div class="modal-review__title">Горячая новая баня прямо на берегу Байкала</div>
-					<div class="modal-review__teaser">
+					<div class="modal-review__text">
 						<p>Еще одно замечательное место для пляжного и активного отдыха. Находится в диких местах и способствует единению с природой</p>
 					</div>
 					<a href="account.html" class="modal-review__author">
