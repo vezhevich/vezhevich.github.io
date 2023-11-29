@@ -1647,6 +1647,37 @@ $(function() {
 	}
 });
 
+// модальное окно авторизации
+$(function() {
+	if ($('.js-modal-auth').length > 0) {
+		var startWindowScroll = 0;
+		$('.js-modal-auth').magnificPopup({
+			type: 'inline',
+			midClick: true,
+			mainClass: 'mfp-fade modal-auth',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+				},
+				open: function () {
+					if ($('.mfp-content').height() < $(window).height()) {
+						$('body').on('touchmove', function (e) {
+							e.preventDefault();
+						});
+					}
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+					$('body').off('touchmove');
+				}
+			}
+		});
+	}
+});
+
 // feedback modal slider
 $(function () {
 	var swiper = new Swiper('.js-feedback-modal-slider', {
@@ -1840,3 +1871,101 @@ $(function () {
 		});
 	}
 });
+
+// все что связано с navbar menu
+
+//Нужно допилить это скрипт при нажатии на btnBackToMap
+$(function () {
+	if ($('.js-show-list-objects').length) {
+		const btnShowListObject = document.querySelectorAll(".js-show-list-objects");
+		const btnBackToMap = document.querySelectorAll(".js-back-to-map");
+		const listObjects = document.querySelectorAll(".object-list");
+		const mapModal = document.querySelectorAll(".map-modal");
+
+		btnShowListObject.forEach(btn => {
+			btn.addEventListener('click', function() {
+				listObjects.forEach(list => {
+					list.classList.add('show');
+					list.classList.remove('hide');
+				});
+				mapModal.forEach(map => {
+					map.classList.add('hide');
+					map.classList.remove('show');
+				});
+			});
+		});
+
+		btnBackToMap.forEach(btn => {
+			btn.addEventListener('click', function() {
+				listObjects.forEach(list => {
+					list.classList.remove('show');
+					list.classList.add('hide');
+				});
+				mapModal.forEach(map => {
+					map.classList.remove('hide');
+					map.classList.add('show');
+				});
+			});
+		});
+	}
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	const showModalNavbarElements = document.querySelectorAll('.js-show-modal-navbar');
+	const bodyPage = document.querySelector('body');
+	const overlayPage = document.querySelector('.overlay');
+	const header = document.querySelector('.header');
+
+	showModalNavbarElements.forEach(function (element) {
+		element.addEventListener('click', function () {
+			var nextElement = this.nextElementSibling;
+
+			// Проверяем, есть ли у другого элемента класс 'open'
+			const otherOpenElement = document.querySelector('.open');
+			if (otherOpenElement && otherOpenElement !== nextElement) {
+				otherOpenElement.classList.remove('open');
+				otherOpenElement.previousElementSibling.classList.remove('active');
+			}
+
+			if (nextElement) {
+				element.classList.toggle('active');
+				nextElement.classList.toggle('open');
+
+				if (nextElement.classList.contains('open')) {
+					overlayPage.classList.add('show');
+					bodyPage.classList.add('oh');
+
+					// Проверяем, имеет ли .js-show-modal-navbar класс btn-navbar-map и добавляем класс 'fixed' для .header
+					if (element.classList.contains('btn-navbar-map')) {
+						header.classList.add('fixed');
+					} else {
+						header.classList.remove('fixed');
+					}
+				} else {
+					overlayPage.classList.remove('show');
+					bodyPage.classList.remove('oh');
+					// Убираем класс 'fixed' для .header
+					header.classList.remove('fixed');
+				}
+			}
+		});
+	});
+
+	// Добавляем слушатель событий на overlayPage для удаления классов при клике
+	overlayPage.addEventListener('click', function () {
+		showModalNavbarElements.forEach(function (element) {
+			element.classList.remove('active');
+			element.nextElementSibling.classList.remove('open');
+		});
+
+		overlayPage.classList.remove('show');
+		bodyPage.classList.remove('oh');
+		// Убираем класс 'fixed' для .header
+		header.classList.remove('fixed');
+	});
+});
+
+
+
+
