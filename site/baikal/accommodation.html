@@ -75,7 +75,14 @@
 				</svg>
 			</button>
 			<div class="dropdown-menu-auth-wrapper">
-				<div class="header__auth-user header__auth-user_active js-dropdown-open">
+				<div class="header__mobile-show">
+					<div class="header__hamb js-modal-auth" data-mfp-src="#modal-menu">
+						<svg class="icon">
+							<use xlink:href="#icon-hamb"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="header__auth-user header__auth-hide-mobile header__auth-user_active js-dropdown-open">
 					<div class="header__auth-user-avatar" style="background-image: url(./images/dist/avatar.jpg)"></div>
 					<div class="header__hamb">
 						<svg class="icon">
@@ -1392,6 +1399,7 @@
 </div>
 
 <!--обзор-->
+<!--
 <div id="modal-review" class="mfp-hide modal">
 	<div class="modal__wrapper">
 		<div class="modal-review__wrapper">
@@ -1612,6 +1620,524 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+-->
+
+<!--обзор другой-->
+<div id="modal-review-inner" class="mfp-hide modal">
+	<button type="button" class="modal__close mfp-close btn">
+		<svg class="icon-close">
+			<use xlink:href="#icon-close"></use>
+		</svg>
+	</button>
+	<div class="swiper stories-slider js-stories-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="modal__wrapper">
+					<div class="modal-review__wrapper">
+						<div class="modal-review__left">
+							<div class="modal-review__media js-review-slider swiper">
+								<div class="modal-review__media-wrapper swiper-wrapper">
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review2.jpg" alt="">
+									</div>
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review1.jpg" alt="">
+									</div>
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review2.jpg" alt="">
+									</div>
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review1.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="modal-review__right">
+							<div class="modal-review__overlay js-hide-ctn-mobile"></div>
+							<div class="modal-review__info">
+								<div class="modal-review__info-group">
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-eye"></use>
+										</svg>
+										<span>532</span>
+									</div>
+									<div class="modal-review__info-group-item js-show-comm-ctn">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+										<span>5</span>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-favorite"></use>
+										</svg>
+										<span>21</span>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-loc"></use>
+										</svg>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-share"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="modal-review__info-title">
+									Горячая новая баня прямо на берегу Байкала
+								</div>
+								<button class="btn-default btn-bordered js-show-stories-ctn">Подробнее</button>
+							</div>
+							<div class="modal-review__comm">
+								<button class="btn-default modal-review__comm-close js-hide-comm">
+									<svg class="icon">
+										<use xlink:href="#icon-close"></use>
+									</svg>
+								</button>
+								<div class="modal-review__comm-title">Комментарии</div>
+								<div class="modal-review__comm-wrapper">
+									<div class="modal-review__comm-list">
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Yuliya</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Алексей</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Константин</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Yuliya</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Алексей</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Константин Константинопольский</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+									</div>
+									<div class="modal-review__comm-input">
+										<input type="text" class="input input-default" placeholder="Ваш комментарий">
+									</div>
+								</div>
+							</div>
+							<div class="modal-review__head">
+								<div class="modal-review__head-left">
+									<a href="map.html" class="btn-default btn-primary btn-location">
+										<svg class="icon">
+											<use xlink:href="#icon-loc"></use>
+										</svg>
+										На карте
+									</a>
+									<button class="btn-default btn-light btn-comm js-show-comm" type="button">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+										комментарии
+									</button>
+								</div>
+								<div class="modal-review__head-right">
+									<div class="object__head-info-group-icons">
+										<div class="object__head-info-group-icons-item">
+											<svg class="icon">
+												<use xlink:href="#icon-share"></use>
+											</svg>
+										</div>
+										<div class="object__head-info-group-icons-item">
+											<svg class="icon">
+												<use xlink:href="#icon-favorite"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-review__wrap-ctn">
+								<div class="modal-review__ctn">
+									<div class="content-tabs">
+										<div class="content-tabs__item">гостиница Два дракона</div>
+										<div class="content-tabs__item">Усть-Баргузин</div>
+									</div>
+									<div class="modal-review__title">Горячая новая баня прямо на берегу Байкала</div>
+									<div class="modal-review__text">
+										<p>Еще одно замечательное место для пляжного и активного отдыха. Находится в диких местах и способствует единению с природой</p>
+									</div>
+									<a href="account.html" class="modal-review__author">
+										<div class="modal-review__author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+										<div class="modal-review__author-text">Константин</div>
+									</a>
+								</div>
+								<div class="modal-review__bottom">
+									<div class="modal-review__bottom-item">
+										<div class="social-buttons">
+											<div class="social-buttons__title">Связаться</div>
+											<ul class="social-buttons__list list_unstyle">
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-whatsapp" href="#">
+														<img src="./images/svg/icon-whatsapp.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-viber" href="#">
+														<img src="./images/svg/icon-viber.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-telegram" href="#">
+														<img src="./images/svg/icon-telegram.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-vk" href="#">
+														<img src="./images/svg/icon-vk.svg" alt="">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="modal-review__bottom-item">
+										<button class="btn-default btn-primary btn-primary_full-width btn-primary_md" type="button">Показать телефон</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="modal__wrapper">
+					<div class="modal-review__wrapper">
+						<div class="modal-review__left">
+							<div class="modal-review__media js-review-slider swiper">
+								<div class="modal-review__media-wrapper swiper-wrapper">
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review2.jpg" alt="">
+									</div>
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review1.jpg" alt="">
+									</div>
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review2.jpg" alt="">
+									</div>
+									<div class="modal-review__media-item swiper-slide">
+										<img src="./images/dist/review1.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="modal-review__right">
+							<div class="modal-review__overlay js-hide-ctn-mobile"></div>
+							<div class="modal-review__info">
+								<div class="modal-review__info-group">
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-eye"></use>
+										</svg>
+										<span>532</span>
+									</div>
+									<div class="modal-review__info-group-item js-show-comm-ctn">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+										<span>5</span>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-favorite"></use>
+										</svg>
+										<span>21</span>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-loc"></use>
+										</svg>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-share"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="modal-review__info-title">
+									Горячая новая баня прямо на берегу Байкала
+								</div>
+								<button class="btn-default btn-bordered js-show-stories-ctn">Подробнее</button>
+							</div>
+							<div class="modal-review__comm">
+								<button class="btn-default modal-review__comm-close js-hide-comm">
+									<svg class="icon">
+										<use xlink:href="#icon-close"></use>
+									</svg>
+								</button>
+								<div class="modal-review__comm-title">Комментарии</div>
+								<div class="modal-review__comm-wrapper">
+									<div class="modal-review__comm-list">
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Yuliya</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Алексей</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Константин</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Yuliya</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Алексей</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Константин Константинопольский</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+									</div>
+									<div class="modal-review__comm-input">
+										<input type="text" class="input input-default" placeholder="Ваш комментарий">
+									</div>
+								</div>
+							</div>
+							<div class="modal-review__head">
+								<div class="modal-review__head-left">
+									<a href="map.html" class="btn-default btn-primary btn-location">
+										<svg class="icon">
+											<use xlink:href="#icon-loc"></use>
+										</svg>
+										На карте
+									</a>
+									<button class="btn-default btn-light btn-comm js-show-comm" type="button">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+										комментарии
+									</button>
+								</div>
+								<div class="modal-review__head-right">
+									<div class="object__head-info-group-icons">
+										<div class="object__head-info-group-icons-item">
+											<svg class="icon">
+												<use xlink:href="#icon-share"></use>
+											</svg>
+										</div>
+										<div class="object__head-info-group-icons-item">
+											<svg class="icon">
+												<use xlink:href="#icon-favorite"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-review__wrap-ctn">
+								<div class="modal-review__ctn">
+									<div class="content-tabs">
+										<div class="content-tabs__item">гостиница Два дракона</div>
+										<div class="content-tabs__item">Усть-Баргузин</div>
+									</div>
+									<div class="modal-review__title">Горячая новая баня прямо на берегу Байкала</div>
+									<div class="modal-review__text">
+										<p>Еще одно замечательное место для пляжного и активного отдыха. Находится в диких местах и способствует единению с природой</p>
+									</div>
+									<a href="account.html" class="modal-review__author">
+										<div class="modal-review__author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+										<div class="modal-review__author-text">Константин</div>
+									</a>
+								</div>
+								<div class="modal-review__bottom">
+									<div class="modal-review__bottom-item">
+										<div class="social-buttons">
+											<div class="social-buttons__title">Связаться</div>
+											<ul class="social-buttons__list list_unstyle">
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-whatsapp" href="#">
+														<img src="./images/svg/icon-whatsapp.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-viber" href="#">
+														<img src="./images/svg/icon-viber.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-telegram" href="#">
+														<img src="./images/svg/icon-telegram.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-vk" href="#">
+														<img src="./images/svg/icon-vk.svg" alt="">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="modal-review__bottom-item">
+										<button class="btn-default btn-primary btn-primary_full-width btn-primary_md" type="button">Показать телефон</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-square swiper-button-stories swiper-button-prev">
+			<svg class="icon">
+				<use xlink:href="#icon-corner"></use>
+			</svg>
+		</div>
+		<div class="swiper-button-square swiper-button-stories swiper-button-next">
+			<svg class="icon">
+				<use xlink:href="#icon-corner"></use>
+			</svg>
 		</div>
 	</div>
 </div>
@@ -1893,6 +2419,31 @@
 				</button>
 			</div>
 		</form>
+	</div>
+</div>
+
+<!--мобильное меню-->
+<div id="modal-menu" class="mfp-hide modal">
+	<div class="modal__wrapper modal-auth__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<div class="nav-menu-wrapper">
+			<nav class="nav-menu">
+				<ul class="list_unstyle nav-menu__list">
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">О проекте</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Новости</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Careers</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Legal</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Support</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Contact</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Sitemap</a></li>
+					<li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Cookie settings</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 </div>
 <div class="navbar">
@@ -2328,10 +2879,12 @@
 			</div>
 		</li>
 		<li class="navbar__list-item">
-			<div class="navbar__user js-show-modal-navbar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
-			<div class="modal-navbar modal-navbar_full-screen-inner">
-				sdf
-			</div>
+			<div class="navbar__user" style="background-image: url(./images/dist/avatar-lg.jpg); display: none"></div>
+			<button class="navbar__auth btn-default btn-navbar js-modal-auth" data-mfp-src="#modal-auth">
+				<svg class="icon">
+					<use xlink:href="#icon-auth"></use>
+				</svg>
+			</button>
 		</li>
 	</ul>
 </div>

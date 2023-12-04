@@ -1584,11 +1584,29 @@ $(function () {
 			pagination: {
 				el: ".swiper-pagination",
 			},
-			navigation: {
-				nextEl: '.swiper-button-review.swiper-button-next',
-				prevEl: '.swiper-button-review.swiper-button-prev',
-			},
+			// navigation: {
+			// 	nextEl: '.swiper-button-review.swiper-button-next',
+			// 	prevEl: '.swiper-button-review.swiper-button-prev',
+			// },			// navigation: {
+			// 	nextEl: '.swiper-button-review.swiper-button-next',
+			// 	prevEl: '.swiper-button-review.swiper-button-prev',
+			// },
 		});	
+	}
+});
+
+$(function () {
+	if ($('.js-stories-slider').length > 0) {
+		var swiper = new Swiper('.js-stories-slider', {
+			slidesPerView: 1,
+			spaceBetween: 16,
+			loop: true,
+			direction: "vertical",
+			navigation: {
+				nextEl: '.swiper-button-stories.swiper-button-next',
+				prevEl: '.swiper-button-stories.swiper-button-prev',
+			},			
+		});
 	}
 });
 
@@ -1873,7 +1891,6 @@ $(function () {
 });
 
 // все что связано с navbar menu
-
 //Нужно допилить это скрипт при нажатии на btnBackToMap
 $(function () {
 	if ($('.js-show-list-objects').length) {
@@ -1920,8 +1937,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	showModalNavbarElements.forEach(function (element) {
 		element.addEventListener('click', function () {
 			var nextElement = this.nextElementSibling;
-
-			// Проверяем, есть ли у другого элемента класс 'open'
+			
 			const otherOpenElement = document.querySelector('.open');
 			if (otherOpenElement && otherOpenElement !== nextElement) {
 				otherOpenElement.classList.remove('open');
@@ -1935,8 +1951,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				if (nextElement.classList.contains('open')) {
 					overlayPage.classList.add('show');
 					bodyPage.classList.add('oh');
-
-					// Проверяем, имеет ли .js-show-modal-navbar класс btn-navbar-map и добавляем класс 'fixed' для .header
+					
 					if (element.classList.contains('btn-navbar-map')) {
 						header.classList.add('fixed');
 					} else {
@@ -1945,14 +1960,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				} else {
 					overlayPage.classList.remove('show');
 					bodyPage.classList.remove('oh');
-					// Убираем класс 'fixed' для .header
+
 					header.classList.remove('fixed');
 				}
 			}
 		});
 	});
-
-	// Добавляем слушатель событий на overlayPage для удаления классов при клике
+	
 	overlayPage.addEventListener('click', function () {
 		showModalNavbarElements.forEach(function (element) {
 			element.classList.remove('active');
@@ -1961,11 +1975,89 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		overlayPage.classList.remove('show');
 		bodyPage.classList.remove('oh');
-		// Убираем класс 'fixed' для .header
+
 		header.classList.remove('fixed');
 	});
 });
+// end все что связано с navbar menu
 
+// на мобиле в модальном окне истории
+// по клику открываем описание
+document.addEventListener('DOMContentLoaded', function () {
+	var btnShowStoriesCtn = document.querySelectorAll('.js-show-stories-ctn');
+	var btnHideStoriesCtn = document.querySelectorAll('.js-hide-ctn-mobile');
 
+	btnShowStoriesCtn.forEach(function (button) {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			var modalRight = findAncestor(button, 'modal-review__right');
+			if (modalRight) {
+				modalRight.classList.add('modified-height');
+				var storiesCtn = modalRight.querySelector('.modal-review__wrap-ctn');
+				if (storiesCtn) {
+					storiesCtn.classList.add('show');
+				}
+			}
+		});
+	});
 
+	btnHideStoriesCtn.forEach(function (button) {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			var modalRight = findAncestor(button, 'modal-review__right');
+			if (modalRight) {
+				modalRight.classList.remove('modified-height');
+				var storiesCtn = modalRight.querySelector('.modal-review__wrap-ctn');
+				if (storiesCtn) {
+					storiesCtn.classList.remove('show');
+				}
+			}
+		});
+	});
+
+	function findAncestor(element, className) {
+		while ((element = element.parentElement) && !element.classList.contains(className));
+		return element;
+	}
+});
+
+// на мобиле в модальном окне истории
+// по клику открываем комментарии
+document.addEventListener('DOMContentLoaded', function () {
+	var btnShowCommCtn = document.querySelectorAll('.js-show-comm-ctn');
+	var btnHideCommCtn = document.querySelectorAll('.js-hide-ctn-mobile');
+
+	btnShowCommCtn.forEach(function (button) {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			var modalRight = findAncestor(button, 'modal-review__right');
+			if (modalRight) {
+				modalRight.classList.add('modified-height');
+				var commCtn = modalRight.querySelector('.modal-review__comm');
+				if (commCtn) {
+					commCtn.classList.add('show');
+				}
+			}
+		});
+	});
+
+	btnHideCommCtn.forEach(function (button) {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			var modalRight = findAncestor(button, 'modal-review__right');
+			if (modalRight) {
+				modalRight.classList.remove('modified-height');
+				var commCtn = modalRight.querySelector('.modal-review__comm');
+				if (commCtn) {
+					commCtn.classList.remove('show');
+				}
+			}
+		});
+	});
+
+	function findAncestor(element, className) {
+		while ((element = element.parentElement) && !element.classList.contains(className));
+		return element;
+	}
+});
 
