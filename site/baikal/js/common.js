@@ -1407,12 +1407,13 @@ $(function () {
 		const selectBtn = optionMenu.querySelector(".select-btn"),
 			options = optionMenu.querySelectorAll(".option"),
 			sBtn_text = optionMenu.querySelector(".sBtn-text");
+			sBtn_textInner = optionMenu.querySelector(".sBtn-text i");
 
 		selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
 
 		options.forEach(option =>{
 			option.addEventListener("click", ()=>{
-				
+
 				let selectedOption = option.querySelector(".option-text").innerText;
 				sBtn_text.innerText = selectedOption;
 				optionMenu.classList.remove("active");
@@ -1420,6 +1421,8 @@ $(function () {
 		})
 	})
 });
+
+
 
 // взрываем модальное окно
 $(function() {
@@ -1429,6 +1432,37 @@ $(function() {
 			type: 'inline',
 			midClick: true,
 			mainClass: 'mfp-fade modal-filters',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+				},
+				open: function () {
+					if ($('.mfp-content').height() < $(window).height()) {
+						$('body').on('touchmove', function (e) {
+							e.preventDefault();
+						});
+					}
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+					$('body').off('touchmove');
+				}
+			}
+		});
+	}
+});
+
+// взрываем модальное окно
+$(function() {
+	if ($('.js-modal-personal').length > 0) {
+		var startWindowScroll = 0;
+		$('.js-modal-personal').magnificPopup({
+			type: 'inline',
+			midClick: true,
+			mainClass: 'mfp-fade modal-personal',
 			fixedContentPos: true,
 			fixedBgPos: true,
 			overflowY: 'auto',
@@ -2060,4 +2094,3 @@ document.addEventListener('DOMContentLoaded', function () {
 		return element;
 	}
 });
-

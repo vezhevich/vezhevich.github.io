@@ -584,6 +584,25 @@
 			</clipPath>
 		</defs>
 	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" id="icon-edit">
+		<path d="M9.566 3.333H3.733A1.667 1.667 0 0 0 2.066 5v11.667a1.667 1.667 0 0 0 1.667 1.666H15.4a1.667 1.667 0 0 0 1.666-1.666v-5.834m-1.25-8.75a1.768 1.768 0 0 1 2.5 2.5L10.4 12.5l-3.334.833L7.9 10l7.916-7.917Z" stroke="" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="icon-mail">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M18.335 5c0-.917-.75-1.667-1.667-1.667H3.335c-.917 0-1.667.75-1.667 1.667m16.667 0v10c0 .917-.75 1.667-1.667 1.667H3.335c-.917 0-1.667-.75-1.667-1.667V5m16.667 0L10 10.833 1.668 5"></path>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="icon-clock">
+		<g clip-path="url(#a)">
+			<path stroke="#667085" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M10.001 5v5l3.334 1.667m5-1.667a8.333 8.333 0 1 1-16.667 0 8.333 8.333 0 0 1 16.667 0Z"></path>
+		</g>
+		<defs>
+			<clipPath id="a">
+				<path fill="#fff" d="M0 0h20v20H0z"></path>
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="icon-delete-inner">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M2.5 5h1.667m0 0H17.5M4.167 5v11.667a1.666 1.666 0 0 0 1.666 1.666h8.334a1.667 1.667 0 0 0 1.666-1.666V5H4.167Zm2.5 0V3.333a1.667 1.667 0 0 1 1.666-1.666h3.334a1.667 1.667 0 0 1 1.666 1.666V5"></path>
+	</symbol>
 </svg>
 <!-- тултип -->
 <div class="tooltip_templates" style="display: none;">
@@ -1041,6 +1060,245 @@
 	</button>
 	<div class="swiper stories-slider js-stories-slider">
 		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="modal__wrapper">
+					<div class="modal-review__wrapper">
+						<div class="modal-review__left">
+							<div class="modal-review__media">
+								<div class="modal-review__media-wrapper">
+									<div class="modal-review__media-item">
+										<video src="./images/video.mp4" width="720" height="1280" autoplay muted loop poster="./images/video.jpg">
+											Ваш браузер не поддерживает тег <code>video</code>
+										</video>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-review__right">
+							<div class="modal-review__overlay js-hide-ctn-mobile"></div>
+							<div class="modal-review__info">
+								<div class="modal-review__info-group">
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-eye"></use>
+										</svg>
+										<span>532</span>
+									</div>
+									<div class="modal-review__info-group-item js-show-comm-ctn">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+										<span>5</span>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-favorite"></use>
+										</svg>
+										<span>21</span>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-loc"></use>
+										</svg>
+									</div>
+									<div class="modal-review__info-group-item">
+										<svg class="icon">
+											<use xlink:href="#icon-share"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="modal-review__info-title">
+									Горячая новая баня прямо на берегу Байкала
+								</div>
+								<button class="btn-default btn-bordered js-show-stories-ctn">Подробнее</button>
+							</div>
+							<div class="modal-review__comm">
+								<button class="btn-default modal-review__comm-close js-hide-comm">
+									<svg class="icon">
+										<use xlink:href="#icon-close"></use>
+									</svg>
+								</button>
+								<div class="modal-review__comm-title">Комментарии</div>
+								<div class="modal-review__comm-wrapper">
+									<div class="modal-review__comm-list">
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Yuliya</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Алексей</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Константин</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Yuliya</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Алексей</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+										<div class="modal-review__comm-item">
+											<div class="modal-review__comm-item-head">
+												<div class="modal-review__comm-item-author">
+													<div class="modal-review__comm-item-author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+													<div class="modal-review__comm-item-author-text">Константин Константинопольский</div>
+												</div>
+												<div class="modal-review__comm-item-info">
+													<div class="modal-review__comm-item-info-text">21.08.2021</div>
+													<div class="modal-review__comm-item-info-text">16:42</div>
+												</div>
+											</div>
+											<div class="modal-review__comm-item-text">
+												Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!
+											</div>
+										</div>
+									</div>
+									<div class="modal-review__comm-input">
+										<input type="text" class="input input-default" placeholder="Ваш комментарий">
+									</div>
+								</div>
+							</div>
+							<div class="modal-review__head">
+								<div class="modal-review__head-left">
+									<a href="map.html" class="btn-default btn-primary btn-location">
+										<svg class="icon">
+											<use xlink:href="#icon-loc"></use>
+										</svg>
+										На карте
+									</a>
+									<button class="btn-default btn-light btn-comm js-show-comm" type="button">
+										<svg class="icon">
+											<use xlink:href="#icon-comm"></use>
+										</svg>
+										комментарии
+									</button>
+								</div>
+								<div class="modal-review__head-right">
+									<div class="object__head-info-group-icons">
+										<div class="object__head-info-group-icons-item">
+											<svg class="icon">
+												<use xlink:href="#icon-share"></use>
+											</svg>
+										</div>
+										<div class="object__head-info-group-icons-item">
+											<svg class="icon">
+												<use xlink:href="#icon-favorite"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-review__wrap-ctn">
+								<div class="modal-review__ctn">
+									<div class="content-tabs">
+										<div class="content-tabs__item">гостиница Два дракона</div>
+										<div class="content-tabs__item">Усть-Баргузин</div>
+									</div>
+									<div class="modal-review__title">Горячая новая баня прямо на берегу Байкала</div>
+									<div class="modal-review__text">
+										<p>Еще одно замечательное место для пляжного и активного отдыха. Находится в диких местах и способствует единению с природой</p>
+									</div>
+									<a href="account.html" class="modal-review__author">
+										<div class="modal-review__author-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+										<div class="modal-review__author-text">Константин</div>
+									</a>
+								</div>
+								<div class="modal-review__bottom">
+									<div class="modal-review__bottom-item">
+										<div class="social-buttons">
+											<div class="social-buttons__title">Связаться</div>
+											<ul class="social-buttons__list list_unstyle">
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-whatsapp" href="#">
+														<img src="./images/svg/icon-whatsapp.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-viber" href="#">
+														<img src="./images/svg/icon-viber.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-telegram" href="#">
+														<img src="./images/svg/icon-telegram.svg" alt="">
+													</a>
+												</li>
+												<li class="social-buttons__list-item">
+													<a class="social-buttons__list-link social-buttons__list-link-vk" href="#">
+														<img src="./images/svg/icon-vk.svg" alt="">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="modal-review__bottom-item">
+										<button class="btn-default btn-primary btn-primary_full-width btn-primary_md" type="button">Показать телефон</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="swiper-slide">
 				<div class="modal__wrapper">
 					<div class="modal-review__wrapper">
@@ -1851,6 +2109,586 @@
 				</ul>
 			</nav>
 		</div>
+	</div>
+</div>
+
+<!--personal-->
+<div id="modal-personal" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__category">
+						Профиль
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Профиль</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Имя</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Константин">
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Фамилия</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Константинопольский">
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Email</label>
+						<div class="form-personal__item-wrapper">
+							<input type="email" class="form-personal__input form-personal__input_modified-left input input-default" value="k.konstantinopolskiy@mail.ru">
+							<svg class="icon">
+								<use xlink:href="#icon-mail"></use>
+							</svg>
+						</div>
+					</div>					
+					<div class="form-personal__item">
+						<label class="form-personal__label">Телефон</label>
+						<div class="form-personal__item-wrapper">
+							<input type="tel" class="form-personal__input form-personal__input_modified-right input input-default ">
+							<span class="js-tooltip tooltip" data-tooltip-content="#tooltip-form">
+								<img src="./images/svg/icon-help-circle.svg" alt="">
+							</span>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Часовой пояс</label>
+						<div class="select-menu select-menu-time-zone">
+							<svg class="icon icon-clock">
+								<use xlink:href="#icon-clock"></use>
+							</svg>
+							<div class="select-btn">
+								<span class="sBtn-text">Иркутск <i>Мск−05:00</i></span>
+								<svg class="icon">
+									<use xlink:href="#icon-corner"></use>
+								</svg>
+							</div>
+
+							<ul class="options">
+								<li class="option">
+									<span class="option-text">Краснодар <i>Мск−06:00</i></span>
+								</li>
+								<li class="option">
+									<span class="option-text">Москва <i>Мск−07:00</i></span>
+								</li>
+								<li class="option">
+									<span class="option-text">Санкт-Петербург <i>Мск−08:00</i></span>
+								</li>
+								<li class="option">
+									<span class="option-text">Казань <i>Мск−09:00</i></span>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="form-personal__item">
+						<label class="form-personal__label">О себе</label>
+						<textarea name="" id="" cols="30" rows="10" class="textarea textarea-default">Я продуктовый дизайнер из г. Улан-Удэ, Бурятия. Я специализируюсь на UX/UI-дизайне, бренд-стратегиях и разработке на Webflow.
+						</textarea>
+						<div class="form-personal__textarea-counter">57/500</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Ваше фото</div>
+					<div class="modal-personal__sub-title">Будет отображаться у вашего профиля</div>
+					<div class="file-upload">
+						<div class="file-upload__preview">
+							<div class="file-upload__preview-item" style="background-image: url(./images/dist/action.jpg)">
+								<div class="file-upload__preview-close">
+									<svg class="icon icon-clock">
+										<use xlink:href="#icon-close"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="file-upload__ctn">
+							<input type="file" id="dropzone">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Пароль</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Новый пароль</label>
+						<input type="password" class="form-personal__input input input-default" value="123456">
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Повторите новый пароль</label>
+						<input type="password" class="form-personal__input input input-default" value="123456">
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Сохранить</button>
+					</div>
+					<div class="form-personal__item">
+						<div class="checkbox">
+							<input id="fam" type="checkbox" name="fam" />
+							<label for="fam">Я подтверждаю, что ознакомлен со всеми документами</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--stories-->
+<div id="modal-personal-stories" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__category">
+						Добавление обзора
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Заголовок</div>
+					<div class="form-personal__item">
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Загрузите фото или видео</div>
+					<div class="file-upload-inner">
+						<div class="file-upload-inner__preview">
+							<div class="file-upload-inner__preview-item">
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+									<div class="file-upload-inner__preview-close">
+										<svg class="icon icon-clock">
+											<use xlink:href="#icon-close"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="file-upload-inner__preview-item">
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+									<div class="file-upload-inner__preview-close">
+										<svg class="icon icon-clock">
+											<use xlink:href="#icon-close"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="file-upload-inner__preview-item">
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+									<div class="file-upload-inner__preview-close">
+										<svg class="icon icon-clock">
+											<use xlink:href="#icon-close"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="file-upload__ctn">
+							<input type="file" id="dropzone2">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Описание объекта</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Привязать объект к:</label>
+						<div class="select-menu select-menu-bordered">
+							<div class="select-btn">
+								<span class="sBtn-text">Турбаза “Тотем”</span>
+								<svg class="icon">
+									<use xlink:href="#icon-corner"></use>
+								</svg>
+							</div>
+
+							<ul class="options">
+								<li class="option">
+									<span class="option-text">Турбаза “Тотем2”</span>
+								</li>
+								<li class="option">
+									<span class="option-text">Турбаза “Тотем3”</span>
+								</li>
+								<li class="option">
+									<span class="option-text">Турбаза “Тотем4”</span>
+								</li>
+								<li class="option">
+									<span class="option-text">Турбаза “Тотем5”</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<div class="form-personal__label">Скорректируйте положение отметки на карте:</div>
+						<div class="form-personal__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad69c3c8168bda27a68ae1354cf8ed91619d971f429fcd6034621e3da66f11f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Опубликовать</button>
+					</div>
+					<div class="form-personal__item">
+						<div class="checkbox">
+							<input id="fam1" type="checkbox" name="fam" />
+							<label for="fam1">Я подтверждаю, что ознакомлен со всеми документами</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--object-->
+<div id="modal-personal-object" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__category">
+						Объект
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Об отеле</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Название</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Два дракона">
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Тип объекта</label>
+						<div class="select-menu select-menu-bordered">
+							<div class="select-btn">
+								<span class="sBtn-text">Тип объекта</span>
+								<svg class="icon">
+									<use xlink:href="#icon-corner"></use>
+								</svg>
+							</div>
+
+							<ul class="options">
+								<li class="option">
+									<span class="option-text">Турбаза</span>
+								</li>
+								<li class="option">
+									<span class="option-text">Отель</span>
+								</li>
+								<li class="option">
+									<span class="option-text">Бунгало</span>
+								</li>
+								<li class="option">
+									<span class="option-text">Юрта</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">id объекта в Биново</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="">
+							<span class="js-tooltip tooltip" data-tooltip-content="#tooltip-form">
+							<img src="./images/svg/icon-help-circle.svg" alt="">
+						</span>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Адрес</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="">
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Скорректируйте положение отметки на карте:</label>
+						<div class="form-personal__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad69c3c8168bda27a68ae1354cf8ed91619d971f429fcd6034621e3da66f11f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Загрузите фото или видео</div>
+					<div class="file-upload-inner file-upload-inner_reverse">
+						<div class="file-upload-inner__preview">
+							<div class="file-upload-inner__preview-item">
+								<button type="button" class="btn-default file-upload-inner__preview-button">
+									<svg class="icon">
+										<use xlink:href="#icon-delete-inner"></use>
+									</svg>
+								</button>
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите название фото">Фасад, вид со входа</textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)"></div>
+							</div>
+							<div class="file-upload-inner__preview-item">
+								<button type="button" class="btn-default file-upload-inner__preview-button">
+									<svg class="icon">
+										<use xlink:href="#icon-delete-inner"></use>
+									</svg>
+								</button>
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите название фото"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)"></div>
+							</div>
+							<div class="file-upload-inner__preview-item">
+								<button type="button" class="btn-default file-upload-inner__preview-button">
+									<svg class="icon">
+										<use xlink:href="#icon-delete-inner"></use>
+									</svg>
+								</button>
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите название фото"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)"></div>
+							</div>
+						</div>
+						<div class="file-upload__ctn">
+							<input type="file" id="dropzone3">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Описание объекта</div>
+				</div>
+			</div>			
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Правовая форма</div>
+					<div class="tab-wrap">
+						<div class="tabs tabs_modified tabs_three-cols l-section-wrapper">
+							<div class="tabs__nav">
+								<span class="tabs__nav-item active">Юр.лицо</span>
+								<span class="tabs__nav-item">ИП</span>
+								<span class="tabs__nav-item">Самозанятый</span>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__pane active">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Правила размещения</div>
+					<div class="form-personal__two-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Заселение после:</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="15:00">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Выезд до:</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="12:00">
+							</div>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Стоимость дополнительного места</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="1500">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Оплата</div>
+					<div class="checkbox checkbox_horizontal">
+						<div class="checkbox__item">
+							<input id="payment1" type="checkbox" name="payment" checked />
+							<label for="payment1">на сайте</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="payment2" type="checkbox" name="payment" />
+							<label for="payment2">по карте</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="payment3" type="checkbox" name="payment" />
+							<label for="payment3">наличными</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Преимущества вашего жилья</div>
+					<div class="modal-personal__sub-title">Добавить другие удобства можно после публикации объявления.</div>
+					<div class="checkbox checkbox_two-cols">
+						<div class="checkbox__item">
+							<input id="facilities1" type="checkbox" name="facilities" />
+							<label for="facilities1">Wi-fi</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities2" type="checkbox" name="facilities" />
+							<label for="facilities2">Парковка на территории</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities3" type="checkbox" name="facilities" />
+							<label for="facilities3">Телевизор</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities4" type="checkbox" name="facilities" />
+							<label for="facilities4">Платная парковка</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities5" type="checkbox" name="facilities" />
+							<label for="facilities5">Кухня</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities6" type="checkbox" name="facilities" />
+							<label for="facilities6">Кондиционер</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities7" type="checkbox" name="facilities" />
+							<label for="facilities7">Стиральная машина</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities8" type="checkbox" name="services" />
+							<label for="facilities8">Рабочая зона</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Есть ли у вас что-то особенное?</div>
+					<div class="checkbox checkbox_two-cols">
+						<div class="checkbox__item">
+							<input id="facilities-inner1" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner1">Wi-fi</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner2" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner2">Парковка на территории</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner3" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner3">Телевизор</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner4" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner4">Платная парковка</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner5" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner5">Кухня</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner6" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner6">Кондиционер</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner7" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner7">Стиральная машина</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="facilities-inner8" type="checkbox" name="facilities-inner" />
+							<label for="facilities-inner8">Рабочая зона</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Зарегистрировать объект</button>
+					</div>
+					<div class="form-personal__item">
+						<div class="checkbox">
+							<input id="fam3" type="checkbox" name="fam" />
+							<label for="fam3">Я подтверждаю, что моя Компания является законным бизнесом, имеющим все необходимые для деятельности документы. Данные лицензии должны быть предъявлены объектом размещения по первому требованию ___, который оставляет за собой право в любое время проверить достоверность данных, указанных объектом размещения при регистрации. Я подтверждаю также, что являюсь уполномоченным представителем объекта размещения, обладающим всеми необходимыми полномочиями, необходимыми для регистрации объекта размещения на сайте <a href="#">baikalbooking.ru</a>.</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+		</form>
 	</div>
 </div>
 <div class="navbar">
