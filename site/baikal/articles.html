@@ -983,6 +983,9 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="icon-delete-inner">
 		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.667" d="M2.5 5h1.667m0 0H17.5M4.167 5v11.667a1.666 1.666 0 0 0 1.666 1.666h8.334a1.667 1.667 0 0 0 1.666-1.666V5H4.167Zm2.5 0V3.333a1.667 1.667 0 0 1 1.666-1.666h3.334a1.667 1.667 0 0 1 1.666 1.666V5"></path>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="icon-calendar">
+		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.667 1.333V4M5.333 1.333V4M2 6.667h12m-10.667-4h9.334C13.403 2.667 14 3.264 14 4v9.333c0 .737-.597 1.334-1.333 1.334H3.333A1.333 1.333 0 0 1 2 13.333V4c0-.736.597-1.333 1.333-1.333Z"></path>
+	</symbol>
 </svg>
 <!-- тултип -->
 <div class="tooltip_templates" style="display: none;">
@@ -3067,7 +3070,904 @@
 					</div>
 				</div>
 			</div>
+		</form>
+	</div>
+</div>
+
+<!--room-->
+<div id="modal-personal-room" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__category">
+						Номер
+					</div>
+				</div>
+			</div>
 			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Название номера</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Название</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Стандарт 2-местный">
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Количество гостей в номере</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="3">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Спальные места</div>
+					<div class="form-personal__three-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Тип</label>
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">Двуспальные</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Двуспальные</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Односпальные</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Односпальные</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Односпальные</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Количество</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="1">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<button class="btn-default form-personal__button-delete">
+								<svg class="icon">
+									<use xlink:href="#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>					
+					<div class="form-personal__three-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Тип</label>
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">Двуспальные</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Двуспальные</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Односпальные</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Односпальные</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Односпальные</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Количество</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="1">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<button class="btn-default form-personal__button-delete">
+								<svg class="icon">
+									<use xlink:href="#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<button class="btn-default btn-secondary">Добавить тип кровати</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Укажите цену на номер</div>
+					<div class="modal-personal__sub-title">Ее можно изменить в любое время</div>
+					<div class="form-personal__two-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Цена за ночь</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="3 500 ₽">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Период</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="">
+								<svg class="icon icon-calendar">
+									<use xlink:href="#icon-calendar"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<button class="btn-default btn-secondary">Добавить сезон</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Загрузите фото объекта</div>
+					<div class="modal-personal__sub-title">Загрузите не менее 6 самых красивых фотографий вашего отеля</div>
+					<div class="file-upload-inner file-upload-inner_reverse">
+						<div class="file-upload-inner__preview">
+							<div class="file-upload-inner__preview-item">
+								<button type="button" class="btn-default file-upload-inner__preview-button">
+									<svg class="icon">
+										<use xlink:href="#icon-delete-inner"></use>
+									</svg>
+								</button>
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите название фото">Фасад, вид со входа</textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)"></div>
+							</div>
+							<div class="file-upload-inner__preview-item">
+								<button type="button" class="btn-default file-upload-inner__preview-button">
+									<svg class="icon">
+										<use xlink:href="#icon-delete-inner"></use>
+									</svg>
+								</button>
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите название фото"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)"></div>
+							</div>
+							<div class="file-upload-inner__preview-item">
+								<button type="button" class="btn-default file-upload-inner__preview-button">
+									<svg class="icon">
+										<use xlink:href="#icon-delete-inner"></use>
+									</svg>
+								</button>
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Введите название фото"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)"></div>
+							</div>
+						</div>
+						<div class="file-upload__ctn">
+							<input type="file" id="dropzone3">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Сохранить</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--services-->
+<div id="modal-personal-services" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__category">
+						 Добавление услуги
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Описание услуги</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Название</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Трансфер до отеля">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Привязка к объекту</div>
+					<div class="modal-personal__sub-title">Выберите ваш объект, в котором будет доступна услуга. Она будет отображаться на странице объектам</div>
+					<div class="checkbox checkbox-panel">
+						<div class="checkbox__item">
+							<input id="object-panel1" type="checkbox" name="object-panel" checked />
+							<label for="object-panel1">С бассейном</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="object-panel2" type="checkbox" name="object-panel" />
+							<label for="object-panel2">С детьми</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Укажите цену</div>
+					<div class="modal-personal__sub-title">Ее можно изменить в любое время</div>
+					<div class="form-personal__two-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Цена за ночь</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="3 500 ₽">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Привязать объект к:</label>
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">За человека</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Группа из 5 человек</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Группа из 10 человек</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Группа из 15 человек</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Группа из 20 человек</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Загрузите фото или видео</div>
+					<div class="file-upload-inner">
+						<div class="file-upload-inner__preview">
+							<div class="file-upload-inner__preview-item">
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+									<div class="file-upload-inner__preview-close">
+										<svg class="icon icon-clock">
+											<use xlink:href="#icon-close"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="file-upload__ctn">
+							<input type="file" id="dropzone2">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Описание услуги</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Правовая форма</div>
+					<div class="tab-wrap">
+						<div class="tabs tabs_modified tabs_three-cols l-section-wrapper">
+							<div class="tabs__nav">
+								<span class="tabs__nav-item active">Юр.лицо</span>
+								<span class="tabs__nav-item">ИП</span>
+								<span class="tabs__nav-item">Самозанятый</span>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__pane active">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Зарегистрировать услугу</button>
+					</div>
+					<div class="form-personal__item">
+						<div class="checkbox">
+							<input id="fam4" type="checkbox" name="fam" />
+							<label for="fam4">Я подтверждаю, что моя Компания является законным бизнесом, имеющим все необходимые для деятельности документы. Данные лицензии должны быть предъявлены объектом размещения по первому требованию ___, который оставляет за собой право в любое время проверить достоверность данных, указанных объектом размещения при регистрации. Я подтверждаю также, что являюсь уполномоченным представителем объекта размещения, обладающим всеми необходимыми полномочиями, необходимыми для регистрации объекта размещения на сайте <a href="#">baikalbooking.ru</a>.</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--tour-->
+<div id="modal-personal-tour" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__category">
+						Добавление тура
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Описание тура</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Название</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Чивыркуйский залив. Однодневный тур">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Укажите цену</div>
+					<div class="modal-personal__sub-title">Ее можно изменить в любое время</div>
+					<div class="form-personal__two-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Цена от:</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="3 500 ₽">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Единица измерения:</label>
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">За человека</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Группа из 5 человек</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Группа из 10 человек</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Группа из 15 человек</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Группа из 20 человек</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Параметры</div>
+					<div class="form-personal__two-cols">
+						<div class="form-personal__item">
+							<label class="form-personal__label">Дней</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="4">
+							</div>
+						</div>
+						<div class="form-personal__item">
+							<label class="form-personal__label">Ночей</label>
+							<div class="form-personal__item-wrapper">
+								<input type="text" class="form-personal__input input input-default" value="3">
+							</div>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Место начала тура</label>
+						<div class="form-personal__item-wrapper">
+							<input type="text" class="form-personal__input input input-default" value="Улан-Удэ">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator modal-personal__separator_mini"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title modal-personal__title_md">Сезон</div>
+					<div class="checkbox checkbox_horizontal">
+						<div class="checkbox__item">
+							<input id="season1" type="checkbox" name="season" checked />
+							<label for="season1">Весна</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="season2" type="checkbox" name="season" />
+							<label for="season2">Лето</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="season3" type="checkbox" name="season" />
+							<label for="season3">Осень</label>
+						</div>						
+						<div class="checkbox__item">
+							<input id="season4" type="checkbox" name="season" />
+							<label for="season4">Зима</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator modal-personal__separator_mini"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title modal-personal__title_md">Активности</div>
+					<div class="checkbox checkbox_horizontal">
+						<div class="checkbox__item">
+							<input id="actions1" type="checkbox" name="actions" checked />
+							<label for="actions1">на экскурсии</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="actions2" type="checkbox" name="actions" />
+							<label for="actions2">параплан</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="actions4" type="checkbox" name="actions" />
+							<label for="actions4">собачьи упряжки</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="actions5" type="checkbox" name="actions" />
+							<label for="actions5">рыбалка</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="actions6" type="checkbox" name="actions" />
+							<label for="actions6">сапы</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="actions7" type="checkbox" name="actions" />
+							<label for="actions7">пешие туры</label>
+						</div>						
+						<div class="checkbox__item">
+							<input id="actions8" type="checkbox" name="actions" />
+							<label for="actions8">судоходные туры</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="actions9" type="checkbox" name="actions" />
+							<label for="actions9">отдых на берегу</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Условия</div>
+					<div class="modal-personal__title modal-personal__title_md">Включено</div>
+					<div class="checkbox checkbox_two-cols">
+						<div class="checkbox__item">
+							<input id="comfort1" type="checkbox" name="comfort" />
+							<label for="comfort1">Трансфер</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort2" type="checkbox" name="comfort" />
+							<label for="comfort2">Проживание на турбазах</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort3" type="checkbox" name="comfort" />
+							<label for="comfort3">Переправа на Ольхоне</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort4" type="checkbox" name="comfort" />
+							<label for="comfort4">Завтраки со 2-го дня</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort5" type="checkbox" name="comfort" />
+							<label for="comfort5">Транспортные сборы</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort6" type="checkbox" name="facilities" />
+							<label for="comfort6">Разрешение на посещение нацпарка</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort7" type="checkbox" name="facilities" />
+							<label for="comfort7">Проживание</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort8" type="checkbox" name="services" />
+							<label for="comfort8">Куратор на Ольхоне</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator modal-personal__separator_mini"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title modal-personal__title_md">Оплачивается отдельно</div>
+					<div class="checkbox checkbox_two-cols">
+						<div class="checkbox__item">
+							<input id="comfort-inner1" type="checkbox" name="comfort-inner" />
+							<label for="comfort-inner1">авиа- и ж/д-билеты</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort-inner2" type="checkbox" name="comfort-inner" />
+							<label for="comfort-inner2">Дополнительные услуги</label>
+						</div>
+						<div class="checkbox__item">
+							<input id="comfort-inner3" type="checkbox" name="comfort-inner" />
+							<label for="comfort-inner3">Питание в кафэ</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Программа тура</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Выберите место</label>
+						<div class="form-personal__item-wrapper-select">
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">Чивыркуйский залив</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Чивыркуйский залив</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Баргузинский залив</span>
+									</li>
+									<li class="option">
+										<span class="option-text">с.Турка</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Ушканьи острова</span>
+									</li>
+								</ul>
+							</div>
+							<button class="btn-default form-personal__button-delete">
+								<svg class="icon">
+									<use xlink:href="#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Выберите место</label>
+						<div class="form-personal__item-wrapper-select">
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">Баргузинкий залив</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Чивыркуйский залив</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Баргузинский залив</span>
+									</li>
+									<li class="option">
+										<span class="option-text">с.Турка</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Ушканьи острова</span>
+									</li>
+								</ul>
+							</div>
+							<button class="btn-default form-personal__button-delete">
+								<svg class="icon">
+									<use xlink:href="#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Выберите место</label>
+						<div class="form-personal__item-wrapper-select">
+							<div class="select-menu select-menu-bordered">
+								<div class="select-btn">
+									<span class="sBtn-text">Ушканьи острова</span>
+									<svg class="icon">
+										<use xlink:href="#icon-corner"></use>
+									</svg>
+								</div>
+
+								<ul class="options">
+									<li class="option">
+										<span class="option-text">Чивыркуйский залив</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Баргузинский залив</span>
+									</li>
+									<li class="option">
+										<span class="option-text">с.Турка</span>
+									</li>
+									<li class="option">
+										<span class="option-text">Ушканьи острова</span>
+									</li>
+								</ul>
+							</div>
+							<button class="btn-default form-personal__button-delete">
+								<svg class="icon">
+									<use xlink:href="#icon-close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_add">
+							<svg class="icon">
+								<use xlink:href="#icon-plus"></use>
+							</svg>
+							Добавить место
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Загрузите фото или видео</div>
+					<div class="file-upload-inner">
+						<div class="file-upload-inner__preview">
+							<div class="file-upload-inner__preview-item">
+								<div class="file-upload-inner__preview-text">
+									<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+								</div>
+								<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+									<div class="file-upload-inner__preview-close">
+										<svg class="icon icon-clock">
+											<use xlink:href="#icon-close"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="file-upload__ctn">
+							<input type="file" id="dropzone2">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Описание тура</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Правовая форма</div>
+					<div class="tab-wrap">
+						<div class="tabs tabs_modified tabs_three-cols l-section-wrapper">
+							<div class="tabs__nav">
+								<span class="tabs__nav-item active">Юр.лицо</span>
+								<span class="tabs__nav-item">ИП</span>
+								<span class="tabs__nav-item">Самозанятый</span>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__pane active">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<label class="form-personal__label">ИНН</label>
+									<div class="form-personal__item-wrapper">
+										<input type="text" class="form-personal__input input input-default" value="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-personal__separator"></div>
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Зарегистрировать тур</button>
+					</div>
+					<div class="form-personal__item">
+						<div class="checkbox">
+							<input id="fam4" type="checkbox" name="fam" />
+							<label for="fam4">Я подтверждаю, что моя Компания является законным бизнесом, имеющим все необходимые для деятельности документы. Данные лицензии должны быть предъявлены объектом размещения по первому требованию ___, который оставляет за собой право в любое время проверить достоверность данных, указанных объектом размещения при регистрации. Я подтверждаю также, что являюсь уполномоченным представителем объекта размещения, обладающим всеми необходимыми полномочиями, необходимыми для регистрации объекта размещения на сайте <a href="#">baikalbooking.ru</a>.</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--feedback-->
+<div id="modal-personal-feedback" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<form action="url" class="form-personal">
+			<div class="modal-personal__section">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title modal-personal__title_lg">Новый отзыв</div>
+					<div class="form-personal__item">
+						<div class="modal-personal__title modal-personal__title_sm">Оцените вашу поездку</div>
+						<div class="rating-buttons">
+							<div class="rating-buttons__item radio">
+								<input id="rating1" type="radio" name="rating" />
+								<label for="rating1">1</label>
+							</div>
+							<div class="rating-buttons__item radio">
+								<input id="rating2" type="radio" name="rating" />
+								<label for="rating2">2</label>
+							</div>
+							<div class="rating-buttons__item radio">
+								<input id="rating3" type="radio" name="rating" />
+								<label for="rating3">3</label>
+							</div>
+							<div class="rating-buttons__item radio">
+								<input id="rating4" type="radio" name="rating" checked/>
+								<label for="rating4">4</label>
+							</div>
+							<div class="rating-buttons__item radio">
+								<input id="rating5" type="radio" name="rating" />
+								<label for="rating5">5</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Достоинства</label>
+						<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Текст отзыва">Очень чисто, очень радушно, все в доступе.Проблем с горячей водой нет, удобства на улице, но все супер близко от юрт. Кухня чистая, есть стиральная машина. Хозяева — потрясающие!!! Я давно не встречала такого гостеприимства. Расположение — недалеко от гастронома и автобусной остановки, улица тихая. До Шаманки минут 10-15. Советую всем!!!</textarea>
+					</div>
+					<div class="form-personal__item">
+						<label class="form-personal__label">Недостатки</label>
+						<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Текст отзыва"></textarea>
+					</div>
+					<div class="form-personal__item">
+						<div class="modal-personal__title modal-personal__title_md">Загрузите фото или видео</div>
+						<div class="file-upload-inner">
+							<div class="file-upload-inner__preview">
+								<div class="file-upload-inner__preview-item">
+									<div class="file-upload-inner__preview-text">
+										<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+									</div>
+									<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+										<div class="file-upload-inner__preview-close">
+											<svg class="icon icon-clock">
+												<use xlink:href="#icon-close"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="file-upload-inner__preview-item">
+									<div class="file-upload-inner__preview-text">
+										<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+									</div>
+									<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+										<div class="file-upload-inner__preview-close">
+											<svg class="icon icon-clock">
+												<use xlink:href="#icon-close"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="file-upload-inner__preview-item">
+									<div class="file-upload-inner__preview-text">
+										<textarea class="textarea textarea-default" name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+									</div>
+									<div class="file-upload-inner__preview-image" style="background-image: url(./images/dist/action.jpg)">
+										<div class="file-upload-inner__preview-close">
+											<svg class="icon icon-clock">
+												<use xlink:href="#icon-close"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="file-upload__ctn">
+								<input type="file" id="dropzone2">
+							</div>
+						</div>
+					</div>
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Опубликовать отзыв</button>
+					</div>
+				</div>
+			</div>
 		</form>
 	</div>
 </div>
