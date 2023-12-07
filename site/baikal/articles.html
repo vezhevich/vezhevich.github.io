@@ -17,7 +17,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -993,6 +992,448 @@
 		На основе введенных данных вы будете получать рассылки и уведомления, подобранные алгоритмом специально для вас
 	</div>
 </div>
+<div class="navbar">
+	<ul class="navbar__list list_unstyle">
+		<li class="navbar__list-item">
+			<button class="btn-default btn-navbar js-show-modal-navbar" type="button">
+				<svg class="icon">
+					<use xlink:href="#icon-grid"></use>
+				</svg>
+			</button>
+			<div class="modal-navbar">
+				<div class="modal__wrapper">
+					<nav class="navbar-menu">
+						<ul class="navbar-menu__list list_unstyle">
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link" href="#">Обзоры</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link" href="#">Места</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link" href="#">Жилье</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link" href="#">Напрвления</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link" href="#">Туры</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link" href="#">Услуги</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</li>
+		<li class="navbar__list-item">
+			<button class="btn-default btn-navbar btn-navbar-map js-show-modal-navbar" type="button">
+				<svg class="icon">
+					<use xlink:href="#icon-map"></use>
+				</svg>
+			</button>
+			<div class="modal-navbar modal-navbar_full-screen">
+				<div class="modal__wrapper map-modal">
+					<nav class="nav-line js-nav-line-scroll swiper">
+						<ul class="list_unstyle nav-line__list swiper-wrapper">
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Фото</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link nav-line__item-link_active" href="#">Описание</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Номера</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Условия проживания</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Правила</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Отзывы</a></li>
+						</ul>
+					</nav>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad69c3c8168bda27a68ae1354cf8ed91619d971f429fcd6034621e3da66f11f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+					<button class="map-modal__button btn-default btn-primary js-show-list-objects" type="button">
+						<svg class="icon">
+							<use xlink:href="#icon-list"></use>
+						</svg>
+						Списком
+					</button>
+				</div>
+				<div class="modal-wrapper object-list">
+					<h2 class="title-h2_main-page">Отели</h2>
+
+					<!--panel-view-->
+					<div class="panel-view panel-view_margin-bottom">
+						<div class="btn-group">
+							<button type="button" class="btn-group__item btn-default btn-secondary">лучшие</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">недорого</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">с питанием</button>
+							<button type="button" class="btn-group__item btn-default btn-secondary">с детьми</button>
+						</div>
+					</div>
+
+					<!--nav-line-->
+					<nav class="nav-line l-section-wrapper js-nav-line-scroll swiper">
+						<ul class="list_unstyle nav-line__list swiper-wrapper">
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Обзоры</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link nav-line__item-link_active" href="#">Гостиницы</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Отели</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Туры</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Места</a></li>
+							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Услуги</a></li>
+						</ul>
+					</nav>
+
+					<div class="card-object-wrapper card-object-wrapper-list card-object-wrapper_4-in-row"	>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">3 500 ₽</div>
+								<div class="card-object__in">за сутки</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">Стандарт</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати + 1 двуспальная</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">2 500 ₽</div>
+								<div class="card-object__in">за сутки</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">Улучшенный Стандарт</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">5 500 ₽</div>
+								<div class="card-object__in">за человека</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">3 500 ₽</div>
+								<div class="card-object__in">за сутки</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">3 500 ₽</div>
+								<div class="card-object__in">за сутки</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">Улучшенный Стандарт</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">5 500 ₽</div>
+								<div class="card-object__in">за человека</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">3 500 ₽</div>
+								<div class="card-object__in">за сутки</div>
+							</div>
+						</a>
+						<a href="#" class="card-object">
+							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
+								<div class="swiper-wrapper card-object-inner-slider__wrapper">
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
+									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="card-object__title">3-местный “Люкс”</div>
+							<div class="card-object__list">
+								<div class="card-object__list-item">2 односпальные кровати</div>
+								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
+							</div>
+							<div class="card-object__bottom">
+								<div class="card-object__cost">3 500 ₽</div>
+								<div class="card-object__in">за сутки</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="paginator">
+	<a href="#" class="paginator__prev">
+		<svg class="icon">
+			<use xlink:href="#icon-point-left"></use>
+		</svg>
+		Назад
+	</a>
+	<div class="paginator__pages">
+		<a class="paginator__pages-item paginator__pages-item_active" href="#">1</a>
+		<a class="paginator__pages-item" href="#">2</a>
+		<a class="paginator__pages-item" href="#">3</a>
+		<a class="paginator__pages-item" href="#">...</a>
+		<a class="paginator__pages-item" href="#">8</a>
+		<a class="paginator__pages-item" href="#">9</a>
+		<a class="paginator__pages-item" href="#">10</a>
+	</div>
+	<a href="#" class="paginator__next">
+		Далее
+		<svg class="icon">
+			<use xlink:href="#icon-point-right"></use>
+		</svg>
+	</a>
+</div>
+				</div>
+			</div>
+		</li>
+		<li class="navbar__list-item">
+			<button class="btn-default btn-navbar btn-navbar_plus js-show-modal-navbar" type="button">
+				<svg class="icon">
+					<use xlink:href="#icon-plus"></use>
+				</svg>
+			</button>
+			<div id="modal-navbar-menu2" class="modal-navbar">
+				<div class="modal__wrapper">
+					<h4 class="modal-navbar-menu__title">Добавить</h4>
+					<nav class="navbar-menu">
+						<ul class="navbar-menu__list list_unstyle">
+							<li class="navbar-menu__list-item navbar-menu__list-item_full-width">
+								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Обзор</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Объект</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Номер</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Тур</a>
+							</li>
+							<li class="navbar-menu__list-item">
+								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Услугу</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</li>
+		<li class="navbar__list-item">
+			<button class="btn-default btn-navbar js-show-modal-navbar" type="button">
+				<svg class="icon">
+					<use xlink:href="#icon-search"></use>
+				</svg>
+			</button>
+			<div class="modal-navbar">
+				<div class="modal__wrapper">
+					<div class="form-search">
+						<form action="url">
+							<div class="form-search__wrapper">
+								<div class="form-search__item">
+									<div class="form-search__label">Направление:</div>
+									<div class="form-search__select">
+										<div class="select-menu">
+											<div class="select-btn">
+												<span class="sBtn-text">Выберите направление</span>
+												<svg class="icon">
+													<use xlink:href="#icon-corner"></use>
+												</svg>
+											</div>
+
+											<ul class="options">
+												<li class="option">
+													<span class="option-text">Усть-Баргузин</span>
+												</li>
+												<li class="option">
+													<span class="option-text">Максимиха</span>
+												</li>
+												<li class="option">
+													<span class="option-text">Энхалук</span>
+												</li>
+												<li class="option">
+													<span class="option-text">Новый Энхалук</span>
+												</li>
+											</ul>
+										</div>
+										<span class="form-search__select-clear">
+						<svg class="icon">
+						<use xlink:href="#icon-close-bold"></use>
+					</svg>
+					</span>
+									</div>
+								</div>
+								<div class="form-search__item">
+									<div class="datepicker">
+										<label for="datepicker2" class="datepicker__label">Цены на период</label>
+										<input id="datepicker2" type="text" class="input datepicker__input" value="10.11 - 10.12" readonly>
+									</div>
+								</div>
+								<div class="form-search__item">
+									<button class="btn-default form-search__area js-dropdown-open" type="button">
+										<span class="form-search__label">Гости:</span>
+										<span class="form-search__value">2 взрослых, 3 детей</span>
+									</button>
+									<div class="form-search__dropdown dropdown js-dropdown">
+										<div class="form-search__dropdown-item">
+											<div class="form-search__dropdown-text">Взрослых</div>
+											<div class="form-search__dropdown-qnt qnt">
+												<div class="qnt__button qnt__minus js-qnt-minus">
+													<svg class="icon">
+														<use xlink:href="#icon-minus"></use>
+													</svg>
+												</div>
+												<div class="qnt__value js-qnt-value">2</div>
+												<div class="qnt__button qnt__plus js-qnt-plus">
+													<svg class="icon">
+														<use xlink:href="#icon-plus"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="form-search__dropdown-item">
+											<div class="form-search__dropdown-text">Детей</div>
+											<div class="form-search__dropdown-qnt qnt">
+												<div class="qnt__button qnt__minus js-qnt-minus">
+													<svg class="icon">
+														<use xlink:href="#icon-minus"></use>
+													</svg>
+												</div>
+												<div class="qnt__value js-qnt-value">3</div>
+												<div class="qnt__button qnt__plus js-qnt-plus">
+													<svg class="icon">
+														<use xlink:href="#icon-plus"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="form-search__dropdown-item">
+											<div class="form-search__dropdown-text">Младенцев</div>
+											<div class="form-search__dropdown-qnt qnt">
+												<div class="qnt__button qnt__minus js-qnt-minus">
+													<svg class="icon">
+														<use xlink:href="#icon-minus"></use>
+													</svg>
+												</div>
+												<div class="qnt__value js-qnt-value">0</div>
+												<div class="qnt__button qnt__plus js-qnt-plus">
+													<svg class="icon">
+														<use xlink:href="#icon-plus"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="form-search__dropdown-item">
+											<div class="form-search__dropdown-text">Номеров</div>
+											<div class="form-search__dropdown-qnt qnt">
+												<div class="qnt__button qnt__minus js-qnt-minus">
+													<svg class="icon">
+														<use xlink:href="#icon-minus"></use>
+													</svg>
+												</div>
+												<div class="qnt__value js-qnt-value">1</div>
+												<div class="qnt__button qnt__plus js-qnt-plus">
+													<svg class="icon">
+														<use xlink:href="#icon-plus"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="form-search__button btn-default">
+								<svg class="icon">
+									<use xlink:href="#icon-search"></use>
+								</svg>
+								Найти
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="navbar__list-item">
+			<div class="navbar__user" style="background-image: url(./images/dist/avatar-lg.jpg); display: none"></div>
+			<button class="navbar__auth btn-default btn-navbar js-modal-auth" data-mfp-src="#modal-auth">
+				<svg class="icon">
+					<use xlink:href="#icon-auth"></use>
+				</svg>
+			</button>
+		</li>
+	</ul>
+</div>
 <!--фильтры-->
 <div id="modal-filters" class="mfp-hide modal">
     <div class="modal__wrapper layout-content">
@@ -1208,8 +1649,7 @@
 </div>
 
 <!--обзор-->
-<!--
-<div id="modal-review" class="mfp-hide modal">
+<div style="display: none" id="modal-review" class="mfp-hide modal">
 	<div class="modal__wrapper">
 		<div class="modal-review__wrapper">
 			<div class="modal-review__left">
@@ -1432,7 +1872,6 @@
 		</div>
 	</div>
 </div>
--->
 
 <!--обзор другой-->
 <div id="modal-review-inner" class="mfp-hide modal">
@@ -2585,20 +3024,24 @@
 			<div class="modal-personal__separator"></div>
 			<div class="modal-personal__section">
 				<div class="modal-personal__section-ctn">
-					<div class="modal-personal__title">Ваше фото</div>
-					<div class="modal-personal__sub-title">Будет отображаться у вашего профиля</div>
-					<div class="file-upload">
-						<div class="file-upload__preview">
-							<div class="file-upload__preview-item" style="background-image: url(./images/dist/action.jpg)">
-								<div class="file-upload__preview-close">
-									<svg class="icon icon-clock">
-										<use xlink:href="#icon-close"></use>
-									</svg>
+					<div class="file-upload file-upload_personal-page">
+						<div class="file-upload__head">
+							<div class="file-upload__head-wrap">
+								<div class="modal-personal__title">Ваше фото</div>
+								<div class="modal-personal__sub-title">Будет отображаться у вашего профиля</div>
+							</div>
+							<div class="file-upload__preview">
+								<div class="file-upload__preview-item" style="background-image: url(./images/dist/action.jpg)">
+									<div class="file-upload__preview-close">
+										<svg class="icon icon-clock">
+											<use xlink:href="#icon-close"></use>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="file-upload__ctn">
-							<input type="file" id="dropzone">
+							<form action="/target" class="dropzone" id="myDropzone"></form>
 						</div>
 					</div>
 				</div>
@@ -2624,7 +3067,7 @@
 						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Сохранить</button>
 					</div>
 					<div class="form-personal__item">
-						<div class="checkbox">
+						<div class="checkbox checkbox_modified-label">
 							<input id="fam" type="checkbox" name="fam" />
 							<label for="fam">Я подтверждаю, что ознакомлен со всеми документами</label>
 						</div>
@@ -3063,7 +3506,7 @@
 						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="submit">Зарегистрировать объект</button>
 					</div>
 					<div class="form-personal__item">
-						<div class="checkbox">
+						<div class="checkbox checkbox_modified-label">
 							<input id="fam3" type="checkbox" name="fam" />
 							<label for="fam3">Я подтверждаю, что моя Компания является законным бизнесом, имеющим все необходимые для деятельности документы. Данные лицензии должны быть предъявлены объектом размещения по первому требованию ___, который оставляет за собой право в любое время проверить достоверность данных, указанных объектом размещения при регистрации. Я подтверждаю также, что являюсь уполномоченным представителем объекта размещения, обладающим всеми необходимыми полномочиями, необходимыми для регистрации объекта размещения на сайте <a href="#">baikalbooking.ru</a>.</label>
 						</div>
@@ -3125,7 +3568,7 @@
 
 								<ul class="options">
 									<li class="option">
-										<span class="option-text">Двуспальные</span>
+										<span class="option-text">Двуспальные широкие</span>
 									</li>
 									<li class="option">
 										<span class="option-text">Односпальные</span>
@@ -3140,7 +3583,8 @@
 							</div>
 						</div>
 						<div class="form-personal__item">
-							<label class="form-personal__label">Количество</label>
+							<label class="form-personal__label show-desktop">Количество</label>
+							<label class="form-personal__label hide-desktop">Кол-во</label>
 							<div class="form-personal__item-wrapper">
 								<input type="text" class="form-personal__input input input-default" value="1">
 							</div>
@@ -3195,7 +3639,7 @@
 						</div>
 					</div>
 					<div class="form-personal__item">
-						<button class="btn-default btn-secondary">Добавить тип кровати</button>
+						<button class="btn-default btn-secondary btn-mobile-full-width">Добавить тип кровати</button>
 					</div>
 				</div>
 			</div>
@@ -3222,7 +3666,7 @@
 						</div>
 					</div>
 					<div class="form-personal__item">
-						<button class="btn-default btn-secondary">Добавить сезон</button>
+						<button class="btn-default btn-secondary btn-mobile-full-width">Добавить сезон</button>
 					</div>
 				</div>
 			</div>
@@ -3682,7 +4126,7 @@
 					<div class="form-personal__item">
 						<label class="form-personal__label">Выберите место</label>
 						<div class="form-personal__item-wrapper-select">
-							<div class="select-menu select-menu-bordered">
+							<div class="select-menu select-menu-bordered select-menu_mobile-full-width">
 								<div class="select-btn">
 									<span class="sBtn-text">Чивыркуйский залив</span>
 									<svg class="icon">
@@ -3715,7 +4159,7 @@
 					<div class="form-personal__item">
 						<label class="form-personal__label">Выберите место</label>
 						<div class="form-personal__item-wrapper-select">
-							<div class="select-menu select-menu-bordered">
+							<div class="select-menu select-menu-bordered select-menu_mobile-full-width">
 								<div class="select-btn">
 									<span class="sBtn-text">Баргузинкий залив</span>
 									<svg class="icon">
@@ -3748,7 +4192,7 @@
 					<div class="form-personal__item">
 						<label class="form-personal__label">Выберите место</label>
 						<div class="form-personal__item-wrapper-select">
-							<div class="select-menu select-menu-bordered">
+							<div class="select-menu select-menu-bordered select-menu_mobile-full-width">
 								<div class="select-btn">
 									<span class="sBtn-text">Ушканьи острова</span>
 									<svg class="icon">
@@ -3779,7 +4223,7 @@
 						</div>
 					</div>
 					<div class="form-personal__item">
-						<button class="btn-default btn-primary btn-primary_add">
+						<button class="btn-default btn-primary btn-primary_add btn-mobile-full-width">
 							<svg class="icon">
 								<use xlink:href="#icon-plus"></use>
 							</svg>
@@ -3971,448 +4415,33 @@
 		</form>
 	</div>
 </div>
-<div class="navbar">
-	<ul class="navbar__list list_unstyle">
-		<li class="navbar__list-item">
-			<button class="btn-default btn-navbar js-show-modal-navbar" type="button">
-				<svg class="icon">
-					<use xlink:href="#icon-grid"></use>
-				</svg>
-			</button>
-			<div class="modal-navbar">
-				<div class="modal__wrapper">
-					<nav class="navbar-menu">
-						<ul class="navbar-menu__list list_unstyle">
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link" href="#">Обзоры</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link" href="#">Места</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link" href="#">Жилье</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link" href="#">Напрвления</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link" href="#">Туры</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link" href="#">Услуги</a>
-							</li>
-						</ul>
-					</nav>
+
+<!--final-->
+<div id="modal-personal-final" class="mfp-hide modal">
+	<div class="modal__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<div class="form-personal">
+			<div class="modal-personal__section modal-personal__section_modified-top">
+				<div class="modal-personal__section-ctn">
+					<div class="modal-personal__title">Новый объект зарегистрирован</div>
+					<div class="form-personal__item">
+						<p>Осталось совсем немного до выхода вашего объекта в свет! На ваш email hotel@ya.ru отправлена ссылка для входа в личный кабинет.</p>
+						<p>Опубликуйте отель, завершив регистрацию в личном кабинете.</p>
+						<p>Если письмо не пришло, напишите нам на почту <a href="mailto:hotel@baikalbooking.ru">hotel@baikalbooking.ru</a></p>
+					</div>
+					<div class="form-personal__item">
+						<button class="btn-default btn-primary btn-primary_lg-inner btn-primary_full-width" type="button">Закрыть</button>
+					</div>
 				</div>
 			</div>
-		</li>
-		<li class="navbar__list-item">
-			<button class="btn-default btn-navbar btn-navbar-map js-show-modal-navbar" type="button">
-				<svg class="icon">
-					<use xlink:href="#icon-map"></use>
-				</svg>
-			</button>
-			<div class="modal-navbar modal-navbar_full-screen">
-				<div class="modal__wrapper map-modal">
-					<nav class="nav-line js-nav-line-scroll swiper">
-						<ul class="list_unstyle nav-line__list swiper-wrapper">
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Фото</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link nav-line__item-link_active" href="#">Описание</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Номера</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Условия проживания</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Правила</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Отзывы</a></li>
-						</ul>
-					</nav>
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad69c3c8168bda27a68ae1354cf8ed91619d971f429fcd6034621e3da66f11f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-					<button class="map-modal__button btn-default btn-primary js-show-list-objects" type="button">
-						<svg class="icon">
-							<use xlink:href="#icon-list"></use>
-						</svg>
-						Списком
-					</button>
-				</div>
-				<div class="modal-wrapper object-list">
-					<h2 class="title-h2_main-page">Отели</h2>
-
-					<!--panel-view-->
-					<div class="panel-view panel-view_margin-bottom">
-						<div class="btn-group">
-							<button type="button" class="btn-group__item btn-default btn-secondary">лучшие</button>
-							<button type="button" class="btn-group__item btn-default btn-secondary">недорого</button>
-							<button type="button" class="btn-group__item btn-default btn-secondary">с питанием</button>
-							<button type="button" class="btn-group__item btn-default btn-secondary">с детьми</button>
-						</div>
-					</div>
-
-					<!--nav-line-->
-					<nav class="nav-line l-section-wrapper js-nav-line-scroll swiper">
-						<ul class="list_unstyle nav-line__list swiper-wrapper">
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Обзоры</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link nav-line__item-link_active" href="#">Гостиницы</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Отели</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Туры</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Места</a></li>
-							<li class="nav-line__item swiper-slide"><a class="nav-line__item-link" href="#">Услуги</a></li>
-						</ul>
-					</nav>
-
-					<div class="card-object-wrapper card-object-wrapper-list card-object-wrapper_4-in-row"	>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">3-местный “Люкс”</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">3 500 ₽</div>
-								<div class="card-object__in">за сутки</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">Стандарт</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати + 1 двуспальная</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">2 500 ₽</div>
-								<div class="card-object__in">за сутки</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">Улучшенный Стандарт</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">5 500 ₽</div>
-								<div class="card-object__in">за человека</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">3-местный “Люкс”</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">3 500 ₽</div>
-								<div class="card-object__in">за сутки</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">3-местный “Люкс”</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">3 500 ₽</div>
-								<div class="card-object__in">за сутки</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">Улучшенный Стандарт</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">5 500 ₽</div>
-								<div class="card-object__in">за человека</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview4.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview3.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">3-местный “Люкс”</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">3 500 ₽</div>
-								<div class="card-object__in">за сутки</div>
-							</div>
-						</a>
-						<a href="#" class="card-object">
-							<div class="js-card-object-inner-slider card-object-inner-slider swiper">
-								<div class="swiper-wrapper card-object-inner-slider__wrapper">
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview5.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview2.jpg)"></div>
-									<div class="card-object__image swiper-slide" style="background-image: url(./images/dist/preview1.jpg)"></div>
-								</div>
-								<div class="swiper-pagination"></div>
-							</div>
-							<div class="card-object__title">3-местный “Люкс”</div>
-							<div class="card-object__list">
-								<div class="card-object__list-item">2 односпальные кровати</div>
-								<div class="card-object__list-item card-object__list-item_modified">Турбаза «Два дракона»</div>
-							</div>
-							<div class="card-object__bottom">
-								<div class="card-object__cost">3 500 ₽</div>
-								<div class="card-object__in">за сутки</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="paginator">
-	<a href="#" class="paginator__prev">
-		<svg class="icon">
-			<use xlink:href="#icon-point-left"></use>
-		</svg>
-		Назад
-	</a>
-	<div class="paginator__pages">
-		<a class="paginator__pages-item paginator__pages-item_active" href="#">1</a>
-		<a class="paginator__pages-item" href="#">2</a>
-		<a class="paginator__pages-item" href="#">3</a>
-		<a class="paginator__pages-item" href="#">...</a>
-		<a class="paginator__pages-item" href="#">8</a>
-		<a class="paginator__pages-item" href="#">9</a>
-		<a class="paginator__pages-item" href="#">10</a>
+		</form>
 	</div>
-	<a href="#" class="paginator__next">
-		Далее
-		<svg class="icon">
-			<use xlink:href="#icon-point-right"></use>
-		</svg>
-	</a>
 </div>
-				</div>
-			</div>
-		</li>
-		<li class="navbar__list-item">
-			<button class="btn-default btn-navbar btn-navbar_plus js-show-modal-navbar" type="button">
-				<svg class="icon">
-					<use xlink:href="#icon-plus"></use>
-				</svg>
-			</button>
-			<div id="modal-navbar-menu2" class="modal-navbar">
-				<div class="modal__wrapper">
-					<h4 class="modal-navbar-menu__title">Добавить</h4>
-					<nav class="navbar-menu">
-						<ul class="navbar-menu__list list_unstyle">
-							<li class="navbar-menu__list-item navbar-menu__list-item_full-width">
-								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Обзор</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Объект</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Номер</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Тур</a>
-							</li>
-							<li class="navbar-menu__list-item">
-								<a class="navbar__menu__list-item-link navbar__menu__list-item-link_primary" href="#">Услугу</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</li>
-		<li class="navbar__list-item">
-			<button class="btn-default btn-navbar js-show-modal-navbar" type="button">
-				<svg class="icon">
-					<use xlink:href="#icon-search"></use>
-				</svg>
-			</button>
-			<div class="modal-navbar">
-				<div class="modal__wrapper">
-					<div class="form-search">
-						<form action="url">
-							<div class="form-search__wrapper">
-								<div class="form-search__item">
-									<div class="form-search__label">Направление:</div>
-									<div class="form-search__select">
-										<div class="select-menu">
-											<div class="select-btn">
-												<span class="sBtn-text">Выберите направление</span>
-												<svg class="icon">
-													<use xlink:href="#icon-corner"></use>
-												</svg>
-											</div>
 
-											<ul class="options">
-												<li class="option">
-													<span class="option-text">Усть-Баргузин</span>
-												</li>
-												<li class="option">
-													<span class="option-text">Максимиха</span>
-												</li>
-												<li class="option">
-													<span class="option-text">Энхалук</span>
-												</li>
-												<li class="option">
-													<span class="option-text">Новый Энхалук</span>
-												</li>
-											</ul>
-										</div>
-										<span class="form-search__select-clear">
-						<svg class="icon">
-						<use xlink:href="#icon-close-bold"></use>
-					</svg>
-					</span>
-									</div>
-								</div>
-								<div class="form-search__item">
-									<div class="datepicker">
-										<label for="datepicker2" class="datepicker__label">Цены на период</label>
-										<input id="datepicker2" type="text" class="input datepicker__input" value="10.11 - 10.12" readonly>
-									</div>
-								</div>
-								<div class="form-search__item">
-									<button class="btn-default form-search__area js-dropdown-open" type="button">
-										<span class="form-search__label">Гости:</span>
-										<span class="form-search__value">2 взрослых, 3 детей</span>
-									</button>
-									<div class="form-search__dropdown dropdown js-dropdown">
-										<div class="form-search__dropdown-item">
-											<div class="form-search__dropdown-text">Взрослых</div>
-											<div class="form-search__dropdown-qnt qnt">
-												<div class="qnt__button qnt__minus js-qnt-minus">
-													<svg class="icon">
-														<use xlink:href="#icon-minus"></use>
-													</svg>
-												</div>
-												<div class="qnt__value js-qnt-value">2</div>
-												<div class="qnt__button qnt__plus js-qnt-plus">
-													<svg class="icon">
-														<use xlink:href="#icon-plus"></use>
-													</svg>
-												</div>
-											</div>
-										</div>
-										<div class="form-search__dropdown-item">
-											<div class="form-search__dropdown-text">Детей</div>
-											<div class="form-search__dropdown-qnt qnt">
-												<div class="qnt__button qnt__minus js-qnt-minus">
-													<svg class="icon">
-														<use xlink:href="#icon-minus"></use>
-													</svg>
-												</div>
-												<div class="qnt__value js-qnt-value">3</div>
-												<div class="qnt__button qnt__plus js-qnt-plus">
-													<svg class="icon">
-														<use xlink:href="#icon-plus"></use>
-													</svg>
-												</div>
-											</div>
-										</div>
-										<div class="form-search__dropdown-item">
-											<div class="form-search__dropdown-text">Младенцев</div>
-											<div class="form-search__dropdown-qnt qnt">
-												<div class="qnt__button qnt__minus js-qnt-minus">
-													<svg class="icon">
-														<use xlink:href="#icon-minus"></use>
-													</svg>
-												</div>
-												<div class="qnt__value js-qnt-value">0</div>
-												<div class="qnt__button qnt__plus js-qnt-plus">
-													<svg class="icon">
-														<use xlink:href="#icon-plus"></use>
-													</svg>
-												</div>
-											</div>
-										</div>
-										<div class="form-search__dropdown-item">
-											<div class="form-search__dropdown-text">Номеров</div>
-											<div class="form-search__dropdown-qnt qnt">
-												<div class="qnt__button qnt__minus js-qnt-minus">
-													<svg class="icon">
-														<use xlink:href="#icon-minus"></use>
-													</svg>
-												</div>
-												<div class="qnt__value js-qnt-value">1</div>
-												<div class="qnt__button qnt__plus js-qnt-plus">
-													<svg class="icon">
-														<use xlink:href="#icon-plus"></use>
-													</svg>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button class="form-search__button btn-default">
-								<svg class="icon">
-									<use xlink:href="#icon-search"></use>
-								</svg>
-								Найти
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="navbar__list-item">
-			<div class="navbar__user" style="background-image: url(./images/dist/avatar-lg.jpg); display: none"></div>
-			<button class="navbar__auth btn-default btn-navbar js-modal-auth" data-mfp-src="#modal-auth">
-				<svg class="icon">
-					<use xlink:href="#icon-auth"></use>
-				</svg>
-			</button>
-		</li>
-	</ul>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
