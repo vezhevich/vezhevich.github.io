@@ -467,6 +467,9 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="icon-calendar">
 		<path stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.667 1.333V4M5.333 1.333V4M2 6.667h12m-10.667-4h9.334C13.403 2.667 14 3.264 14 4v9.333c0 .737-.597 1.334-1.333 1.334H3.333A1.333 1.333 0 0 1 2 13.333V4c0-.736.597-1.333 1.333-1.333Z"></path>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20" id="icon-star-inner">
+		<path stroke="#1D2939" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67" d="m10.5 1.667 2.575 5.216 5.759.842-4.167 4.058.983 5.734-5.15-2.709-5.15 2.709.984-5.734-4.167-4.058 5.758-.842L10.5 1.667Z"></path>
+	</symbol>
 </svg>
 <!-- тултип -->
 <div class="tooltip_templates" style="display: none;">
@@ -907,7 +910,7 @@
 			</div>
 		</li>
 		<li class="navbar__list-item">
-			<div class="navbar__user" style="background-image: url(./images/dist/avatar-lg.jpg); display: none"></div>
+			<div class="navbar__user js-modal-auth" data-mfp-src="#modal-profile" style="background-image: url(./images/dist/avatar-lg.jpg); display: none;"></div>
 			<button class="navbar__auth btn-default btn-navbar js-modal-auth" data-mfp-src="#modal-auth">
 				<svg class="icon">
 					<use xlink:href="#icon-auth"></use>
@@ -3920,7 +3923,96 @@
 					</div>
 				</div>
 			</div>
-		</form>
+		</div>
+	</div>
+</div>
+
+<!--авторизация-->
+<div id="modal-profile" class="mfp-hide modal modal-profile">
+	<div class="modal__wrapper modal-auth__wrapper">
+		<button type="button" class="modal__close mfp-close btn">
+			<svg class="icon-close">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<div class="modal-profile__title">Профиль</div>
+		<div class="modal-profile__user">
+			<div class="modal-profile__user-avatar" style="background-image: url(./images/dist/avatar-lg.jpg)"></div>
+			<div class="modal-profile__user-wrapper">
+				<div class="modal-profile__user-text">Константин Константинопольский</div>
+				<div class="modal-profile__user-label">
+					<div class="label label_recommend">
+						<svg class="icon">
+							<use xlink:href="#icon-thumbs-up"></use>
+						</svg>
+						pro-аккаунт
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="modal-profile__nav-buttons">
+			<ul class="list_unstyle modal-profile__nav-buttons-list">
+				<li class="modal-profile__nav-buttons-item">
+					<a class="modal-profile__nav-buttons-link" href="#">
+						<svg class="icon">
+							<use xlink:href="#icon-star-inner"></use>
+						</svg>
+						Избранное
+					</a>
+				</li>
+				<li class="modal-profile__nav-buttons-item">
+					<a class="modal-profile__nav-buttons-link" href="#">Обзоры</a>
+				</li>
+				<li class="modal-profile__nav-buttons-item">
+					<a class="modal-profile__nav-buttons-link" href="#">Объекты</a>
+				</li>
+				<li class="modal-profile__nav-buttons-item">
+					<a class="modal-profile__nav-buttons-link" href="#">Туры</a>
+				</li>
+				<li class="modal-profile__nav-buttons-item">
+					<a class="modal-profile__nav-buttons-link" href="#">Номера</a>
+				</li>
+				<li class="modal-profile__nav-buttons-item">
+					<a class="modal-profile__nav-buttons-link" href="#">Услуги</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="modal-profile__nav-list">
+			<ul class="list_unstyle">
+				<li class="modal-profile__nav-list-item">
+					<a class="modal-profile__nav-list-link" href="#">
+						<svg class="icon">
+							<use xlink:href="#icon-comm"></use>
+						</svg>
+						Уведомления
+					</a>
+				</li>
+				<li class="modal-profile__nav-list-item">
+					<a class="modal-profile__nav-list-link" href="#">
+						<svg class="icon">
+							<use xlink:href="#icon-user"></use>
+						</svg>
+						Настройки
+					</a>
+				</li>
+				<li class="modal-profile__nav-list-item">
+					<a class="modal-profile__nav-list-link" href="#">
+						<svg class="icon">
+							<use xlink:href="#icon-help"></use>
+						</svg>
+						Помощь
+					</a>
+				</li>
+				<li class="modal-profile__nav-list-item modal-profile__nav-list-item_last">
+					<a class="modal-profile__nav-list-link" href="#">
+						<svg class="icon">
+							<use xlink:href="#icon-auth"></use>
+						</svg>
+						Выйти
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</div>
 </div>
 
