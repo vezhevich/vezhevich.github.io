@@ -1581,7 +1581,6 @@ $(function() {
 // modal-review
 $(function() {
 	if ($('.js-modal-review').length > 0) {
-		var startWindowScroll = 0;
 		$('.js-modal-review').magnificPopup({
 			type: 'inline',
 			midClick: true,
@@ -1591,18 +1590,13 @@ $(function() {
 			overflowY: 'auto',
 			callbacks: {
 				beforeOpen: function () {
-					startWindowScroll = $(window).scrollTop();
+					$('body').addClass('oh');
 				},
 				open: function () {
-					if ($('.mfp-content').height() < $(window).height()) {
-						$('body').on('touchmove', function (e) {
-							e.preventDefault();
-						});
-					}
+					
 				},
 				close: function () {
-					$(window).scrollTop(startWindowScroll);
-					$('body').off('touchmove');
+					$('body').removeClass('oh');
 				}
 			}
 		});
