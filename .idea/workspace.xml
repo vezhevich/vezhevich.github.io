@@ -1,7 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/css/app.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-BlackItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-BoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-LightItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-MediumItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/fonts/Roboto-ThinItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/advantages1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/advantages2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/advantages3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/advantages4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/advantages5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/all-team.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/article1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/article2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/article3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/article4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/company-strengths.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/director.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/leader1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/leader2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/partner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/partner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/partner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/partner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/partner5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/partner6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/popular1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/popular2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/popular3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/popular4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/presentation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/promo-company.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/promo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/signature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/sky.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/sky2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/sky3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/sky4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/sky5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/slider1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/slider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/slider3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/team.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/team.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/advantages1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/advantages2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/advantages3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/advantages4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/advantages5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-24_7-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-24_7.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-add-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-airplane-inner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-airplane.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-square-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-top.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-calendar-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-call-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-call.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-close-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-document-download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-gas-station.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-ic_round-coffee.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-ic_twotone-speed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-note-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-planet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-play-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-profile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-security-safe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-task-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-teacher.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-tg-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-tg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-timer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-wapp-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-wapp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/logo_blue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/mask1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/mask2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/js/app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/js/libs/swiper/swiper-bundle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/js/libs/swiper/swiper-bundle.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -9,11 +126,35 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  <component name="ProjectId" id="2ytSMKcREazE8LqPs0GHS7nK3pP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration>$PROJECT_DIR$/../.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="" />
+      <created>1750652328533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750652328533</updated>
+      <workItem from="1750652330933" duration="435000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
