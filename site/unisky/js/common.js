@@ -236,3 +236,116 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Инициализация
 	updateHeader(window.scrollY);
 });
+
+// мобильное меню
+$(function() {
+	if ($('.js-mobile-menu').length > 0) {
+		var startWindowScroll = 0;
+		$('.js-mobile-menu').magnificPopup({
+			type: 'inline',
+			midClick: true,
+			mainClass: 'mfp-fade b-mobile-menu',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+				},
+				open: function () {
+					if ($('.mfp-content').height() < $(window).height()) {
+						$('body').on('touchmove', function (e) {
+							e.preventDefault();
+						});
+					}
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+					$('body').off('touchmove');
+				}
+			}
+		});
+	}
+});
+
+// мобильное меню
+document.addEventListener('DOMContentLoaded', function() {
+	const menuContainer = document.querySelector('.b-mobile-menu__nav');
+	const backButtons = document.querySelectorAll('.b-mobile-menu__back');
+	const menuLinks = document.querySelectorAll('.has-submenu > a');
+
+	// Функция для обновления состояния overflow
+	function updateMenuOverflow(activeMenu) {
+		// Находим все родительские меню активного подменю
+		let parentMenus = [];
+		let parent = activeMenu.parentElement.closest('.b-mobile-menu__nav-sub-menu, .b-mobile-menu__nav-menu');
+
+		while (parent) {
+			parentMenus.push(parent);
+			parent = parent.parentElement.closest('.b-mobile-menu__nav-sub-menu, .b-mobile-menu__nav-menu');
+		}
+
+		// Проходим по всем меню
+		document.querySelectorAll('.b-mobile-menu__nav-menu, .b-mobile-menu__nav-sub-menu').forEach(menu => {
+			if (menu === activeMenu) {
+				menu.style.overflow = 'auto'; // Активное меню - прокрутка
+			} else if (parentMenus.includes(menu)) {
+				menu.style.overflow = 'hidden'; // Родительские меню - скрыть прокрутку
+			} else {
+				menu.style.overflow = 'hidden'; // Все остальные - скрыть прокрутку
+			}
+		});
+	}
+
+	// Обработка клика по пунктам меню с подменю
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			const submenu = this.nextElementSibling;
+
+			// Закрываем все открытые подменю на текущем уровне
+			const currentOpen = this.parentNode.querySelector('.b-mobile-menu__nav-sub-menu.active');
+			if (currentOpen && currentOpen !== submenu) {
+				currentOpen.classList.remove('active');
+				currentOpen.classList.add('slide-out');
+				setTimeout(() => {
+					currentOpen.classList.remove('slide-out');
+				}, 300);
+			}
+
+			// Открываем выбранное подменю
+			submenu.classList.add('active');
+			updateMenuOverflow(submenu); // Обновляем overflow для всех меню
+
+			// Прокручиваем контейнер меню к началу
+			menuContainer.scrollLeft = 0;
+		});
+	});
+
+	// Обработка кнопок "Назад"
+	backButtons.forEach(button => {
+		button.addEventListener('click', function() {
+			const currentSubmenu = this.parentNode;
+			const parentMenu = currentSubmenu.parentElement.closest('.b-mobile-menu__nav-sub-menu, .b-mobile-menu__nav-menu');
+
+			// Анимация закрытия
+			currentSubmenu.classList.add('slide-out');
+			currentSubmenu.style.overflow = 'hidden'; // Сразу скрываем прокрутку
+
+			setTimeout(() => {
+				currentSubmenu.classList.remove('active', 'slide-out');
+				if (parentMenu) {
+					parentMenu.style.overflow = 'auto'; // Восстанавливаем прокрутку родителя
+				}
+			}, 300);
+		});
+	});
+
+	// Инициализация - скрыть прокрутку у всех кроме корневого меню
+	document.querySelectorAll('.b-mobile-menu__nav-sub-menu').forEach(menu => {
+		menu.style.overflow = 'hidden';
+	});
+	if (menuContainer.querySelector('.b-mobile-menu__nav-menu')) {
+		menuContainer.querySelector('.b-mobile-menu__nav-menu').style.overflow = 'auto';
+	}
+});
