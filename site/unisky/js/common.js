@@ -53,45 +53,6 @@ $(function () {
 	}
 });
 
-//slider gallery
-$(function() {
-	var galleryThumbs = new Swiper(".gallery-thumbs", {
-		centeredSlides: true,
-		centeredSlidesBounds: true,
-		direction: "horizontal",
-		spaceBetween: 10,
-		slidesPerView: 5,
-		freeMode: false,
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
-		watchOverflow: true,
-		breakpoints: {
-			480: {
-				direction: "vertical",
-				slidesPerView: 3,
-			}
-		}
-	});
-	var galleryTop = new Swiper(".gallery-top", {
-		direction: "horizontal",
-		spaceBetween: 10,
-		effect: "fade",
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev"
-		},
-		thumbs: {
-			swiper: galleryThumbs
-		},
-	});
-	galleryTop.on('slideChangeTransitionStart', function() {
-		galleryThumbs.slideTo(galleryTop.activeIndex);
-	});
-	galleryThumbs.on('transitionStart', function() {
-		galleryTop.slideTo(galleryThumbs.activeIndex);
-	});
-});
-
 
 // articles__slider
 $(function() {
@@ -505,46 +466,78 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 });
 
+// gallery
 $(function() {
 	if ($('.b-gallery__thumbs').length > 0) {
-		var galleryThumbs = new Swiper(".b-gallery__thumbs", {
-			centeredSlides: true,
-			centeredSlidesBounds: true,
-			slidesPerView: 3,
-			watchOverflow: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			spaceBetween: 10,
-			direction: 'vertical',
-		});
+		var galleryThumbs, galleryMain;
 
-		var galleryMain = new Swiper(".b-gallery__main", {
-			watchOverflow: true,
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			preventInteractionOnTransition: true,
-			effect: 'fade',
-			mousewheel: true,
-			direction: 'vertical',
-			fadeEffect: {
-				crossFade: true
-			},
-			thumbs: {
-				swiper: galleryThumbs
-			},
-			scrollbar: {
-				el: ".swiper-scrollbar",
-				draggable: true,
-				dragSize: 74,
-			},
-		});
+		function initSwipers() {
+			// Уничтожаем старые экземпляры, если они существуют
+			if (galleryThumbs) galleryThumbs.destroy(true, true);
+			if (galleryMain) galleryMain.destroy(true, true);
 
-		galleryMain.on('slideChangeTransitionStart', function() {
-			galleryThumbs.slideTo(galleryMain.activeIndex);
-		});
+			// Определяем направление в зависимости от ширины окна
+			var direction = window.innerWidth >= 1500 ? 'vertical' : 'horizontal';
 
-		galleryThumbs.on('transitionStart', function(){
-			galleryMain.slideTo(galleryThumbs.activeIndex);
-		});	
+			// Инициализируем thumbs swiper
+			galleryThumbs = new Swiper(".b-gallery__thumbs", {
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				slidesPerView: 3,
+				watchOverflow: true,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+				spaceBetween: 10,
+				direction: "horizontal",
+				breakpoints: {
+					0: {
+						direction: "horizontal",
+						spaceBetween: 0,
+						slidesPerView: 3,
+					},
+					1500: {
+						direction: 'vertical',
+					}
+				}
+			});
+
+			// Инициализируем main swiper
+			galleryMain = new Swiper(".b-gallery__main", {
+				watchOverflow: true,
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+				preventInteractionOnTransition: true,
+				effect: 'fade',
+				mousewheel: true,
+				direction: "vertical",
+				fadeEffect: {
+					crossFade: true
+				},
+				thumbs: {
+					swiper: galleryThumbs
+				},
+				scrollbar: {
+					el: ".swiper-scrollbar",
+					draggable: true,
+					dragSize: 74,
+				},
+			});
+
+			galleryMain.on('slideChangeTransitionStart', function() {
+				galleryThumbs.slideTo(galleryMain.activeIndex);
+			});
+
+			galleryThumbs.on('transitionStart', function(){
+				galleryMain.slideTo(galleryThumbs.activeIndex);
+			});
+		}
+
+		// Инициализируем при загрузке
+		initSwipers();
+
+		// Обновляем при ресайзе
+		$(window).on('resize', function() {
+			initSwipers();
+		});
 	}
 });
