@@ -504,3 +504,47 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	});
 });
+
+$(function() {
+	if ($('.b-gallery__thumbs').length > 0) {
+		var galleryThumbs = new Swiper(".b-gallery__thumbs", {
+			centeredSlides: true,
+			centeredSlidesBounds: true,
+			slidesPerView: 3,
+			watchOverflow: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			spaceBetween: 10,
+			direction: 'vertical',
+		});
+
+		var galleryMain = new Swiper(".b-gallery__main", {
+			watchOverflow: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			preventInteractionOnTransition: true,
+			effect: 'fade',
+			mousewheel: true,
+			direction: 'vertical',
+			fadeEffect: {
+				crossFade: true
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				draggable: true,
+				dragSize: 74,
+			},
+		});
+
+		galleryMain.on('slideChangeTransitionStart', function() {
+			galleryThumbs.slideTo(galleryMain.activeIndex);
+		});
+
+		galleryThumbs.on('transitionStart', function(){
+			galleryMain.slideTo(galleryThumbs.activeIndex);
+		});	
+	}
+});
