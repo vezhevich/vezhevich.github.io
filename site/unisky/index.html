@@ -14,7 +14,8 @@
 
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
-	
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/app.min.css">
 	
 
@@ -69,35 +70,137 @@
 				<!--b-booking-->
 				<div class="b-booking">
 					<div class="b-booking__row">
-						<div class="b-booking__field">
-							<input type="text" class="input input_error" placeholder="Откуда">
+						<div class="b-booking__field js-booking-field">
+							<!--input_error - для ошибки-->
+							<input type="text" class="input js-input" placeholder="Откуда">
 							<svg class="icon">
 								<use xlink:href="#icon-airplane"></use>
 							</svg>
+
+							<!--b-tooltip-->
+							<div class="b-tooltip js-tooltip">
+								<div class="b-tooltip__ctn">
+									<div calss="b-tooltip__list">
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Москва <span class="b-tooltip__list-abb">MOW</span>
+												<span class="b-tooltip__list-text">Россия</span>
+											</div>
+											<ul class="list_unstyle">
+												<li class="b-tooltip__list-item_lv2">Домодедово <span class="b-tooltip__list-abb">DME</span></li>
+												<li class="b-tooltip__list-item_lv2">Шереметьево <span class="b-tooltip__list-abb">SVO</span></li>
+												<li class="b-tooltip__list-item_lv2">Внуково <span class="b-tooltip__list-abb">VKO</span></li>
+												<li class="b-tooltip__list-item_lv2">Жуковский <span class="b-tooltip__list-abb">ZIA</span></li>
+											</ul>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Омск <span class="b-tooltip__list-abb">OMS</span>
+												<span class="b-tooltip__list-text">Россия</span>
+											</div>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Минск <span class="b-tooltip__list-abb">MSQ</span>
+												<span class="b-tooltip__list-text">Беларусь</span>
+											</div>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Омск <span class="b-tooltip__list-abb">OMS</span>
+												<span class="b-tooltip__list-text">Россия</span>
+											</div>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Минск <span class="b-tooltip__list-abb">MSQ</span>
+												<span class="b-tooltip__list-text">Беларусь</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--and b-tooltip-->
 						</div>
-						<div class="b-booking__field">
-							<input type="text" class="input" placeholder="Откуда">
+						<div class="b-booking__field js-booking-field">
+							<input type="text" class="input js-input" placeholder="Откуда">
 							<svg class="icon">
 								<use xlink:href="#icon-airplane-inner"></use>
 							</svg>
+							<!--b-tooltip-->
+							<div class="b-tooltip js-tooltip">
+								<div class="b-tooltip__ctn">
+									<div calss="b-tooltip__list">
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Москва <span class="b-tooltip__list-abb">MOW</span>
+												<span class="b-tooltip__list-text">Россия</span>
+											</div>
+											<ul class="list_unstyle">
+												<li class="b-tooltip__list-item_lv2">Домодедово <span class="b-tooltip__list-abb">DME</span></li>
+												<li class="b-tooltip__list-item_lv2">Шереметьево <span class="b-tooltip__list-abb">SVO</span></li>
+												<li class="b-tooltip__list-item_lv2">Внуково <span class="b-tooltip__list-abb">VKO</span></li>
+												<li class="b-tooltip__list-item_lv2">Жуковский <span class="b-tooltip__list-abb">ZIA</span></li>
+											</ul>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Омск <span class="b-tooltip__list-abb">OMS</span>
+												<span class="b-tooltip__list-text">Россия</span>
+											</div>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Минск <span class="b-tooltip__list-abb">MSQ</span>
+												<span class="b-tooltip__list-text">Беларусь</span>
+											</div>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Омск <span class="b-tooltip__list-abb">OMS</span>
+												<span class="b-tooltip__list-text">Россия</span>
+											</div>
+										</div>
+										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+											<div class="b-tooltip__list-item-head">
+												Минск <span class="b-tooltip__list-abb">MSQ</span>
+												<span class="b-tooltip__list-text">Беларусь</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--and b-tooltip-->
 						</div>
 						<div class="b-booking__field">
-							<input type="text" class="input" placeholder="Когда">
+							<input type="text" class="input js-datepicker" placeholder="Когда">
 							<svg class="icon">
 								<use xlink:href="#icon-calendar-2"></use>
 							</svg>
 						</div>
 						<div class="b-booking__field">
-							<input type="text" class="input" placeholder="Когда">
+							<input type="text" class="input js-datepicker" placeholder="Когда">
 							<svg class="icon">
 								<use xlink:href="#icon-calendar"></use>
 							</svg>
 						</div>
-						<div class="b-booking__field">
-							<input type="text" class="input" placeholder="1 пассажир">
+						<div class="b-booking__field b-booking__qnt">
+							<input type="text" class="input" placeholder="1 пассажир" value="1">
 							<svg class="icon">
 								<use xlink:href="#icon-profile"></use>
 							</svg>
+							<div class="b-booking__qnt-ctn">
+								<span class="qnt-plus">
+									<svg class="">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+								</span>
+								<span class="qnt-minus">
+									<svg class="">
+										<use xlink:href="#icon-minus"></use>
+									</svg>
+								</span>
+							</div>
 						</div>
 					</div>
 					<!--
@@ -278,50 +381,7 @@
 		<!--b-gallery-->
 		<section class="section b-gallery">
 			<div class="l-container">
-				<!-- Slider main wrapper -->
-				<div class="swiper-container-wrapper">
-					<!-- Slider main container -->
-					<div class="swiper-container gallery-top">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">
-								<div class="gallery-top__image" style="background-image: url(./images/dist/sky.jpg)"></div>
-							</div>
-							<div class="swiper-slide">
-								<div class="gallery-top__image" style="background-image: url(./images/dist/sky.jpg)"></div>
-							</div>
-							<div class="swiper-slide">
-								<div class="gallery-top__image" style="background-image: url(./images/dist/sky.jpg)"></div>
-							</div>
-							<div class="swiper-slide">
-								<div class="gallery-top__image" style="background-image: url(./images/dist/sky.jpg)"></div>
-							</div>
-							<div class="swiper-slide">
-								<div class="gallery-top__image" style="background-image: url(./images/dist/sky.jpg)"></div>
-							</div>
-							<div class="swiper-slide">
-								<div class="gallery-top__image" style="background-image: url(./images/dist/sky.jpg)"></div>
-							</div>
-						</div>
-						<!-- Add Arrows -->
-<!--						<div class="swiper-button-next"></div>-->
-<!--						<div class="swiper-button-prev"></div>-->
-					</div>
-					<!-- Slider thumbnail container -->
-					<div class="swiper-container gallery-thumbs">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">Slide 1</div>
-							<div class="swiper-slide">Slide 2</div>
-							<div class="swiper-slide">Slide 3</div>
-							<div class="swiper-slide">Slide 4</div>
-							<div class="swiper-slide">Slide 5</div>
-							<div class="swiper-slide">Slide 6</div>
-						</div>
-					</div>
-				</div>
+				галерея
 			</div>
 		</section>
 		<!--end b-gallery-->
@@ -808,8 +868,10 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="js/libs/swiper/swiper-bundle.js"></script>
 	<script src="js/libs/magnific/jquery.magnific-popup.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/i18n/datepicker-ru.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 	<script src="js/common.js"></script>
-
 </body>
 </html>
 
@@ -1143,5 +1205,13 @@
 	</symbol>
 	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 10" id="icon-corner">
 		<path d="m.74 8.698 3.52-3.53-3.52-3.53" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" id="icon-plus">
+		<path d="M6 15.167h4c3.333 0 4.666-1.334 4.666-4.667v-4c0-3.333-1.333-4.667-4.666-4.667H6c-3.334 0-4.667 1.334-4.667 4.667v4c0 3.333 1.333 4.667 4.667 4.667Z" fill="#ACB0B3"></path>
+		<path d="M5.333 8.5h5.333M8 11.167V5.833" stroke="#fff" stroke-width=".844" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" id="icon-minus">
+		<path d="M6 15.167h4c3.333 0 4.666-1.334 4.666-4.667v-4c0-3.333-1.333-4.667-4.666-4.667H6c-3.334 0-4.667 1.334-4.667 4.667v4c0 3.333 1.333 4.667 4.667 4.667Z" fill="#ACB0B3"></path>
+		<path d="M5.333 8.5h5.333" stroke="#fff" stroke-width=".844" stroke-linecap="round" stroke-linejoin="round"></path>
 	</symbol>
 </svg>

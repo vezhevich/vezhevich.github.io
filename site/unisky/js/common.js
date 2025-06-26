@@ -37,6 +37,18 @@ $(function () {
 			slidesPerView: "auto",
 			freeMode: true,
 			spaceBetween: 7,
+			grid: {
+				rows: 2,
+				fill: "row",
+			},
+			breakpoints: {
+				760: {
+					grid: {
+						rows: 1,
+						fill: "row",
+					},
+				}
+			}
 		});	
 	}
 });
@@ -348,4 +360,147 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (menuContainer.querySelector('.b-mobile-menu__nav-menu')) {
 		menuContainer.querySelector('.b-mobile-menu__nav-menu').style.overflow = 'auto';
 	}
+});
+
+// datepicker
+$(function() {
+	$(".js-datepicker").datepicker({
+		dateFormat: "dd MM",
+		firstDay: 1,
+		minDate: 0,
+		monthNames: ["января", "февраля", "марта", "апреля", "мая", "июня",
+			"июля", "августа", "сентября", "октября", "ноября", "декабря"],
+		monthNamesShort: ["Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+			"Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"],
+		dayNames: ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"],
+		dayNamesShort: ["вск", "пнд", "втр", "срд", "чтв", "птн", "сбт"],
+		dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+		closeText: "Закрыть",
+		currentText: "Сегодня",
+		prevText: "Пред",
+		nextText: "След",
+
+		beforeShow: function(input, inst) {
+			requestAnimationFrame(function() {
+				var $picker = inst.dpDiv;
+				var inputTop = $(input).offset().top;
+				var pickerTop = $picker.offset().top;
+
+				$picker.toggleClass('up', pickerTop < inputTop)
+					.toggleClass('down', pickerTop >= inputTop);
+			});
+		},
+		onClose: function() {
+			// Удаляем классы через анимационный фрейм для надёжности
+			requestAnimationFrame(function() {
+				$(".ui-datepicker").removeClass("up down");
+			});
+		}
+	});
+});
+
+// tooltip
+document.addEventListener('DOMContentLoaded', function() {
+	const bookingFields = document.querySelectorAll('.js-booking-field');
+
+	bookingFields.forEach(field => {
+		const input = field.querySelector('.js-input');
+		const tooltip = field.querySelector('.js-tooltip');
+		let tooltipClick = false;
+
+		if (!input || !tooltip) return;
+
+		// Функция для обновления позиции tooltip
+		const updateTooltipPosition = () => {
+			const inputRect = input.getBoundingClientRect();
+			const spaceBelow = window.innerHeight - inputRect.bottom;
+			const tooltipHeight = tooltip.offsetHeight || 50;
+
+			tooltip.classList.remove('b-tooltip--top', 'b-tooltip--bottom');
+
+			if (spaceBelow < tooltipHeight + 20) {
+				tooltip.classList.add('b-tooltip--top');
+			} else {
+				tooltip.classList.add('b-tooltip--bottom');
+			}
+		};
+
+		// Показываем tooltip
+		const showTooltip = () => {
+			updateTooltipPosition();
+			tooltip.classList.add('is-visible');
+		};
+
+		// Скрываем tooltip с проверкой
+		const hideTooltip = () => {
+			if (!tooltipClick) {
+				tooltip.classList.remove('is-visible');
+			}
+		};
+
+		// События для input
+		input.addEventListener('focus', showTooltip);
+		input.addEventListener('blur', hideTooltip);
+
+		// События для tooltip
+		tooltip.addEventListener('mousedown', (e) => {
+			tooltipClick = true;
+			e.preventDefault(); // Предотвращаем потерю фокуса
+		});
+
+		tooltip.addEventListener('mouseup', () => {
+			setTimeout(() => {
+				tooltipClick = false;
+			}, 100);
+		});
+
+		// Закрытие при клике вне input и tooltip
+		document.addEventListener('click', (e) => {
+			if (!field.contains(e.target) && !tooltip.contains(e.target)) {
+				tooltip.classList.remove('is-visible');
+			}
+		});
+
+		// Обновляем позицию при изменении размера окна
+		window.addEventListener('resize', () => {
+			if (tooltip.classList.contains('is-visible')) {
+				updateTooltipPosition();
+			}
+		});
+	});
+});
+
+// добавление пассажира
+document.addEventListener('DOMContentLoaded', function() {
+	const input = document.querySelector('.b-booking__qnt .input');
+	const plusBtn = document.querySelector('.qnt-plus');
+	const minusBtn = document.querySelector('.qnt-minus');
+
+	// Обработчики для кнопок + и -
+	plusBtn.addEventListener('click', function() {
+		let value = parseInt(input.value) || 0;
+		input.value = value + 1;
+	});
+
+	minusBtn.addEventListener('click', function() {
+		let value = parseInt(input.value) || 0;
+		if (value > 1) {
+			input.value = value - 1;
+		}
+	});
+
+	// Запрет ввода нечисловых значений
+	input.addEventListener('input', function() {
+		this.value = this.value.replace(/[^0-9]/g, '');
+		if (this.value === '' || parseInt(this.value) < 1) {
+			this.value = 1;
+		}
+	});
+
+	// При потере фокуса проверяем значение
+	input.addEventListener('blur', function() {
+		if (this.value === '' || parseInt(this.value) < 1) {
+			this.value = 1;
+		}
+	});
 });
