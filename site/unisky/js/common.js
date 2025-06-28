@@ -437,6 +437,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	const plusBtn = document.querySelector('.qnt-plus');
 	const minusBtn = document.querySelector('.qnt-minus');
 
+	// Если нет нужных элементов - выходим без ошибок
+	if (!input || !plusBtn || !minusBtn) return;
+
 	// Обработчики для кнопок + и -
 	plusBtn.addEventListener('click', function() {
 		let value = parseInt(input.value) || 0;

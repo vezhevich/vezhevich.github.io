@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/unisky/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/css/app.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/unisky/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/js/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
       <workItem from="1750909666901" duration="28000" />
       <workItem from="1750932085461" duration="41000" />
       <workItem from="1750959267958" duration="29000" />
+      <workItem from="1751030234522" duration="23000" />
     </task>
     <servers />
   </component>
