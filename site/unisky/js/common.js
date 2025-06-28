@@ -546,7 +546,7 @@ $(function() {
 });
 
 
-
+//button-up
 const buttonUp = document.querySelector('.button-up');
 
 // Показываем/скрываем кнопку при прокрутке
