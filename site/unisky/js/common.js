@@ -544,3 +544,24 @@ $(function() {
 		});
 	}
 });
+
+
+
+const buttonUp = document.querySelector('.button-up');
+
+// Показываем/скрываем кнопку при прокрутке
+window.addEventListener('scroll', function() {
+	if (window.pageYOffset > 300) {
+		buttonUp.classList.add('visible');
+	} else {
+		buttonUp.classList.remove('visible');
+	}
+});
+
+// Плавный скролл вверх при клике
+buttonUp.addEventListener('click', function() {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+});
