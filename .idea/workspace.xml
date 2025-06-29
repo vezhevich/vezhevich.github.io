@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/css/app.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/unisky/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/js/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration>$PROJECT_DIR$/../.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +61,7 @@
       <workItem from="1751030234522" duration="23000" />
       <workItem from="1751124540953" duration="28000" />
       <workItem from="1751125487708" duration="22000" />
+      <workItem from="1751126121865" duration="27000" />
     </task>
     <servers />
   </component>
