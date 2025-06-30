@@ -475,14 +475,11 @@ $(function() {
 		var galleryThumbs, galleryMain;
 
 		function initSwipers() {
-			// Уничтожаем старые экземпляры, если они существуют
 			if (galleryThumbs) galleryThumbs.destroy(true, true);
 			if (galleryMain) galleryMain.destroy(true, true);
 
-			// Определяем направление в зависимости от ширины окна
 			var direction = window.innerWidth >= 1500 ? 'vertical' : 'horizontal';
 
-			// Инициализируем thumbs swiper
 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
 				centeredSlides: true,
 				centeredSlidesBounds: true,
@@ -496,7 +493,20 @@ $(function() {
 					0: {
 						direction: "horizontal",
 						spaceBetween: 0,
-						slidesPerView: 3,
+						slidesOffsetBefore: 1,
+						slidesOffsetAfter: 150,
+					},
+					700: {
+						slidesOffsetBefore: 1,
+						slidesOffsetAfter: 300,
+					},
+					1000: {
+						slidesOffsetBefore: 1,
+						slidesOffsetAfter: 400,
+					},
+					1200: {
+						slidesOffsetBefore: 1,
+						slidesOffsetAfter: 550,
 					},
 					1500: {
 						direction: 'vertical',
@@ -504,7 +514,6 @@ $(function() {
 				}
 			});
 
-			// Инициализируем main swiper
 			galleryMain = new Swiper(".b-gallery__main", {
 				watchOverflow: true,
 				watchSlidesVisibility: true,
@@ -535,10 +544,8 @@ $(function() {
 			});
 		}
 
-		// Инициализируем при загрузке
 		initSwipers();
 
-		// Обновляем при ресайзе
 		$(window).on('resize', function() {
 			initSwipers();
 		});
@@ -549,7 +556,6 @@ $(function() {
 //button-up
 const buttonUp = document.querySelector('.button-up');
 
-// Показываем/скрываем кнопку при прокрутке
 window.addEventListener('scroll', function() {
 	if (window.pageYOffset > 300) {
 		buttonUp.classList.add('visible');
@@ -558,7 +564,6 @@ window.addEventListener('scroll', function() {
 	}
 });
 
-// Плавный скролл вверх при клике
 buttonUp.addEventListener('click', function() {
 	window.scrollTo({
 		top: 0,
