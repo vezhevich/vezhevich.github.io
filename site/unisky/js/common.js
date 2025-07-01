@@ -139,7 +139,7 @@ $(function () {
 					slidesPerView: "auto",
 					freeMode: true,
 				},
-				1500: {
+				1280: {
 					slidesPerView: 5,
 					freeMode: false,
 				},
@@ -154,7 +154,7 @@ $(function() {
 		var popularSlider = null;
 
 		function initSwiper() {
-			if ($(window).width() < 1500) {
+			if ($(window).width() < 1280) {
 				if (!popularSlider) {
 					popularSlider = new Swiper('.js-popular-services__slider', {
 						slidesPerView: "auto",
@@ -478,7 +478,7 @@ $(function() {
 			if (galleryThumbs) galleryThumbs.destroy(true, true);
 			if (galleryMain) galleryMain.destroy(true, true);
 
-			var direction = window.innerWidth >= 1500 ? 'vertical' : 'horizontal';
+			var direction = window.innerWidth >= 1280 ? 'vertical' : 'horizontal';
 
 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
 				centeredSlides: true,
@@ -508,7 +508,7 @@ $(function() {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 550,
 					},
-					1500: {
+					1280: {
 						direction: 'vertical',
 					}
 				}
@@ -520,7 +520,7 @@ $(function() {
 				watchSlidesProgress: true,
 				preventInteractionOnTransition: true,
 				effect: 'fade',
-				mousewheel: true,
+				mousewheel: false,
 				direction: "vertical",
 				fadeEffect: {
 					crossFade: true
@@ -532,6 +532,17 @@ $(function() {
 					el: ".swiper-scrollbar",
 					draggable: true,
 					dragSize: 74,
+				},
+				breakpoints: {
+					0: {
+						direction: "horizontal",
+						pagination: {
+							el: ".b-gallery-pagination",
+						}
+					},
+					1280: {
+						direction: "vertical",
+					}
 				},
 			});
 
@@ -568,5 +579,26 @@ buttonUp.addEventListener('click', function() {
 	window.scrollTo({
 		top: 0,
 		behavior: 'smooth'
+	});
+});
+
+// виджет на сайте
+document.addEventListener('DOMContentLoaded', function() {
+	// Находим элементы
+	const showBtn = document.querySelector('.js-show-ctn');
+	const hideBtn = document.querySelector('.js-hide-ctn');
+	const circle = document.querySelector('.b-widget__circle');
+	const ctn = document.querySelector('.b-widget__ctn');
+
+	// Обработчик для показа контейнера и скрытия круга
+	showBtn.addEventListener('click', function() {
+		circle.classList.add('hide');
+		ctn.classList.add('visible');
+	});
+
+	// Обработчик для скрытия контейнера и показа круга
+	hideBtn.addEventListener('click', function() {
+		ctn.classList.remove('visible');
+		circle.classList.remove('hide');
 	});
 });
