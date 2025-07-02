@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
 
@@ -10,12 +10,10 @@
 	<title>Главная страница</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/app.min.css">
 	
 
@@ -66,6 +64,9 @@
 		<section class="section b-promo" style="background-image: url(./images/dist/promo.jpg)">
 			<div class="l-container">
 				<div class="b-promo__wrapper">
+					<h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">
+						UNISKY
+					</h1>
 					<div class="b-promo__logo">
 						<img src="./images/svg/logo.svg" alt="">
 					</div>
@@ -83,7 +84,7 @@
 							<!--b-tooltip-->
 							<div class="b-tooltip b-tooltip_first js-tooltip">
 								<div class="b-tooltip__ctn">
-									<div calss="b-tooltip__list">
+									<div class="b-tooltip__list">
 										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
 											<div class="b-tooltip__list-item-head">
 												Москва <span class="b-tooltip__list-abb">MOW</span>
@@ -133,7 +134,7 @@
 							<!--b-tooltip-->
 							<div class="b-tooltip b-tooltip_second js-tooltip">
 								<div class="b-tooltip__ctn">
-									<div calss="b-tooltip__list">
+									<div class="b-tooltip__list">
 										<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
 											<div class="b-tooltip__list-item-head">
 												Москва <span class="b-tooltip__list-abb">MOW</span>
@@ -304,12 +305,12 @@
 			</div>
 		</section>
 		<!--end b-promo-->
-		
+
+		<!--b-services-slider-->
 		<section class="section section-service-slider">
 			<div class="l-container l-container_inner">
 				<!--обертка для кастомной навигации swiper-->
 				<div class="wrapper-slider-custom-navigation">
-					<!--b-services-slider-->
 					<div class="b-services-slider swiper js-services-slider">
 						<div class="swiper-wrapper b-services-slider__wrapper">
 							<div class="swiper-slide b-services-slider__slide">
@@ -405,11 +406,11 @@
 							<use xlink:href="#icon-arrow-right"></use>
 						</svg>
 					</div>
-					<!--end b-services-slider-->
 				</div>
 			</div>
 		</section>
-
+		<!--end b-services-slider-->
+		
 		<!--b-gallery-->
 		<section class="section b-gallery">
 			<div class="l-container">
@@ -725,7 +726,6 @@
 		</section>
 		<!--end b-company-strengths-->
 		
-		
 		<!--b-media-->
 		<section class="section b-media">
 			<div class="b-media__bg" style="background-image: url(./images/dist/team.jpg)"></div>
@@ -768,13 +768,13 @@
 				<div class="b-articles__head">
 					<h2 class="b-articles__title">Актуальное <br> о бизнес-авиации</h2>
 					<div class="b-articles__group">
-						<a href="#" class="btn-reset btn-blue btn-icon-right btn-icon-right_inner" type="button">
+						<a href="#" class="btn-reset btn-blue btn-icon-right btn-icon-right_inner">
 							Все статьи
 							<svg class="icon">
 								<use xlink:href="#icon-arrow-right"></use>
 							</svg>
 						</a>
-						<a href="#" class="btn-reset btn-blue btn-blue_light" type="button">Название кнопки</a>
+						<a href="#" class="btn-reset btn-blue btn-blue_light">Название кнопки</a>
 					</div>
 				</div>
 				<div class="b-articles__slider js-articles__slider swiper">
@@ -1091,7 +1091,7 @@
 							<use xlink:href="#icon-wapp"></use>
 						</svg>
 					</a>
-					<a href="#" class="btn-reset btn-icon-right btn-white btn-white_inner hidden-xs" type="button">
+					<a href="#" class="btn-reset btn-icon-right btn-white btn-white_inner hidden-xs">
 						Заказать рейс
 						<svg class="icon">
 							<use xlink:href="#icon-gas-station"></use>
@@ -1140,17 +1140,6 @@
 	<!--end button-up-->
 </div>
 
-<!--scripts-->
-
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="js/libs/swiper/swiper-bundle.js"></script>
-	<script src="js/libs/magnific/jquery.magnific-popup.js"></script>
-	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/i18n/datepicker-ru.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-	<script src="js/common.js"></script>
-</body>
-</html>
 
 <!--modals-->
 <!--мобильное меню-->
@@ -1511,3 +1500,13 @@
 		<path d="M16.5 21.083h-1.833v-.916H7.333v.916H5.5v-.916h-.917a1.833 1.833 0 0 1-1.833-1.834V6.417a1.833 1.833 0 0 1 1.833-1.834h2.75V2.75a.917.917 0 0 1 .917-.917h5.5a.917.917 0 0 1 .917.917v1.833h2.75a1.833 1.833 0 0 1 1.833 1.834v11.916a1.833 1.833 0 0 1-1.833 1.834H16.5v.916ZM9.167 8.25H7.333v8.25h1.834V8.25Zm5.5 0h-1.834v8.25h1.834V8.25Zm-1.834-4.583H9.167v.916h3.666v-.916Z" fill="#fff"></path>
 	</symbol>
 </svg>
+
+<!--scripts-->
+
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="js/libs/swiper/swiper-bundle.js"></script>
+		<script src="js/libs/magnific/jquery.magnific-popup.js"></script>
+		<script src="js/libs/jquery-ui/jquery-ui.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
