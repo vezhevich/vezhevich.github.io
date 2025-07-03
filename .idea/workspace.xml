@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-square-left-hover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-square-left-hover.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-square-right-hover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/svg/icon-arrow-square-right-hover.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +77,7 @@
       <workItem from="1751453458597" duration="341000" />
       <workItem from="1751458319337" duration="277000" />
       <workItem from="1751459727888" duration="2000" />
+      <workItem from="1751466748619" duration="40000" />
     </task>
     <servers />
   </component>
