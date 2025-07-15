@@ -418,10 +418,17 @@
 					<div class="swiper-container b-gallery__main">
 						<div class="swiper-wrapper">
 							<div class="b-gallery__slide swiper-slide">
-								<div class="b-gallery__slide-img" style="background-image: url(./images/dist/airplane1.jpg)">1</div>
+								<div class="b-gallery__slide-img">
+									1
+								</div>
 							</div>
 							<div class="b-gallery__slide swiper-slide">
-								<div class="b-gallery__slide-img">2</div>
+								<div class="b-gallery__slide-img">
+									<picture>
+										<source media="(max-width: 1279px)" srcset="./images/dist/airplane2.jpg">
+										<img src="./images/dist/airplane1.jpg" alt="">
+									</picture>
+								</div>
 							</div>
 							<div class="b-gallery__slide swiper-slide">
 								<div class="b-gallery__slide-img">3</div>
@@ -454,7 +461,7 @@
 						<div class="swiper-container b-gallery__thumbs">
 							<div class="swiper-wrapper b-gallery__thumbs-wrapper">
 								<div class="swiper-slide b-gallery__thumbs-slide">
-									<div class="b-gallery__thumbs-img" style="background-image: url(./images/dist/airplane1.jpg)">1</div>
+									<div class="b-gallery__thumbs-img">1</div>
 									<div class="b-gallery__thumbs-text">
 										<div class="b-gallery__thumbs-teaser">
 											Super Midsize Jets
@@ -465,7 +472,7 @@
 									</div>
 								</div>
 								<div class="swiper-slide b-gallery__thumbs-slide">
-									<div class="b-gallery__thumbs-img">2</div>
+									<div class="b-gallery__thumbs-img" style="background-image: url(./images/dist/airplane1.jpg)">2</div>
 									<div class="b-gallery__thumbs-text">
 										<div class="b-gallery__thumbs-teaser">
 											Super Midsize Jets

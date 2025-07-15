@@ -480,6 +480,7 @@ $(function() {
 
 			var direction = window.innerWidth >= 1280 ? 'vertical' : 'horizontal';
 
+			// Инициализация thumbs слайдера
 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
 				centeredSlides: true,
 				centeredSlidesBounds: true,
@@ -489,6 +490,7 @@ $(function() {
 				watchSlidesProgress: true,
 				spaceBetween: 10,
 				direction: "horizontal",
+				initialSlide: 1, // Всегда стартуем со второго слайда
 				breakpoints: {
 					0: {
 						direction: "horizontal",
@@ -514,6 +516,7 @@ $(function() {
 				}
 			});
 
+			// Инициализация main слайдера
 			galleryMain = new Swiper(".b-gallery__main", {
 				watchOverflow: true,
 				watchSlidesVisibility: true,
@@ -522,6 +525,7 @@ $(function() {
 				effect: 'fade',
 				mousewheel: false,
 				direction: "vertical",
+				initialSlide: 1, // Всегда стартуем со второго слайда
 				fadeEffect: {
 					crossFade: true
 				},
@@ -562,7 +566,6 @@ $(function() {
 		});
 	}
 });
-
 
 //button-up
 const buttonUp = document.querySelector('.button-up');
