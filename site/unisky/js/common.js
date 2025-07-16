@@ -470,103 +470,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // gallery
-// $(function() {
-// 	if ($('.b-gallery__thumbs').length > 0) {
-// 		var galleryThumbs, galleryMain;
-//
-// 		function initSwipers() {
-// 			if (galleryThumbs) galleryThumbs.destroy(true, true);
-// 			if (galleryMain) galleryMain.destroy(true, true);
-//
-// 			var direction = window.innerWidth >= 1280 ? 'vertical' : 'horizontal';
-//
-// 			// Инициализация thumbs слайдера
-// 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
-// 				centeredSlides: true,
-// 				centeredSlidesBounds: true,
-// 				slidesPerView: 3,
-// 				watchOverflow: true,
-// 				watchSlidesVisibility: true,
-// 				watchSlidesProgress: true,
-// 				spaceBetween: 10,
-// 				direction: "horizontal",
-// 				initialSlide: 1, // Всегда стартуем со второго слайда
-// 				breakpoints: {
-// 					0: {
-// 						direction: "horizontal",
-// 						spaceBetween: 0,
-// 						slidesOffsetBefore: 1,
-// 						slidesOffsetAfter: 150,
-// 					},
-// 					700: {
-// 						slidesOffsetBefore: 1,
-// 						slidesOffsetAfter: 300,
-// 					},
-// 					1000: {
-// 						slidesOffsetBefore: 1,
-// 						slidesOffsetAfter: 400,
-// 					},
-// 					1200: {
-// 						slidesOffsetBefore: 1,
-// 						slidesOffsetAfter: 550,
-// 					},
-// 					1280: {
-// 						direction: 'vertical',
-// 					}
-// 				}
-// 			});
-//
-// 			// Инициализация main слайдера
-// 			galleryMain = new Swiper(".b-gallery__main", {
-// 				watchOverflow: true,
-// 				watchSlidesVisibility: true,
-// 				watchSlidesProgress: true,
-// 				preventInteractionOnTransition: true,
-// 				effect: 'fade',
-// 				mousewheel: false,
-// 				direction: "vertical",
-// 				initialSlide: 1, // Всегда стартуем со второго слайда
-// 				fadeEffect: {
-// 					crossFade: true
-// 				},
-// 				thumbs: {
-// 					swiper: galleryThumbs
-// 				},
-// 				scrollbar: {
-// 					el: ".swiper-scrollbar",
-// 					draggable: true,
-// 					dragSize: 74,
-// 				},
-// 				breakpoints: {
-// 					0: {
-// 						direction: "horizontal",
-// 						pagination: {
-// 							el: ".b-gallery-pagination",
-// 						}
-// 					},
-// 					1280: {
-// 						direction: "vertical",
-// 					}
-// 				},
-// 			});
-//
-// 			galleryMain.on('slideChangeTransitionStart', function() {
-// 				galleryThumbs.slideTo(galleryMain.activeIndex);
-// 			});
-//
-// 			galleryThumbs.on('transitionStart', function(){
-// 				galleryMain.slideTo(galleryThumbs.activeIndex);
-// 			});
-// 		}
-//
-// 		initSwipers();
-//
-// 		$(window).on('resize', function() {
-// 			initSwipers();
-// 		});
-// 	}
-// });
-
 $(function() {
 	if ($('.b-gallery__thumbs').length > 0) {
 		var galleryThumbs, galleryMain;
@@ -663,6 +566,101 @@ $(function() {
 		});
 	}
 });
+
+// $(function() {
+// 	if ($('.b-gallery__thumbs').length > 0) {
+// 		var galleryThumbs, galleryMain;
+//
+// 		function initSwipers() {
+// 			if (galleryThumbs) galleryThumbs.destroy(true, true);
+// 			if (galleryMain) galleryMain.destroy(true, true);
+//
+// 			var direction = window.innerWidth >= 1280 ? 'vertical' : 'horizontal';
+//
+// 			// Инициализация thumbs слайдера
+// 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
+// 				centeredSlides: true,
+// 				centeredSlidesBounds: true,
+// 				slidesPerView: 'auto',
+// 				watchOverflow: true,
+// 				watchSlidesVisibility: true,
+// 				watchSlidesProgress: true,
+// 				spaceBetween: 10,
+// 				direction: "horizontal",
+// 				breakpoints: {
+// 					0: {
+// 						direction: "horizontal",
+// 						spaceBetween: 0,
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 150,
+// 					},
+// 					700: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 300,
+// 					},
+// 					1000: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 400,
+// 					},
+// 					1200: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 550,
+// 					},
+// 					1280: {
+// 						direction: 'vertical',
+// 					}
+// 				}
+// 			});
+//
+// 			// Инициализация main слайдера
+// 			galleryMain = new Swiper(".b-gallery__main", {
+// 				watchOverflow: true,
+// 				watchSlidesVisibility: true,
+// 				watchSlidesProgress: true,
+// 				preventInteractionOnTransition: true,
+// 				effect: 'fade',
+// 				mousewheel: false,
+// 				direction: "vertical",
+// 				fadeEffect: {
+// 					crossFade: true
+// 				},
+// 				thumbs: {
+// 					swiper: galleryThumbs
+// 				},
+// 				scrollbar: {
+// 					el: ".swiper-scrollbar",
+// 					draggable: true,
+// 					dragSize: 74,
+// 				},
+// 				breakpoints: {
+// 					0: {
+// 						direction: "horizontal",
+// 						pagination: {
+// 							el: ".b-gallery-pagination",
+// 						}
+// 					},
+// 					1280: {
+// 						direction: "vertical",
+// 					}
+// 				},
+// 			});
+//
+// 			galleryMain.on('slideChangeTransitionStart', function() {
+// 				galleryThumbs.slideTo(galleryMain.activeIndex);
+// 			});
+//
+// 			galleryThumbs.on('transitionStart', function(){
+// 				galleryMain.slideTo(galleryThumbs.activeIndex);
+// 			});
+// 		}
+//
+// 		initSwipers();
+//
+// 		$(window).on('resize', function() {
+// 			initSwipers();
+// 		});
+// 	}
+// });
 
 //button-up
 const buttonUp = document.querySelector('.button-up');
