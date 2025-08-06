@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/director.png" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/dist/director.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/leader1.png" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/dist/leader1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/leader2.png" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/dist/leader2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/css/app.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/all-team.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/dist/all-team.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/all-team.png" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/dist/all-team.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +87,7 @@
       <workItem from="1752664366522" duration="34000" />
       <workItem from="1752665530384" duration="35000" />
       <workItem from="1753072783279" duration="27000" />
+      <workItem from="1754367076427" duration="31000" />
     </task>
     <servers />
   </component>
