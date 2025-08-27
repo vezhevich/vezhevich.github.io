@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/unisky/images/dist/company-strengths.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/unisky/images/dist/company-strengths.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="440fd7a1-7406-4865-a432-0b803922ee5e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +90,7 @@
       <workItem from="1756288403942" duration="28000" />
       <workItem from="1756288964684" duration="138000" />
       <workItem from="1756295398945" duration="24000" />
+      <workItem from="1756303514527" duration="137000" />
     </task>
     <servers />
   </component>
