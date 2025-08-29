@@ -35,7 +35,9 @@ $(function () {
 	if ($('.js-partner-slider').length > 0) {
 		var swiper = new Swiper('.js-partner-slider', {
 			slidesPerView: "auto",
-			freeMode: true,
+			freeMode: false,
+			centeredSlides: true,
+			centeredSlidesBounds: true,
 			spaceBetween: 7,
 			grid: {
 				rows: 2,
@@ -43,6 +45,10 @@ $(function () {
 			},
 			breakpoints: {
 				760: {
+					slidesPerView: "auto",
+					centeredSlides: false,
+					centeredSlidesBounds: false,
+					freeMode: true,
 					grid: {
 						rows: 1,
 						fill: "row",
@@ -483,35 +489,55 @@ $(function() {
 			// Инициализация thumbs слайдера
 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
 				centeredSlides: true,
-				centeredSlidesBounds: true,
+				centeredSlidesBounds: false,
 				slidesPerView: 3,
 				watchOverflow: true,
 				watchSlidesVisibility: true,
 				watchSlidesProgress: true,
 				spaceBetween: 10,
-				direction: "horizontal",
 				initialSlide: 1, // Всегда стартуем со второго слайда
+				mousewheel: {
+					forceToAxis: true,
+					sensitivity: 1,
+					releaseOnEdges: true, // Важно для прокрутки за пределы слайдов
+				},
+				direction: "horizontal",
 				breakpoints: {
 					0: {
 						direction: "horizontal",
 						spaceBetween: 0,
 						slidesOffsetBefore: 1,
-						slidesOffsetAfter: 150,
+						slidesOffsetAfter: 180,
+						centeredSlidesBounds: true,
+					},
+					500: {
+						slidesOffsetBefore: 1,
+						slidesOffsetAfter: 200,
+						centeredSlidesBounds: true,
+					},
+					600: {
+						slidesOffsetBefore: 1,
+						slidesOffsetAfter: 250,
+						centeredSlidesBounds: true,
 					},
 					700: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 300,
+						centeredSlidesBounds: true,
 					},
 					1000: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 400,
+						centeredSlidesBounds: true,
 					},
 					1200: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 550,
+						centeredSlidesBounds: true,
 					},
 					1280: {
 						direction: 'vertical',
+						centeredSlidesBounds: false,
 					}
 				}
 			});
