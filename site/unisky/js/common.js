@@ -631,3 +631,244 @@ document.addEventListener('DOMContentLoaded', function() {
 		circle.classList.remove('hide');
 	});
 });
+
+//catalog slider
+$(function () {
+	if ($('.js-catalog-slider').length > 0) {
+		var swiper = new Swiper('.js-catalog-slider', {
+			slidesPerView: "auto",
+			freeMode: true,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			navigation: {
+				nextEl: ".b-catalog-slider__button-next",
+				prevEl: ".b-catalog-slider__button-prev",
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 10,
+				},
+				760: {
+					spaceBetween: 10,
+				},
+				1500: {
+					spaceBetween: 10,
+				},
+				1920: {
+					spaceBetween: 30,
+				}
+			},
+		});
+	};
+});
+
+// toggle button content
+document.addEventListener('DOMContentLoaded', () => {
+  const leftBlock = document.querySelector('.b-content__left');
+  const showBtn = document.querySelector('.b-content__toggle-btn.is-show');
+  const hideBtn = document.querySelector('.b-content__toggle-btn.is-hide');
+
+  // Показать больше
+  showBtn?.addEventListener('click', () => {
+    leftBlock.classList.add('is-expanded');
+  });
+
+  // Скрыть
+  hideBtn?.addEventListener('click', () => {
+    leftBlock.classList.remove('is-expanded');
+    // Прокрутка к началу блока (опционально, красиво)
+    leftBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+
+// Только для разрешений ≥ 1280px
+(function () {
+  const container = document.querySelector('.b-catalog__list-cols3');
+  if (!container) {
+    console.warn('Контейнер .b-catalog__list-cols3 не найден');
+    return;
+  }
+
+  const lastItem = container.querySelector('.b-catalog__list-item_last');
+  if (!lastItem) {
+    console.warn('Элемент .b-catalog__list-item_last не найден');
+    return;
+  }
+
+  function updateLastSpan() {
+    const width = window.innerWidth;
+    const isDesktop = width >= 1280;
+
+    console.log(`[updateLastSpan] ширина экрана: ${width}px → isDesktop: ${isDesktop}`);
+
+    if (!isDesktop) {
+      if (lastItem.style.gridColumn) {
+        console.log('Сброс grid-column (не десктоп)');
+        lastItem.style.gridColumn = '';
+      }
+      return;
+    }
+
+    // Считаем карточки .inner
+    const innerItems = container.querySelectorAll('.b-catalog__list-item_inner');
+    const count = innerItems.length;
+
+    console.log(`Количество .inner карточек: ${count}`);
+
+    if (count === 0) {
+      console.log('last — единственная → 1 / -1');
+      lastItem.style.gridColumn = '1 / -1';
+      return;
+    }
+
+    const remainder = count % 3;
+    console.log(`remainder = ${remainder}`);
+
+    let spanStart = 1;
+
+    if (remainder === 0) {
+      spanStart = 1; // новый ряд → вся ширина
+      console.log('remainder 0 → span 1 / -1');
+    } else if (remainder === 1) {
+      spanStart = 2; // центр + правая
+      console.log('remainder 1 → span 2 / -1');
+    } else if (remainder === 2) {
+      spanStart = 3; // только правая
+      console.log('remainder 2 → span 3 / -1');
+    }
+
+    const newValue = `${spanStart} / -1`;
+    console.log(`Устанавливаем grid-column: ${newValue}`);
+
+    lastItem.style.gridColumn = newValue;
+  }
+
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOMContentLoaded → первый вызов');
+      updateLastSpan();
+    });
+  } else {
+    console.log('Страница уже загружена → первый вызов');
+    updateLastSpan();
+  }
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      console.log('resize → пересчёт');
+      updateLastSpan();
+    }, 150);
+  });
+
+  const observer = new MutationObserver(() => {
+    console.log('MutationObserver → пересчёт');
+    requestAnimationFrame(updateLastSpan);
+  });
+
+  observer.observe(container, { childList: true, subtree: true });
+})();
+
+
+// Функция определения ширины последней карточки в диапазоне 760–1279px
+function adjustLastCardWidth() {
+  const container = document.querySelector('.b-catalog__list-cols3');
+  if (!container) return;
+
+  const lastItem = container.querySelector('.b-catalog__list-item_last');
+  if (!lastItem) return;
+
+  // Только в диапазоне 761–1280 px
+  const isMedium = window.matchMedia('(min-width: 760px) and (max-width: 1279px)').matches;
+  if (!isMedium) {
+    lastItem.style.flex = '';
+    lastItem.style.maxWidth = '';
+    lastItem.classList.remove('last-narrow-40', 'last-narrow-50');
+    return;
+  }
+
+  // Количество обычных карточек (.inner) перед last
+  const innerItems = container.querySelectorAll('.b-catalog__list-item_inner');
+  const count = innerItems.length;
+
+  if (count === 0) {
+    // last — единственная → 100%
+    lastItem.style.flex = '0 0 100%';
+    lastItem.style.maxWidth = '100%';
+    lastItem.classList.remove('last-narrow-40', 'last-narrow-50');
+    return;
+  }
+
+  // Позиция последней обычной карточки в последовательности (1-based)
+  const lastInnerPosition = count;
+
+  // Определяем, была ли последняя карточка "первой" в своей паре
+  // Паттерн повторяется каждые 4 карточки:
+  // 1 → 60% (первая в 60/40)
+  // 2 → 40% (вторая)
+  // 3 → 50% (первая в 50/50)
+  // 4 → 50% (вторая)
+  const mod = (lastInnerPosition - 1) % 4; // 0,1,2,3
+
+  let narrowPercent = null;
+
+  if (mod === 0) {          // позиция 1,5,9,... → последняя была 60% → last должна быть 40%
+    narrowPercent = '40%';
+  } else if (mod === 2) {   // позиция 3,7,11,... → последняя была первая 50/50 → last должна быть 50%
+    narrowPercent = '50%';
+  }
+  // Если mod === 1 или 3 → последняя была второй в паре → last начинает новый ряд → 100%
+
+  if (narrowPercent) {
+    lastItem.style.flex = `0 0 calc(${narrowPercent} - 5px)`;
+    lastItem.style.maxWidth = `calc(${narrowPercent} - 5px)`;
+    lastItem.classList.add(narrowPercent === '40%' ? 'last-narrow-40' : 'last-narrow-50');
+    lastItem.classList.remove(narrowPercent === '40%' ? 'last-narrow-50' : 'last-narrow-40');
+  } else {
+    lastItem.style.flex = '0 0 100%';
+    lastItem.style.maxWidth = '100%';
+    lastItem.classList.remove('last-narrow-40', 'last-narrow-50');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', adjustLastCardWidth);
+
+window.addEventListener('resize', adjustLastCardWidth);
+
+const container = document.querySelector('.b-catalog__list-cols3');
+if (container) {
+  const observer = new MutationObserver(() => {
+    requestAnimationFrame(adjustLastCardWidth);
+  });
+
+  observer.observe(container, { childList: true, subtree: true });
+}
+
+//прокрутка до блока
+document.addEventListener('DOMContentLoaded', function () {
+  const anchorButtons = document.querySelectorAll('.js-anchor');
+
+  anchorButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector('.b-gallery');
+
+      if (target) {
+        const headerOffset = 0;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
