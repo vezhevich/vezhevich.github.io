@@ -860,7 +860,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const target = document.querySelector('.b-gallery');
 
       if (target) {
-        const headerOffset = 0;
+        const headerOffset = 140;
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
