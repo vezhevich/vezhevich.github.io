@@ -649,15 +649,28 @@ $(function () {
 			breakpoints: {
 				0: {
 					spaceBetween: 10,
+					slidesOffsetBefore: 0,
+					slidesOffsetAfter: 30,
 				},
 				760: {
 					spaceBetween: 10,
+					slidesOffsetBefore: 30,
+					slidesOffsetAfter: 30,
+				},
+				1280: {
+					spaceBetween: 10,
+					slidesOffsetBefore: 60,
+					slidesOffsetAfter: 30,
 				},
 				1500: {
 					spaceBetween: 10,
+					slidesOffsetBefore: 60,
+					slidesOffsetAfter: 30,
 				},
 				1920: {
 					spaceBetween: 30,
+					slidesOffsetBefore: 60,
+					slidesOffsetAfter: 30,
 				}
 			},
 		});
