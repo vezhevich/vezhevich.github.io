@@ -63,6 +63,16 @@
 		<!--b-promo-->
 		<section class="section b-promo b-promo_air-fleet-detail" style="background-image: url(./images/dist/air_fleet_detail.jpg)">
 			<div class="l-container">
+				<!--b-breadcrumb-->
+				<nav class="b-breadcrumb b-breadcrumb_modified">
+					<ul class="list_unstyle">
+						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="/">Главная</a></li>
+						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="air_fleet.html">Флот</a></li>
+						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link b-breadcrumb__link_active">Самолеты класса Light Jet</a></li>
+					</ul>
+				</nav>
+				<!--end b-breadcrumb-->
+
 				<div class="b-promo__wrapper">
 					<div class="b-promo__center">
 						<div class="b-promo__teaser">Самолеты класса </br> Light Jet</div>
@@ -117,21 +127,10 @@
 		</section>
 		<!--end b-promo-->
 
-		<!--b-breadcrumb-->
-		<div class="l-container l-container_inner-page">
-			<nav class="b-breadcrumb b-breadcrumb_modified">
-				<ul class="list_unstyle">
-					<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="/">Главная</a></li>
-					<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="air_fleet.html">Флот</a></li>
-					<li class="b-breadcrumb__item"><a class="b-breadcrumb__link b-breadcrumb__link_active">Самолеты класса Light Jet</a></li>
-				</ul>
-			</nav>
-		</div>
-		<!--end b-breadcrumb-->
-
-		<!--b-jet-preview-->
+		
 		<section class="section">
-			<div class="l-container l-container_inner-page">
+			<div class="l-container l-container_inner-page l-container_modified-xs">
+				<!--b-jet-preview-->
 				<div class="b-jet-preview">
 					<div class="b-jet-preview__item b-jet-preview__item_main">
 						<div class="b-jet-preview__wrapper">
@@ -152,10 +151,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="b-jet-preview__item" style="background-image: url('./images/dist/jet-preview1.jpg');"></div>
-					<div class="b-jet-preview__item" style="background-image: url('./images/dist/jet-preview2.jpg');"></div>
-					<div class="b-jet-preview__item b-jet-preview__item_lg" style="background-image: url('./images/dist/jet-preview3.jpg');"></div>
-					<div class="b-jet-preview__item">
+					<div class="b-jet-preview__item hidden-xs" style="background-image: url('./images/dist/jet-preview1.jpg');"></div>
+					<div class="b-jet-preview__item hidden-xs" style="background-image: url('./images/dist/jet-preview2.jpg');"></div>
+					<div class="b-jet-preview__item b-jet-preview__item_lg hidden-xs" style="background-image: url('./images/dist/jet-preview3.jpg');"></div>
+					<div class="b-jet-preview__item b-jet-preview__item_last">
 						<div class="b-jet-preview__item-list">
 							<div class="b-jet-preview__item-list-line">
 								<div class="b-jet-preview__item-list-line-left">
@@ -193,10 +192,22 @@
 						</div>
 					</div>
 				</div>
+				<!--end b-jet-preview-->
+				
+				<!--b-jet-preview-slider-->
+				<div class="b-jet-preview-slider swiper js-jet-preview-slider">
+					<div class="b-jet-preview-slider__wrpapper swiper-wrapper">
+						<div class="b-jet-preview-slider__slide swiper-slide" style="background-image: url('./images/dist/jet-preview1.jpg');"></div>
+						<div class="b-jet-preview-slider__slide swiper-slide" style="background-image: url('./images/dist/jet-preview2.jpg');"></div>
+						<div class="b-jet-preview-slider__slide swiper-slide" style="background-image: url('./images/dist/jet-preview3.jpg');"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--end b-jet-preview-slider-->
+
 			</div>
 		</section>
-		<!--end b-jet-preview-->	
-
+		
 		<!--b-gallery-->
 		<section class="section b-gallery">
 			<div class="l-container">

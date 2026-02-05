@@ -885,3 +885,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+//jet-preview-slider
+$(function () {
+    const $slider = $('.js-jet-preview-slider');
+    if ($slider.length === 0) return;
+
+    let swiper = null;
+
+    function initSwiper() {
+        if (swiper) return;
+
+        swiper = new Swiper($slider[0], {
+            slidesPerView: "auto",
+            freeMode: true,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+        });
+    }
+
+    function checkVisibilityAndInit() {
+        if ($slider.is(':visible')) {
+            setTimeout(() => {
+                initSwiper();
+            }, 100);
+        }
+    }
+
+    checkVisibilityAndInit();
+
+    let resizeTimer;
+    $(window).on('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(checkVisibilityAndInit, 150);
+    });
+});
