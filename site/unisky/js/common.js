@@ -926,3 +926,4 @@ $(function () {
         resizeTimer = setTimeout(checkVisibilityAndInit, 150);
     });
 });
+
