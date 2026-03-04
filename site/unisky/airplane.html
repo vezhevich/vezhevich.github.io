@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>О компании</title>
+	<title>Класс самолета</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +23,11 @@
 <div class="l-container-wrapper">
 	<main>
 		<!--b-header-->
-		<header class="b-header b-header_inner-page">
-	<div class="l-container l-container_inner-page">
+		<header class="b-header b-header_main">
+	<div class="l-container">
 		<div class="b-header__wrapper">
 			<div class="b-header__logo">
-				<a href="/">
-					<img src="./images/svg/logo_blue.svg" alt="">
-				</a>
+				<img src="./images/svg/logo_blue.svg" alt="">
 			</div>
 			<div class="b-header__hamb js-mobile-menu" data-mfp-src="#mobile-menu">
 				<svg class="b-header__hamb-icon icon">
@@ -38,7 +36,7 @@
 			</div>
 			<nav class="b-header__nav">
 				<ul class="list_unstyle b-header__nav-wrap">
-					<li class="b-header__nav-item"><a class="b-header__nav-link b-header__nav-link_active" href="/">Главная</a></li>
+					<li class="b-header__nav-item hidden-md"><a class="b-header__nav-link b-header__nav-link_active" href="#">Главная</a></li>
 					<li class="b-header__nav-item"><a class="b-header__nav-link" href="#">Услуги</a></li>
 					<li class="b-header__nav-item"><a class="b-header__nav-link" href="#">Флот</a></li>
 					<li class="b-header__nav-item"><a class="b-header__nav-link" href="about.html">О компании</a></li>
@@ -54,575 +52,727 @@
 				</span>
 					+7 495 260 60 08
 				</a>
-				<button type="button" class="b-header__feedback btn-reset btn-blue">Связаться</button>
-				<button type="button" class="b-header__lang btn-reset btn-white">EN</button>
+				<a href="#" class="b-header__feedback btn-reset btn-blue">Связаться</a>
+				<a href="#" class="b-header__lang btn-reset btn-white">EN</a>
 			</div>
 		</div>
 	</div>
 </header>
 		<!--and b-header-->
+		
+		<!--b-promo-->
+		<section class="section b-promo b-promo_airplane">
+			<div class="b-promo__bg b-promo__bg_lg" style="background-image: url(./images/dist/Dassault-Falcon-8X.jpg);"></div>
+			<div class="b-promo__bg b-promo__bg_xs" style="background-image: url(./images/dist/Dassault-Falcon-8X-xs.jpg);"></div>
+			<div class="l-container">
+				<div class="b-promo__wrapper">
+					<div class="b-promo__center">
+						<div class="b-promo__teaser">Cамолет </br> Dassault Falcon 8X</div>
+						<div class="b-promo__text">Наши эксклюзивные дальнемагистральные самолёты, совершающие максимально комфортные частные полёты по всему миру, могут перевозить до 14 пассажиров и находиться в воздухе до 13:30 часов. </div>
+					</div>
+					<!--b-booking-->
+					<div class="b-booking">
+						<div class="b-booking__row">
+							<div class="b-booking__field js-booking-field">
+								<!--input_error - для ошибки-->
+								<input type="text" class="input js-input input_error" placeholder="Откуда" value="Неверный формат">
+								<svg class="icon">
+									<use xlink:href="#icon-airplane"></use>
+								</svg>
+								<!--b-tooltip-->
+								<div class="b-tooltip b-tooltip_first js-tooltip">
+									<div class="b-tooltip__ctn">
+										<div class="b-tooltip__list">
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Москва <span class="b-tooltip__list-abb">MOW</span>
+													<span class="b-tooltip__list-text">Россия</span>
+												</div>
+												<ul class="list_unstyle">
+													<li class="b-tooltip__list-item_lv2">Домодедово <span class="b-tooltip__list-abb">DME</span></li>
+													<li class="b-tooltip__list-item_lv2">Шереметьево <span class="b-tooltip__list-abb">SVO</span></li>
+													<li class="b-tooltip__list-item_lv2">Внуково <span class="b-tooltip__list-abb">VKO</span></li>
+													<li class="b-tooltip__list-item_lv2">Жуковский <span class="b-tooltip__list-abb">ZIA</span></li>
+												</ul>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Омск <span class="b-tooltip__list-abb">OMS</span>
+													<span class="b-tooltip__list-text">Россия</span>
+												</div>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Минск <span class="b-tooltip__list-abb">MSQ</span>
+													<span class="b-tooltip__list-text">Беларусь</span>
+												</div>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Омск <span class="b-tooltip__list-abb">OMS</span>
+													<span class="b-tooltip__list-text">Россия</span>
+												</div>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Минск <span class="b-tooltip__list-abb">MSQ</span>
+													<span class="b-tooltip__list-text">Беларусь</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--and b-tooltip-->
+							</div>
+							<div class="b-booking__field js-booking-field">
+								<input type="text" class="input js-input" placeholder="Куда">
+								<svg class="icon">
+									<use xlink:href="#icon-airplane-inner"></use>
+								</svg>
+								<!--b-tooltip-->
+								<div class="b-tooltip b-tooltip_second js-tooltip">
+									<div class="b-tooltip__ctn">
+										<div class="b-tooltip__list">
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Москва <span class="b-tooltip__list-abb">MOW</span>
+													<span class="b-tooltip__list-text">Россия</span>
+												</div>
+												<ul class="list_unstyle">
+													<li class="b-tooltip__list-item_lv2">Домодедово <span class="b-tooltip__list-abb">DME</span></li>
+													<li class="b-tooltip__list-item_lv2">Шереметьево <span class="b-tooltip__list-abb">SVO</span></li>
+													<li class="b-tooltip__list-item_lv2">Внуково <span class="b-tooltip__list-abb">VKO</span></li>
+													<li class="b-tooltip__list-item_lv2">Жуковский <span class="b-tooltip__list-abb">ZIA</span></li>
+												</ul>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Омск <span class="b-tooltip__list-abb">OMS</span>
+													<span class="b-tooltip__list-text">Россия</span>
+												</div>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Минск <span class="b-tooltip__list-abb">MSQ</span>
+													<span class="b-tooltip__list-text">Беларусь</span>
+												</div>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Омск <span class="b-tooltip__list-abb">OMS</span>
+													<span class="b-tooltip__list-text">Россия</span>
+												</div>
+											</div>
+											<div class="b-tooltip__list-item b-tooltip__list-item_lv1">
+												<div class="b-tooltip__list-item-head">
+													Минск <span class="b-tooltip__list-abb">MSQ</span>
+													<span class="b-tooltip__list-text">Беларусь</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--and b-tooltip-->
+							</div>
+							<div class="b-booking__field">
+								<input type="text" class="input js-datepicker" placeholder="Когда">
+								<svg class="icon">
+									<use xlink:href="#icon-calendar-2"></use>
+								</svg>
+							</div>
+							<!--класс для иконки disabled b-booking__field_disabled-->
+							<div class="b-booking__field b-booking__field_disabled">
+								<input type="text" class="input js-datepicker" placeholder="Обратно" disabled>
+								<svg class="icon">
+									<use xlink:href="#icon-calendar"></use>
+								</svg>
+							</div>
+							<div class="b-booking__field b-booking__qnt">
+								<input type="text" class="input" placeholder="1 пассажир" value="1">
+								<svg class="icon">
+									<use xlink:href="#icon-profile"></use>
+								</svg>
+								<div class="b-booking__qnt-ctn">
+									<span class="qnt-plus">
+										<svg class="">
+											<use xlink:href="#icon-plus"></use>
+										</svg>
+									</span>
+									<span class="qnt-minus">
+										<svg class="">
+											<use xlink:href="#icon-minus"></use>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div class="b-booking__row">
+							<div class="b-booking__field">
+								<input type="text" class="input" placeholder="Откуда">
+								<svg class="icon">
+									<use xlink:href="#icon-airplane"></use>
+								</svg>
+							</div>
+							<div class="b-booking__field">
+								<input type="text" class="input" placeholder="Откуда">
+								<svg class="icon">
+									<use xlink:href="#icon-airplane-inner"></use>
+								</svg>
+							</div>
+							<div class="b-booking__field">
+								<input type="text" class="input" placeholder="Когда">
+								<svg class="icon">
+									<use xlink:href="#icon-calendar-2"></use>
+								</svg>
+							</div>
+							<div class="b-booking__field">
+								<input type="text" class="input" placeholder="Когда">
+								<svg class="icon">
+									<use xlink:href="#icon-calendar"></use>
+								</svg>
+							</div>
+							<div class="b-booking__field b-booking__qnt">
+								<input type="text" class="input" placeholder="1 пассажир">
+								<svg class="icon">
+									<use xlink:href="#icon-profile"></use>
+								</svg>
+								<div class="b-booking__qnt-ctn">
+									<span class="qnt-plus">
+										<svg class="">
+											<use xlink:href="#icon-plus"></use>
+										</svg>
+									</span>
+									<span class="qnt-minus">
+										<svg class="">
+											<use xlink:href="#icon-minus"></use>
+										</svg>
+									</span>
+								</div>
+							</div>
+							<div class="b-booking__row_delete">
+								<svg class="icon">
+									<use xlink:href="#icon-close-square"></use>
+								</svg>
+							</div>
+						</div>
+						-->
+						<div class="b-booking__group-link">
+							<a class="b-booking__group-link-item" href="#">
+								<svg class="icon">
+									<use xlink:href="#icon-add-circle"></use>
+								</svg>
+								Добавить перелет
+							</a>
+							<!--кнопки которые еще могут быть-->
+							<!--
+							<a class="b-booking__group-link-item" href="#">
+								<svg class="icon">
+									<use xlink:href="#icon-arrow-square-up"></use>
+								</svg>
+								Вернуться к простому маршруту
+							</a>
+							<a class="b-booking__group-link-item" href="#">
+								<svg class="icon">
+									<use xlink:href="#icon-task-square"></use>
+								</svg>
+								Вы добавили максимальное количество перелётов
+							</a>
+							-->
+						</div>
+						<div class="b-booking__send">
+							<div class="b-booking__send-wrapper">
+								<div class="b-booking__send-text">
+									<!--input_error для ошибки-->
+									<input class="input" type="tel" placeholder="+7 000 000 00 00">
+									<div class="b-booking__send-icon">
+										<svg class="icon">
+											<use xlink:href="#icon-call"></use>
+										</svg>
+									</div>
+								</div>
+								<button type="button" class="b-booking__send-btn btn-reset btn-blue">
+									Заказать рейс
+								</button>
+							</div>
+							<div class="b-booking__send-helper">
+								нажимая кнопку «Заказать рейс», я ознакомлен <br>и даю согласие на обработку <a href="#">персональных данных</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end b-promo-->
 
-		<!--b-promo-company-->
-		<section class="section b-promo-company" style="background-image: url(./images/dist/promo-company.jpg)">
-			<div class="l-container_inner-page b-promo-company__ctn">
+		<section class="section">
+			<div class="l-container l-container_inner-page">
 				<!--b-breadcrumb-->
-				<nav class="b-breadcrumb">
+				<nav class="b-breadcrumb b-breadcrumb_modified">
 					<ul class="list_unstyle">
 						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="/">Главная</a></li>
-						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link b-breadcrumb__link_active">О компании</a></li>
+						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="air_fleet.html">Флот</a></li>
+						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link" href="air_fleet_detail.html">Ultra Long Range</a></li>
+						<li class="b-breadcrumb__item"><a class="b-breadcrumb__link b-breadcrumb__link_active">Cамолет Dassault Falcon 8X</a></li>
 					</ul>
 				</nav>
 				<!--end b-breadcrumb-->
-				<div class="b-promo-company__wrapper">
-					<h1 class="b-promo-company__title">О компании</h1>
-					<div class="b-promo-company__teaser">Ведущая компания в сфере бизнес-авиации с командой экспертов и тысячами успешно выполненных рейсов. Главный офис находится в Москве и еще три филиала работают по всему миру. Наш профиль - организация частных перелетов с высоким уровнем сервиса, безопасности и персональным подходом</div>
-				</div>
 			</div>
-		</section>
-		<!--end b-promo-company-->
-		
-		<!--b-presentation-->
-		<section class="section">
-			<div class="l-container_inner-page">
-				<div class="b-presentation">
-					<div class="b-presentation__item">
-						<div class="b-presentation__ctn">
-							<div class="b-presentation__logo">
-								<img src="./images/svg/logo_blue.svg" alt="">
-							</div>
-							<div class="b-presentation__title">Ваш личный ассистент <br> в мире деловой авиации 24/7</div>
-							<div class="b-presentation__teaser">
-								<p>Ведущая компания в сфере бизнес-авиации с безупречной репутацией и тысячами успешных рейсов. Главный офис компании находится в Москве, три международных филиала обеспечивают работу по всему миру.</p>
-								<div class="b-presentation__wrapper">
-									<div class="b-presentation__preview">
-										<video width="100%" height="auto" autoplay playsinline loop muted controls poster="./images/dist/company-strengths.jpg">
-											<source src="video/video.mp4" type="video/mp4">
-											Ваш браузер не поддерживает видео тег.
-										</video>
-<!--										<div class="b-presentation__preview-control">-->
-<!--											<svg class="icon">-->
-<!--												<use xlink:href="#icon-play-circle"></use>-->
-<!--											</svg>-->
-<!--										</div>-->
-									</div>
-								</div>
-								<p>Наши ключевые принципы работы: индивидуальный подход, безопасность, конфиденциальность, гибкость и оперативность в решении любых задач. Ваш комфорт — наш приоритет. Доверьтесь профессионалам и убедитесь, что путешествие может быть идеальным.</p>
-							</div>
-							<div class="b-presentation__bottom">
-								<a href="#" download="" class="b-presentation__button btn-reset btn-blue btn-icon-right">
-									Скачать презентацию
-									<svg class="icon">
-										<use xlink:href="#icon-document-download"></use>
-									</svg>
-								</a>
-								<button type="button" class="b-presentation__share btn-reset">
-									<svg class="icon">
-										<use xlink:href="#icon-share"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="b-presentation__item">
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end b-presentation-->
 
-		<!--b-company-info-->
-		<section class="section b-company-info">
-			<div class="l-container_inner-page">
-				<div class="b-company-info__wrapper">
-					<div class="b-company-info__item b-company-info__item_bg">
-						<div class="b-company-info__title">Нам доверяют</div>
-						<p class="b-company-info__text">
-							Организацию перелетов и полное транспортное обеспечение:
-						</p>
-						<ul class="list_style-circle">
-							<li>Российского экономического форума;</li>
-							<li>дипломатических конгрессов;</li>
-							<li>доставку Благодатного Огня к Пасхальному Богослужению;</li>
-							<li>сложнейшие грузовые и пассажирские перевозки;</li>
-						</ul>
-						<p class="b-company-info__text">а также частные перелеты под любые задачи.</p>
-						<a href="#" class="b-company-info__btn btn-reset btn-icon-right btn-white btn-white_inner">
-							Заказать рейс
-							<svg class="icon">
-								<use xlink:href="#icon-gas-station"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="b-company-info__item">
-						<div class="b-company-info__list">
-							<div class="b-company-info__list-item">
-								<div class="b-company-info__list-title">
-									7 000 +
-								</div>
-								<div class="b-company-info__list-teaser">
-									успешно <br> выполненных рейсов
-								</div>
+			<!--b-airplane-slider-->
+			<div class="l-container l-container_inner">
+				<!--обертка для кастомной навигации swiper-->
+				<div class="wrapper-slider-custom-navigation">
+					<div class="b-airplane-slider swiper js-arplane-slider">
+						<div class="b-airplane-slider__wrapper swiper-wrapper">
+							<div class="b-airplane-slider__slide swiper-slide">
+								<div class="b-airplane-slider__slide-image" style="background-image: url(./images/dist/airplane-detail1.jpg)"></div>
 							</div>
-							<div class="b-company-info__list-item">
-								<div class="b-company-info__list-title">
-									18 000 +
-								</div>
-								<div class="b-company-info__list-teaser">
-									доступных бизнес-джетов
-								</div>
+							<div class="b-airplane-slider__slide swiper-slide">
+								<div class="b-airplane-slider__slide-image" style="background-image: url(./images/dist/airplane-detail2.jpg)"></div>
 							</div>
-							<div class="b-company-info__list-item">
-								<div class="b-company-info__list-title">
-									13 лет
-								</div>
-								<div class="b-company-info__list-teaser">
-									на рынке <br> частной авиации
-								</div>
+							<div class="b-airplane-slider__slide swiper-slide">
+								<div class="b-airplane-slider__slide-image" style="background-image: url(./images/dist/airplane-detail3.jpg)"></div>
 							</div>
-							<div class="b-company-info__list-item">
-								<div class="b-company-info__list-title">
-									~ 30 мин
-								</div>
-								<div class="b-company-info__list-teaser">
-									расчетное время <br> подбора борта
-								</div>
+							<div class="b-airplane-slider__slide swiper-slide">
+								<div class="b-airplane-slider__slide-image" style="background-image: url(./images/dist/airplane-detail1.jpg)"></div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end b-company-info-->
-
-		<!--popular-services-->
-		<section class="section b-popular-services">
-			<div class="l-container_inner-page">
-				<div class="b-popular-services__wrapper">
-					<div class="b-popular-services__head">
-						<div class="b-popular-services__head-title">Популярные услуги нашей компании</div>
-						<div class="b-popular-services__head-group">
-							<a href="#" class="btn-reset btn-blue btn-icon-right btn-icon-right_inner">
-								Связаться
-								<svg class="icon">
-									<use xlink:href="#icon-call-white"></use>
-								</svg>
-							</a>
-							<a href="#" class="btn-reset btn-blue btn-blue_light">Все услуги</a>
-						</div>
-					</div>
-					<div class="b-popular-services__slider js-popular-services__slider swiper">
-						<div class="b-popular-services__items swiper-wrapper">
-							<div class="b-popular-services__items-item swiper-slide">
-								<div class="b-popular-services-point btn-reset">
-									<svg class="icon">
-										<use xlink:href="#icon-arrow-right"></use>
-									</svg>
-								</div>
-								<div class="b-popular-services__items-item-bg" style="background-image: url(./images/dist/popular1.jpg)">
-									<div class="b-popular-services__items-item-wrapper">
-										<div class="b-popular-services__items-item-title">
-											<a href="#">Аренда частного самолета</a>
-										</div>
-										<div class="b-popular-services__items-item-teaser">Аренда кресла в бизнес-джете по заранее установленному маршруту</div>
-									</div>
-								</div>
+							<div class="b-airplane-slider__slide swiper-slide">
+								<div class="b-airplane-slider__slide-image" style="background-image: url(./images/dist/airplane-detail2.jpg)"></div>
 							</div>
-							<div class="b-popular-services__items-item swiper-slide">
-								<div class="b-popular-services-point btn-reset">
-									<svg class="icon">
-										<use xlink:href="#icon-arrow-right"></use>
-									</svg>
-								</div>
-								<div class="b-popular-services__items-item-bg" style="background-image: url(./images/dist/popular2.jpg)">
-									<div class="b-popular-services__items-item-wrapper">
-										<div class="b-popular-services__items-item-title">
-											<a href="#">Групповой чартер</a>
-										</div>
-										<div class="b-popular-services__items-item-teaser">Аренда кресла в бизнес-джете по заранее установленному маршруту</div>
-									</div>
-								</div>
-							</div>
-							<div class="b-popular-services__items-item swiper-slide">
-								<div class="b-popular-services-point btn-reset">
-									<svg class="icon">
-										<use xlink:href="#icon-arrow-right"></use>
-									</svg>
-								</div>
-								<div class="b-popular-services__items-item-bg" style="background-image: url(./images/dist/popular3.jpg)">
-									<div class="b-popular-services__items-item-wrapper">
-										<div class="b-popular-services__items-item-title">
-											<a href="#">Покрессельная аренда</a>
-										</div>
-										<div class="b-popular-services__items-item-teaser">Аренда кресла в бизнес-джете по заранее установленному маршруту</div>
-									</div>
-								</div>
-							</div>
-							<div class="b-popular-services__items-item swiper-slide">
-								<div class="b-popular-services-point btn-reset">
-									<svg class="icon">
-										<use xlink:href="#icon-arrow-right"></use>
-									</svg>
-								</div>
-								<div class="b-popular-services__items-item-bg" style="background-image: url(./images/dist/popular4.jpg)">
-									<div class="b-popular-services__items-item-wrapper">
-										<div class="b-popular-services__items-item-title">
-											<a href="#">Empty Leg</a>
-										</div>
-										<div class="b-popular-services__items-item-teaser">Аренда кресла в бизнес-джете по заранее установленному маршруту</div>
-									</div>
-								</div>
+							<div class="b-airplane-slider__slide swiper-slide">
+								<div class="b-airplane-slider__slide-image" style="background-image: url(./images/dist/airplane-detail3.jpg)"></div>
 							</div>
 						</div>
 						<div class="swiper-pagination"></div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<!--end popular-services-->
-		
-		<!--b-company-slogan-->
-		<section class="section b-company-slogan">
-			<div class="l-container_inner-page">
-				<div class="b-company-slogan__wrapper">
-					<div class="b-company-slogan__ctn">
-						<div class="b-company-slogan__title">
-							Ваш комфорт и безопасность — это наша миссия, а ваше доверие — наша главная награда
-						</div>
-						<div class="b-company-slogan__teaser">
-							С 2012 года наша компания задаёт стандарты в бизнес-авиации. От первых чартеров до международного присутствия — каждый год мы подтверждаем репутацию надёжного партнёра. Ваше доверие — наш главный капитал
-						</div>
-						<div class="b-company-slogan__bottom">
-							<div class="b-company-slogan__bottom-item">
-								<div class="b-company-slogan__sub-title">Роман Афанасенко</div>
-								<div class="b-company-slogan__text">Генеральный директор</div>
-							</div>
-							<div class="b-company-slogan__bottom-item">
-								<img src="./images/dist/signature.png" alt="">
-							</div>
-						</div>
+					<!--кастомная навигация swiper -->
+					<div class="b-airplane-slider__button-next">
+						<svg class="icon">
+							<use xlink:href="#icon-arrow-right"></use>
+						</svg>
 					</div>
-					<div class="b-company-slogan__img">
-						<img src="./images/dist/director.png" alt="">
+					<div class="b-airplane-slider__button-prev">
+						<svg class="icon">
+							<use xlink:href="#icon-arrow-right"></use>
+						</svg>
 					</div>
 				</div>
 			</div>
+			<!--end b-airplane-slider-->
 		</section>
-		<!--end b-company-slogan-->
-		
-		<!--b-security-->
-		<section class="section b-security">
-			<div class="l-container_inner-page">
-				<div class="b-security__head">
-					<div class="b-security__head-title">
-						Заботимся о вашей конфиденциальности
-					</div>
-					<div class="b-security__head-teaser">
-						В мире бизнес-авиации конфиденциальность — это не просто слово, а основа доверия. Мы понимаем, что для наших клиентов важно сохранить приватность, будь то личные поездки или корпоративные перелеты. Именно поэтому мы делаем все возможное, чтобы ваши данные и детали перелета оставались под надежной защитой.
-					</div>
-				</div>
-				<div class="b-security__list">
-					<div class="b-security__list-item">
-						<div class="b-security__list-item-icon">
-							<svg class="icon">
-								<use xlink:href="#icon-security-safe"></use>
-							</svg>
-						</div>
-						<div class="b-security__list-item-ctn">
-							<div class="b-security__list-item-title">Защита личной информации</div>
-							<div class="b-security__list-item-teaser">ваши данные, маршруты и детали перелёта известны только вам и нам</div>
-						</div>
-					</div>					
-					<div class="b-security__list-item">
-						<div class="b-security__list-item-icon">
-							<svg class="icon">
-								<use xlink:href="#icon-key"></use>
-							</svg>
-						</div>
-						<div class="b-security__list-item-ctn">
-							<div class="b-security__list-item-title">Безопасность <br> для бизнеса</div>
-							<div class="b-security__list-item-teaser">гарантируем сохранность ваших планов внутри компании</div>
-						</div>
-					</div>					
-					<div class="b-security__list-item">
-						<div class="b-security__list-item-icon">
-							<svg class="icon">
-								<use xlink:href="#icon-star"></use>
-							</svg>
-						</div>
-						<div class="b-security__list-item-ctn">
-							<div class="b-security__list-item-title">Комфорт <br> для VIP-клиентов</div>
-							<div class="b-security__list-item-teaser">ваши перелёты останутся незаметными для посторонних глази</div>
-						</div>
-					</div>
-					<div class="b-security__list-item">
-						<div class="b-security__list-item-icon">
-							<svg class="icon">
-								<use xlink:href="#icon-heart"></use>
-							</svg>
-						</div>
-						<div class="b-security__list-item-ctn">
-							<div class="b-security__list-item-title">Исключительное доверие</div>
-							<div class="b-security__list-item-teaser">ценим ваше доверие и делаем всё, чтобы оправдать его</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end security-->
-		
-		<!--b-team-->
-		<section class="section">
-			<div class="l-container_inner-page">
-				<div class="b-team">
-					<div class="b-team__item">
-						<a href="#" class="b-team__item-btn btn-reset">Наша команда</a>
-						<div class="b-team__preview">
-							<img src="./images/dist/all-team.png" alt="">
-						</div>
-					</div>
-					<div class="b-team__item">
-						<div class="b-team__list">
-							<div class="b-team__list-item">
-								<div class="b-team__list-img" style="background-image: url(./images/dist/leader1.png)"></div>
-								<div class="b-team__list-ctn">
-									<div class="b-team__list-title">Анастасия Бесшапошникова</div>
-									<div class="b-team__list-teaser">Коммерческий директор</div>
-									<div class="b-team__list-group">
-										<div class="b-team__list-group-item">
-											<a href="#" class="btn-reset btn-blue-circle_inner">
-												<svg class="icon">
-													<use xlink:href="#icon-tg-white"></use>
-												</svg>
-											</a>
-										</div>
-										<div class="b-team__list-group-item">
-											<a href="#" class="btn-reset btn-blue-circle_inner">
-												<svg class="icon">
-													<use xlink:href="#icon-wapp-white"></use>
-												</svg>
-											</a>
-										</div>
-									</div>
-									<div class="b-team__list-link"><a href="mailto:info@unisky.aero">info@unisky.aero</a></div>
-								</div>
-							</div>
-							<div class="b-team__list-item">
-								<div class="b-team__list-img" style="background-image: url(./images/dist/leader2.png)"></div>
-								<div class="b-team__list-ctn">
-									<div class="b-team__list-title">Роман <br> Афанасенко</div>
-									<div class="b-team__list-teaser">Генеральный директор</div>
-									<div class="b-team__list-link"><a href="mailto:r.afanasenko@unisky.aero">r.afanasenko@unisky.aero</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end b-team-->
 
-		<!--b-advantages-->
-		<section class="section b-advantages">
+		<!-- b-config -->
+		 <section class="section section_white b-config">
+			<div class="l-container l-container_inner-page">
+				<div class="b-config__wrapper">
+					<h2 class="b-config__title">Конфигурация салона</h2>
+					<div class="b-config__toggle">
+						<!-- <div class="b-config__toggle-title">Phenom 300</div> -->
+						<div class="b-config__toggle-wrapper">
+							<div class="b-config__toggle-item b-config__toggle-item_day b-config__toggle-item_active">
+								Дневная
+								<svg class="icon">
+									<use xlink:href="#icon-sun"></use>
+								</svg>
+							</div>
+							<div class="b-config__toggle-item b-config__toggle-item_night ">
+								Ночная
+								<svg class="icon">
+									<use xlink:href="#icon-moon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-config__container">
+						<div class="b-config__view">
+							<img class="b-config__view-first b-config__view_visible" src="./images/dist/config-day.jpg" alt="">
+							<img class="b-config__view-second b-config__view_hidden" src="./images/dist/config-night.jpg" alt="">
+						</div>
+						<div class="b-config__desc">
+							<div class="b-config__desc-item">
+								<div class="b-config__desc-item-helper">Пассажиров</div>
+								<div class="b-config__desc-item-text">
+									<svg class="icon">
+										<use xlink:href="#icon-round-emoji-people-inner"></use>
+									</svg>
+									10 - 16
+								</div>
+							</div>
+							<div class="b-config__desc-item">
+								<div class="b-config__desc-item-helper">Летное время</div>
+								<div class="b-config__desc-item-text">
+									<svg class="icon">
+										<use xlink:href="#icon-gas-station"></use>
+									</svg>
+									6 часов
+								</div>
+							</div>
+							<div class="b-config__desc-item">
+								<div class="b-config__desc-item-helper">Объем багажа</div>
+								<div class="b-config__desc-item-text">
+									<svg class="icon">
+										<use xlink:href="#icon-ri_suitcase-2-fill-inner"></use>
+									</svg>
+									1 м3
+								</div>
+							</div>
+							<div class="b-config__desc-item">
+								<div class="b-config__desc-item-helper">Спальных мест</div>
+								<div class="b-config__desc-item-text">
+									<svg class="icon">
+										<use xlink:href="#icon-tabler_bed-filled-inner"></use>
+									</svg>
+									10 - 16
+								</div>
+							</div>
+							
+							<!-- <div class="b-config__desc-item">
+								<div class="b-config__desc-item-helper">Дальность</div>
+								<div class="b-config__desc-item-text">
+									<svg class="icon">
+										<use xlink:href="#icon-distance"></use>
+									</svg>
+									1 200 км
+								</div>
+							</div> -->
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		 </section>
+		<!--end b-config -->
+
+		<!-- b-room-tour -->
+		<div class="b-room-tour">
+			<img src="./images/dist/3d.jpg" alt="">
+		</div>	 
+		<!--end b-room-tour -->
+
+		<!-- b-catalog-slider -->
+		<section class="section section_blue b-catalog-slider">
 			<div class="l-container_inner-page">
-				<div class="b-advantages__slider js-advantages-slider swiper">
-					<div class="b-advantages__slider-wrapper swiper-wrapper">
-						<div class="b-advantages__slider-slide swiper-slide">
-							<div class="b-advantages__slider-slide-img">
-								<img src="./images/svg/advantages1.svg" alt="">
-							</div>
-							<div class="b-advantages__slider-slide-title">
-								Стабильность и надежность
-							</div>
-							<div class="b-advantages__slider-slide-teaser">
-								гарантия безопасности, четкое соблюдение регламентов и 100% выполнение обязательств
+				<div class="b-catalog-slider__slider-controls">
+					<h2 class="b-catalog-slider__title">Популярные модели класса Ultra Long Range</h2>
+					<div class="b-catalog-slider__slider-controls-container">
+						<div class="b-catalog-slider__button-prev">
+							<svg class="icon">
+								<use xlink:href="#icon-arrow-right"></use>
+							</svg>
+						</div>
+						<div class="b-catalog-slider__button-next">
+							<svg class="icon">
+								<use xlink:href="#icon-arrow-right"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="b-catalog-slider__container swiper js-catalog-slider">
+					<div class="b-catalog-slider__wrapper swiper-wrapper">
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail2_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Hawker 850XP</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
 						</div>
-						<div class="b-advantages__slider-slide swiper-slide">
-							<div class="b-advantages__slider-slide-img">
-								<img src="./images/svg/advantages2.svg" alt="">
-							</div>
-							<div class="b-advantages__slider-slide-title">
-								Персонализированный сервис
-							</div>
-							<div class="b-advantages__slider-slide-teaser">
-								индивидуальные решения под любой запрос — от выбора воздушного судна до особых пожеланий по питанию и интерьеру самолета
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Challenger 604</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
 						</div>
-						<div class="b-advantages__slider-slide swiper-slide">
-							<div class="b-advantages__slider-slide-img">
-								<img src="./images/svg/advantages3.svg" alt="">
-							</div>
-							<div class="b-advantages__slider-slide-title">
-								Прозрачность и честность
-							</div>
-							<div class="b-advantages__slider-slide-teaser">
-								никаких скрытых комиссий — только обоснованная стоимость и полный контроль на всех этапах
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Legacy 650</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
 						</div>
-						<div class="b-advantages__slider-slide swiper-slide">
-							<div class="b-advantages__slider-slide-img">
-								<img src="./images/svg/advantages4.svg" alt="">
-							</div>
-							<div class="b-advantages__slider-slide-title">
-								Глобальный охват и гибкость
-							</div>
-							<div class="b-advantages__slider-slide-teaser">
-								доступ к лучшим бизнес-джетам мира и возможность организации перелета в любой точке планеты 24/7
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Challenger 850</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
 						</div>
-						<div class="b-advantages__slider-slide swiper-slide">
-							<div class="b-advantages__slider-slide-img">
-								<img src="./images/svg/advantages5.svg" alt="">
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Gulfstream G-550</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
-							<div class="b-advantages__slider-slide-title">
-								Экспертность и профессионализм
+						</div>
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Global 5000</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
-							<div class="b-advantages__slider-slide-teaser">
-								12+ лет опыта в отрасли, знание всех нюансов и мгновенное решение нестандартных задач
+						</div>
+						<div class="b-catalog-slider__slide swiper-slide">
+							<div class="b-catalog-slider__slide-image" style="background-image: url('./images/dist/air_fleet_detail_xs.jpg');"></div>
+							<div class="b-catalog-slider__slide-bottom">
+								<div class="b-catalog-slider__slide-title">
+									<a href="#">Lineage 1000</a>
+								</div>
+								<div class="b-catalog-slider__slide-desc">
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Пассажиров</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">10 - 16</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Летное время</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 часов</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Спальных мест</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">6 - 9</div>
+									</div>
+									<div class="b-catalog-slider__slide-desc-item">
+										<div class="b-catalog-slider__slide-desc-item-label">Объем багажа</div>
+										<div class="b-catalog-slider__slide-desc-item-bots"></div>
+										<div class="b-catalog-slider__slide-desc-item-value">1 м3</div>
+									</div>
+								</div>
+								<button class="btn-reset btn-transparent b-catalog-slider__slide-button">
+									Арендовать
+								</button>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
-			</div>
 		</section>
-		<!--end b-advantages-->
+		<!--end b-catalog-slider -->
 
-		<!--b-partner-->
-		<section class="section">
-			<div class="b-partner-slider swiper js-partner-slider">
-				<div class="b-partner-slider__wrapper swiper-wrapper">
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner1.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner2.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner3.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner4.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner5.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner6.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner3.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner4.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner5.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner6.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner4.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner5.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner6.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner3.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner4.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner5.png" alt=	"">
-					</div>
-					<div class="b-partner-slider__slide swiper-slide">
-						<img src="./images/dist/partner6.png" alt=	"">
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end b-partner-->
-		
-		<!--b-contacts-->
-		<section class="section b-contacts">
+		<!-- b-content -->
+		<section class="section b-content">
 			<div class="l-container_inner-page">
-				<div class="b-contacts__wrapper">
-					<div class="b-contacts__item b-contacts__item_left">
-						<div class="b-contacts__logo">
-							<img src="./images/svg/logo.svg" alt="">
-						</div>
-						<div class="b-contacts__title">
-							Связаться с нами
-						</div>
-						<ul class="b-contacts__list list_unstyle">
-							<li class="b-contacts__list-item">121354, Москва, ул. Дорогобужская, 14, с. 4</li>
-							<li class="b-contacts__list-item"><a href="tel:+74952606008">+7 495 260 60 08</a></li>
-							<li class="b-contacts__list-item"><a href="mailto:info@unisky.aero">info@unisky.aero</a></li>
+				<div class="b-content__wrapper">
+					<div class="b-content__left">
+						<h2>Заголовок в 2 или более строк в 2 или более строк</h2>
+						<img class="visible-xs" src="./images/dist/content.jpg" 
+							alt="Описание изображения" 
+							loading="lazy">
+						<p>Выберите класс бизнес-джета, который идеально соответствует вашим задачам, количеству пассажиров и маршруту. Мы гарантируем – безупречный сервис, экономию вашего времени и полную конфиденциальность. Возможность заказать бизнес-джет на любое количество пассажиров позволяет экономить время на перелеты и не привязываться к расписанию регулярных рейсов.</p>
+						<h3>Основные типы частных самолетов</h3>
+						<p>В сегменте бизнес-авиации выделяют 8 основных классов воздушных судов: Turbo prop, Light Jet, Super Light Jet, Midsize Jet, Super Midsize Jet, Heavy Jet, Ultra Long Range, VIP Airliner.</p>
+						<ul>
+							<li><strong>Turbo Prop</strong> — экономичные и надежные самолеты для региональных перелетов. Идеальны для коротких маршрутов и посадки в аэропортах с укороченными ВПП. Вместимость: до 6 пассажиров.</li>
+							<li><strong>Light Jet </strong> — компактные и маневренные самолеты для быстрых перелетов на небольшие расстояния. Оптимальный выбор для небольшой группы людей, ценящей время и возможность использования ближайших аэродромов.</li>
+							<li><strong>Super Light Jet</strong> — золотая середина между легкими и средними джетами. Предлагает повышенный комфорт салона и увеличенную дальность до 8 пассажиров, сохраняя при этом доступ к малым аэропортам.</li>
+							<li><strong>Midsize Jet</strong> — универсальные реактивные самолеты для трансграничных перелетов. Просторный салон вмещает до 9 пассажиров, обеспечивая комфорт в полный рост, спальные места и достаточную дальность для рейсов по России и Европе.</li>
+							<li><strong>Super Midsize Jet</strong> — значительно расширяет возможности среднего класса. Предназначен для беспосадочных трансатлантических перелетов с салоном повышенного комфорта для 8-10 пассажиров, с выделенными рабочими и зонами отдыха.</li>
+							<li><strong>Heavy Jet</strong> — просторные лайнеры для дальних путешествий длительностью до 5-6 часов. Вмещают 13-14 пассажиров, предлагая полноценные спальные места, несколько зон в салоне и высокий уровень сервиса.</li>
+							<li><strong>Ultra Long Range</strong> — самолеты для самых требовательных трансконтинентальных маршрутов. Обеспечивают максимальную дальность полета до 14 000 км без дозаправки с непревзойденным уровнем комфорта, шумоизоляции и оснащения до 19 пассажиров.</li>
+							<li><strong>VIP Airliner</strong> — высший уровень частной авиации. Это большие самолеты с вместимостью более 19 пассажиров, которые подойдут под любые задачи: от летающего офиса до роскошной резиденции со спа-залами и конференц-залами.</li>
 						</ul>
-						<div class="b-contacts__group">
-							<div class="b-contacts__group-item">
-								<a href="#" class="btn-reset btn-white btn-white-circle">
-									<svg class="icon">
-										<use xlink:href="#icon-tg"></use>
-									</svg>
-								</a>
-							</div>
-							<div class="b-contacts__group-item">
-								<a href="#" class="btn-reset btn-white btn-white-circle">
-									<svg class="icon">
-										<use xlink:href="#icon-wapp"></use>
-									</svg>
-								</a>
-							</div>
+						<h3>Ключевые особенности разных типов</h3>
+						<p><b>В сегменте бизнес-авиации выделяют 8 основных классов воздушных судов: Turbo prop, Light Jet, Super Light Jet, Midsize Jet, Super Midsize Jet, Heavy Jet, Ultra Long Range, VIP Airliner.</b></p>
+						<ul>
+							<li>Турбовинтовой самолет (Turbo Prop) - выбор для региональных перелетов — возможность приземляться в небольших аэропортах и оптимальная стоимость эксплуатации на коротких дистанциях.</li>
+							<li>Легкий самолет (Light Jet) - выбирают за компактность и маневренность. Особенно выгодно арендовать данный тип самолета, если нужно приземляться в небольшом аэропорту с короткой посадочной полосой.</li>
+							<li>Суперлегкий самолет (Super Light Jet) - баланс между компактностью и комфортом — его ценят за увеличенную дальность полета и более просторный салон по сравнению с Light Jet, что позволяет путешествовать небольшим группам с повышенным комфортом, сохраняя доступ в малые аэропорты.</li>
+							<li>Средний самолет (Midsize Jet) - золотой стандарт бизнес-авиации для международных перелетов — его выбирают за полноценный салон, где можно работать, отдыхать и пользоваться всеми удобствами во время беспосадочных перелетов.</li>
+							<li>Суперсредний самолет (Super Midsize Jet) - решение для более дальних маршрутов — этот класс предпочитают за премиальный комфорт салона с раздельными зонами и возможность совершать беспосадочные перелеты на большие расстояния.</li>
+							<li>Тяжелый самолет (Heavy Jet) - этот класс самолета выбирают пассажиры, которым нужны несколько отдельных зон в салоне, полноценные спальные места и высокий уровень сервиса при перелетах.</li>
+							<li>Дальнемагистральный самолет (Ultra Long Range) - абсолютная свобода перемещений — эти лайнеры предпочитают для дальних беспосадочных перелетов, где ключевое значение имеют максимальная автономность, исключительная комфортность салона и возможность прямого рейса в любую точку мира.</li>
+							<li>VIP Авилайнер (VIP Airliner) - вершина частной авиации — этот класс выбирают для перевозки больших делегаций и организации уникальных пространств в небе, где возможна реализация любых проектов: от летающих конференц-залов до роскошных резиденций со спа-комплексами.</li>
+						</ul>
+						<div class="b-content__toggle">
+							<button type="button" class="btn-reset b-content__toggle-btn is-show">Показать еще ...</button>
+							<button type="button" class="btn-reset b-content__toggle-btn is-hide">
+								Скрыть
+								<svg class="icon">
+									<use xlink:href="#icon-corner"></use>
+								</svg>
+							</button>
 						</div>
-						<button class="b-contacts__download btn-reset btn-blue btn-blue_light btn-icon-right" type="button">
-							Скачать реквизиты
-							<svg class="icon">
-								<use xlink:href="#icon-document-download"></use>
-							</svg>
-						</button>
 					</div>
-					<div class="b-contacts__item b-contacts__item_right" style="background-image: url(./images/dist/map.jpg)">
-						<div class="b-contacts__map"></div>
+					<div class="b-content__right">
+						<img src="./images/dist/content.jpg" 
+							alt="Описание изображения" 
+							loading="lazy">
 					</div>
 				</div>
 			</div>
 		</section>
-		<!--end b-contacts-->
-
-		<!--b-about-main-->
-		<section class="section">
-			<div class="l-container_inner-page">
-				<div class="b-about-main">
-					Мы — эксперты с многолетним опытом в сфере бизнес-авиации. За плечами — десятки успешно организованных рейсов любой сложности для частных и корпоративных клиентов. Деловая авиация — это про индивидуальный подход, высокий уровень сервиса и внимание к деталям. Мы на связи 24/7, готовы помочь с организацией перелета в любое время и предложить оптимальное решение именно для вас.
-				</div>
-			</div>
-		</section>
-		<!--end b-about-main-->
-
-		<!--button-scroll-up-->
-		<div class="button-up">
-			<svg class="icon">
-				<use xlink:href="#icon-arrow-top"></use>
-			</svg>
-		</div>
-		<!--button-scroll-up-->
+		<!-- b-content end -->
 
 		<!--b-cookie-->
 		<div class="b-cookie" style="display: none">
-			<div class="b-cookie__text js-toggle-hight">
-				ООО «Юни Скай» использует cookie-файлы для персонализации сервисов и удобства пользователей. Мы используем системы аналитики «Яндекс.Метрику» и «Roistat» для улучшения работы сайта и повышения качества предоставляемых услуг. Ознакомьтесь с Политикой обработки cookie-файлов. Вы можете отказаться от использования cookies, выбрав соответствующие настройки в своем браузере.
+			<div class="l-container b-cookie__wrapper">
+				<div class="b-cookie__text js-toggle-hight">
+					ООО «Юни Скай» использует cookie-файлы для персонализации сервисов и удобства пользователей. Мы используем системы аналитики «Яндекс.Метрику» и «Roistat» для улучшения работы сайта и повышения качества предоставляемых услуг. Ознакомьтесь с Политикой обработки cookie-файлов. Вы можете отказаться от использования cookies, выбрав соответствующие настройки в своем браузере.
+				</div>
+				<button class="btn-reset b-cookie__btn js-hide-block">Принять</button>
 			</div>
-			<button class="btn-reset b-cookie__btn js-hide-block">Принять</button>
 		</div>
 		<!--end b-cookie-->
-
+		
 		<!--b-widget-->
 		<div class="b-widget">
 			<!--hide что бы скрыть-->
@@ -660,7 +810,6 @@
 		<!--end b-widget-->
 		
 	</main>
-	
 	<!--b-footer-->
 	<footer class="b-footer">
 	<div class="l-container">
@@ -785,7 +934,16 @@
 	</div>
 </footer>
 	<!--end b-footer-->
+
+	<!--button-up-->
+	<div class="button-up">
+		<svg class="icon">
+			<use xlink:href="#icon-arrow-top"></use>
+		</svg>
+	</div>
+	<!--end button-up-->
 </div>
+
 
 <!--modals-->
 <!--мобильное меню-->

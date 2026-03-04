@@ -927,3 +927,64 @@ $(function () {
     });
 });
 
+// js-arplane-slider
+$(function () {
+	if ($('.js-arplane-slider').length > 0) {
+		var swiper = new Swiper('.js-arplane-slider', {
+			slidesPerView: "3",
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			navigation: {
+				nextEl: ".b-airplane-slider__button-next",
+				prevEl: ".b-airplane-slider__button-prev",
+			},
+			breakpoints: {
+					0: {
+						slidesPerView: 'auto',
+      					centeredSlides: true,
+						centeredSlidesBounds: true,
+						loop: true,
+						spaceBetween: 10,
+					},
+					1280: {
+						slidesPerView: 3,
+      					centeredSlides: false,
+					}
+				},
+		});	
+	}
+});
+
+
+// переключатель конфигураций на странице самолета
+document.addEventListener('DOMContentLoaded', () => {
+    const toggles = document.querySelectorAll('.b-config__toggle-item');
+    const firstImg  = document.querySelector('.b-config__view-first');
+    const secondImg = document.querySelector('.b-config__view-second');
+
+    toggles.forEach(item => {
+        item.addEventListener('click', () => {
+            // убираем active у всех
+            toggles.forEach(el => el.classList.remove('b-config__toggle-item_active'));
+
+            // добавляем active тому, на который кликнули
+            item.classList.add('b-config__toggle-item_active');
+
+            // определяем, что показываем
+            if (item.classList.contains('b-config__toggle-item_day')) {
+                firstImg.classList.add('b-config__view_visible');
+                firstImg.classList.remove('b-config__view_hidden');
+                secondImg.classList.add('b-config__view_hidden');
+                secondImg.classList.remove('b-config__view_visible');
+            } 
+            else if (item.classList.contains('b-config__toggle-item_night')) {
+                secondImg.classList.add('b-config__view_visible');
+                secondImg.classList.remove('b-config__view_hidden');
+                firstImg.classList.add('b-config__view_hidden');
+                firstImg.classList.remove('b-config__view_visible');
+            }
+        });
+    });
+});
