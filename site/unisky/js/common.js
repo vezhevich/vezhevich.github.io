@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // datepicker
 $(function() {
 	$(".js-datepicker").datepicker({
-		dateFormat: "dd MM",
+		dateFormat: "dd.mm.yy",
 		firstDay: 1,
 		minDate: 0,
 		monthNames: ["января", "февраля", "марта", "апреля", "мая", "июня",
@@ -476,6 +476,123 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // gallery
+// $(function() {
+// 	if ($('.b-gallery__thumbs').length > 0) {
+// 		var galleryThumbs, galleryMain;
+
+// 		function initSwipers() {
+// 			if (galleryThumbs) galleryThumbs.destroy(true, true);
+// 			if (galleryMain) galleryMain.destroy(true, true);
+
+// 			var direction = window.innerWidth >= 1280 ? 'vertical' : 'horizontal';
+
+// 			// Инициализация thumbs слайдера
+// 			galleryThumbs = new Swiper(".b-gallery__thumbs", {
+// 				centeredSlides: true,
+// 				centeredSlidesBounds: false,
+// 				slidesPerView: 3,
+// 				watchOverflow: true,
+// 				watchSlidesVisibility: true,
+// 				watchSlidesProgress: true,
+// 				spaceBetween: 10,
+// 				initialSlide: 1, // Всегда стартуем со второго слайда
+// 				mousewheel: {
+// 					forceToAxis: true,
+// 					sensitivity: 1,
+// 					releaseOnEdges: true, // Важно для прокрутки за пределы слайдов
+// 				},
+// 				direction: "horizontal",
+// 				breakpoints: {
+// 					0: {
+// 						direction: "horizontal",
+// 						spaceBetween: 0,
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 180,
+// 						centeredSlidesBounds: true,
+// 					},
+// 					500: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 200,
+// 						centeredSlidesBounds: true,
+// 					},
+// 					600: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 250,
+// 						centeredSlidesBounds: true,
+// 					},
+// 					700: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 300,
+// 						centeredSlidesBounds: true,
+// 					},
+// 					1000: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 400,
+// 						centeredSlidesBounds: true,
+// 					},
+// 					1200: {
+// 						slidesOffsetBefore: 1,
+// 						slidesOffsetAfter: 550,
+// 						centeredSlidesBounds: true,
+// 					},
+// 					1280: {
+// 						direction: 'vertical',
+// 						centeredSlidesBounds: false,
+// 					}
+// 				}
+// 			});
+
+// 			// Инициализация main слайдера
+// 			galleryMain = new Swiper(".b-gallery__main", {
+// 				watchOverflow: true,
+// 				watchSlidesVisibility: true,
+// 				watchSlidesProgress: true,
+// 				preventInteractionOnTransition: true,
+// 				effect: 'fade',
+// 				mousewheel: false,
+// 				direction: "vertical",
+// 				initialSlide: 1, // Всегда стартуем со второго слайда
+// 				fadeEffect: {
+// 					crossFade: true
+// 				},
+// 				thumbs: {
+// 					swiper: galleryThumbs
+// 				},
+// 				scrollbar: {
+// 					el: ".swiper-scrollbar",
+// 					draggable: true,
+// 					dragSize: 74,
+// 				},
+// 				breakpoints: {
+// 					0: {
+// 						direction: "horizontal",
+// 						pagination: {
+// 							el: ".b-gallery-pagination",
+// 						}
+// 					},
+// 					1280: {
+// 						direction: "vertical",
+// 					}
+// 				},
+// 			});
+
+// 			galleryMain.on('slideChangeTransitionStart', function() {
+// 				galleryThumbs.slideTo(galleryMain.activeIndex);
+// 			});
+
+// 			galleryThumbs.on('transitionStart', function(){
+// 				galleryMain.slideTo(galleryThumbs.activeIndex);
+// 			});
+// 		}
+
+// 		initSwipers();
+
+// 		$(window).on('resize', function() {
+// 			initSwipers();
+// 		});
+// 	}
+// });
+
 $(function() {
 	if ($('.b-gallery__thumbs').length > 0) {
 		var galleryThumbs, galleryMain;
@@ -506,34 +623,34 @@ $(function() {
 					0: {
 						direction: "horizontal",
 						spaceBetween: 0,
-						slidesOffsetBefore: 1,
-						slidesOffsetAfter: 180,
-						centeredSlidesBounds: true,
+						slidesOffsetBefore: 0,
+						slidesOffsetAfter: 0,
+						centeredSlidesBounds: false,
 					},
 					500: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 200,
-						centeredSlidesBounds: true,
+						centeredSlidesBounds: false,
 					},
 					600: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 250,
-						centeredSlidesBounds: true,
+						centeredSlidesBounds: false,
 					},
 					700: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 300,
-						centeredSlidesBounds: true,
+						centeredSlidesBounds: false,
 					},
 					1000: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 400,
-						centeredSlidesBounds: true,
+						centeredSlidesBounds: false,
 					},
 					1200: {
 						slidesOffsetBefore: 1,
 						slidesOffsetAfter: 550,
-						centeredSlidesBounds: true,
+						centeredSlidesBounds: false,
 					},
 					1280: {
 						direction: 'vertical',
